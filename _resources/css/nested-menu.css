@@ -1,0 +1,93 @@
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.1/css/all.min.css");
+
+/* Global */
+.sidenav {
+    visibility: hidden;
+    opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+.sidenav.is-ready {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sidenav ul li {
+	font-size: 1rem;
+	padding: 0.25rem;
+	margin: 0.25rem 0 0 0;
+}
+
+.sidenav ul li a {
+	padding: 0.5rem;
+}
+
+.sidenav ul li a:hover {
+	border-radius: 6px;
+	box-shadow: none !important;
+}
+
+.sidenav ul li ul {
+	
+}
+
+.sidenav li.current a {
+	background: #BFE8F7;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Has Children */
+.sidenav ul > li.has-children {
+	transition: all .2s ease-in-out;
+}
+.sidenav ul > li.has-children > a {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	align-items: center;
+}
+.sidenav ul > li.has-children > a::after {
+    content: "\f107"; /* Angle-down icon */
+    font: var(--fa-font-solid);
+    transition: transform 0.2s ease-in-out;
+}
+
+.sidenav ul li ul {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        max-height .3s ease,
+        opacity .2s ease,
+        visibility .2s;
+}
+
+.sidenav ul li ul li > a {
+	font-size: 0.85rem;
+}
+
+.sidenav ul li ul li:last-child {
+	border-bottom-width: 0;
+}
+.sidenav ul li ul li:first-child {
+	border-top: 1px dotted #3B3A3A;
+}
+
+.sidenav ul > li.has-children.active {
+	border-radius: 6px;
+	background: #ecf7fa;
+	border-bottom-width: 0;
+	margin-top: 0.75rem;
+}
+
+.sidenav ul li.has-children.active > ul {
+    max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sidenav ul > li.has-children.active > a:after {
+	transform: rotate(180deg);
+}

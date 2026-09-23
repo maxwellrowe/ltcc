@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>section.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Nested Menu</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Nested Menu</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="true">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="false">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Nested Menu</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p>Bacon ipsum dolor amet spare ribs shankle tri-tip, capicola ball tip pork leberkas chislic pork loin rump. Andouille prosciutto ball tip bacon, fatback pork flank buffalo pork chop salami alcatra drumstick. Swine tongue pork chop, tenderloin t-bone jowl pork cow jerky drumstick corned beef. Bresaola sirloin swine ham hock rump jowl ham short ribs doner pork belly sausage shoulder tri-tip t-bone. Polony strip steak kielbasa, turkey pork loin short loin short ribs alcatra mortadella sirloin hamburger.</p>
+<p>Andouille shank frankfurter turkey turducken, hamburger corned beef pork short loin. Doner frankfurter prosciutto, capicola shankle short loin pork loin landjaeger. Tri-tip buffalo boudin chicken chislic mortadella capicola venison strip steak meatloaf. Hamburger kevin swine filet mignon, drumstick sirloin pancetta sausage leberkas cupim ham hock chislic tenderloin. Cow ham hock ham bresaola fatback picanha prosciutto ball tip drumstick brisket spare ribs. Frankfurter shankle fatback chislic capicola pancetta. Tongue shank tri-tip corned beef, beef ribs chislic pork chop porchetta spare ribs ground round landjaeger.</p>
+<p>Rump andouille swine pork loin porchetta prosciutto ham drumstick ball tip pork tenderloin. Bresaola boudin ground round kielbasa cow chicken swine rump leberkas doner ham hock picanha landjaeger. Mortadella pork chop kevin meatloaf, fatback shankle turducken. Buffalo leberkas bresaola salami drumstick chicken doner pork belly sausage fatback ham hock ham t-bone shank.</p>
+<p>Short loin brisket frankfurter turducken tongue bacon andouille shoulder buffalo chuck. Filet mignon ground round turducken, strip steak landjaeger short loin doner kevin ham prosciutto sausage. Frankfurter turkey meatloaf shank. Boudin shoulder burgdoggen, frankfurter cow capicola sausage chicken brisket flank strip steak fatback andouille spare ribs. Ham strip steak andouille, pastrami burgdoggen turducken ball tip meatloaf. Landjaeger prosciutto pig alcatra fatback drumstick biltong cupim bresaola cow rump leberkas beef beef ribs.</p>
+<p>Pork polony buffalo prosciutto. Jerky biltong leberkas tenderloin salami. Spare ribs prosciutto filet mignon cupim, tri-tip meatball pork chop jowl pancetta. Frankfurter capicola t-bone, kielbasa tongue ham strip steak. Ham hock salami leberkas t-bone beef tri-tip, bresaola pork belly pig pastrami jerky shank. Boudin mortadella hamburger chicken, venison porchetta picanha spare ribs tenderloin strip steak t-bone beef rump filet mignon short ribs. Spare ribs landjaeger pork pork belly, meatloaf andouille prosciutto corned beef shoulder.</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

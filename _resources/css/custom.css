@@ -1,0 +1,247 @@
+/*Custom Media Queries*/
+@media screen and (max-width:1050px) {
+	/*.coyoteIcon {
+		width: 120px !important;
+		height: 110px !important;
+	}*/
+	
+}
+
+@media screen and (max-width: 500px) {
+	/*PAGE STYLES*/
+	html, body {
+		width: 100%;
+	}
+	
+	/*MENU BUTTON*/
+	.menu-link {
+		border: solid 2px;
+		border-top: none;
+		border-radius: 0 0 10px 10px;
+		padding: 0 7px 0;
+		background: rgba(50,89,158,1);
+	}		
+	
+	/*MEGA NAVIGATION (MOBILE VERSION)*/
+	#nav-container {
+		/*display: none;*/
+		
+	}
+}
+
+/*Global Styles*/
+	.clear {
+		clear: both;
+	}
+
+	.float {
+		float: right;
+	}
+
+/*Global Header*/
+/*.coyoteIcon {
+	float: right;
+	padding-top: 10px;
+	width: 130px !important;
+	height: 140px !important;
+}*/
+
+		
+/*-----REPORT FORM STYLES-----*/
+	.reportFormContainer {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(180,200,250,.87);
+		z-index: 9999;
+		color: #ccc;
+	}
+
+	.reportFormParent {
+		position: fixed;
+		background: rgba(0,51,160,1);
+		padding: 10px;
+		border-radius: 20px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);	
+	}
+
+	/*.reportFormParent h3 {
+	color: #fff !important;
+	}*/
+
+	#reportAnchor {
+
+	}
+
+/*Mega-Dropdown*/
+#nav-container nav .row>ul>li>div {
+	background: rgba(50,89,158,.95);
+	color: #eee !important;
+	width: 100% !important;
+	right: 0 !important;
+	left: 0 !important;
+	border: solid 1px #fffdfd;
+	border-radius: 0 0 25px 25px;	
+	/*border-top: none;*/	
+}
+
+#nav-container nav .row>ul>li>div a {
+	color: #eee !important;
+}
+
+#nav-container nav .row>ul>li>div a:hover {
+	color: #fff !important;
+	text-shadow: 0px 0px 10px #0f0;
+	font-weight: 500;
+}
+
+#nav-container nav .row>ul>li:nth-child(6)>div {
+	/*display: none;*/	
+}
+
+/*Left Side Navigation*/
+.sidenav li {
+	/*text-align: center;*/
+}
+
+.sidenav a:hover {
+	background: rgba(50,150,50,.95) !important;
+	box-shadow: 0 0 10px 0 rgba(50,150,50,.9) !important;
+	border-radius: 15px;
+	color: #eee;
+	/*transition: border-radius 0 ease-in !important;*/
+}
+
+/*Left Nav Caret Hiding*/
+.fa-caret-down {
+	display: none; /*Removed in JavaScript*/
+	
+}
+
+/*Banner Image*/
+.logo-banner {
+	background: url("https://www.ltcc.edu/_resources/images/ltcc_images/assets/bluemountains.png") #0033a0 scroll no-repeat;
+	background-size: cover;
+	
+	
+}
+
+/*Map Icon Styles*/
+.mapLink {
+	text-align: center;
+}
+
+.mapIcon {
+	margin: .4em .8em 0 0;
+	width: 14px;
+	height: 20px;
+	
+}
+
+/*Title Element*/
+.alt-title {
+	font-family: Tahoma, sans-serif;
+	font-size: 2em;
+	font-weight: 500;
+	text-align: left;
+	margin: 0;
+	/*text-shadow: 0 0 1px;
+	background: rgba(0,0,200,.1);
+	border: solid 1px;
+	border-left: none;
+	border-radius: 50px;
+	padding: 5px;*/
+}
+
+/*Foundation Donate Button*/
+.donatebtn {
+	display: block;
+	width: 200px;
+	margin: 10px auto;
+	text-align: center;
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #32599E);
+	background-image: -moz-linear-gradient(top, #3498db, #32599E);
+	background-image: -ms-linear-gradient(top, #3498db, #32599E);
+	background-image: -o-linear-gradient(top, #3498db, #32599E);
+	background-image: linear-gradient(to bottom, #3498db, #32599E);
+	-webkit-border-radius: 32;
+	-moz-border-radius: 32;
+	border-radius: 32px;
+	text-shadow: 1px 1px 3px #010105;
+	font-family: Georgia;
+	color: #eee;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	border: solid #99a 3px;
+	text-decoration: none;
+	
+}
+
+.donatebtn:hover {
+	background: #3cb0fd;
+	background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+	background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	border: solid #bbf 3px;
+}
+
+.donatebtn:focus {
+	color: #fff;
+	
+}
+
+/*Index-specific styles backup*/
+		/*.home-news article {
+			border-bottom: 1px solid #007a3d;
+			padding: 1em;
+		}	
+		
+		article:nth-child(1) {
+			background: #d00 !important;
+			border-top: 1px solid #007a3d !important;
+		}*/
+
+/*Pre-Existing Code (Was commented out already)*/
+/*.logo-banner{background-image:url(http://lorempixel.com/1600/400/nature)}*/
+
+
+/* Table Stripe */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f1f1f1;
+}
+/* .table-striped > thead > tr:nth-child(1) { */
+/* 	background-color: pink;
+	font-size: 1.3em;
+} */
+
+
+/* Chevron List */
+.chevron-list {
+	/* position:relative; */
+	list-style: none;		 
+} 
+
+.chevron-list ul {
+	list-style: none;	 
+}		 
+
+.chevron-list li:before {
+	content: "\f054"; /* fa-chevron-right */
+	font-family: 'FontAwesome';	 
+	color: #007336;
+	font-size: 1.125em;
+	margin-right: 9px;
+	top: 0;
+	left: 0;
+} 

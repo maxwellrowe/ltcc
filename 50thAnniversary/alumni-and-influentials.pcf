@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/fiftieth-anniversary.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>fiftieth-anniversary.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Alumni &amp; Influentials</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Alumni &amp; Influentials</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+		<parameter name="page-id" type="text" group="Everyone" prompt="Unique Page ID" alt="Will apply a unique ID to the wrapping div of the page.">lt50-homepage</parameter>
+		<parameter section="Header" name="mkt-header" type="select" group="Everyone" prompt="Which header do you want to use for this page?">
+<option value="fiftieth-header" selected="true">50th Anniversary Header</option>
+<option value="global-header" selected="false">Global Header</option>
+</parameter>
+
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Alumni and Influentials</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting"><span>ltcc-fifty-homepage-top</span></th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32428 1 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"4rem"}}]]~ 
+
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32436 2 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"1px 1px 2px rgba(0,0,0,0.25)","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"200","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h1","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"Alumni &amp;amp; Influentials","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+~[com[32428 3 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"2rem"}}]]~ 
+
+<div>
+~[com[33954 4 14{ "version": 14, "data": {"8c82936e6cc31079c07c961b84a02977":"{{f:75037235}}","9ca9bfbc376acf7821b0c922436657e2":"","c7705994156379f818e656255f24439a":"grid"}}]]~ 
+
+~[com[32428 5 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"4rem"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

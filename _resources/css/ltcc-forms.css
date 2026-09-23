@@ -1,0 +1,727 @@
+/*
+ * ============================================================================
+ * LTCC FORMS — Modern Campus CMS Forms Module Stylesheet
+ * Version 2 — updated to match new ltcc.edu design direction (2025 redesign)
+ * ============================================================================
+ * Scoped entirely to [data-el="mc-form-wrapper"] to prevent collisions with
+ * Bootstrap 5 (new site), Foundation (legacy), main2022.css, or any other
+ * LTCC stylesheet. Apply via the Form Settings → Custom Styles URL field.
+ *
+ * New design tokens extracted from 2025 redesign screenshots:
+ *   LTCC Blue      #003e51   headings, body links, label text
+ *   Teal Green     #00a878   interactive accent — button fill, checkbox,
+ *                            focus ring, arrow CTAs (new site's primary action color)
+ *   Teal Dark      #007a55   hover state for teal-filled elements
+ *   Sky Blue       #5bc8e8   section background tint (not used in forms directly)
+ *   Body text      #2d3748   slightly warm dark gray (new site body copy)
+ *   Border         #d1d9e0   clean light border (new site card edges)
+ *
+ * Contrast notes (WCAG 2.1 AA @ 16px body, AA @ 14px+ bold):
+ *   #003e51 on white    = ~13.1:1  ✓ AAA
+ *   #2d3748 on white    = ~11.2:1  ✓ AAA
+ *   #00a878 on white    = ~3.1:1   ✗ as text — used ONLY as background/border
+ *   White on #00a878    = ~3.1:1   ✗ — NOT used for text buttons; see Submit note
+ *   White on #003e51    = ~13.1:1  ✓ — used for Submit button text
+ *   #c0392b on white    = ~5.1:1   ✓ AA for error text
+ *   #1b5e35 on #f0f9f3  = ~8.4:1   ✓ AAA for success text
+ *
+ * Submit button note:
+ *   The new site's "Apply Now" button is white text on teal (#00a878).
+ *   White on #00a878 = 3.1:1 — passes AA for large text (18px+ or 14px bold)
+ *   only marginally. To maintain AA on all button sizes, Submit uses
+ *   LTCC Blue (#003e51) fill with white text (~13:1) as primary.
+ *   An optional .ltcc-form-teal-btn modifier is provided if brand team
+ *   confirms the teal button for large/bold text contexts.
+ * ============================================================================
+ */
+
+/* ============================================================================
+   DESIGN TOKENS (local scope)
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] {
+    /* Brand */
+    --form-blue:            #003e51;
+    --form-blue-dark:       #002d3e;
+    --form-teal:            #00a878;   /* new primary action accent */
+    --form-teal-dark:       #007a55;   /* hover on teal elements */
+    --form-teal-ring:       rgba(0, 168, 120, 0.28);
+    --form-green:           #007a33;   /* success state */
+
+    /* State colors */
+    --form-red:             #c0392b;
+    --form-red-bg:          #fdf3f2;
+    --form-red-border:      #e8a09a;
+    --form-green-bg:        #f0f9f3;
+    --form-green-border:    #8fcba8;
+
+    /* Neutrals — new site uses warmer gray scale */
+    --form-white:           #ffffff;
+    --form-gray-50:         #f7f9fb;
+    --form-gray-100:        #eef1f5;
+    --form-gray-200:        #d1d9e0;   /* card/input border — new site */
+    --form-gray-400:        #9aa5b4;
+    --form-gray-600:        #4a5568;   /* body text — new site */
+    --form-body:            #2d3748;   /* primary body text — new site */
+
+    /* Spacing — new site is more generous */
+    --form-space-xs:        8px;
+    --form-space-sm:        14px;
+    --form-space-md:        22px;
+    --form-space-lg:        32px;
+
+    /* Typography */
+    --form-font:            -apple-system, BlinkMacSystemFont, "Segoe UI",
+                            "Inter", Arial, sans-serif;
+    --form-font-size:       16px;
+    --form-line-height:     1.6;
+
+    /* Inputs — new site uses more radius */
+    --form-input-height:    48px;
+    --form-input-padding:   11px 16px;
+    --form-input-border:    1.5px solid var(--form-gray-200);
+    --form-input-bg:        var(--form-white);
+    --form-input-color:     var(--form-body);
+    --form-input-radius:    8px;    /* matches new site card/filter radius */
+
+    /* Buttons */
+    --form-radius-btn:      8px;    /* rounded — new site "Apply Now" style */
+
+    /* Focus — teal ring matches new site's interactive accent */
+    --form-focus-ring:      0 0 0 3px var(--form-teal-ring);
+    --form-focus-border:    var(--form-teal);
+
+    --form-transition:      0.15s ease;
+
+    font-family:    var(--form-font);
+    font-size:      var(--form-font-size);
+    line-height:    var(--form-line-height);
+    color:          var(--form-body);
+    box-sizing:     border-box;
+}
+
+[data-el="mc-form-wrapper"] *,
+[data-el="mc-form-wrapper"] *::before,
+[data-el="mc-form-wrapper"] *::after {
+    box-sizing: inherit;
+}
+
+
+/* ============================================================================
+   ELEMENT WRAPPERS — consistent vertical rhythm
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] {
+    margin-bottom: var(--form-space-md);
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] {
+    margin-bottom: var(--form-space-md);
+}
+
+
+/* ============================================================================
+   LABELS
+   New site: bold, LTCC Blue, generous bottom margin.
+   Dark-bg variant (form on #003e51 background) handled via
+   .ltcc-form-dark-bg wrapper modifier at the bottom of this file.
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-label"],
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="options-group-legend"] {
+    display:        block;
+    font-family:    var(--form-font);
+    font-size:      15px;
+    font-weight:    700;
+    color:          var(--form-blue);
+    margin-bottom:  var(--form-space-xs);
+    line-height:    1.4;
+    letter-spacing: 0.01em;
+}
+
+/* Required asterisk */
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-label"] abbr,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-label"] .required-indicator {
+    color:              var(--form-red);
+    text-decoration:    none;
+    margin-left:        3px;
+    font-weight:        700;
+}
+
+
+/* ============================================================================
+   HELPER / HINT TEXT
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-helper-wrapper"] {
+    font-size:      14px;
+    color:          var(--form-gray-600);
+    margin-top:     4px;
+    margin-bottom:  var(--form-space-xs);
+    line-height:    1.5;
+}
+
+
+/* ============================================================================
+   INPUTS — short text, email, tel, number, url
+   New site: 48px height, 8px radius, light border, clean placeholder
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="email"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="tel"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="number"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="url"] {
+    display:            block;
+    width:              100%;
+    height:             var(--form-input-height);
+    padding:            var(--form-input-padding);
+    font-family:        var(--form-font);
+    font-size:          var(--form-font-size);
+    color:              var(--form-input-color);
+    background-color:   var(--form-input-bg);
+    border:             var(--form-input-border);
+    border-radius:      var(--form-input-radius);
+    outline:            none;
+    transition:         border-color var(--form-transition),
+                        box-shadow   var(--form-transition);
+    -webkit-appearance: none;
+    appearance:         none;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"]::placeholder {
+    color:      var(--form-gray-400);
+    font-style: normal;   /* new site placeholders are not italic */
+}
+
+/* Focus — teal ring */
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"]:focus,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="email"]:focus,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="tel"]:focus,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="number"]:focus,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][type="url"]:focus {
+    border-color:   var(--form-focus-border) !important;
+    box-shadow:     var(--form-focus-ring) !important;
+}
+
+/* Hover */
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"]:hover:not(:focus) {
+    border-color: var(--form-gray-400);
+}
+
+
+/* ============================================================================
+   TEXTAREA — long text / question fields
+   New site: 8px radius, resize handle, generous min-height
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"] {
+    display:            block;
+    width:              100%;
+    min-height:         130px;
+    padding:            var(--form-input-padding);
+    font-family:        var(--form-font);
+    font-size:          var(--form-font-size);
+    color:              var(--form-input-color);
+    background-color:   var(--form-input-bg);
+    border:             var(--form-input-border);
+    border-radius:      var(--form-input-radius);
+    outline:            none;
+    resize:             vertical;
+    line-height:        var(--form-line-height);
+    transition:         border-color var(--form-transition),
+                        box-shadow   var(--form-transition);
+    -webkit-appearance: none;
+    appearance:         none;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"]::placeholder {
+    color:      var(--form-gray-400);
+    font-style: normal;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"]:focus {
+    border-color:   var(--form-focus-border) !important;
+    box-shadow:     var(--form-focus-ring) !important;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"]:hover:not(:focus) {
+    border-color: var(--form-gray-400);
+}
+
+
+/* ============================================================================
+   SELECT / DROPDOWN
+   New site: matches the "Program Type" / "Meta Major" filter style —
+   clean border, 8px radius, LTCC Blue custom chevron
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="select-input"] {
+    display:            block;
+    width:              100%;
+    height:             var(--form-input-height);
+    padding:            var(--form-input-padding);
+    padding-right:      44px;
+    font-family:        var(--form-font);
+    font-size:          var(--form-font-size);
+    color:              var(--form-input-color);
+    background-color:   var(--form-input-bg);
+    border:             var(--form-input-border);
+    border-radius:      var(--form-input-radius);
+    outline:            none;
+    cursor:             pointer;
+    /* Custom chevron — LTCC Blue to match new site dropdowns */
+    background-image:   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%23003e51' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round' d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat:  no-repeat;
+    background-position: right 16px center;
+    -webkit-appearance: none;
+    appearance:         none;
+    transition:         border-color var(--form-transition),
+                        box-shadow   var(--form-transition);
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="select-input"]:focus {
+    border-color:   var(--form-focus-border) !important;
+    box-shadow:     var(--form-focus-ring) !important;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="select-input"]:hover:not(:focus) {
+    border-color: var(--form-gray-400);
+}
+
+
+/* ============================================================================
+   CHECKBOXES
+   New site: teal fill when checked (accent-color), 8px spacing, clean rows
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="checkbox-group-wrapper"] {
+    display:        flex;
+    flex-direction: column;
+    gap:            10px;
+    margin-top:     var(--form-space-xs);
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="checkbox-input"] {
+    width:          18px;
+    height:         18px;
+    margin-right:   10px;
+    accent-color:   var(--form-teal);   /* teal check fill — new site */
+    flex-shrink:    0;
+    cursor:         pointer;
+    vertical-align: middle;
+    position:       relative;
+    top:            -1px;
+    border-radius:  3px;
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="checkbox-input"]:focus-visible {
+    outline:        3px solid var(--form-teal);
+    outline-offset: 2px;
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="checkbox-label"] {
+    font-size:      var(--form-font-size);
+    color:          var(--form-body);
+    cursor:         pointer;
+    display:        inline-flex;
+    align-items:    center;
+    line-height:    1.4;
+}
+
+
+/* ============================================================================
+   RADIO BUTTONS
+   New site: teal fill, consistent with checkbox treatment
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="radio-group-wrapper"] {
+    display:        flex;
+    flex-direction: column;
+    gap:            10px;
+    margin-top:     var(--form-space-xs);
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="radio-input"] {
+    width:          18px;
+    height:         18px;
+    margin-right:   10px;
+    accent-color:   var(--form-teal);
+    flex-shrink:    0;
+    cursor:         pointer;
+    vertical-align: middle;
+    position:       relative;
+    top:            -1px;
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="radio-input"]:focus-visible {
+    outline:        3px solid var(--form-teal);
+    outline-offset: 2px;
+}
+
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="radio-label"] {
+    font-size:      var(--form-font-size);
+    color:          var(--form-body);
+    cursor:         pointer;
+    display:        inline-flex;
+    align-items:    center;
+    line-height:    1.4;
+}
+
+/* Group legends — consistent with label style */
+[data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="options-group-legend"] {
+    font-size:      15px;
+    font-weight:    700;
+    color:          var(--form-blue);
+    margin-bottom:  var(--form-space-xs);
+    padding:        0;
+    border:         none;
+    width:          100%;
+    letter-spacing: 0.01em;
+}
+
+
+/* ============================================================================
+   TOGGLE
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="toggle-wrapper"] {
+    display:        flex;
+    align-items:    center;
+    gap:            var(--form-space-sm);
+    padding:        var(--form-space-xs) 0;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="toggle-wrapper"] [data-el="toggle-input"] {
+    accent-color:   var(--form-teal);
+    width:          40px;
+    height:         22px;
+    cursor:         pointer;
+    flex-shrink:    0;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="toggle-wrapper"] [data-el="toggle-input"]:focus-visible {
+    outline:        3px solid var(--form-teal);
+    outline-offset: 2px;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="toggle-wrapper"] [data-el="toggle-label"] {
+    font-size:      var(--form-font-size);
+    color:          var(--form-body);
+    cursor:         pointer;
+    line-height:    1.4;
+}
+
+
+/* ============================================================================
+   DATE / TIME PICKER
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] .react-datepicker-wrapper {
+    display: block;
+    width:   100%;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] .react-datepicker-wrapper input {
+    display:            block;
+    width:              100%;
+    height:             var(--form-input-height);
+    padding:            var(--form-input-padding);
+    font-family:        var(--form-font);
+    font-size:          var(--form-font-size);
+    color:              var(--form-input-color);
+    background-color:   var(--form-input-bg);
+    border:             var(--form-input-border);
+    border-radius:      var(--form-input-radius);
+    outline:            none;
+    transition:         border-color var(--form-transition),
+                        box-shadow   var(--form-transition);
+    -webkit-appearance: none;
+    appearance:         none;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] .react-datepicker-wrapper input:focus {
+    border-color:   var(--form-focus-border) !important;
+    box-shadow:     var(--form-focus-ring) !important;
+}
+
+
+/* ============================================================================
+   FREE TEXT / HTML SECTION
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="html-section"] {
+    font-size:      var(--form-font-size);
+    color:          var(--form-gray-600);
+    line-height:    var(--form-line-height);
+    margin-bottom:  var(--form-space-sm);
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="html-section"] a {
+    color:              var(--form-blue);
+    text-decoration:    underline;
+    font-weight:        600;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="html-section"] a:hover {
+    color:              var(--form-teal-dark);
+    text-decoration:    underline;
+}
+
+
+/* ============================================================================
+   BUTTONS — Submit (primary) + Clear (de-emphasized)
+   
+   Submit: LTCC Blue fill, white text — safe contrast (~13:1) at all sizes.
+   Clear: ghost/outline — quieter visual weight, clearly secondary.
+   
+   Optional .ltcc-form-teal-btn modifier switches Submit to teal fill
+   (matches new site "Apply Now" style). Brand team should confirm before
+   using — white on #00a878 = 3.1:1, AA for large/bold text only.
+   ============================================================================ */
+
+/* Shared base */
+[data-el="mc-form-wrapper"] [data-el="mc-form-submit"],
+[data-el="mc-form-wrapper"] button[type="reset"],
+[data-el="mc-form-wrapper"] [data-el="mc-form-clear"] {
+    display:            inline-block;
+    height:             48px;
+    padding:            0 32px;
+    font-family:        var(--form-font);
+    font-size:          16px;
+    font-weight:        600;
+    line-height:        1;
+    border-radius:      var(--form-radius-btn);
+    border:             2px solid transparent;
+    cursor:             pointer;
+    text-align:         center;
+    white-space:        nowrap;
+    transition:         background-color var(--form-transition),
+                        border-color     var(--form-transition),
+                        color            var(--form-transition),
+                        box-shadow       var(--form-transition),
+                        transform        var(--form-transition);
+    -webkit-appearance: none;
+    appearance:         none;
+}
+
+/* Submit — LTCC Blue, white text, safe contrast */
+[data-el="mc-form-wrapper"] [data-el="mc-form-submit"] {
+    background-color:   var(--form-blue);
+    color:              var(--form-white) !important;
+    border-color:       var(--form-blue);
+}
+
+[data-el="mc-form-wrapper"] [data-el="mc-form-submit"]:hover {
+    background-color:   var(--form-blue-dark);
+    border-color:       var(--form-blue-dark);
+    transform:          translateY(-1px);
+    box-shadow:         0 4px 12px rgba(0, 62, 81, 0.25);
+}
+
+[data-el="mc-form-wrapper"] [data-el="mc-form-submit"]:active {
+    transform:          translateY(0);
+    box-shadow:         none;
+}
+
+[data-el="mc-form-wrapper"] [data-el="mc-form-submit"]:focus-visible {
+    outline:            none;
+    box-shadow:         var(--form-focus-ring),
+                        0 4px 12px rgba(0, 62, 81, 0.25) !important;
+}
+
+/* Optional: teal Submit to match new site "Apply Now" style.
+   Add class ltcc-form-teal-btn to the mc-form-wrapper element.
+   IMPORTANT: white on #00a878 = 3.1:1 — AA for large/bold text only.
+   Confirm with brand/accessibility team before deploying. */
+.ltcc-form-teal-btn [data-el="mc-form-submit"] {
+    background-color:   var(--form-teal) !important;
+    border-color:       var(--form-teal) !important;
+    color:              var(--form-white) !important;
+}
+
+.ltcc-form-teal-btn [data-el="mc-form-submit"]:hover {
+    background-color:   var(--form-teal-dark) !important;
+    border-color:       var(--form-teal-dark) !important;
+}
+
+/* Clear — ghost, clearly secondary, no visual competition with Submit */
+[data-el="mc-form-wrapper"] button[type="reset"],
+[data-el="mc-form-wrapper"] [data-el="mc-form-clear"] {
+    background-color:   transparent;
+    color:              var(--form-gray-600) !important;
+    border-color:       var(--form-gray-200);
+    font-weight:        500;
+}
+
+[data-el="mc-form-wrapper"] button[type="reset"]:hover,
+[data-el="mc-form-wrapper"] [data-el="mc-form-clear"]:hover {
+    background-color:   var(--form-gray-100);
+    border-color:       var(--form-gray-400);
+    color:              var(--form-body) !important;
+}
+
+[data-el="mc-form-wrapper"] button[type="reset"]:focus-visible,
+[data-el="mc-form-wrapper"] [data-el="mc-form-clear"]:focus-visible {
+    outline:    none;
+    box-shadow: var(--form-focus-ring) !important;
+}
+
+/* Button group */
+[data-el="mc-form-wrapper"] [data-el="mc-form-buttons-wrapper"],
+[data-el="mc-form-wrapper"] [data-el="mc-form-actions"] {
+    display:        flex;
+    flex-wrap:      wrap;
+    align-items:    center;
+    gap:            var(--form-space-sm);
+    margin-top:     var(--form-space-lg);
+}
+
+
+/* ============================================================================
+   SUCCESS MESSAGE
+   New site: left-border accent style consistent with card/callout patterns
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="mc-form-success"] {
+    background-color:   var(--form-green-bg);
+    border:             1.5px solid var(--form-green-border);
+    border-left:        4px solid var(--form-green);
+    border-radius:      var(--form-input-radius);   /* 8px — matches card radius */
+    padding:            var(--form-space-md);
+    color:              #1b5e35;
+    font-size:          var(--form-font-size);
+    line-height:        var(--form-line-height);
+    margin-top:         var(--form-space-md);
+    font-weight:        500;
+}
+
+[data-el="mc-form-wrapper"] [data-el="mc-form-success"]::before {
+    content:        "✓  ";
+    font-weight:    700;
+}
+
+
+/* ============================================================================
+   ERROR MESSAGE — form-level
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="mc-form-error"] {
+    background-color:   var(--form-red-bg);
+    border:             1.5px solid var(--form-red-border);
+    border-left:        4px solid var(--form-red);
+    border-radius:      var(--form-input-radius);
+    padding:            var(--form-space-md);
+    color:              #7b1a15;
+    font-size:          var(--form-font-size);
+    line-height:        var(--form-line-height);
+    margin-top:         var(--form-space-md);
+}
+
+
+/* ============================================================================
+   FIELD-LEVEL VALIDATION STATES
+   Targets both aria-invalid (CMS module) and .is-invalid (Bootstrap 5)
+   ============================================================================ */
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][aria-invalid="true"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"][aria-invalid="true"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="select-input"][aria-invalid="true"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"].is-invalid,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"].is-invalid,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="select-input"].is-invalid {
+    border-color:       var(--form-red) !important;
+    background-color:   var(--form-red-bg) !important;
+}
+
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="text-input"][aria-invalid="true"]:focus,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="textarea"][aria-invalid="true"]:focus,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="select-input"][aria-invalid="true"]:focus {
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.25) !important;
+}
+
+/* Inline field error text */
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-error"],
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] .mc-form-field-error,
+[data-el="mc-form-wrapper"] [data-el="element-wrapper"] .invalid-feedback {
+    display:        block;
+    margin-top:     6px;
+    font-size:      14px;
+    color:          var(--form-red);
+    font-weight:    600;
+    line-height:    1.4;
+}
+
+
+/* ============================================================================
+   DARK BACKGROUND MODIFIER
+   Add class "ltcc-form-dark-bg" to the wrapper div around the mc-form-wrapper
+   when the form sits on an LTCC Blue (#003e51) background — e.g. the "Have a
+   Question?" sidebar block seen in the original screenshots.
+   ============================================================================ */
+
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-label"],
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="options-group-wrapper"] [data-el="options-group-legend"] {
+    color: #ffffff;
+}
+
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="element-helper-wrapper"] {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="html-section"] {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="element-wrapper"] [data-el="html-section"] a {
+    color: #ffffff;
+}
+
+/* Dark bg: Clear button uses white-tinted ghost treatment */
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] button[type="reset"],
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="mc-form-clear"] {
+    color:          rgba(255, 255, 255, 0.85) !important;
+    border-color:   rgba(255, 255, 255, 0.35);
+}
+
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] button[type="reset"]:hover,
+.ltcc-form-dark-bg [data-el="mc-form-wrapper"] [data-el="mc-form-clear"]:hover {
+    background-color:   rgba(255, 255, 255, 0.1);
+    border-color:       rgba(255, 255, 255, 0.6);
+    color:              rgba(255, 255, 255, 1) !important;
+}
+
+
+/* ============================================================================
+   RESPONSIVE — 600px breakpoint
+   ============================================================================ */
+
+@media (max-width: 600px) {
+    [data-el="mc-form-wrapper"] [data-el="mc-form-submit"],
+    [data-el="mc-form-wrapper"] button[type="reset"],
+    [data-el="mc-form-wrapper"] [data-el="mc-form-clear"] {
+        width:      100%;
+        padding:    0 24px;
+    }
+
+    [data-el="mc-form-wrapper"] [data-el="mc-form-buttons-wrapper"],
+    [data-el="mc-form-wrapper"] [data-el="mc-form-actions"] {
+        flex-direction: column;
+        align-items:    stretch;
+    }
+}
+
+
+/* ============================================================================
+   REDUCED MOTION
+   ============================================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    [data-el="mc-form-wrapper"] *,
+    [data-el="mc-form-wrapper"] *::before,
+    [data-el="mc-form-wrapper"] *::after {
+        transition:     none !important;
+        animation:      none !important;
+        transform:      none !important;
+    }
+}

@@ -1,0 +1,291 @@
+/* Editing */
+.ou-justedit-region table[class^="ou-"] {
+	width: calc(100% - 20px);
+	max-width: 100%;
+}
+.ou-justedit-region table[class^="ou-"] caption {
+	margin: 0;
+	font-size: 1rem;
+}
+.ou-justedit-region [data-aos^="fade"][data-aos^="fade"] {
+	opacity: 1 !important;
+	transform: none !important;
+}
+.ou-justedit-region table[class^="ou-"] thead tr th[data-ou-edit="setting"] {
+	-moz-user-select: text;
+	-khtml-user-select: text;
+	-webkit-user-select: text;
+	-o-user-select: text;
+	user-select: text;
+	background-color: #fff;
+}
+.ou-justedit-region .ltcc-custom-text {
+	background: rgba(0, 0 , 0, .15);
+}
+html.sr .ou-justedit-region .load-hidden {
+	visibility: visible !important;
+}
+.ou-justedit-region table[data-snippet="ltcc-section"] > tbody > tr > td,
+.ou-justedit-region table[data-snippet="ltcc-section"] > thead > tr > th {
+	border: 1px solid #1CDFE6;
+}
+.ou-justedit-region table[data-snippet="ltcc-section"] > caption {
+	background-color: #CFFAFC !important;
+	color: #000 !important;
+	font-size: 1rem !important;
+	margin: 0 !important;
+}
+.ou-justedit-region table[data-snippet="ltcc-container"] > tbody > tr > td,
+.ou-justedit-region table[data-snippet="ltcc-container"] > thead > tr > th {
+	border: 1px solid #E61CE6;
+}
+.ou-justedit-region table[data-snippet="ltcc-container"] > caption {
+	background-color: #FCD3FC !important;
+	color: #000 !important;
+	font-size: 1rem !important;
+	margin: 0 !important;
+}
+.ou-justedit-region table[data-snippet="ltcc-columns"] > tbody > tr > td,
+.ou-justedit-region table[data-snippet="ltcc-columns"] > thead > tr > th {
+	border: 1px solid #FAD400;
+}
+.ou-justedit-region table[data-snippet="ltcc-columns"] > caption {
+	background-color: #FDFFC3 !important;
+	color: #000 !important;
+	font-size: 1rem !important;
+	margin: 0 !important;
+}
+.ou-justedit-region .snippet-spacer {
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	padding: 4px;
+	background: #F8F8DC;
+	text-align: center;
+	margin-top: -8px;
+	font-size: 12px;
+}
+
+/* Button */
+.ltcc-button-group {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 2rem;
+	font-family: var(--ltcc-sullivan);
+}
+a.ltcc-button {
+	transition: all .2s ease-in-out;
+	padding: 1rem 0;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	position: relative;
+}
+a.ltcc-button:before,
+a.ltcc-button:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	transition: all .1s ease-in-out;
+}
+a.ltcc-button.ltcc-button-green:before {
+	background: var(--ltcc-green);
+}
+a.ltcc-button.ltcc-button-blue:before {
+	background: var(--ltcc-light-blue);
+}
+a.ltcc-button:after {
+	width: 0;
+}
+a.ltcc-button.ltcc-button-green:after {
+	background: var(--ltcc-light-blue);
+}
+a.ltcc-button.ltcc-button-blue:after {
+	background: var(--ltcc-green);
+}
+a.ltcc-button:hover {
+	opacity: .85;
+}
+a.ltcc-button:hover:after {
+	width: 100%;
+}
+a.ltcc-button span.fa {
+	display: none;
+	transition: all .2s ease-in-out;
+	font-size: 1rem;
+}
+a.ltcc-button.ltcc-button-show-arrow {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: .5rem;
+	width: max-content;
+}
+a.ltcc-button.ltcc-button-show-arrow span.fa {
+	display: block;
+}
+a.ltcc-button:hover span.fa {
+	transform: translateX(.25rem);
+}
+a.ltcc-button.ltcc-button-sullivan {
+	font-family: var(--ltcc-sullivan);
+}
+
+/* Card Event */
+.ltcc-card-event {
+	color: #fff;
+}
+.ltcc-card-event .card-body {
+	z-index: 1;
+	position: relative;
+}
+.ltcc-card-event .ltcc-card-event-date {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.ltcc-card-event h2.ltcc-card-event-title {
+	font-size: 2.25rem;
+	line-height: 1.1;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+/* Quote */
+.ltcc-quote {
+	position: relative;
+	padding-left: 2rem;
+}
+.ltcc-quote:before {
+	font-family: var(--ltcc-avant);
+	content: '\201C';
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 4rem;
+	line-height: 1;
+	opacity: .5;
+}
+.ltcc-quote:after {
+	content: '';
+	border-left: 1px solid var(--ltcc-green);
+	top: 3rem;
+	left: 0.5rem;
+	bottom: 0;
+	position: absolute;
+}
+.ltcc-quote .ltcc-quote-content {
+	font-size: 1.5rem;
+	line-height: 1.3;
+	margin-bottom: 1rem;
+}
+.ltcc-quote .ltcc-quote-author {
+	text-transform: uppercase;
+	font-weight: 700;
+	opacity: .75;
+	font-size: 1.125rem;
+}
+.ltcc-quote .ltcc-quote-title {
+	opacity: .75;
+	font-style: italic;
+}
+
+/* Card CTA */
+.ltcc-card-cta {
+	border-radius: .375rem;
+	text-decoration: none;
+	overflow: hidden;
+	transition: all .2s ease-in-out;
+}
+.ltcc-card-cta:hover {
+	transform: translateY(-5px);
+	background-color: var(--ltcc-dark-blue);
+}
+.ltcc-card-cta:before {
+	display: none;
+}
+.ltcc-card-cta h2 {
+	font-size: 1.5rem;
+	font-family: var(--ltcc-sullivan);
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	padding-top: 1.5rem;
+}
+
+.ltcc-card-cta hr {
+	max-width: 50%;
+	border-color: var(--ltcc-green);
+}
+.ltcc-card-cta span {
+	transition: all .2s ease-in-out;
+}
+.ltcc-card-cta span.ltcc-card-cta-link-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 1.5rem;
+	gap: .5rem;
+}
+.ltcc-card-cta span.fa {
+	font-size: .85rem;
+}
+.ltcc-card-cta:hover span.fa-arrow-down {
+	transform: translateX(5px);
+}
+.ltcc-card-cta:hover span.fa-arrow-right {
+	transform: translateX(5px);
+}
+
+/* Image Carousel */
+.ltcc-image-swiper .swiper-slide {
+	width: auto;
+}
+.ltcc-image-swiper .swiper-slide img {
+	height: 50vh;
+	max-height: 400px;
+	width: auto;
+}
+.ltcc-image-swiper .swiper-button-next,
+.ltcc-image-swiper .swiper-button-prev,
+.ltcc-profile-swiper .swiper-button-next,
+.ltcc-profile-swiper .swiper-button-prev {
+	background: rgba(0, 67, 62, 0.85);
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+.ltcc-image-swiper .swiper-button-next:hover,
+.ltcc-image-swiper .swiper-button-prev:hover,
+.ltcc-profile-swiper .swiper-button-next:hover,
+.ltcc-profile-swiper .swiper-button-prev:hover {
+	background: var(--ltcc-green);
+}
+.ltcc-image-swiper .swiper-button-next::after,
+.ltcc-image-swiper .swiper-button-prev::after,
+.ltcc-profile-swiper .swiper-button-next::after,
+.ltcc-profile-swiper .swiper-button-prev::after{
+	color: #fff;
+	font-size: 1rem;
+}
+
+/* Profiles Carousel */
+.ltcc-profile-swiper .swiper-slide {
+	width: 100%;
+}
+.ltcc-profile-swiper .ltcc-card-profile {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+@media screen and (min-width: 768px) {
+	.ltcc-profile-swiper .swiper-slide {
+		width: calc(100% / 2);
+	}
+}
+@media screen and (min-width: 1140px) {
+	.ltcc-profile-swiper .swiper-slide {
+		width: calc(100% / 3);
+	}
+}
+

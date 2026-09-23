@@ -1,0 +1,61 @@
+/*
+Implementations Skeletor v3 - 5/10/2014
+
+oustyles.css
+
+Add styles to overwrite customer CSS, USE WITH CAUTION.
+
+Contributors: Your Name Here
+Last Updated: Enter Date Here
+*/
+
+/*
+.ltcc_ouform label > [type="checkbox"] {
+	margin-right: auto !important;	
+}
+*/
+
+.ltcc_ouform label.checkbox {    
+    line-height: initial;
+}
+
+
+.radio input[type="radio"], .checkbox input[type="checkbox"] {      
+    margin-right: 3px;
+}
+
+.ltcc_ouform textarea {
+	height: auto !important;
+}
+
+/*
+.cse .gsc-control-cse, .gsc-control-cse { {
+    background-color: none !important;
+    border: none !important;
+}
+
+input.gsc-search-button.gsc-search-button-v2 {
+    display: none !important;
+}
+*/
+
+.gsc-selected-option-container {
+	width: 100% !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/*ticket 228900*/
+.g-recaptcha {
+   transform:scale(0.87);
+   transform-origin:0 0;
+}

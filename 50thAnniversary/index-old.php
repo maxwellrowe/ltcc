@@ -1,0 +1,5 @@
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<title>Redirect</title>
+		<meta http-equiv="refresh" content="0; URL=https://www.ltcc.edultcc50.com

@@ -1,0 +1,248 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.static-image {
+	position: relative;
+}
+.static-image img {
+	width: 100%;
+}
+.static-image .title, .slide .title {
+	color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    top: 20px;
+    left: 20px;
+	font-family:  "Poppins", "Century Gothic", "Arial", sans-serif;
+    font-size: 2.5em;
+	text-align: left;
+    margin: 0;
+    z-index: 100;
+	text-shadow: 0px 0px 8px rgba(100, 100, 100, 1);
+	line-height: 32px;
+}
+.btn-green {
+	font-family: Tahoma, sans-serif;
+    color: #ffffff;
+	background-color: #007736;
+    font-size: 24px;
+	width: 100%;
+    font-weight: bold;
+	display: inline-block;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-align: center;
+	margin: 20px 0 20px 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+}
+[role="button"] {
+    cursor: pointer;
+}
+a.btn-green:hover, a.btn-green:focus {
+    color: #fff;
+	background-color: #32599e;
+}
+.bootstrap-iso.accordion-new {
+	background-color: transparent;
+}
+.bootstrap-iso.accordion-new .panel-default > .panel-heading {
+    background-image: none;
+    background-color: #d4d4d4;
+	padding: 10px;
+	font-weight: bold;
+	position: relative;
+}
+.bootstrap-iso.accordion-new .panel-default .panel-heading h3.panel-title, .bootstrap-iso.accordion-new .panel-default .panel-heading h4.panel-title {
+	margin-bottom: 0px;
+	font-size: 1.3rem;
+}
+.bootstrap-iso.accordion-new a {
+    color: #003352;
+    text-transform: uppercase;
+	font-weight: bold;
+}
+.bootstrap-iso.accordion-new .panel-default .panel-body {
+	padding: 20px;
+	background-color: #fff;
+	border: 1px solid #d4d4d4;
+	border-top: none;
+}
+.bootstrap-iso.accordion-new .panel-default {
+	margin: 15px 0px;
+}
+.panel-default > .panel-heading a[aria-expanded="false"] .fa-minus {
+	display: none;
+}
+.panel-default > .panel-heading a[aria-expanded="true"] .fa-plus {
+	display: none;
+}
+.panel-default > .panel-heading .fa {
+    position: absolute;
+	margin-top: 4px;
+    right: 20px;
+}
+.responsive-iframe {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 60px; overflow: hidden;
+	margin-bottom: 20px;
+}
+.responsive-iframe iframe,
+.responsive-iframe object,
+.responsive-iframe embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+.main-content .medium-8 img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form-block {
+	background-color: #003e51;
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+}
+.form-block h3 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+.form-block a {
+	color: #fff;
+}
+.form-block a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.form-block label {
+	color: #fff;
+}
+.form-block form button {
+	background-color: #fff;
+	color: #007736;
+	text-decoration: uppercase;
+	border-radius: 3px;
+	padding: 12px;
+}
+.form-block form button:hover {
+	color: #32599e;
+}
+.hpb816c58d-4f21-4235-aed4-38389b1a36bb {
+    display: none;
+    margin-left: -1000px;
+}
+.faculty-contact-title {
+    text-align: center;
+    white-space: nowrap;
+    display: table;
+    margin-top: 50px;
+    margin-bottom: 40px;
+	font-size: 1.5rem;
+	line-height: 26px;
+}
+.faculty-contact-title:before, .faculty-contact-title:after {
+    background: rgba(0, 0, 0, 0) linear-gradient(#007737, #007737) no-repeat scroll center center / 92% 10px;
+    content: "";
+    display: table-cell;
+    width: 49%;
+}
+.faculty-contact-title .top-line {
+	text-transform: lowercase;
+	font-weight: lighter;
+}
+.faculty-contact-title .bottom-line {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.faculty-contact {
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.faculty-contact .faculty {
+	display: inline-block;
+	margin: 0 15px;
+}
+.faculty-contact img {
+	border: 2px solid #000;
+	border-radius: 50%;
+}
+.faculty-contact .faculty .name, .faculty-contact .faculty .title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.faculty-contact .faculty .name {
+	font-size: .9rem;
+}
+.faculty-contact .faculty .title {
+	font-size: .6rem;
+}
+.faculty-contact .faculty .email {
+	background-color: #1299f5;
+	color: #fff;
+	padding: 5px 15px;
+    display: inline-block;
+    margin: 20px 0;
+}
+.faculty-contact .faculty .website {
+	background-color: #f907f1;
+	color: #fff;
+	padding: 5px 15px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+@media (min-width: 1200px) and (max-width: 1430px) {
+	.row .row {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.row .row {
+		margin-right: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.btn-green {
+    font-size: 20px;
+		margin: 10px 0 10px 0;
+	}
+	.row .row {
+		margin-right: 0;
+	}
+}
+@media (max-width: 767px) {
+	.btn-green {
+    font-size: 18px;
+		margin: 10px 0 10px 0;
+	}
+	.row .row {
+		margin-right: 0;
+	}
+	.bootstrap-iso.accordion-new .panel-default .panel-heading h3.panel-title, .bootstrap-iso.accordion-new .panel-default .panel-heading h4.panel-title {
+    font-size: .8rem;
+}
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.bootstrap-iso.accordion-new .panel-default .panel-heading h3.panel-title, .bootstrap-iso.accordion-new .panel-default .panel-heading h4.panel-title {
+    font-size: .7rem;
+}
+
+}

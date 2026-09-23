@@ -1,0 +1,36 @@
+# Keep documents and media outside Git; images remain tracked.
+*.[pP][dD][fF]
+*.[mM][pP]4
+*.[mM]4[vV]
+*.[mM][oO][vV]
+*.[aA][vV][iI]
+*.[wW][mM][vV]
+*.[wW][eE][bB][mM]
+*.[mM][kK][vV]
+*.[mM][pP][gG]
+*.[mM][pP][eE][gG]
+*.[mM]2[vV]
+*.3[gG][pP]
+*.[fF][lL][vV]
+*.[oO][gG][vV]
+*.[mM][tT][sS]
+*.[mM]2[tT][sS]
+*.[vV][oO][bB]
+*.[mM][pP]3
+*.[wW][aA][vV]
+*.[wW][mM][aA]
+*.[mM]4[aA]
+*.[aA][aA][cC]
+*.[fF][lL][aA][cC]
+*.[oO][gG][gG]
+*.[oO][gG][aA]
+*.[oO][pP][uU][sS]
+*.[aA][iI][fF]
+*.[aA][iI][fF][fF]
+*.[aA][iI][fF][cC]
+*.[aA][uU]
+*.[mM][iI][dD]
+*.[mM][iI][dD][iI]
+
+# macOS metadata
+.DS_Store

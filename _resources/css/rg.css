@@ -1,0 +1,12 @@
+/* 
+This is a custom global CSS Document. Reference this document in the headcode parameter brackets to apply to a page by using:
+<link rel="stylesheet" href="https://www.ltcc.edu/_resources/css/rg.css"/>
+*/
+
+/*Cursive Page Title*/
+.alt-title {
+	display: none;
+	
+}
+
+

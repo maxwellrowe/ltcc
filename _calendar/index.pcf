@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/home2022-calendar.xsl" title="Home Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode>
+	<meta name="p:domain_verify" content="85e164ee6f744ed6983ef48c61ac07e2"/>
+	</headcode>	<!-- before closing head tag -->
+	
+	<bodycode>
+	</bodycode> <!-- after opening body tag -->
+	
+	<footcode>
+	
+	<script><![CDATA[
+		//Hero Video
+		$(document).ready(function () {
+			var playing = true;
+			$('.play-pause').click(function () {
+				if (playing == false) {
+					document.getElementById('myVideo').play();
+					playing = true;
+					$(this).html("<span class='fa fa-pause'></span>");
+				} else {
+					document.getElementById('myVideo').pause();
+					playing = false;
+					$(this).html("<span class='fa fa-play'></span>");
+				}
+			});
+		});
+
+		//Student type slider
+		$(document).ready(function(){	
+			$(".student-type-slider").slick({
+				dots: false, arrows: false, infinite: true, slidesToShow: 6, slidesToScroll: 1, accessibility: true, autoplay: false, focusOnSelect: true, pauseOnHover: false,
+			responsive: [
+				{ breakpoint: 1199, settings: { arrows: true, slidesToShow: 3, slidesToScroll: 3 } },
+				{ breakpoint: 991,  settings: { arrows: true, slidesToShow: 2, slidesToScroll: 2 } },
+				{ breakpoint: 767,  settings: { arrows: true, slidesToShow: 1, slidesToScroll: 1 } }
+			]
+			});
+		});
+
+		$('.student-type-slider a').on('touchstart', function (e) {
+			'use strict'; //satisfy code inspectors
+			var link = $(this); //preselect the link
+			if (link.hasClass('hover')) {
+				return true;
+			} else {
+				link.addClass('hover');
+				$('.student-type-slider a').not(this).removeClass('hover');
+				e.preventDefault();
+				return false; //extra, and to make sure the function has consistent return points
+			}
+		});
+
+	]]></script>
+	
+	</footcode> <!-- before closing body tag -->
+
+	<parameter name="page-type">home</parameter>
+	
+	<ouc:properties label="config">
+		<parameter name="alert-banner" type="checkbox" group="Everyone" prompt="Alert Banner" >
+<option value="yes" selected="false">Display if checked</option>
+</parameter>
+		
+		<parameter name="hero-content" type="select" group="Everyone" prompt="Hero Content" alt="Select content type.">
+<option value="slider" selected="false">Slider</option>
+<option value="video" selected="true">Video</option>
+</parameter>
+		
+		<parameter name="tagline" type="text" group="Everyone" prompt="Tagline">Mountains, deep blue water, and sheer rugged beauty--Lake Tahoe.</parameter>
+		<parameter name="parallax-bg" type="filechooser" group="Everyone" prompt="Parallax Background" alt="Select a background image.">https://www.ltcc.edu/_resources/images/home-parallax-bg-image.jpg</parameter>
+		
+		<parameter section="News" name="news-heading" type="text" group="Everyone" prompt="News Heading" alt="Enter the news heading.">News</parameter>		
+		<parameter name="news-link" type="filechooser" group="Everyone" prompt="News Link" alt="Select a link for news heading.">/news</parameter>
+		<parameter name="news-link-title" type="text" group="Everyone" prompt="News Link Title Attribute" alt="Enter the text for the title attribute to be used on the link for the news heading.">Read More News</parameter>
+		<parameter name="news-feed" type="filechooser" group="Everyone" prompt="News Feed" alt="Select an RSS feed to parse.">/rss/news.xml</parameter>
+		<parameter name="news-items" type="select" group="Everyone" prompt="No. of News Items" alt="Choose the number of items to display.">
+<option value="3" selected="true">3</option>
+<option value="4" selected="false">4</option>
+<option value="5" selected="false">5</option>
+<option value="6" selected="false">6</option>
+</parameter>
+
+		<parameter section="Events" name="events-heading" type="text" group="Everyone" prompt="Events Heading" alt="Enter the events heading.">Events</parameter>		
+		<parameter name="events-link" type="text" group="Everyone" prompt="Events Link" alt="Select a link for events heading.">/calendar</parameter>
+		<parameter name="events-link-title" type="text" group="Everyone" prompt="Events Link Title Attribute" alt="Enter the text for the title attribute to be used on the link for the events heading.">See More Events</parameter>		
+		<parameter name="events-feed" type="text" group="Everyone" prompt="Events Feed" alt="Paste the helios calendar RSS link change to 'wnl'.">/_resources/php/wnl/events_data_reformat.xml</parameter>			
+		<parameter name="events-items" type="select" group="Everyone" prompt="No. of Event Items" alt="Choose the number of items to display.">
+<option value="3" selected="true">3</option>
+<option value="4" selected="false">4</option>
+<option value="5" selected="false">5</option>
+<option value="6" selected="false">6</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Lake Tahoe Community College</title>
+		<meta name="Description" content="Lake Tahoe Community College Home Page" />
+		<meta name="Keywords" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="alert-banner" group="Everyone" button-text="Edit Alert Banner"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><table class="ou-homepage-alert-banner"><caption>Home Page Alert Banner</caption>
+<thead>
+<tr>
+<th>Heading</th>
+<th>Subheading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-name="heading">LTCC Closed Monday September 12</td>
+<td data-name="subheading">
+<p>LTCC&rsquo;s campus is closed today, Monday Sept. 12, to allow the college to continue to address internal air quality standards. Campus services will be available virtually &amp; staff will telecommute for the day. </p>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider" break="break"><ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>{{a:108594}}</ouc:div>
+	
+	<ouc:div label="hero-video" group="Everyone" button-text="Edit Video"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><table class="ou-homepage-hero-video"><caption>Home Page Hero Video</caption>
+<thead>
+<tr>
+<th>Video File (.mp4)</th>
+<th>Heading</th>
+<th>Caption</th>
+<th>Button Text</th>
+<th>Button Link</th>
+<th>Background Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-name="video-file"><video width="300" height="150" controls="controls">
+<source src="https://www.ltcc.edu/_resources/videos/homepagesummer2022.mp4" type="video/mp4" /></video></td>
+<td data-name="heading">SUMMER/FALL 2023 REGISTRATION IS OPEN</td>
+<td data-name="caption">
+<p><span>Meet with an academic counselor, pick out your classes, chart your course, and plan ahead. Registration for both Summer &amp; Fall quarters is open now!<br /></span></p>
+</td>
+<td data-name="button-text">Get Started</td>
+<td data-name="button-link"><a href="https://www.ltcc.edu/academics/fall.php">https://www.ltcc.edu/academics/fall.php</a>
+<p>&nbsp;</p>
+</td>
+<td data-name="background-image"><img src="https://www.ltcc.edu/_resources/images/home-hero-video-frame.jpg" alt="Lake Tahoe" width="1920" height="600" /></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+	
+	<ouc:div label="maincontent-1" group="Everyone" button-text="Edit Section 1"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><table class="ou-homepage-icon-links"><caption>Home Page Icon Links</caption>
+<thead>
+<tr>
+<th style="width: 75px;">Image</th>
+<th>Alt Text</th>
+<th>Title</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/clipboard-icon.svg" alt="Clipboard" width="2033" height="2710" /></td>
+<td data-name="alt-text">Clipboard icon</td>
+<td data-name="title">Apply</td>
+<td data-name="link"><a href="https://www.ltcc.edu/admissions/index.php">https://www.ltcc.edu/admissions/index.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/search-page-icon.svg" alt="Search icon" width="2033" height="1808" /></td>
+<td data-name="alt-text">Search icon</td>
+<td data-name="title">Find Classes</td>
+<td data-name="link"><a href="https://www.ltcc.edu/academics/scheduleofclasses.php">https://www.ltcc.edu/academics/scheduleofclasses.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/sign-icon.svg" alt="Sign icon" width="2033" height="2033" /></td>
+<td data-name="alt-text">Sign icon</td>
+<td data-name="title">Explore Programs &amp; Pathways</td>
+<td data-name="link"><a href="https://www.ltcc.edu/academics/academic_programs/index.php">https://www.ltcc.edu/academics/academic_programs/index.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/info-icon.svg" alt="Info icon" width="2033" height="2033" /></td>
+<td data-name="alt-text">Info icon</td>
+<td data-name="title">Get Information</td>
+<td data-name="link"><a href="https://www.ltcc.edu/about/">https://www.ltcc.edu//about/</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/hand-money-icon.svg" alt="Hand money icon" width="2033" height="1808" /></td>
+<td data-name="alt-text">Hand money icon</td>
+<td data-name="title">Financial Aid</td>
+<td data-name="link"><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">https://www.ltcc.edu/admissions/financial-aid/index.php</a></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+	
+	<ouc:div label="maincontent-2" group="Everyone" button-text="Edit Section 2"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><h2 class="text-center"><strong>I AM...</strong></h2>
+<table class="ou-homepage-student-types"><caption>Student Types</caption>
+<thead>
+<tr>
+<th style="width: 100px;">Image</th>
+<th>Alt Text</th>
+<th>Student Type</th>
+<th>Caption</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/i_am/iam_currentcoyote.jpg" alt="Student posing" width="1602" height="1936" /></td>
+<td data-name="alt-text">Student posing</td>
+<td data-name="student-type">A Current Coyote</td>
+<td data-name="caption">Resources and support to help you continue and complete your education</td>
+<td data-name="link"><a title="A Current Coyote" href="https://www.ltcc.edu/i_am/currentcoyote.php">https://www.ltcc.edu/i_am/currentcoyote.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/i_am/ltccbound_iamfuturecoyote.jpg" alt="Female Student" width="1181" height="1427" /></td>
+<td data-name="alt-text">Female posing&nbsp;</td>
+<td data-name="student-type">A Future Coyote</td>
+<td data-name="caption">Earn a degree or certificate, transfer, or take classes to build your skills</td>
+<td data-name="link"><a title="A Future Coyote" href="https://www.ltcc.edu/i_am/futurecoyote.php">https://www.ltcc.edu/i_am/futurecoyote.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/i_am/iam_freetuition.jpg" alt="Graduate" width="1602" height="1936" /></td>
+<td data-name="alt-text">Graduate</td>
+<td data-name="student-type">Interested in Free Tuition</td>
+<td data-name="caption">Explore the Lake Tahoe College Promise, Financial Aid programs, grants, scholarships, and more</td>
+<td data-name="link"><a title="Interested in Free Tuition" href="https://www.ltcc.edu/i_am/freetuition.php">https://www.ltcc.edu/i_am/freetuition.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/i_am/iam_onlinestudent.jpg" alt="Student on computer" width="1602" height="1936" /></td>
+<td data-name="alt-text">Student on laptop</td>
+<td data-name="student-type">An Online Student</td>
+<td data-name="caption">High-quality education offered virtually to accommodate busy schedules</td>
+<td data-name="link"><a title="An Online Student" href="https://www.ltcc.edu/i_am/onlinestudent.php">https://www.ltcc.edu/i_am/onlinestudent.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/i_am/iam_jobskills.jpg" alt="Culinary student" width="1602" height="1936" /></td>
+<td data-name="alt-text">Culinary student</td>
+<td data-name="student-type">Seeking Job Skills</td>
+<td data-name="caption">Take your current career to the next level, or launch an entirely new one</td>
+<td data-name="link"><a title="Seeking Job Skills" href="https://www.ltcc.edu/i_am/jobskills.php">https://www.ltcc.edu/i_am/jobskills.php</a></td>
+</tr>
+<tr>
+<td data-name="image"><img src="https://www.ltcc.edu/_resources/images/i_am/iam_communitymember.jpg" alt="Student Type 6" width="1602" height="1936" /></td>
+<td data-name="alt-text">Female smiling&nbsp;</td>
+<td data-name="student-type">A Community Member</td>
+<td data-name="caption">Explore the arts, athletics, cultural events, and non-credit classes</td>
+<td data-name="link"><a href="https://www.ltcc.edu/i_am/communitymember.php">A Community Member</a></td>
+</tr>
+</tbody>
+</table></ouc:div>
+	
+<ouc:div label="tagline" group="Everyone" button-text="Edit Tagline"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/></ouc:div>
+
+<ouc:div label="factoids" group="Everyone" button-text="Edit Factoids"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><table class="ou-homepage-factoids"><caption>Home Page Factoids</caption>
+<thead>
+<tr>
+<th>Statistic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-name="statistic">$275K</td>
+<td data-name="description">AWARDED IN STUDENT SCHOLARSHIPS IN 2023!</td>
+</tr>
+<tr>
+<td data-name="statistic">14</td>
+<td data-name="description">AVERAGE CLASS SIZE</td>
+</tr>
+<tr>
+<td data-name="statistic">1,000+</td>
+<td data-name="description">FREE TEXTBOOKS, CHROMEBOOKS, WIFI HOTSPOTS LOANED TO STUDENTS EACH YEAR!</td>
+</tr>
+</tbody>
+</table></ouc:div>	
+
+</document>

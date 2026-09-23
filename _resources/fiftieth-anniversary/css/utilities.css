@@ -1,0 +1,172 @@
+/* Utilities */
+
+/* Font Includes */
+@font-face {
+    font-family: 'Sullivan Bevel';
+    src: url('fonts/sullivan-bevel.woff2') format('woff2'),
+        url('fonts/sullivan-bevel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sullivan Reg';
+    src: url('fonts/sullivan-regular.woff2') format('woff2'),
+        url('fonts/sullivan-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sullivan Fill';
+    src: url('fonts/sullivan-fill.woff2') format('woff2'),
+        url('fonts/sullivan-fill.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Color Vars */
+:root {
+	--ltcc-black: #232020;
+	--ltcc-blue: #003E51;
+	--ltcc-dark-blue: #003043;
+	--ltcc-light-blue: #00A3E0;
+	--ltcc-dark-green: #00433E;
+	--ltcc-green: #007A33;
+	--ltcc-white: #ffffff;
+	--ltcc-light-gray: #B8C5CA;
+	--ltcc-medium-gray: #718B96;
+	--ltcc-gray: #547481;
+}
+
+/* Border Radius */
+:root {
+	--bs-border-radius: .5rem;
+	--bs-border-radius-sm: .375rem;
+}
+
+/* Images */
+@supports (mix-blend-mode: lighten) {
+  .lighten-effect {
+    mix-blend-mode: lighten;
+  }
+}
+
+@supports not (mix-blend-mode: lighten) {
+  .lighten-effect {
+    visibility: hidden;
+	opacity: 0;
+  }
+}
+
+/* Fonts Vars */
+:root {
+	--ltcc-avant: "itc-avant-garde-gothic-pro", sans-serif;
+	--ltcc-sullivan: "Sullivan Fill", sans-serif;
+}
+
+.font-avant {
+	font-family: var(--ltcc-avant) !important;
+}
+.font-sullivan {
+	font-family: var(--ltcc-sullivan) !important;
+}
+
+/* Color Classes */
+.bg-blue {
+	background-color: var(--ltcc-blue);
+}
+.bg-black {
+	background-color: var(--ltcc-black);
+}
+.bg-dark-blue {
+	background-color: var(--ltcc-dark-blue);
+}
+.bg-light-blue {
+	background-color: var(--ltcc-light-blue);
+}
+.bg-green {
+	background-color: var(--ltcc-green);
+}
+.bg-dark-green {
+	background-color: var(--ltcc-dark-green);
+}
+.bg-light-gray {
+	background-color: var(--ltcc-light-gray);
+}
+.bg-medium-gray {
+	background-color: var(--ltcc-medium-gray);
+}
+.bg-gray {
+	background-color: var(--ltcc-gray);
+}
+.bg-green-tree,
+.bg-blue-tree {
+	position: relative;
+}
+.bg-green-tree {
+	background: rgba(0, 122, 51, 0.6);
+}
+.bg-blue-tree {
+	background: rgba(0, 163, 224, 0.6);
+}
+.bg-green-tree:before,
+.bg-blue-tree:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: .375rem;
+	background-image: url({{f:72189182}});
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity: 0.20;
+	z-index: 0;
+}
+.text-blue {
+	color: var(--ltcc-blue);
+}
+.text-white,
+.ltcc-text-white {
+	color: var(--ltcc-white);
+}
+.text-light-blue {
+	color: var(--ltcc-light-blue);
+}
+.text-light-gray {
+	color: var(--ltcc-light-gray);
+}
+.text-black {
+	color: var(--ltcc-black);
+}
+.text-green {
+	color: var(--ltcc-green);
+}
+
+/* Other */
+.ltcc-rounded {
+	border-radius: .75rem;
+}
+.ltcc-rounded-sm {
+	border-radius: .375rem;
+}
+.shadow {
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+/* Scroll Reveal Utility */
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+/* Modal transition */
+/* Smooth fade without slide */
+.modal.fade .modal-dialog {
+	transition: all 0.5s ease;
+}

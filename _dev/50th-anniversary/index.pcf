@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/fiftieth-anniversary.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>fiftieth-anniversary.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">50th Anniversary</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">50th Anniversary</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+		<parameter name="page-id" type="text" group="Everyone" prompt="Unique Page ID" alt="Will apply a unique ID to the wrapping div of the page.">lt50-homepage</parameter>
+		<parameter section="Header" name="mkt-header" type="select" group="Everyone" prompt="Which header do you want to use for this page?">
+<option value="fiftieth-header" selected="true">50th Anniversary Header</option>
+<option value="global-header" selected="false">Global Header</option>
+</parameter>
+
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>50th Anniversary</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-homepage-top</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32428 5 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"4rem"}}]]~ 
+<br />
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">align-items-center my-special-class</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-5</td>
+<td class="content">
+~[com[32436 3 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"1px 1px 2px rgba(0,0,0,0.25)","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"200","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h1","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"A GOLDEN\nLEGACY","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+~[com[32436 4 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"1px 1px 2px rgba(0,0,0,0.25)","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"400","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"span","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"Celebrating","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+~[com[32436 22 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"1px 1px 2px rgba(0,0,0,0.25)","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"400","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"span","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"50 Years of","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+<div>
+~[com[32436 23 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"1px 1px 2px rgba(0,0,0,0.25)","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"400","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"span","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"Excellence","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+</div>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-1</td>
+<td class="content">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-sm-6 col-lg-3</td>
+<td class="content">
+<div>
+~[com[32642 34 8{ "version": 8, "data": {"1808a06818d989ac8e5a149baa774eb4":"fa-arrow-down","5ef17268e686ec29f851d3ec2ed89c33":"Join the Celebration","13dabda7fb8451d092d94d28d9bd2a00":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","01327b8a7cd4bbeb0e37ba8998e8b88c":"","877212806b8149f2c28573516c2b5d19":"View Events","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","faec5be594cd5ee3d3e5335f4047a20b":"#ltcc-fifty-events","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade-up","585d330e804fb4ad887d16e119cc2756":"{{f:72207084}}","4755a6de4e1f95140f23fcab77a41daa":""}}]]~ 
+</div>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-sm-6 col-lg-3</td>
+<td class="content">
+<div>
+~[com[32642 35 8{ "version": 8, "data": {"1808a06818d989ac8e5a149baa774eb4":"fa-arrow-right","5ef17268e686ec29f851d3ec2ed89c33":"Influentials &amp;amp; Alumni","13dabda7fb8451d092d94d28d9bd2a00":"250","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","01327b8a7cd4bbeb0e37ba8998e8b88c":"","877212806b8149f2c28573516c2b5d19":"View the Nominees","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","faec5be594cd5ee3d3e5335f4047a20b":"{{f:72944875}}","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade-up","585d330e804fb4ad887d16e119cc2756":"{{f:72207085}}","4755a6de4e1f95140f23fcab77a41daa":""}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-8</td>
+<td class="content">
+~[com[32436 1 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"1.5rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.4","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"p","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"4rem 0 3rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"ltcc-no-animation","4f3012c158efe61318815fcbf393fc28":"From humble beginnings in a converted motel with a graduating class of 11 students to a 164-acre thriving educational hub with thousands of students, Lake Tahoe Community College is a beacon of opportunity, a vital educational institution, and a cornerstone of the community, all thanks to the unwavering support of the South Lake Tahoe community. ","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-4</td>
+<td class="content"><br />
+~[com[32577 2 9{ "version": 9, "data": {"d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"ltcc-fifty-old-photo","ab676eb71a7439fb3e5d281054db3f71":"","01327b8a7cd4bbeb0e37ba8998e8b88c":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","23dddbe6cfdf197cfbfd802566deeac1":"Photo of the original LTCC Campus","37421b24ace5dec1df5cd8e04a68dc10":"","9d33f81a60e93582407ba758e2c57b4c":"{{f:72165040}}","2df411215a2c308f341175a26fc2abda":"","88a409ee600e40e2b4b4b7b6e56d3b8f":"rounded-1"}}]]~ 
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-homepage-top-bottom bg-dark-blue</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-1</td>
+<td class="content">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-6 col-lg-5</td>
+<td class="content">
+~[com[32577 7 9{ "version": 9, "data": {"d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"ltcc-fifty-top-bottom-lab","ab676eb71a7439fb3e5d281054db3f71":"250","01327b8a7cd4bbeb0e37ba8998e8b88c":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","23dddbe6cfdf197cfbfd802566deeac1":"Students in a lab at LTCC","37421b24ace5dec1df5cd8e04a68dc10":"","9d33f81a60e93582407ba758e2c57b4c":"{{f:72165042}}","2df411215a2c308f341175a26fc2abda":"","88a409ee600e40e2b4b4b7b6e56d3b8f":"rounded-1"}}]]~ 
+
+~[com[32428 8 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"1.5rem"}}]]~ 
+
+~[com[32577 9 9{ "version": 9, "data": {"d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"ltcc-fifty-top-bottom-students","ab676eb71a7439fb3e5d281054db3f71":"500","01327b8a7cd4bbeb0e37ba8998e8b88c":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","23dddbe6cfdf197cfbfd802566deeac1":"Students standing together at the LTCC campus","37421b24ace5dec1df5cd8e04a68dc10":"","9d33f81a60e93582407ba758e2c57b4c":"{{f:72165039}}","2df411215a2c308f341175a26fc2abda":"","88a409ee600e40e2b4b4b7b6e56d3b8f":"rounded-1"}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-6 col-lg-4</td>
+<td class="content">
+~[com[32428 10 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"1.5rem"}}]]~ 
+
+~[com[32577 6 9{ "version": 9, "data": {"d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"ltcc-fifty-top-bottom-graduation","ab676eb71a7439fb3e5d281054db3f71":"750","01327b8a7cd4bbeb0e37ba8998e8b88c":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","23dddbe6cfdf197cfbfd802566deeac1":"Two people hugging at graduation.","37421b24ace5dec1df5cd8e04a68dc10":"","9d33f81a60e93582407ba758e2c57b4c":"{{f:72165041}}","2df411215a2c308f341175a26fc2abda":"","88a409ee600e40e2b4b4b7b6e56d3b8f":"rounded-1"}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-2</td>
+<td class="content">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+
+~[com[32436 11 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"1rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h2","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"5rem 0 1rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"load-hidden ltcc-fade-in","4f3012c158efe61318815fcbf393fc28":"By The Numbers","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-3 col-md-6</td>
+<td class="content">
+~[com[32443 12 19{ "version": 19, "data": {"e69483f03f857c9b83cc368b9edd6eb3":"var(--ltcc-blue)","38cfe49c3bc4b14302d176f82447027c":"1rem","1dddd130db6c70b601d287c2f680b1d7":"700","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"span","d7c230b92ac51dd9263d9827cb4f63f6":"","0424526e74ae75e1847f928ef26349dd":"","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":"","7773a65a2e6b9a5ccbf132b52459c6a0":"","bb02ac4a629a2fe1c8bab08e13347ac2":"normal","16b79e543363c8d1cc33bfb626ed9815":"1.1","62c6d080030b0753af73198842c7db21":"","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","b18b2bcd865e42addd869dc6149065ce":"First graduating class","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1","5525a00a996d25a3f7dd2c454003f379":"normal","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","cefb64e289758a538534753741330e7d":"","8653210f36817be0096e0a81bae3b786":"var(--ltcc-white)","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"1975","6b4ec1830db81f50597adef7c18c0a32":"500","92ab631918c861f2483b093dce3b6c05":"none"}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-3 col-md-6</td>
+<td class="content">
+~[com[32443 13 19{ "version": 19, "data": {"e69483f03f857c9b83cc368b9edd6eb3":"var(--ltcc-blue)","38cfe49c3bc4b14302d176f82447027c":"1rem","1dddd130db6c70b601d287c2f680b1d7":"700","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"span","d7c230b92ac51dd9263d9827cb4f63f6":"","0424526e74ae75e1847f928ef26349dd":"","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":"","7773a65a2e6b9a5ccbf132b52459c6a0":"","bb02ac4a629a2fe1c8bab08e13347ac2":"normal","16b79e543363c8d1cc33bfb626ed9815":"1.1","62c6d080030b0753af73198842c7db21":"250","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","b18b2bcd865e42addd869dc6149065ce":"Students over 50 years","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1","5525a00a996d25a3f7dd2c454003f379":"normal","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","cefb64e289758a538534753741330e7d":"","8653210f36817be0096e0a81bae3b786":"var(--ltcc-white)","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"120k","6b4ec1830db81f50597adef7c18c0a32":"300","92ab631918c861f2483b093dce3b6c05":"none"}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-3 col-md-6</td>
+<td class="content">
+~[com[32443 14 19{ "version": 19, "data": {"e69483f03f857c9b83cc368b9edd6eb3":"var(--ltcc-blue)","38cfe49c3bc4b14302d176f82447027c":"1rem","1dddd130db6c70b601d287c2f680b1d7":"700","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"span","d7c230b92ac51dd9263d9827cb4f63f6":"","0424526e74ae75e1847f928ef26349dd":"","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":"","7773a65a2e6b9a5ccbf132b52459c6a0":"","bb02ac4a629a2fe1c8bab08e13347ac2":"normal","16b79e543363c8d1cc33bfb626ed9815":"1.1","62c6d080030b0753af73198842c7db21":"500","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","b18b2bcd865e42addd869dc6149065ce":"Graduates","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1","5525a00a996d25a3f7dd2c454003f379":"normal","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","cefb64e289758a538534753741330e7d":"","8653210f36817be0096e0a81bae3b786":"var(--ltcc-white)","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"4,300","6b4ec1830db81f50597adef7c18c0a32":"300","92ab631918c861f2483b093dce3b6c05":"none"}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-3 col-md-6</td>
+<td class="content">
+~[com[32443 15 19{ "version": 19, "data": {"e69483f03f857c9b83cc368b9edd6eb3":"var(--ltcc-blue)","38cfe49c3bc4b14302d176f82447027c":"1rem","1dddd130db6c70b601d287c2f680b1d7":"700","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"span","d7c230b92ac51dd9263d9827cb4f63f6":"","0424526e74ae75e1847f928ef26349dd":"","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":"","7773a65a2e6b9a5ccbf132b52459c6a0":"","bb02ac4a629a2fe1c8bab08e13347ac2":"normal","16b79e543363c8d1cc33bfb626ed9815":"1.1","62c6d080030b0753af73198842c7db21":"750","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","b18b2bcd865e42addd869dc6149065ce":"in Scholarships awarded to date","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1","5525a00a996d25a3f7dd2c454003f379":"normal","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","cefb64e289758a538534753741330e7d":"","8653210f36817be0096e0a81bae3b786":"var(--ltcc-white)","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"$2.5M","6b4ec1830db81f50597adef7c18c0a32":"300","92ab631918c861f2483b093dce3b6c05":"none"}}]]~ 
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">bg-dark-blue</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32428 16 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"6rem"}}]]~ 
+
+<div>
+~[com[32647 43 2{ "version": 2, "data": {"e1d24ff93b92137e58aac313433f6738":"ltcc-fifty-events"}}]]~ 
+</div>
+
+~[com[32436 17 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h2","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"A Toast to 50 Years","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+~[com[32436 18 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"1.5rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.4","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"p","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"ltcc-no-animation","4f3012c158efe61318815fcbf393fc28":"Throughout the year, LTCC will host a variety of 50th-anniversary events both on campus and throughout the community. Join us as we celebrate this momentous achievement.","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+<br />
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-12</td>
+<td class="content">
+<div>
+~[com[39658 19 1{ "version": 1, "data": {"13b0ddc3c56ac8f05121f0653357c57a":"&lt;div class=\&quot;ratio ratio-16x9\&quot;&gt;\n\t&lt;iframe width=\&quot;560\&quot; height=\&quot;315\&quot; src=\&quot;https://www.youtube.com/embed/fR2PipyK5pg?si=wClYRzvMaB0GzOLi\&quot; title=\&quot;YouTube video player\&quot; frameborder=\&quot;0\&quot; allow=\&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\&quot; referrerpolicy=\&quot;strict-origin-when-cross-origin\&quot; allowfullscreen=\&quot;true\&quot;&gt;&lt;/iframe&gt;\n&lt;/div&gt;"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-quote bg-dark-blue</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<div>
+~[com[32428 20 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"6rem"}}]]~ 
+</div>
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">align-items-center</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-6 order-1</td>
+<td class="content">
+<div>
+~[com[32436 25 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h2","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"4rem 0 2rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"none","4f3012c158efe61318815fcbf393fc28":"A Message from the President","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+</div>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-8 order-3 order-lg-2</td>
+<td class="content">
+<div>
+~[com[32634 26 2{ "version": 2, "data": {"d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","01327b8a7cd4bbeb0e37ba8998e8b88c":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","c2de3bc282f81e43de506b9adbfbb657":"Celebrating 50 years of Lake Tahoe Community College means honoring the visionaries who believed in this institution and the community that built it from the ground up. From our start in a converted motel to becoming a hub of innovation and access, LTCC has always been defined by resilience and forward momentum. As we look to the future&amp;mdash;with our first on-campus residence halls opening soon&amp;mdash;we remain committed to serving our students and this region with the same bold spirit that started it all.","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","9058ea3198b27b47e45987d02d3332cc":"Superintendent/President","13dabda7fb8451d092d94d28d9bd2a00":"","4df41b4c7b24c49a5b522600fee57e09":"Jeff DeFranco","4755a6de4e1f95140f23fcab77a41daa":""}}]]~ 
+</div>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">
+<p>col-lg-4</p>
+<p>order-2 order-lg-3</p>
+</td>
+<td class="content">
+<div>
+~[com[32577 24 9{ "version": 9, "data": {"d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","ab676eb71a7439fb3e5d281054db3f71":"","01327b8a7cd4bbeb0e37ba8998e8b88c":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"0 0 1.5rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","23dddbe6cfdf197cfbfd802566deeac1":"President Jeff DeFranco","37421b24ace5dec1df5cd8e04a68dc10":"","9d33f81a60e93582407ba758e2c57b4c":"{{f:72201513}}","2df411215a2c308f341175a26fc2abda":"","88a409ee600e40e2b4b4b7b6e56d3b8f":"rounded-1"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<div>
+~[com[32428 27 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"6rem"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<div>
+~[com[32647 49 2{ "version": 2, "data": {"e1d24ff93b92137e58aac313433f6738":"profiles"}}]]~ 
+</div>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-mask-bg</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-mask bg-dark-blue</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32428 28 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"2rem"}}]]~ 
+
+~[com[32436 29 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h2","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"ltcc-fifty-mask-text","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"none","4f3012c158efe61318815fcbf393fc28":"Paving the Way for LTCC&amp;#39;s Future","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+<div>
+~[com[32428 30 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"2rem"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<div>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-profiles</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-7</td>
+<td class="content">
+~[com[32436 31 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"1.5rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.4","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"p","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"0 0 2rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"none","4f3012c158efe61318815fcbf393fc28":"Lake Tahoe Community College celebrates its 50th anniversary by honoring the individuals who have shaped its legacy and its most distinguished alumni.","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-5</td>
+<td class="content">
+~[com[32572 32 3{ "version": 3, "data": {"8511018e3e90d1c3f4e63506cc5f1c6e":"https://www.ltcc.edu/_dev/50th-anniversary/alumni-and-influentials.php#influential","756a172afa12c7bad60b80d67bcf2bf6":"Influentials Profiles","3cbd6c19069f7ce0eb8a87b61e7cad63":"ltcc-button-show-arrow","a8c1c9a18435c1a61438f50241f1a9f1":"ltcc-button-blue","90beb344340218c7d11f962bdd1d18ea":[{"299affe9bc562e80d72ce05be117a3bb":"ltcc-button-green","71d53a436b3b9bb821c77b40d731ea6f":"ltcc-button-show-arrow","01f6245b18995bba3d2221e58d7843fd":"https://www.ltcc.edu/_dev/50th-anniversary/alumni-and-influentials.php#alumni","541130b4344af8f366a15d8a605cf610":"Alumni Proflies"}]}}]]~ 
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+
+~[com[33954 47 14{ "version": 14, "data": {"8c82936e6cc31079c07c961b84a02977":"{{f:72944140}}","c7705994156379f818e656255f24439a":"carousel"}}]]~ 
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+
+~[com[32428 33 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"8rem"}}]]~ 
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">bg-dark-blue</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<div>
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32647 46 2{ "version": 2, "data": {"e1d24ff93b92137e58aac313433f6738":"history"}}]]~ 
+
+~[com[32436 36 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h2","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"A Pillar of the Community","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32645 37 5{ "version": 5, "data": {"b3b43a37820a4bea75d3e457a66f14c2":[{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72208798}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72208797}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72208794}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72208796}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256555}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72208793}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256556}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72208795}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256558}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256557}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256561}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256560}}"},{"e9ab4723cdf025e67bc93ebc9c884ff9":"{{f:72256559}}"}]}}]]~ 
+
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+~[com[32436 38 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"1.5rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.4","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"p","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"4rem 0 2rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"none","4f3012c158efe61318815fcbf393fc28":"Lake Tahoe Community College’s journey began with a bold vision to bring higher education to South Lake Tahoe. From its early days in a converted motel to the establishment of a permanent campus, LTCC has grown and evolved through decades of dedication, leadership, and community support, shaping the future of education in the region.","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+<p>
+~[com[32572 39 3{ "version": 3, "data": {"90beb344340218c7d11f962bdd1d18ea":[{"299affe9bc562e80d72ce05be117a3bb":"ltcc-button-green","71d53a436b3b9bb821c77b40d731ea6f":"ltcc-button-show-arrow","01f6245b18995bba3d2221e58d7843fd":"https://www.ltcc.edu/about/collegehistory.php","541130b4344af8f366a15d8a605cf610":"Explore LTCC&amp;#39;s History"}]}}]]~ 
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</div>
+<div>
+~[com[32428 40 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"4rem"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<table class="ou-snippet" data-snippet="ltcc-section"><caption>LTCC Section</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">ltcc-fifty-sign-up</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Background Shorthand<br /><small>Use CSS shorthand for background. Optional.</small></th>
+<th class="background-shorthand" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-container"><caption>LTCC Container</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="content" colspan="2">
+<table class="ou-snippet" data-snippet="ltcc-columns"><caption>LTCC Columns -- each row is a "column"</caption>
+<thead>
+<tr>
+<th data-ou-edit="disabled">Class<br /><small>Optional, added to the "row"</small></th>
+<th class="custom-class" data-ou-edit="setting">&nbsp;</th>
+</tr>
+<tr>
+<th data-ou-edit="disabled">Class (e.g. 'col-lg-4')</th>
+<th data-ou-edit="disabled">Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-3</td>
+<td class="content">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-6</td>
+<td class="content">
+<div>
+~[com[32647 45 2{ "version": 2, "data": {"e1d24ff93b92137e58aac313433f6738":"stay-in-touch"}}]]~ 
+</div>
+
+~[com[32436 41 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"4.375rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-light-gray)","4fc7166e8908d02884ac0cdb847966bb":"1.1","1dddd130db6c70b601d287c2f680b1d7":"700","5525a00a996d25a3f7dd2c454003f379":"-5%","49314b4e8bf202aac3ce21cc09f24a5d":"uppercase","546e4e458320654c6ebe223300e85dec":"h2","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"0 0 2rem 0","5d5573bd5ca96dcca3aa3b9a27a88b55":"fade","4f3012c158efe61318815fcbf393fc28":"Stay in Touch","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+~[com[32436 42 15{ "version": 15, "data": {"d0f15758f408a55d818113aca5c19aa9":"none","39f98d24d483fee858e9afd06c9ad4b8":"1.5rem","df89bdf202e5c827631bc707bef7f04f":"","85252652bd3c0c88d7525e3527d19fdf":"var(--ltcc-white)","4fc7166e8908d02884ac0cdb847966bb":"1.4","1dddd130db6c70b601d287c2f680b1d7":"500","5525a00a996d25a3f7dd2c454003f379":"normal","49314b4e8bf202aac3ce21cc09f24a5d":"none","546e4e458320654c6ebe223300e85dec":"p","577995c82ff1771e0e9f5727b89227a2":"","d7c230b92ac51dd9263d9827cb4f63f6":"","9923860c2118b9eac3a5cfbd6f06f096":"","a88fc646ff5ba2e82b70544d92b2db15":"d-block","1eaf27627d782ce89ebb0744b041c840":"","5d5573bd5ca96dcca3aa3b9a27a88b55":"none","4f3012c158efe61318815fcbf393fc28":"Please share your contact information below to receive updates about our 50th Anniversary events and celebrations.","d3bc9ee8bd8ee10bbf9bfe9cc7c5db56":""}}]]~ 
+
+<div>{{a:383751}}</div>
+</td>
+</tr>
+<tr>
+<td class="class" data-ou-edit="setting">col-lg-3</td>
+<td class="content">
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+<div>
+~[com[32428 44 4{ "version": 4, "data": {"7bfeef4c742b569086a2f65743285218":"3rem"}}]]~ 
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer"><i class="fa fa-info">&nbsp;</i> Press ENTER to add more content. This will not be displayed on publish.</h6></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>
