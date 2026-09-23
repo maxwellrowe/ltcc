@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">  </parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Typical Day &amp; Schedule</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>A Typical Day at ISSI | Lake Tahoe Community College</title>
+		<meta name="Description" content="Get a glimpse of a typical day at LTCC’s Intensive Spanish Summer Institute. From immersive language classes to cultural activities, see how each day is structured for dynamic learning and engagement." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><!-- A Typical Day at ISSI -->
+<div style="padding: 2rem 1rem;">
+<h2 style="text-align: left; color: #004b87; margin-bottom: 1rem;">Typical Day &amp; Schedule</h2>
+<p>Student Institute Schedules for Beginner - Intermediate and High Intermediate - High Superior Levels</p>
+<p>If you have any questions, please email us at <a href="mailto:issi@ltcc.edu">issi@ltcc.edu</a>.</p>
+<hr /><!-- Beginner - Intermediate Schedule -->
+<h3 style="color: #004b87; margin-top: 1.5rem;">Daily View: ISSI Low-Tier Courses (SPA 121A-122CA)</h3>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc; text-align: left;">
+<thead>
+<tr>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Time</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Course</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">8:00 AM - 8:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Conversation (Intermediate II and II) or Warm-Up (all other low-tier levels)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">9:00 AM - 9:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">10:00 AM - 10:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">10:50 AM - 12:30 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;"><strong>LUNCH BREAK</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">12:30 PM - 1:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">
+<p>Monday: Grammar Instruction</p>
+<p>Tuesday through Friday: Breakouts (different ones every day!)</p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">1:30 PM - 2:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">
+<p>Monday: Grammar Instruction</p>
+<p>Tuesday through Friday: Breakouts (different ones every day!)</p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">2:30 PM - 3:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Monday through Thursday: Series (the same theme spread over 4 days!)<br />Friday: Fiesta</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">3:40 PM - 4:55 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Monday through Thursday: Optional Mini-Courses <br />Friday: Fiesta (Faculty have other responsibilities)</td>
+</tr>
+</tbody>
+</table>
+<!-- High Intermediate - High Superior Schedule -->
+<h3 style="color: #004b87; margin-top: 2rem;">Daily View: ISSI High-Tier Courses (SPA 122D-124F)</h3>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc; text-align: left;">
+<thead>
+<tr>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Time</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Course</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">8:00 AM - 8:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Small Group Conversation</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">9:00 AM - 9:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">10:00 AM - 10:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">11:00 AM - 11:50 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">11:50 AM - 1:30 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;"><strong>LUNCH BREAK</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">1:30 PM - 2:30 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">
+<p>Monday: Grammar Instruction</p>
+<p>Tuesday through Friday: Breakouts (different ones every day!)</p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">1:30 PM - 2:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">
+<p>Monday: Grammar Instruction</p>
+<p>Tuesday through Friday: Breakouts (different ones every day!)</p>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">2:30 PM - 3:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Monday through Thursday: Series (the same theme spread over 4 days!)<br />Friday: Fiesta</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">3:40 PM - 4:55 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Monday through Thursday: Optional Mini-Courses <br />Friday: Fiesta (Faculty have other responsibilities)</td>
+</tr>
+</tbody>
+</table>
+<!-- Low Intermediate - Low Advanced Schedule -->
+<h3 style="color: #004b87; margin-top: 2rem;">Weekly View: ISSI Low-Tier Courses (SPA 121A&ndash;122CA)</h3>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc; text-align: left;">
+<thead>
+<tr>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Time</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Monday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Tuesday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Wednesday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Thursday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">8:00 AM - 8:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Conversation (Intermediate II and II) or Warm-Up (all other low-tier levels)</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Conversation (Intermediate II and II) or Warm-Up (all other low-tier levels)</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Conversation (Intermediate II and II) or Warm-Up (all other low-tier levels)</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Conversation (Intermediate II and II) or Warm-Up (all other low-tier levels)</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Conversation (Intermediate II and II) or Warm-Up (all other low-tier levels)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">9:00 AM - 9:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Summary</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">10:00 AM - 10:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Summary</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">10:50 AM - 12:30 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px; text-align: center;" colspan="5"><strong>Lunch Break</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">12:30 PM - 1:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">1:30 PM - 2:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">2:30 PM - 3:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Fiesta</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">3:40 PM - 4:55 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Fiesta <br />(Faculty have other responsibilities)</td>
+</tr>
+</tbody>
+</table>
+<!-- High Intermediate - High Superior Schedule -->
+<h3 style="color: #004b87; margin-top: 2rem;">Weekly View: ISSI High-Tier Courses (SPA 122D&ndash;124F)</h3>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc; text-align: left;">
+<thead>
+<tr>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Time</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Monday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Tuesday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Wednesday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Thursday</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: center;">Friday</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">8:00 AM - 8:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Small Group Conversation</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Small Group Conversation</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Small Group Conversation</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Small Group Conversation</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Small Group Conversation</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">9:00 AM - 9:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Summary</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">10:00 AM - 10:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Summary</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">11:00 AM - 11:50 AM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">11:50 AM - 1:30 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px; text-align: center;" colspan="5"><strong>Lunch Break</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">1:30 PM - 2:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Grammar Instruction</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Breakouts</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">2:30 PM - 3:20 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Series</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Fiesta</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px;">3:40 PM - 4:55 PM</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Optional Mini-Courses</td>
+<td style="border: 1px solid #ccc; padding: 8px;">Fiesta<br />(Faculty have other responsibilities)</td>
+</tr>
+</tbody>
+</table>
+</div></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+									Quick Links
+	<ul>	<li>	<a href="https://idp.ltcc.edu/idp/Authn/UserPassword" target="_blankhttps://idp.ltcc.edu/idp/Authn/UserPassword">Passport</a>
+</li>
+<li>	<a href="http://ltcc.edu/web/new-students/apply" target="_blankhttp://ltcc.edu/web/new-students/apply">New Student</a>
+</li>
+<li>	<a href="http://ltcc.edu/web/academics/faculty" target="_blankhttp://ltcc.edu/web/academics/faculty">Meet the Faculty</a>
+</li>
+<li>	<a href="http://ltcc.edu/web/new-students/registration-information" target="_blank">Register</a>
+</li>
+<li>	<a href="http://ltcc.edu/web/academics/catalog" target="_blank">View the 2014-15 Catalog</a>
+</li>
+<li>	<a href="https://www.facebook.com/ISSISpanishInstitute" target="_blank">"Like" Us On Facebook!</a>
+</li>
+</ul>
+
+
+<p>	 </p>	
+
+
+
+
+					
+Contact ISSI
+<ul> <ul> <li>
+<strong>Location:</strong> Room E102 in the Main Building </li>
+<li>
+<strong>Phone: </strong>(530) 541-4660</li>
+<li>
+<strong>Extension: </strong>522</li>
+<li>
+<strong>Email: <br /> </strong><a href="mailto:issi@ltcc.edu">issi@ltcc.edu</a>
+</li>
+</ul>
+</ul>
+
+
+
+
+
+
+
+
+	</ouc:div>
+  	
+</document>

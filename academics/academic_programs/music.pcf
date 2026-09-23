@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Music</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Music Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Study music at LTCC through courses in performance, theory, and appreciation. Build your musical skills while preparing for transfer or creative careers in the arts." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Music</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/music_header.jpg" alt="Music" width="1775" height="1189" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><a title="Link to Business Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_business.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/business-hospitality-leadership-white-back.jpg" alt="Business Meta Major Icon" width="277" height="274" /></a></p>
+<p>The Music program at Lake Tahoe Community College is committed to providing quality music instruction to meet the needs of its students.&nbsp;</p>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;">
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/musicclassphoto.jpg" alt="Music Class" width="1607" height="1077" /></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 12pt;">Certificate of Achievement</span></p>
+</td>
+<td>
+<p><strong>MUSIC</strong></p>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-b861-7664-92c8-ae2ad83b3140/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 12pt;">Related Majors</span></p>
+</td>
+<td>
+<p>See related degrees and certificates in <a title="Arts, Languages, &amp; Humanities Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_business.php">Business, Hospitality, &amp; Leadership Meta Major &rarr;</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 12pt;">Financial Aid &amp; Scholarships</span></p>
+</td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a title="STUDENT SCHOLARSHIPS" href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php" target="_blank" rel="noopener">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left;">
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">music</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/marksq.png" alt="Mark Williams" width="151" height="150" /></td>
+<td>Dr. Mark Williams</td>
+<td>Music Department Chair</td>
+<td>williams@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5><img src="https://www.ltcc.edu/_resources/images/optimized/music/markwilliams.jpg" alt="Mark Williams, Music Faculty" width="400" height="316" /></h5>
+<pre><span style="font-size: 12pt;"><strong><span style="font-family: helvetica,arial,sans-serif;"><a href="http://www.singingvoice.net/">Mark D. Williams, D.M.A.</a></span></strong></span></pre>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Music Department Chair<br /></span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">(530) 541-4660 x<strong>&nbsp;</strong>382</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:williams@ltcc.edu">williams@ltcc.edu</a></span></div>
+<div><span style="font-family: helvetica,arial,sans-serif; font-size: 12pt;"><br /><span style="font-size: 10pt;">Credentials: </span></span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">B.A. Luther College, Decorah, Iowa</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">M.A. University of Iowa</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">D.M.A. University of Illinois at <br />Urbana-Champaign</span></div>
+<div>&nbsp;<span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><br /></span></span><hr /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"></span><span style="font-size: 14pt;"><span style="font-family: helvetica, arial, sans-serif;">Adjunct Faculty</span></span></div>
+<div>&nbsp;</div>
+<div><strong><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;"><a href="http://drumchik.com/">Liz Broscoe</a></span></strong></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Drumset, Hand Drumming</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:eabroscoe@mail.ltcc.edu">eabroscoe@mail.ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><strong><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Roger Collins</span></strong></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Guitar</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:recollins@mail.ltcc.edu">recollins@mail.ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><strong><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Eric Hellberg</span></strong></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Rock Ensemble, Basic Recording</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:hellberg1@ltcc.edu">hellberg1@ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><a href="http://renojazzpiano.virb.com/"><strong><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Tristan Selzler</span></strong></a></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Piano</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:tselzler@mail.ltcc.edu">tselzler@mail.ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><strong><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;">Jeffrey Tilley, Ph.D.</span></strong></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">College Chorus</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:jtilley@mail.ltcc.edu">jtilley@mail.ltcc.edu</a></span></div>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

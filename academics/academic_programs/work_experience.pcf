@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Work Experience</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Work-Based Learning &amp; Experience | Lake Tahoe Community College</title>
+		<meta name="Description" content="Gain real-world experience with LTCC’s Work-Based Learning program. Apply classroom knowledge in professional settings, develop career skills, and receive faculty-supported, hands-on training to enhance your career readiness." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Work Experience</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/workexperienceheader.jpg" alt="Work Experience" width="2000" height="1341" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p>Work-based learning (WBL) allows you to apply classroom content in professional settings while gaining real-world experience. It spans a continuum of experiences - from career awareness to training - that allow you to apply classroom content in professional settings while gaining real-world experience and demonstrating competencies to your employer. Faculty and staff at Lake Tahoe Community College ensure these hands-on experiences are supported by classroom learning. You may cycle back through the continuum many times throughout college and your career.</p>
+<p>During the Work Experience courses, you will create goals, complete assignments to improve professional skills, reflect on your skills and abilities, and have your skills and abilities evaluated by your worksite supervisor.&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/workexperience.jpeg" alt="Work Experience" width="1125" height="805" /></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion3</td>
+</tr>
+<tr>
+<td>Courses</td>
+<td>
+<table class="ou_accordion_2">
+<tbody>
+<tr>
+<td>
+<p style="text-align: left;"><span style="font-size: 18px;">For students who are already getting paid to work a job, the Work Experience program at Lake Tahoe Community College offers the ability to earn academic credits for hours worked. This is an academic program with deadlines, assignments, measurable worksite objectives, and an interview-based written assignment.</span></p>
+<p style="text-align: left;"><span style="font-size: 18px;">The Work Experience program fosters professional growth. Students are encouraged to:</span></p>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li>Identify challenging objectives on the job</li>
+<li>Improve work relationships</li>
+<li>Increase their&nbsp;visibility</li>
+<li>Extend knowledge gained in the classroom to the workplace</li>
+<li>Utilize professional work habits</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>Academic Units</td>
+<td>
+<p><span style="font-size: 18px;">The following academic units earned outline the hours worked:</span></p>
+<p><span style="font-size: 18px;">The minimum number of hours a student must work within the quarter is 50 hours (this earns 1 academic credit). If the minimum hours are not accomplished, the student will earn a failing grade.</span></p>
+<p><span style="font-size: 14px;">50 hours per quarter&nbsp;&nbsp; = 1 unit</span><br /><span style="font-size: 14px;">100 hours per quarter = 2 units</span><br /><span style="font-size: 14px;">150 hours per quarter = 3 units</span><br /><span style="font-size: 14px;">200 hours per quarter = 4 units</span><br /><span style="font-size: 14px;">250 hours per quarter = 5 units</span><br /><span style="font-size: 14px;">300 hours per quarter = 6 units</span></p>
+</td>
+</tr>
+<tr>
+<td>Orientation</td>
+<td>
+<p style="text-align: left;"><span style="font-size: 18px;"><strong>Registering for Work Experience and Internship Classes</strong></span></p>
+<p><strong>What you need:</strong></p>
+<ul>
+<li>A Work-Based Learning Enrollment Permit signed by the instructor</li>
+<li>A completed <a href="https://www.ltcc.edu/admissions/registrationcardmarch25.pdf" target="_blank" rel="noopener">Registration Card</a> or <a href="https://www.ltcc.edu/admissions/addanddropmarch25.pdf" target="_blank" rel="noopener">Add/Drop Form</a></li>
+</ul>
+<p><strong>Request registration from Amber Goligoski to receive your Enrollment Permit</strong></p>
+<p>Send an email to <a href="mailto:mail%20to:%20goligoski@ltcc.edu" target="_blank" rel="noopener">goligoski@ltcc.edu</a> that includes:</p>
+<ul>
+<li>Name of your employer (orgaanization name)</li>
+<li>Average number of hours worked each week</li>
+<li>Educational goal (or undecided)</li>
+<li>Career goal (or undecided)</li>
+<li>Does your Academic Plan or Financial Aid (including the Promise Program or EOPS) require you to enroll in a specific number of units?
+<ul>
+<li>If yes, list which program and the number of units</li>
+</ul>
+</li>
+<li>Does your degree or certificate require the course?
+<ul>
+<li>If yes, which program?</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Schedule an Orientation through <a href="https://ltcc.craniumcafe.com/" target="_blank" rel="noopener">Cranium Cafe</a></strong></p>
+<p>During this appointment, we will review the required coursework and answer your questions about the class. Students who do not complete the orientation during the first week of class may be dropped.</p>
+<p>Schedule a meeting here:</p>
+<p><a href="https://ltcc.craniumcafe.com/group/work-based-learning---work-experience--internships/workshops" target="_blank" rel="noopener">Group Meetings (Online and In-Person)</a><br /><a href="https://ltcc.craniumcafe.com/group/work-based-learning---work-experience--internships/scheduler" target="_blank" rel="noopener">Individual Meetings (Online and In-Person)</a></p>
+<p>&nbsp;</p>
+<p><a href="https://ltcc.craniumcafe.com/ambergoligoski" target="_blank" rel="noopener">https://ltcc.craniumcafe.com/ambergoligoski</a></p>
+<p>Call or Text with questions: (530) 303-8164</p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>Class Documents</td>
+<td>
+<p><a href="https://drive.google.com/file/d/1iFaNK0OMTsSAJ2kZ4X5oNKWv2Nr8O120/view?usp=drive_link" target="_blank" rel="noopener"><strong><span style="font-size: 18px;">Syllabus - 12-Week Course</span></strong></a></p>
+<p><strong><span style="font-size: 18px;">Syllabus - Late-Start 6-Week course</span></strong></p>
+<p style="padding-left: 40px;">&nbsp;</p>
+<p><strong><span style="font-size: 18px;">Enrollment Permit - <a href="mailto:goligoski@ltcc.edu?subject=Request%20for%20Enrollment">Request the Form</a></span></strong><br /><span style="font-size: 18px;"></span></p>
+<p><strong><span style="font-size: 18px;">Code of Conduct and Survey - <a href="mailto:goligoski@ltcc.edu?subject=Request%20COC%2FSurvey%20Link">Request the Form</a></span></strong></p>
+<p style="padding-left: 40px;">&nbsp;</p>
+<p><br /><strong><span style="font-size: 18px;"><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/supa_sp2020.pdf" target="_blank" rel="noopener">Supervisor Agreement</a></span></strong><br /><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/objw_fillable.pdf"><strong><span style="font-size: 18px;">Objectives Worksheets</span></strong></a><br /><strong><span style="font-size: 18px;"><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/info_objectivesform_sp2020.pdf" target="_blank" rel="noopener">Worksite Info &amp; Objectives Form</a></span></strong><br /><span style="font-size: 18px;"></span></p>
+<p><strong><span style="font-size: 18px;">Skills Assignments</span></strong></p>
+<ul>
+<li>Adaptability&nbsp;
+<ul style="list-style-type: circle;">
+<li><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/adaptabilityreading.pdf" target="_blank" rel="noopener">Reading</a></li>
+<li><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/adaptabilityworksheet.pdf" target="_blank" rel="noopener">Worksheet</a></li>
+</ul>
+</li>
+<li>Analysis/Solution Mindset
+<ul style="list-style-type: circle;">
+<li><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/analysis_solution_mindset_worksheet.pdf" target="_blank" rel="noopener">Reading</a></li>
+<li><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/analysissolutionmindsetreading.pdf" target="_blank" rel="noopener">Worksheet</a></li>
+</ul>
+</li>
+<li>Collaboration
+<ul style="list-style-type: circle;">
+<li><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/collaboration_reading.pdf" target="_blank" rel="noopener">Reading</a></li>
+<li><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/collaboration_worksheet.pdf">Worksheet</a></li>
+</ul>
+</li>
+<li>Entrepreneurial Mindset
+<ul style="list-style-type: circle;">
+<li>Reading</li>
+<li>Worksheet</li>
+</ul>
+</li>
+<li>Entrepreneurship in the Workplace
+<ul style="list-style-type: circle;">
+<li>Reading</li>
+<li>Worksheet</li>
+</ul>
+</li>
+</ul>
+<p><br /><strong><span style="font-size: 18px;"><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/midquarterprod.pdf" target="_blank" rel="noopener">Mid-Quarter Professional Development Assignment</a></span></strong><br /><strong><span style="font-size: 18px;"><a href="https://www.ltcc.edu/_resources/pdfs/work_experience/interview_assignment.pdf" target="_blank" rel="noopener">Interview Assignment</a></span></strong><br /><strong><span style="font-size: 18px;">Feedback Forms</span></strong><br /><strong><span style="font-size: 18px;">Supervisor Evaluation</span></strong><br /><strong><span style="font-size: 18px;">Timesheet</span></strong></p>
+<p style="text-align: left;"><span style="font-size: 18px;"><strong>&nbsp;</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>Skills Assignments</td>
+<td>
+<p style="text-align: left;"><strong><span style="font-size: 18px;">SKILLS ASSIGNMENTS</span></strong></p>
+<p><span style="font-size: 18px;">Work Experience &amp; Internship Students are required to complete Skills Assignments.</span></p>
+<p><span style="font-size: 18px;"><strong>21st Century Skills Go by Many Names:</strong></span><br /><span style="font-size: 18px;">Competencies, applied skills, cross-disciplinary skills, transferable skills, employability skills, and soft skills.</span></p>
+<p><span style="font-size: 18px;"><strong>What They Are:</strong></span><br /><span style="font-size: 18px;">Knowledge, work habits, and character traits necessary to succeed in this rapidly changing world.</span></p>
+<p><span style="font-size: 18px;"><strong>The Good News:</strong></span><br /><span style="font-size: 18px;">Just like any other subject, 21st Century Skills can be taught, practiced, and incorporated into everyone&rsquo;s life.</span></p>
+</td>
+</tr>
+<tr>
+<td>Online Workshops</td>
+<td>
+<div>There a no workshops scheduled</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 494-2584</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<hr />
+<p style="text-align: center;"><span style="font-size: 18px;">&nbsp;More information and resources are available at&nbsp;<a href="https://www.ltcc.edu/campusresources/careerservicescenter.php" target="_blank" rel="noopener">LTCC Career Services</a>.</span></p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">contact</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">work experience</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/ambergoligoski.png" alt="Amber Goligoski" width="151" height="150" /></td>
+<td>Amber Goligoski</td>
+<td>&nbsp;</td>
+<td><a href="mailto:goligoski@ltcc.edu">goligoski@ltcc.edu</a>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<h5><strong><span style="font-size: 12pt;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/amberaneloski.jpg" alt="Amber Aneloski, Instructional Aide" width="160" height="218" /></span></strong></h5>
+<p>Amber Goligoski<br /><span style="font-size: 10pt;">(530) 541-4660 x 703</span><br /><span style="font-size: 10pt;"><a href="mailto:workexp@ltcc.edu">goligoski@ltcc.edu</a></span></p>
+<p><strong><span style="font-size: 12pt;">&nbsp;</span></strong></p>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">General Education</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>General Education Requirements | Lake Tahoe Community College</title>
+		<meta name="Description" content="Learn about General Education requirements at LTCC. Discover the courses that build foundational skills in communication, critical thinking, and scientific and cultural understanding." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>General Education</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="{{f:38997873}}" alt="General Education" width="1951" height="1033" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="{{f:10625779}}">Apply Now</a></td>
+<td><a href="{{f:10625784}}">Visit Campus</a></td>
+<td><a href="{{f:10625834}}">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p>Although specific degrees or certificates are not currently offered at Lake Tahoe Community College in the areas of Communications, History, Philosophy, Political Science, Religion, and Speech, many of these courses do count towards the General Education Curriculum and preparation for majors at four-year schools. The patterns listed in the catalog are all useful tools for students to plan to obtain their Associates Degree here at LTCC or move on to transfer to a four-year California college.&nbsp;</p>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 30px;">
+<div class="btn-wrapper"><a class="custom-btn-blue" title="Learn more" href="https://ltcc.elumenapp.com/catalog/2025-2026/associate-degree-general-education-curriculum#mainContent" target="_blank" rel="noopener">Associate Degree General Education Curriculum</a></div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="Learn more" href="https://ltcc.elumenapp.com/catalog/2025-2026/calgetc#mainContent" target="_blank" rel="noopener">California General Education Transfer Curriculum (Cal-GETC)</a></div>
+</div>
+<p>If you have questions about the different general education patterns, please <a title="Email counseling" href="mailto:counselor@ltcc.edu" target="_blank" rel="noopener">contact a counselor.</a></p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

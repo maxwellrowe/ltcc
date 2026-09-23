@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Emergency Medical Responder</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Emergency Medical Responder Course | Lake Tahoe Community College</title>
+		<meta name="Description" content="Enroll in LTCC’s Emergency Medical Responder course to gain essential skills in life-saving care, first aid, and CPR. Complete the course and earn American Red Cross EMR and CPR/AED certifications." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Emergency Medical Responder</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/emt/emt2.jpg" alt="EMR Image" width="1360" height="1020" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a title="Make a Plan" href="https://www.ltcc.edu/campusresources/counseling.php" target="_blank" rel="noopener">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><span><a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major Icon" width="240" height="260" /></a></span>The Emergency Medical Responder course at Lake Tahoe Community College provides students with the knowledge and skills necessary to work as an Emergency Medical Responder (EMR) by helping to sustain life, reduce pain, and minimize the consequences of injury or sudden illness until more advanced medical help takes over. Course content and activities will prepare participants to make appropriate decisions about the care to provide in a medical emergency. The course meets or exceeds the Emergency Medical Services Educational Standards for Emergency Medical Responders and is consistent with the current guidelines for first aid and cardiopulmonary resuscitation care. Successful students will receive two certification cards: American Red Cross Emergency Medical Responder and American Red Cross CPR/AED for Professional Rescuers and Health Care Providers.</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><iframe title="" src="//www.youtube.com/embed/Ju5Lxan5Jm8" width="425" height="350" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion2</td>
+</tr>
+<tr>
+<td><span>Certificate</span></td>
+<td>
+<p>HEA 106 (4 units) - Emergency Medical Responder</p>
+</td>
+</tr>
+<tr>
+<td><span>Related Degrees</span></td>
+<td>&nbsp;Emergency Medical Technician&nbsp;(EMT)</td>
+</tr>
+<tr>
+<td><span>Financial Aid &amp; Scholarships</span></td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Got questions about the EMR program?</h3>
+<p>Get in touch by submitting this contact form!</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:354026}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Allied Health</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Contact</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/zacheryford2.jpg" alt="photo of Zachery Ford" width="150" height="150" /></td>
+<td>Zachery Ford</td>
+<td><span>EMS Faculty<br /></span></td>
+<td><span><a href="mailto:zachery.ford@ltcc.edu?subject=">zachery.ford@ltcc.edu</a><br /></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/coyotewedge.jpg" alt="Coyote Head" width="150" height="150" /></td>
+<td>Ace Daly</td>
+<td><span>CTE Specialist</span></td>
+<td><span><a title="Contact Ace" href="mailto:ace.daly@ltcc.edu" target="_blank" rel="noopener">ace.daly@ltcc.edu</a></span><span>&nbsp;</span>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h5>&nbsp;</h5></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<p>Jamie Rhone<br /><span style="font-size: 10pt;">(530) 541-4660, x 583<br /></span><span style="font-size: 10pt;"><a href="mailto:rhone@ltcc.edu">rhone@ltcc.edu</a></span></p>
+<div>&nbsp;&nbsp;</div>
+<div>Melissa Liggett</div>
+<div><span style="font-size: 10pt;">(530) 541-4660, x 723</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:liggett@ltcc.edu">liggett@ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+</document>

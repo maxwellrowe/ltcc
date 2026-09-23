@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Common Course Numbering</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Common Course Numbering</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Common Course Numbering | Lake Tahoe Community College</title>
+		<meta name="Description" content="Find answers to your questions about LTCC’s common course numbering system. Learn how course numbers align across colleges to simplify transfer and academic planning." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h4><strong>What is Common Course Numbering (CCN) and Why is it Being Implemented?</strong></h4>
+<p>The Common Course Numbering (CCN) system is a statewide initiative designed to simplify and align course identification across all California Community Colleges, as well as with transfer partners such as the University of California (UC), California State University (CSU), and the Association of Independent California Colleges and Universities (AICCU). Mandated by Assembly Bill 1111 (Berman, 2021), CCN ensures that general education and transfer pathway courses share consistent, student-friendly numbering, making it easier for students to understand how their coursework transfers between institutions. By providing a clear and uniform course catalog, CCN empowers students to build cohesive academic plans, avoid duplicative coursework, and progress efficiently toward degree completion. Developed through collaborative efforts among faculty, statewide committees, and intersegmental workgroups, the CCN system supports equity in higher education by maximizing credit mobility and streamlining transfer pathways. For full details, visit the <a class="" href="https://www.cccco.edu" target="_new" rel="noopener">California Community Colleges Chancellor&rsquo;s Office</a>.</p>
+<table border="1" cellspacing="0" cellpadding="8">
+<thead>
+<tr>
+<th style="background-color: #f0f0f0;">Previous Course Code</th>
+<th style="background-color: #f0f0f0;">New Course Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SPE101 - Public Speaking</td>
+<td>COMMC1000 - Introduction to Public Speaking</td>
+</tr>
+<tr>
+<td>ENG101 - Reading and Composition</td>
+<td>ENGLC1000 - Academic Reading and Writing</td>
+</tr>
+<tr>
+<td>ENG103 - Critical Reasoning: Writing the Research Paper</td>
+<td>ENGLC1001 - Critical Thinking and Writing</td>
+</tr>
+<tr>
+<td>POL101 - American Government</td>
+<td>POLSC1000 - American Government and Politics</td>
+</tr>
+<tr>
+<td>PSY101 - General Psychology</td>
+<td>PSYCC1000 - Introduction to Psychology</td>
+</tr>
+<tr>
+<td>MAT201 - Elementary Statistics</td>
+<td>STATC1000 - Introduction to Statistics</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Why is this important?</td>
+<td>The new common course numbers make it easier for students to plan their classes, transfer smoothly between colleges, and avoid retaking courses they've already completed.</td>
+</tr>
+<tr>
+<td>How will I know when a course in part of this new numbering system?</td>
+<td>Courses that are part of the Common Course Numbering (CCN) system will include a "C" in the course number, like <em data-start="277" data-end="288">ENGLC1000</em> or <em data-start="292" data-end="303">STATC1000</em>, and will be clearly listed in the college catalog and schedule. You&rsquo;ll also see updated course codes on your registration portal starting Fall 2025.</td>
+</tr>
+<tr>
+<td>Will courses that are part of the common course numbering system continue to transfer?</td>
+<td>Yes &mdash; courses with common course numbers are designed to maintain their transferability. They will continue to meet transfer requirements for CSU, UC, and participating private universities, helping students stay on track toward their degrees without disruption.</td>
+</tr>
+<tr>
+<td>Where can I get more information or ask more questions?</td>
+<td>For more information or personalized guidance about how the Common Course Numbering system affects your academic plan, connect with an LTCC counselor. They can help you understand your options and make sure you stay on track to meet your goals. Visit the <a title="Get help from counseling" href="{{f:10625834}}"><strong data-start="443" data-end="471">LTCC Counseling Services</strong></a> page or schedule an appointment today.</td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

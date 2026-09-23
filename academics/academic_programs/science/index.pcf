@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Earth &amp; Environmental Sciences</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Earth &amp; Environmental Sciences</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Earth &amp; Environmental Sciences</title>
+		<meta name="Description" content="Earth and Environmental Science" />
+	</ouc:properties>
+
+
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{{a:263207}}
+<p><span>Coursework in the Earth &amp; Environmental Sciences at Lake Tahoe Community College is for students&nbsp;</span><span>who are interested in solving&nbsp;problems from an interdisciplinary perspective.</span></p>
+<p><span>Understand the relationships between the natural and social sciences by using the scientific methods of observation, experimentation, and analysis. Deepen your knowledge of the natural&nbsp;world, and gain hands-on experience with advanced scientific tools. Understand the scientific basis for environmental decision making and the legal, economic, and political issues involved in&nbsp;management&nbsp;of the environment.</span></p>
+<p>&nbsp;</p>
+<p><span><iframe style="display: block; margin-left: auto; margin-right: auto;" src="https://www.youtube-nocookie.com/embed/TjeNagLtQWQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></span></p>
+<p>&nbsp;</p>
+<p><span>Many courses emphasize exploration and the study of Lake Tahoe, a natural lab of outstanding beauty and richness. Coursework is designed to align with the major prep and transfer requirements at a variety of institutions. Students are encouraged to meet with a LTCC counselor to ensure that course and degree selections align with the specific transfer requirements of each institution.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 24px;">Choose your program:</span></p>
+<table class="ou-chevron-list" style="float: left;">
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Environmental Science &amp; Technology" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php">Environmental Science &amp; Technology</a></li>
+<li><a title="Geography" href="https://www.ltcc.edu/academics/academic_programs/science/geography.php">Geography &amp; GIS</a></li>
+<li><a title="Geology" href="https://www.ltcc.edu/academics/academic_programs/science/geology.php">Geology</a></li>
+<li><a title="Physical Science" href="https://www.ltcc.edu/academics/academic_programs/science/physical_science.php">Physical Science</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong><br />One College Drive<br />South Lake Tahoe, CA 96150<br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a><br /><a href="tel:1-530-541-4660">(530) 541-4660</a><span>&nbsp;</span>x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+<h3><a title="Science, Technology, &amp; Environment" href="https://www.ltcc.edu/academics/metamajors/meta_science.php"><span><img class="" style="margin: 10px auto; display: block;" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/metamajor.png" alt="Metamajor Logo" width="200" height="201" /></span></a></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5><strong><span style="font-size: 12pt;"><img src="https://www.ltcc.edu/_resources/images/optimized/natural-science/sueklosscopy.jpg" alt="Image of Sue Kloss, Biology Faculty Member" width="130" height="177" /></span></strong></h5>
+<div><span style="font-size: 12pt;">Susan Kloss, Ph.D.</span><strong><span style="font-size: 12pt;"><br /></span></strong><span style="font-size: 10pt;">Biology Full-Time Faculty<br />(530) 541-4660 x&nbsp;244<br /><a href="mailto:kloss@ltcc.edu">kloss@ltcc.edu</a></span></div>
+<div><br /><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;">B.S. West Chester State College</span><br /><span style="font-size: 10pt;">M.A. University of Connecticut</span><br /><span style="font-size: 10pt;">M.S. University of California, Berkeley</span><br /><span style="font-size: 10pt;">Ph.D.</span><br /><br /></div>
+<div>&nbsp;</div>
+<div><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/behnazgangursky.jpg" alt="Image of Behnaz Gangursky, Biology Faculty Member" width="133" height="212" /></div>
+<div><span style="font-size: 12pt;">Behnaz Gangursky, Ph.D.</span><br /> <span style="font-size: 10pt;">Biology Faculty Member</span><br /><span style="font-size: 10pt;"> (530) 541-4660 x 312</span><br /><span style="font-size: 10pt;"><a href="mailto:gangursky@ltcc.edu?subject=Biology%20"> bgangursky@ltcc.edu</a>&nbsp;</span><br /><br /><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;"> B.S. Urmia University, Urmia, Iran</span><br /><span style="font-size: 10pt;"> M.S. Azad University, Kazeroon, Iran</span><br /><span style="font-size: 10pt;"> Ph.D. Tokyo University of Agriculture and Technology, Tokyo, Japan</span><br /><br /><span style="font-size: 10pt;">Office Hours:</span><br /><span style="font-size: 10pt;"> Monday, 2:00pm-3:00pm</span><br /><span style="font-size: 10pt;"> T, W, 11:30am-1:00pm</span><br /><span style="font-size: 10pt;">Th, 12:00pm-1:00pm</span><br /><span style="font-size: 10pt;"> Location: Room D100</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;"><img src="https://www.ltcc.edu/_resources/images/optimized/natural-science/seanryland.jpg" alt="Image of Sean Ryland, Chemistry Faculty Member" width="130" height="184" /></span></div>
+<p><span style="font-size: 12pt;">Sean Ryland</span><br /><span style="font-size: 10pt;">Chemistry Faculty</span><br /><span style="font-size: 10pt;">(530) 541-4660 x 704</span><br /><a href="mailto:sryland@ltcc.edu?subject=Chemistry"><span style="font-size: 10pt;">sryland@ltcc.edu</span></a><br /> <br /><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;">B.S. Chemistry, Point Loma Nazarene University</span><br /><span style="font-size: 10pt;">M.S. Chemical Engineering, University of Colorado</span></p>
+<p><span style="font-size: 10pt;">Office Hours:<br />Mon, Wed, 11:00am-12:00pm, Rm D105<br />Tu, Th, 1:00pm-2:30pm, Rm D105</span></p>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<p><span style="font-size: 12pt;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/scottvalentine2.jpg" alt="Scott Valentine Earth Science Faculty" width="136" height="162" /></span></p>
+<p><span style="font-size: 12pt;">Scott Valentine</span><br /><span style="font-size: 10pt;">Earth Sciences Faculty</span><br /><span style="font-size: 10pt;">(530) 541-4660 x 313</span><br /><a href="mailto:valentine@ltcc.edu?subject=Earth%20Science"><span style="font-size: 10pt;">valentine@ltcc.edu</span></a><br /><br /><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;">B.S. University of California, Santa Barbara</span><br /><span style="font-size: 10pt;">M.S. San Diego State University</span></p>
+<p><span style="font-size: 10pt;">Office Hours:<br />M,W, 4:30pm-6:00pm, Rm D124<br />Tu, Th, 2:00pm-3:00pm, Rm D124</span></p>
+<p>&nbsp;</p>
+<div><img src="https://www.ltcc.edu/_resources/images/optimized/natural-science/cathycox.jpg" alt="Image of Cathy Cox, Physics Faculty Member" width="130" height="189" /></div>
+<div><span style="font-size: 12pt;">Cathy Cox, Ph.D.</span><br /><span style="font-size: 10pt;">Physics Faculty</span><br /><span style="font-size: 10pt;">(530) 541-4660 x 368</span><br /><span style="font-size: 10pt;"><a href="mailto:cox@ltcc.edu">cox@ltcc.edu</a></span></div>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<div><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;">A.A.S. Whatcom Community College</span><br /><span style="font-size: 10pt;">B.S. Western Washington University</span><br /><span style="font-size: 10pt;">M.S. University of Rochester</span><br /><span style="font-size: 10pt;">Ph.D. University of Rochester</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Office Hours:<br />Mon, Wed, 1:30pm-2:30pm, Rm D108<br />Tu, Th, 1:00pm-2:30pm, Rm D108</span></div>
+<div><span style="font-size: 12pt;">&nbsp;</span></div>
+<p>&nbsp;</p>
+<p>Other Instructor Office Hours</p>
+<hr />
+<p><span style="font-size: 10pt;"><strong>Kim Gorman</strong></span><br /><span style="font-size: 10pt;">Wednesday, 3:00-4:00pm, Science Wing&nbsp;</span></p></ouc:div>
+  	
+</document>

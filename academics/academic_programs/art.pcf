@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Art  </parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Art Degree Program | Studio Art, Photography, Video &amp; Art History | Lake Tahoe Community College</title>
+		<meta name="Description" content="Discover the Art degree program at Lake Tahoe Community College, featuring studio art, new media like photography and video, and art history. Build your skills and creativity in a collaborative, supportive environment for all experience levels." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Art</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/art_header.jpg" alt="Art" width="2000" height="1341" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><a title="Link to Art Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_arts.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/arts-languages-humanities-white-back.jpg" alt="Art Meta Major Icon" width="243" height="258" /></a></p>
+<p>&nbsp;</p>
+<p>The Art degree program at Lake Tahoe Community College is designed to provide a balanced foundation in both studio art and art history. Its curriculum is focused to meet the needs of art students who are initially developing skill and concepts as well as those experienced students who seek further development. The Art Department is committed to a structured environment in which faculty and students work closely together in an atmosphere which is responsive, supportive, and facilitates experimentation.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/photography/lester.jpg" alt="Photography" width="1631" height="1093" /></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td style="width: 101.333px;">Accordion ID (must be unique if more than one accordion on page)</td>
+<td style="width: 958.667px;">accordion1</td>
+</tr>
+<tr>
+<td style="width: 101.333px;">
+<p><span>Associate in Arts for Transfer, Studio Arts</span></p>
+</td>
+<td style="width: 958.667px;">
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-c1b9-74bb-9b6d-be5ea24789e5/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 101.333px;"><span>Certificates of Achievement</span></td>
+<td style="width: 958.667px;">
+<p><strong>BUSINESS ENTREPRENEURSHIP</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-945a-7ad2-acbd-581838625cf0/" target="_blank" rel="noopener"> &rarr; View Program Map</a></div>
+<div style="margin: 20px 0 15px 0;"><hr />
+<p><strong>DIGITAL MEDIA ARTS</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9555-7a5b-bb1c-88586f522df3/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr />
+<p><strong>PHOTOGRAPHY</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9706-72ec-b6fa-e44ac62b1e9a/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr />
+<p><strong>PICTORIAL ARTS</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9772-7b6c-a438-e02111cf7984/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr />
+<p><strong>SPATIAL ARTS</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-98c4-7647-9b0a-7260b4b53e54/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width: 101.333px;"><span>Career Outlook</span></td>
+<td style="width: 958.667px;">
+<p><span>Individuals in the photography field may work as landscape, portrait or commercial photographers, camera operators in television broadcasting or motion picture studios, or photojournalists with newspapers, magazines, advertising agencies and government agencies.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 101.333px;"><span>Art Facilities</span></td>
+<td style="width: 958.667px;">
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><strong>3D Art Studio</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 40px;" tabindex="-1"><span tabindex="-1">The Jewel of the Sierra Nevada Mountains, Lake Tahoe Community College Art Department takes pride in its three-dimensional art facilities. Comparable to a four year University, we provide a facility that supports a broad spectrum of courses, such as wheel thrown and hand-built ceramics, mixed media sculpture, figure sculpture, design, stone carving, metal fabrication, and bronze and aluminum casting utilizing the lost wax casting method. Art students at LTCC are taking part in an intensive art making experience while living in one of the most beautiful places in California.&nbsp;</span></p>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><strong>Indoor Ceramic &amp; Sculpture Studio</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><strong>Ceramic Facility</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><strong>Ceramic Kilns</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 40px;" tabindex="-1"><span tabindex="-1">2 Cress 7 CF digital electric kilns</span><br tabindex="-1" /><span tabindex="-1">1 Cress 11 CF digital electric kiln</span><br tabindex="-1" /><span tabindex="-1">1 Crucible 16 CF top load digital electric kiln</span><br tabindex="-1" /><span tabindex="-1">1 Crucible 16 CF front load digital kiln</span><br tabindex="-1" /><span tabindex="-1">1 Olympic 1.4 CF electric test kiln</span><br tabindex="-1" /><span tabindex="-1">1 Duncan 3.2 CF electric kiln</span><br tabindex="-1" /><span tabindex="-1">1 Laguna 24 CF front loading gas kiln</span><br tabindex="-1" /><span tabindex="-1">1 Laguna 12 CF front loading gas kiln</span><br tabindex="-1" /><span tabindex="-1">2 Soft brick Raku kilns</span><br tabindex="-1" /><span tabindex="-1">1 Olympic Raku kiln</span></p>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><strong>Ceramic Equipment</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 40px;" tabindex="-1"><span tabindex="-1">1 50 gal. Slip mixer</span><br tabindex="-1" /><span tabindex="-1">12 Brent Model C potters wheels</span><br tabindex="-1" /><span tabindex="-1">1 Brent model 16 potters wheel adjustable: wheel chair accessible</span><br tabindex="-1" /><span tabindex="-1">1 24" Bailey slab roller</span><br tabindex="-1" /><span tabindex="-1">1 Laguna Spray booth for glazing</span><br tabindex="-1" /><span tabindex="-1">1 Brent 4&rdquo; barrel extruder</span><br tabindex="-1" /><span tabindex="-1">1 Rubber backed belt grinder for ceramics</span><br tabindex="-1" /><span tabindex="-1">24 Shop cone 10 reduction glazes</span><br tabindex="-1" /><span tabindex="-1">13 Shop cone&nbsp; 04 oxidation glazes</span><br tabindex="-1" /><span tabindex="-1">11 Shop Raku glazes</span><br tabindex="-1" /><span tabindex="-1">Laser printer equipped for printing custom iron transfer decals</span><span tabindex="-1"></span></p>
+<p tabindex="-1"><strong><em tabindex="-1">Also available for use:</em></strong></p>
+<ul>
+<li><span tabindex="-1">Low-fire commercial underglazes and glazes</span></li>
+<li><span tabindex="-1">Underglaze pencils</span></li>
+<li><span tabindex="-1">Chalks</span></li>
+<li><span tabindex="-1">Water colors</span></li>
+<li><span tabindex="-1">Lusters</span></li>
+<li><span tabindex="-1">Enamels</span></li>
+</ul>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><strong>Sculpture &amp; Metal Facility</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 40px;" tabindex="-1"><span tabindex="-1">1 #40 Speedy Melt bronze furnace<br tabindex="-1" />1 50 gal. Slurry mixer for ceramic shell investment<br tabindex="-1" />1 De-waxing kiln<br tabindex="-1" />1 Overhead crane, 1000 lb capacity<br tabindex="-1" />1 Large Universal bead blaster<br tabindex="-1" />1 14" Delta metal/ wood band saw<br tabindex="-1" />1 Delta 6" belt / 14" disc abrasive finishing machine<br tabindex="-1" />2 Lincoln TIG welders<br tabindex="-1" />1 Lincoln Arc welder<br tabindex="-1" />1 Miller Spectrum 375 X-treme Plasma Cutter<br tabindex="-1" />2 Miller wire feed MIG welders with aluminum spool gun equipped<br tabindex="-1" />3 Oxygen/Acetylene gas welding/cutting sets<br tabindex="-1" />1 Natural Gas forge<br tabindex="-1" />1 Farrier anvil with blacksmithing tools<br tabindex="-1" />4 Ventilated welding stations<br tabindex="-1" />1 Heavy Duty 12 speed drill press<br tabindex="-1" />6 Cuturi pneumatic air chisels with assorted chisels and hand chisels<br tabindex="-1" />1 Beverly Shears</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 101.333px;"><span>Financial Aid &amp; Scholarships</span></td>
+<td style="width: 958.667px;">
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><p>&nbsp;Faculty</p>
+<div><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/phyllisshafer.jpg" alt="Phyllis Shafer" width="133" height="206" /><br /><span style="font-size: 12pt;"><a href="http://www.phyllisshafer.com/">Phyllis Shafer<br /></a><span style="font-size: 10pt;">Art Faculty Member</span></span><br /><span style="font-size: 10pt;">(530) 541-4660 x&nbsp;251<br /><a>Shafer@ltcc.edu</a> </span><br /><span style="font-size: 12pt;"></span></div>
+<div><span style="font-size: 10pt;">&nbsp; Credentials:</span><br /><span style="font-size: 10pt;"></span><span style="font-size: 10pt;">B.A. State University of New York, Potsdam<br /></span><span style="font-size: 10pt;">M.F.A. University of California, Berkeley<br /><br /></span></div>
+<div><span style="font-size: 10pt;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/bryanyerian.jpg" alt="Bryan Yerian" width="133" height="196" /></span></div>
+<div><a href="http://www.bryanyerian.com"><span style="font-size: 12pt;">Bryan Yerian</span><br /></a><span style="font-size: 10pt;">Art Faculty Member</span><br /><span style="font-size: 10pt;">(530) 541-4660 x&nbsp;228</span><br /><span style="font-size: 10pt;"><a href="mailto:Yerian@ltcc.edu">Yerian@ltcc.edu</a></span></div>
+<div><span style="font-size: 10pt;">&nbsp; Credentials:</span></div>
+<div><span style="font-size: 10pt;"> B.A. Humboldt State University</span><br /><span style="font-size: 10pt;"> M.F.A. San Jos&eacute; State University</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Office Hours:<br />M, W 12:00pm-1:30pm, F102<br />T, Th 12:00pm-1:00pm, F102</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 14pt;"><span style="font-size: 12pt;">Pat Leonard-Heffner<br /><span style="font-size: 10pt;">Digital Media Arts Coordinator</span><br /><span style="font-size: 10pt;">(530) 541-4660 x 234</span><br /><span style="font-size: 10pt;"><a href="mailto:Leonard@ltcc.edu">Leonard@ltcc.edu</a></span></span></span><span style="font-size: 14pt;"><span style="font-size: 12pt;"><span style="font-size: 10pt;">&nbsp;</span><br /><span style="font-size: 10pt;"></span></span></span></div>
+<div>&nbsp;&nbsp;<span style="font-size: 14pt;"><span style="font-size: 12pt;"><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;">M.A. California State University, Sacramento</span><br /><span style="font-size: 10pt;">M.F.A. Long Island University</span><br /></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 14pt;"><span style="font-size: 12pt;">Art Adjunct Faculty</span></span></div>
+<div><span style="font-size: 10pt;">Greg Drinkwine</span></div>
+<div><span style="font-size: 10pt;">Jim Grant</span></div>
+<div><span style="font-size: 10pt;">Amy Hackleman</span></div>
+<div><span style="font-size: 10pt;">Pat Leonard-Heffner</span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.catherinelockner.com/" target="_blank">Catherine Lockner</a><br /></span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.colleensidey.com" target="_blank">Colleen Sidey</a></span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.shelleyhocknell.com" target="_blank">Shelley Zentner</a></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;">Art New Media Adjunct Faculty</span></div>
+<div><span style="font-size: 10pt;">Travis Steil, <a href="mailto:trsteil@mail.ltcc.edu">trsteil@mail.ltcc.edu</a></span><span style="font-size: 10pt;"><br />Kurt Molnar, <a href="mailto:kkmolnar@mail.ltcc.edu">kkmolnar@mail.ltcc.edu</a></span><span style="font-size: 10pt;"><br />Donna Eyestone, <a href="mailto:dmeyestone@mail.ltcc.edu">dmeyestone@mail.ltcc.edu</a></span><span style="font-size: 10pt;"><br />Ginger Winters, <a href="mailto:gkwinters@mail.ltcc.edu">gkwinters@mail.ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;">Art Studio Technicians</span></div>
+<div><span style="font-size: 10pt;">2D Studio</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 335<br /></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">3D Studio</span></div>
+<div><span style="font-size: 10pt;">Francis Rider</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 360<br /></span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:rider@ltcc.edu">rider@ltcc.edu</a></span></div>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

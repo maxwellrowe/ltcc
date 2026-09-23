@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+	<title>New Article Page</title>
+
+	<variable-list>
+		<!-- general page setup -->
+		<variable 
+				  section="General Page Setup"
+				  name="title" 
+				  type="text" 
+				  prompt="Page Title" 
+				  alt="Required Field. Enter the page title. This will also be displayed by search engines as well as the web browser window. Will also be used in the RSS feed."
+				  >Page Title</variable>
+
+		<variable 
+				  name="description" 
+				  type="text" 
+				  rows="5" 
+				  prompt="Description" 
+				  alt="Important. Enter a short description of the page, to be displayed by search engines. This description is also used on the RSS feed. Please limit the character count to under 200 for the homepage display."
+				  ></variable>		
+
+		<variable 
+				  section="RSS Properties" 
+				  name="date"
+				  type="datetime"
+
+				  prompt="Date of Article"
+				  alt="Select an article date for display and RSS feed purposes."
+				  ></variable>
+
+		<variable
+				  name="thumb"
+				  type="filechooser"
+				  prompt="Thumbnail"
+				  alt="Select a thumbnail for this article to be used on the RSS feed."				  
+				  ></variable>
+
+		<variable
+				  name="image"
+				  type="filechooser"
+				  prompt="Image"
+				  alt="Select an image for this article to be used on the RSS feed."				  
+				  ></variable>
+
+		<!-- A safer way to create a file, forces PCF file extension -->
+		<variable 
+				  name="pcf-filename" 
+				  prompt="Filename" 
+				  alt="Enter a filename using only lowercase letters, underscores, or dashes"
+				  >untitled</variable>
+
+		<variable 
+				  section="File Configuration"
+				  name="autonavigation" 
+				  prompt="Add Navigation Item" 
+				  type="select" 
+				  alt="Specify if this page should be added to the navigation file automatically. Note that both files need to be published after creation.">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</variable>
+
+		<variable 
+				  name="tcfname" 
+				  type="text" 
+				  display="none"
+				  >article.tcf</variable>
+	</variable-list>
+
+	<template-list>
+		<template 
+				  prompt-prefix="Article Page"
+				  filename="{pcf-filename}"
+				  display-filename="no"
+				  extension="pcf"
+				  rss-feed="*inherit*"
+				  rss-title="{title}"
+				  rss-description="{description}"		
+				  rss-keywords=""
+				  rss-media="{title}^^{image}^^{description}^^{thumb}^^"
+				  rss-link="[auto]"
+				  exclude-sitemap="yes"
+				  exclude-search="yes"
+				  autonav="{autonavigation}"
+				  >article.tmpl</template>
+	</template-list>
+	<!-- Removed rss-pubdate for ticket #37098 
+	<template-list>
+		<template 
+				  prompt-prefix="Article Page"
+				  filename="{pcf-filename}"
+				  display-filename="no"
+				  extension="pcf"
+				  rss-feed="*inherit*"
+				  rss-title="{title}"
+				  rss-description="{description}"		
+				  rss-keywords=""
+				  rss-media="{title}^^{image}^^{description}^^{thumb}^^"
+				  rss-link="[auto]"
+				  rss-pubdate="{date}"
+				  exclude-sitemap="yes"
+				  exclude-search="yes"
+				  autonav="{autonavigation}"
+				  >article.tmpl</template>
+	</template-list> -->
+
+	<navigation-list>
+		<!-- navigation options and link style -->
+		<include>_navigationlist.inc</include>
+	</navigation-list>
+</tcf>

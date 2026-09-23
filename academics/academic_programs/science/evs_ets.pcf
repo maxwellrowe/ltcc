@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Environmental Science</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Environmental Science Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore LTCC’s Environmental Science program and study the natural world through hands-on fieldwork and coursework. Prepare for careers in sustainability, conservation, and environmental policy." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Environmental Science&nbsp;&amp; Technology</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/wq.jpg" alt="Envrionmental Science" width="795" height="498" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a title="Science, Technology, &amp; Environment" href="https://www.ltcc.edu/academics/metamajors/meta_science.php"><img class="" style="display: block; float: right; margin: 10px auto 10px auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/metamajor.png" alt="Metamajor Logo" width="200" height="201" /></a></h3>
+<p>There are three interrelated pathways that prospective students should consider. Each&nbsp;pathway has different math and science requirements:</p>
+<p style="text-align: left; padding-left: 30px;">The Associate of Science degree in&nbsp;<strong>Environmental Science</strong>&nbsp;is designed to provide students with the theoretical knowledge and the technical skills needed for major prep and transfer into a variety of scientific and environmental disciplines. With an interdisciplinary program of study, students will gain understanding of environmental science components, processes, and issues. *<span>Students should be prepared to</span> start a program of study that includes the Chemistry and Calculus course sequence.&nbsp;</p>
+<p style="text-align: left; padding-left: 30px;">The&nbsp;<span>Associate of&nbsp;Arts&nbsp;degree in</span> <strong>Environmental Studies</strong>&nbsp;is designed for students who are interested in solving environmental problems from an interdisciplinary perspective, linking the natural and social sciences. Students will be able to understand the scientific basis for environmental decision making and the legal, economic, and political issues involved in management of the environment.&nbsp;Students should be prepared to take<span>&nbsp;Statistics.&nbsp;</span></p>
+<p style="text-align: left; padding-left: 30px;">The <strong>Environmental Science and Technology Certificates</strong>&nbsp;at Lake Tahoe Community College&nbsp;are designed to provide opportunities to learn fundamental skills in the field of environmental science. Coursework is designed to provide students with the theoretical knowledge and the technical skills needed for entry-level employment in a variety of environmental fields; to improve chances of employability or job placement opportunities; to provide skills training that may result in wage progression; and/or prepare students for continued study leading to a more advanced certificate or degree.</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{{a:263206}}
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Associate of Arts, Environmental Studies</td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-acd7-7adc-88fc-0bd2075e821a/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>Associate of Science, Environmental Science</td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-ab41-732e-91d4-a57f58174c08/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>Certificates of Achievement</td>
+<td>
+<p><strong>ENVIRONMENTAL SCIENCE &amp; TECHNOLOGY</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-ac76-71c0-bf21-6f391b4f358e/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr /></div>
+<p><strong>ENVIRONMENTAL SCIENCE &amp; TECHNOLOGY FOUNDATIONAL SKILLS CERTIFICATE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-ac12-7fe5-9172-dcffa8f32e0c/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td>The California Naturalist Certificate</td>
+<td>
+<p>The&nbsp;<strong>California Naturalist Certificate</strong>&nbsp;(offered by&nbsp;<a title="UCANR" href="http://calnat.ucanr.edu/">University of California Agriculture and Natural Resources</a>) is awarded to students who&nbsp;fulfill&nbsp;the requirements outlined in&nbsp;<strong>EVS 110</strong>&nbsp;(a course offered at LTCC every spring term).</p>
+<p>Students are required to devote at least 8 hours to a class project that benefits LTCC and enhances educational opportunities for future naturalists and local residents. Course presentations are&nbsp;publicly available through LTCC's&nbsp;"<a title="The California Naturalist Program" href="https://www.ltcc.edu/academics/academic_programs/science/sv_test.php">Naturalist Library</a>."</p>
+</td>
+</tr>
+<tr>
+<td>Related Degrees &amp; Certificates</td>
+<td>
+<table class="ou-chevron-list" style="float: left;">
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Geography" href="https://www.ltcc.edu/academics/academic_programs/science/geography.php">Associate Degree in Geography</a></li>
+<li><a title="Geology" href="https://www.ltcc.edu/academics/academic_programs/science/geology.php">Associate Degree in Geology</a></li>
+<li><a title="Liberal Arts" href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php">Associate Degree in Liberal Arts: Math &amp; Science Emphasis<br /></a></li>
+<li><a title="GIS" href="https://www.ltcc.edu/academics/academic_programs/science/geography.php">Certificate&nbsp;in Geographic Information Systems</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Career Opportunities</td>
+<td>
+<p>This list is not exhaustive, but it provides an idea of the job opportunities out there for Environmental Science &amp; Technology students.</p>
+<div class="section group">
+<div class="col span_1_of_2 mobile_full">
+<ul>
+<li>Agricultural Technologist</li>
+<li>Air Quality Inspector</li>
+<li>Aquaculturalist</li>
+<li>Arborist</li>
+<li>Botanist</li>
+<li>Community Developer</li>
+<li>Conservation Biologist</li>
+<li>Conservation Officer</li>
+<li>Ecologist</li>
+<li>Eco-tourism Operator</li>
+<li>Environmental Analyst</li>
+<li>Environmental Communicator</li>
+<li>Environmental Educator</li>
+<li>Environmental Engineer</li>
+<li>Environmental Land Consultant</li>
+<li>Environmental Lawyer</li>
+<li>Environmental Manager</li>
+<li>Environmental Planner</li>
+<li>Environmental Scientist</li>
+<li>Field Guide</li>
+<li>Fisheries Consultant</li>
+<li>Forest Resource Officer</li>
+<li>Geologist</li>
+<li>GIS&nbsp;Analyst</li>
+<li>Hazardous Waste Manager</li>
+<li>Hydrologist</li>
+<li>Journalist</li>
+<li>Land Surveyor</li>
+<li>Land Use Planner</li>
+<li>Lobbyist</li>
+<li>Materials Tester</li>
+<li>Media Correspondent</li>
+<li>Meteorologist</li>
+<li>Mining Consultant</li>
+<li>Non-profit Administrator</li>
+<li>Oceanographer</li>
+<li>Park Ranger</li>
+<li>Policy Advisor</li>
+<li>Political Advisor</li>
+<li>Professor</li>
+<li>Remote Sensing Specialist</li>
+<li>Researcher</li>
+<li>Soil Scientist</li>
+<li>Sustainability Development Manager</li>
+<li>Teacher</li>
+<li>Treatment Plant Operator</li>
+<li>Urban Planner</li>
+<li>Water Quality Inspector</li>
+<li>Wildlife Conservationist</li>
+</ul>
+</div>
+</div>
+<p>Some of these career choices may require additional education or preparation in the form of graduate studies, experiential education, or professional formative courses and exams.</p>
+</td>
+</tr>
+<tr>
+<td>Financial Aid &amp; Scholarships</td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="{{f:51946302}}">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Environmental Science &amp; Technology</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/scottvalentinesquared.jpg" alt="Scott Valentine" width="130" height="128" /></td>
+<td>Dr. Scott Valentine</td>
+<td>Faculty</td>
+<td>&nbsp;valentine@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/brandonertissquare.jpg" alt="Brandon Ertis" width="130" height="130" /></td>
+<td>Brandon Ertis</td>
+<td>Instructor</td>
+<td>baertis@mail.ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<div><strong><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/kathystrain.jpg" alt="Kathy Strain" width="150" height="236" /></strong></div>
+<div><a title="Kathy Strain Website" href="http://www.ltcconline.net/strain/">Kathy Strain, MS</a><strong><a title="Kathy Strain Website" href="http://www.ltcconline.net/strain/"><br /></a></strong><span style="font-size: 10pt;"><span style="font-family: helvetica, arial, sans-serif;">Science Tech and Adjunct Faculty<br /></span><span style="font-family: helvetica, arial, sans-serif;">(530) 541-4660 x 267<br /></span><span style="font-family: helvetica, arial, sans-serif;"><a href="mailto:strain@ltcc.edu?subject=Environmental%20Technology%20and%20Sustainability">strain@ltcc.edu</a></span></span></div>
+<div><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"></span></div>
+<div>&nbsp;</div>
+<div><a title="Madelyn Rios faculty page" href="http://madelynrios.wix.com/ltcc" target="_blank">Madelyn Rios</a></div>
+<div><span style="font-size: 10pt;"><span style="font-family: helvetica, arial, sans-serif;">Office Hours:</span></span></div>
+<div><span style="font-size: 10pt;"><span style="font-family: helvetica, arial, sans-serif;">Monday, 12:00pm-1:00pm, BIO lobby</span></span></div>
+<section>
+<article><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:strain@ltcc.edu"><br /></a></span><br style="font-family: helvetica, arial, sans-serif; font-size: 10pt;" />
+<h6><span style="font-family: helvetica, arial, sans-serif;">&nbsp;</span></h6>
+</article>
+</section></ouc:div>
+  	
+</document>

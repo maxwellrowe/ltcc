@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode>
+			
+	</headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>section.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Degrees &amp; Certificates</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Degrees &amp; Certificates</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Degrees &amp; Certificates | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore LTCC’s Degrees &amp; Certificates programs designed to support your academic and career goals. Choose from a variety of fields, including transfer degrees, career training, and specialized certifications." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h5><strong>Associate Degrees</strong></h5>
+<p><span>LTCC offers AA degrees in a wide variety of subjects, from Anthropology and Art to Forestry and Wilderness Education &amp; Outdoor Leadership.</span></p>
+<p><a title="AA Degrees" href="https://www.ltcc.edu/academics/degrees_and_certificates/aaprograms.php" target="_blank" rel="noopener">View all AA Degrees&nbsp;&gt;&gt;</a></p>
+<p>&nbsp;</p>
+<hr />
+<h5>&nbsp;</h5>
+<h5><strong>Associate Degrees for Transfer AA-T/AS-T</strong></h5>
+<p><span>LTCC offers associate degrees for transfer that guarantee students a seat at a California State University in their chosen major. We offer both Associate in Arts (AA-T) and Associate in Science (AS-T) degrees. Complete 90 units at LTCC, get your Associate Degree for Transfer, and you're guaranteed a seat in the CSU system to finish the remaining units for your bachelor's.<br /></span></p>
+<p><a title="View all AA-T &amp; AS-T Degrees " href="https://www.ltcc.edu/academics/degrees_and_certificates/transferdegree.php">View all AA-T &amp; AS-T Degrees &gt;&gt;</a></p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>
+<h5><strong>Bachelor Degree Programs</strong></h5>
+<p>Lake Tahoe Community College is partnering with other colleges to offer affordable advanced degree options that can be completely earned on LTCC's South Shore campus.</p>
+<p><a title="View all Bachelor Degree Programs " href="https://www.ltcc.edu/academics/bachelordegrees.php">View all Bachelor Degree Programs &gt;&gt;</a></p>
+<h5>&nbsp;</h5>
+<hr />
+<p>&nbsp;</p>
+<h5><span style="font-family: tahoma, arial, helvetica, sans-serif;"><strong>Certificate Programs</strong></span></h5>
+<p><span>Our Certificates of Achievement give you the knowledge and hands-on training you need to enter or advance in a specialized career. The coursework you complete while earning your Certificate can also be applied to an Associate Degree to further increase your employability and your post-college earnings.&nbsp;<br /></span></p>
+<p>&nbsp;</p>
+<h5><strong>Employable Skills Training</strong></h5>
+<p><span>Earning an Occupational Skills Certificate will help you to develop job skills in a special area of education in a short period of time. Successful completion may certify that you are prepared with job entry skills leading to a full Certificate of Achievement program, or skills to upgrade or advance in an existing career.</span></p>
+<p>&nbsp;</p>
+<p><span><a title="View all Certificate Programs &amp; Empolyable Skills Training " href="https://www.ltcc.edu/academics/degrees_and_certificates/certsandemployableskills.php">View all Certificate Programs &amp; Employable Skills Training &gt;&gt;</a></span>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>More Learning Opportunities</h4>
+<hr />
+<h5>&nbsp;</h5>
+<h5><strong>A<span style="font-size: 14pt;">DVANCE</span></strong></h5>
+<p><span>ADVANCE is a collaborative network of local organizations, government offices, and employers working together to support adults to help them meet their career, education, and personal goals. These goals can&nbsp;include improving current employment prospects, completion of a high school credential, entering college or career training, and connecting&nbsp;job seekers with high-demand, local industry needs.</span></p>
+<p><a href="https://advance-learnearngrow.org/" target="_blank" rel="noopener">View all ADVANCE programs &gt;&gt;</a></p>
+<p>&nbsp;</p>
+<hr />
+<h5><strong>English as a Second Language</strong></h5>
+<p><span>The non-credit English as a Second Language (ESL) program at Lake Tahoe Community College is designed as a series of sequential courses, ranging from Low Beginning through Advanced levels of English proficiency. The sequential curriculum, based on an integrated set of student learning outcomes, provides instruction through each strand of learning: listening, speaking, reading, and writing.</span></p>
+<p><a title="ESL Program" href="https://www.ltcc.edu/academics/academic_programs/esl.php">View the ESL program &gt;&gt;</a></p>
+<p>&nbsp;</p>
+<h5>&nbsp;</h5>
+<h5><strong>CONNECT</strong></h5>
+<p><span>Lake Tahoe Community College's CONNECT Community Education program provides community members of all ages with non-credit opportunities for education, enrichment, and adventure. CONNECT workshops cover a wide range of interests, from cooking and fitness to professional development and kids camps.</span></p>
+<p><a title="View all CONNECT courses" href="https://www.ltcc.edu/communityeducation/index.php">View all CONNECT courses &gt;&gt;</a></p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h3 style="text-align: center;">&nbsp;</h3>
+<h3 style="text-align: center;">APPLY</h3>
+<h3 style="text-align: center;">NOW!</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h5>Have a Question?</h5>
+<hr />{{a:104312}}
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+	
+</document>

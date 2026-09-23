@@ -1,0 +1,2 @@
+<!-- ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="navigation"/ --><li><a href="https://www.ltcc.edu/academics/academic_programs/socialscience/history.php">History</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/socialscience/politicalsci.php">Political Science</a></li>

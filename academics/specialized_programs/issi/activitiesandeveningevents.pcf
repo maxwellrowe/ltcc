@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."> Events &amp; ISSI Kids</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Events</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>ISSI Events | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore events at LTCC’s Intensive Spanish Summer Institute (ISSI), featuring cultural activities, guest speakers, and immersive experiences that enrich Spanish language learning." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><div>
+<h3>ISSI Pre-Event: Sunday, July 26, 2026, 3-5pm</h3>
+<p>ISSI starts at 8am sharp on Monday...so come on in to campus the day before to get prepared! We'll have your materials ready for you so that you're ready to hit the ground running on Monday morning. You'll meet your grammar instructor, plus you can familiarize yourself with campus. We'll also have the full schedule of breakouts and series for you so that you can plan out ISSI Week.</p>
+<p>Make sure you routinely check your emails about this event and all other ISSI-related announcements. We'll start sending out information in early July.</p>
+<ul>
+<li>Time: 3-5pm</li>
+<li>Location: LTCC Campus</li>
+<li>No fee; come on in!</li>
+</ul>
+<h3>ISSI Monday: ISSI Spanish Movie Night</h3>
+<ul>
+<li>Date: Monday, July 27th</li>
+<li>Time: 7:00-8:30pm</li>
+<li>Location: Duke Theatre (F111)</li>
+<li>Film title: <em>Norita </em>(90 minutes)&nbsp;</li>
+<li>Cost: Tickets are $12 each, but go up to $15 after July 20th. You can purchase tickets on <a href="https://go.asapconnected.com/?org=1252" target="_blank" rel="noreferrer noopener"><span data-contrast="none" xml:lang="EN-US" lang="EN-US">CONNECT's website</span></a>.</li>
+</ul>
+<p>Tickets are also available for purchase at the door for $15.&nbsp;</p>
+<p>Exploring activism, dictatorship, and women's rights, Norita traces the extraordinary journey of Nora Corti&ntilde;as, whose son was disappeared during Argentina's 1970s military dictatorship.</p>
+<p>Popcorn and drinks will be available for sale at the concession stand.</p>
+<p>Watch the trailer below!</p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/AbJol48NpPU?si=AFrfiyWZMbz2St1j" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h3>&nbsp;ISSI Tuesday: An Evening with Dr. John Rosenberg</h3>
+<ul>
+<li>Date: Tuesday, July 28th</li>
+<li>Time: 6:00-9:00pm</li>
+<li>Location: Duke Theatre (F111)</li>
+<li>Cost: Free, come on in!</li>
+</ul>
+<p>Join LTCC as we engage with Dr. John Rosenberg, renown scholar in Spanish literature and art history who has studied and traveled the Camino de Santiago in Spain. He'll share an inspiring presentation on thehistory, art, music and architecture of this legendary pilgrimage route.</p>
+<h3>Lunch and Learn: <span data-contrast="none">Using Spanish to Support Immigrant Communities</span><span data-ccp-props="{&quot;134245418&quot;:true,&quot;134245529&quot;:true,&quot;335559738&quot;:160,&quot;335559739&quot;:80}">&nbsp;</span></h3>
+<ul>
+<li>Date: Wednesday and Thursday, July 29th and 30th</li>
+<li>Time: 12:00-12:45pm</li>
+<li>Location: Library Patio</li>
+<li>Cost: Free, come on in!</li>
+</ul>
+<p>Join attorney and returning ISSI student Richard Keenan for a lunchtime presentation on July 29 and July 30 at the Library Patio. Learn about immigration enforcement in California, its impact on Spanish-speaking communities, and the growing need for Spanish-speaking volunteers to assist individuals navigating immigration courts and USCIS applications. Richard will share ways to get involved with legal aid and volunteer organizations, answer questions, and invite attendees to discuss how they use Spanish to support their communities. The presentation runs approximately 45 minutes. Bring your lunch and join the conversation!&nbsp;</p>
+<h3>Spanish Wine Walk&nbsp;</h3>
+<ul>
+<li>Date: Wednesday, July 29th</li>
+<li>Time: 5:00-7:00pm</li>
+<li>Location: LTCC Library Patio</li>
+<li>Fee: $65; register on <a href="https://go.asapconnected.com/?org=1252">CONNECT's website</a></li>
+</ul>
+<p>Please note that spaces are limited. Availability of tickets is posted on CONNECT's website.</p>
+<p>Sip, stroll, and savor your way through a captivating wine walk experience. Immerse yourself in the enchanting culture of Spanish and Latin American wine making as you taste some of the regions' most renowned wines. Our knowledgeable guide, Karla will take you through the history and techniques that make Spanish wines so unique while indulging in delicious tapas along the way. Our Spanish wine walk is the perfect way to enjoy the world of wine while exploring the beauty of the college's alpine campus!&nbsp;</p>
+<h3>&iexcl;Loter&iacute;a!</h3>
+<ul>
+<li><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Date: Thursday, July 30th</span></li>
+<li><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Time: 6:00-8:00pm</span></li>
+<li><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Location: Aspen Room (L104)</span></li>
+<li><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Fee: $10; purchase tickets at the Information Desk in the Commons</span></li>
+<li><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Limited to 80 participants</span></li>
+</ul>
+<p><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Join us for a fundraiser for LTCC student scholarships! This fun event will have food and prizes! Dinner will include chicken and beef Fajitas, served with rice and beans, corn and flour tortillas, a fresh fruit plate, spring mix salad, and chips with salsa.</span></p>
+<p><span data-contrast="none" xml:lang="EN-US" lang="EN-US">Note that the first board covers the cost of food, and more boards can be purchased during the event for $10 each.</span></p>
+</div>
+<div>
+<h3>Spanish Kids Camp</h3>
+<p>While you're brushing up on your Spanish skills at ISSI, the young ones can be learning and enjoying Tahoe too! LTCC's CONNECT Community Education program has a wide array of fun and enlightening activities for kids ages 6-14. Beginning Spanish speakers can expect to learn the basics in vocabulary and conversation. The more advanced Spanish speaker will be challenged in higher level conversation.&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>Time: 8 AM - 4 PM, Monday, 7/27 to Friday, 7/31</p>
+<p>Location: On campus</p>
+<p>Fee:&nbsp; $545</p>
+<hr />
+<p>Registration is open and spaces are still available.&nbsp; Please visit <a href="https://www.ltccconnect.com">LTCC CONNECT's website</a> or call 530.541.4660 X717.&nbsp; Registration maybe taken over the phone.&nbsp;</p>
+<h3>ISSI Gym Membership</h3>
+<p>CONNECT is providing a Gym Pass during ISSI week. &nbsp;For only $35, participants can use the gym as part of a plan to keep their bodies and spirits fit.</p>
+<p>Time: 6 AM - 9PM, daily.&nbsp;</p>
+<p>Location: Fitness Education Center, LTCC Campus&nbsp;</p>
+<hr />
+<p>Registration is open and spaces are still available.&nbsp; Please visit <a href="https://www.ltccconnect.com">LTCC CONNECT's website</a> or call 530.541.4660 X717.&nbsp; Registration maybe taken over the phone.&nbsp;</p>
+</div></ouc:div>
+
+	
+</document> 

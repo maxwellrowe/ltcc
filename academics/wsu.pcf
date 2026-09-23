@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	
+	
+	<footcode>
+	
+	<script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            ttd_dom_ready( function() {
+                if (typeof TTDUniversalPixelApi === 'function') {
+                    var universalPixelApi = new TTDUniversalPixelApi();
+                    universalPixelApi.init("dchihe9", ["b8umpjg"], "https://insight.adsrvr.org/track/up");
+                }
+            });
+        </script>
+	
+	</footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Washington State University @ LTCC</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Washington State University @ LTCC</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="false">Two Column</option>
+<option value="three" selected="true">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Washington State University @ LTCC</title>
+		<meta name="Description" content="Washington State University @ LTCC" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<td>&nbsp;Hospitality Business Management</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/wsu-lmuc_business.jpg" alt="WSU - Hospitality Business Management" width="1080" height="810" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="mailto:harrison@ltcc.edu?subject=" target="_blank" rel="noopener">Request Info</a></td>
+<td style="text-align: center;"><a href="https://futurecoug.wsu.edu/portal/apply" target="_blank" rel="noopener">Apply Now</a></td>
+</tr>
+</tbody>
+</table>
+<p><br />Earn your degree in Hospitality Business Management with Washington State University Everett right here in beautiful South Lake Tahoe.</p>
+<p>Course offerings through Washington State University Everett will help you master the fundamentals of operating hotels, restaurants, managed services venues, and tourism destinations&mdash;whether they&rsquo;re located in the U.S. or around the world.</p>
+<p><a href="https://online.wsu.edu/undergrad/HBM.aspx" target="_blank" rel="noopener"><img class="" src="https://www.ltcc.edu/_resources/images/wsu_everett.png" alt="WSU Everett logo" width="360" height="80" /></a></p>
+<p><span style="font-size: 24px;"><br />Coming Up in Spring 2025:<br /></span>May 12, 2025 - June 22, 2025</p>
+<div>
+<p class="p1"><strong>HBM280 Hospitality Systems</strong><br /><em>HBM280 </em>|&nbsp;<em>Monday + Wednesday from 9am - 12pm</em><strong><br /></strong>3 Management functions relating to the planning and operation of various lodging, food, and beverage businesses.</p>
+</div>
+<div><strong>HBM358 Food Service Systems and Control</strong></div>
+<div><em>HBM358 </em>|&nbsp;<em>Tuesday + Thursday from 9am-12pm</em></div>
+<div>3 Course Prerequisite: ACCTG 230 or 298; B A 204, 205, and <span style="font-size: inherit; background-color: #fffdfd;">206 or concurrent enrollment, or B A 212 or concurrent enrollment; admitted to a major in the College</span>
+<p class="p1">of Business or minor in Hospitality Business Management. Operational control processes, control systems, and cost analysis procedures in food and beverage management.</p>
+<p class="p1"><strong>HBM 496 Special Topics<br /></strong>V 1-3 May be repeated for credit: cumulative maximum 6 credits.<br /><span style="font-size: inherit; background-color: #fffdfd;">HBM 496</span><span style="font-size: inherit; background-color: #fffdfd;"> will be structured as an industry sponsored project provided by local industry partners. </span><em style="font-size: inherit;">This will be a full 12-week course | May 5<span class="s1">th -</span>&nbsp;July 25<span class="s1">th</span>.<br /></em><span style="font-size: inherit; background-color: #fffdfd;">This project would be outside of any industry experience hours. We will require HBM 496 plus a minimum of one of the two courses. Industry mentors and Instructor will collaborate on progress meetings and expectations.</span></p>
+</div>
+<div>For more information about how to register for classes, call 530.541.4660 x245 or email <a href="mailto:lmuc@ltcc.edu">lmuc@ltcc.edu</a>.</div>
+<hr />
+<h5>About the LTCC/WSU Everett Partnership</h5>
+<p>In 2018, Lake Tahoe Community College entered into an agreement with Washington State University, a top-tiered research institution, to offer a degree in Hospitality Business Management (HBM). Courses are offered on campus at the Lisa Maloff University Center through WSU Everett.</p>
+<hr />
+<h5>About WSU&rsquo;s School of Hospitality Business Management</h5>
+<p>WSU&rsquo;s <a href="https://business.wsu.edu/departments/hospitality/">School of Hospitality Business Management,</a> established in 1932, consistently ranks among the top 5 percent of the 170 similar programs in the nation. It is part of WSU&rsquo;s AACSB-accredited <a href="https://business.wsu.edu/">Carson College of Business</a>. Our alumni live and work across the globe.</p>
+<hr />
+<h5>Financial Support</h5>
+<p>Financial support is available through LTCC and WSU.</p>
+<p><strong>Scholarship Opportunities</strong></p>
+<p>For more information about LTCC scholarships, email <a href="mailto:mailto:%20ucenter@ltcc.edu">ucenter@ltcc.edu</a>.</p>
+<div>
+<p><span style="background-color: #fffdfd;">WSU&rsquo;s School of Hospitality Business Management awards over $125,000 in scholarships annually. The Carson College of Business awarded its students over $800,000 during the 2019-2020 academic year; scholarships range from $500 to $5,000 per recipient per year, and students are eligible to receive more than one scholarship. </span><a href="https://business.wsu.edu/next-carson-coug/scholarships/getting-started/">Learn more and apply for scholarships here</a><span style="background-color: #fffdfd;">.</span></p>
+<p><strong>Financial Aid</strong></p>
+</div>
+<p>Students in the HBM program are also eligible to apply for financial aid. Additional assistance is available! Contact Brandon Buckingham at <a href="mailto:brandon.buckingham@wsu.edu">brandon.buckingham@wsu.edu</a>.</p>
+<p><strong>For Tahoe-based students who are interested in applying or who may need financial assistance, please contact Meredith Crosby, <a href="mailto:mecrosby@ltcc.edu">mecrosby@ltcc.edu</a> with the ADVANCE Office at LTCC.</strong></p>
+<hr />
+<h5>Contact Details</h5>
+<p><strong>Admissions</strong></p>
+<p>Alex Tadio, Director of Admissions, WSU Everett<br />Email: <a href="mailto:alexander.tadio@wsu.edu">alexander.tadio@wsu.edu</a></p>
+<p><strong>Advising</strong></p>
+<p>Anna McLeod, Director of Student Services, WSU Everett<br />Email: <a href="mailto:anna.mcleod2@wsu.edu">anna.mcleod2@wsu.edu</a><br />Phone: 425.405.1600</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h2>Contact Us</h2>
+<hr />{{a:242232}}</ouc:div>
+	
+</document>

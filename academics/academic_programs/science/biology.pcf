@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Biology</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Biology Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Discover LTCC’s Biology program, offering courses in life sciences, ecology, and human biology. Prepare for careers in healthcare, research, or environmental science while learning in the beautiful Lake Tahoe region." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Biology</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/natural_sci/24_biostudents.jpg" alt="Biology Lab Students" width="1080" height="720" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><img style="display: block; margin-left: auto; margin-right: auto; float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/science-technology-environment-white-back.jpg" alt="Science Meta Major icon" width="206" height="204" /></p>
+<p>From cell and molecular biology to ecology and anatomy and physiology, LTCC has a robust Biology department and can prepare your for your chosen career path.</p>
+<p><span>An Associate Degree is offered in the field of&nbsp;</span><a tabindex="-1" title="Liberal Arts" href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php">Liberal Arts with an emphasis Mathematics &amp; Science &rarr;</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/natural_sci/24_microbiolab.jpg" alt="Biology Lab Students" width="1080" height="720" /></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Associate of Arts, Liberal Arts: Mathematics and Science</td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-b558-7d91-9c7e-38bb74906e84/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+<p>The<span>&nbsp;</span><strong>Mathematics and Science area of emphasis</strong><span>&nbsp;</span>is an interdisciplinary option for students who desire a broad study in the natural science disciplines that include Anthropology, Astronomy, Biology, Chemistry, Geology, Physical Science, Physics and Math. The Mathematics and Science area of emphasis will help students prepare for transfer to a university in potential majors such as math, the biological sciences, the physical sciences, and related fields. Courses completed to satisfy the area of emphasis requirements below may also count toward satisfying university transfer general education requirements. Students are advised to consult with a counselor to develop an education plan that is appropriate to accomplish their academic goals.</p>
+</td>
+</tr>
+<tr>
+<td>Related Degrees</td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php">Associate Degree in Science, Environmental Science</a></li>
+<li><a title="Environmental Science &amp; Technology" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php">Associate Degree in Art, Environmental Studies</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php">Associate Degree for Transfer, Kinesiology</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div>Check out more degree and certificate options in related Meta Majors:</div>
+<ul>
+<li><a href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php">Health &amp; Public Safety</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/science/ics/metamajors/meta_science.php">Science, Technology &amp; Environment</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Career Outlook</td>
+<td>
+<p>A Biology degree can lead to many different occupations and career paths. Below are just two career ideas:</p>
+<p><a title="CA Occupational Guide- Nurse Practitioner" href="http://www.labormarketinfo.edd.ca.gov/OccGuides/Summary.aspx?Soccode=291171&amp;Geography=0601000000" target="_blank" rel="noopener">Nurse Practitioner</a><br />The median wage in 2015 for Nurse Practitioners in California was $115,633 annually, or $55.60 hourly. The median is the point at which half of the workers earn more and half earn less.</p>
+<p><a title="CA Occupational Guide- Microbiologist" href="http://www.labormarketinfo.edd.ca.gov/OccGuides/Summary.aspx?Soccode=191022&amp;Geography=0601000000" target="_blank" rel="noopener">Microbiologist</a><br />The median wage in 2015 for Microbiologists in California was $90,801 annually, or $43.65 hourly. The median is the point at which half of the workers earn more and half earn less.</p>
+</td>
+</tr>
+<tr>
+<td>Financial Aid &amp; Scholarships</td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 494-2584</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">biology</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="{{f:25458511}}" alt="Caroline Keeshen" width="150" height="150" /></td>
+<td>Caroline Keeshen, PhD</td>
+<td>Faculty</td>
+<td><a href="mailto:bgangursky@ltcc.edu">caroline.keeshen@ltcc.edu</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/sueklosssq.png" alt="Sue Kloss" width="150" height="150" /></td>
+<td>Sue Kloss, PhD</td>
+<td>Faculty</td>
+<td><a href="mailto:kloss@ltcc.edu">kloss@ltcc.edu</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/carlfranz.png" alt="Dr. Carl Franz" width="150" height="150" /></td>
+<td>Carl Franz, PhD</td>
+<td>Faculty</td>
+<td><a href="mailto:cfranz@ltcc.edu">cfranz@ltcc.edu</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/behnazgangursky.jpg" alt="Image of Behnaz Gangursky, Biology Faculty Member" width="128" height="204" /></h5>
+<div><span style="font-size: 12pt;">Behnaz Gangursky, Ph.D.</span><br /><span style="font-size: 10pt;">Biology Faculty Member</span><br /><span style="font-size: 10pt;">(530) 541-4660 x 312</span><br /><span style="font-size: 10pt;"><a href="mailto:bgangursky@ltcc.edu">bgangursky@ltcc.edu</a>&nbsp;</span></div>
+<div><span style="font-size: 10pt;">Office: D100</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Credentials:<br />B.S. Urmia University, Urmia, Iran<br />M.S. Azad University, Kazeroon, Iran<br />Ph.D. Tokyo University of Agriculture and Technology, Tokyo, Japan</span></div>
+<div>&nbsp;</div>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/sueklosscopy.jpg" alt="Image of Sue Kloss, Biology Faculty Member" width="150" height="204" /></p>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 12pt;"><a href="http://www.ltcconline.net/kloss/">Susan Kloss, Ph.D.<br /></a></span><span style="font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif;">Biology Faculty Member<br /></span><span style="font-family: helvetica,arial,sans-serif;">(530) 541-4660 x&nbsp;244<br /></span><span style="font-family: helvetica,arial,sans-serif;"><a href="mailto:kloss@ltcc.edu">kloss@ltcc.edu</a></span></span></div>
+<div><span style="font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif;">Office: D101</span></span></div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;"><span style="font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif;">Credentials:</span></span></div>
+<div style="text-align: justify;"><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">B.S. West Chester State College</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">M.A. University of Connecticut</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">M.S. University of California, Berkeley</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Ph.D.</span></div>
+<div style="text-align: justify;">&nbsp;&nbsp;</div>
+<h5>Adjunct Faculty</h5>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><span style="font-size: 12pt;">Kim Gorman, M.S.</span><br />Biology Adjunct Instructor<br /><a href="mailto:kpgorman@mail.ltcc.edu">kpgorman@mail.ltcc.edu</a> </span></div>
+<div>&nbsp;</div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><span style="font-size: 12pt;">Sheryl Ferguson, M.S.</span><br />Biology Adjunct Instructor<br /><a>slferguson@mail.ltcc.edu</a> </span></div>
+<div>&nbsp;</div>
+<h5>&nbsp;</h5></ouc:div>
+  	
+</document>

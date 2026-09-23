@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Career &amp; Technical Education Advisory Committee Meeting Minutes</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Career &amp; Technical Education Advisory Committee Meeting Minutes</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Career &amp; Technical Education Advisory Committee Meeting Minutes</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><div>
+<div><span style="font-size: 24px;">2025-26</span></div>
+<ul>
+<li><a title="AS advisory meeting minutes" href="{{f:79219632}}" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a title="Criminal Justice Minutes" href="{{f:78705529}}" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="Culinary/Hospitality minutes" href="{{f:81880339}}" target="_blank" rel="noopener">Culinary Arts/Hospitality Management</a></li>
+<li><a title="Businesss and Economics minutes" href="{{f:79892991}}" target="_blank" rel="noopener">Business and Economics</a></li>
+<li><a title="minutes" href="{{f:81545356}}" target="_blank" rel="noopener">Forestry and Environmental Science</a></li>
+<li><a title="minutes" href="{{f:81564939}}" target="_blank" rel="noopener">Wilderness Education and Outdoor Leadership</a></li>
+</ul>
+</div>
+<div><span style="font-size: 24px;">2024-2025<br /></span><span style="font-size: 24px;"></span></div>
+<div>
+<ul>
+<li><a title="Open minutes" href="{{f:72067057}}" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a title="Open minutes" href="{{f:73366932}}">Allied Health</a></li>
+<li><a href="{{f:71449811}}" target="_blank" rel="noopener">Computer and Information Systems</a></li>
+<li><a title="Open Minutes" href="{{f:72067058}}" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="minutes" href="{{f:72767865}}" target="_blank" rel="noopener">Digital Media, Commercial Photography, &amp; Commercial Music</a></li>
+<li><a title="minutes" href="{{f:72254406}}" target="_blank" rel="noopener">Early Childhood Education</a></li>
+<li><a title="Open minutes" href="{{f:72067056}}" target="_blank" rel="noopener">Fire Science</a></li>
+<li><a title="minutes" href="{{f:73366879}}" target="_blank" rel="noopener">Forestry and Environmental Science</a></li>
+<li><a title="General Business" href="{{f:71638769}}" target="_blank" rel="noopener">General Business</a></li>
+<li><a title="minutes" href="{{f:72774700}}" target="_blank" rel="noopener">Wilderness Education and Outdoor Leadership</a></li>
+</ul>
+</div>
+<div><span style="font-size: 24px;">2023-24</span><span style="font-size: 24px;"></span></div>
+<div>
+<ul>
+<li><a href="{{f:63605874}}" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a title="Allied Health" href="{{f:66523552}}">Allied Health</a></li>
+<li><a title="minutes" href="{{f:63586052}}" target="_blank" rel="noopener">Computer and Information Systems</a></li>
+<li><a title="minutes" href="{{f:63605928}}" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a href="{{f:65581719}}" target="_blank" rel="noopener">Digital Media, Commercial Photography, &amp; Commercial Music</a></li>
+<li><a title="minutes" href="{{f:63585329}}" target="_blank" rel="noopener">Early Childhood Education</a></li>
+<li><a href="{{f:64592555}}">Fire Science</a></li>
+<li><a href="{{f:66287492}}" target="_blank" rel="noopener">Forestry and Environmental Science</a></li>
+<li><a href="{{f:65572307}}" target="_blank" rel="noopener">General Business</a></li>
+<li><a href="{{f:64925230}}">Wilderness Education</a></li>
+</ul>
+</div>
+<div><span style="font-size: 24px;">2022-23</span></div>
+<ul>
+<li><a title="AS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20230118_as_acminutes_agenda.pdf">Addiction Studies</a></li>
+<li><a href="{{f:61187148}}" target="_blank" rel="noopener">Allied Health</a></li>
+<li><a title="CIS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20230208_cis_ac_minutes_agenda.pdf">Computer and Information Systems</a></li>
+<li><a title="CRJ AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/230124_crj_ac_minutes_agenda.pdf">Criminal Justice</a></li>
+<li><a href="{{f:61188557}}" target="_blank" rel="noopener">Culinary Arts/Hospitality Management</a></li>
+<li><a href="{{f:61416395}}" target="_blank" rel="noopener">Fire Science</a></li>
+</ul>
+<div><span style="font-size: 24px;">2021-22</span></div>
+<ul>
+<li><a title="AS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20221105_as_acminutes_agenda.pdf">Addiction Studies</a></li>
+<li><a title="AH AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20220525_ah_advisoryminutes_agenda.pdf">Allied Health</a></li>
+<li><a title="CIS_AdCom" href="https://www.ltcc.edu/_resources/pdfs/cte/20220209_cis_advisoryminutes_agenda.pdf">Computer and Information Systems</a></li>
+<li><a title="CRJ AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/01262022_crj_advisoryminutes_agenda.pdf">Criminal Justice</a></li>
+<li><a title="CUL/HSP AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20220427_cul_hsp_acminutes_agenda.pdf">Culinary Arts/Hospitality</a></li>
+<li><a href="{{f:51554522}}" target="_blank" rel="noopener">Digital Art, Commercial Photography, &amp; Commercial Music</a></li>
+<li><a title="ECE AdCom" href="https://www.ltcc.edu/_resources/pdfs/cte/02222022_ece_advisoryminutes_agenda.pdf">Early Childhood Education</a></li>
+<li>Forestry and Environmental Science</li>
+<li><a title="FS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/03232022_fs_advisoryminutes_agenda.pdf">Fire Science</a></li>
+<li><a href="{{f:51554397}}" target="_blank" rel="noopener">General Business</a></li>
+</ul>
+<div><span style="font-size: 18pt;">2020-21</span></div>
+<ul>
+<li><a title="AS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20210513_as_acminutes_agenda.pdf" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a title="AH AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20210121_ah_advisoryminutes_agenda.pdf" target="_blank" rel="noopener">Allied Health</a></li>
+<li><a title="CIS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20210210_cis_advisoryminutes_agenda.pdf" target="_blank" rel="noopener">Computer and Information Systems</a></li>
+<li><a href="https://www.ltcc.edu/_resources/pdfs/cte/20210513_crj_acminutes_agenda.pdf">Criminal Justice</a></li>
+<li><a title="culinary arts adcom" href="https://www.ltcc.edu/_resources/pdfs/cte/20210421_cul_acminutes_agenda.pdf" target="_blank" rel="noopener">Culinary Arts</a></li>
+<li><a href="{{f:51554325}}" target="_blank" rel="noopener">Digital Art, Commercial Photography, &amp; Commercial Music</a></li>
+<li><a title="ECE AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/02172021_ece_advisoryminutes_agenda.pdf">Early Childhood Education</a></li>
+<li><a title="EST AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20210303_est_advisoryminutes_agenda.pdf" target="_blank" rel="noopener">Environmental Science and Technology</a></li>
+<li><a title="FS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20210318_fs_acminutes_agenda.pdf">Fire Science</a></li>
+<li><a href="{{f:51554352}}" target="_blank" rel="noopener">General Business</a></li>
+</ul>
+<div><span style="font-size: 24px;">2019-20</span></div>
+<div>
+<ul>
+<li>Addiction Studies*</li>
+<li>Allied Health*</li>
+<li>Computer and Information Science*</li>
+<li><a title="CRJ AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20200219_crj_acminutes_agenda.pdf" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="CUL AdCom" href="https://www.ltcc.edu/_resources/pdfs/cte/20200109_cul_acminutes_agenda.pdf">Culinary Arts</a></li>
+<li>Digital Art, Commercial Photography &amp; Commercial Music*</li>
+<li>Environmental Technology &amp; Sustainability*</li>
+<li><a href="{{f:51554244}}" target="_blank" rel="noopener">Early Childhood Education</a></li>
+<li><a title="FS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20191211_fs_acminutes_agenda.pdf" target="_blank" rel="noopener">Fire Science</a></li>
+<li>General Business*</li>
+</ul>
+</div>
+<div>*Due to COVID-19 restrictions during the 2019-2020 academic year, this advisory committee meeting was not conducted.</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 24px;">2018-19</span></div>
+<ul>
+<li><a title="AS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20190109_as_acminutes_agenda.pdf" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li>
+<div><a title="Allied Health AdCom Minutes - 2018" href="https://www.ltcc.edu/_resources/pdfs/cte/20181128_ah_adminutes_agenda.pdf" target="_blank" rel="noopener">Allied Health</a></div>
+</li>
+<li><a title="CIS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20190515_cis_acminutes_agenda.pdf" target="_blank" rel="noopener">Computer and Information Science</a></li>
+<li><a title="CRJ AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20190417_crj_acminutes_agenda.pdf" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="CUL Adcom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20190206_cul-acminutes_agenda.pdf" target="_blank" rel="noopener">Culinary Arts</a></li>
+<li><a title="ETS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20190320_ets_acminutes_agenda.pdf" target="_blank" rel="noopener">Environmental Technology &amp; Sustainability</a></li>
+<li><a title="FS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20181205_fs_acminutes_agenda.pdf" target="_blank" rel="noopener">Fire Science</a></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size: 24px;">2017-18</span></p>
+<ul>
+<li style="text-align: justify;"><a title="Stay tuned for minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20180213_as_acminutes_agenda.pdf" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a title="AH AdCom Minutes 2017-18" href="https://www.ltcc.edu/_resources/pdfs/cte/20171025_ah_acminutes_agenda.pdf" target="_blank" rel="noopener">Allied Health</a></li>
+<li><a title="2017-18 CIS Advisory Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20180322_cis-cao_acminutes_agenda.pdf" target="_blank" rel="noopener">Computer and Information Science</a></li>
+<li><a title="CRJ AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20180517_crj_acminutes_agenda.pdf" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="CUL AdCom Minutes 2017-18" href="https://www.ltcc.edu/_resources/pdfs/cte/20180109_cul_acminutes_agenda.pdf" target="_blank" rel="noopener">Culinary Arts</a></li>
+<li><a title="ETS AdCom Minutes" href="https://www.ltcc.edu/_resources/pdfs/cte/20183005_ets_acminutes_agenda.pdf" target="_blank" rel="noopener">Environmental Technology &amp; Sustainability</a></li>
+<li><a title="FS AdCom Minutes 2017-18" href="https://www.ltcc.edu/_resources/pdfs/cte/20171115_fs_acminutes_agenda_revised.pdf" target="_blank" rel="noopener">Fire Science</a></li>
+</ul>
+<p><span style="font-size: 24px;">2016-17</span></p>
+<ul>
+<li><a title="AS AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20170126_as_acminutes_agenda.pdf" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a title="AH AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20170406_ah_acminutes_agenda.pdf" target="_blank" rel="noopener">Allied Health</a></li>
+<li><a title="CIS and CAO AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20170307_cis_cao_acminutes_agenda.pdf" target="_blank" rel="noopener">Computer and Information Science</a></li>
+<li><a title="CRJ AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20161215_crj_acminutes_agenda.pdf" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="CUL AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20170426_cul_acminutes_agenda.pdf" target="_blank" rel="noopener">Culinary Arts</a></li>
+<li><a title="ETS AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20170606_ets_acminutes_agenda.pdf" target="_blank" rel="noopener">Environmental Technology &amp; Sustainability</a></li>
+<li><a title="FS AdCom Minutes 2016-17" href="https://www.ltcc.edu/_resources/pdfs/cte/20161109_fir_acminutes_agenda.pdf" target="_blank" rel="noopener">Fire Science</a></li>
+</ul></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

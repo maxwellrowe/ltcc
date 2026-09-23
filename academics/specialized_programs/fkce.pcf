@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Foster and Kinship Care (FKCE)</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Foster and Kinship Care Education</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Foster and Kinship Care (FKCE) | Lake Tahoe Community College</title>
+		<meta name="Description" content="LTCC’s Foster &amp; Kinship Care Education (FKCE) program provides training, resources, and support for foster, relative, and kinship caregivers to help children thrive in safe, stable homes." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/fkce/fkce2.jpg" alt="FKCE" width="850" height="413" /></p>
+<hr />
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Foster and Kinship Care Education (FKCE) program at Lake Tahoe Community College offers FREE classes and trainings for current and prospective Resource Families (foster care and kinship care, relative or non-relative) who live in South Lake Tahoe. Our programs are designed to engage and educate Resource Families so they are able to meet the educational, emotional, behavioral and developmental needs of children and youth. The training topics we offer cover a wide range of subjects, with a focus on Trauma, Resource Family Approval (formerly Foster Family), and support and training for Kinship Providers.</p>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Contact</h3>
+<hr />
+<p><strong>Dana McKnight-Flentroy</strong><br />FKCE Program Director<br />(530) 541-4660 x 528<br /><a href="mailto:mcknight@ltcc.edu">mcknight@ltcc.edu</a></p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="3columnareaofstudysnippet" style="background-color: #edf2f5; padding-bottom: 25px;"><br /><br />
+<div class="row" data-equalizer="">
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/specialized_programs/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="Forms"><img src="https://www.ltcc.edu/_resources/images/icons/formsicon_250.jpg" alt="Forms icon" width="250" height="250" /></div>
+<br />
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 14pt;">Forms</span><br /><br /></div>
+<div class="content_headerandparagraph">Please review and complete the appropriate forms to participate and complete coursework:</div>
+</div>
+<div class="areasOfStudy3LearnMore"><a class="areasOfStudy3LearnMoreLink" href="https://www.ltcc.edu/_resources/pdfs/fkce/release_of_caregiver_info_2020.pdf" target="_blank" rel="noopener">Release of Caregiver Information &rarr;</a></div>
+<div class="areasOfStudy3LearnMore"><a class="areasOfStudy3LearnMoreLink" href="https://www.ltcc.edu/_resources/pdfs/fkce/eng_2019_20_fkce_partic_reg.pdf" target="_blank" rel="noopener">Participant Registration &rarr;</a></div>
+<div class="areasOfStudy3LearnMore"><a href="https://www.ltcc.edu/_resources/pdfs/fkce/sp_2019_20_fkce_partic_reg.pdf" target="_blank" rel="noopener">Formulario de Registro de Participante &rarr;</a></div>
+</div>
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/specialized_programs/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="Highlighted Resources"><img src="https://www.ltcc.edu/_resources/images/icons/videoicon_250.jpg" alt="Video Icon" width="250" height="250" /></div>
+<br />
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 14pt;">Highlighted Resources</span></div>
+<div class="content_headerandparagraph">&nbsp;</div>
+<div class="content_headerandparagraph">We would like to bring awareness to traumatic brain injury and shaken baby syndrome. Here are some informative videos in hopes of preventing the devastating, lifelong impact on infants and children:</div>
+</div>
+<div class="areasOfStudy3LearnMore"><a href="https://youtu.be/5nBqLwg2Eug" target="_blank" rel="noopener">Brain Concussion: Shake It and You Break It &rarr;</a></div>
+<div class="areasOfStudy3LearnMore">&nbsp;</div>
+<div class="areasOfStudy3LearnMore"><a href="https://youtu.be/t9vH6tqwxg" target="_blank" rel="noopener">Forever Shaken &mdash; Brain Injury Nebraska &rarr;</a></div>
+<div class="areasOfStudy3LearnMore">&nbsp;</div>
+<div class="areasOfStudy3LearnMore"><a href="https://youtu.be/LfpSTTeSmk" target="_blank" rel="noopener">Shaken Baby Syndrome: Science vs. Myth &rarr;</a></div>
+<div class="areasOfStudy3LearnMore">&nbsp;</div>
+<div class="areasOfStudy3LearnMore"><a href="https://youtu.be/MfvirvbxbfE" target="_blank" rel="noopener">Michael: The Story of Shaken Baby Documentary &rarr;</a></div>
+</div>
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/specialized_programs/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="ZOOM Information"><img src="https://www.ltcc.edu/_resources/images/zoom250.jpg" alt="Zoom Logo" width="250" height="250" /></div>
+<br />
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 14pt;">ZOOM Information</span><br /><br /></div>
+<div class="content_headerandparagraph">
+<p>We look forward to providing you with our Foster and Kinship Care Education training in a live online environment via Zoom.</p>
+<p>Here are the requirements of your participation in order to receive credit/certification:</p>
+</div>
+<div class="content_headerandparagraph">Zoom Guidelines:</div>
+<div class="content_headerandparagraph" style="padding-left: 30px;"><a href="https://www.ltcc.edu/_resources/pdfs/fkce/eng_zoomguidelines_ltcc.docx" target="_blank" rel="noopener">English</a> | <a href="https://www.ltcc.edu/_resources/pdfs/fkce/spanish_zoomguidelines_ltcc.docx" target="_blank" rel="noopener">Spanish</a></div>
+</div>
+<div class="areasOfStudy3LearnMore"><a class="areasOfStudy3LearnMoreLink" href="https://zoom.us/" target="_blank" rel="noopener">Download Zoom &rarr;</a></div>
+</div>
+</div>
+</div>
+<hr />
+<h4>Resource Family Approval</h4>
+<p>The state of California has implemented a variety of changes to help streamline the process of becoming a foster parent that are both family-friendly and child-centered. Pre-service training based on the newly implemented process is available at LTCC. Please contact <a href="mailto:mcknight@ltcc.edu?subject=FKCE%20Inquiry%20from%20the%20Website">Dana McKnight</a> for more information or to register for classes.</p>
+<hr />
+<h4>Family and Kinship Care Education Advisory Minutes</h4>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b><br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>
+<p><a href="{{f:72762500}}" target="_blank" rel="noopener">May 6, 2025</a></p>
+<p><a href="{{f:76880197}}" target="_blank" rel="noopener">October 28, 2025</a></p>
+</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>
+<p><a href="{{f:63217794}}" target="_blank" rel="noopener">February 13, 2024</a></p>
+</td>
+</tr>
+<tr>
+<td>2023</td>
+<td>
+<p><a href="{{f:61993437}}" target="_blank" rel="noopener">February 23, 2023</a></p>
+<p><a href="{{f:61993447}}" target="_blank" rel="noopener">May 4, 2023</a></p>
+<p><a href="{{f:61993453}}" target="_blank" rel="noopener">November 20, 2023</a></p>
+</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/2822.pdf" target="_blank" rel="noopener">February 8, 2022</a></p>
+<p><a href="{{f:61993391}}" target="_blank" rel="noopener">December 1, 2022</a></p>
+</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/2.8.21.pdf" target="_blank" rel="noopener">February 8, 2021</a></p>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/5.4.21.pdf" target="_blank" rel="noopener">May 4, 2021</a></p>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/11521.pdf" target="_blank" rel="noopener">November 5, 2021</a></p>
+</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/02.10.20.pdf" target="_blank" rel="noopener">February 10, 2020</a></p>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/fkce_advisorymin_5_11_20.pdf" target="_blank" rel="noopener">May 11, 2020</a></p>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/12.9.20.pdf" target="_blank" rel="noopener">December 9, 2020</a></p>
+</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/academics/11.20.19minutes.pdf" target="_blank" rel="noopener">November 20, 2019</a></p>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<div><span style="font-size: 12pt;">Dana McKnight-Flentroy</span></div>
+<div><span style="font-size: 10pt;">FKCE Program Director</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 528</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:mcknight@ltcc.edu">mcknight@ltcc.edu</a></span></div>
+<p>&nbsp;</p>
+<div>Kay Huxtable</div>
+<div><span style="font-size: 10pt;">FKCE Program Assistant</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 575</span></div>
+<div><a href="mailto:kehuxtable@ltcc.edu?subject="><span style="font-size: 10pt;">kehuxtable@ltcc.edu&nbsp;</span></a></div>
+<p>&nbsp;</p></ouc:div>
+  	
+</document>

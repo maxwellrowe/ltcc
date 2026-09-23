@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Business Degree</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Business Degree | Lake Tahoe Community College</title>
+		<meta name="Description" content="Students engaging in a collaborative business lecture at Lake Tahoe Community College. The Business Administration program offers courses in economics, business law, ethics, entrepreneurship, and technology, with concentrations in accounting, finance, management, marketing, and small business ownership." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Business</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/business.png" alt="Business Photo" width="1404" height="942" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><a title="Link to Business Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_business.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/business-hospitality-leadership-white-back.jpg" alt="Business Meta Major Icon" width="291" height="288" /></a>The Business program at Lake Tahoe Community College provides students with an introduction of the major components of a business organization in our global environment.&nbsp;Students pursuing this degree will also have the option of exploring such diverse fields as economics, business law, ethics, entrepreneurship, human resources, E-business, professional communication, and technology.</p>
+<p style="text-align: left;">Areas of concentration include: Accounting, Finance, Management, Marketing, Small Business Ownership, and General Business</p>
+<h5 style="text-align: left;"><span style="font-size: 12pt;">The Business Administration AS-T degree at Lake Tahoe Community College is intended for students who plan to complete a bachelor&rsquo;s degree in a similar major at a CSU campus, but not to a particular campus or major.</span>&nbsp;</h5>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><iframe src="//www.youtube.com/embed/Nzt8oszUn7A" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Associate of Arts, Business</span></td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+<p><strong>BUSINESS: ACCOUNTING &amp; FINANCE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9a7d-7aae-a725-77a766d2d225/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr /></div>
+<p style="margin: 20px 0 15px 0;"><strong>BUSINESS: GENERAL BUSINESS</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9c0f-7f5a-833c-4bf4e8e5d2b2/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr /></div>
+<p style="margin: 20px 0 15px 0;"><strong>BUSINESS: MANAGEMENT</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9a07-7cf2-88e3-67918582811d/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr /></div>
+<p style="margin: 20px 0 15px 0;"><strong>BUSINESS: MARKETING</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9cd8-7db9-b08e-f7913501a54b/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Associate in Science for Transfer, Business Administration 2.0</span></td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-992f-7b7f-939c-c54ff8e26d81/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Certificates of Achievement</span></td>
+<td>
+<p><strong>ACCOUNTING AND FINANCE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9b46-7088-b418-ad09e4b13b6f/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr /></div>
+<p style="margin: 20px 0 15px 0;"><strong>ACCOUNTING TECHNICIAN</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9ae4-73d6-b42b-beb5347026ca/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<hr />
+<p><strong>BUSINESS INFORMATION WORKER--QUICK START</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9999-7a5e-871e-4a1270189c7b/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<hr />
+<p><strong>CERTIFIED BOOKKEEPER FOUNDATIONAL SKILLS CERTIFICATE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9f66-7bb3-b83d-83fde00e2ed4/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<hr />
+<p><strong>GENERAL BUSINESS</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9baa-74bb-aac1-f60b66cc5d61/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<hr />
+<p><strong>MANAGEMENT</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9c75-7436-949e-432ae752f590/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<hr />
+<p><strong>&nbsp;MARKETING</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9d3f-78a9-82d2-82e20d33826f/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<hr />
+<p><strong>SMALL BUSINESS OWNERSHIP</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-9da2-73c5-8aa5-80c458f2d3df/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Career Outlook</span></td>
+<td>
+<p>Students who study Business Administration may find themselves working as a Bookkeeper, Accountant, or an Auditing Clerk. These positions are considered to be an organization's financial record keepers and represent a variety&nbsp;of skills and knowledge. Salaries in California range from $34,200 - $54,770. For more information&nbsp;on these careers, please refer to the <a title="California Occupational Guide- BSN" href="http://www.labormarketinfo.edd.ca.gov/occguides/Detail.aspx?Soccode=433031&amp;Geography=0604000017" target="_blank" rel="noopener">California Occupational Guide</a>.</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 14pt;">Potential Salary with a Degree or Certificate: <a title="Salary Surfer" href="http://salarysurfer.cccco.edu/Salaries.aspx" target="_blank" rel="noopener">Salary Surfer</a></span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Financial Aid &amp; Scholarships</span></td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>There are&nbsp;<a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">business</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/treva-thomas.jpg" alt="Treva Thomas" width="130" height="130" /></td>
+<td>Treva Thomas</td>
+<td>Business Instructor</td>
+<td>
+<p>tthomas@ltcc.edu</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5><img src="https://www.ltcc.edu/_resources/images/optimized/business/jonkingsbury.jpg" alt="Jon Kingsbury" width="130" height="206" /></h5>
+<div><strong>Jon Kingsbury, Ed.D.</strong></div>
+<div><span style="font-size: 10pt;">Accounting/Business</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x<strong>&nbsp;</strong>263</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:kingsbury@ltcc.edu">kingsbury@ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Credentials:</span></div>
+<div><span style="font-size: 10pt; line-height: 1.6;">B.A. University of Massachusetts</span></div>
+<div><span style="font-size: 10pt; line-height: 1.6;">M.B.A. University of Massachusetts</span></div>
+<div><span style="font-size: 10pt;">Ed.D. Alliant International University</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<div><img src="https://www.ltcc.edu/_resources/images/optimized/business/trevathomas.jpg" alt="Treva Thomas" width="130" height="195" /></div>
+<div><a href="http://ltcc.populr.me/tthomas"><span style="color: #0066cc;" color="#0066cc">Treva Thomas</span></a></div>
+<div><span style="font-size: 10pt;">Business</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x&nbsp;247</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:treva@ltcc">tthomas@ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Credentials:</span></div>
+<div><span style="font-size: 10pt;"> A.A. Lake Tahoe Community College</span><br /><span style="font-size: 10pt;"> B.S. California State University, Sacramento</span><br /><span style="font-size: 10pt;"> M.B.A. National University</span></div>
+<p>&nbsp;</p>
+<h5>Adjunct Faculty</h5>
+<hr />
+<p><strong>Eric Allmeroth</strong><br /><span style="font-size: 10pt;">Economics</span><br /><span style="font-size: 10pt;"><a href="mailto:eallmeroth@mail.ltcc.edu">eallmeroth@mail.ltcc.edu</a> </span></p>
+<p><strong>Ron Blum</strong><br /><span style="font-size: 10pt;">General Business/Management</span><br /><span style="font-size: 10pt;"><a href="mailto:rmblum@mail.ltcc.edu">rmblum@mail.ltcc.edu</a> </span></p>
+<p><strong>Nancey Carter</strong><br /><span style="font-size: 10pt;">Business Communication</span><br /><span style="font-size: 10pt;"><a href="mailto:necarter@mail.ltcc.edu">necarter@mail.ltcc.edu</a> </span></p>
+<p><span style="font-size: 12pt;"><strong>Kasey DeFranco</strong><br /><span style="font-size: 10pt;">Business Law/General Business</span></span><br /><span style="font-size: 10pt;"><a href="mailto:kedefranco@mail.ltcc.edu">kedefranco@mail.ltcc.edu</a> </span></p>
+<p><strong>Anthony Eckhardt</strong><br /><span style="font-size: 10pt;">Economics</span><br /><span style="font-size: 10pt;"><a href="mailto:ameckhard2@mail.ltcc.edu">ameckhard2@mail.ltcc.edu</a></span></p>
+<p><strong>Emer Gavin</strong><br /><span style="font-size: 10pt;">General Business/Marketing/Advertising</span><br /><span style="font-size: 10pt;"><a href="mailto:emgavin@mail.ltcc.edu">emgavin@mail.ltcc.edu</a>&nbsp;</span></p>
+<p><span style="font-size: 10pt;"><span style="font-size: 12pt;"><strong>Carol Hobson</strong><br /></span></span><span style="font-size: 10pt;">Entrepreneurship/Human Resources/ Organizational Behavior<br /><a href="mailto:chobson@mail.ltcc.edu?subject=">chobson@mail.ltcc.edu</a></span></p></ouc:div>
+  	
+</document>

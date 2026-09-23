@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>section.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Virtual Campus</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Virtual Campus</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Virtual Campus</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><!-- ============================================================
+  PASTE INTO <ouc:div label="main-content"> ONLY
+  Works with existing site CSS — no new stylesheet needed.
+  ============================================================ -->
+<div class="ltcc-vc"><!-- HERO BANNER -->
+<table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/graduate.jpg" alt="LTCC graduate in cap and gown at commencement ceremony" width="1299" height="864" /></td>
+</tr>
+</tbody>
+</table>
+<!-- PAGE INTRO -->
+<div class="ltcc-vc-intro">
+<h1>Online Learning at LTCC</h1>
+<p>Welcome to LTCC's virtual campus. Whether you're enrolled in a fully online course or a hybrid class, you'll find everything you need to get started and succeed &mdash; right here. LTCC delivers online courses through <a title="LTCC Canvas learning management system" href="https://laketahoecc.instructure.com/" target="_blank" rel="noopener">Canvas</a>, our learning management system.</p>
+</div>
+<!-- CTA BUTTONS -->
+<table class="ou-cta-green"><caption>Call-To-Action Buttons</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/academics/virtual_campus/virtualcampusstudentsupport.php">Student Support</a></td>
+<td><a href="https://www.ltcc.edu/academics/virtual_campus/virtualcampusfacultysupport.php">Faculty Support</a></td>
+<td><a href="https://www.ltcc.edu/academics/virtual_campus/virtualstaff.php">Staff Support</a></td>
+</tr>
+</tbody>
+</table>
+<!-- MAIN TWO-COLUMN LAYOUT -->
+<table class="ou-two-columns-2-1"><caption>Main Content &mdash; Tools and Contact</caption>
+<thead>
+<tr>
+<th>Main Content</th>
+<th>Sidebar</th>
+</tr>
+</thead>
+<tbody>
+<tr><!-- LEFT COLUMN: Tools + Resources -->
+<td>
+<h2>Tools You'll Use</h2>
+<!-- Canvas -->
+<div class="ltcc-vc-tool"><img class="ltcc-vc-tool-logo" src="https://www.ltcc.edu/_resources/images/canvas.png" alt="Canvas logo" width="56" height="56" />
+<div class="ltcc-vc-tool-body">
+<h3>Canvas</h3>
+<p>Access your course materials, assignments, discussions, and grades through Canvas &mdash; LTCC's learning management system.</p>
+<a title="Log in to Canvas to access your LTCC courses" href="https://laketahoecc.instructure.com/" target="_blank" rel="noopener">Go to Canvas &rarr;</a></div>
+</div>
+<!-- Student Email -->
+<div class="ltcc-vc-tool"><img class="ltcc-vc-tool-logo" src="https://www.ltcc.edu/_resources/images/icons/outlooklogo.jpg" alt="Microsoft Outlook logo" width="56" height="56" />
+<div class="ltcc-vc-tool-body">
+<h3>Student Email</h3>
+<p>Your LTCC email is how instructors reach you. Check it regularly for announcements, grades, and updates.</p>
+<a title="Access your LTCC student email through Passport" href="http://passport.ltcc.edu" target="_blank" rel="noopener">Access Student Email &rarr;</a></div>
+</div>
+<!-- Zoom -->
+<div class="ltcc-vc-tool"><img class="ltcc-vc-tool-logo" src="https://www.ltcc.edu/_resources/images/virtual_campus/zoomicon.jpg" alt="Zoom logo" width="56" height="56" />
+<div class="ltcc-vc-tool-body">
+<h3>Zoom</h3>
+<p>Many LTCC classes and office hours use Zoom for live sessions. New employees can set up a free account through the CCC Chancellor's Office.</p>
+<a title="Set up a free Zoom account through the CCC Chancellor's Office" href="https://www.conferzoom.org/ConferZoom/SignUp" target="_blank" rel="noopener">Get a Free Zoom Account &rarr;</a></div>
+</div>
+<!-- Textbooks -->
+<div class="ltcc-vc-tool">
+<div class="ltcc-vc-tool-logo ltcc-vc-tool-logo-icon" aria-hidden="true">📚</div>
+<div class="ltcc-vc-tool-body">
+<h3>Textbooks</h3>
+<p>Order your course materials through the LTCC online bookstore.</p>
+<a title="Buy LTCC textbooks and course materials online" href="https://ltcc.ecampus.com/" target="_blank" rel="noopener">Shop the Bookstore &rarr;</a></div>
+</div>
+<hr />
+<h2>Additional Resources</h2>
+<h3>Cranium Caf&eacute;</h3>
+<p>Chat live with a counselor or student support staff member &mdash; no appointment needed.</p>
+<p><a title="Chat live with an LTCC counselor on Cranium Caf&eacute;" href="http://ltcc.craniumcafe.com" target="_blank" rel="noopener">Chat with a counselor &rarr;</a></p>
+<h3>Passport Student Portal</h3>
+<p>Register for classes, view grades, download transcripts, apply for financial aid, and manage your account.</p>
+<p><a title="Log in to the LTCC Passport student portal" href="http://passport.ltcc.edu" target="_blank" rel="noopener">Log in to Passport &rarr;</a></p>
+<h3>Distance Education Policy</h3>
+<p>Taking online courses from outside California? Review LTCC's state authorization policy.</p>
+<p><a title="LTCC Distance Education Policy for students outside California &mdash; opens PDF" href="https://www.ltcc.edu/academics/virtual_campus/distanceedpolicyoutsidecalifornia.pdf" target="_blank" rel="noopener"> Read the Distance Education Policy (PDF) &rarr;</a></p>
+</td>
+<!-- RIGHT COLUMN: Contact + Form -->
+<td>
+<table class="ou-form-block"><caption>Contact and Support Form</caption>
+<tbody>
+<tr>
+<th>Contact Information</th>
+</tr>
+<tr>
+<td>
+<h2>Have a Question?</h2>
+<p>We're here to help. Reach us by phone or email:</p>
+<ul>
+<li><a title="Call LTCC Instruction Office" href="tel:15305414660">(530) 541-4660</a> x373</li>
+<li><a title="Email LTCC Instruction Office" href="mailto:instruction@ltcc.edu">instruction@ltcc.edu</a></li>
+</ul>
+<p><strong>Coyote Hotline:</strong><br /><a title="Call the LTCC Coyote Hotline" href="tel:15305428812">(530) 542-8812</a><br />or (530) 541-4660 x195</p>
+</td>
+</tr>
+<tr>
+<th>Ask a Question</th>
+</tr>
+<tr>
+<td>{{a:240262}}</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-form-block"><caption>Website Feedback Form</caption>
+<tbody>
+<tr>
+<th>Feedback</th>
+</tr>
+<tr>
+<td>
+<h2>Website Suggestions?</h2>
+<p>Help us improve the Virtual Campus website &mdash; let us know what you think.</p>
+</td>
+</tr>
+<tr>
+<th>Submit Feedback</th>
+</tr>
+<tr>
+<td>{{a:240553}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- /.ltcc-vc -->
+<p>&nbsp;</p>
+<!-- ============================================================
+  PAGE-SCOPED CSS
+  Paste this into the page's <ouc:div label="css-append"> region,
+  OR upload as a page asset and attach via Page Parameters.
+  All rules scoped to .ltcc-vc — zero risk of site-wide conflict.
+  ============================================================ --></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

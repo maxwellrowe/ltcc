@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode>
+		<style>
+			.alt-title {
+			    margin: 0;
+			}
+		</style>
+	</headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Intensive Spanish Summer Institute</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="true">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Intensive Spanish Summer Institute | Lake Tahoe Community College</title>
+		<meta name="Description" content="Enhance your Spanish fluency at the Intensive Spanish Summer Institute at Lake Tahoe Community College. Join our week-long immersion program with expert native instructors, 16 language levels, cultural classes, and earn 2.5 academic credits. Enroll early!" />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><div>
+<table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Intensive Spanish Summer Institute</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img class="" src="{{f:71517705}}" alt="ISSI children dancing" width="1436" height="808" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- ISSI 2025 Intro Section -->
+<div class="ou-section" style="text-align: center; padding: 2rem 1rem; background-color: #f7f9fb; border-radius: 12px; margin-bottom: 2rem;">
+<h1 style="font-size: 2rem; margin-bottom: 0.5rem; color: #003e51;">ISSI 2026</h1>
+<h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 0.5rem;">July 27 &ndash; July 31, 2026</h2>
+<p style="font-size: 1rem; font-weight: 500; color: #2c2c2c; margin-bottom: 1.5rem;"><strong>Registration begins May 19, 2026</strong>&nbsp;</p>
+<div style="max-width: 800px; margin: 0 auto; text-align: left;">
+<p><strong>Intensive Spanish Summer Institute (ISSI)</strong> at Lake Tahoe Community College is a one-week, immersive Spanish language and cultural learning experience in beautiful South Lake Tahoe. Recognized by the California Community College Board of Governors, ISSI is one of LTCC&rsquo;s signature programs.</p>
+<p>Whether you're a beginner or an advanced Spanish speaker, ISSI offers <strong>16 levels of language instruction</strong> taught by native Spanish-speaking educators. Participants can also attend a variety of fun and engaging breakout sessions focused on grammar, cooking, history, dance, travel, conversation, literature, and more.</p>
+<p><strong>Students earn 2.5 units of academic credit</strong>, with a strong emphasis on both oral and written proficiency. <strong>Class sizes are limited</strong> to ensure a personalized learning environment, so early registration is highly encouraged. Visit our <a href="{{f:64928941}}">FAQ page</a> for enrollment details.</p>
+<p><a href="https://hallcreations.pixieset.com/ltccintensivespanishsummerinstitute/" target="_blank" rel="noopener">Check out the ISSI photo gallery</a> to see the ISSI experience in action!</p>
+<p>Note: There is no RV parking on the LTCC campus, nor is anyone allowed to reside on campus during ISSI. Please use our <a href="{{f:10625768}}">Lodging page</a> for more information on lodging options.</p>
+</div>
+</div>
+<!-- Callout Box: Lodging Advisory -->
+<div class="ou-section" style="background-color: #fff4e5; border-left: 6px solid #e07a00; padding: 1.5rem 1rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto; border-radius: 8px;">
+<p style="margin: 0; font-size: 1rem; color: #333;"><strong>📌 Please Note:</strong> July is a peak season in South Lake Tahoe. We strongly recommend booking your lodging early to ensure availability during ISSI week.</p>
+</div>
+<!-- Registration & Application Help Section (3-Column Layout) -->
+<div class="ou-section" style="padding: 2rem 1rem; background-color: #f0f4f8; border-radius: 12px; margin-bottom: 2rem;">
+<h2 style="text-align: center; color: #003e51; margin-bottom: 2rem;">Need Help Getting Started?</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; max-width: 1000px; margin: 0 auto; text-align: left;"><!-- Column 1: How to Register -->
+<div style="flex: 1 1 280px; background-color: #ffffff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">How to Register</h3>
+<p>Watch step-by-step video tutorials:</p>
+<ul style="list-style: none; padding-left: 0;">
+<li><a href="https://www.youtube.com/watch?v=d0ZSkfxzIYY" target="_blank" rel="noopener">▶️ English Video</a></li>
+<li><a href="https://www.youtube.com/watch?v=VBp_bM1uQvQ" target="_blank" rel="noopener">▶️ Spanish Video</a></li>
+</ul>
+</div>
+<!-- Column 2: Help With Applying -->
+<div style="flex: 1 1 280px; background-color: #ffffff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Help With Applying</h3>
+<p>Need help with CCCApply?</p>
+<ul style="list-style: none; padding-left: 0;">
+<li>📞 (877) 247-4836 (24/7)</li>
+<li>📧 <a href="mailto:support@openccc.net">support@openccc.net</a></li>
+</ul>
+</div>
+<!-- Column 3: General Questions -->
+<div style="flex: 1 1 280px; background-color: #ffffff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">General Questions</h3>
+<p>Email us directly for ISSI-related questions:</p>
+<p><a href="mailto:issi@ltcc.edu">issi@ltcc.edu</a></p>
+</div>
+</div>
+</div>
+<!-- ONE COLUMN ENROLLMENT SECTION W/ PRESERVED ACCORDION -->
+<div class="ou-section" style="padding: 2rem 1rem; background-color: #f7f9fb; border-radius: 12px; margin-bottom: 2rem; max-width: 1000px; margin-left: auto; margin-right: auto;">
+<h2 style="text-align: center; color: #003e51;">How to Enroll in ISSI</h2>
+<div>
+<h5><strong><a id="How To"></a>Enrollment Steps</strong></h5>
+<hr />
+<div>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b><br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<!-- DO NOT MODIFY ACCORDION TABLE -->
+<table class="ou_accordion_2">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Step 1: Apply or Update Your LTCC Application</td>
+<td>
+<p>All ISSI students must <a href="https://www.opencccapply.net/cccapply-welcome?cccMisCode=221" target="_blank" rel="noopener">Apply</a> or <a href="https://www.opencccapply.net/cccapply-welcome?cccMisCode=221" target="_blank" rel="noopener">Update</a> their application.</p>
+<p><strong>ID.me Student ID Verification with CCCApply:</strong> To apply to LTCC or other California Community Colleges, students use the CCCApply online system. When students create or log in to a CCCApply account, they will be guided to ID.me for identity verification (for students 18 or older). <strong>We recommend that all new and returning adult students complete this ID verification before submitting their application.</strong> Skipping ID.me could result in your application being flagged as spam, which may delay admissions or access to financial aid. If you&rsquo;re under 18, you can skip the ID.me step and go directly to the application.</p>
+<p>If you haven't enrolled at LTCC in the last two quarters, you&rsquo;ll need to update your application.</p>
+<p>Need help? Call (877) 247-4836 (24/7) or email <a href="mailto:support@openccc.net">support@openccc.net</a>.</p>
+</td>
+</tr>
+<tr>
+<td>Step 2: Get Your Student ID &amp; Passport Login</td>
+<td>
+<p>Please allow 1&ndash;3 days from application submission to receive your student ID and <a href="https://ss.ltcc.edu:8183/Student/" target="_blank" rel="noopener">Self-Service login</a> via email. Check your junk/spam folder if needed.</p>
+<p>Still haven&rsquo;t received it? Contact the Enrollment Services at (530) 494-2584 x211.</p>
+</td>
+</tr>
+<tr>
+<td>Step 3: Register for Classes</td>
+<td>
+<p>Log into <a title="Login to self service" href="https://ss.ltcc.edu:8183/Student/" target="_blank" rel="noopener">Self-Service</a> to find and register for ISSI classes. If a class is full, join the waitlist.</p>
+<p><strong>Microsoft for Single Sign-On:</strong> Please ensure you can log in to <a href="https://www.office.com/" target="_blank" rel="noopener">www.office.com</a> using your LTCC login (<a href="http://mail.ltcc.edu/" target="_blank" rel="noopener">mail.ltcc.edu</a>).</p>
+<p>When logging into <a href="https://experience.elluciancloud.com/ltcc/" target="_blank" rel="noopener">your LTCC account</a>, you will receive a notification to enroll your <a href="http://mail.ltcc.edu/" target="_blank" rel="noopener">mail.ltcc.edu</a> account with Microsoft MFA (Multifactor Authentication or 2-factor authentication).</p>
+<p>Microsoft MFA requires installing the Microsoft Authenticator app or setting up text MFA on <em>your mobile device</em>. If you have questions or need assistance, please contact the LTCC Office of Information Technology Services (OITS) at <strong>530-541-4660, extension 343</strong> and/or access resources on the <a title="Get help from campus IT" href="{{f:12456790}}" target="_blank" rel="noopener">OITS website</a>.</p>
+<p><a href="https://ss.ltcc.edu:8183/Student/Student/Courses/Search?Terms=2022SU&amp;subjects=SPA&amp;Keyword=ISSI" target="_blank" rel="noopener"> Find ISSI Classes </a></p>
+</td>
+</tr>
+<tr>
+<td>Registration Tips</td>
+<td>
+<ul>
+<li>Confirmation may take up to 48 hours after registering.</li>
+<li>Use Firefox or Internet Explorer &mdash; avoid Safari.</li>
+<li>All course times include grammar, breakout, and series sessions.</li>
+<li><strong>Low Beginning through Intermediate III:</strong> 8am&ndash;11:50am + breakout sessions in the afternoon.</li>
+<li><strong>High Intermediate through Superior:</strong> 8am&ndash;11:50am + afternoon breakouts.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h5><strong>High School Student Enrollment</strong></h5>
+<ol>
+<li>Complete the <a href="https://www.opencccapply.net/gateway/apply?cccMisCode=221" target="_blank" rel="noopener">application</a>. Returning students will need to reapply.</li>
+<li>Fill out the <a title="9-12th Grade Placement form" href="{{f:80979443}}" target="_blank" rel="noopener">9-12th Grade Placement form</a>. The form must include the student, parent/guardian, and High School Principal/Counselor/Designee signatures.</li>
+<li>Next, the student must email the placement form to <a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> with their LTCC email address to confirm student identity.</li>
+<li>The Enrollment Office will clear the student in the system and the student will receive instructions for next steps to enroll via email.</li>
+</ol>
+<p><strong>Payment:</strong> If you&rsquo;re taking 11 or fewer units, tuition is typically not charged. There&rsquo;s a $2 Student Representation Fee (optional), and ISSI courses include a materials fee payable in your LTCC portal or in person.</p>
+<div style="text-align: center; margin-top: 2rem;">
+<p style="font-size: 1.5rem;">📣 Follow us on <a href="https://www.facebook.com/LakeTahoeCommunityCollege/" target="_blank" rel="noopener">Facebook</a></p>
+<p>Tag your photos with <strong>#ISSI</strong> &mdash; we&rsquo;d love to see your experience!</p>
+</div>
+</div>
+</div>
+<!-- INFO CARDS SECTION (REGISTER, FEES, PLACEMENT) -->
+<div class="ou-section" style="background-color: #edf2f5; padding: 2rem 1rem;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; max-width: 1000px; margin: 0 auto;"><!-- REGISTER CARD -->
+<div style="flex: 1 1 300px; background-color: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<div style="text-align: center;"><img style="width: 80px; height: auto; margin-bottom: 1rem;" src="https://www.ltcc.edu/_resources/images/ltcc_images/issi/registericon_250.jpg" alt="Registration Icon" />
+<h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #003e51;">Register for ISSI</h3>
+</div>
+<p><strong>Apply to LTCC:</strong></p>
+<ul>
+<li><a href="https://www.opencccapply.net/uPortal/f/u66l1s1000/normal/render.uP" target="_blank" rel="noopener">Apply to LTCC</a></li>
+<li><a href="https://www.opencccapply.net/uPortal/f/u66l1s1000/normal/render.uP" target="_blank" rel="noopener">Update Your Application</a></li>
+<li><a href="https://www.ltcc.edu/admissions/index.php" target="_blank" rel="noopener">More About Applying to ISSI</a></li>
+</ul>
+<p>Questions? Call One-Stop: (530) 494-2584 x211</p>
+<p><strong>Register for Classes:</strong></p>
+<ul>
+<li><a href="https://ss.ltcc.edu:8183/Student/" target="_blank" rel="noopener">Register via Self-Service</a></li>
+<li><a href="https://passport.ltcc.edu" target="_blank" rel="noopener">Check your LTCC email daily</a></li>
+</ul>
+<p>TIP: Join the wait list if your course level is full.</p>
+</div>
+<!-- FEES CARD -->
+<div style="flex: 1 1 300px; background-color: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<div style="text-align: center;"><img style="width: 80px; height: auto; margin-bottom: 1rem;" src="https://www.ltcc.edu/_resources/images/ltcc_images/issi/feesicon_250.jpg" alt="Fees Icon" />
+<h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #003e51;">Fees</h3>
+</div>
+<p><strong>2026 California Resident Tuition:</strong></p>
+<ul>
+<li>$77.50 enrollment fee* ($31/unit)</li>
+<li>$5 Health &amp; Student Rep Fee</li>
+<li>$42 Material Fee</li>
+<li>Optional 0.5 unit course: $15.50</li>
+</ul>
+<p><strong>2026 Out-of-State Tuition:</strong></p>
+<ul>
+<li>$760.00 enrollment fee* for 2.5 units ($304/unit)</li>
+<li>$5 Health &amp; Student Rep Fee</li>
+<li>$42 Material Fee</li>
+<li>Optional 0.5 unit course: $152</li>
+</ul>
+<p style="font-size: 12px; text-align: left;">*All fees are subject to change</p>
+<p><a href="https://www.ltcc.edu/admissions/fees.php" target="_blank" rel="noopener">More About Tuition &amp; Fees</a></p>
+</div>
+<!-- PLACEMENT CARD -->
+<div style="flex: 1 1 300px; background-color: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+<div style="text-align: center;"><img style="width: 80px; height: auto; margin-bottom: 1rem;" src="https://www.ltcc.edu/_resources/images/ltcc_images/issi/selfplacement_250.jpg" alt="Self Placement Icon" />
+<h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: #003e51;">Choose Your Level</h3>
+</div>
+<p><strong>Placement Assessment:</strong><br />Unsure of your level? Take our Self-Placement Assessment to enroll in the right class for your Spanish proficiency.</p>
+<ul>
+<li><a href="https://www.ltcc.edu/academics/specialized_programs/issi/core-courses.php" target="_blank" rel="noopener">Take the Self-Placement Quizzes</a></li>
+<li><a href="https://www.ltcc.edu/academics/specialized_programs/issi/mini-courses.php" target="_blank" rel="noopener">See Mini-Course List &amp; Events</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- CONTACT CALL TO ACTION -->
+<div class="ou-section" style="text-align: center; padding: 2rem 1rem; background-color: #f7f9fb; border-radius: 12px; max-width: 800px; margin: 2rem auto;">
+<h2 style="font-size: 1.5rem; color: #003e51;">Need Help With Your Application or Registration?</h2>
+<p style="font-size: 1rem;">Call LTCC&rsquo;s One-Stop Office at (530) 494-2584 x211</p>
+</div></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact Us</h5>
+<hr />
+<h5><span style="font-size: 12pt;"><strong>Phone:</strong> (530) 541-4660 x 522</span><br /><span style="font-size: 12pt;"></span></h5>
+<div><span style="font-size: 12pt;"><strong>Email:</strong><a> issi@ltcc.edu</a></span></div>
+<div><span style="font-size: 12pt;"><strong>Location:</strong> Room E102</span></div>
+<div>&nbsp;</div>
+<h5><br /><span style="font-size: 12pt;"></span><span><span> ISSI on TV&nbsp;</span></span></h5>
+<hr />
+<h5><span></span><span><iframe src="//www.youtube.com/embed/_pj3pN8KNzI" width="230" height="165" frameborder="0" allowfullscreen="allowfullscreen"></iframe></span></h5>
+<p><iframe src="https://www.youtube.com/embed/kR3Et1SFc-I" width="230" height="165" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<p style="text-align: left;"><strong>Many Thanks To Our Partners and Donors!</strong></p>
+<hr />
+<div><span style="font-size: 12pt;"><a href="http://www.learnspanishfasthoy.com/" target="_blank">Learn Spanish Fast Hoy </a></span></div>
+<div><span style="font-size: 12pt;"><a href="http://www.learnspanishfasthoy.com/" target="_blank">Linda Ward</a></span></div>
+<div><a href="http://www.learnspanishfasthoy.com">www.learnspanishfasthoy.com</a></div>
+<div>&nbsp;</div>
+<div>Nancy Zarenda</div>
+<div>Spanish Language Academy, LLC</div>
+<div>slainternational @aol.com</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;"><a href="http://www.innbythelake.com" target="_blankwww.innbythelake.com">Hotel Azure&nbsp;</a></span></div>
+<div><span style="font-size: 12pt;">Phone: (800) 877-1466</span></div>
+<div><span style="font-size: 12pt;">&nbsp;</span></div>
+<div><span style="font-size: 12pt;">Henry Wilds Adventure Travel Institute</span></div>
+<div><a href="mailto:adventuretravelinstitute@hotmail.com?subject="><span style="font-size: 12pt;">adventuretravelinstitute@hotmail.com</span></a></div>
+<div><span style="font-size: 12pt;"><a href="http://www.adventuretravelinstitute.com">www.adventuretravelinstitute.com</a></span><span style="font-size: 12pt;"></span></div>
+<div><span style="font-size: 12pt;">Phone: (530) 318-1506</span></div>
+<div><span style="font-size: 12pt;">&nbsp;</span></div>
+<div><span style="font-size: 12pt;">Doug &amp; Diane Rosner</span></div>
+<div><span style="font-size: 12pt;">&nbsp;</span></div>
+<div><span style="font-size: 12pt;">LTCC Foundation Board member Bob Cliff</span></div>
+<div style="text-align: justify;">&nbsp;</div></ouc:div>
+  	
+</document>

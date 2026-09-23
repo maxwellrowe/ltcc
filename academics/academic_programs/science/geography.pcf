@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Geography</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Geography Program | Lake Tahoe Community College      </title>
+		<meta name="Description" content="Study the relationship between people, places, and the environment with LTCC’s Geography program. Prepare for transfer and careers in environmental studies, planning, and geospatial fields." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider"><ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/></ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Geography</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/yosemitefalls_16_9.jpg" alt="Geography" width="2145" height="1212" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a title="Science, Technology, &amp; Environment" href="https://www.ltcc.edu/academics/metamajors/meta_science.php"><span><img class="" style="display: block; float: right; margin: 10px auto 10px auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/metamajor.png" alt="Metamajor Logo" width="200" height="201" /></span></a></h3>
+<p><span>The Geography program at Lake Tahoe Community College provides students with general background knowledge through lecture, lab, and field-based courses. Students will gain a broader understanding of their environment and the interconnectedness between it and other disciplines. A transfer degree in Geography and a Certificate in GIS is available:</span></p>
+<p style="padding-left: 30px;"><span>The <strong>GIS Certificate</strong> at LTCC helps students to gain applicable job skills. A geographic information system (GIS) is a powerful computer system that allows users to acquire, organize, store, and analyze information related to our physical and cultural&nbsp;environment.&nbsp;This graphical map-making software&nbsp;enables people to more easily see, analyze, and understand spatial&nbsp;(space) and&nbsp;temporal&nbsp;(time)&nbsp;patterns and relationships.&nbsp;GIS courses&nbsp;at LTCC help to&nbsp;introduce students to GIS software and help current professional users maintain proficiency.</span></p>
+<p style="padding-left: 30px;">The&nbsp;<strong>Geography&nbsp;Transfer Degree</strong> at LTCC is designed for students who are interested in solving&nbsp;geospatial problems from an interdisciplinary perspective, linking the natural and social sciences. Students will&nbsp;develop&nbsp;their understanding of the sciences&nbsp;while investigating&nbsp;the legal, economic, and political issues&nbsp;associated with management&nbsp;of the environment. Coursework is designed to align with the major prep and transfer requirements in geography at a variety of institutions. Students are encouraged to meet with a LTCC counselor to ensure that course selections align with the specific transfer requirements of each institution.</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{{a:102204}}<br />
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion2</td>
+</tr>
+<tr>
+<td>Associate in Arts for Transfer, Geography</td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-b8c5-7765-a550-3503eeb49b44/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Employable Skills Certificate, GIS</span></td>
+<td>
+<p><strong>GEOGRAPHIC INFORMATION SYSTEMS</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-b2ea-7827-a9d7-1923af7d30fb/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td>Non-Credit Certificate, GIS</td>
+<td>
+<p><strong>GEOGRAPHIC INFORMATION SYSTEMS (NON-CREDIT)</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-b34b-76a6-842f-c3d87da16d35/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td>Related Degrees &amp; Certificates</td>
+<td>
+<table class="ou-chevron-list" style="float: left;">
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Environmental Science" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php" target="_blank" rel="noopener">Associate Degree in Environmental Science</a></li>
+<li><a title="Environmental Studies" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php" target="_blank" rel="noopener">Associate Degree in Environmental Studies</a></li>
+<li><a title="Geology" href="https://www.ltcc.edu/academics/academic_programs/science/geology.php" target="_blank" rel="noopener">Associate Degree in Geology</a></li>
+<li><a title="Liberal Arts" href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php" target="_blank" rel="noopener">Associate Degree in Liberal Arts: Math &amp; Science Emphasis</a></li>
+<li><a title="Environmental Science &amp; Technology" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php" target="_blank" rel="noopener">Certificate&nbsp;in Environmental Science &amp; Technology</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>Careers in Geography</td>
+<td>
+<p><strong>Cartographers</strong></p>
+<p style="padding-left: 30px;">Also known as &ldquo;map makers&rdquo;, cartographers take perceptions of the world and &ldquo;re-create&rdquo; them as maps. Cartographers may have experience with methods such as surveying and remote sensing.</p>
+<p><strong>Emergency Management Planners</strong></p>
+<p style="padding-left: 30px;">Emergency Management Planners utilize geographic tools such as GIS data and remotely sensed data in order to understand and plan for natural and human-induced hazards.</p>
+<p><strong>Environmental Planners</strong><span>&nbsp;</span></p>
+<p style="padding-left: 30px;">Using tools such as GIS and remote sensing, environmental planners are utilized when planning parks, conservation areas, and also are also used by private sector firms.<span>&nbsp;</span></p>
+<p><strong>GIS Analysts and Specialists</strong></p>
+<p style="padding-left: 30px;">GIS is a booming area of job growth. GIS Analysts and Specialists use GIS software such as ArcMap to study different phenomena of the earth.</p>
+<p><strong>Location Analysts</strong></p>
+<p style="padding-left: 30px;">Analyzing the profitability of a location versus another is an essential step for many businesses. Location analysts are also utilized by government and non-profit groups.</p>
+<p><strong>Remote Sensing Analysts and Specialists</strong></p>
+<p style="padding-left: 30px;">Looking at and analyzing the world through satellite and aerial images, geographers who utilize remote sensing are a part of a growing field utilized by numerous sources such as NASA, NOAA, etc.</p>
+<p><strong>Researchers</strong></p>
+<p style="padding-left: 30px;">Everyday something new is being discovered about the world we live. Researchers with a background in geography may have access to and training with different methodologies which may give their research project the edge.</p>
+<p><strong>Teachers</strong></p>
+<p style="padding-left: 30px;">Geography is a fundamental component of a well-rounded K-12 education. Instructors with an established knowledge of geography are desirable to administrators because they provide the opportunity to&nbsp;strengthen a very important aspect of their program.</p>
+<p><strong>Transportation Planners and Managers</strong></p>
+<p style="padding-left: 30px;">The science of the flow and ebb of traffic is just as complex as building the infrastructure itself. Transportation Planners and Managers utilize tools such as GIS and surveys in order to understand the transportation needs and wants of an area. This information is then used to plan for future development.</p>
+<p><strong>Urban and City Planners</strong></p>
+<p style="padding-left: 30px;">Cities are complex systems with patterns and trends which may be overlooked by the untrained eye. Urban and City Planners study these complexities of an urban environment in order to build new or improve current cities.</p>
+</td>
+</tr>
+<tr>
+<td>Financial Aid &amp; Scholarships</td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Geography</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/scottvalentinesquared.jpg" alt="Scott Valentine" width="130" height="128" /></td>
+<td>Dr. Scott Valentine</td>
+<td>Department Lead</td>
+<td>&nbsp;valentine@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/jpsquare.jpg" alt="Jesse Patterson" width="130" height="130" /></td>
+<td>Jesse Patterson</td>
+<td>Instructor</td>
+<td>
+<p>jesse@keeptahoeblue.org</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/eileenpenasquare.jpg" alt="Eileen Pena" width="130" height="130" /></td>
+<td>&nbsp;Eileen Pena</td>
+<td>&nbsp;Instructor</td>
+<td>&nbsp;eppena@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;<img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/tom_square.jpg" alt="Tom Schaefer" width="130" height="130" /></td>
+<td>&nbsp;Tom Schaefer</td>
+<td>&nbsp;GIS Instructor</td>
+<td>&nbsp;tgschaefer@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;<img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/amyfishsquare.jpg" alt="Amy Fish" width="130" height="130" /></td>
+<td>&nbsp;Amy Fish</td>
+<td>&nbsp;<span>GIS Instructor</span></td>
+<td>&nbsp;afish@trpa.org</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/mason_square.jpg" alt="Mason Bindl" width="130" height="130" /></td>
+<td>Mason Bindl</td>
+<td><span>GIS Instructor</span></td>
+<td>mbindl@trpa.org</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/heatherbenson.jpg" alt="Heather Benson" width="130" height="130" /></td>
+<td>Heather Benson</td>
+<td>Instructor</td>
+<td>hlbenson@mail.ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5>&nbsp;</h5>
+<div><span style="font-size: 12pt;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/scottvalentine2.jpg" alt="Scott Valentine Earth Science Faculty" width="149" height="178" /></span></div>
+<div><span style="font-size: 12pt;">Scott Valentine</span><br /><span style="font-size: 10pt;">Earth &amp; Environmental Sciences Faculty&nbsp;Lead<br />(530) 541-4660 x&nbsp;313<br /><a>valentine@ltcc.edu</a></span></div>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<div><span style="font-size: 10pt;">Super Skill:</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">Can eat a taco without all the contents falling out the back.</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Credentials: </span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;"> B.S. Environmental Sceince: Hydrology</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">University of California, Santa Barbara</span></div>
+<div style="padding-left: 30px;">&nbsp;</div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">M.S. Geography: Water Resources</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">San Diego State University</span></div>
+<div style="padding-left: 30px;">&nbsp;</div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">Ed.D Adult Education</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">Capella University</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;">Jesse Patterson</span><br /><span style="font-size: 10pt;">Geography Instructor</span><span style="font-size: 10pt;"><br /><a href="mailto:jesse@keeptahoeblue.org">jesse@keeptahoeblue.org</a></span></div>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<div><span style="font-size: 10pt;">Super Skill:</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">Communication ninja.</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Credentials:</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">B.S.&nbsp;Aquatic Biology</span></div>
+<div style="padding-left: 30px;"><span style="font-size: 10pt;">University of California, Santa Barbara</span></div>
+<div style="padding-left: 30px;">&nbsp;</div>
+<div style="padding-left: 30px;">
+<div><span style="font-size: 10pt;">M.S.&nbsp;Coastal Resource Management</span></div>
+<div><span style="font-size: 10pt;">University of California, Santa Barbara</span></div>
+</div>
+</div>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

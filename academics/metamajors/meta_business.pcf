@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Business, Hospitality, and Leadership</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Business, Hospitality, and Leadership</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="true">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="false">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Business, Hospitality, and Leadership</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p><img style="display: block; margin-left: auto; margin-right: auto;" src="{{f:28978838}}" alt="Business, Hospitality &amp; Leadershp icon" width="324" height="321" /></p>
+<p>Learn customer relations and partnership building at Lake Tahoe Community College while developing your business management knowledge. Master the expertise needed to grow your own business, or the high-demand skills employers need. Career paths include accounting, event planning, hotel or restaurant management, culinary arts, or wilderness and outdoor education.</p>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="Apply Now" href="{{f:10625779}}" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a title="Visit Campus" href="{{f:10625784}}" target="_blank" rel="noopener">Visit Campus</a></td>
+<td><a title="Create a Plan" href="{{f:10625834}}" target="_blank" rel="noopener">Create a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;
+<p>Example Majors:</p>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Business</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree:&nbsp;<span>&nbsp;</span></span></strong></strong><a href="{{f:10625684}}">Business</a></div>
+<div style="padding-left: 30px;"><strong><strong><span><strong><strong><span>&bull; Associate Degree for Transfer:<span>&nbsp;</span></span></strong></strong></span></strong></strong><a title="Business" href="{{f:10625684}}">Business Administration</a></div>
+<div style="padding-left: 30px;"><strong><strong><span><strong><strong><span><strong><strong><span>&bull; Certificates:</span></strong></strong></span></strong></strong></span></strong></strong></div>
+<div style="padding-left: 60px;">-&nbsp;<a href="{{f:10625684}}">Accounting Technician,&nbsp;Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625684}}">Small Business Ownership, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625684}}">Certified Bookkeeper, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;">&nbsp;</div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Culinary Arts</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree:<span>&nbsp;</span></span></strong></strong><a href="{{f:21075128}}">Culinary Arts</a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificates:</span></strong></strong></div>
+<div style="padding-left: 60px;"><span>- <a href="{{f:21075128}}">Foundations of Cooking</a></span></div>
+<div style="padding-left: 60px;"><span>- <a href="{{f:21075128}}">Foundations of Baking and Pastry</a></span></div>
+<div style="padding-left: 60px;"><span>- <a href="{{f:21075128}}">Global Cuisine</a></span></div>
+<div style="padding-left: 60px;">- <a href="{{f:21075128}}">Wine Studies</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:21075128}}">Vegetarian Cuisine</a></div>
+<div>&nbsp;</div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Medical Office Assistant</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree:<span>&nbsp;</span></span></strong></strong><a href="{{f:10625726}}">Medical Office Assistant: Administrative</a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificates:</span></strong></strong></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625726}}">Medical Office Assistant, Administrative, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625726}}">Medical Office Assistant, Part 1, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625726}}">Medical Office Assistant, Part 2, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;">&nbsp;</div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Real Estate</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificate:</span></strong></strong></div>
+<div style="padding-left: 60px;">- <a href="{{f:21082386}}">Real Estate Sales Person, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">&nbsp;</div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Wilderness Education</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree:<span>&nbsp;</span></span></strong></strong><a href="{{f:21082438}}">Wilderness Education and Outdoor Leadership</a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificates:</span></strong></strong></div>
+<div style="padding-left: 60px;">- <a href="{{f:21082438}}">Wilderness Education, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:21082438}}">Search and Rescue, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:21082438}}">Wilderness Medicine, Employable Skills Certificate</a></div>
+</div>
+</div>
+</div>
+</td>
+<td>
+<p>&nbsp;</p>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:<br /><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:206756}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<div>&nbsp;</div></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

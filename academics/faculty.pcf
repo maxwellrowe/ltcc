@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Faculty</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Faculty Directory | Lake Tahoe Community College</title>
+		<meta name="Description" content="Meet the distinguished faculty at Lake Tahoe Community College. Our experienced instructors are dedicated to fostering a supportive and enriching learning environment across all academic disciplines. Learn more about their expertise and commitment to student success." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Full-Time Faculty</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="{{f:81966263}}" alt="Faculty members at LTCC in Fall 2023" width="1200" height="800" /></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<table class="table table-striped" style="width: 100%;">
+<thead>
+<tr>
+<th>Name</th>
+<th><img src="https://www.ltcc.edu/_resources/images/emailenvelope.jpg" alt="Email" width="30" height="20" /></th>
+<th>Academic Department</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aponte Chu, Dr. Melanie</td>
+<td><a href="mailto:mchu@ltcc.edu">mchu@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/library/index.php">Director of Library Services</a></td>
+</tr>
+<tr>
+<td>Armbrust, Bruce</td>
+<td><a href="mailto:armbrust@ltcc.edu">armbrust@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/mathematics.php">Mathematics</a> &amp; <a href="https://www.ltcc.edu/academics/academic_programs/science/physics.php">Physics</a></td>
+</tr>
+<tr>
+<td>Bergner, Nicole</td>
+<td><a href="mailto:nabergner@ltcc.edu">nabergner@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Counselor</a></td>
+</tr>
+<tr>
+<td>Braun, Reggie</td>
+<td><a href="mailto:rjbraun@ltcc.edu">rjbraun@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Counselor</a></td>
+</tr>
+<tr>
+<td>Colond, Dr. Jay</td>
+<td><a href="mailto:jay.colond@ltcc.edu">jay.colond@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/sociology.php">Sociology</a></td>
+</tr>
+<tr>
+<td>Cox, Dr. Cathy</td>
+<td><a href="mailto:cox@ltcc.edu">cox@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/science/physics.php">Physics</a></td>
+</tr>
+<tr>
+<td>Ellingford, Cristi</td>
+<td><a href="mailto:ellingford@ltcc.edu">ellingford@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Counselor</a></td>
+</tr>
+<tr>
+<td>Ewing, Julie</td>
+<td><a href="mailto:ewing@ltcc.edu">ewing@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/english.php">English</a></td>
+</tr>
+<tr>
+<td>Ford, Zachery</td>
+<td><a href="mailto:zachery.ford@ltcc.edu">zachery.ford@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/allied_health/emt.php">Emergency Medical Services</a></td>
+</tr>
+<tr>
+<td>Franz, Dr. Carl</td>
+<td><a href="mailto:cfranz@ltcc.edu">cfranz@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/science/biology.php">Biology</a> &amp; <a href="https://www.ltcc.edu/academics/academic_programs/science/chemistry.php">Chemistry</a></td>
+</tr>
+<tr>
+<td>Gorlaski, Catalina</td>
+<td><a href="mailto:goralski@ltcc.edu">goralski@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/world_languages.php">World Languages</a></td>
+</tr>
+<tr>
+<td>Green, Abigail</td>
+<td><a href="mailto:abigail.green@ltcc.edu">abigail.green@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/library/index.php">Academic Librarian</a></td>
+</tr>
+<tr>
+<td>Green, Dr. Larry</td>
+<td><a href="mailto:lgreen@ltcc.edu">lgreen@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/mathematics.php">Mathematics</a></td>
+</tr>
+<tr>
+<td>Keeshen, Dr. Caroline</td>
+<td><a href="mailto:caroline.keeshen@ltcc.edu">caroline.keeshen@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/science/biology.php">Biology</a></td>
+</tr>
+<tr>
+<td>Lamichhane, Dr. Kushal</td>
+<td><a href="mailto:kushal.lamichhane@ltcc.edu" target="_blank" rel="noopener">kushal.lamichhane@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/business.php" target="_blank" rel="noopener">Business</a></td>
+</tr>
+<tr>
+<td>Locandro, Morgan</td>
+<td><a href="mailto:morgan.locandro@ltcc.edu">morgan.locandro@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/english.php">English</a></td>
+</tr>
+<tr>
+<td>Lukas, Dr. Scott</td>
+<td><a href="mailto:lukas@ltcc.edu">lukas@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/anthropology.php">Anthropology</a></td>
+</tr>
+<tr>
+<td>Marianelli, Julia</td>
+<td><a href="mailto:julia.marianelli@ltcc.edu">julia.marianelli@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/art.php" target="_blank" rel="noopener">Art</a></td>
+</tr>
+<tr>
+<td>Marinelli-Laster, Dr. Beth</td>
+<td><a href="mailto:marinelli-laster@ltcc.edu">marinelli-laster@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/psychology.php">Psychology</a> &amp; <a href="https://www.ltcc.edu/academics/academic_programs/earlychildhoodeducation.php">Early Childhood Education</a></td>
+</tr>
+<tr>
+<td>Morris, Dr. Walter</td>
+<td><a href="mailto:morris@ltcc.edu">morris@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php">Physical Education</a></td>
+</tr>
+<tr>
+<td>Pierce, Dr. Sara</td>
+<td><a href="mailto:pierce@ltcc.edu">pierce@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/world_languages.php">World Languages</a></td>
+</tr>
+<tr>
+<td>Ryland, Sean</td>
+<td><a href="mailto:sryland@ltcc.edu">sryland@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/science/chemistry.php">Chemistry</a></td>
+</tr>
+<tr>
+<td>Smith, Dr. Nate</td>
+<td><a href="mailto:nate.smith@ltcc.edu">nate.smith@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php">Wilderness Education &amp; Outdoor Leadership</a></td>
+</tr>
+<tr>
+<td>Spina, Mike</td>
+<td><a href="mailto:spina@ltcc.edu">spina@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php">Physical Education</a></td>
+</tr>
+<tr>
+<td>Thomas, Tracy</td>
+<td><a href="mailto:tracy@ltcc.edu">tracy@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Counselor</a></td>
+</tr>
+<tr>
+<td>Thomas, Treva</td>
+<td><a href="mailto:treva@ltcc.edu">treva@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/business.php">Business</a></td>
+</tr>
+<tr>
+<td>Tomolillo, Christina</td>
+<td><a href="mailto:tomolillo@ltcc.edu">tomolillo@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/psychology.php">Psychology</a></td>
+</tr>
+<tr>
+<td>Valentine, Dr. Scott</td>
+<td><a href="mailto:valentine@ltcc.edu">valentine@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php">Environmental Science</a>, <a href="https://www.ltcc.edu/academics/academic_programs/science/geography.php">Geography</a> &amp; <a href="https://www.ltcc.edu/academics/academic_programs/science/geology.php">Geology</a></td>
+</tr>
+<tr>
+<td>Vij, Virat</td>
+<td><a href="mailto:vij@ltcc.edu">vij@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/culinaryarts.php">Culinary Arts</a> &amp; <a href="https://www.ltcc.edu/academics/academic_programs/hospitality.php">Hospitality Management</a></td>
+</tr>
+<tr>
+<td>Walker, Dr. Wynn</td>
+<td><a href="mailto:walker@ltcc.edu">walker@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/academics/academic_programs/mathematics.php">Mathematics</a></td>
+</tr>
+<tr>
+<td>Williams, Sarah</td>
+<td><a href="mailto:sewilliams@ltcc.edu">sewilliams@ltcc.edu</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Counselor</a></td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

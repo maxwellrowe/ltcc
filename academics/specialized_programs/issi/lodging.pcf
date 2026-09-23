@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Lodging Information</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Lodging Information</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>ISSI Lodging Information | Lake Tahoe Community College</title>
+		<meta name="Description" content="Find lodging options for LTCC’s Intensive Spanish Summer Institute (ISSI). Explore recommended accommodations near campus for a comfortable stay during the program." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h5><span style="font-size: 24px;">Hotel Discounts</span></h5>
+<p>When making hotel or motel reservations at any of the properties below, make sure to mention that you are a participant of the Intensive Spanish Summer Institute (ISSI) at Lake Tahoe Community College. LTCC does not endorse or recommend these properties. We are providing this information for your convenience only. Additional lodging options and information to help plan your visit to South Lake Tahoe are available on <a href="https://visitlaketahoe.com/hotels/" target="_blank" rel="noopener">Visit Lake Tahoe. </a>Lodging sells out quickly in Lake Tahoe so we suggest you book your stay as soon as you can.&nbsp;<strong>Note, LTCC does not endorse or recommend properties. We are providing this information for your convenience only.</strong></p>
+<hr />
+<h4 class="block-style" data-ogsb="rgb(255, 253, 253)"><b><span data-ogsc="black">Forest Suites Resort at Heavenly Village</span></b><span></span></h4>
+<p data-ogsb="rgb(255, 253, 253)"><span data-olk-copy-source="MessageBody">Just steps from the Heavenly Village, Ski Gondola and Nevada Casinos, and a few short blocks from the crystal-clear waters of Lake Tahoe, Forest Suites Resort is the ideal South Lake Tahoe resort for your next adventure. </span></p>
+<p data-ogsb="rgb(255, 253, 253)">Discounted room rates available using the booking information below.&nbsp;</p>
+<p><a href="https://be.synxis.com/?adult=1&amp;arrive=2026-07-26&amp;chain=21123&amp;child=0&amp;currency=USD&amp;depart=2026-07-31&amp;group=10Q140&amp;hotel=38401&amp;level=hotel&amp;locale=en-US&amp;productcurrency=USD&amp;rooms=1">BOOK YOUR ROOM HERE</a></p>
+<p>&nbsp;(866) 438-1144 - Mention "ISSI 2026"</p>
+<hr />
+<h4 class="block-style" data-ogsb="rgb(255, 253, 253)"><b>Margaritaville Lake Tahoe&nbsp;</b></h4>
+<p data-ogsb="rgb(255, 253, 253)">Just steps from the lake and a short walk to the Heavenly Mountain Resort gondola, this laid-back resort offers the perfect blend of island vibes and mountain thrills for a truly memorable visit.</p>
+<p data-ogsb="rgb(255, 253, 253)">Discounted room rates available using the booking information below.</p>
+<p data-ogsb="rgb(255, 253, 253)"><a href="https://be.synxis.com/?adult=2&amp;arrive=2026-07-26&amp;chain=23717&amp;child=0&amp;currency=USD&amp;depart=2026-07-31&amp;group=4336503&amp;hotel=42357&amp;level=hotel&amp;locale=en-US&amp;productcurrency=USD&amp;rooms=1">BOOK YOUR ROOM HERE</a></p>
+<hr />
+<div style="text-align: left;">
+<h4 class="block-style"><strong>Fireside Lodge Bed &amp; Breakfast</strong></h4>
+<p data-ogsb="rgb(255, 253, 253)"><span>Fireside Lodge Lake Tahoe is a quaint Bed &amp; Breakfast, nestled between Lake Tahoe&rsquo;s southern shore and the national forest, combining the comforts of an upscale hotel and the coziness of a log cabin. Fireside Lodge Lake Tahoe boasts beautiful rustic suites, a bevy of complimentary features and an affable staff dedicated to customer service, earning TripAdvisor&rsquo;s prestigious Certificate of Excellence for years.</span></p>
+<p data-ogsb="rgb(255, 253, 253)"><span class="span-style"><a href="https://www.tahoefiresidelodge.com/" target="_blank" rel="noopener">BOOK YOUR ROOM HERE</a>&nbsp;</span></p>
+<hr />
+<h4 class="block-style" data-ogsb="rgb(255, 253, 253)"><strong>Harrah's Lake Tahoe</strong></h4>
+<p data-ogsb="rgb(255, 253, 253)"><span>Join in on the fun and play at Harrah&rsquo;s Lake Tahoe. Soak in spectacular lake and mountain views from angled windows and enjoy a tranquil retreat thanks to blackout curtains and double-soundproofed walls. Discover your ideal place to rest and relax after days and nights full of non-stop excitement.</span></p>
+<p data-ogsb="rgb(255, 253, 253)"><span class="span-style"><a href="https://www.caesars.com/harrahs-tahoe/hotel" target="_blank" rel="noopener">BOOK YOUR ROOM HERE</a>&nbsp;</span></p>
+<hr /></div>
+<h4 class="block-style" data-ogsb="rgb(255, 253, 253)"><b><span data-ogsc="black">Quality Inn South Lake Tahoe</span></b></h4>
+<p data-ogsb="rgb(255, 253, 253)"><span class="span-style">Quality Inn<sup>&reg;</sup> South Lake Tahoe is tucked under the pines just minutes from restaurants, casinos and shopping at Heavenly Village. We're located off Highway 50 in the city of South Lake Tahoe. Guest rooms feature coffee makers, premium movie channels and are pet friendly. The hotel features community kitchens and a sun deck with a large barbecue&nbsp;area. </span></p>
+<p data-ogsb="rgb(255, 253, 253)"><span class="span-style"><a href="https://www.choicehotels.com/california/south-lake-tahoe/quality-inn-hotels/ca668" target="_blank" rel="noopener">BOOK YOUR ROOM HERE</a>&nbsp;</span></p>
+<div style="text-align: left;">
+<section class="amenity-icons amenity-icons--burgundy js-content-season--all-seasons"></section>
+<hr /></div>
+<h4 style="text-align: justify;"><strong>Campgrounds</strong></h4>
+<p>Pitch your tent or park your RV next to one of our alpine lakes, hike and bike through miles of forested trails, lounge in your hammock while aspen trees whisper overhead, and share stories by the light of a campfire. Discover the best South Lake Tahoe camping spots where you can reconnect with the great outdoors. Here are some campgrounds and RV grounds that are near campus.</p>
+<p><a href="https://www.zephyrcove.com/lodging/zephyr-cove-rv-campground?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp_listing">ZEPHYR COVE RESORT</a> (Lodging / RV &amp; Campground)</p>
+<ul>
+<li>Address: 760 U.S. HWY 50, Zephyr Cove, NV 89448</li>
+<li>Telephone number: 775-589-4995,800-238-2463</li>
+</ul>
+<p><a href="https://koa.com/campgrounds/lake-tahoe/?utm_source=google&amp;utm_medium=organic&amp;utm_campaign=gbp&amp;gad_source=1&amp;gad_campaignid=21324534646&amp;gbraid=0AAAAADq1H6abQ0mmKJyIfInir2Rbx6WNp&amp;gclid=Cj0KCAjw87XBBhBIEi0AxP3_A4rpj5FeOvbe_lfe4ZkUdV5Zp0sEOXrT-4LVZM2vApIjEv8o8ucyf5IaAiuNEALw_wcB">LAKE TAHOE KOA JOURNEY</a></p>
+<ul>
+<li>Address: 760 U.S. HWY 50, South Lake Tahoe, CA 96150</li>
+<li>Phone number: 530-577-3693</li>
+<li>Email address:<a href="mailto:laketahoekoareservations@gmail.com">laketahoekoareservations@gmail.com</a></li>
+</ul>
+<p><a href="https://thousandtrails.com/california/tahoe-valley-campground/?utm_source=yext&amp;utm_medium=directory&amp;utm_campaign=Yext%20Directory%20Listing">TAHOE VALLEY CAMPGROUND</a></p>
+<ul>
+<li>Address: 1175 Melba Drive, South Lake Tahoe, CA 96150</li>
+<li>Phone number: 877-570-2267</li>
+<li>Ranger Station/Front Desk phone number: 530-541-2222</li>
+</ul>
+<p><a href="https://www.chrishavenrv.com/">CHRIS HAVEN MOBILE HOME &amp; RV COMMUNITY</a></p>
+<ul>
+<li>Address: 2030 E Street,South Lake Tahoe, CA 96150</li>
+<li>Phone number: 530-541-1895</li>
+</ul>
+<p><a href="https://camprichardsonresort.com/">CAMP RICHARDSON RESORT</a> (Lodging / RV &amp; Camping)</p>
+<ul>
+<li>Address: 1900 Jameson Beach Road, South Lake Tahoe, CA 96150</li>
+<li>Phone number: 530-494-2228</li>
+</ul>
+<p><a href="https://www.recreation.gov/camping/campgrounds/232768">NEVADA BEACH RV &amp; CAMPGROUND</a></p>
+<ul>
+<li>Address: 416 Bittlers Road, Zephyr Cove, NV 89448</li>
+</ul>
+<h4><strong>Camping &amp; Cabins</strong></h4>
+<p>There are over a dozen campgrounds and three resorts with cabin rentals in the Lake Tahoe Basin. Most are open from mid-May through mid-October, conditions and weather permitting. Sugar Pine Point, Tahoe Valley and Zephyr Cove campgrounds are open year-round.&nbsp;</p>
+<ul>
+<li><a href="https://www.recreation.gov/"><strong>National Forest Reservations</strong></a></li>
+<li><a href="https://www.reservecalifornia.com/Web/"><strong>California State Park Reservations</strong></a></li>
+<li><a href="https://parks.nv.gov/about/reservations"><strong>Nevada State Park Reservations</strong></a></li>
+</ul>
+<p><em>*Fires May Be Prohibited at any or all area campgrounds due to wildfire concerns.</em></p>
+<p>For more information, explore <a href="https://visitlaketahoe.com/hotels/" target="_blank" rel="noopener">Visit Lake Tahoe.</a></p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><p>&nbsp;</p>
+<ul>
+<li></li>
+</ul>
+<p>&nbsp;</p></ouc:div>
+  	
+</document>

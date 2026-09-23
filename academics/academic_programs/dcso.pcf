@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Douglas County Sheriff's Office</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="false">Two Column</option>
+<option value="three" selected="true">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>DCSO Partnership Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="DCSO employees can advance their careers through LTCC’s partnership program. Take online Criminal Justice and Administration of Justice courses to qualify for pay increases and promotional opportunities." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Douglas County Sheriff's Office</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/criminaljustice.jpeg" alt="CRJ" width="1436" height="957" /></td>
+</tr>
+</tbody>
+</table>
+<div class="flex-shrink-0 flex flex-col relative items-end">
+<div class="pt-0">
+<div class="gizmo-bot-avatar flex h-8 w-8 items-center justify-center overflow-hidden rounded-full">
+<div class="relative p-1 rounded-sm flex items-center justify-center bg-token-main-surface-primary text-token-text-primary h-8 w-8">
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="Apply Now" href="https://www.ltcc.edu/admissions/index.php" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a title="Visit Campus" href="https://www.ltcc.edu/admissions/campustours.php" target="_blank" rel="noopener">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex-col gap-1 md:gap-3">
+<div class="flex max-w-full flex-col flex-grow">
+<div class="min-h-[20px] text-message flex w-full flex-col items-end gap-2 break-words [.text-message+&amp;]:mt-5 overflow-x-auto whitespace-normal" dir="auto" data-message-author-role="assistant" data-message-id="d51f9a37-85b6-4097-98ba-75ca7e9c8ce1">
+<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+<div class="markdown prose w-full break-words dark:prose-invert dark">
+<p><span><a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major Icon" width="249" height="269" /></a></span></p>
+<p><span>Did you know that as an employee of the Douglas County Sheriff's Office (DCSO),&nbsp;you have the opportunity&nbsp;for a pay increase and promotional opportunities by taking college classes?&nbsp;</span>LTCC is proud to partner with DCSO to offer online coursework in Criminal Justice &amp; Administration of Justice for all DCSO employees.</p>
+<p>Elevate your education completely online: take individual courses, earn a certificate, or complete your Associate Degree in the comfort of your own home.</p>
+<hr /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<p>Below are the answers to commonly asked questions regarding Lake Tahoe Community College&rsquo;s online Criminal Justice program for Douglas County Sheriff's Office employees:</p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">How much does the program cost?</span></td>
+<td>
+<p><span>It depends on how many courses you take as cost is calculated per unit and based on your residency status. So, multiply the # of units you're taking by the applicable tuition cost. For CA residents, fees are set at the regular, low-cost rate of $31/quarter unit. Residency requirements (set by the </span><a href="http://www.cccco.edu/">California Chancellor&rsquo;s Office for Community Colleges</a><span>) apply to DCSO employees who wish to take coursework through LTCC. Non-California resident tuition is $298/quarter unit.</span><span>&nbsp;Students from Nevada and other Participating Western States can apply for a limited annual number of CNIAA and WUE&nbsp;</span><a href="https://www.ltcc.edu/admissions/interstateagreement2022.pdf" target="_blank" rel="noopener">discounted tuition waivers ($47.50/unit)</a><span>. There is also a $3 Health Service fee per quarter, and a $2 Student Representation Fee per quarter. For more information, please visit the&nbsp;</span><a title="Credit &amp; Refund Policy" href="https://www.ltcc.edu/admissions/creditandrefund.php">Credit &amp; Refund Policy</a><span>&nbsp;page. For more information on enrolling, call (530) 541-4660 ext. 211, or email enrollmentservices@ltcc.edu. Visit LTCC's&nbsp;</span><a href="https://www.ltcc.edu/admissions/forms.php" target="_blank" rel="noopener">Forms</a><span>&nbsp;webpage to download the application.</span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">How many units can I apply and transfer from other colleges?</span></td>
+<td>
+<p>There is no limit on &ldquo;transfer in&rdquo; units, but you must complete at least 18 quarter units at Lake Tahoe Community College to get a degree from LTCC.&nbsp;A minimum of 12 quarter units must be completed at LTCC to receive a Certificate from the college.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">How long will the certificate/degree program take?</span></td>
+<td>
+<p>It depends on the individual person and scheduling.&nbsp;The certificate is 28 quarter units; the Associate degree is 90 quarter units. Pending course availability, students enrolling in a full load (at least 12 units) are able to complete the certificate in one year. Degree sequences can typically take two to three years to complete, depending on the number of units a student might be transferring in with, the availability of courses offered, and how many units per quarter they enroll in.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Is Lake Tahoe Community College on the semester system or the quarter system?</span></td>
+<td>
+<p>LTCC is on the quarter system. This means new courses are offered every few months!</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Am I eligible for promotions by taking classes?</span></td>
+<td>
+<p>Please contact your immediate supervisor at DCSO for the answer to that question. LTCC is not able to answer questions regarding DCSO policies and regulations.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Are&nbsp;there On the Job (OJT) opportunities for DCSO employees?</span></td>
+<td>
+<p>Questions regarding On the Job (OJT) training opportunities should be directed to DCSO employees&rsquo; immediate supervisor or Training Coordinator.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Does LTCC offer Associate Degrees for Transfer?</span></td>
+<td>
+<p>Yes, LTCC offers a number of Associate Degrees for Transfer, including an Associate in Science for Transfer (AS-T) in <a href="https://www.ltcc.edu/_resources/pdfs/catalog/program_pages/criminal_justice_admin_of_justice_ast.pdf">Administration of Justice</a>. Associate Degrees for Transfer are intended for students who plan to complete a bachelor&rsquo;s degree in a similar major at a CSU campus. Students completing these degrees are guaranteed admission to the CSU system, but not a particular campus or major. Please contact a <a href="mailto:counselor@ltcc.edu">counselor</a> for more details.</p>
+<p>*Please note: Credits awarded for Prior Experiential Learning are not eligible to satisfy degree requirements in Associate in Science Degrees for Transfer (AS-T) in Administration of Justice. Please note that Credits for Prior Experiential Learning (CPL) may or may not be eligible for transfer into other California Community Colleges or California State Universities, and are subject to any respective institutional policies with regards to acceptance or transfer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Douglas County Sheriff's Office</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">contact</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="{{f:69441779}}" alt="Carlie Murphy" width="130" height="130" /></td>
+<td>Carlie Murphy</td>
+<td>Director of Forestry, Fire &amp; Public Safety</td>
+<td>carlie.murphy@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="{{f:79922921}}" alt="Ace Daly" width="130" height="130" /></td>
+<td>Ace Daly</td>
+<td>Career &amp; Technical Education Specialist</td>
+<td>ace.daly@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><div>
+<div><span><img style="margin: 5px auto; display: block;" title="DCSO" src="https://www.ltcc.edu/_resources/images/dcso_badge_logo.png" alt="Douglas County Sheriff's Office logo" width="198" height="203" /></span></div>
+</div>
+<div>&nbsp;</div>
+<h5>Request More Information</h5>
+<hr />
+<h5>{{a:117801}}</h5></ouc:div>
+	
+</document>

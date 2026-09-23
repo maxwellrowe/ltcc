@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Academic Programs</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Academic Programs</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Academic Programs | Lake Tahoe Community College</title>
+		<meta name="Description" content="Discover the full range of academic programs offered at Lake Tahoe Community College. Explore degrees and certificates across diverse fields to match your educational and career goals. Start your journey with us today." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h5><a title="Addiction Studies" href="https://www.ltcc.edu/academics/academic_programs/addiction_studies.php">Addiction Studies</a></h5>
+<hr />
+<h5><a title="Allied Health" href="https://www.ltcc.edu/academics/academic_programs/allied_health/index.php">Allied Health</a></h5>
+<div style="padding-left: 30px;">&bull; <a title="Dental Assisting" href="https://www.ltcc.edu/academics/academic_programs/allied_health/dental_assisting.php">Dental Assisting</a></div>
+<div style="padding-left: 30px;">&bull; <a title="Emergency Responder" href="https://www.ltcc.edu/academics/academic_programs/allied_health/emergency_responder.php">Emergency Medical Responder</a></div>
+<div style="padding-left: 30px;"><span style="font-size: 12pt;">&bull; <a title="Emergency Medical Technician (EMT)" href="https://www.ltcc.edu/academics/academic_programs/allied_health/emt.php">Emergency Medical Technician</a></span></div>
+<div style="padding-left: 30px;"><span style="font-size: 12pt;">&bull; <a title="Medical Office Assistant" href="{{f:10625726}}" target="_blank" rel="noopener">Medical Office Assistant</a></span></div>
+<p>&nbsp;</p>
+<hr />
+<h5><a title="Anthropology" href="https://www.ltcc.edu/academics/academic_programs/anthropology.php">Anthropology</a></h5>
+<hr />
+<h5><a title="Art" href="https://www.ltcc.edu/academics/academic_programs/art.php">Art</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/science/biology.php">Biology</a></h5>
+<hr />
+<h5><a title="Business" href="https://www.ltcc.edu/academics/academic_programs/business.php">Business</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/science/chemistry.php">Chemistry</a></h5>
+<hr />
+<h5><a title="Computer Information Sciences" href="https://www.ltcc.edu/academics/academic_programs/cis.php">Computer and Information Systems</a></h5>
+<hr />
+<h5><a title="Criminal &amp; Administration of Justice" href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php">Criminal and Administration of Justice</a></h5>
+<hr />
+<h5><a title="Culinary Arts" href="https://www.ltcc.edu/academics/academic_programs/culinaryarts.php">Culinary Arts</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/cybersecurity.php">Cybersecurity</a></h5>
+<hr />
+<h5><a title="Early Childhood Education" href="https://www.ltcc.edu/academics/academic_programs/earlychildhoodeducation.php">Early Childhood Education</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/science/index.php">Earth and Environmental Sciences</a></h5>
+<div style="padding-left: 30px;">&bull; <a href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php">Environmental Science and Technology</a></div>
+<div style="padding-left: 30px;">&bull; <a href="https://www.ltcc.edu/academics/academic_programs/science/geography.php">Geography and Geographic Information Systems (GIS)</a></div>
+<div style="padding-left: 30px;">&bull; <a href="https://www.ltcc.edu/academics/academic_programs/science/geology.php">Geology</a><span style="font-size: 12pt;"></span></div>
+<div style="padding-left: 30px;">&bull; <a href="https://www.ltcc.edu/academics/academic_programs/science/physical_science.php">Physical Science</a></div>
+<hr />
+<h5><a title="Elementary Teacher Education" href="https://www.ltcc.edu/academics/academic_programs/elementaryteachereducation.php">Elementary Teacher Education</a></h5>
+<hr />
+<h5><a title="English" href="https://www.ltcc.edu/academics/academic_programs/english.php">English</a></h5>
+<hr />
+<h5><a title="English as a Second Language" href="https://www.ltcc.edu/academics/academic_programs/esl.php">English as a Second Language</a></h5>
+<hr />
+<h5><a title="Fire&nbsp;" href="https://www.ltcc.edu/academics/academic_programs/fire/index.php">Fire&nbsp;</a></h5>
+<div style="padding-left: 30px;">&bull; <a title="Fire Academy" href="https://www.ltcc.edu/academics/academic_programs/fire/fire_academy.php">Fire Academy</a></div>
+<div style="padding-left: 30px;">&bull; <a title="Fire Officer" href="https://www.ltcc.edu/academics/academic_programs/fire/fire_officer.php">Fire Officer</a></div>
+<div style="padding-left: 30px;">&bull; <a title="Fire Science" href="https://www.ltcc.edu/academics/academic_programs/fire/fire_science.php">Fire Science</a></div>
+<hr />
+<h5><a title="Fire&nbsp;" href="https://www.ltcc.edu/academics/academic_programs/forestry.php">Forestry</a></h5>
+<hr />
+<h5><a title="General Education" href="https://www.ltcc.edu/academics/academic_programs/generaleducation.php">General Education</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/socialscience/history.php">History</a></h5>
+<hr />
+<p><span style="font-size: 14pt;"><a href="https://www.ltcc.edu/academics/academic_programs/hospitality.php">Hospitality Management</a></span></p>
+<hr />
+<h5><a title="Internship" href="https://www.ltcc.edu/academics/academic_programs/internship.php">Internship</a></h5>
+<hr />
+<h5><a title="Kinesiology/Physical Education &amp; Health" href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php">Kinesiology/Physical Education &amp; Health</a></h5>
+<div style="padding-left: 30px;">&bull; <a title="Kinesiology" href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php" target="_blank" rel="noopener">Kinesiology</a></div>
+<div style="padding-left: 30px;">&bull; <a title="Nutrition and Dietetics" href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php" target="_blank" rel="noopener">Nutrition and Dietetics</a></div>
+<hr />
+<h5><a title="Liberal Arts" href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php">Liberal Arts</a></h5>
+<hr />
+<h5><a title="Mathematics" href="https://www.ltcc.edu/academics/academic_programs/mathematics.php">Mathematics</a></h5>
+<hr />
+<h5><a title="Music" href="https://www.ltcc.edu/academics/academic_programs/music.php" target="_blank" rel="noopener">Music</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/science/physics.php">Physics</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/socialscience/politicalsci.php">Political Science</a></h5>
+<hr />
+<h5><a title="Psychology" href="https://www.ltcc.edu/academics/academic_programs/psychology.php">Psychology</a></h5>
+<hr />
+<h5><a title="Real Estate" href="https://www.ltcc.edu/academics/academic_programs/real_estate.php">Real Estate</a></h5>
+<hr />
+<h5><a href="https://www.ltcc.edu/academics/academic_programs/socialscience/">Social Science</a></h5>
+<hr />
+<h5><a title="Sociology" href="https://www.ltcc.edu/academics/academic_programs/sociology.php">Sociology</a>&nbsp;</h5>
+<hr />
+<h5><a title="Theatre Arts" href="https://www.ltcc.edu/academics/academic_programs/theatre_arts.php">Theatre Arts</a></h5>
+<hr />
+<h5><a title="Wilderness Education &amp; Outdoor Leadership" href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php">Wilderness Education and Outdoor Leadership</a></h5>
+<hr />
+<h5><a title="Work Experience" href="https://www.ltcc.edu/academics/academic_programs/work_experience.php">Work Experience</a></h5>
+<hr />
+<h5><a title="World Languages" href="https://www.ltcc.edu/academics/academic_programs/world_languages.php">World Languages</a>&nbsp;</h5></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><ul>
+<li>
+<h1>&nbsp;</h1>
+</li>
+</ul></ouc:div>
+  	
+</document>

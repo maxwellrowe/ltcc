@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">ISSI FAQ</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">ISSI FAQ</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="false">Two Column</option>
+<option value="three" selected="true">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>ISSI FAQ | Lake Tahoe Community College</title>
+		<meta name="Description" content="Find answers to common questions about LTCC’s Intensive Spanish Summer Institute (ISSI), including program details, courses, lodging, events, and what to expect during the institute." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p>Please note, all classes take place Face-to-Face (F2F) on the LTCC campus from July 27-31, 2026. ISSI course days are 8am until 3:20pm, with optional mini-courses offered 3:40-4:55pm.</p>
+<p>If you have questions that aren't addressed in this FAQ, please email us at <a href="mailto:issi@ltcc.edu">issi@ltcc.edu</a>.&nbsp;</p>
+<h3>Categories of questions</h3>
+<p><a href="#Registration">Registration</a></p>
+<p><a href="#ISSI_Programming">ISSI Programming</a></p>
+<p><a href="#Placement">Placement</a></p>
+<p><a href="#LodgingandTransportation">Lodging and Transportation</a></p>
+<h3><a id="Registration">Registration</a></h3>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>How do I register for a class?</td>
+<td>
+<p>First: Apply or update your application with OpenCCC, the California Community College system. There is a link to OpenCCC on the <a href="https://www.ltcc.edu/academics/specialized_programs/issi/">ISSI home page</a>.</p>
+<p>Second: Once your application is processed, LTCC will send you an email with your LTCC Self-Service username, password, and student ID. (Please note, it may take up to 72 hours (about 3 days) for this information to emailed to you.) Once you receive your student ID, you will go to the main LTCC website to register for the classes.</p>
+</td>
+</tr>
+<tr>
+<td>If I took a class last year; can I register for classes now?</td>
+<td>If you haven't taken a course at LTCC since Winter Quarter 2024, then you will need to update your application with OpenCCC, the California Community College system. You can get to OpenCCC from the <a href="https://www.ltcc.edu/academics/specialized_programs/issi/">ISSI homepage</a>.</td>
+</tr>
+<tr>
+<td>I am currently enrolled in another community college in California. Do I still need to register as a student in the OpenCCC?</td>
+<td>Yes, even though you are in the community college system, you still need to become part of the LTCC system. Your student ID, username, and password will be unique to LTCC.</td>
+</tr>
+<tr>
+<td>I registered for a class. Will I receive confirmation of my enrollment?</td>
+<td>
+<p>Yes; the last page, after you pay your fees, serves as confirmation that you are enrolled in ISSI.</p>
+<p>Students may register, drop, waitlist, and search for courses within their <a href="https://experience.elluciancloud.com/ltcc/">LTCC student portal (Ellucian Experience)</a>. The portal provides students with information and services that they will use during their educational journey at Lake Tahoe Community College.</p>
+<p>If you are still uncertain, you can call Enrollment Services (1-530-541-4660 x 211), who can look it up for you. If they do not answer your call, please leave a message and they will call you back.</p>
+</td>
+</tr>
+<tr>
+<td><span>Can I drop an ISSI class?</span></td>
+<td>
+<p>Yes! If you want to drop a class before July 27<sup>th</sup>, please use <a href="https://experience.elluciancloud.com/ltcc/">LTCC Ellucian Experience</a>. Once ISSI has started, students will only be able to drop courses using <a href="https://experience.elluciancloud.com/ltcc/">LTCC Ellucian Experience</a> before 4pm on Monday, July 27, 2026. <strong><em>No changes can be made after that&mdash;No exceptions.</em></strong></p>
+</td>
+</tr>
+<tr>
+<td><span>I am a high school student. Can I take ISSI classes?</span></td>
+<td>
+<p>Yes! High-school-aged students who wish to enroll in ISSI need to do the following:</p>
+<ol>
+<li>Complete <a href="https://www.opencccapply.net/gateway/apply?cccMisCode=221">the application</a> process through our website. If you have enrolled in classes at LTCC in the past, you do not need to apply again.</li>
+<li>Complete the <a title="High School Placement form" href="{{f:80979443}}" target="_blank" rel="noopener">High School Placement form</a> (<strong>LTCC Counselor signature, and Transcripts NOT REQUIRED</strong>). Please be specific about what class(es) you want to enroll in on the form.</li>
+<li>Email the completed form to <a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> from your LTCC email address.</li>
+</ol>
+<p>Payment: When registering into 11 or less units, tuition should not be charged. There is a $2.00 Student Representation fee that students may pay or opt-out of. ISSI courses do have a materials fee, which you will need to pay for within your portal or in-person with Enrollment Services.</p>
+</td>
+</tr>
+<tr>
+<td><span>Can I repeat a class I&rsquo;ve already taken?</span></td>
+<td>
+<p>No, California Community College regulations state that credit classes are not repeatable. You can take any class that you have not previously taken, either at a lower or higher level. An exception is for those enrolled in the High Superior level as that curriculum is changed every year.</p>
+</td>
+</tr>
+<tr>
+<td><span>I was a student at ISSI in the past. How can I find out what classes I have taken before?</span></td>
+<td>
+<p>You can look that information up on <a href="https://experience.elluciancloud.com/ltcc/">Ellucian Experience</a> (formerly Passport). You will need your LTCC login information to gain entry. Access &ldquo;Student Quick Links&rdquo; panel from dashboard and select "Self Service". View far-left column, select &ldquo;Academics&rdquo; icon and click on desired link (i.e. Unofficial Transcripts, Order Official Transcripts, etc.).</p>
+</td>
+</tr>
+<tr>
+<td><span>What is the registration deadline for all ISSI courses?</span></td>
+<td>
+<p>Registration begins in late May. View more information on the <a title="Learn more about registration dates" href="{{f:11876439}}">registration dates page</a>.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><span>What should I do if the course I want is full?</span></td>
+<td>
+<p>If a course is full, add yourself to the waitlist. If a seat opens, the first person on the waitlist will be notified through his or her LTCC email account. <strong><em>Check your LTCC email often for notifications.</em></strong></p>
+<p>Alternatively, you can take the next course above or below the level you want, provided you haven't taken it already. (Each course is a partial step up from the previous course, so the jump isn't that high.)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h3><a id="ISSI_Programming">ISSI Programming</a></h3>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion2</td>
+</tr>
+<tr>
+<td>Where can I find information about the program?</td>
+<td>The ISSI website has information about the <a href="https://www.ltcc.edu/academics/specialized_programs/issi/typical-day.php">schedule</a>, the <a href="https://www.ltcc.edu/academics/specialized_programs/issi/core-courses.php">classes with self-placement exams</a>, <a href="https://www.ltcc.edu/academics/specialized_programs/issi/core-courses.php">the cultural breakout sessions</a>, and the <a href="https://www.ltcc.edu/academics/specialized_programs/issi/mini-courses.php">mini-courses</a><span>.</span> This will give you all the information you need to figure out your level and see the schedule.</td>
+</tr>
+<tr>
+<td>How can I see the class schedule and/or content?</td>
+<td>
+<p>There is more information about our overall schedule on the <a href="https://www.ltcc.edu/academics/specialized_programs/issi/typical-day.php">A Typical Day at ISSI webpage</a>. This will show you what to expect but has only general information.</p>
+<p>As we get closer to ISSI, all registered students will be mailed a tentative breakout schedule with descriptions of the proposed sessions. Note that this will be current as of print, and that there will be changes to offerings and locations.</p>
+<p>Grammar instruction will be on Monday and Wednesday, with a bit of wrap-up on Friday afternoon. Cultural breakouts will occur on Tuesday and Thursday, plus Friday morning. This should help students get situated better on ISSI Monday, plus allow for greater breadth of breakouts on Tuesday and Thursday.</p>
+</td>
+</tr>
+<tr>
+<td>Do the ISSI courses count as GE credit for college?</td>
+<td>
+<p>The courses of 2.5 quarter units are transferable to the CSUs. At Lake Tahoe Community College these are considered electives. Always check with your school to see if these courses are accepted; we cannot tell you what your college accepts.</p>
+</td>
+</tr>
+<tr>
+<td>Can a student enroll in the mini-courses without taking the main courses?</td>
+<td>
+<p>Technically, yes, you may register for only mini-courses and take more than one. <strong><em>Be aware that such a schedule will not grant you access to the core (grammar) courses nor the breakout sessions, only to your mini-course(s).</em></strong></p>
+</td>
+</tr>
+<tr>
+<td>Is there a limit on the number of students allowed per class?</td>
+<td>
+<p>Yes, all classes have a limit of 25-30 students, depending on the level. In some cases, there are two sections of our most popular courses. <strong><em>If you end up on a waitlist for a course, please watch your LTCC email daily, as there will be a short window that you can fully enroll in the course.</em></strong></p>
+</td>
+</tr>
+<tr>
+<td>Will there be a list of supplies/books for us to purchase?</td>
+<td>
+<p>Part of your registration is a $42 materials fee that includes your materials. You will receive your Curriculum Booklet in your classroom, and instructors will have a limited number of paper copies of whatever materials that they will be using in their courses and breakout sessions.</p>
+<p>ISSI is moving to a more digital presence. All core and mini-courses will have a Canvas landing page (called a &lsquo;shell') where instructors will house their course materials. You access the Canvas shell for your course on the LTCC website after you log in to Passport. Your Canvas shell is available about one hour before your class starts.</p>
+</td>
+</tr>
+<tr>
+<td>Can I get a certificate of completion for my professional development report at work?</td>
+<td>
+<p>No, we don't offer this, since ISSI is an academic program. Instead, your LTCC transcript will be the evidence of having completed the required credits. Your ISSI work will show up on your LTCC transcript will be ready in October.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h4>&nbsp;</h4>
+<h3><a id="Placement">Placement into ISSI Courses</a></h3>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion3</td>
+</tr>
+<tr>
+<td>How do I know which course I should take?</td>
+<td>
+<p>On the <a href="{{f:10625719}}">ISSI Core Courses (Self-Placement) webpage</a>, you'll see information on what is covered in each core (grammar) course. You'll also see that there are quizzes for most all the grammar elements.</p>
+<p>If you have never studied Spanish before, you should enroll in SPA 121A, Low Beginning Spanish. This is our entry-level course.</p>
+<p>If you have taken some Spanish in the past, or if you have experience with Spanish in some way, then you will need to determine which course is your best fit. To place yourself:</p>
+<ul>
+<li>Read the descriptions of the levels.</li>
+<li>Aim for the level that best represents the last grammar instruction that you have had in the past. (If you have &lsquo;picked up Spanish&rsquo; by talking to Spanish-speaking people, then aim for what sounds most like what you know.)</li>
+<li>Take the self-placement quizzes for the grammar level that you think might best fit your knowledge.
+<ul>
+<li>If you get 80% or higher on most of the self-placement quizzes, then consider going one level higher.</li>
+<li>If you get 40-80% on most of the self-placement quizzes, then consider taking that level.</li>
+<li>If you consistently get less than 40% on most of the quizzes, or the quizzes cover material that you don't know at all, then consider going one or more levels lower.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>I am a teacher working in a district with many Spanish speakers, and I am looking to work on my Spanish so I can communicate with my students and their parents better. Is ISSI a good program to accomplish that?</td>
+<td>The courses emphasize both oral and written language skills. If you need to use Spanish in your academic, professional, or personal life, then this program is a great fit. The Institute offers all levels of Spanish instruction.</td>
+</tr>
+<tr>
+<td>What&rsquo;s the pre-ISSI course?</td>
+<td>
+<p>The Pre-ISSI course, SPA 182A, is an online class scheduled from July 7th through July 18th. It's an intermediate online course offered before ISSI to students who want to brush up on their grammar skills. There are no class meetings; it's a fully online course.</p>
+<p>For California residents, the cost is approximately $77.50, plus fees. If you have questions, please contact the instructor, Esther Gormley, at <a href="mailto:emgormley@mail.ltcc.edu">emgormley@mail.ltcc.edu</a> for more information about the course and the waitlist.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="LodgingandTransportation">Lodging and Transportation</a></h3>
+<p>&nbsp;</p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 349px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion4</td>
+</tr>
+<tr>
+<td>Does LTCC provide lodging accommodations during ISSI?</td>
+<td>At this time, there is no on-campus accommodations available during ISSI, nor is no RV parking on the LTCC campus, nor is anyone allowed to reside on campus during ISSI. Please use our <a href="https://www.ltcc.edu/academics/specialized_programs/issi/lodging.php">Lodging page</a> for more information on lodging options.</td>
+</tr>
+<tr>
+<td>I'm looking to share accommodations with other ISSI students. How can I contact them to set something up?</td>
+<td>At this time, we do not offer a way for ISSI students to contact each other before the program starts; that would be a violation of FERPA (student privacy laws).</td>
+</tr>
+<tr>
+<td>I brought my animal with me on this trip. Can I bring them to LTCC while I'm attending ISSI?</td>
+<td>
+<p><strong>Only certified service animals are allowed on campus grounds. </strong>No other animals are allowed on campus, which includes the parking lots and campus grounds. <strong>Do not leave your pet in your car or tied to a bumper or tree on campus. Do not bring your pet to campus.</strong>&nbsp;</p>
+<p>Per Board policy, the college reserves the right to contact the Police/Sheriff Departments for animal control services.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Where can I park my car during ISSI?</td>
+<td>
+<p>During ISSI, you can park in the Main Parking Lot. Please only park in marked parking areas.</p>
+<p>There is additional diagonal parking on the long road into campus, accessed from the light on Al Tahoe Boulevard and Johnson Drive.</p>
+<p>Parking is allowed in the Main Parking Lot, and only in marked parking areas. A shuttle will be available at various times during the day. If you park in this area, you will be eligible for a daily raffle!</p>
+<p>Important:&nbsp;</p>
+<ul>
+<li><strong>Any vehicle parked in the Entrance Circle </strong>where the buses enter and depart (or any curb/area marked with red paint) <strong>will be towed immediately.</strong>&nbsp;</li>
+<li><strong>Any vehicle parked off-road in a dirt area will be cited.</strong></li>
+<li>If parking on the long road, <strong>do not pull over and park on the dirt</strong>.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Are there any public transportation options to get to LTCC during ISSI?</td>
+<td>
+<p>On the <a href="https://www.ltcc.edu/campuslife/transportation.php">LTCC Transportation webpage</a>, there is information on various public transportation options.</p>
+<p>There is a free micro-transit shuttle, Lake Link, that runs services between the Nevada State Line and Al Tahoe Blvd (which is the road the College is located on). However, there is often a very long wait for their shuttles. For more information, contact Lake Link at (530) 800-4438 or download the Lake Link app on your smartphone.&nbsp;</p>
+<p>Students may be dropped off in the Main Parking Lot, in the front row by the library.</p>
+</td>
+</tr>
+<tr>
+<td>Can I bike to LTCC during ISSI?</td>
+<td>
+<p>Yes! South Lake Tahoe is a very bikeable city, and there is plenty of bike parking at the campus. It's also a great way to explore the area. There are many bike rental shops in the area.</p>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h4>Contact Information</h4>
+<ul tabindex="-1">
+<li tabindex="-1">Registration questions: 1-530-541-4660 x211</li>
+<li tabindex="-1">Academic questions:<span>&nbsp;</span><a tabindex="-1" href="mailto:sharmon@mail.ltcc.edu">sharmon@mail.ltcc.edu</a></li>
+<li tabindex="-1"><span tabindex="-1"></span>General ISSI questions:<span>&nbsp;</span><a tabindex="-1" href="mailto:issi@ltcc.edu">issi@ltcc.edu</a></li>
+</ul>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104049}}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+	
+</document>

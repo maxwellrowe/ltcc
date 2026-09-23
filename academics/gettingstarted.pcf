@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Getting Started</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Getting Started</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="true">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="false">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Getting Started</title>
+		<meta name="Description" content="Getting Started Online" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h5>Online Learning Courses</h5>
+<hr />
+<p style="text-align: justify;">LTCC's Online Learning classes come in two forms:</p>
+<p style="padding-left: 30px; text-align: left;"><strong>Online</strong> courses are offered entirely online with no required class meetings on campus. Online courses are referred to as <strong>ONLINE</strong> classes in the schedule which means the class is 100% online - no face-to-face meetings required.</p>
+<p style="padding-left: 30px; text-align: left;"><strong>Hybrid</strong> courses combine some percentage of class time on campus and online. The requirement varies from class to class - you may be asked to come to campus weekly, once for an orientation, or to take exams. Hybrid courses provide class meeting information for both on-campus day(s)/time/location <strong>and</strong> Days TBA, Times TBA, Online-LTCC, Room CANVAS.&nbsp;</p>
+<p style="padding-left: 30px; text-align: left;">&nbsp;</p>
+<h5>Is Online Learning Right for You?</h5>
+<hr />
+<p>Before registering for an online or hybrid class, you want to be sure that you are prepared - both academically and technically. Check your scores on these self-assessments to see if online learning is right for you:</p>
+<p style="padding-left: 30px;"><a href="https://www.waol.org/prospective_students/isonlineforme.aspx">Assessment 1</a>: University of Arkansas online <a title="Is Online Learning For Me?" href="https://online.uark.edu/students/readiness-quiz.php" target="_blank">Is Online Learning For Me?</a> quiz</p>
+<p style="padding-left: 30px;"><a href="http://dl.austincc.edu/students/SelfAssess.php">Assessment 2</a>: Is an online class right for your learning style? <a href="http://dl.austincc.edu/students/SelfAssess.php">Austin Community College's Learning Style Survey</a></p>
+<p style="padding-left: 30px;"><a href="http://www.fresnocitycollege.edu/index.aspx?page=3143">Assessment 3</a>: Do you have the technical and organizational skills needed to succeed in an online class? <a href="http://www.fresnocitycollege.edu/index.aspx?page=3143">Fresno City Online Technology Assessment</a></p>
+<p style="padding-left: 30px;">&nbsp;</p>
+<h5>Apply</h5>
+<div><hr /></div>
+<div>1. <a title="Apply to Lake Tahoe Community College" href="https://www.ltcc.edu/admissions/index.php" target="_blank">Apply to Lake Tahoe Community College</a></div>
+<div>&nbsp;</div>
+<div>2. Select your courses and Register</div>
+<div style="padding-left: 30px;">Login to&nbsp;<a title="Passport" href="http://portal.ltcc.edu" target="_blank">Passport</a> to select and register for your <a title="Schedule of Classes" href="https://www.ltcc.edu/academics/scheduleofclasses.php" target="_blank">courses</a></div>
+<div>&nbsp;</div>
+<div>3. Find your course</div>
+<div style="padding-left: 30px;">Once you are logged into Canvas, you will see your classes on the left hand side under Courses&gt;My Courses on your User Dashboard.</div>
+<h5>&nbsp;</h5>
+<h5>Orientation</h5>
+<hr />
+<p style="text-align: justify;">Whether you are taking your first online class, or you have completed a few online cour<a title="Introduction to Online Learning" href="https://apps.3cmediasolutions.org/oei/modules/intro/story/" target="_blank"><img style="display: block; margin-left: 10px; margin-right: 10px; float: right;" title="Click on picture to access the orientation" src="https://www.ltcc.edu/_resources/images/introduction_to_online_learning.jpg" alt="Introduction to Online Learning Tutorial" width="241" height="239" /></a>ses in the past, you will find that a little preparation makes a big impact on your success.</p>
+<p style="text-align: justify;">Please take time to complete the interactive video tutorial to increase your chances of success. Begin with our <a href="https://apps.3cmediasolutions.org/oei/modules/intro/story/" target="_blank">Introduction to Online Learning video</a></p>
+<p style="text-align: justify;"><strong><span>Canvas Student Orientation</span></strong><span>: LTCC provides an orientation to become familiar with navigating your classes using Canvas. You must be enrolled in an online/hybrid/web-enhanced class using Canvas to access the&nbsp;</span><a href="https://laketahoecc.instructure.com/enroll/YAFH46" target="_blank"><span>Online, Self-Paced Canvas Student Orientation</span></a><span>.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<h5>Purchase Textbooks</h5>
+<hr />
+<p style="text-align: left;">Look for textbook information on the class Canvas site. Instructors will include this information in the syllabus, but they may also have it posted elsewhere in Canvas. You can also search the <a href="http://ltcc.bncollege.com/webapp/wcs/stores/servlet/TBWizardView?catalogId=10001&amp;langId=-1&amp;storeId=65068">LTCC Online Bookstore</a> for the class textbook and order online.</p>
+<div style="text-align: left;">Most instructors expect you to have your textbooks ready for the first day of class!</div>
+<div style="text-align: left;"><hr /></div>
+<div style="text-align: left;">All students are encouraged to meet with a <a title="Counseling" href="https://www.ltcc.edu/campusresources/counseling.php">counselor</a> to be sure you are taking the right classes to reach your academic and career goals.&nbsp;</div>
+<div><hr /></div>
+<p style="text-align: justify;">&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Addiction Studies</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Addiction Studies Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Prepare for a career supporting recovery and community health with LTCC’s Addiction Studies program. Learn counseling fundamentals, prevention strategies, and pathways in behavioral health services." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Addiction Studies</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/addictionstudies.png" alt="Addiction Studies" width="2000" height="1341" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major Icon" width="259" height="281" /></a>The Addiction Studies degree at Lake Tahoe Community College is designed to prepare students for entry-level employment in alcohol and drug treatment programs, and provide continuing education for working health care and human services professionals. The curriculum provides a broad base of knowledge regarding approaches to drug education and prevention, treatment issues, counseling skills, ethical issues, and practical knowledge about drugs and their effects. Students will gain basic competencies in counseling, case management, record keeping, and treatment planning. The Addiction Studies program includes core courses in psychology, sociology, and counseling in order to provide a broad understanding of the roots of addiction. When combined with nine units of field experience, this program meets the education requirements established by the California Consortium for Addiction Programs and Professionals (CCAPP).&nbsp;</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/addictionstudies_2.png" alt="Addiction Studies 2" width="2000" height="1341" /></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Associate of Arts, Addiction Studies</span></td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-92ff-7823-9f46-ed1e77625b21/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Certificate of Achievement</span></td>
+<td>
+<div style="margin: 20px 0 15px 0;"><strong>ADDICTION STUDIES</strong></div>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" href="https://pathways.ltcc.edu/program/019b1313-9291-7448-ae3e-1b601df92bf9/" target="_blank" rel="noopener">&rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Financial Aid &amp; Scholarships</span></td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>There are&nbsp;<a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Helpful Links</span></td>
+<td>
+<div style="text-align: justify;"><a title="CCAPP Page" href="https://www.ccapp.us/" target="_blank" rel="noopener">California Consortium of Addiction Programs and Professionals (CCAPP)</a></div>
+<div style="text-align: justify;">2400 Marconi, Avenue, Suite C<br />Sacramento, CA 95821<br />(916) 338-9460</div>
+<div style="text-align: justify;">&nbsp;</div>
+<p style="text-align: justify;"><a title="CAADE Page" href="http://caade.org/" target="_blank" rel="noopener">California Association for Alcohol and Drug Educators (CAADE)</a><br />P. O. Box 7152<br />Oxnard, CA 93031-7152<br />(805) 419-2146<br /><br /><a title="CAADAC Page" href="http://www.caadac.org/" target="_blank" rel="noopener">California Association of Alcoholism and Drug Abuse Counselors (CAADAC)</a><br />3400 Bradshaw Road, Suite A-5<br />Sacramento, CA 95827<br />(916) 368-9412<br /><br /><a title="Employment Development Department" href="https://www.edd.ca.gov/" target="_blank" rel="noopener">Employment Development Department</a><br />Wage and salary information</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">addiction studies</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Contact</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td>&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/coyotewedge.jpg" alt="Coyote Head" width="150" height="150" /></td>
+<td>INSTRUCTION</td>
+<td><span>(530) 541-4660 x 752</span></td>
+<td><span><a href="mailto:rhone@ltcc.edu">Instruction@ltcc.edu</a></span><span>&nbsp;</span>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5><span style="font-size: 14pt;">Contact&nbsp;</span></h5>
+<hr />
+<div><span style="font-size: 12pt;">Jamie Rhone</span></div>
+<div><span style="font-size: 10pt;">CTE Program Specialist</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 583</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:rhone@ltcc.edu%20?subject=Addiction%20Studies">rhone@ltcc.edu&nbsp;</a>&nbsp;</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;">Melissa Liggett</span></div>
+<div><span style="font-size: 10pt;">CTE Program Tech</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 723</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:liggett@ltcc.edu?subject=Addiction%20Studies">liggett@ltcc.edu</a></span></div>
+<p><span style="font-size: 10pt;">&nbsp;</span></p>
+<hr />
+<div><span style="font-size: 12pt;">Adjunct Faculty:</span></div>
+<div><span style="font-size: 12pt;"><span style="font-size: 10pt;"><br /><span style="font-size: 12pt;">Betsy Fedor</span><br /></span></span></div></ouc:div>
+  	
+</document>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">  Mini-Courses</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Mini Courses</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>ISSI Mini-Courses | Lake Tahoe Community College</title>
+		<meta name="Description" content="Enhance your ISSI experience with engaging Mini-Courses at LTCC. Explore specialized topics that deepen your Spanish language skills and cultural understanding." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><div><span>All courses will be presented by our ISSI instructors on campus. These courses are opportunities for you to review, expand, and go deeper into different aspects of grammar and language production. These classes offer 0.5 quarter units each and will need to be registered in addition to the core course.&nbsp;</span></div>
+<div><span>If you have any questions about these mini-courses, please email us at <a href="mailto:issi@ltcc.edu">issi@ltcc.edu</a>.&nbsp;</span></div>
+<h5>&nbsp;</h5>
+<p style="text-align: center;"><strong><span style="font-size: 18pt;">Mini-Courses for ISSI 2026</span></strong></p>
+<div style="text-align: center;"><span style="font-size: 14pt;"><strong>Course times vary</strong></span></div>
+<div style="text-align: center;">Courses are offered at 3:40 PM - 4:55 PM, Monday through Thursday..</div>
+<div style="text-align: center;">Open the course below to see course descriptions.</div>
+<div style="text-align: center;">Note: You can only take one mini-course.</div>
+<p>&nbsp;</p>
+<div><span style="font-size: 18pt;"><span style="font-size: 18pt;">Mini-course Descriptions</span></span><hr /><span style="font-size: 18pt;"></span></div>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 18px;">SPA 131 CN Special Topic: Grammar through Short Films (Intermediate and High Intermediate levels)</span></td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<div class="col-xs-8 styled-html-content ng-binding ng-scope" data-ng-bind-html="proposedCourse.course.courseSpecifics[courseIndex].description | trustedHtml"><span style="font-size: 18px;">Through the use of short films from Latin America and Spain, this course explores allows students to improve their grammatical skills while exploring cultural identity, historical and political events, values, and the social life in Spanish-speaking countries. In addition to discussing the short films, students will refine their oral presentation skills and their written skills. Geared for students taking any Intermediate or High Intermediate ISSI course, students will focus on present and past tenses. This course is mostly taught in Spanish with limited English use.</span></div>
+<div class="col-xs-8 styled-html-content ng-binding ng-scope" data-ng-bind-html="proposedCourse.course.courseSpecifics[courseIndex].description | trustedHtml">&nbsp;</div>
+<div class="col-xs-8 styled-html-content ng-binding ng-scope" data-ng-bind-html="proposedCourse.course.courseSpecifics[courseIndex].description | trustedHtml"><span style="font-size: 18px;">Note: This is a special topic for 2026; this will be a permanent mini-course starting in 2027.</span></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 18px;">SPA 131 CP Special Topic: Grammar through Short Films (Advanced and Superior levels)</span></td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<p><span style="font-size: 18px;"><span ng-if="!loading" class="ng-scope">Through the use of short films from Latin America and Spain, this course explores allows students to improve their grammatical skills while exploring cultural identity, historical and political events, values, and the social life in Spanish-speaking countries. In addition to discussing the short films, students will refine their oral presentation skills and their written skills. Geared for students taking any Advanced or Superior ISSI course, students will focus on present and past tenses This course is taught entirely in Spanish.</span></span></p>
+<p><span style="font-size: 18px;"><span ng-if="!loading" class="ng-scope">Note: This is a special topic for 2026; this will be a permanent mini-course starting in 2027.</span></span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 18px;">SPA 131 CQ Special Topic: Power of Proper Pronunciation (Intermediate and High Intermediate levels)</span></td>
+<td>
+<p><span style="font-size: 18px;"><span>0.5 units</span></span></p>
+<p><span style="font-size: 18px;">This course will provide Spanish pronunciation skills that will help students at Intermediate and High Intermediate ISSI levels to be better understood and increase their ability to listen and understand the spoken language and increase fluency. Topics will include mouth position, vowel sounds, consonant changes, the importance of syllables, stress placement, intonation, and transitioning of words. Practice will include rhythm of the language to more authentically sound like a native speaker. Some English will be used during the course.</span></p>
+<p><span style="font-size: 18px;"><span ng-if="!loading" class="ng-scope">Note: This is a special topic for 2026; this will be a permanent mini-course starting in 2027.</span></span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 18px;">SPA 131 CR Special Topic: Power of Proper Pronunciation (Advanced and Superior levels)</span></td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<div><span ng-if="!loading" style="font-size: 18px;">This course will provide Spanish pronunciation skills that will help students at Advanced and Superior ISSI levels to be better understood and increase their ability to listen and understand the spoken language and increase fluency. Topics will include mouth position, vowel sounds, consonant changes, the importance of syllables, stress placement, intonation, and transitioning of words. Practice will include rhythm of the language to more authentically sound like a native speaker. The course will be taught entirely in Spanish.</span></div>
+<div class="col-xs-8 styled-html-content ng-binding ng-scope" data-ng-bind-html="proposedCourse.course.courseSpecifics[courseIndex].description | trustedHtml">&nbsp;</div>
+<div class="col-xs-8 styled-html-content ng-binding ng-scope" data-ng-bind-html="proposedCourse.course.courseSpecifics[courseIndex].description | trustedHtml"><span style="font-size: 18px;"><span ng-if="!loading" class="ng-scope">Note: This is a special topic for 2026; this will be a permanent mini-course starting in 2027.</span></span></div>
+<div class="col-xs-8 styled-html-content ng-binding ng-scope" data-ng-bind-html="proposedCourse.course.courseSpecifics[courseIndex].description | trustedHtml">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">SPA 154C: Communicative Conversational Spanish Vocabulary (for Beginning levels)</span></p>
+</td>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">0.5 units</span></p>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">In this practical conversation class, you'll learn new vocabulary for travel and everyday situations in real-life scenarios as you converse with partners, small groups, and the entire class.&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">SPA 154P: Conversational Scenarios, High Beginning through Low Intermediate levels</span></p>
+</td>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">0.5 units</span></p>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">Learn new vocabulary and put it to use for everyday scenarios. Share, tell, and get acquainted through interviews and discuss topics of interest. Different from the&nbsp;small group conversations offered in the SPA 156 course,&nbsp;this is a class of 20 to 25 students at the high beginning and low intermediate levels. This course is designed to assist students interested in expanding their Spanish conversational skills. Students will also acquire an appreciation for cultures of Spanish-speaking countries. Let's talk!</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 154Q: Conversation Scenarios, Intermediate through High Intermediate levels</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units. </span></p>
+<p><span style="font-size: 18px;">Learn new vocabulary and put it to use for everyday scenarios. Share, tell, and get acquainted through interviews and discuss topics of interest. This course is designed to assist students interested in expanding their Spanish conversational skills. Students will also acquire an appreciation for cultures of Spanish-speaking countries.&nbsp;</span></p>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 154R: Increase Spanish Proficiency Through Interactive Stories&nbsp;<br /></span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<p><span style="font-size: 18px;">This interactive course enhances the traditional approach to Spanish language fluency through humor, storytelling, and group participation. This course is for high-beginning through intermediate levels. Some previous exposure to Spanish grammar and conversation is required.&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">SPA 156CC, 156CD, 156CE: Small Group Conversation, Intermediate through High Intermediate levels</span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<p><span style="font-size: 18px;">This small group conversation course introduces students to communication strategies used while building their oral proficiency skills. The course will include practice with structures and vocabulary presented in grammar courses. Students will develop the ability to understand and implement conversational Spanish through the use of vocabulary and idiomatic expressions.</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 156D, 156DA, 156DB: Small Group Conversation, High Intermediate levels</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+<p><span style="font-size: 18px;">This small group conversation course introduces students to communication strategies used while building their oral proficiency skills. The course will include practice with structures and vocabulary presented in grammar courses. Students will develop the ability to understand and implement conversational Spanish through the use of vocabulary and idiomatic expressions.</span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 156E, 156EE, 156F: Small Group Conversation, Advanced levels</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<p><span style="font-size: 18px;">This course introduces students to communication strategies used while building their oral proficiency skills in a small group situation with a Spanish speaker. The course will include practice with structures and vocabulary presented in grammar courses. Students will develop the ability to understand and implement conversational Spanish through the use of vocabulary and idiomatic expressions.&nbsp;</span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">156FF, 156G, 156GG, 156GH: Small Group Conversation, Superior levels</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<p><span style="font-size: 18px;">This course introduces students to communication strategies used while building their oral proficiency skills in a small group situation with a Spanish speaker. The course will include practice with structures and vocabulary presented in grammar courses. Students will develop the ability to understand and implement conversational Spanish through the use of vocabulary and idiomatic expressions.</span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 183A: Breaking Out of Beginner Spanish (for Beginning through High Beginning levels)</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">0.5 units</span></p>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span>This course is for the student who has knowledge of spoken Spanish and is ready to work on sounding more like a native speaker of Spanish. Transition words, traditional phrases, space fillers, clarification words and expressions will be introduced to help the student towards that end. The course is recommended for students who have had at least one year of college-level Spanish.&nbsp;</span></span></p>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 183B: Breaking Out of Intermediate Spanish (for High Intermediate levels)</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">This course is a continuation of SPA 183A: ISSI Breaking Out of Beginner's Spanish. This course is for the student who has knowledge of spoken Spanish at the intermediate level and is continuing to work on language skills to sound more like a native speaker of Spanish. Transition words, traditional phrases, space fillers, clarification words and expressions will be reviewed and developed, and new vocabularyand structures will be introduced to help the student towards that end.The course is recommended for students who have had at least one year of college-level Spanish.</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 186A: Comparative Grammar - The Subjunctive Mood (for Low Advanced through Advanced levels)</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;">0.5 units</span></p>
+<p><span style="font-size: 18px;">This mini-course focuses on Spanish and English subjunctive usage and structures that replace the subjunctive in informal speech. Areas to be covered include: subjunctive versus indicative tenses, nominal clauses, temporal and conditional clauses, relative clauses and independent clauses.</span></p>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 18px; font-family: tahoma, arial, helvetica, sans-serif;"><span style="font-size: 18px;">SPA 186B: Comparative Grammar - The Subjunctive Mood (for High Advanced through Superior levels)</span></span></p>
+</td>
+<td>
+<p><span style="font-size: 18px;"><span>0.5 units</span></span></p>
+<p><span style="font-size: 18px;"><span>This course will focus on the Spanish and English subjunctive mood usage, misuse of the subjunctive, and structures that mandate the subjunctive mood in Spanish at the high advanced to superior levels.&nbsp;</span></span></p>
+<p><span style="font-size: 18px;">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h5 style="text-align: center;">&nbsp;</h5></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		
+	</ouc:div>
+  	
+</document>

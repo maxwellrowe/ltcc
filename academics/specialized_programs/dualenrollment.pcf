@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Dual Enrollment Program</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Dual Enrollment Program</title>
+		<meta name="Description" content="Dual enrollment is an opportunity for local high school students to get ahead on college credits, fulfill high school graduation requirements, and ultimately save money. All dual enrollment courses take place at South Tahoe High School during the regular scheduled day." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>DUAL ENROLLMENT PROGRAM</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img title="Dual Enrollment Program" src="{{f:52025665}}" alt="Dual Enrollment Program" width="1080" height="720" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="apply-now-link-dual" href="https://www.opencccapply.net/gateway/apply?cccMisCode=221" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit LTCC's Campus</a></td>
+<td><a href="mailto:aceynon@ltcc.edu" target="_blank" rel="noopener">Request Info</a></td>
+</tr>
+</tbody>
+</table>
+<p>Lake Tahoe Community College's partnership with South Tahoe High School fundamentally supports student success through a program called Dual Enrollment. This free program provides local high school students with an opportunity to earn college and high school credits at the same time. All LTUSD students are welcome to participate in this program, which begins by students registering for and taking Healthy Lifestyle Choices during 9th grade. Like all LTCC students, Dual Enrollment students also receive a high level of personalized support to encourage classroom success and continuation in the program.</p>
+<p>Dual enrollment is a wonderful opportunity for local high school students to get ahead on college credits, fulfill high school graduation requirements, and ultimately save money on education. All dual enrollment courses take place at South Tahoe High School during the regular scheduled day.</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">dual enrollment</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">staff</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img title="Adam Eynon" src="https://www.ltcc.edu/_resources/images/adameynonsquare.jpg" alt="photo of Adam Eynon" width="150" height="151" /></td>
+<td>Adam Eynon</td>
+<td>Director of Dual Enrollment</td>
+<td>
+<p><a href="mailto:aceynon@ltcc.edu">aceynon@ltcc.edu</a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/savannahfraijo.jpg" alt="photo of Savannah Fraijo" width="150" height="150" /></td>
+<td>Savannah Fraijo</td>
+<td>Dual Enrollment Advisor</td>
+<td>
+<p>slfraijo@ltcc.edu</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

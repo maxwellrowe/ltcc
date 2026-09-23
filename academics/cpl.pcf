@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Credit for Prior Learning</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Credit for Prior Learning</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image.">/culinaryartsmillie.jpg</parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image.">culinary arts students in LTCC's commercial kitchen</parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Credit for Prior Learning | Lake Tahoe Community College</title>
+		<meta name="Description" content="Earn college credit for your real-world experiences at Lake Tahoe Community College. Discover how our Credit for Prior Learning (CPL) program can save you time and money by recognizing your work, military, or volunteer experience." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h5><img src="{{f:70376297}}" alt="culinary arts students in LTCC's commercial kitchen" width="1536" height="960" /></h5>
+<h5>&nbsp;</h5>
+<p><span>Lake Tahoe Community College believes in the power of knowledge acquired in different ways &ndash; including outside the classroom. Real-world experiences and on-the-job learning can be just as valuable in shaping skills and expertise as in-class education. LTCC proudly offers Credit for Prior Learning (CPL) to students whose demonstrated knowledge and skillsets may make them eligible for earned college credits.</span></p>
+<p><span>Some students have significant knowledge acquired through various experiences, such as work, volunteerism, military service, or self-directed learning. Through LTCC&rsquo;s CPL program, you may be able to earn college credits (or advanced standing toward a degree) for your talents and abilities, saving you time and money on your education.</span>&nbsp;</p>
+<p><span>LTCC counselors and faculty will guide you through assessment and evaluation of your prior learning experiences, helping you to maximize the CPL credits you can earn.&nbsp;</span>&nbsp;</p>
+<p class="x_MsoNormal">Explore all of the types of CPL available at LTCC &ndash; there are several! Whichever path you choose, begin by reaching out to Meredith Crosby at <a href="mailto:mecrosby@ltcc.edu" target="_blank" rel="noopener">mecrosby@ltcc.edu</a>.&nbsp;</p>
+<p class="x_MsoNormal">&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h4>What can CPL do for me?</h4>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td><strong>accordian1</strong></td>
+</tr>
+<tr>
+<td>
+<p><span data-contrast="none">Recognition of Your Achievements</span></p>
+</td>
+<td>
+<p><span data-contrast="none">Recognition of Your Achievements: CPL acknowledges the wealth of knowledge you have gained outside of the traditional classroom setting. It gives you credit for your hard work, dedication, and expertise, providing validation and appreciation for your accomplishments.</span><span data-ccp-props="{&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:300,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:360}">&nbsp;</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:360}"></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span data-contrast="none">Accelerated Degree Completion</span></p>
+</td>
+<td>
+<p><span data-contrast="none"> By earning credits through CPL, you can accelerate your progress toward obtaining a degree. This means spending less time in the classroom and more time applying your knowledge in the real world, entering the job market earlier, or pursuing advanced studies.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:360}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span data-contrast="none">Cost Savings</span></p>
+</td>
+<td>
+<p><span data-contrast="none">CPL can significantly reduce the financial burden associated with pursuing a degree. By recognizing your prior learning, you can avoid redundant coursework and focus on areas that truly require your attention. This translates into substantial cost savings in terms of tuition fees, textbooks, and other educational expenses.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:360}">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span data-contrast="none">Enhanced Career Opportunities</span></p>
+</td>
+<td>
+<p><span data-contrast="none">Employers highly value practical experience and skills. CPL helps you highlight and leverage your real-world expertise, making you a more competitive candidate in the job market. It demonstrates your ability to apply theory to practice, giving you a distinct advantage when pursuing career opportunities.</span><span data-ccp-props="{&quot;134233117&quot;:false,&quot;134233118&quot;:false,&quot;201341983&quot;:0,&quot;335559685&quot;:720,&quot;335559738&quot;:0,&quot;335559739&quot;:0,&quot;335559740&quot;:276,&quot;335559991&quot;:360}">&nbsp;</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just an email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:%20mecrosby@ltcc.edu" target="_blank" rel="noopener">mecrosby@ltcc.edu</a></p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<h4><span>What types of CPL are available to me at LTCC?</span></h4>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>APexamination</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW147854740 BCX0"><span class="NormalTextRun SCXW147854740 BCX0">Advanced Placement Examination</span></span><span class="EOP SCXW147854740 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></td>
+<td>
+<div><span data-contrast="none">LTCC grants credit to students who participate in the AP examinations offered by the College Board. Students will receive credit (not a letter grade) with scores of 3 or higher for purposes of general education requirements, graduation, and/or advanced placement into LTCC courses.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><b><span data-contrast="none">Next Steps</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<ol>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="16" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1">
+<div><span data-contrast="none">Submit your request to have an official copy of the College Board test scores forwarded to the Enrollment Services Office.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span>
+<ol style="list-style-type: lower-alpha;">
+<li><span data-contrast="none">Visit </span><span data-contrast="auto">the </span><a href="http://apstudents.collegeboard.org/sending-scores"><span data-contrast="none">AP Students website</span></a><span data-contrast="auto"> to get started.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ol>
+</div>
+</li>
+<li>
+<div><span data-contrast="none"><a href="https://ltcc.elumenapp.com/catalog/2021-2022/ap-advanced-placement-tests#mainContent" target="_blank" rel="noopener">See a list</a> of AP tests and the credit you can earn at LTCC.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+</li>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="16" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1">
+<div><span data-contrast="none">Questions? <a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">Reach out to a counselor online.</a></span></div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0">International Baccalaureate (IB) Examination</span></span><span class="EOP SCXW116062385 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></td>
+<td>
+<div><span data-contrast="none">LTCC grants credit to students who earn a satisfactory score on an approved IB exam.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><b><span data-contrast="none">Next Steps</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<ol>
+<li>
+<div><span data-contrast="none">Submit your request to have an official copy of your IB transcripts forwarded to the Enrollment Services Office.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span>
+<ol style="list-style-type: lower-alpha;">
+<li data-leveltext="%2." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="15" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2"><span data-contrast="none">Visit the </span><a href="https://ibo.org/programmes/diploma-programme/assessment-and-exams/requesting-transcripts/"><span data-contrast="none">International Baccalaureate website</span></a><span data-contrast="none"> to get started.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ol>
+</div>
+</li>
+<li>
+<div><span data-contrast="none"><a href="https://ltcc.elumenapp.com/catalog/2021-2022/ib-international-baccalaureate-credit#mainContent" target="_blank" rel="noopener">See a list</a> of IB exams and the credit you can earn at LTCC.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+</li>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="15" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1">
+<div><span data-contrast="none">Questions? <a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">Reach out to a counselor online.</a></span></div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0">College Level Examination Program (CLEP)</span></span><span class="EOP SCXW248718528 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></span></span></td>
+<td>
+<div><span data-contrast="none">LTCC grants credit to students who earn a satisfactory score on an approved CLEP exam.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><b><span data-contrast="none">Next Steps</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<ol>
+<li>
+<div><span data-contrast="none">Submit your request&nbsp;to have an official copy of your CLEP transcripts forwarded to the Enrollment Services Office.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span>
+<ol style="list-style-type: lower-alpha;">
+<li data-leveltext="%2." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="15" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:1440,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,4],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%2.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="2"><span data-contrast="none">Visit the </span><a href="https://clep.collegeboard.org/scores/send-scores-transcripts"><span data-contrast="none">CLEP website</span></a><span data-contrast="none"> to get started.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ol>
+</div>
+</li>
+<li>
+<div><span data-contrast="none"><a href="https://ltcc.elumenapp.com/catalog/2021-2022/clep#mainContent" target="_blank" rel="noopener">See a list</a> of IB exams and the credit you can earn at LTCC.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></div>
+</li>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="12" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1">
+<div><span data-contrast="none">Questions? <a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">Reach out to a counselor online.</a></span></div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW4487284 BCX0"><span class="NormalTextRun SCXW4487284 BCX0">Transfer Credits from Prior Institutions</span></span><span class="EOP SCXW4487284 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></span></span></span></span></td>
+<td>
+<div><span data-contrast="none">Students can transfer credits they completed at another accredited institution to fulfill prerequisite, general education, major, and/or elective unit requirements for the associate degree or certificate programs offered at LTCC.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><b><span data-contrast="none">Next Steps</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<ol>
+<li>
+<div><span data-contrast="none">Obtain transcript from prior college. This should be requested from your prior institution.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+</li>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="14" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1">
+<div><span data-contrast="none">Complete the </span><a href="https://mailltcc-my.sharepoint.com/:b:/g/personal/bissonnett_mail_ltcc_edu/EXTkZyFIEGZFk1h7_SoHXm0BDoWH-Wnje1v1-xaY62CLaQ?e=djcRXL"><span data-contrast="none">Request for Credit Evaluation</span></a><span data-contrast="none"> form with an LTCC counselor after official transcripts have been received.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+</li>
+<li>
+<div><span data-contrast="none">Questions? <a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">Reach out to a counselor online.</a></span></div>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW4487284 BCX0"><span class="NormalTextRun SCXW4487284 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW102109224 BCX0"><span class="NormalTextRun SCXW102109224 BCX0">Acceptance of Upper Division Coursework</span></span><span class="EOP SCXW102109224 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559738&quot;:300,&quot;335559740&quot;:276}">&nbsp;</span></span></span></span></span></span></span></td>
+<td>
+<p><span data-contrast="none">Students can transfer upper-division coursework credits they completed at another accredited institution to fulfill LTCC requirements. The following circumstances apply:</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="13" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="none">The course must be deemed comparable to LTCC course by the faculty in the discipline, or an appropriate designee, or through an articulation agreement. Upper-division courses or more advanced courses may be used in lieu of lower-division course competencies. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="13" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="none">The upper-division course may be used to satisfy an LTCC major requirement, an associate degree general education requirement, or a prerequisite. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="13" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1">
+<p>The California General Education Transfer Curriculum (Cal-GETC) is a general education pattern designed to make transferring from a California Community College to a California State University (CSU) or University of California (UC) easier and more efficient. Starting in Fall 2025, Cal-GETC will be the only lower-division general education pathway for students pursuing an Associate Degree for Transfer (ADT) or planning to transfer to CSU or UC.</p>
+<p>While we work to update our courses to reflect the Cal-GETC pattern, we advise students to meet with a counselor for GE guidance. Contact a counselor at<span>&nbsp;</span><a href="mailto: counselor@ltcc.edu" target="_blank" rel="noopener">counselor@ltcc.edu.</a></p>
+<span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}"> </span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="13" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="none">Grades earned will be calculated in the same manner as those transferred from another college or university.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ul>
+<p><b><span data-contrast="none">Next Steps</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<ol>
+<li><span data-contrast="none">Obtain transcript from prior college. This should be requested from your prior institution.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="2" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="none">Complete the </span><a href="https://mailltcc-my.sharepoint.com/:b:/g/personal/bissonnett_mail_ltcc_edu/EXTkZyFIEGZFk1h7_SoHXm0BDoWH-Wnje1v1-xaY62CLaQ?e=djcRXL"><span data-contrast="none">Request for Credit Evaluation</span></a><span data-contrast="none"> form with an LTCC counselor after official transcripts have been received.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li><span data-contrast="none">Questions? <a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">Reach out to a counselor online.</a></span><a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener"><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></a></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW4487284 BCX0"><span class="NormalTextRun SCXW4487284 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW102109224 BCX0"><span class="NormalTextRun SCXW102109224 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW128905831 BCX0"><span class="NormalTextRun SCXW128905831 BCX0">Achievement of a satisfactory score on a credit by examination evaluation administered by a department</span></span><span class="EOP SCXW128905831 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></span></span></span></span></span></span></span></span></td>
+<td>
+<div><span data-contrast="auto">Students can earn credit in a course by demonstrating their knowledge on a comprehensive exam administered by the college.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><b><span data-contrast="auto">Eligibility</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="11" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Must be registered for classes at LTCC in the quarter in which the credit by exam is attempted.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Must be in good academic standing with a 2.0 GPA or higher.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="3" data-aria-level="1"><span data-contrast="auto">Students may only petition one course per quarter, and that course must be in the current quarter&rsquo;s schedule of classes. Students may only attempt an exam once.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="" data-font="Symbol" data-listid="11" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="4" data-aria-level="1"><span data-contrast="auto">Students who have taken the class and received a grade in the course previously may not petition to take earn credit by exam.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ul>
+</div>
+<div><b><span data-contrast="auto">Courses Available for Credit By Exam</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div><span data-contrast="auto">Not all courses are available for credit by exam. Faculty in the department and the dean over the area make the final determination for which courses are available for credit by exam. To see if you can get credit for a course by taking an exam, <a href="https://ltcc.elumenapp.com/catalog/2021-2022/policies-procedures,academic,grading-awarding-of-credit#mainContent" target="_blank" rel="noopener">review the college catalog</a>. Courses available for credit by exam are listed under each subject heading.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>&nbsp;</div>
+<div><b><span data-contrast="auto">Next Steps</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></div>
+<div>
+<ol>
+<li><span data-contrast="auto">Meet with a </span><a href="https://ltcc.craniumcafe.com/group/advising-counseling"><span data-contrast="none">counselor</span></a><span data-contrast="auto"> to discuss your Credit by Exam plans.</span><span> </span><span data-contrast="auto">&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="8" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="2" data-aria-level="1"><span data-contrast="auto">Complete a </span><a href="https://mailltcc-my.sharepoint.com/:b:/g/personal/bissonnett_mail_ltcc_edu/ETN_KqAwO8VCq8lKjJ6bW1kBpPDvPPlfHY_ANhxHocapug?e=VlAOeq"><span data-contrast="none">Credit by Examination</span></a><span data-contrast="auto"> petition at least five (5) business days prior to the assigned date when the exam will be administered. </span><span>&nbsp;<br /></span><span>&nbsp;<br /></span><span data-contrast="auto">Check the </span><a href="https://www.ltcc.edu/academics/scheduleofclasses.php"><span data-contrast="none">schedule</span></a><span data-contrast="auto"> to get the petition deadline and exam dates. If you missed the petition deadline, reach out to the instruction office at <a href="mailto:instruction@ltcc.edu">instruction@ltcc.edu</a></span><span data-contrast="auto">.</span><span><br /></span></li>
+<li><span data-contrast="auto">For additional details about credit by examination, see the </span><a href="https://ltcc.elumenapp.com/catalog/2021-2022/policies-procedures,academic,grading-awarding-of-credit#mainContent"><span data-contrast="none">LTCC catalog</span></a><span data-contrast="auto">.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ol>
+</div>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW4487284 BCX0"><span class="NormalTextRun SCXW4487284 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW102109224 BCX0"><span class="NormalTextRun SCXW102109224 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW128905831 BCX0"><span class="NormalTextRun SCXW128905831 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW162176181 BCX0"><span class="NormalTextRun SCXW162176181 BCX0">Evaluation of industry-recognized credentials documentation</span></span><span class="EOP SCXW162176181 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></span></span></span></span></span></span></span></span></span></span></td>
+<td>
+<div>
+<p><span data-contrast="auto">Students can receive course credit for their industry recognized credentials as recommended by the appropriate department chair or faculty designee. </span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><span data-contrast="auto"><a title="CPL list" href="{{f:81920415}}" target="_blank" rel="noopener">See the list</a> of approved industry-recognized credentials.</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<p><b><span data-contrast="auto">Next Steps if you have an approved industry-recognized credential:</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="7" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Submit this <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:b6338481-2ddd-37cd-aa92-dd7c63b4fb25" target="_blank" rel="noopener">form </a></span><span data-contrast="auto">with a certified record of your industry&nbsp;certificate or credential. You will receive course credit for the courses that align with your certificate or credential.&nbsp;</span><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></li>
+</ul>
+<p><b><span data-contrast="auto">Next Steps if your industry-recognized credential is not on the list:</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559739&quot;:120,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<ul>
+<li data-leveltext="" data-font="Symbol" data-listid="7" data-list-defn-props="{&quot;335552541&quot;:1,&quot;335559684&quot;:-2,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769226&quot;:&quot;Symbol&quot;,&quot;469769242&quot;:[8226],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">If your certificate or credential is not listed, but you&rsquo;d like to see if you can earn college credit for it, reach out to LTCC's Instruction Office by email at </span><a href="mailto:instruction@ltcc.edu"><span data-contrast="none">instruction@ltcc.edu</span></a><span data-contrast="auto">.&nbsp;</span><span><br /></span></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW4487284 BCX0"><span class="NormalTextRun SCXW4487284 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW102109224 BCX0"><span class="NormalTextRun SCXW102109224 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW128905831 BCX0"><span class="NormalTextRun SCXW128905831 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW162176181 BCX0"><span class="NormalTextRun SCXW162176181 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun Highlight SCXW255245427 BCX0"><span class="NormalTextRun SCXW255245427 BCX0">Evaluation of credit for military training</span></span><span class="EOP SCXW255245427 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+<td>
+<p>Students can receive credit for their military training.&nbsp;</p>
+<p><b><span data-contrast="auto">Next Steps:</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<ol>
+<li data-leveltext="%1." data-font="Calibri,Times New Roman,ＭＳ ゴシック" data-listid="3" data-list-defn-props="{&quot;335552541&quot;:0,&quot;335559684&quot;:-1,&quot;335559685&quot;:720,&quot;335559991&quot;:360,&quot;469769242&quot;:[65533,0],&quot;469777803&quot;:&quot;left&quot;,&quot;469777804&quot;:&quot;%1.&quot;,&quot;469777815&quot;:&quot;hybridMultilevel&quot;}" aria-setsize="-1" data-aria-posinset="1" data-aria-level="1"><span data-contrast="auto">Set up a meeting with a <a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">counselor</a> to discuss courses you are interested in.</span><span data-contrast="auto">&nbsp;</span></li>
+</ol>
+</td>
+</tr>
+<tr>
+<td><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW116062385 BCX0"><span class="NormalTextRun SCXW116062385 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW248718528 BCX0"><span class="NormalTextRun SCXW248718528 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW4487284 BCX0"><span class="NormalTextRun SCXW4487284 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW102109224 BCX0"><span class="NormalTextRun SCXW102109224 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW128905831 BCX0"><span class="NormalTextRun SCXW128905831 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun SCXW162176181 BCX0"><span class="NormalTextRun SCXW162176181 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun Highlight SCXW255245427 BCX0"><span class="NormalTextRun SCXW255245427 BCX0"><span data-contrast="none" xml:lang="EN" lang="EN" class="TextRun Highlight SCXW262288764 BCX0"><span class="NormalTextRun SCXW262288764 BCX0">Evaluation of student-created portfolios</span></span><span class="EOP SCXW262288764 BCX0" data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></td>
+<td>
+<p><span data-contrast="auto">Students can receive credit for their prior learning by creating a portfolio&nbsp;for review by the appropriate faculty chair or designee.</span><span data-contrast="auto"> Portfolios must be thorough and should directly align with the student learning outcomes associated with the course the students is seeking credit in. Portfolio's will be evaluated by faculty in the appropriate field based on a standardized rubric.</span></p>
+<p><b><span data-contrast="auto">Next Steps:</span></b><span data-ccp-props="{&quot;201341983&quot;:0,&quot;335559740&quot;:276}">&nbsp;</span></p>
+<ol>
+<li>Review the <a href="https://ltcc.elumenapp.com/catalog/2021-2022/policies-procedures,academic,grading-awarding-of-credit#mainContent"><span data-contrast="none">LTCC catalog</span></a>&nbsp;to see which classes you are interested in receiving credit for prior learning (CPL).</li>
+<li>Meet with a <a href="https://ltcc.craniumcafe.com/group/advising-counseling"><span data-contrast="none">counselor</span></a>&nbsp;to review your experience and discuss the CPL process. The counselor will connect you with the appropriate faculty member.</li>
+<li>Meet with the faculty member to review the rubric and Student Learning Outcomes of the class in which you wish to receive credit and set up a 2<sup>nd</sup> meeting for the future to review the portfolio.
+<ol style="list-style-type: lower-alpha;">
+<li>The faculty member may refer you to additional resources or tools to help determine how your experience meets the standards of a class</li>
+</ol>
+</li>
+<li>Create a portfolio using the rubric (examples can include an essay, certificates and trainings, pieces of work, etc).</li>
+<li>Meet with the faculty member to review the portfolio. The faculty will score the portfolio and submit it to the student and VP of Instruction for final review. Once approved by the VP of Instruction, it will be transcribed by the end of the current term.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

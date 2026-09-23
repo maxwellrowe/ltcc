@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">ISSI Core Courses</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>ISSI Core Courses | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore the core courses offered through LTCC’s Intensive Spanish Summer Institute (ISSI). Develop your Spanish language skills with immersive, high-quality instruction designed for all proficiency levels." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Core Courses</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><span style="color: #000000;"><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/issi/issi2019_music.jpg" alt="ISSI Music" width="1898" height="951" /></span></td>
+</tr>
+</tbody>
+</table>
+<!-- ISSI Course Overview Section (below hero) -->
+<div style="padding: 1rem 1rem; max-width: 900px; margin: 0 auto;">
+<blockquote style="border-left: 4px solid #ccc; margin: 0 0 1.5rem; padding-left: 1rem; font-style: italic; color: #333;">
+<p>"I was able to build warm relationships with people from California and other Western states, and also the instructors of the core course. A friendly and inclusive atmosphere enveloped the entire campus."</p>
+<p style="margin-top: 0.5rem;"><strong>&ndash; Recent ISSI program participant</strong></p>
+</blockquote>
+<h3 style="margin-top: 2rem; font-size: 1.25rem; color: #000;">Courses are offered Monday &ndash; Friday, 8:00 AM &ndash; 3:20 PM</h3>
+<p>You will be in more than one classroom as you move through your day. The cultural breakout sessions are included and do not require separate registration. However, you <strong>must register for any numbered course</strong> (e.g., SPA 156C).</p>
+<p>View the full breakdown of the day on our <a href="https://www.ltcc.edu/academics/specialized_programs/issi/typical-day.php" target="_blank" rel="noopener">Typical Day at ISSI</a> page.</p>
+<p>Unless otherwise noted, all materials are provided. Alternate formats are available upon request. If you require disability accommodations, please let us know in advance. Optional materials include a Spanish-English/English-Spanish dictionary and the <em>501 Spanish Verbs</em> book.</p>
+<h4 style="margin-top: 2rem;">Self-Placement</h4>
+<p>Use the core course descriptions below to determine your placement level.</p>
+<h4 style="margin-top: 2rem;">Questions?</h4>
+<p>For course-specific questions, email us at <a href="mailto:issi@ltcc.edu">issi@ltcc.edu</a>.</p>
+</div>
+<!-- ISSI Self-Placement Page -->
+<div style="padding: 1rem 1rem;">
+<h2 style="text-align: center; color: #004b87; margin: 2rem 0 1rem;">ISSI Self-Placement Information</h2>
+<p>Below you'll see a list of the courses offered at ISSI. Each course has information about the concepts that are taught for that level. (Note: All levels use the first day to review the material that has been covered in the previous level.) There are also free quizzes that you can take; these quizzes are housed on other websites but cover material that is similar to that level.</p>
+<p>If you have never studied Spanish before and you know zero Spanish, you should enroll in <strong>SPA 121A, Low Beginning Spanish</strong>. This is our entry-level course.</p>
+<p>If you have taken some Spanish in the past, or if you have some knowledge of Spanish, then you will need to determine which course is your best fit.&nbsp;</p>
+<h2 style="text-align: center; color: #004b87; margin: 2rem 0 1rem;">How to Use the Table</h2>
+<ul>
+<li>Read the descriptions of the levels.</li>
+<li>Aim for the level that best represents the last grammar instruction that you have had in the past. (If you have &lsquo;picked up Spanish&rsquo; by talking to Spanish-speaking people, then aim for what sounds most like what you know.)</li>
+<li>Take the self-placement quizzes for the grammar level that you think might best fit your knowledge.
+<ul>
+<li>If you get 80% or higher on most of the self-placement quizzes, then consider going one or two levels higher.</li>
+<li>If you get 40&ndash;80% on most of the self-placement quizzes, then consider taking that level.</li>
+<li>If you consistently get less than 40% on most of the quizzes, or the quizzes cover material that you don't know at all, then consider going one or more levels lower.</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- Low-Tier Courses Table --><!-- Low-Tier Courses Table -->
+<div style="padding: 1rem 1rem;">
+<h2 style="text-align: center; color: #004b87; margin: 2rem 0 1rem;">ISSI Low-Tier Courses</h2>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">
+<thead>
+<tr>
+<th style="border: 1px solid #ccc; padding: 8px;">Course</th>
+<th style="border: 1px solid #ccc; padding: 8px;">Grammar and Vocabulary Topics</th>
+<th style="border: 1px solid #ccc; padding: 8px;">Free Quizzes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 121A</strong><br />Low Beginning</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Forms of Address<br />Subject pronouns<br />Alphabet<br />Asking basic questions<br />Articles and gender<br />The verbs estar, ser, ir, gustar, and tener</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/adjet2.htm" target="_blank" rel="noopener">Agreement</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/articulos1.html" target="_blank" rel="noopener">Definite and indefinite articles</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 121B</strong><br />Beginning</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Asking more questions<br />Numbers, colors, clothing<br />Cognates<br />Basic pronunciation<br />Regular present-tense verbs (-ar, -er, -ir)<br />More practice with gustar</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/vcort.htm" target="_blank" rel="noopener">Present tense regular verbs</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/gustar1.html" target="_blank" rel="noopener">Gustar</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 121D</strong><br />High Beginning</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Verbs with irregular &lsquo;yo&rsquo; forms<br />Stem-changing verbs<br />Basic sentences<br />Adjectives<br />Ser versus Estar</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/ser.htm" target="_blank" rel="noopener">Ser versus estar</a> (Bowdoin/Yepes)<br /><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/vcr.htm" target="_blank" rel="noopener">Stem-changing verbs</a> (Bowdoin/Yepes)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122A</strong><br />Low Intermediate</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">More stem-changing and irregular verbs<br />Reflexive verbs<br />Present progressive</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/refl.htm" target="_blank" rel="noopener">Reflexive verbs</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/prog_pres.html" target="_blank" rel="noopener">Present progressive</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122B</strong><br />Intermediate</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Past-tense narration using the preterit<br />Weather<br />Past-tense narration using the imperfect</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/imp.htm" target="_blank" rel="noopener">Imperfect</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/pret_irregtrans.html" target="_blank" rel="noopener">Preterit with irregular meanings</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122C</strong><br />Intermediate II</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Narrating in the past with preterit and imperfect<br />Present Perfect<br />Direct object pronouns<br />Indirect object pronouns<br />Prepositions</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/pret1.htm" target="_blank" rel="noopener">Preterit forms</a> (Bowdoin/Yepes)<br /><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/prcd.htm" target="_blank" rel="noopener">Direct object pronouns</a> (Bowdoin/Yepes)<br /><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/prci.htm" target="_blank" rel="noopener">Indirect object pronouns</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/pres_perf.html" target="_blank" rel="noopener">Present perfect</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122CA</strong><br />Intermediate III</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">More practice with the preterit and the imperfect<br />Uses of se<br />More practice with object pronouns</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/pretimp1.htm" target="_blank" rel="noopener">Preterit vs. Imperfect</a> (Bowdoin/Yepes)<br /><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/compr.htm" target="_blank" rel="noopener">Combination of object pronouns</a> (Bowdoin/Yepes)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="padding: 1rem 1rem;">
+<h2 style="text-align: center; color: #004b87; margin: 2rem 0 1rem;">ISSI High-Tier Courses</h2>
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">
+<thead>
+<tr>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Course</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Grammar and Vocabulary Topics</th>
+<th style="border: 1px solid #ccc; padding: 8px; text-align: left;">Free Quizzes</th>
+</tr>
+</thead>
+<tbody><!-- Existing 7 Low-Tier Rows Here -->
+<tr>
+<td style="border: 1px solid #ccc; padding: 12px; background-color: #f7f7f7;" colspan="3"><strong>ISSI High-Tier Courses</strong></td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122D</strong><br />High Intermediate</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">More practice with the preterit and the imperfect<br />Irregular preterit forms<br />Present subjunctive forms<br />Formal and informal commands<br />Reading and speaking at a 4th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/subj1.htm" target="_blank" rel="noopener">Present subjunctive forms</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/commands_Ud1.html" target="_blank" rel="noopener">Formal commands</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122E</strong><br />High Intermediate II</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">More practice with the preterit and the imperfect<br />Uses of the present subjunctive<br />More practice with commands<br />Por versus para<br />Reading and speaking at a 5th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/porpara1.htm" target="_blank" rel="noopener">Por vs. Para</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/commands_tu2.html" target="_blank" rel="noopener">Informal commands</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 122EA</strong><br />High Intermediate III</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Time expressions with hacer<br />More practice with the present subjunctive<br />Comparatives and superlatives<br />Reading and speaking at the 6th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/compar3.htm" target="_blank" rel="noopener">Comparatives</a> (Bowdoin/Yepes)<br /><a href="https://studyspanish.com/grammar/test/super" target="_blank" rel="noopener">Superlatives</a> (Study Spanish)<br /><a href="https://studyspanish.com/grammar/test/timehacer-t" target="_blank" rel="noopener">Time expressions with hacer</a> (Study Spanish)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 123A</strong><br />Low Advanced</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Present subjunctive with desire, emotion and doubt<br />Present subjunctive with uncertainty<br />Expressions that require the subjunctive<br />Reading and speaking at the 7th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/subj2.htm" target="_blank" rel="noopener">Present subjunctive in noun clauses</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/subj8.html" target="_blank" rel="noopener">Present indicative vs. Present subjunctive with certainty</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 123B</strong><br />Advanced</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">More practice with the present subjunctive with desire, doubt and emotion<br />Present subjunctive with adverbial clauses<br />Reading and speaking at the 8th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/subj4.htm" target="_blank" rel="noopener">Present subjunctive with adjective clauses</a> (Bowdoin/Yepes)<br /><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/subj5.htm" target="_blank" rel="noopener">Present subjunctive with adverb clauses</a> (Bowdoin/Yepes)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 123D</strong><br />High Advanced</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Present subjunctive with future constructions<br />The conditional<br />The past or imperfect subjunctive<br />Reading and speaking at the 9th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/futur3.htm" target="_blank" rel="noopener">Future tense</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/conditional1.html" target="_blank" rel="noopener">Conditional</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 124</strong><br />Low Superior</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">More practice with the past subjunctive<br />Se in passive voice<br />Hypothetical phrases<br />Reading and speaking at the 10th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><a href="https://learn.bowdoin.edu/spanish-grammar/newgr/subj6.htm" target="_blank" rel="noopener">Past subjunctive</a> (Bowdoin/Yepes)<br /><a href="https://personal.colby.edu/~bknelson/SLC/si_clauses_subj.html" target="_blank" rel="noopener">Hypothetical phrases</a> (Barbara Kuczun Nelson)</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 124A</strong><br />Superior</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">Review of all grammar points while starting to expand reading comprehension through literature.<br />Reading and speaking at the 11th- or 12th-grade level</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">&nbsp;</td>
+</tr>
+<tr>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;"><strong>SPA 124E or 124F</strong><br />High Superior</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">
+<p>Targeted grammatical practice while focusing on literature, art or culture<br />Reading and speaking at a collegiate level</p>
+<p>Note: SPA 124E and 124F are equal to SPA 131CM and SPA 131BT, respectively. If you have taken SPA 131CM or SPA 131BT, you may not register for the newer courses.</p>
+</td>
+<td style="border: 1px solid #ccc; padding: 8px; vertical-align: top;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		
+	</ouc:div>
+  	
+</document>

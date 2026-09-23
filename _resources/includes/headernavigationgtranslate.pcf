@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/_shared/headernavgtranslate.xsl" title="Navigation" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content" button="hide" hide="true">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
+	</ouc:div>
+	
+	<menu-1>
+		<ouc:div label="nav-toggle-1" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 1"/>true</ouc:div>
+		<ouc:div label="nav-layout-1" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>3</ouc:div>
+		<ouc:div label="nav-heading-1" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>About</ouc:div>
+		<ouc:div label="nav-sub-heading-1" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Get to Know Us!</ouc:div>
+		<ouc:div label="nav-heading-link-1" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/about/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-1" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>About</ouc:div>
+		<ouc:div label="nav-1-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><p class="_mce_tagged_br">&nbsp;</p>
+<ul>
+<li class="_mce_tagged_br" title="About"><a title="Accreditation" href="https://www.ltcc.edu/about/accreditation/index.php">Accreditation</a></li>
+<li class="_mce_tagged_br" title="About"><a title="Administrative Services" href="https://www.ltcc.edu/about/administrative-services/index.php">Administrative Services</a></li>
+<li><a title="Board of Trustees" href="https://www.ltcc.edu/about/board-of-trustees/index.php">Board of Trustees</a></li>
+<li><a title="Campus Leadership" href="https://www.ltcc.edu/about/campusleadership.php">Campus Leadership</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-1-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column two." rows="5" editor="yes"/><ul>
+<li><a title="Campus History" href="https://www.ltcc.edu/about/collegehistory.php">College History</a></li>
+<li><a title="Governance" href="https://www.ltcc.edu/about/governance/index.php">Governance</a></li>
+<li><a title="Human Resources" href="https://www.ltcc.edu/about/human-resources/">Human Resources</a></li>
+<li><a title="Institutional Effectiveness" href="https://www.ltcc.edu/about/institutional-effectiveness/index.php">Institutional Effectiveness</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-1-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/><ul>
+<li><a title="Maps &amp; Direction" href="https://www.ltcc.edu/about/location.php">Maps &amp; Directions</a></li>
+<li><a title="Campus Map" href="https://www.ltcc.edu/about/measuref/index.php">Measure F</a></li>
+<li><a title="President's Office" href="https://www.ltcc.edu/about/President/index.php">President's Office</a></li>
+<li><a title="Public Information Office" href="https://www.ltcc.edu/about/publicinformationoffice.php">Public Information Office</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-1-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-1>	
+
+	<menu-2>
+		<ouc:div label="nav-toggle-2" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 2"/>true</ouc:div>
+		<ouc:div label="nav-layout-2" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>3</ouc:div>
+		<ouc:div label="nav-heading-2" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Academics</ouc:div>
+		<ouc:div label="nav-sub-heading-2" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Courses &amp; Programs</ouc:div>
+		<ouc:div label="nav-heading-link-2" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/academics/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-2" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Academics</ouc:div>
+		<ouc:div label="nav-2-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="Academic Calendar" href="https://www.ltcc.edu/academics/academic-calendar.php">Academic Calendar</a></li>
+<li><a title="Academic Programs" href="https://www.ltcc.edu/academics/academic_programs/index.php">Academic Programs</a></li>
+<li><a title="Adult Education" href="https://www.ltcc.edu/academics/specialized_programs/adult_education.php">Adult Education</a></li>
+<li><a title="Bachelor's Degree Programs" href="https://www.ltcc.edu/academics/bachelordegrees.php">Bachelor's Degree Programs</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-2-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column two." rows="5" editor="yes"/><ul>
+<li><a title="Career &amp; Technical Education" href="https://www.ltcc.edu/academics/cte.php">Career &amp; Technical Education</a></li>
+<li><a title="Catalog" href="https://www.ltcc.edu/academics/catalog.php">Catalog</a></li>
+<li><a title="Degrees and Certificates" href="https://www.ltcc.edu/academics/degreesandcertificates.php">Degrees &amp; Certificates</a></li>
+<li><a title="Distance Learning" href="https://www.ltcc.edu/academics/online.php">Distance Learning</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-2-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/><ul>
+<li><a title="FKCE" href="https://www.ltcc.edu/academics/specialized_programs/fkce.php">Foster Kinship Care Education (FKCE)</a></li>
+<li><a title="Incarcerated Student Program" href="https://www.ltcc.edu/academics/specialized_programs/risingscholarsprogram.php">Incarcerated Student Program</a></li>
+<li><a title="ISSI" href="https://www.ltcc.edu/academics/specialized_programs/issi/index.php">Intensive Spanish Summer Institute (ISSI)</a></li>
+<li><a title="Schedule of Classes" href="https://www.ltcc.edu/academics/scheduleofclasses.php">Schedule of Classes</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-2-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-2>	
+
+	<menu-3>
+		<ouc:div label="nav-toggle-3" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 3"/>true</ouc:div>
+		<ouc:div label="nav-layout-3" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>3</ouc:div>
+		<ouc:div label="nav-heading-3" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Admissions</ouc:div>
+		<ouc:div label="nav-sub-heading-3" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Apply &amp; Register</ouc:div>
+		<ouc:div label="nav-heading-link-3" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/admissions/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-3" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Admissions</ouc:div>
+		<ouc:div label="nav-3-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="New Students" href="https://www.ltcc.edu/admissions/index.php">Apply</a></li>
+<li><a title="California Dream Act" href="https://www.ltcc.edu/admissions/financial-aid/dreamact.php">California Dream Act</a></li>
+<li><a title="Campus Tours" href="https://www.ltcc.edu/admissions/campustours.php">Campus Tours</a></li>
+<li><a title="FERPA" href="https://www.ltcc.edu/admissions/ferpa.php">FERPA</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-3-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column two." rows="5" editor="yes"/><ul>
+<li><a title="Financial Aid" href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a title="Forms" href="https://www.ltcc.edu/admissions/forms.php">Forms</a></li>
+<li><a title="International Students" href="https://www.ltcc.edu/admissions/internationalstudents/index.php">International Students</a></li>
+<li><a title="New Students" href="https://www.ltcc.edu/admissions/index.php">New Students</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-3-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/><ul>
+<li><a title="Register for Classes" href="https://portal.ltcc.edu/" target="_blank" rel="noopener">Register for Classes</a></li>
+<li><a title="Residency" href="https://www.ltcc.edu/admissions/residency.php">Residency</a></li>
+<li><a title="Tuition &amp; Fees" href="https://www.ltcc.edu/admissions/fees.php">Tuition &amp; Fees</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-3-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-3>	
+
+	<menu-4>
+		<ouc:div label="nav-toggle-4" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 4"/>true</ouc:div>
+		<ouc:div label="nav-layout-4" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>4</ouc:div>
+		<ouc:div label="nav-heading-4" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Resources</ouc:div>
+		<ouc:div label="nav-sub-heading-4" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Tools for Success</ouc:div>
+		<ouc:div label="nav-heading-link-4" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/campusresources/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-4" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Campus Resources</ouc:div>
+		<ouc:div label="nav-4-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="Admissions" href="https://www.ltcc.edu/admissions/index.php">Admissions</a></li>
+<li><a title="Bookstore" href="http://ltcc.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=65068&amp;catalogId=10001&amp;langId=-1" target="_blank" rel="noopener">Bookstore</a></li>
+<li><a title="Campus Health, Safety, &amp; Security" href="https://www.ltcc.edu/campusresources/health-and-safety/index.php">Campus Health, Safety, &amp; Security</a></li>
+<li><a title="Tutoring Center" href="https://www.ltcc.edu/campusresources/child-development-center.php">Child Development Center</a></li>
+<li><a title="Counseling" href="https://www.ltcc.edu/campusresources/counseling.php">Counseling</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-4-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column two." rows="5" editor="yes"/><ul>
+<li><a title="DRC" href="https://www.ltcc.edu/campusresources/studentaccessibilityservices/index.php">Disability Resource Center</a></li>
+<li><a title="ETS TRiO" href="https://www.ltcc.edu/campusresources/ETS.php">Educational Talent Search (TRiO)</a></li>
+<li><a title="Equity" href="https://www.ltcc.edu/campusresources/equity-outreach.php">Equity Office</a></li>
+<li><a title="Facility Rental" href="https://www.ltcc.edu/campusresources/facilityrental.php">Facility Rental</a></li>
+<li><a title="Faculty &amp; Staff Resources" href="https://www.ltcc.edu/campusresources/facultystaffresources.php">Faculty &amp; Staff Resources</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-4-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/><ul>
+<li><a title="Library" href="https://www.ltcc.edu/campusresources/library/index.php">Library</a></li>
+<li><a title="Student Ambassadors" href="https://ltcc.welcometocollege.com/">Student Ambassadors</a></li>
+<li><a title="Student Lab" href="https://www.ltcc.edu/campusresources/student_lab_assessments.php">Student Labs &amp; Assessment Center</a></li>
+<li><a title="Technology" href="https://www.ltcc.edu/campusresources/technology/index.php">Technology</a></li>
+<li><a title="Title IX" href="https://www.ltcc.edu/campusresources/title_ix/index.php">Title IX</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-4-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/><div><span style="color: #0000ee;"><em><span style="text-decoration: underline;">&nbsp;</span></em></span></div>
+<ul>
+<li><a title="Transfer Center" href="https://www.ltcc.edu/campusresources/transfer-center/index.php">Transfer Center</a></li>
+<li><a title="tutoring center" href="https://www.ltcc.edu/campusresources/tutoring_center.php">Tutoring Center</a></li>
+<li><a title="Upward Bound" href="https://www.ltcc.edu/campusresources/upward-bound.php">Upward Bound (TRiO)</a></li>
+<li><a title="Veterans Resources" href="https://www.ltcc.edu/campusresources/veterans/index.php">Veterans Resources</a></li>
+<li><a title="Internship" href="https://www.ltcc.edu/academics/academic_programs/internship.php">Work Experience &amp; Internship</a></li>
+</ul></ouc:div>
+	</menu-4>	
+
+	<menu-5>
+		<ouc:div label="nav-toggle-5" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 5"/>true</ouc:div>
+		<ouc:div label="nav-layout-5" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>3</ouc:div>
+		<ouc:div label="nav-heading-5" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Campus Life</ouc:div>
+		<ouc:div label="nav-sub-heading-5" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Clubs &amp; Athletics</ouc:div>
+		<ouc:div label="nav-heading-link-5" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/campuslife/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-5" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Campus Life</ouc:div>
+		<ouc:div label="nav-5-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="Athletics" href="https://www.ltcc.edu/campuslife/athletics/index.php">Athletics</a></li>
+<li><a title="Demonstration Garden" href="https://www.ltcc.edu/campuslife/demonstration-garden.php">Demonstration Garden</a></li>
+<li><a title="Duke Theatre" href="https://www.ltcc.edu/campuslife/duke_theatre/index.php">Duke Theatre</a></li>
+<li><a title="FEC" href="https://www.ltcc.edu/campuslife/fec.php">Fitness Education Center</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-5-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column two." rows="5" editor="yes"/><p>&nbsp;</p>
+<ul>
+<li title="Graduation"><a title="Graduation" href="https://www.ltcc.edu/campuslife/graduation.php">Graduation</a></li>
+<li title="Graduation"><a title="Graduation" href="https://www.ltcc.edu/campuslife/haldan-gallery/index.php">Haldan Art Gallery</a></li>
+<li title="Graduation"><a title="Housing" href="https://www.ltcc.edu/campuslife/housing.php">Housing</a></li>
+<li title="Graduation"><a title="Student Clubs" href="https://www.ltcc.edu/campuslife/student-clubs.php">Student Clubs</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-5-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/><p>&nbsp;</p>
+<ul>
+<li><a title="Student Senate" href="https://www.ltcc.edu/campuslife/student-senate/index.php">Student Senate</a></li>
+<li><a title="Writers' Series" href="https://www.ltcc.edu/campuslife/writers-series.php">Writers Series</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-5-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-5>	
+
+	<menu-6>
+		<ouc:div label="nav-toggle-6" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 6"/>true</ouc:div>
+		<ouc:div label="nav-layout-6" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>2</ouc:div>
+		<ouc:div label="nav-heading-6" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Community</ouc:div>
+		<ouc:div label="nav-sub-heading-6" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Not for Credit Options</ouc:div>
+		<ouc:div label="nav-heading-link-6" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/communityeducation/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-6" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Community</ouc:div>
+		<ouc:div label="nav-6-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="Community Education" href="https://www.ltcc.edu/communityeducation/index.php">Community Education (CONNECT)</a>
+<p>&nbsp;<a title="Community Education" href="https://www.ltcc.edu/communityeducation/index.php"><img title="Bike" src="https://www.ltcc.edu/_resources/images/ltcc_images/connect/bike.jpg" alt="Biking" width="250" height="166" /></a></p>
+</li>
+</ul></ouc:div>
+		<ouc:div label="nav-6-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column Two." rows="5" editor="yes"/><ul>
+<li><a title="English as a Second Language" href="https://www.ltcc.edu/academics/academic_programs/esl.php">English as a Second Language</a></li>
+<li><a title="ESL" href="https://www.ltcc.edu/academics/academic_programs/esl.php"><img title="Students" src="https://www.ltcc.edu/_resources/images/ltcc_images/students/tutoringandlearningcenter/tlc1.jpg" alt="Students" width="250" height="168" /></a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-6-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/></ouc:div>
+		<ouc:div label="nav-6-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-6>	
+
+	<menu-7>
+		<ouc:div label="nav-toggle-7" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 7"/>true</ouc:div>
+		<ouc:div label="nav-layout-7" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>2</ouc:div>
+		<ouc:div label="nav-heading-7" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Giving</ouc:div>
+		<ouc:div label="nav-sub-heading-7" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Support Students</ouc:div>
+		<ouc:div label="nav-heading-link-7" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/giving/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-7" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Foundation</ouc:div>
+		<ouc:div label="nav-7-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="About the Foundation" href="https://www.ltcc.edu/giving/index.php">About the Foundation</a></li>
+<li><a title="Donate" href="https://www.ltcc.edu/giving/donate/index.php">Donate</a></li>
+<li><a title="Foundation Board of Directors" href="https://www.ltcc.edu/giving/foundationeventsold.php">Events</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-7-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column Two." rows="5" editor="yes"/><ul>
+<li><a title="Foundation Board of Directors" href="https://www.ltcc.edu/giving/foundationboard.php">Foundation Board of Directors</a></li>
+<li><a title="Foundation Meetings" href="https://www.ltcc.edu/giving/foundationmeetings.php">Foundation Meetings</a></li>
+<li><a title="Scholarships" href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-7-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/></ouc:div>
+		<ouc:div label="nav-7-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-7>		
+	
+	<menu-8>
+		<ouc:div label="nav-toggle-8" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Mega Navigation Item 8"/>true</ouc:div>
+		<ouc:div label="nav-layout-8" group="Everyone" button="hide"><ouc:multiedit type="select" prompt="Number of Columns" alt="Select the number of columns." options="Two Columns:2; Three Columns:3; Four Columns:4;"/>2</ouc:div>
+		<ouc:div label="nav-heading-8" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>¡Bienvenidos!</ouc:div>
+		<ouc:div label="nav-sub-heading-8" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Sub Heading" alt="Enter a sub heading for this navigation item."/>Se Habla Español</ouc:div>
+		<ouc:div label="nav-heading-link-8" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/giving/index.php</ouc:div>
+		<ouc:div label="nav-heading-link-title-8" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link Title" alt="Enter a title for the link for the heading. This is for the attribute title."/>Welcome</ouc:div>
+		<ouc:div label="nav-8-column-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for column one." rows="5" editor="yes"/><ul>
+<li><a title="About the Foundation" href="https://www.ltcc.edu/giving/index.php">About the Foundation</a></li>
+<li><a title="Donate" href="https://www.ltcc.edu/giving/donate/index.php">Donate</a></li>
+<li><a title="Foundation Board of Directors" href="https://www.ltcc.edu/giving/foundationeventsold.php">Events</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-8-column-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter the content for column Two." rows="5" editor="yes"/><ul>
+<li><a title="Foundation Board of Directors" href="https://www.ltcc.edu/giving/foundationboard.php">Foundation Board of Directors</a></li>
+<li><a title="Foundation Meetings" href="https://www.ltcc.edu/giving/index.php">Foundation Meetings</a></li>
+<li><a title="Scholarships" href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul></ouc:div>
+		<ouc:div label="nav-8-column-3" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 3" alt="Enter the content for column three." rows="5" editor="yes"/></ouc:div>
+		<ouc:div label="nav-8-column-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 4" alt="Enter the content for column four." rows="5" editor="yes"/></ouc:div>
+	</menu-8>	
+
+	<ouc:div label="top-toggle-1" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 1"/>true</ouc:div>
+	<ouc:div label="top-heading-1" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Jobs</ouc:div>
+	<ouc:div label="top-heading-link-1" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/about/human-resources/jobs.php</ouc:div>
+	<ouc:div label="top-heading-link-title-1" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Jobs</ouc:div>
+
+	<ouc:div label="top-toggle-2" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 2"/>true</ouc:div>
+	<ouc:div label="top-heading-2" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Bookstore</ouc:div>
+	<ouc:div label="top-heading-link-2" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>javascript:void(window.open('http://ltcc.bncollege.com/webapp/wcs/stores/servlet/BNCBHomePage?storeId=65068&amp;catalogId=10001&amp;langId=-1', '_blank'));</ouc:div>
+	<ouc:div label="top-heading-link-title-2" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Bookstore</ouc:div>
+
+	<ouc:div label="top-toggle-3" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 3"/>true</ouc:div>
+	<ouc:div label="top-heading-3" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Financial Aid</ouc:div>
+	<ouc:div label="top-heading-link-3" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/admissions/financial-aid/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-3" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Financial Aid</ouc:div>
+	
+	<ouc:div label="top-toggle-4" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 4"/>true</ouc:div>
+	<ouc:div label="top-heading-4" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Library</ouc:div>
+	<ouc:div label="top-heading-link-4" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/campusresources/library/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-4" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Library</ouc:div>
+	
+	<ouc:div label="top-toggle-5" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 5"/>true</ouc:div>
+	<ouc:div label="top-heading-5" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Online Learning</ouc:div>
+	<ouc:div label="top-heading-link-5" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/academics/online.php</ouc:div>
+	<ouc:div label="top-heading-link-title-5" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Distance Education</ouc:div>
+	
+	<ouc:div label="top-toggle-6" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 6"/>true</ouc:div>
+	<ouc:div label="top-heading-6" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Passport Login</ouc:div>
+	<ouc:div label="top-heading-link-6" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>javascript:void(window.open('https://portal.ltcc.edu', '_blank'));</ouc:div>
+	<ouc:div label="top-heading-link-title-6" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Passport Login</ouc:div>
+	
+	<ouc:div label="top-toggle-7" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 7"/>true</ouc:div>
+	<ouc:div label="top-heading-7" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Measure F</ouc:div>
+	<ouc:div label="top-heading-link-7" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/about/measuref/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-7" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Measure F</ouc:div>
+	
+	<ouc:div label="top-toggle-8" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 8"/>true</ouc:div>
+	<ouc:div label="top-heading-8" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Contact Us</ouc:div>
+	<ouc:div label="top-heading-link-8" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/about/contactus.php</ouc:div>
+	<ouc:div label="top-heading-link-title-8" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Contact Us</ouc:div>
+	
+	<ouc:div label="top-toggle-9" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 9"/></ouc:div>
+	<ouc:div label="top-heading-9" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Contact Us</ouc:div>
+	<ouc:div label="top-heading-link-9" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/about/contactus.php</ouc:div>
+	<ouc:div label="top-heading-link-title-9" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Contact Us</ouc:div>
+	
+	<ouc:div label="top-toggle-10" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 10"/></ouc:div>
+	<ouc:div label="top-heading-10" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Contact Us</ouc:div>
+	<ouc:div label="top-heading-link-10" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/admissions/financial-aid/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-10" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Contact Us</ouc:div>
+	
+	<ouc:div label="top-toggle-11" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 11"/></ouc:div>
+	<ouc:div label="top-heading-11" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Contact Us</ouc:div>
+	<ouc:div label="top-heading-link-11" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/admissions/financial-aid/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-11" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Contact Us</ouc:div>
+	
+	<ouc:div label="top-toggle-12" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 12"/></ouc:div>
+	<ouc:div label="top-heading-12" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Contact Us</ouc:div>
+	<ouc:div label="top-heading-link-12" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/admissions/financial-aid/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-12" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Contact Us</ouc:div>
+	
+	<!--
+	<ouc:div label="top-toggle-3" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 3"/>true</ouc:div>
+	<ouc:div label="top-heading-3" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Financial Aid</ouc:div>
+	<ouc:div label="top-heading-link-3" group="Everyone" button="hide"><ouc:multiedit type="filechooser" prompt="Heading Link" alt="Enter a link for the heading."/>/admissions/financial-aid/index.php</ouc:div>
+	<ouc:div label="top-heading-link-title-3" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Financial Aid</ouc:div>
+
+	<ouc:div label="top-toggle-4" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 4"/>true</ouc:div>
+	<ouc:div label="top-heading-4" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Library</ouc:div>
+	<ouc:div label="top-dropdown-4" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Dropdown List" alt="Add each link in the dropdown as a list item." rows="5" editor="yes"/><ul>
+<li>Library</li>
+<li><a title="Library" href="https://www.ltcc.edu/campusresources/library/index.php">I</a>tem 2</li>
+</ul></ouc:div>
+	<ouc:div label="top-heading-link-title-4" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Library</ouc:div>
+	
+	<ouc:div label="top-toggle-5" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 5"/>true</ouc:div>
+	<ouc:div label="top-heading-5" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Distance Education</ouc:div>
+	<ouc:div label="top-dropdown-5" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Dropdown List" alt="Add each link in the dropdown as a list item." rows="5" editor="yes"/>#5</ouc:div>
+	<ouc:div label="top-heading-link-title-5" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Distance Education</ouc:div>
+	
+	<ouc:div label="top-toggle-6" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 6"/>true</ouc:div>
+	<ouc:div label="top-heading-6" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Passport Login</ouc:div>
+	<ouc:div label="top-dropdown-6" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Dropdown List" alt="Add each link in the dropdown as a list item." rows="5" editor="yes"/><a title="Passport Login" href="https://www.ltcc.edu/_resources/includes/portal.ltcc.edu">Passport#6</a></ouc:div>
+	<ouc:div label="top-heading-link-title-6" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Passport Login</ouc:div>
+	
+	<ouc:div label="top-toggle-7" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 7"/>true</ouc:div>
+	<ouc:div label="top-heading-7" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Measure F</ouc:div>
+	<ouc:div label="top-dropdown-7" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Dropdown List" alt="Add each link in the dropdown as a list item." rows="5" editor="yes"/>#7</ouc:div>
+	<ouc:div label="top-heading-link-title-7" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Measure F</ouc:div>
+	
+	<ouc:div label="top-toggle-8" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Display" alt="Check box to display this navigation item." options=":true;" section="Top Navigation Item 8"/>true</ouc:div>
+	<ouc:div label="top-heading-8" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this navigation item."/>Contact Us</ouc:div>
+	<ouc:div label="top-dropdown-8" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Dropdown List" alt="Add each link in the dropdown as a list item." rows="5" editor="yes"/>#8</ouc:div>
+	<ouc:div label="top-heading-link-title-8" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading Link Title" alt="Enter the title atrribute for this heading."/>Contact Us</ouc:div>
+-->
+	
+	
+</document>

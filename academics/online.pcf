@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Online Learning</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Online Learning</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Online Learning</title>
+		<meta name="Description" content="Online Learning" />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/internationalstudents/laketahoeinternationalbanner.jpg" alt="View over Tahoe" width="474" height="315" /></p>
+<p>Lake Tahoe Community College offers a variety of online courses each quarter in a few different formats to meet different student needs. Use the information below to see if online education at LTCC is right for you!</p>
+<p>Online Learning offers a way to complete classes without the time and location restrictions of traditional classroom instruction. Students who take online classes at LTCC enjoy flexibility and convenience while still benefiting from the same quality academic experience as our on-campus students. Read more about our DE, EVE, and Hybrid courses below and see what's right for you!</p>
+<p>&nbsp;</p>
+<table style="height: 35px;">
+<tbody>
+<tr>
+<td style="text-align: center;">
+<div><span style="font-size: 14pt;"><strong><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/online/collegestudents_sm.jpg" alt="Students" width="360" height="240" /></strong></span></div>
+<div><strong><a href="https://www.ltcc.edu/academics/virtual_campus/virtualcampusstudentsupport.php">STUDENT RESOURCES</a></strong></div>
+</td>
+<td style="text-align: left;">
+<div><span style="font-size: 14pt;"><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/online/bwlaptop.jpg" alt="Laptop" width="360" height="240" /></span></div>
+<div>l&nbsp; &nbsp; &nbsp; &nbsp; <strong><a href="https://www.ltcc.edu/academics/virtual_campus/virtualcampusfacultysupport.php">FACULTY RESOURCES</a></strong></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Contact</h3>
+<div>We&rsquo;re just a call or email away:</div>
+<div>(530) 541-4660 x 211</div>
+<div><a href="mailto:enrollmentservices@ltcc.edu?subject=">enrollmentservices@ltcc.edu</a></div>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a title="Canvas Link" href="https://laketahoecc.instructure.com/" target="_blank" rel="noopener"><img class="" style="display: block; margin-left: auto; margin-right: auto;" src="https://www.ltcc.edu/_resources/images/canvas.png" alt="Canvas Logo" width="125" height="125" />&nbsp;</a><br /><a title="Canvas Link" href="https://laketahoecc.instructure.com/" target="_blank" rel="noopener">Login to Canvas</a><br /><br /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<div style="clear: both;">
+<div style="float: left; width: 50%; margin-bottom: 20px;">
+<div style="padding: 10px;">
+<p><a title="Getting Started" href="https://www.ltcc.edu/academics/gettingstarted.php"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/students/studentsondock.jpg" alt="Group of students outside near Lake Tahoe" width="100%" /></a></p>
+<p><span style="font-size: 14pt;"><a title="Getting Started with Distance Education" href="https://www.ltcc.edu/academics/gettingstarted.php">Getting Started</a></span></p>
+</div>
+</div>
+<div style="float: left; width: 50%; margin-bottom: 20px;">
+<div style="padding: 10px;">
+<p><a title="What to Expect" href="https://www.ltcc.edu/academics/whattoexpect.php"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/students/fall/fallstudy.jpg" alt="Students studying together outside" width="100%" /></a></p>
+<p><span style="font-size: 14pt;"><a title="What to Expect" href="https://www.ltcc.edu/academics/whattoexpect.php">What to Expect</a></span></p>
+</div>
+</div>
+<div style="float: left; width: 50%; margin-bottom: 20px;">
+<div style="padding: 10px;">
+<p><a title="Admissions" href="https://www.ltcc.edu/admissions/index.php"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/ltcc_campus/ltcc_fall_copy1.jpg" alt="LTCC Campus admissions office building" width="100%" /></a></p>
+<p><span style="font-size: 14pt;"><a title="Admissions" href="https://www.ltcc.edu/admissions/index.php">Admissions</a></span></p>
+</div>
+</div>
+<div style="float: left; width: 50%; margin-bottom: 20px;">
+<div style="padding: 10px;">
+<p><a title="Canvas mobile" href="http://guides.instructure.com/m/4212/l/196070-will-canvas-work-on-my-mobile-device" target="_blank" rel="noopener"><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/coyote_pics/img_9599.jpg" alt="LTCC Coyote holding a smartphone" width="100%" /></a></p>
+<p><span style="font-size: 14pt;"><a title="Get Canvas on your mobile device" href="http://guides.instructure.com/m/4212/l/196070-will-canvas-work-on-my-mobile-device" target="_blank" rel="noopener">Get Canvas on your mobile device</a>!</span></p>
+</div>
+</div>
+</div>
+<h2 style="clear: both; font-family: 'Tahoma', sans-serf; font-size: 18pt;">Complete a Degree/Certificate Online</h2>
+<hr />
+<p>The following programs are offered completely online:</p>
+<h3 style="font-size: 14pt;">Associate of Arts</h3>
+<ul>
+<li><a title="Associate of Arts, Anthropology" href="https://www.ltcc.edu/academics/academic_programs/anthropology.php">Associate of Arts, Anthropology</a></li>
+<li><a title="Associate of Arts, Business" href="https://www.ltcc.edu/academics/academic_programs/business.php">Associate of Arts, Business</a></li>
+<li><a title="Criminal Justice" href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php">Associate of Arts, Criminal Justice</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/hospitality.php">Associate of Arts, Hospitality Management</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/cybersecurity.php">Associate of Arts, IT Technician-Cybersecurity</a></li>
+<li><a title="Liberal Arts" href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php">Associate of Arts, Liberal Arts</a></li>
+<li><a href="{{f:10625726}}">Associate of Arts, Medical Office Assistant-Administrative</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/psychology.php">Associate of Arts, Psychology</a></li>
+<li><a title="Social Science" href="https://www.ltcc.edu/academics/academic_programs/socialscience/">Associate of Arts, Social Science</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/sociology.php">Associate of Arts, Sociology</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/world_languages.php">Associate of Arts, Spanish</a></li>
+</ul>
+<h3 style="font-size: 14pt;">&nbsp;</h3>
+<h3 style="font-size: 14pt;">Certificates of Achievement</h3>
+<ul>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/business.php">Accounting Technician</a></li>
+<li><a title="Criminal Justice" href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php">Criminal Justice</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/hospitality.php">Hospitality Management</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/cybersecurity.php">IT Technician-Cybersecurity</a></li>
+<li><a href="{{f:10625726}}">Medical Office Assistant-Administrative</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/real_estate.php">Real Estate</a></li>
+</ul>
+<h3 style="font-size: 14pt;">&nbsp;</h3>
+<h3 style="font-size: 14pt;">Employable Skills Certificates</h3>
+<ul>
+<li><a title="Bookkeeping Technician" href="https://www.ltcc.edu/academics/academic_programs/business.php" target="_blank" rel="noopener">Bookkeeping Technician </a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/cis.php">Computer Programming</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/cybersecurity.php">IT Technician-Cybersecurity</a></li>
+<li><a href="{{f:10625726}}">Medical Office Assisting</a></li>
+<li><a href="{{f:10625726}}">Medical Office Assistant-Administrative</a></li>
+</ul>
+<h2 style="clear: both; font-family: 'Tahoma', sans-serf; font-size: 18pt;">&nbsp;</h2>
+<h2 style="clear: both; font-family: 'Tahoma', sans-serf; font-size: 18pt;">Resources</h2>
+<hr />
+<p>LTCC offers the same support services to all students, whether you are taking classes face to face, online, or both.</p>
+<p>Information on all LTCC support services can be found on the <a title="Campus Resources" href="https://www.ltcc.edu/campusresources/index.php">Campus Resources </a>page. Below are a few that may be particularly helpful for online students.</p>
+<ul>
+<li><a title="Counseling Services " href="https://www.ltcc.edu/campusresources/counseling.php" target="_blank" rel="noopener">Counseling Services </a></li>
+<li><a title="Disability Resource Center" href="https://www.ltcc.edu/campusresources/studentaccessibilityservices/index.php">Disability Resource Center</a></li>
+<li><a title="Financial Aid" href="https://www.ltcc.edu/admissions/financial-aid/index.php" target="_blank" rel="noopener">Financial Aid</a></li>
+<li><a title="Forms" href="https://www.ltcc.edu/admissions/forms.php" target="_blank" rel="noopener">Forms</a></li>
+<li><a title="Library" href="https://www.ltcc.edu/campusresources/library/index.php" target="_blank" rel="noopener">Library </a></li>
+<li><a title="Scholarships" href="https://www.ltcc.edu/giving/donate/scholarships.php" target="_blank" rel="noopener">Scholarships</a></li>
+<li><a title="Tutoring and Learning Center" href="https://www.ltcc.edu/campusresources/tutoring_center.php" target="_blank" rel="noopener">Tutoring and Learning Center</a></li>
+</ul>
+<p>LTCC is primarily operating in a remote capacity during the COVID pandemic. Most of our services and classes are being held online. A great deal of information about how to navigate LTCC during these times can be found on <a href="http://ltcc.edu/academics/virtual_campus/index.php">our Virtual Campus webpages</a>.</p>
+<h2 style="clear: both; font-family: 'Tahoma', sans-serf; font-size: 18pt;">&nbsp;</h2>
+<h2 style="clear: both; font-family: 'Tahoma', sans-serf; font-size: 18pt;">Frequently Asked Questions</h2>
+<hr />
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Do you have online classes?</span></td>
+<td>Yes, we do! We offer Hybrid, EVE, and DE courses - all of these are described more fully below.</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Can anyone take an online course?</span></td>
+<td>All online courses are open to students who meet the regular course requirements. It is strongly recommended that you take the <a href="https://www.sbctc.edu/becoming-a-student/right-degree-you/is-online-learning-for-me.aspx" target="_blank" rel="noopener">Is Online Learning For Me?</a> quiz to determine if an online course is right for you. EVE courses at LTCC are online, but feel more like face-to-face. DE classes are also online, but they are more like traditional online courses that require students to be more organized and self-reliant. Read more about the different kinds of online courses LTCC offers below.</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">What if I live in a state outside of California?<br /></span></td>
+<td>Due in part to the increased popularity of distance education, many states have prescribed an &ldquo;authorization&rdquo; process for out-of-state institutions delivering online programs to its state residents. States are attempting through these processes to ensure quality post-secondary education, to preserve the integrity of an academic degree and to instill greater consumer protection for their student citizens. Please read LTCC's policy on <a title="State Authorization of Distance Education Outside of California" href="{{f:48331110}}" target="_blank" rel="noopener">State Authorization of Distance Education Outside of California</a> to see if your state is on LTCC's list of approved states.</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">What is a Hybrid Course?</span></td>
+<td>
+<p>A Hybrid course is a course with both face-to-face and online components. At LTCC, these often include classes with hands-on training requirements that lead to particular credentials and licenses, along with some science labs. <a href="https://www.ltcc.edu/academics/hybrid.php">Read more about Hybrid courses</a> at LTCC.</p>
+<p>Hear more about each <a href="https://youtu.be/xyHAa3GK6Wk">course modality &rarr;&nbsp;&nbsp;</a></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">What is an EVE Course?<br /></span></td>
+<td>
+<p>EVE, or Enhanced Virtual Education, are courses that are delivered online but that provide a lot of the interaction and support you'd find in a face-to-face class. LTCC's EVE classes offer great support, more discussion and interaction with other students and faculty, and offer some synchronous work activities. <a href="https://www.ltcc.edu/academics/eve.php">Read more about EVE classes</a> at LTCC.</p>
+<p>Hear more about each <a href="https://youtu.be/xyHAa3GK6Wk">course modality &rarr; &nbsp;</a></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">What is a DE Course? <br /></span></td>
+<td>
+<p>DE, or Distance Education, are traditional online courses that require students to be organized and self-driven to succeed. These courses are very flexible and convenient for busy students, allowing for students to often set their own pace. <a href="https://www.ltcc.edu/academics/de.php">Read more about DE classes</a> at LTCC.</p>
+<p>Hear more about each <a href="https://youtu.be/xyHAa3GK6Wk">course modality &rarr; &nbsp;</a></p>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+  	
+<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><div style="margin-bottom: 20px;">
+<h3 style="font-size: 14pt;">Contact</h3>
+<hr />
+<p>For questions regarding online course offerings, prerequisites, assessments, or enrolling in an online course, call (530) 541-4660 x211 or email:</p>
+<ul style="margin-bottom: 20px;">
+<li><a href="mailto:enrollmentservices@ltcc.edu?subject=">enrollmentservices@ltcc.edu</a></li>
+<li><a href="mailto:counselor@ltcc.edu?subject=">Counselor@ltcc.edu</a></li>
+</ul>
+<div><span style="font-size: 12pt;">Treva Thomas</span></div>
+<div><span style="font-size: 10pt;">Distance Education Coordinator</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 247</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:tthomas@ltcc.edu?subject=">tthomas@ltcc.edu</a></span></div>
+</div>
+<div style="margin-bottom: 20px;">
+<h3 style="font-size: 14pt;">Login to Canvas</h3>
+<hr /><a style="display: block; background: #fff; border: 2px solid #ccc; border-radius: 4px; box-shadow: 0px 0px 12px rgba(0,0,0,0.2); text-align: center;" title="LTCC Canvas Login" href="https://laketahoecc.instructure.com" target="_blank" role="button"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/canvaslogo.jpg" alt="Canvas Logo" width="177" height="177" /></a></div>
+<div style="margin-bottom: 20px;">
+<h3 style="font-size: 14pt;">Help</h3>
+<hr />
+<ul>
+<li><a title="Log into Canvas" href="https://www.ltcc.edu/academics/onlinelearninghelp.php">Log into Canvas</a></li>
+<li><a title="Help with Passport" href="https://www.ltcc.edu/academics/onlinelearninghelp.php">Passport</a></li>
+<li><a title="Student Email" href="https://www.ltcc.edu/academics/onlinelearninghelp.php">Student Email</a></li>
+<li><a title="Technology Requirements" href="https://www.ltcc.edu/academics/whattoexpect.php">Technology Requirements</a></li>
+<li><a title="Check Canvas Status" href="https://status.instructure.com/">Check Canvas Status</a></li>
+</ul>
+</div></ouc:div>
+  	
+</document>

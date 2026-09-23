@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Communications</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title></title>
+		<meta name="Description" content="Communications" />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Communications</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/communications_header.png" alt="Communications" width="1775" height="1189" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;">Communication Studies focuses on verbal and nonverbal communications, critical thinking and research, concentrating on the ways humans interact with one another, and how this affects the world around them. Students will develop strong interpersonal and critical thinking skills as well as excellent written and verbal communication skills.<br /><br /></p>
+<div style="text-align: left;">
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 18px;"><a href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php">Associate Degree in Liberal Arts, emphasis in Communications</a></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>&nbsp;</div>
+<h5>Career Outlook</h5>
+<hr />
+<p>A degree in Communications can open doors to a variety of careers including journalism, law, advertising, public relations, marketing, sales, real estate, and much more. Salary ranges for jobs within these trajectories vary greatly. Public Relations Specialists in California make an average of $56,770 per year according to the <a title="U. S. Department of Labor- Public Relations Specialist" href="http://www.bls.gov/ooh/media-and-communication/public-relations-specialists.htm" target="_blank" rel="noopener">U.S. Department of Labor</a>.</p>
+<h5>&nbsp;</h5></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Adjunct Faculty</h5>
+<hr />
+<div><span style="font-size: 10pt;"><span style="font-size: 12pt;">Jason Beaton</span></span><br /><span style="font-size: 10pt;">Communications Instructor</span></div>
+<div><span style="font-size: 12pt;"><span style="font-size: 10pt;"><a href="mailto:jlbeaton@mail.ltcc.edu&Acirc;">jlbeaton@mail.ltcc.edu&nbsp;</a></span></span></div>
+<p>&nbsp;</p>
+<p><span style="font-size: 10pt;">&nbsp;</span></p></ouc:div>
+  	
+</document>

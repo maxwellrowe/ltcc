@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Geology</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Geology Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Study Earth’s processes, landscapes, and natural history with LTCC’s Geology program. Prepare for transfer and careers in environmental science, earth science, and natural resource management." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider"><ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>{{a:102145}}</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Geology</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/sentinal_jump.jpg" alt="Geology" width="1431" height="851" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<h3><a title="Science, Technology, &amp; Environment" href="https://www.ltcc.edu/academics/metamajors/meta_science.php"><span><img class="" style="display: block; float: right; margin: 10px auto 10px auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/metamajor.png" alt="Metamajor Logo" width="150" height="150" /></span></a></h3>
+<p><span>The Geology program at Lake Tahoe Community College provides students with general background knowledge in the field of Geology through lecture, lab, and field-based courses.&nbsp;</span><span>Students will gain a broader understanding of their physical environment and the interconnectedness between it and other disciplines. A transfer degree in Geology is available.</span></p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{{a:263204}}<br />
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Associate in Science for Transfer, Geology</td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-b929-7f04-9986-bd7d119a2f8e/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>Current Field Courses</td>
+<td>
+<p>GEL 106 GEOLOGY OF DEATH VALLEY<br />GEL 107 GEOLOGY OF THE EASTERN SIERRA NEVADA<br />GEL 110L GEOLOGY OF NATIONAL PARKS AND MONUMENTS LAB<br />GEL 111 GEOLOGY OF YOSEMITE AND THE MOTHER LODE<br />GEL 113 COASTAL GEOLOGY AND OCEANOGRAPHY<br />GEL 115&nbsp;GEOLOGIC HISTORY OF THE LAKE TAHOE BASIN<br />GEL 131AB&nbsp;GRAND CANYON</p>
+</td>
+</tr>
+<tr>
+<td>Related Degrees &amp; Certificates</td>
+<td>
+<table class="ou-chevron-list" style="float: left;">
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Environmental Science" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php" target="_blank" rel="noopener">Associate Degree in Environmental Science</a></li>
+<li><a title="Environmental Studies" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php" target="_blank" rel="noopener">Associate Degree in Environmental Studies</a></li>
+<li><a title="Geography" href="https://www.ltcc.edu/academics/academic_programs/science/geography.php" target="_blank" rel="noopener">Associate Degree in Geography</a></li>
+<li><a title="Liberal Arts" href="https://www.ltcc.edu/academics/academic_programs/liberal_arts.php" target="_blank" rel="noopener">Associate Degree in Liberal Arts: Math &amp; Science Emphasis</a></li>
+<li><a title="Environmental Science &amp; Technology" href="https://www.ltcc.edu/academics/academic_programs/science/evs_ets.php" target="_blank" rel="noopener">Certificate&nbsp;in Environmental Science &amp; Technology</a></li>
+<li><a title="GIS" href="https://www.ltcc.edu/academics/academic_programs/science/geography.php" target="_blank" rel="noopener">Certificate&nbsp;in Geographic Information Systems</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>Careers in Geology</td>
+<td>
+<p><strong><span style="font-size: 18px;">Careers in Environmental Geology</span></strong></p>
+<p style="padding-left: 30px;">Environmental geology is a broad field that includes such things as site assessment, site remediation, groundwater geology, surface water hydrology, and ensuring that various organizations comply with the relevant environmental regulations. You could work for a government agency, for a company wanting to ensure its own compliance with environmental regulations, or for a private environmental consulting company. Check out the extensive entry under Wikipedia&rsquo;s &ldquo;<a href="https://en.wikipedia.org/wiki/Geoprofessions">Geoprofessions</a>&rdquo; page for more information. Many private companies hire at the BS and masters levels, with pay corresponding to your level of training and experience.&nbsp;</p>
+<p><strong><span style="font-size: 18px;">Careers in Engineering Geology and Geotechnical Geology</span></strong></p>
+<p style="padding-left: 30px;">Engineering geology is concerned with the stability of soil and rocks in a host of civil engineering, mining, and petroleum situations. Lower level geotechnical work often involves soil sampling and assessment of new construction sites. Higher level work involves the application of rock mechanics, geomorphology,&nbsp;and various engineering principles to the construction of road cuts, bridges, dams, locks, dikes, and major buildings. Wikipedia has nice pages devoted to<span>&nbsp;</span><a href="https://en.wikipedia.org/wiki/Geotechnical_engineering">geotechnical engineering</a><span>&nbsp;</span>and engineering geology (under &ldquo;<a href="https://en.wikipedia.org/wiki/Geoprofessions">Geoprofessions</a>&rdquo;). One time-honored&nbsp;way to become an engineering geologist is to excel at structural&nbsp;geology&nbsp;and geomorphology and then simply get an entry-level job in the field. &nbsp;Hands-on work on field projects under the guidance of a senior environmental geologist is excellent training!&nbsp; Or you can go on to get&nbsp;at least a master's degree in engineering geology and start out in the professional world with sharper skills and a higher-level position. &nbsp;The Army Corps of Engineers has their own<span>&nbsp;</span><a href="https://permanent.access.gpo.gov/lps104588/entire.pdf">guide to career development for&nbsp;geotechnical engineers</a>. &nbsp;Graduate schools that include an engineering graduate program include (in no particular order) Portland State University, University of Nevada--Reno, Colorado School of Mines, South Dakota School of Mines, Missouri University of Science and Technology, and the University of Texas at Austin.</p>
+<p><strong><span style="font-size: 18px;">Government and Nonprofit Careers</span></strong></p>
+<p style="padding-left: 30px;">These jobs include basic field research for purposes ranging from the assessment of contaminated waste sites to the viability of future waste sites to the stability of road cuts and bridge pilings. They also include library and field research aimed at developing policy papers or undertaking basic outreach and public education. You could end up working for various environmental organizations, natural science museums, the Environmental Protection Agency, the National Park Service, regional and city planning agencies, and other such agencies that need geological expertise. Government jobs also include the United States Geological Survey, which has divisions that cover basic geology, water resources, and volcanic and earthquake hazards.</p>
+<p><strong><span style="font-size: 18px;">Getting a Career in the Petroleum Industry</span></strong></p>
+<p style="padding-left: 30px;">The major oil companies (e.g., BP. ExxonMobil, Shell, etc.) tend to hire only geologists with masters or PhD degrees. Smaller oil and natural gas companies are more likely to hire students with bachelors degrees, especially during a boom cycle.&nbsp;</p>
+<p style="padding-left: 30px;">The best way to get a petroleum job is to go to a graduate school that attracts lots of oil companies on their annual recruitment tours. Ask the schools you are considering about their ties to oil companies. While getting master's degree in a petroleum-focused subject (like seismic stratigraphy) seems to make sense, in fact many oil companies are less interested in your specific research skills and more interested in hiring the most intelligent people available.&nbsp;</p>
+<p><strong><span style="font-size: 18px;">Careers in the Mining Industry</span></strong></p>
+<p style="padding-left: 30px;">Most mining jobs require at least a master's degree in economic geology, so choose an appropriate graduate program and ask lots of questions before embarking on this career. Although many economic&nbsp;jobs can require you to live overseas, there are mining and quarrying operations all over the country, and persistent investigation and informational interviewing could easily turn up a job.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>Financial Aid &amp; Scholarships</td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span>There are&nbsp;</span><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a><span>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Geology</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/scottvalentinesquared.jpg" alt="Scott Valentine" width="130" height="128" /></td>
+<td>Dr. Scott Valentine</td>
+<td>Department Lead</td>
+<td>&nbsp;valentine@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/marklawlersquared.jpg" alt="Mark Lawler" width="130" height="126" /></td>
+<td>Mark Lawler</td>
+<td>Instructor</td>
+<td>
+<p>lawler@ltcc.edu</p>
+</td>
+<td>&nbsp;<a href="https://theearlypages.blogspot.com/2020/10/caribou-survived-late-pleistocene.html">https://theearlypages.blogspot.com/2020/10/caribou-survived-late-pleistocene.html</a></td>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/chuck_vorce.jpg" alt="Chuck Vorce" width="130" height="130" />&nbsp;</td>
+<td>&nbsp;Chuck Vorce</td>
+<td>&nbsp;Instructor</td>
+<td>
+<p>&nbsp;<a href="mailto:clvorce2000@yahoo.com">clvorce2000@yahoo.com</a></p>
+<p>&nbsp;</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/Valentine/eiko_kitao.jpg" alt="Eiko Kitao" width="130" height="131" /></td>
+<td>Eiko Kitao</td>
+<td>Instructor</td>
+<td><a href="mailto:ekitao@mail.ltcc.edu">ekitao@mail.ltcc.edu</a>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer">&nbsp;</h6>
+<p><br />&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5><span style="font-size: 12pt;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/scottvalentine2.jpg" alt="Scott Valentine Earth Science Faculty" width="150" height="179" /></span></h5>
+<div><span style="font-size: 12pt;">Scott Valentine</span><br /><span style="font-size: 10pt;">Earth Sciences Faculty Member<br />(530) 541-4660 x&nbsp;313<br /><a href="mailto:valentine@ltcc.edu">valentine@ltcc.edu</a><br /></span></div>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<div><span style="font-size: 10pt;">Credentials:</span></div>
+<div><span style="font-size: 10pt;">B.S. University of California, Santa Barbara</span></div>
+<div><span style="font-size: 10pt;">M.S. San Diego State University</span></div>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Rising Scholars Program</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Rising Scholars Program</title>
+		<meta name="Description" content="Rising Scholars Program" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td><span style="font-family: arial, helvetica, sans-serif;">Rising Scholars Program</span></td>
+</tr>
+<tr>
+<th>Image</th>
+<td><span style="font-size: 12pt;"><img style="display: block; vertical-align: middle; margin: 5px;" src="https://www.ltcc.edu/_resources/images/ltcc_images/isp/rspgrads.jpeg" alt="rsp grad 2024" width="1412" height="1059" /></span></td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">The Rising Scholars Program (RSP) at Lake Tahoe Community College was introduced to serve aspiring scholars housed in California's correctional facilities with a main goal to provide access to education, while fostering confidence in students. Since the program's implementation, the LTCC community has evolved to serve both adults and juveniles who are currently and formerly incarcerated and detained in Northern California.</span></p>
+<ul style="font-weight: 400;">
+<li><span style="font-family: arial, helvetica, sans-serif;">Currently detained/incarcerated students can earn their Associate degree for Transfer (AD-T) in Sociology. Some locations also offer opportunities to earn Career &amp; Technical Education certifications. </span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;">Formerly incarcerated/detained students in the Lake Tahoe Basin and beyond can expect to receive a myriad of services from the Rising Scholars Program, such as: yearly record expungement clinics, priority registration, leadership development, dedicated academic counselor support, and more. </span></li>
+</ul>
+<p style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">The RSP is an innovative program fostering self-assurance and academic success for currently and formerly incarcerated/detained students. RSP was first approved as a pilot program by LTCC's Board of Trustees in 2015. In Spring 2017, LTCC&rsquo;s Substantive Change Proposal received approval from the Accrediting Commission for Community and Junior Colleges (ACCJC). Since then, we have expanded the program to include online offerings, face-to-face faculty interactions, professional development, special events, and free book-in-common readings. We look forward to growing and better serving our community and state to actively break down the systems of oppression and mass incarceration.</span></p>
+<hr />
+<h5 style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">Who We Are<img style="float: right; margin-left: 10px; margin-right: 10px;" src="{{f:68108405}}" alt="team rsp + student" width="602" height="401" /><strong><br /></strong></span></h5>
+<p style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">LTCC's Rising Scholars Program has a purpose-driven team behind it that values serving our community, state and the many Californians affected by the criminal justice system. We provide quality access to educational opportunities for justice-impacted learners. We believe in the impact that a humanizing educational experience has to offer, and we put our students' needs first.&nbsp;&nbsp;</span></p>
+<p style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">This means that we prioritize our students in every decision we make. We believe that putting our students first ensures that they have the best possible experience while they pursue their education. Our decision-making process involves actively seeking input from students and taking their perspectives into account when making important choices. We also prioritize transparency in our decision-making, ensuring that students are informed about the reasoning behind our choices and the potential impacts on their academic and personal lives. By prioritizing our students in our decision-making process, we aim to create a supportive and inclusive community that fosters academic excellence and personal growth.</span></p>
+<p style="font-weight: 400; text-align: left;"><span style="font-family: arial, helvetica, sans-serif;"><img style="float: left; margin: 10px 50px 10px 50px;" src="{{f:68215399}}" alt="rsp program mark" width="169" height="169" />LTCC&rsquo;s RSP serves:</span></p>
+<ol>
+<li style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">Formerly incarcerated or detained students</span></li>
+<li style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">Students in federal facilities (when allowed)x</span></li>
+<li style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">Students in county facilities</span></li>
+<li style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">Students in youth facilities</span></li>
+<li style="font-weight: 400;"><span style="font-family: arial, helvetica, sans-serif;">Students in <a href="https://www.cdcr.ca.gov/" target="_blank" rel="noopener">CDCR</a> facilities</span></li>
+</ol>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h6><img src="{{f:68112636}}" alt="rsp grads" width="1080" height="806" /></h6>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif;">Commitment</span> to Students</td>
+<td>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;"><em>LTCC acknowledges that despite being important members of the college community, most of our Rising Scholars are unable to attend college events and are affected directly by the impacts of mass incarceration and interlocking systems of oppression. LTCC remains committed to providing quality access to educational opportunities for all learners affected by the criminal justice system while seeking passionately to understand and remove barriers they face in embracing such opportunities.</em></span></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif;">Vision, Sub-Mission &amp; Values</span></td>
+<td>
+<p style="text-align: justify;"><span style="text-decoration: underline; font-family: arial, helvetica, sans-serif;">Vision</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">To provide structured, positive support in pursuing higher education and beyond for currently and formerly incarcerated/detained populations.</span></p>
+<p style="text-align: justify;"><span style="text-decoration: underline; font-family: arial, helvetica, sans-serif;">Sub-Mission</span></p>
+<p style="text-align: left;"><span style="font-family: arial, helvetica, sans-serif;">To deliver socially transforming, higher education programs for currently and formerly incarcerated/detained populations. Through an Enhanced One-On-One pedagogical approach, LTCC&rsquo;s Rising Scholars Program coursework supports the degree completion goals of students who are affected by the carceral system.</span></p>
+<p style="font-weight: 400;"><span style="text-decoration: underline; font-family: arial, helvetica, sans-serif;">Values</span></p>
+<ul style="font-weight: 400;">
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Removing Barriers</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Ensuring Equitable Educational Opportunities</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Humanizing Students</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Purpose-Driven</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Service to the Community and State</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Flexibility</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Valuing Small Wins as They Lead to Big Successes</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Leading and Growing with the Community of Practice</span></div>
+</li>
+<li>
+<div class="TypographyPresentation TypographyPresentation--medium RichText3-paragraph--withVSpacingNormal RichText3-paragraph"><span style="font-family: arial, helvetica, sans-serif;">Positive Communication</span></div>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<h5><span style="font-family: arial, helvetica, sans-serif;">How it Works</span></h5>
+</td>
+<td>
+<p style="text-align: left;"><span style="font-family: arial, helvetica, sans-serif;">LTCC is currently offering an Associate in Arts for Transfer degree in Sociology through the Rising Scholars Program. This degree can be completed entirely through an Enhanced One-On-One delivery method. An Associate in Arts for Transfer degree is granted by California Community Colleges to students who have finished general education courses, major requirements, and electives. An AA degree typically allows a student to transfer to a four-year college or university as a junior.</span></p>
+<p style="text-align: left;"><span style="font-family: arial, helvetica, sans-serif;">LTCC operates on the quarter system, which is different from most colleges in California. The advantages of the quarter system are: students will typically take fewer courses per term; they will complete courses in a shorter time frame than is possible on a typical semester calendar; they will have more flexibility in choosing a schedule that works with their educational goals.&nbsp;</span></p>
+<p style="text-align: left;">Most students are able to have all of their enrollment fees waived by qualifying for the <a title="Board of Governors fee waiver (Promise Grant (formerly known as the Board of Governors fee waiver))" href="https://www.ltcc.edu/admissions/financial-aid/bogwaiver.php">Promise Grant</a>. Students who receive the Promise Grant will have all of their course materials provided for free. There are no costs to the student for textbooks or any other materials needed to complete their work.</p>
+<p style="text-align: left;">In the middle of each quarter, students will receive registration forms for the next quarter. Once the student indicates that they want to continue work on their degree, the next set of class modules will be prepared for distribution. Students will receive the next set of modules and begin the upcoming quarter shortly after finishing the first set of classes. The entire AA degree can be completed in 10 quarters, depending on a student&rsquo;s individual circumstances and the number of courses successfully completed each quarter.</p>
+</td>
+</tr>
+<tr>
+<td>
+<h5><span style="font-family: arial, helvetica, sans-serif;">Degree Programs</span></h5>
+</td>
+<td>
+<p><span style="font-family: arial, helvetica, sans-serif;"><a title="Associate in Arts- Transfer, Sociology" href="https://www.ltcc.edu/academics/academic_programs/sociology.php">Associate in Arts-Transfer, Sociology</a></span></p>
+<p style="text-align: left;"><span style="font-family: arial, helvetica, sans-serif;">The Associate in Arts for Transfer in Sociology will provide students with an understanding of human behavior, mental processes, and social institutions that are important in contemporary society. The degree provides skills that are valuable in a wide range of careers including business, government, social services, and education. The degree offers students a foundational understanding of the social sciences.</span></p>
+<p style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif;">Student Learning Outcomes for this major are:&nbsp;</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&bull; Apply critical thinking skills to major social, historical, political, and psychological issues.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&bull; Develop open-mindedness to various social, historical, political, and psychological perspectives and opinions, as well as tolerance for ambiguity.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&bull; Apply research methods and theories to major social science issues.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">&bull; Develop an appreciation and understanding for human diversity.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>Are you a student or family member with a question? Please enter your details below.</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:rsp@ltcc.edu?subject=">rsp@ltcc.edu</a>&nbsp;<br /><a href="tel:1-530-541-4660">530.541.4660</a> ext 311</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:316438}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Rising Scholars Program&nbsp;</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">contact</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td>
+<h5><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/shanereynoldseditsq2.jpg" alt="Shane Reynolds, Director of Incarcerated Student Program" width="150" height="150" /></h5>
+</td>
+<td><span style="font-family: arial, helvetica, sans-serif;">Shane Reynolds</span></td>
+<td>
+<p><span style="font-family: arial, helvetica, sans-serif;">Director, Rising Scholars Program</span></p>
+</td>
+<td><span style="font-family: arial, helvetica, sans-serif;"><a href="mailto:screynolds@ltcc.edu">screynolds@ltcc.edu</a></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/coyotewedge_150sq.jpg" alt="coyote wedge head logo" width="150" height="150" /></td>
+<td><span style="font-family: arial, helvetica, sans-serif;">Tori Kuwahara</span></td>
+<td><span style="font-family: arial, helvetica, sans-serif;">Rising Scholars Program Assistant</span></td>
+<td><span style="font-family: arial, helvetica, sans-serif;"><a href="mailto:kuwahara@ltcc.edu?subject=">kuwahara@ltcc.edu</a></span></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/coyotewedge_150sq.jpg" alt="coyote wedge head logo" width="150" height="150" /></td>
+<td><span style="font-family: arial, helvetica, sans-serif;">Reggie Braun</span></td>
+<td><span style="font-family: arial, helvetica, sans-serif;">RSP Counselor</span></td>
+<td><span style="font-family: arial, helvetica, sans-serif;"><a href="mailto:rjbraun@ltcc.edu">rjbraun@ltcc.edu</a>&nbsp;</span></td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><!--Be sure to use the youtube video link with 'embed' in its url. You can make any video into this by taking the value after the watch?v= component and placing it into the end of the url (https://youtube.com/embed/value). To force an HTML5 video player instead of Flash (Flash is no longer automatically supported by Chrome and FF), type ?html5=1 at the end of the url without any spaces or special characters (https://www.youtube.com/embed/wGiqILHn_YI?html5=1). I put this parameter in the url, but it technically is not required.--></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<h5><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/shanereynolds.jpg" alt="Shane Reynolds, Director of Incarcerated Student Program" width="133" height="190" /></h5>
+<div>Shane Reynolds</div>
+<div><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;">Director of Incarcerated Student Program</span></div>
+<div><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;">(530) 541-4660 x 194</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:screynolds@ltcc.edu">screynolds@ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<h5><span>Community Engagement</span></h5>
+<hr />
+<h5><iframe src="https://www.youtube.com/embed/kZuUBKJWY9Y" width="300" height="240" frameborder="0" allowfullscreen="allowfullscreen"></iframe></h5>
+<!--Be sure to use the youtube video link with 'embed' in its url. You can make any video into this by taking the value after the watch?v= component and placing it into the end of the url (https://youtube.com/embed/value). To force an HTML5 video player instead of Flash (Flash is no longer automatically supported by Chrome and FF), type ?html5=1 at the end of the url without any spaces or special characters (https://www.youtube.com/embed/wGiqILHn_YI?html5=1). I put this parameter in the url, but it technically is not required.-->
+<h5>&nbsp;</h5></ouc:div>
+	
+</document>

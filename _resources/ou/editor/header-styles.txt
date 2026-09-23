@@ -1,0 +1,4 @@
+.university-name	University Name	block
+.university-slogan	Univesity Slogan	block
+.menu-link	Menu Link	block
+.header-logo	Header Logo	block

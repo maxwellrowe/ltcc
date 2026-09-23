@@ -1,0 +1,249 @@
+.flexslider .flex-direction-nav .flex-next{
+	top: 50%;
+    right: 0;
+}
+.flexslider .flex-direction-nav .flex-prev {
+    left: -48%!important;
+    top: 50%;
+    position: absolute;
+}
+
+.red {
+	color: #FFFFFF;
+	background-color: #822433;
+}
+
+.black {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.orange {
+	color: #FFFFFF;
+	background-color: #EC7A08;
+}
+
+.teal {
+	color: #FFFFFF;
+	background-color: #00747A;
+}
+
+.blue {
+	color: #FFFFFF;
+	background-color: #00347A;
+}
+
+.yellow {
+	color: #FFFFFF;
+	background-color: #FFCC00;
+}
+
+h1.university-name {
+	font-family: Droid Serif, serif;
+	font-weight: 700;
+}
+
+/* CSS that controls the way the snippets behave in the WYSIWYG */
+.ou-help {
+	font-size: 16px !important;
+	text-align:center!important;
+	background: #013C66;
+	color:white;
+	font-weight:none;
+	cursor: default;
+	user-select: none;
+	-o-user-select:none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-ms-user-select: none;
+}
+
+th {
+	background:#eee;
+	text-align:center;
+}
+
+.ou-help p { 
+	color:#FFFFFF;
+	margin-bottom:0px;
+	margin-top:0.5em;
+}
+
+h4.wysiwyg-spacer {
+	color:#013C66 !important;
+	margin-left:35px!important;
+	text-align:left!important;
+}
+
+.mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+.mce-item-table, .mce-item-table td, .mce-item-table th, .mce-item-table caption {
+	border:1px solid black;
+	border-collapse: collapse;
+	margin:10px;
+}
+
+td {
+	padding:10px;
+}
+
+.snippet-heading {
+	font-size:1.875em!important;
+	font-weight:400!important;
+	margin:0.5em 0 0.7em 0;
+}
+
+table.ou-banner-image, table.ou-color-row, table.ou-color-column-panels, table.ou-two-columns, table.ou-three-columns, table.ou-tabs, table.ou-accordion {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table.ou-banner-image tr td img {
+	text-align:center;
+}
+
+table.home-three-column td.image img {
+	width: 100%;
+	height: auto;
+	max-width: 360px;
+}
+
+body{
+	background: #FFF;
+}
+
+/* table transformation styling */
+.ou-justedit-region table[class^="ou-"] {
+	background: rgba(225, 225, 235, 0.05);
+}
+
+.ou-justedit-region table[class^="ou-"] caption {
+	background: none repeat scroll 0 0 rgba(0, 0, 10, 0.5);
+	color: #FFFFFF;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 5px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.ou-justedit-region table[class^="ou-"] thead {
+	background: none repeat scroll 0 0 rgba(185, 185, 195, 0.5);
+	color: #666;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.ou-justedit-region table[class^="ou-"] td {
+	padding: 5px 10px;
+	color: #898989;
+	vertical-align: top;
+}
+
+.ou-justedit-region table[class^="ou-"] td img {
+	max-width: 100%;
+}
+
+/* new snippet helper texts */
+
+/* Generic table "tool-tip/alert" info styling */
+table[class^="ou-"] th:before,
+table[class^="ou-"] td:before,
+table[class^="ou-"] caption:before,
+table[class^="ou-"]:before,
+table[class^="ou_"] th:before,
+table[class^="ou_"] td:before,
+table[class^="ou_"] caption:before,
+table[class^="ou_"]:before{
+	display: block;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	
+}
+ul.bullets {
+  list-style: none; 
+}
+
+ul.bullets li::before {
+    content: "\2022";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+table.ou-static-banner > tbody > tr:nth-child(1) > td:nth-child(2):before { content: "Set a title for the banner."; }
+table.ou-static-banner > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Insert an image using the WYSIWYG toolbar.'; }
+
+table.ou-slider-banner > tbody > tr:nth-child(1) > td:nth-child(1):before { content: "Insert a gallery asset using the WYSIWYG toolbar."; }
+
+table.ou-cta-green > tbody > tr:nth-child(1) > td:before { content: "Insert a link using the WYSIWYG toolbar."; }
+
+table.ou-two-columns-2-1 > tbody > tr:nth-child(1) > td:before { content: "Insert content using the WYSIWYG toolbar. Expand the edit region to full-width to see both table columns.";}
+
+table.ou-form-block > tbody > tr:nth-child(2) > td:nth-child(1):before { content: "Insert content using the WYSIWYG toolbar.";}
+table.ou-form-block > tbody > tr:nth-child(4) > td:nth-child(1):before { content: "Insert a form asset using the WYSIWYG toolbar.";}
+
+table.ou_accordion > tbody > tr:nth-child(n + 2) > td:nth-child(1):before { content: "Set a heading for the accordion.";}
+table.ou_accordion > tbody > tr:nth-child(n + 2) > td:nth-child(2):before { content: "Insert content using the WYSIWYG toolbar.";}
+
+table.ou-faculty-list > tbody > tr:nth-child(1) > td:nth-child(2):before { content: "Set the text for the top line of the heading."; }
+table.ou-faculty-list > tbody > tr:nth-child(2) > td:nth-child(2):before { content: "Set the text for the bottom line of the heading."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(1):before { content: "(Required) Insert a profile image."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(2):before { content: "(Required) Enter the name of the faculty member."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(3):before { content: "Enter the title of the faculty member."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(4):before { content: "Enter the email address. It will automatically turn into a link."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(5):before { content: "Insert a link using the WYSIWYG toolbar."; }
+
+table.ou-chevron-list > tbody > tr > td:before { content: "Use bulleted lists only. Numbered lists won't work."; }
+
+/*Start dev - 50th anniversary*/
+table.ou-50th-hero > tbody > tr:nth-child(1) > td:nth-child(2):before { content: "Enter heading content (including <br> elements). This is used for the main page heading."; }
+table.ou-50th-hero > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Insert an image using the WYSIWYG toolbar.'; }
+
+table.ou-50th-header-top-links > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Insert a bulleted list of links using the WYSIWYG toolbar.'; }
+table.ou-50th-header-button-links > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Insert a bulleted list of links using the WYSIWYG toolbar. Select button class while editing link.'; }
+
+table.ou-50th-featured-section > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Enter aria-label text for accessibility.'; }
+table.ou-50th-featured-section > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Enter subtitle text.'; }
+table.ou-50th-featured-section > tbody > tr:nth-child(3) > td:nth-child(2):before { content: 'Enter main heading content.'; }
+table.ou-50th-featured-section > tbody > tr:nth-child(4) > td:nth-child(2):before { content: 'Enter content using the WYSIWYG toolbar.'; }
+
+table.ou-50th-introduction-section > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Enter aria-label text for accessibility.'; }
+table.ou-50th-introduction-section > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Enter main heading content.'; }
+table.ou-50th-introduction-section > tbody > tr:nth-child(3) > td:nth-child(2):before { content: 'Enter content using the WYSIWYG toolbar.'; }
+
+table.ou-50th-form-gallery > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Enter aria-label text for accessibility'; }
+table.ou-50th-form-gallery > tbody > tr:nth-child(2) > td:nth-child(1):before { content: 'Insert Form or Gallery Snippet'; }
+table.ou-50th-form-gallery > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Insert Form or Gallery Snippet'; }
+
+table.ou-50th-gallery > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Enter aria-label text for accessibility'; }
+table.ou-50th-gallery > tbody > tr[data-name="row"] > td:before { content: 'Enter images for this row using the WYSIWYG toolbar. Add another row to insert a new row of images.'; }
+
+table.ou-50th-info-section > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Enter aria-label text for accessibility.'; }
+table.ou-50th-info-section > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Enter main heading content.'; }
+table.ou-50th-info-section > tbody > tr:nth-child(3) > td:nth-child(2):before { content: 'Enter content using the WYSIWYG toolbar.'; }
+
+table.ou-50th-spotlight-section > tbody > tr:nth-child(1) > td:nth-child(2):before { content: 'Enter aria-label text for accessibility.'; }
+table.ou-50th-spotlight-section > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Enter main heading content.'; }
+table.ou-50th-spotlight-section > tbody > tr:nth-child(3) > td:nth-child(2):before { content: 'Enter content using the WYSIWYG toolbar.'; }

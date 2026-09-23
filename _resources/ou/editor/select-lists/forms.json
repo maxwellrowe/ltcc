@@ -1,0 +1,8 @@
+{
+	"lineTemplate": "{{text}} ({{value}})",
+	"options": [
+		"form-wrapper:Default (Center)",
+		"form-wrapper left-adjust:Left Adjust",
+		"form-wrapper right-adjust:Right Adjust"
+	]
+}

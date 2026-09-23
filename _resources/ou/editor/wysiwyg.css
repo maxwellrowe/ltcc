@@ -1,0 +1,356 @@
+.flexslider .flex-direction-nav .flex-next{
+	top: 50%;
+    right: 0;
+}
+.flexslider .flex-direction-nav .flex-prev {
+    left: -48%!important;
+    top: 50%;
+    position: absolute;
+}
+
+.red {
+	color: #FFFFFF;
+	background-color: #822433;
+}
+
+.black {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+.orange {
+	color: #FFFFFF;
+	background-color: #EC7A08;
+}
+
+.teal {
+	color: #FFFFFF;
+	background-color: #00747A;
+}
+
+.blue {
+	color: #FFFFFF;
+	background-color: #00347A;
+}
+
+.yellow {
+	color: #FFFFFF;
+	background-color: #FFCC00;
+}
+
+h1.university-name {
+	font-family: Droid Serif, serif;
+	font-weight: 700;
+}
+
+/* CSS that controls the way the snippets behave in the WYSIWYG */
+.ou-help {
+	font-size: 16px !important;
+	text-align:center!important;
+	background: #013C66;
+	color:white;
+	font-weight:none;
+	cursor: default;
+	user-select: none;
+	-o-user-select:none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-ms-user-select: none;
+}
+
+th {
+	background:#eee;
+	text-align:center;
+}
+
+.ou-help p { 
+	color:#FFFFFF;
+	margin-bottom:0px;
+	margin-top:0.5em;
+}
+
+h4.wysiwyg-spacer {
+	color:#013C66 !important;
+	margin-left:35px!important;
+	text-align:left!important;
+}
+
+.mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {
+	border:1px solid black;
+	border-collapse: collapse;
+}
+
+.mce-item-table, .mce-item-table td, .mce-item-table th, .mce-item-table caption {
+	border:1px solid black;
+	border-collapse: collapse;
+	margin:10px;
+}
+
+td {
+	padding:10px;
+}
+
+.snippet-heading {
+	font-size:1.875em!important;
+	font-weight:400!important;
+	margin:0.5em 0 0.7em 0;
+}
+
+table.ou-banner-image, table.ou-color-row, table.ou-color-column-panels, table.ou-two-columns, table.ou-three-columns, table.ou-tabs, table.ou-accordion {
+	width:95%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+table.ou-banner-image tr td img {
+	text-align:center;
+}
+
+table.home-three-column td.image img {
+	width: 100%;
+	height: auto;
+	max-width: 360px;
+}
+
+body{
+	background: #FFF;
+}
+
+/* table transformation styling */
+.ou-justedit-region table[class^="ou-"] {
+	background: rgba(225, 225, 235, 0.05);
+}
+
+.ou-justedit-region table[class^="ou-"] caption {
+	background: none repeat scroll 0 0 rgba(0, 0, 10, 0.5);
+	color: #FFFFFF;
+	font-size: 120%;
+	font-weight: bold;
+	padding: 5px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.ou-justedit-region table[class^="ou-"] thead {
+	background: none repeat scroll 0 0 rgba(185, 185, 195, 0.5);
+	color: #666;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.ou-justedit-region table[class^="ou-"] td {
+	padding: 5px 10px;
+	color: #898989;
+	vertical-align: top;
+}
+
+.ou-justedit-region table[class^="ou-"] td img {
+	max-width: 100%;
+}
+
+/* new snippet helper texts */
+
+/* Generic table "tool-tip/alert" info styling */
+table[class^="ou-"] th:before,
+table[class^="ou-"] td:before,
+table[class^="ou-"] caption:before,
+table[class^="ou-"]:before,
+table[class^="ou_"] th:before,
+table[class^="ou_"] td:before,
+table[class^="ou_"] caption:before,
+table[class^="ou_"]:before{
+	display: block;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	
+}
+ul.bullets {
+  list-style: none; 
+}
+
+ul.bullets li::before {
+    content: "\2022";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 26px;
+    line-height: 26px;
+}
+
+table.ou-static-banner > tbody > tr:nth-child(1) > td:nth-child(2):before { content: "Set a title for the banner."; }
+table.ou-static-banner > tbody > tr:nth-child(2) > td:nth-child(2):before { content: 'Insert an image using the WYSIWYG toolbar.'; }
+
+table.ou-slider-banner > tbody > tr:nth-child(1) > td:nth-child(1):before { content: "Insert a gallery asset using the WYSIWYG toolbar."; }
+
+table.ou-cta-green > tbody > tr:nth-child(1) > td:before { content: "Insert a link using the WYSIWYG toolbar."; }
+
+table.ou-two-columns-2-1 > tbody > tr:nth-child(1) > td:before { content: "Insert content using the WYSIWYG toolbar. Expand the edit region to full-width to see both table columns.";}
+
+table.ou-form-block > tbody > tr:nth-child(2) > td:nth-child(1):before { content: "Insert content using the WYSIWYG toolbar.";}
+table.ou-form-block > tbody > tr:nth-child(4) > td:nth-child(1):before { content: "Insert a form asset using the WYSIWYG toolbar.";}
+
+table.ou_accordion > tbody > tr:nth-child(n + 2) > td:nth-child(1):before { content: "Set a heading for the accordion.";}
+table.ou_accordion > tbody > tr:nth-child(n + 2) > td:nth-child(2):before { content: "Insert content using the WYSIWYG toolbar.";}
+
+table.ou-faculty-list > tbody > tr:nth-child(1) > td:nth-child(2):before { content: "Set the text for the top line of the heading."; }
+table.ou-faculty-list > tbody > tr:nth-child(2) > td:nth-child(2):before { content: "Set the text for the bottom line of the heading."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(1):before { content: "(Required) Insert a profile image."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(2):before { content: "(Required) Enter the name of the faculty member."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(3):before { content: "Enter the title of the faculty member."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(4):before { content: "Enter the email address. It will automatically turn into a link."; }
+table.ou-faculty-list > tbody > tr:nth-child(n + 3) > td:nth-child(5):before { content: "Insert a link using the WYSIWYG toolbar."; }
+
+table.ou-chevron-list > tbody > tr > td:before { content: "Use bulleted lists only. Numbered lists won't work."; }
+/* ============================================
+   LTCC ALERT BANNER SYSTEM - SIMPLIFIED
+   Two variants: Default (blue) and Urgent (red)
+   ============================================ */
+
+.alert {
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    font-size: 1rem;
+    padding: 15px 60px 15px 20px !important;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* DEFAULT: Blue for all standard alerts */
+    color: #003A5D;
+    background-color: #E9F2FA !important;
+    border-bottom: 4px solid #00A3E0 !important;
+}
+
+/* URGENT - Red for emergencies only */
+.alert.alert-urgent {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-bottom-color: #dc3545 !important;
+}
+
+.alert.alert-urgent .heading {
+    color: #721c24 !important;
+}
+
+.alert.alert-urgent .subtitle {
+    color: #721c24 !important;
+}
+
+.alert.alert-urgent a {
+    color: #721c24 !important;
+}
+
+.alert.alert-urgent a:hover {
+    color: #dc3545 !important;
+}
+
+.alert.alert-urgent .close {
+    color: #721c24 !important;
+}
+
+.alert.alert-urgent .close:hover {
+    color: #dc3545 !important;
+}
+
+/* Alert Content Styles */
+.alert .heading {
+    font-size: 1.5rem;
+    color: #003A5D;
+    margin-bottom: 8px;
+    margin-top: 0;
+    line-height: 1.25em;
+    font-weight: 700;
+}
+
+.alert .subtitle {
+    font-size: 1rem;
+    color: #003A5D;
+    margin-bottom: 10px;
+    margin-top: 0;
+    max-width: 900px;
+    line-height: 1.5;
+}
+
+.alert a {
+    color: #003A5D;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.alert a:hover {
+    color: #00A3E0;
+    text-decoration: underline;
+}
+
+/* Close Button */
+.alert-dismissible .close {
+    padding: 4px 8px;
+    right: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #003A5D;
+    position: absolute !important;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.alert-dismissible .close:hover {
+    color: #00A3E0;
+    opacity: 1;
+    background: rgba(0, 163, 224, 0.1);
+}
+
+.alert-dismissible .close:focus {
+    outline: 3px solid #00A3E0 !important;
+    outline-offset: 2px;
+    opacity: 1;
+    border-color: #00A3E0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .alert {
+        padding: 12px 50px 12px 15px !important;
+        text-align: left;
+    }
+    
+    .alert .heading {
+        font-size: 1.25rem;
+    }
+    
+    .alert .subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .alert-dismissible .close {
+        right: 10px !important;
+        font-size: 1.5rem;
+    }
+}

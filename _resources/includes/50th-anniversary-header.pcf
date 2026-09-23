@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/_widgets/50th-anniversary-header.xsl" title="Homepage Header" extension="php"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<ouc:properties label="config">
+		<parameter name="logo-img" type="filechooser" dependency="yes" group="Everyone" prompt="Logo Image" alt="Select a file or paste a complete URL for the logo image." >/_resources/images/50th-anniversary/ltcc-logo-50-fullcolor-11.png</parameter>
+		<parameter name="logo-alt" type="text" group="Everyone" prompt="Logo Image Alt Text" alt="Enter alt text for image accessibility.">LTCC Logo</parameter>
+		<parameter name="logo-link" type="filechooser" dependency="yes" group="Everyone" prompt="Logo Link" alt="Select a file or paste a complete URL for the logo link.">https://www.ltcc.edu</parameter>
+	</ouc:properties>
+	
+	<ouc:div label="button-links" group="Everyone" button-text="Button Links" break="true"><ouc:editor csspath="/_resources/ou/editor/wysiwyg-50th-anniversary.css" cssmenu="/_resources/ou/editor/50th-anniversary-header-styles.txt" wysiwyg-class="maincontent"/><table class="ou-50th-header-button-links" style="width: 100%;"><caption>50th Anniversary - Header Button Links</caption>
+<tbody>
+<tr data-name="links">
+<th>Button Links</th>
+<td>
+<ul>
+<li><a class="btn btn-secondary" href="#fifty-events">View Events</a></li>
+<li><a class="btn btn-primary" href="https://ltccfoundation.org/donate/" target="_blank" rel="noopener">Donate</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+	
+	<ouc:div label="top-links" group="Everyone" button-text="Top Links" break="true"><ouc:editor csspath="/_resources/ou/editor/wysiwyg-50th-anniversary.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><table class="ou-50th-header-top-links" style="width: 100%;"><caption>50th Anniversary - Header Top Links</caption>
+<tbody>
+<tr data-name="links">
+<th>Links</th>
+<td>
+<ul>
+<li><a href="#nomination-form">Submit a Nominee</a></li>
+<li><a href="#fifty-contact">Stay in Touch</a></li>
+<li><a title="Learn more about LTCC history" href="https://www.ltcc.edu/about/collegehistory.php">College History</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+</document>

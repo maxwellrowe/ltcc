@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Instruction Office</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Instruction Office</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="true">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Instruction Office</title>
+		<meta name="Description" content="Academics, Instruction Office" />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider"><ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>{{a:84422}}</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><span style="font-size: 18pt;"><img class="" src="{{f:66290932}}" alt="Graduates" width="1024" height="683" /></span></p>
+<p><span style="font-size: 18pt;">Welcome!</span></p>
+<p>The Instruction Office at Lake Tahoe Community College is dedicated to advancing academic excellence, innovation, and student success. We proudly support the diverse educational goals of our students, faculty, staff, and surrounding community by providing exceptional leadership, communication, and coordination of the college's academic programs.&nbsp;</p>
+<p>LTCC offers a wide range of high-quality degree and certificate programs designed to prepare students for today's dynamic workforce, successful transfer to four-year universities, or personal enrichment through lifelong learning. Whether you are exploring a new career, planning your transfer path, or seeking to develop new skills, LTCC has a program to meet your needs.&nbsp;</p>
+<p>Explore the links below to discover the educational opportunities waiitng for you at Lake Tahoe Community College.</p>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:<br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a><span>&nbsp;</span><br /><a href="tel:1-530-541-4660">(530) 541-4660</a><span>&nbsp;</span>x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><strong><span style="font-size: 12pt;"><a title="Admission" href="https://www.ltcc.edu/admissions/index.php">&nbsp;</a></span></strong><strong><span style="font-size: 12pt;"><a title="Admission" href="https://www.ltcc.edu/admissions/index.php">APPLY</a>&nbsp;<span>&nbsp;</span>&nbsp;</span></strong><span style="font-size: 12pt;">l</span><strong><span style="font-size: 12pt;">&nbsp;&nbsp;<span>&nbsp;</span><a title="Academic Calendar" href="https://www.ltcc.edu/academics/academic-calendar.php">ACADEMIC CALENDAR</a>&nbsp;&nbsp;<span>&nbsp;</span></span></strong><span style="font-size: 12pt;">l</span><strong><span style="font-size: 12pt;">&nbsp;<span>&nbsp; </span><a title="Degrees &amp; Certificates" href="https://www.ltcc.edu/academics/degrees_and_certificates/index.php">DEGREES &amp; CERTIFICATES</a><span>&nbsp;&nbsp;</span>&nbsp;</span></strong><span style="font-size: 12pt;">l&nbsp;</span><strong><span style="font-size: 12pt;">&nbsp;<span>&nbsp;&nbsp;</span><a title="Schedule of Classes" href="https://www.ltcc.edu/academics/scheduleofclasses.php">SCHEDULE&nbsp;OF CLASSES</a></span></strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span style="font-size: 18pt;">Areas of Oversight</span><hr />
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="ADVANCE" href="https://advance-learnearngrow.org/" target="_blank" rel="noopener">ADVANCE</a></li>
+<li><a title="Career &amp; Technical Education" href="https://www.ltcc.edu/academics/cte.php" target="_blank" rel="noopener">Career &amp; Technical Education</a></li>
+<li><a title="Incarcerated Student Program" href="https://www.ltcc.edu/academics/specialized_programs/risingscholarsprogram.php" target="_blank" rel="noopener">Rising Scholars Program</a></li>
+<li><a title="Library" href="https://www.ltcc.edu/campusresources/library/index.php" target="_blank" rel="noopener">Library</a></li>
+<li>Schedule Production</li>
+<li><a title="Student Learning Outcomes" href="https://www.ltcc.edu/about/institutional-effectiveness/sloassessment.php" target="_blank" rel="noopener">Student Learning Outcomes</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td><span style="font-size: 14pt;">&nbsp;<span style="font-size: 18pt;">Resources</span></span><hr />
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Faculty Handbook" href="{{f:66493924}}" target="_blank" rel="noopener">Faculty Handbook</a></li>
+<li><a title="Accrediting Commission for Community and Junior Colleges" href="http://www.accjc.org/" target="_blank" rel="noopener">Accrediting Commission for Community and Junior Colleges</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">ADMINISTRATORS</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">&nbsp;</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/coyotewedge_150sq.jpg" alt="LTCC Coyote " width="150" height="150" /></td>
+<td>Dr. Rachel Bates&nbsp;</td>
+<td>Vice President of Academic Affairs</td>
+<td>rachel.bates@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/coyotewedge_150sq.jpg" alt="LTCC Coyote" width="150" height="150" /></td>
+<td>Keely Carroll</td>
+<td>Dean of Instruction</td>
+<td>keely.carroll@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/squarephotos/braddeeds2sq.jpg" alt="Brad Deeds" width="150" height="150" /></td>
+<td>Brad Deeds</td>
+<td>Dean of Workforce Development &amp; Instruction</td>
+<td>deeds@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">INSTRUCTION OFFICE</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">staff</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td>&nbsp;<img src="https://www.ltcc.edu/_resources/images/coyotewedge_150sq.jpg" alt="LTCC Coyote" width="150" height="150" /></td>
+<td>&nbsp;Kelsey Allen</td>
+<td>Executive Assistant to the VP</td>
+<td>&nbsp;kallen@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="{{f:72569109}}" alt="Ali Berberich IO" width="150" height="150" /></td>
+<td>Ali Berberich</td>
+<td><span data-olk-copy-source="MessageBody">Administrative Assistant to the Dean</span></td>
+<td>ali.berberich@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/coyotewedge_150sq.jpg" alt="Coyote" width="150" height="150" /></td>
+<td>Sara Hunter</td>
+<td>Administrative Assistant to the Dean</td>
+<td>hunter@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/squarephotos/rickirozgasq.jpg" alt="Ricki Rozga" width="150" height="150" /></td>
+<td>Ricki Rozga</td>
+<td>Schedule Production Specialist</td>
+<td>rozga@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+<h3><span style="font-size: 14pt;">Administrators</span></h3>
+<hr />
+<div style="margin-bottom: 40px;">
+<img src="https://www.ltcc.edu/_resources/images/ltcc_images/administrators/michellerisdon2.jpg" alt="Michelle Risdon" width="133" height="204" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Michelle Risdon</span></h4>
+<p style="font-size: 10pt;">Vice President Of Academic Affairs<br />(530) 541-4660 x 752<br /><a href="mailto:risdon@ltcc.edu">risdon@ltcc.edu</a></p>
+</div>
+<div style="margin-bottom: 40px;">
+<img src="https://www.ltcc.edu/_resources/images/ltcc_images/administrators/michellesower.jpg" alt=" Michelle Sower, Dean of Instruction" width="133" height="202" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Michelle Sower</span></h4>
+<p style="font-size: 10pt;">Dean of Instruction<br />(530) 541-4660 x 752<br /><a href="mailto:sower@ltcc.edu">sower@ltcc.edu</a></p>
+</div>
+<div style="margin-bottom: 40px;">
+<img src="https://www.ltcc.edu/_resources/images/ltcc_images/administrators/braddeeds2.jpg" alt="Image of Brad Deeds, Dean of Workforce Development and Instruction" width="133" height="207" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Brad Deeds</span></h4>
+<p style="font-size: 10pt;">Dean of Workforce Development and Instruction<br />(530) 541-4660 x 752<br /><a href="mailto:deeds@ltcc.edu">deeds@ltcc.edu</a></p>
+</div>
+<h3><span style="font-size: 14pt;">Instruction Office Staff</span></h3>
+<hr />
+<div style="margin-bottom: 40px;">
+<img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/lorithornenew.jpg" alt="Lori Thorne, Administrative Assistant to the VP of Academic Affairs" width="133" height="208" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Lori Thorne</span></h4>
+<p style="font-size: 10pt;">Administrative Assistant to the Vice President, Academic Affairs<br />(530) 541-4660 x 214<br /><a href="mailto:thorne@ltcc.edu">thorne@ltcc.edu</a></p>
+</div>
+<div style="margin-bottom: 40px;">
+<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/natalielehman.jpg" alt="Natalie Lehman" width="150" height="239" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Natalie Lehman</span></h4>
+<p style="font-size: 10pt;">Administrative Assistant to the Deans<br />(530) 541-4660 x 225<br /><a href="mailto:kuwahara@ltcc.edu">nlehman@ltcc.edu</a></p>
+</div>
+<div style="margin-bottom: 40px;">
+<img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/terrylivesay.jpg" alt="Terry Livesay" width="133" height="173" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Terry Livesay</span></h4>
+<p style="font-size: 10pt;">Program Technician, Curriculum and Instruction<br />(530) 541-4660 x 230<br /><a href="mailto:livesay@ltcc.edu">livesay@ltcc.edu</a></p>
+</div>
+<div style="margin-bottom: 40px;">
+<img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/rickirozga.jpg" alt="Image of Ricki Rozga, Schedule Production Specialist" width="132" height="197" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Ricki Rozga</span><br /></h4>
+<p style="font-size: 10pt;">Schedule Production Specialist<br />Phone: (530) 541-4660 x 596<br /><a href="mailto:rozga@ltcc.edu">rozga@ltcc.edu</a></p>
+</div>
+<div style="margin-bottom: 40px;">
+<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/darciosika1.jpg" alt="Image of Darci Osika, Schedule Production/Catalog Development Program Technician" width="133" height="209" />
+<h4 style="margin: 0;"><span style="font-size: 12pt;">Darci Osika</span></h4>
+<p style="font-size: 10pt;">Schedule Production/Catalog Development Program Technician<br />(530) 541-4660 x 279<br /><a href="mailto:osika@ltcc.edu">osika@ltcc.edu</a> </p>
+</div>
+
+</ouc:div>
+  	
+</document>

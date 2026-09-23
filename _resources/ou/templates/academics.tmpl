@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf><!--%echo var="tcfname" --></tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."><!--%echo var="title" --></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default."><!--%echo var="title" --></parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="false">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="true">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title><!--%echo var="title" --></title>
+		<meta name="Description" content="<!--%echo var='description' -->" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
+		<table class="ou-static-banner"><caption>Static Banner Image</caption>
+			<tbody>
+				<tr>
+					<th>Title</th>
+					<td>Business</td>
+				</tr>
+				<tr>
+					<th>Image</th>
+					<td><img src="https://www.ltcc.edu/_resources/images/jeffwithjet.jpg" alt="Business" width="1281" height="578" /></td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+			<thead>
+				<tr>
+					<th>CTA Button</th>
+					<th>CTA Button</th>
+					<th>CTA Button</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="#apply">Apply Now</a></td>
+					<td><a href="#visit">Visit Campus</a></td>
+					<td><a href="#info">Request Info</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>The Business program at Lake Tahoe Community College provides students with an introduction of the major components of a business organization in our global environment. Students pursuing this degree will also have the option of exploring such diverse fields as economics, business law, ethics, entrepreneurship, human resources, E-business, professional communication, and technology.</p>
+		<p>Areas of concentration include: Accounting, Finance, Management, Marketing, Small Business Ownership, and General Business. The Business Administration AS-T degree at Lake Tahoe Community College is intended for students who plan to complete a bachelor&rsquo;s degree in a similar major at a CSU campus, but not to a particular campus or major.</p>
+		<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+			<thead>
+				<tr>
+					<th>Column</th>
+					<th>Column</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<p><strong>Example of static image or embedded video</strong></p>
+						<p><img src="https://www.ltcc.edu/_resources/images/static-image.jpg" alt="Static Image" width="625" height="281" /></p>
+						<p><iframe src="//www.youtube.com/embed/Nzt8oszUn7A" width="425" height="350" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+						<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+						<table class="ou_accordion_2" style="height: 167px;" width="918">
+							<tbody>
+								<tr>
+									<td>Accordian ID (must be unique if more than one accordian on page)</td>
+									<td>accordion1</td>
+								</tr>
+								<tr>
+									<td>Courses Required for business major</td>
+									<td>
+										<p><strong>29 units distributed as follows:</strong></p>
+										<p><strong>All courses from the following (25 units):</strong> <br /> BSN 100 Introduction to Business (4) <br /> BSN 101A Business Law: Introduction to Law and Business Transactions (5) <br /> BSN 102 Business Information Processing and Systems (4) <br /> BSN 104 Business Communication (4) <br /> BSN 110A Financial Accounting I (4) <br /> BSN 110B Financial Accounting II (4)</p>
+										<p><strong>NOTE: Student must choose to take either (4 units):</strong> <br /> ECO 101 Principles of Economics (Macro) (4) <em><strong>or</strong></em> <br /> ECO 102 Principles of Economics (Micro) (4)</p>
+										<p><strong>AREAS OF CONCENTRATION: (Choose one option)</strong> <br /><strong>In addition to the required core courses listed above, students seeking a Business degree must select a single area of concentration from the seven listed.</strong> Students must complete all required courses within the single area of concentration selected.</p>
+										<p><strong>1. BUSINESS: ACCOUNTING</strong></p>
+										<p><strong>All courses as follows (12 units):</strong> <br /> BSN 110C Managerial Accounting (4) <br /> BSN 111 Computerized Accounting (4) <br /> BSN 115 Business Finance (4)</p>
+										<p><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 41</strong></p>
+										<hr />
+										<p><strong>2. BUSINESS: FINANCE</strong></p>
+										<p><strong>All courses as follows (12 units):</strong> <br /> BSN 115 Business Finance (4) <br /> BSN 117 Personal Finance (4) <br /> BSN 118 Principles of Investments (4)</p>
+										<p><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 41</strong></p>
+										<hr />
+										<p><strong>3. BUSINESS: MANAGEMENT</strong></p>
+										<p><strong>All courses as follows (12 units):</strong> <br /> BSN 120 Human Resource Management (4) <br /> BSN 122 Organizational Behavior (4) <br /> BSN 125 Business Management (4) <br /> <strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 41</strong></p>
+										<hr />
+										<p><strong>4. BUSINESS: MARKETING</strong></p>
+										<p><strong>All courses as follows (12 units):</strong> <br /> BSN 125 Business Management (4) <br /> BSN 135 Principles of Marketing (4) <br /> BSN 136 Principles of Advertising (4) <br /> <strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 41</strong></p>
+										<hr />
+										<p><strong>5. BUSINESS: SMALL BUSINESS OWNERSHIP</strong></p>
+										<p><strong>All courses as follows (12 units):</strong> <br /> BSN 125 Business Management (4) <br /> BSN 135 Principles of Marketing (4) <br /> BSN 210 Entrepreneurship (4)</p>
+										<p><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 4</strong>1</p>
+										<hr />
+										<p><strong>6. BUSINESS: GENERAL BUSINESS</strong></p>
+										<p><strong>A minimum of 12 units selected from the following:</strong> <br /> BSN 105 Professional Communication (4) <br /> BSN 107 Business Law: Introduction to the Legal Environment of Business (5) <br /> BSN 110C Managerial Accounting (4) <br /> BSN 115 Business Finance (4) <br /> BSN 125 Business Management (4) <br /> BSN 135 Principles of Marketing (4) <br /> BSN 190 Business Math (4) <br /> MAT 201 Elementary Statistics (4)</p>
+										<p><strong>NOTE: Student may choose to take either (4 units):</strong> <br /> BSN 111 Computerized Accounting (4) <br /> <em><strong>or</strong></em> <br /> BSN 155A QuickBooks I (2) and <br /> BSN 155B QuickBooks II (2)</p>
+										<p><strong>NOTE: Student may choose to take either (4 units):</strong> (cannot duplicate core course) <br /> ECO 101 Principles of Economics (Macro) (4) or <br /> ECO 102 Principles of Economics (Micro) (4)</p>
+										<p><em><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 41</strong></em></p>
+									</td>
+								</tr>
+								<tr>
+									<td>Courses required for business minor</td>
+									<td>
+										<p><strong> 38-39 units distributed as follows:</strong></p>
+										<p><strong>1. All courses from the following (20 units):</strong></p>
+										<p>BSN 110A Financial Accounting I (4) <br /> BSN 110B Financial Accounting II (4) <br /> BSN 110C Managerial Accounting (4) <br /> ECO 101 Principles of Economics (Macro) (4) <br /> ECO 102 Principles of Economics (Micro) (4)</p>
+										<p><strong>2. Select one of the following courses (5 units):</strong> <br /> BSN 101A Business Law: Introduction to Law and Business Transactions (5) <br /> BSN 107 Business Law: Introduction to the Legal Environment of Business (5)</p>
+										<p><strong>3. Select one of the following courses (5 units):</strong> <br /> MAT 118 Calculus for Business and Social Sciences (5) <br /> MAT 201 Elementary Statistics (5)</p>
+										<p><strong>4. Select two of the following courses (8-9 units):</strong> <br /> BSN 100 Introduction to Business (4) <br /> BSN 102 Business Information Processing and Systems (4) <br /> Any course not selected from B.3.</p>
+										<p><em><strong>C. ELECTIVE UNITS to bring the total to 90.</strong></em></p>
+									</td>
+								</tr>
+								<tr>
+									<td>Courses required for business certificate</td>
+									<td>
+										<p><strong>1. ACCOUNTING TECHNICIAN</strong></p>
+										<p><strong>31 units distributed as follows:</strong></p>
+										<p><strong>All courses as follows (19 units):</strong> <br /> BSN 100 Introduction to Business (4) <br /> BSN 102 Business Information Processing and Systems (4) <br /> BSN 104 Business Communication (4) <br /> BSN 190 Business Math (4) <br /> BSN 158 Data Entry and Business Calculations (3)</p>
+										<p><strong>NOTE: Student must choose to take either (8 units):</strong> <br /> BSN 110A Financial Accounting I (4) and <br /> BSN 110B Financial Accounting II (4) <br /> or <br /> BSN 152A Fundamentals of Bookkeeping I (4) and <br /> BSN 152B Fundamentals of Bookkeeping II (4) <br /> <br /> <strong>NOTE: Student must choose to take either (4 units):</strong> <br /> BSN 111 Computerized Accounting (4) <br /> or <br /> BSN 155A QuickBooks I (2) and <br /> BSN 155B QuickBooks II (2)</p>
+										<hr />
+										<p><strong>2.SMALL BUSINESS OWNERSHIP</strong></p>
+										<p><strong>36 units distributed as follows:</strong></p>
+										<p><strong>All courses as follows (28 units):</strong> <br /> BSN 100 Introduction to Business (4) <br /> BSN 102 Business Information Processing and Systems (4) <br /> BSN 104 Business Communication (4) <br /> BSN 125 Business Management (4) <br /> BSN 135 Principles of Marketing (4) <br /> BSN 190 Business Math (4) <br /> BSN 210 Entrepreneurship (4)</p>
+										<p><strong>NOTE: Student must choose to take either (4 units):</strong> <br /> BSN 110A Financial Accounting I (4) <br /> or <br /> BSN 152A Fundamentals of Bookkeeping I (4)</p>
+										<p><strong>NOTE: Student must choose to take either (4 units):</strong> <br /> BSN 111 Computerized Accounting (4) <br /> or <br /> BSN 155A QuickBooks I (2) and <br /> BSN 155B QuickBooks II (2)</p>
+									</td>
+								</tr>
+								<tr>
+									<td>Scholarships/financial aid</td>
+									<td>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id magna mollis, gravida tortor non, egestas nisl. Curabitur iaculis velit orci, ut malesuada orci interdum vel. Etiam mattis justo eget porttitor tincidunt. Quisque consequat vitae justo a fermentum. Nam gravida volutpat risus, ac ultrices lorem placerat nec. Nullam nec urna sit amet orci mollis eleifend tristique in turpis. Fusce dapibus ipsum massa, eu varius sapien rutrum eget.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>Related degrees</td>
+									<td>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id magna mollis, gravida tortor non, egestas nisl. Curabitur iaculis velit orci, ut malesuada orci interdum vel. Etiam mattis justo eget porttitor tincidunt. Quisque consequat vitae justo a fermentum. Nam gravida volutpat risus, ac ultrices lorem placerat nec. Nullam nec urna sit amet orci mollis eleifend tristique in turpis. Fusce dapibus ipsum massa, eu varius sapien rutrum eget.</p>
+									</td>
+								</tr>
+								<tr>
+									<td>Faculty</td>
+									<td>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id magna mollis, gravida tortor non, egestas nisl. Curabitur iaculis velit orci, ut malesuada orci interdum vel. Etiam mattis justo eget porttitor tincidunt. Quisque consequat vitae justo a fermentum. Nam gravida volutpat risus, ac ultrices lorem placerat nec. Nullam nec urna sit amet orci mollis eleifend tristique in turpis. Fusce dapibus ipsum massa, eu varius sapien rutrum eget.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td>
+						<table class="ou-form-block"><caption>Form Section</caption>
+							<tbody>
+								<tr>
+									<th>Textual Content</th>
+								</tr>
+								<tr>
+									<td>
+										<h3>Have a question?</h3>
+										<p>We&rsquo;re just a call or email away:</p>
+										<p><strong>Lake Tahoe Community College</strong> <br /> One College Drive <br /> South Lake Tahoe, CA 96150 <br /> <a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /> <a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+									</td>
+								</tr>
+								<tr>
+									<th>Form Asset</th>
+								</tr>
+								<tr>
+									<td>{{a:104049}}</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+			<tbody>
+				<tr>
+					<th>Heading Top</th>
+					<td colspan="4">business</td>
+				</tr>
+				<tr>
+					<th>Heading Bottom</th>
+					<td colspan="4">Faculty</td>
+				</tr>
+				<tr>
+					<th>Picture</th>
+					<th>Name</th>
+					<th>Title</th>
+					<th>Email</th>
+					<th>Website</th>
+				</tr>
+				<tr>
+					<td><img class="" src="https://www.ltcc.edu/_resources/images/john-kingsbury.jpg" alt="John Kingsbury" width="130" height="130" /></td>
+					<td>John Kingsbury</td>
+					<td>Business Instructor</td>
+					<td>&nbsp;test@test.com</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td><img class="" src="https://www.ltcc.edu/_resources/images/eric-sturgess.jpg" alt="Eric Sturgess" width="130" height="130" /></td>
+					<td>Eric Sturgess</td>
+					<td>Business Instructor</td>
+					<td>
+						<p><a href="mailto:email@email.com">email@email.com</a></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td><img class="" src="https://www.ltcc.edu/_resources/images/treva-thomas.jpg" alt="Treva Thomas" width="130" height="130" /></td>
+					<td>Treva Thomas</td>
+					<td>Business Instructor</td>
+					<td>
+						<p><a href="mailto:email2@email.com">email2@email.com</a></p>
+						<p>&nbsp;</p>
+					</td>
+					<td>
+						<p><a href="http://www.website.com">http://www.website.com</a></p>
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="" src="https://www.ltcc.edu/_resources/images/john-kingsbury.jpg" alt="John Kingsbury" width="130" height="130" /></td>
+					<td>John Kingsbury</td>
+					<td>Business Instructor</td>
+					<td>
+						<p><a href="mailto:email3@email.com">email3@email.com</a></p>
+						<p>&nbsp;</p>
+					</td>
+					<td>
+						<p><a href="http://www.website2.com">http://www.website2.com</a></p>
+						<p>&nbsp;</p>
+					</td>
+				</tr>
+				<tr>
+					<td><img class="" src="https://www.ltcc.edu/_resources/images/eric-sturgess.jpg" alt="Eric Sturgess" width="130" height="130" /></td>
+					<td>Eric Sturgess</td>
+					<td>Business Instructor</td>
+					<td>
+						<p><a href="mailto:email@email.com">email@email.com</a></p>
+					</td>
+					<td>&nbsp;</td>
+				</tr>
+			</tbody>
+		</table>
+	</ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

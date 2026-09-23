@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/news.xsl" title="News Article Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info><tcf><!--%echo var="tcfname" --></tcf><tmpl>article.tmpl</tmpl></ouc:info>
+		
+	<parameter name="layout">two</parameter>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."><!--%echo var="title" --></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default."><!--%echo var="title" --></parameter>			
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+		<parameter section="Article Properties" name="date" type="datetime" group="Everyone" prompt="Article Date" alt="Select a date for this article. If the date is edited the RSS properties have to be updated with the new date time as well."><!--%echo var="date" encoding="none" --></parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title><!--%echo var="title" --></title>
+		<meta name="Description" content="<!--%echo var='description' -->" />
+	</ouc:properties>	
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
+		<p>Edit Article Content</p>
+	</ouc:div>	
+	
+</document>

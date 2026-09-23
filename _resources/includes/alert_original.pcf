@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/alert.xsl" title="Alert Include" extension="php"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+    
+    <headcode>
+        <style>
+            /* Alert Banner Styling */
+            .ou-homepage-alert-banner {
+                background-color: #FFD700; /* Golden Yellow */
+                color: #003e51; /* LTCC Dark Blue for text */
+                padding: 15px 20px;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 4px solid #00a3e0; /* Light Blue accent */
+            }
+            .ou-homepage-alert-banner h1 {
+                font-size: 1.5rem; /* Title font size */
+                margin: 0;
+            }
+            .ou-homepage-alert-banner p {
+                font-size: 1rem; /* Subtitle font size */
+                margin: 5px 0 10px 0;
+            }
+            .ou-homepage-alert-banner a {
+                color: #003e51; /* Dark Blue for link text */
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            .ou-homepage-alert-banner button {
+                background: none;
+                border: none;
+                font-size: 1.5rem;
+                font-weight: bold;
+                cursor: pointer;
+                color: #003e51; /* Matches text color */
+                position: absolute;
+                top: 15px;
+                right: 20px;
+            }
+            .ou-homepage-alert-banner button:hover {
+                color: #00a3e0; /* Light Blue on hover */
+            }
+            @media (max-width: 768px) {
+                .ou-homepage-alert-banner {
+                    padding: 10px;
+                }
+                .ou-homepage-alert-banner h1 {
+                    font-size: 1.2rem;
+                }
+                .ou-homepage-alert-banner p {
+                    font-size: 0.9rem;
+                }
+                .ou-homepage-alert-banner button {
+                    top: 10px;
+                    right: 10px;
+                }
+            }
+        </style>
+    </headcode>
+
+    <bodycode></bodycode> <!-- after opening body tag -->
+    <footcode>
+        <script>
+            // Dismiss Alert Script
+            document.addEventListener('DOMContentLoaded', () => {
+                const closeButton = document.querySelector('.close-alert');
+                if (closeButton) {
+                    closeButton.addEventListener('click', () => {
+                        const alertBanner = document.querySelector('.ou-homepage-alert-banner');
+                        if (alertBanner) alertBanner.style.display = 'none';
+                    });
+                }
+            });
+        </script>
+    </footcode>
+
+    <ouc:properties label="config">        
+        <parameter name="show-alert" type="select" group="Editors" prompt="Display Alert?" alt="Select 'Yes' and publish to view Alert on homepage.">
+<option value="true" selected="true">Yes</option>
+<option value="false" selected="false">No</option>
+</parameter>
+    </ouc:properties>
+    
+    <ouc:properties label="metadata">
+        <title>Alert</title>
+        <meta name="Description" content="Weather closure notification for LTCC homepage." />
+    </ouc:properties>
+    
+    <ouc:div label="main-content" group="Everyone" button-text="Main Content">
+        <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content" />
+        
+        <div class="ou-homepage-alert-banner" role="alert" aria-live="assertive">
+            <button class="close-alert" aria-label="Dismiss alert">&times;</button>
+            <h1>Campus Closure Alert</h1>
+            <p>Lake Tahoe Community College is closed today due to severe weather. Stay safe and check back for updates.</p>
+            <a href="/weather-updates" aria-label="Read more about weather updates">Read More</a>
+        </div>
+    </ouc:div>
+    
+</document>

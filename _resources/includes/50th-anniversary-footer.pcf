@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/_widgets/50th-anniversary-footer.xsl" title="HTML" extension="php"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<ouc:properties label="config">
+		<parameter name="logo-img" type="filechooser" dependency="yes" group="Everyone" prompt="Logo Image" alt="Select a file or paste a complete URL for the logo image.">/_resources/images/50th-anniversary/footer-logo.png</parameter>
+		<parameter name="logo-alt" type="text" group="Everyone" prompt="Logo Image Alt Text" alt="Enter alt text for image accessibility.">Footer Logo</parameter>
+		<parameter name="logo-link" type="filechooser" dependency="yes" group="Everyone" prompt="Logo Link" alt="Select a file or paste a complete URL for the logo link.">https://www.ltcc.edu</parameter>
+		<parameter section="Social Media Links" name="facebook-link" type="text" group="Everyone" prompt="Facebook Link" alt="Paste a complete URL. If left blank, this social will be ignored.">https://www.facebook.com/LakeTahoeCommunityCollege</parameter>
+		<parameter name="youtube-link" type="text" group="Everyone" prompt="YouTube Link" alt="Paste a complete URL. If left blank, this social will be ignored.">https://www.youtube.com/user/LakeTahoeCommCollege</parameter>
+		<parameter name="instagram-link" type="text" group="Everyone" prompt="Instagram Link" alt="Paste a complete URL. If left blank, this social will be ignored.">https://www.instagram.com/laketahoe_communitycollege/</parameter>
+		<parameter name="twitter-link" type="text" group="Everyone" prompt="X (Twitter) Link" alt="Paste a complete URL. If left blank, this social will be ignored.">https://x.com/LakeTahoeCC</parameter>
+		<parameter section="Contact Us" name="address-1" type="text" group="Everyone" prompt="Address Line #1" alt="">One College Drive South Lake</parameter>
+		<parameter name="address-2" type="text" group="Everyone" prompt="Address Line #2" alt="">Tahoe, CA 96150</parameter>
+		<parameter name="phone" type="text" group="Everyone" prompt="Phone" alt="">530-541-4660</parameter>
+		<parameter name="hours-1" type="text" group="Everyone" prompt="Campus Hours Line #1" alt="">Campus Hours</parameter>
+		<parameter name="hours-2" type="text" group="Everyone" prompt="Campus Hours Line #2" alt="">Monday-Thursday: 7:30am-10pm</parameter>
+		<parameter name="hours-3" type="text" group="Everyone" prompt="Campus Hours Line #3" alt="">Friday: 7:30am-6:30pm</parameter>
+		<parameter section="Copyright" name="copyright-1" type="text" group="Everyone" prompt="Before Copyright" alt="">Lake Tahoe Community College -</parameter>
+		<parameter name="copyright-2" type="text" group="Everyone" prompt="After Copyright" alt="">2024 All Rights Reserved</parameter>
+	</ouc:properties>
+
+	<ouc:div label="footer-links" group="Everyone" button-text="Footer Links" break="true"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><table class="ou-50th-footer-links" style="width: 100%;"><caption>50th Anniversary - Footer Links</caption>
+<tbody>
+<tr data-name="heading">
+<th>Heading</th>
+<td>Why LTCC</td>
+</tr>
+<tr data-name="links">
+<th>Links</th>
+<td>
+<ul>
+<li><a title="About Lake Tahoe Community College" href="https://www.ltcc.edu/about/index.php">About LTCC</a></li>
+<li><a title="Find a job at Lake Tahoe Community College" href="https://ltcc.peopleadmin.com/" target="_blank" rel="noopener">Jobs at LTCC</a></li>
+<li><a title="Cranium Cafe" href="https://ltcc.craniumcafe.com/login" target="_blank" rel="noopener">Cranium Cafe</a></li>
+<li><a title="Visit the library" href="https://www.ltcc.edu/campusresources/library/index.php">Library</a></li>
+<li><a title="Go to Canvas Login" href="https://laketahoecc.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-50th-footer-links" style="width: 100%;"><caption>50th Anniversary - Footer Links</caption>
+<tbody>
+<tr data-name="heading">
+<th>Heading</th>
+<td>Quick Links</td>
+</tr>
+<tr data-name="links">
+<th>Links</th>
+<td>
+<ul>
+<li><a title="Learn how to apply to Lake Tahoe Community College" href="https://www.ltcc.edu/admissions/index.php">Apply</a></li>
+<li><a title="Explore Programs &amp; Pathways" href="https://www.ltcc.edu/academics/academic_programs/index.php">Explore Programs &amp; Pathways</a></li>
+<li><a title="Find classes" href="https://www.ltcc.edu/academics/scheduleofclasses.php">Find classes</a></li>
+<li><a title="Report Accessibility Issues" href="https://www.ltcc.edu/campusresources/technology/reportaccessibilityissue.php">Report Accessibility Issues</a></li>
+<li><a title="Report a Coyote Concern" href="https://cm.maxient.com/reporting.php?LakeTahoeCC" target="_blank" rel="noopener">Report a Concern</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-50th-footer-links" style="width: 100%;"><caption>50th Anniversary - Footer Links</caption>
+<tbody>
+<tr data-name="heading">
+<th>Heading</th>
+<td>Community</td>
+</tr>
+<tr data-name="links">
+<th>Links</th>
+<td>
+<ul>
+<li><a title="Learn more about Lake Tahoe College Promise" href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a title="Learn more about Diversity, Equity &amp; Inclusion at Lake Tahoe Community College" href="https://www.ltcc.edu/about/dei.php">Diversity, Equity &amp; Inclusion</a></li>
+<li><a title="Go to Passport Login" href="https://experience.elluciancloud.com/ltcc" target="_blank" rel="noopener">Passport Login</a></li>
+<li><a title="Learn more about Financial Aid" href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+	
+</document>

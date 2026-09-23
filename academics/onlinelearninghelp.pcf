@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Online Learning Help</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Online Learning Help</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Online Learning Help</title>
+		<meta name="Description" content="Online Learning Help" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p><span style="font-family: arial, helvetica, sans-serif;"><img src="{{f:68040088}}" alt="computer-learning students" width="1080" height="720" /></span></p>
+<p><span style="font-family: arial, helvetica, sans-serif;">At Lake Tahoe Community College, ensuring that students have the tools and support they need to use them successfully is of primary importance. If you are having issues with any of our technology services, please find the appropriate information below and contact us.</span></p>
+<p>&nbsp;</p>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif;">Accordion ID (must be unique if more than one accordion on page)</span></td>
+<td><span style="font-family: arial, helvetica, sans-serif;">accordion1</span></td>
+</tr>
+<tr>
+<td>
+<p><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Online Learning Help</span></p>
+</td>
+<td>
+<p><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Help is available for you anytime via phone, email, and in-person visits.</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">What are Canvas and Passport?</span></p>
+</td>
+<td>
+<p><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Canvas is the Learning Management System (LMS) used by LTCC to access course materials online. For students in online, hybrid, and face-to-face classes, Canvas&nbsp; holds your syllabus, assignments, learning materials, and virtual classroom/Zoom access.</span><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Passport is LTCC's web portal for accessing and managing all types of LTCC information, including important links, registration, fee payments, student bulletins, and your student email. It is important to login and check Passport frequently for official communication.</span></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<h5><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Username/Password Troubleshooting and Help</span></h5>
+</td>
+<td><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">The same username and password are used for Canvas and Passport logins. </span>
+<ol class="ContentPasted0" type="1" data-listchain="__List_Chain_215">
+<li value="1"><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Visit the Enrollment Office/Student Services One-Stop with a photo ID for help with your username and password. Call (530) 541-4660 x211 or email <a class="ms-outlook-linkify" href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a>&nbsp; Alternatively, use this Username&nbsp;</span><a id="OWAa837c89f-89e8-0ef5-f3d6-4980e3233d66" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fltcc-web02.ltcc.edu%3A8443%2FWebAdvisor%2FWebAdvisor%3FTOKENIDX%3D6668799026%26SS%3D1%26APP%3DCORE&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=7KtOI%2BV%2FPNai4Gbj1xC%2B%2FqFSrJmT5K3myyk6U4lwJXE%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fltcc-web02.ltcc.edu%3A8443%2FWebAdvisor%2FWebAdvisor%3FTOKENIDX%3D6668799026%26SS%3D1%26APP%3DCORE&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=7KtOI%2BV%2FPNai4Gbj1xC%2B%2FqFSrJmT5K3myyk6U4lwJXE%3D&amp;reserved=0">lookup form</a><span class="ContentPasted0">.</span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Please download and login with your student username to your </span><span class="ContentPasted0">free Microsoft Office 365</span><span class="ContentPasted0"> (yearly student access) for Microsoft tools like Outlook (email), Word, Excel, and PowerPoint for </span><a id="OWAad98f9f1-c4c1-0d05-cffa-b57cc46490f2" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ltcc.edu%2F_resources%2Fpdfs%2Fvirtual_campus%2Foffice365_phone.pdf&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=zkVU6Gn16vg1OpPFPxwNPW8eEmOvGe53zOgqkLFl9no%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ltcc.edu%2F_resources%2Fpdfs%2Fvirtual_campus%2Foffice365_phone.pdf&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=zkVU6Gn16vg1OpPFPxwNPW8eEmOvGe53zOgqkLFl9no%3D&amp;reserved=0">phone</a><span class="ContentPasted0">&nbsp;and&nbsp;</span><a id="OWAe59bf335-009a-217a-21b3-cd81a6501b36" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ltcc.edu%2F_resources%2Fpdfs%2Fvirtual_campus%2Foffice365_computer.pdf&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=zeDeGiPf1qgH3UBue8ZNf%2FmfV5zRI7BWKbtYsX5HeKc%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ltcc.edu%2F_resources%2Fpdfs%2Fvirtual_campus%2Foffice365_computer.pdf&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=zeDeGiPf1qgH3UBue8ZNf%2FmfV5zRI7BWKbtYsX5HeKc%3D&amp;reserved=0">computer.</a></span></li>
+<li><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Ensure your computer or device is updated with the most current operating system, then browser versions (Chrome, Firefox, Edge, etc.) *Keep at least two browsers updated and ready to use! </span></li>
+<li><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Cell phones are not recommended for all coursework, though the Canvas app is also popular for phones and tablets.</span></li>
+</ol>
+</td>
+</tr>
+<tr style="padding-left: 30px;">
+<td>
+<h5><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Canvas Help</span></h5>
+</td>
+<td>
+<ul class="ContentPasted0" type="disc">
+<li><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Chat directly with a live Canvas technician: Canvas Hotline 24/7, located inside your Canvas course under the </span><span class="ContentPasted0">Help?</span><span class="ContentPasted0">button (left global navigation menu.)&nbsp; </span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Call Canvas Support (877) 892-6517 or email&nbsp;</span><span class="ContentPasted0"><a class="ms-outlook-linkify" href="mailto:support@instructure.com">support@instructure.com</a>, </span><span class="ContentPasted0">Mondays-Fridays 8am-5pm PST; nights and weekends 6pm-8am PST.</span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Search </span><a id="OWA8c67e8b9-3eb1-a0a0-2259-6ccda2e851f5" class="OWAAutoLink ContentPasted0" title="Original URL:
+https://community.canvaslms.com/t5/Student-Guide/tkb-p/student
+
+Click to follow link." href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fcommunity.canvaslms.com%2Ft5%2FStudent-Guide%2Ftkb-p%2Fstudent&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=WUUj3M5LE2dGtpVuJu%2B65MhFIbEtL25QmkB9wfObfeY%3D&amp;reserved=0">Canvas Student Guides</a><span class="ContentPasted0"> for answers to common questions. </span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Contact your instructor with detailed questions, issues, and screenshots for assistance connecting with the </span><a id="OWA58ef9cee-3304-590e-f8b5-bfb731e7a56e" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.myschoolbuilding.com%2Fmyschoolbuilding%2FMyRequest.asp&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=sTJzImd5bgtS3LTYBT0R8aAHdGkUye56uIvpoZdyOP0%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.myschoolbuilding.com%2Fmyschoolbuilding%2FMyRequest.asp&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790315910811%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=sTJzImd5bgtS3LTYBT0R8aAHdGkUye56uIvpoZdyOP0%3D&amp;reserved=0">IT Department</a><span class="ContentPasted0"> and </span><a id="OWA0d9d4e29-5656-7ad2-346b-3525c82b6721" class="OWAAutoLink ContentPasted0" title="mailto:rachael.sweeten@ltcc.edu" href="mailto:rachael.sweeten@ltcc.edu">Online Learning.</a></span></li>
+</ul>
+</td>
+</tr>
+<tr style="padding-left: 30px;">
+<td>
+<h5><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Canvas Login</span></h5>
+</td>
+<td><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">There are two main ways to access your Canvas courses:</span>
+<ol class="ContentPasted0" type="1" data-listchain="__List_Chain_216">
+<li value="1"><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Use the LTCC&nbsp;</span><a id="OWAa08b4bf6-263d-743e-0833-5df8d5b70210" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportal.ltcc.edu%2F&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790316067067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=qeD%2BO1unFOfKl5TM5KO42H3GoNmAgm3xhZw7E3PqbCM%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportal.ltcc.edu%2F&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790316067067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=qeD%2BO1unFOfKl5TM5KO42H3GoNmAgm3xhZw7E3PqbCM%3D&amp;reserved=0">Passport portal</a><span class="ContentPasted0">&nbsp;quick links, then click the Canvas Login link. (See: </span><a id="OWA8aceddee-a771-0912-16be-6e448ec34e33" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ltcc.edu%2Facademics%2Fstudents_how_to_access_online_course_in_canvas.pdf&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790316067067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=h4nfyKtHRSwVEGxl6DF%2B5TvQDDCgdvZQPzIEl8qGwCE%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.ltcc.edu%2Facademics%2Fstudents_how_to_access_online_course_in_canvas.pdf&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790316067067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=h4nfyKtHRSwVEGxl6DF%2B5TvQDDCgdvZQPzIEl8qGwCE%3D&amp;reserved=0">instructions for accessing Canvas via Passport</a><span class="ContentPasted0">) </span></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Direct login to&nbsp;</span><a id="OWAb57c120f-8ee5-cc1d-94b8-f58efcdf079f" class="OWAAutoLink ContentPasted0" title="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Flaketahoecc.instructure.com%2F&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790316067067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=ZDDdtea1m4%2F11Ion8IGjh6v1ctjd2d1oHKBuwybhzI8%3D&amp;reserved=0" href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Flaketahoecc.instructure.com%2F&amp;data=05%7C01%7CLewis%40ltcc.edu%7C0b189292b0144dc0d62208dbd962bae0%7Cf318473b508844e9bee6bea8dcf585e3%7C0%7C0%7C638342790316067067%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&amp;sdata=ZDDdtea1m4%2F11Ion8IGjh6v1ctjd2d1oHKBuwybhzI8%3D&amp;reserved=0">https://laketahoecc.instructure.com.</a><span class="ContentPasted0">&nbsp;</span></span></li>
+</ol>
+</td>
+</tr>
+<tr style="padding-left: 30px;">
+<td>
+<h5><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Find Your Canvas Course</span></span></h5>
+</td>
+<td><span style="font-family: arial, helvetica, sans-serif;"><span class="ContentPasted0">Log into Canvas to view your classes on the Dashboard or Courses list.(To see past and future enrollments, click Courses--&gt;scroll to All Courses</span><span class="ContentPasted0">&agrave;</span><span class="ContentPasted0">Current, Past, or Future lists.)&nbsp;&nbsp;</span></span><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Once your instructor makes the course available, you can click the course name hyperlink to access your courses on the first day of the quarter.&nbsp; </span><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;">Be sure to explore the syllabus and announcements, then follow any instructions for "checking in" or completing first day/week assignments to avoid being dropped from the course as a "no show." When in doubt, email your instructor.</span></td>
+</tr>
+<tr>
+<td><span style="font-family: arial, helvetica, sans-serif;">How to help students when they cannot see their class on Canvas</span></td>
+<td><span class="ContentPasted0" style="font-family: arial, helvetica, sans-serif;"><img src="{{f:68027702}}" alt="canvas help" width="940" height="705" /></span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

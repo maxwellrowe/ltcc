@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Social Science</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title></title>
+		<meta name="Description" content="Social Science" />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Social Science</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/ltcc_campus/Front-LTCC-Students-FallB.jpg" alt="front of campus" width="1603" height="985" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#apply">Apply Now</a></td>
+<td><a href="#visit">Visit Campus</a></td>
+<td><a href="#info">Request Info</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Social Science degree program at Lake Tahoe Community College provides students with an understanding of human behavior, mental processes, and social institutions that are important in&nbsp;contemporary society. The degree provides skills that are valuable in a wide range of careers including business, government, social services, and education.&nbsp;The degree offers students a foundational understanding of the social sciences.</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;" width="918">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">A.A. in Social Science</span></td>
+<td>
+<p><em><strong>A. GENERAL EDUCATION REQUIREMENTS</strong></em><br />See current catalog&nbsp;for details.</p>
+<p><em><strong>B. REQUIRED COURSES</strong></em><br /><strong>28 units distributed as follows:</strong></p>
+<p><strong>1. One course selected from the following (4 units):</strong><br />PSY 101 General Psychology (4)<br />PSY 102/ECE 102 Child and Adolescent Growth and Development (4)<br />PSY 103 Adult Development (4)</p>
+<p><strong>2. One course selected from the following (4 units):</strong><br />HIS 111 History of the United States from the&nbsp;Colonial Period through the 18th Century (4)<br />HIS 112 History of the United States in the 19th&nbsp;Century (4)<br />HIS 113 History of the United States from the 20th&nbsp;Century to the Present (4)<br />HIS 127A History of World Civilizations to 1000 (4)<br />HIS 127B History of World Civilizations from 1000 to 1800 (4)<br />HIS 127C History of World Civilizations from 1750 to the Present (4)<br />POL 101 Introduction to American Government and Politics (4)<br />POL 107 Introduction to Political Theory (4)<br />POL 204 Introduction to International Relations (4)<br />POL 206 Introduction to Comparative Government and&nbsp;Politics (4)</p>
+<p><strong>3. One course selected from the following (4 units):</strong><br />ANT 102 Cultural Anthropology (4)<br />SOC 101 Introduction to Sociology (4)</p>
+<p><strong>4. A minimum of 16 units selected from the following (Courses<span>&nbsp;</span></strong><br /><strong>under this section cannot be double-counted for Requirements B.1.,<span>&nbsp;</span></strong><strong>B.2., and B.3.):</strong><br />ANT 101 Introduction to Archaeology (4)<br />ANT 102 Cultural Anthropology (4)<br />ANT 106 Visual Anthropology (4)<br />ANT 107 Magic, Witchcraft, and Religion (4)<br />ANT 108 Introduction to Language and Culture (4)<br />BSN 100 Introduction to Business (4)<br />BSN 101A Business Law: Introduction to Law and&nbsp;Business Transactions (5)<br />BSN 107 Business Law: Introduction to the Legal&nbsp;Environment of Business (5)<br />BSN 120 Human Resource Management (4)<br />BSN 125 Business Management (4)<br />COU 120 Introduction to Alcohol and Drug Studies (4)<br />CRJ 101 Introduction to Criminal Justice (4)<br />CRJ 102 Criminal Law (4)<br />CRJ 105 Cultural Diversity in Criminal Justice (4)<br />ECE 101 Principles and Practices of Teaching Young&nbsp;Children (4)<br />ECE 102/PSY 102 Child and Adolescent Growth and Development (4)<br />ECE 103 Child, Family, and Community (4)<br />ECO 101 Principles of Economics (Macro) (4)<br />ECO 102 Principles of Economics (Micro) (4)<br />GEG 102 Human Geography (4)<br />GEG 103 World Regional Geography (4)<br />GEG 106 California Geography (4)<br />GEG 114 Economic Geography (4)<br />HIS 104 Early California History (4)<br />HIS 105 Modern California History (4)<br />HIS 109 Women in American History (4)<br />HIS 110 Multicultural History of the United States (4)<br />HIS 127A History of World Civilizations to 1000 (4)<br />HIS 127B History of World Civilizations from 1000 to 1800 (4)<br />HIS 127C History of World Civilizations from 1750 to the Present (4)<br />POL 101 Introduction to American Government and Politics (4)<br />POL 107 Introduction to Political Theory (4)<br />POL 204 Introduction to International Relations (4)<br />POL 206 Introduction to Comparative Government and Politics (4)<br />PSY 101 General Psychology (4)<br />PSY 102/ECE 102 Child and Adolescent Growth and Development (4)<br />PSY 103 Adult Development (4)<br />PSY 104 Social Psychology (4)<br />PSY 107 Theories of Personality (4)<br />PSY 113 Psychology of Human Relations (4)<br />SOC 101 Introduction to Sociology (4)<br />SOC 102 Marriage, Families, and Intimate&nbsp;Relationships (4)<br />SOC 103 Social Problems (4)<br />SOC 104 Deviance (4)<br />SOC 106 Crime and Society (4)<br />SOC 107 Race and Ethnic Relations (4)<br />SOC 114 Gender (4)</p>
+<p><em><strong>C. ELECTIVE UNITS to bring the total to 90.</strong></em></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;" mce-data-marked="1">Scholarships &amp; Financial Aid</span></td>
+<td><span style="font-size: 12pt;">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;" mce-data-marked="1">Related Degrees</span></td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br /> One College Drive <br /> South Lake Tahoe, CA 96150 <br /> <a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /> <a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h5 style="text-align: justify;">&nbsp;</h5>
+<h5 style="text-align: justify;">&nbsp;</h5></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<h5>&nbsp;</h5>
+<p><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/administrators/michellesower.jpg" alt="Image of Michelle Sower, Dean of Instruction" width="150" height="228" /><br /><strong><span style="font-size: 12pt;">Michelle Sower</span></strong><br /><span style="font-size: 12pt;">Dean of Instruction</span><br /><span style="font-size: 12pt;">(530) 541-4660 x 225</span><br /><span style="font-size: 12pt;">sower@ltcc.edu</span><br /> <br /><span style="font-size: 12pt;"><strong>Credentials:</strong></span><br /><span style="font-size: 12pt;">B.A. California State University, Chico</span><br /><span style="font-size: 12pt;">M.S. University of Nevada, Reno</span></p>
+<div><span style="font-size: 10pt;">&nbsp;</span></div></ouc:div>
+  	
+</document>

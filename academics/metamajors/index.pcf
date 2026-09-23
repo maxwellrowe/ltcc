@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>section.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Meta Majors – A Pathway to a Career</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Meta Majors</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Meta Majors | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore LTCC’s Meta-Majors—organized pathways that group related programs to help you choose a direction, stay on track, and reach your academic and career goals efficiently." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p style="text-align: left;"><iframe title="YouTube video player" src="https://www.youtube.com/embed/yzWpkbrco_c?si=V-Fn4d1bkmWoMk3S" width="500" height="282" frameborder="0" allowfullscreen="allowfullscreen"></iframe>&nbsp;</p>
+<p><strong>Guided Pathways at Lake Tahoe Community College</strong> offers students a clear, supportive academic roadmap to graduation and career success. Explore meta majors, discover your interests, and connect with counselors to stay on track and achieve your goals.</p>
+<p>&nbsp;</p>
+<!-- Meta Major Row: Arts, Languages & Humanities -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+<div style="flex: 0 0 120px;"><img style="width: 100%; max-width: 120px; height: auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/arts-languages-humanities-white-back.jpg" alt="Arts, Languages, Humanities Icon" /></div>
+<div style="flex: 1;">
+<h3>Arts, Languages, Humanities</h3>
+<h5>Create &bull; Communicate &bull; Connect</h5>
+<p>Explore expression through writing, languages, and the arts. Build skills for careers in teaching, journalism, design, or performance.</p>
+<p><strong><a href="https://www.ltcc.edu/academics/metamajors/meta_arts.php">Explore majors &gt;&gt;</a></strong></p>
+</div>
+</div>
+<!-- Meta Major Row: Business, Hospitality & Leadership -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+<div style="flex: 0 0 120px;"><img style="width: 100%; max-width: 120px; height: auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/business-hospitality-leadership-white-back.jpg" alt="Business, Hospitality, Leadership Icon" /></div>
+<div style="flex: 1;">
+<h3>Business, Hospitality, Leadership</h3>
+<h5>Build &bull; Lead &bull; Invent</h5>
+<p>Develop business and leadership skills for entrepreneurship, hospitality, and tourism. Start your own venture or manage experiences that make a difference.</p>
+<p><strong><a href="https://www.ltcc.edu/academics/metamajors/meta_business.php">Explore majors &gt;&gt;</a></strong></p>
+</div>
+</div>
+<!-- Meta Major Row: Health & Public Safety -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+<div style="flex: 0 0 120px;"><img style="width: 100%; max-width: 120px; height: auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health &amp; Public Safety Icon" /></div>
+<div style="flex: 1;">
+<h3>Health &amp; Public Safety</h3>
+<h5>Serve &bull; Care &bull; Protect</h5>
+<p>Join essential careers in healthcare, counseling, emergency services, or law enforcement. Learn to make a direct impact in your community.</p>
+<p><strong><a href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php">Explore majors &gt;&gt;</a></strong></p>
+</div>
+</div>
+<!-- Meta Major Row: Society, Culture & Education -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+<div style="flex: 0 0 120px;"><img style="width: 100%; max-width: 120px; height: auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/society-culture-education-white-back.jpg" alt="Society, Culture &amp; Education Icon" /></div>
+<div style="flex: 1;">
+<h3>Society, Culture, Education</h3>
+<h5>Learn &bull; Share &bull; Enlighten</h5>
+<p>Study how people and cultures connect and evolve. Prepare for careers in education, social work, advocacy, and public service.</p>
+<p><strong><a href="https://www.ltcc.edu/academics/metamajors/meta_society.php">Explore majors &gt;&gt;</a></strong></p>
+</div>
+</div>
+<!-- Meta Major Row: Science, Technology & Environment -->
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 40px; flex-wrap: wrap;">
+<div style="flex: 0 0 120px;"><img style="width: 100%; max-width: 120px; height: auto;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/science-technology-environment-white-back.jpg" alt="Science, Technology &amp; Environment Icon" /></div>
+<div style="flex: 1;">
+<h3>Science, Technology, Environment</h3>
+<h5>Explore &bull; Discover &bull; Analyze</h5>
+<p>Use data, technology, and the scientific method to solve complex problems. Ideal for careers in environmental science, healthcare, and tech innovation.</p>
+<p><strong><a href="https://www.ltcc.edu/academics/metamajors/meta_science.php">Explore majors &gt;&gt;</a></strong></p>
+</div>
+</div></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

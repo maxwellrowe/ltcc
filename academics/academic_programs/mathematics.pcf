@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Mathematics</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Mathematics Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Build strong analytical and problem-solving skills with LTCC’s Mathematics program. Prepare for transfer and careers in science, engineering, technology, business, and education." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Mathematics</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/math_header.png" alt="Mathematics" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;"><a title="Link to Science Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_science.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/science-technology-environment-white-back.jpg" alt="Link to Science Meta Major" width="277" height="274" /></a>The role of mathematics is vital and growing, providing solutions to problems in a wide range of sciences: social, biological, physical, behavioral, and management. The Mathematics program at Lake Tahoe Community College leading to the AS-T degrees provides students with the foundation necessary for understanding and expressing ideas in science, engineering, and human affairs. Mathematics is integrally related to computer science and statistics, which have proven invaluable to advancing research and modern industrial technology.</p>
+<p style="text-align: left;">A math major is considered to be an excellent background for a variety of careers. The mathematics department at Lake Tahoe Community College offers a broad range of courses to meet the varied needs of students pursuing their academic goals.</p>
+<p style="text-align: left;">Course offerings range from arithmetic to algebra, geometry, trigonometry, calculus for the social and life sciences, calculus and analytical geometry, linear algebra, differential equations, and statistics.</p>
+<p style="text-align: left;">Through such coursework, students acquire the ability to think logically and abstractly, as well as develop the problem-solving and computational skills necessary in all fields of study. Courses within the mathematics curriculum fulfill general education and transfer requirements (including requirements for science and engineering majors).</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/mathclass.jpg" alt="Math class" />&nbsp;
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Associate in Science for Transfer, Mathematics</span></td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-b66c-7f94-80a9-9baefdeee006/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Related Degrees</span></td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li>See related degrees and certificates in the <a title="Science, Technology, &amp; Environment Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_science.php">Science, Technology, &amp; Environment Meta Major &rarr;</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Course Resources</span></td>
+<td>
+<p><a href="http://www.ltcconline.net/greenl/courses/LectureNotes.htm" target="_blank" rel="noopener">Math Lecture Notes</a></p>
+<p><a href="http://ltcconline.net/richardson/MathDepartment/CurrentSyllabi.htm" target="_blank" rel="noopener">Current Math Syllabi</a></p>
+<p><a href="http://ltcconline.net/richardson/MathDepartment/PastSyllabi.htm" target="_blank" rel="noopener">Syllabi from previous quarters</a></p>
+<p><a href="http://www.ltcconline.net/greenl/java/index.html" target="_blank" rel="noopener">Larry Green's Java Applets</a></p>
+<p><a href="http://www.ltcconline.net/greenl/resources.htm" target="_blank" rel="noopener">Mathematics Resources on the Web</a></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Financial Aid &amp; Scholarships</span></td>
+<td>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>There are <a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">mathematics</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/brucesq.png" alt="Bruce Armbrust" width="151" height="150" /></td>
+<td>Bruce Armbrust</td>
+<td>Mathematics &amp; Physics Instructor</td>
+<td><a href="mailto:armbrust@ltcc.edu">armbrust@ltcc.edu</a>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/larrysq.png" alt="Larry Green" width="151" height="150" /></td>
+<td><a href="https://www.ltcc.edu/academics/faculty/larrygreen.php">Larry Green</a>, PhD</td>
+<td>Mathematics Instructor</td>
+<td><a href="mailto:lgreen@ltcc.edu">lgreen@ltcc.edu</a>&nbsp;</td>
+<td><a href="https://www.ltcc.edu/academics/faculty/larrygreen.php">www.ltcc.edu/academics/faculty/larrygreen.php</a>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/steverichsq.png" alt="Steve Richardson" width="151" height="150" /></td>
+<td>Steve Richardson</td>
+<td>Mathematics Instructor</td>
+<td><a href="mailto:richardson@ltcc.edu">richardson@ltcc.edu</a>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/wynnsq.png" alt="Wynn Walker" width="151" height="150" /></td>
+<td>Wynn Walker, PhD</td>
+<td>Mathematics &amp; Basic Skills Instructor</td>
+<td><a href="mailto:walker@ltcc.edu">walker@ltcc.edu</a>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<h5><img src="https://www.ltcc.edu/_resources/images/optimized/math/brucearmbrust.jpg" alt="Bruce Armbrust, Math/Physics Faculty" width="130" height="194" /><strong><span style="font-family: helvetica,arial,sans-serif; font-size: 12pt;"><br /></span></strong><span style="font-family: helvetica,arial,sans-serif; font-size: 12pt;">Bruce Armbrust</span></h5>
+<div><span style="font-size: 10pt;"><span style="font-family: helvetica, arial, sans-serif;">Mathematics &amp; Physics Faculty Member<br /></span><span style="font-family: helvetica, arial, sans-serif;">(530) 541-4660 x 314<br /></span><span style="font-family: helvetica, arial, sans-serif;"><a href="mailto:armbrust@ltcc.edu">armbrust@ltcc.edu</a></span></span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Credentials:</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">B.A. DePauw University</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">M.S. Colorado State University</span></div>
+<pre>&nbsp;</pre>
+<p><span style="font-size: 10pt;"><a href="https://www.youtube.com/embed/yB261ocIkIw" target="_blank"><strong>See Bruce on Lake Tahoe TV!</strong></a></span></p>
+<div><img src="https://www.ltcc.edu/_resources/images/optimized/math/larrygreen.jpg" alt="Larry Green, Math Faculty" width="130" height="197" /><br /><a title="Larry Green's Webpage" href="https://www.ltcc.edu/academics/faculty/larrygreen.php" target="_blank">Larry Green, Ph.D.</a></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Mathematics Faculty Member<br /></span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">(530) 541-4660 x 341</span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;"><a href="mailto:lgreen@ltcc.edu">lgreen@ltcc.edu</a> </span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif;">Credentials:</span></span></div>
+<div><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">B.A. University of California, San Diego</span><br /><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Ph.D. University of California, Los Angeles</span></div>
+<p>&nbsp;</p>
+<p><img src="https://www.ltcc.edu/_resources/images/optimized/math/steverichardson.jpg" alt="Steve Richardson, Computer Information Systems, Mathematics Faculty" width="130" height="175" /></p>
+<div><span style="font-size: 12pt; font-family: helvetica,arial,sans-serif;">Steve Richardson</span></div>
+<div><span style="font-size: 12pt;"><span style="font-family: helvetica, arial, sans-serif; font-size: 10pt;">Mathematics Faculty Member<br /></span><span style="font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif;">(530) 541-4660 x 333</span><span style="font-family: helvetica,arial,sans-serif;"></span></span></span><br /><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"></span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><a href="mailto:richardson@ltcc.edu">richardson@ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif;">Credentials:</span></span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">B.S. Oregon State University</span><br /><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">M.S. Iowa State University</span></div>
+<div><span style="font-size: 12pt;">&nbsp;</span></div>
+<p><img src="https://www.ltcc.edu/_resources/images/optimized/math/helenshen.jpg" alt="Helen Shen, Math Faculty" width="130" height="198" /><span style="font-size: 12pt;"><span style="font-family: helvetica,arial,sans-serif;"></span></span></p>
+<div><span style="font-size: 12pt;"><span style="font-family: helvetica,arial,sans-serif;">Helen Shen</span></span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Mathematics Faculty Member<br /></span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">(530) 541-4660 x 364</span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><a href="mailto:shen@ltcc.edu">shen@ltcc.edu</a></span></div>
+<div>&nbsp;<span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"></span><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><br />Credentials:</span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">B.S. National Taiwan Normal University</span><br /><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">M.A. California State University, Long Beach</span></div>
+<p>&nbsp;</p>
+<p><img src="https://www.ltcc.edu/_resources/images/optimized/math/wynnwalker.jpg" alt="Wynn Walker, Math Faculty" width="130" height="199" /></p>
+<div><span style="font-size: 12pt; font-family: helvetica,arial,sans-serif;">Wynn Walker, Ph.D.</span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Mathematics/Basic Skills Faculty Member<br /></span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">(530) 541-4660 x 728</span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><a href="mailto:walker@ltcc.edu">walker@ltcc.edu</a></span></div>
+<div>&nbsp;<span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"></span><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;"><br />Credentials:</span></div>
+<div><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">B.S. Massachusetts Institute of Technology</span><br /><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">M.S. University of California, Los Angeles</span><br /><span style="font-size: 10pt; font-family: helvetica, arial, sans-serif;">Ph.D. University of California, Los Angeles</span></div>
+<div>&nbsp;</div>
+<h5>&nbsp;</h5></ouc:div>
+  	
+</document>

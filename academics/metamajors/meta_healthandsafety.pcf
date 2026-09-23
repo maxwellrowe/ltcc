@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Health &amp; Public Safety</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Health &amp; Public Safety</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="true">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="false">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Health &amp; Public Safety</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p style="text-align: center;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health, Public Safety" width="308" height="335" /></p>
+<p style="text-align: left;">Learn how to support physical and mental health at Lake Tahoe Community College to help people and communities thrive. Get the skills to work effectively in a team that saves lives during emergency situations. Get employed in counseling, emergency medicine, law enforcement, medical administration, or firefighting.</p>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="Apply Now" href="https://www.ltcc.edu/admissions/index.php" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a title="Visit Campus" href="https://www.ltcc.edu/admissions/campustours.php" target="_blank" rel="noopener">Visit Campus</a></td>
+<td><a title="Create a Plan" href="https://www.ltcc.edu/campusresources/counseling.php" target="_blank" rel="noopener">Create a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: left;">&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Addiction Studies</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree:<span>&nbsp;</span></span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/addiction_studies.php">Addiction Studies</a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificate:&nbsp;</span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/addiction_studies.php">Addiction Studies</a></div>
+<div>&nbsp;</div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Computer &amp; Information Systems</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree: </span></strong></strong></div>
+<div style="padding-left: 60px;"><a title="CIS Page" href="https://www.ltcc.edu/academics/academic_programs/cis.php" target="_blank" rel="noopener">Computer &amp; Information Systems &ndash; IT Technician Cybersecurity</a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificates:</span></strong></strong></div>
+<div style="padding-left: 60px;"><a title="Computer &amp; Information Systems &ndash; IT Technician Cybersecurity, Certificate of Achievement " href="https://www.ltcc.edu/academics/academic_programs/cis.php" target="_blank" rel="noopener">Computer &amp; Information Systems &ndash; IT Technician Cybersecurity, Certificate of Achievement </a></div>
+<div style="padding-left: 60px;"><a title="Computer &amp; Information Systems &ndash; Employable Skills Certificate" href="https://www.ltcc.edu/academics/academic_programs/cis.php" target="_blank" rel="noopener"> Computer &amp; Information Systems &ndash; Employable Skills Certificate</a></div>
+<p>&nbsp;</p>
+</div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Criminal Justice</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<div>
+<div style="padding-left: 30px;">&nbsp;<strong><strong><span>&bull; Associate Degree:<span>&nbsp;</span></span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php">Criminal Justice</a></div>
+</div>
+</div>
+<div>
+<div style="padding-left: 30px;"><strong><strong><span>&nbsp;&bull; Associate Degree for Transfer:<span>&nbsp;</span></span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php"><span>Criminal Justice - Administration of Justice</span></a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&nbsp;&bull; Certificates: </span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php">Criminal Justice, Certificate of Achievement</a></div>
+</div>
+<div>&nbsp;</div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Dental Assisting</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Certificates:&nbsp;</span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/allied_health/dental_assisting.php">Dental Assisting, Certificate of Achievement</a></div>
+<div style="padding-left: 30px;">&nbsp;</div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Emergency Medical Technician (EMT)</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px;">&nbsp;<strong><strong><span>&bull; Certificates:&nbsp;</span></strong></strong><a href="https://www.ltcc.edu/academics/academic_programs/allied_health/emt.php">Emergency Medical Technician, Employable Skills Certificate</a></p>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Fire</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Associate Degrees:</span></strong></strong></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625702}}">Fire Academy</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625703}}">Fire Officer</a></div>
+<div style="padding-left: 60px; text-align: left;">- <a href="{{f:11107518}}">Fire Science</a></div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Certificates:</span></strong></strong></div>
+<div style="padding-left: 60px;">-&nbsp;<a href="{{f:10625702}}">Fire Academy, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625703}}">Fire Officer, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">- <a href="{{f:11107518}}">Fire Science, Certificate of Achievement</a></div>
+<div style="padding-left: 60px;">&nbsp;</div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><span style="font-size: 24px;"><strong>Forestry</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<strong>&nbsp; &nbsp; &nbsp; &bull; Associate Degree: </strong><a style="background-color: rgba(225, 225, 235, 0.05);" href="https://www.ltcc.edu/academics/academic_programs/forestry.php">Forestry</a></div>
+<div><strong>&nbsp; &nbsp; &nbsp; &bull; Certificates:</strong></div>
+<div><a style="background-color: rgba(225, 225, 235, 0.05);" href="https://www.ltcc.edu/academics/academic_programs/forestry.php">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Forestry, Certificate of Achievement</a></div>
+<div><a style="background-color: rgba(225, 225, 235, 0.05);" href="https://www.ltcc.edu/academics/academic_programs/forestry.php">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - Forestry, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;">
+<div style="padding-left: 60px;">&nbsp;</div>
+</div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Kinesiology</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree for Transfer:<span>&nbsp;</span></span></strong></strong></div>
+<div style="padding-left: 70px;"><a href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php">- Kinesiology</a></div>
+<div style="padding-left: 70px;">- <a href="https://www.ltcc.edu/academics/academic_programs/kinesiology.php">Nutrition</a></div>
+<div>&nbsp;</div>
+<div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Medical Office Assistant</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="padding-left: 30px;"><strong><strong><span>&bull; Associate Degree:<span>&nbsp;</span></span></strong></strong><a href="{{f:10625726}}">Medical Office Assistant: Administrative</a></p>
+</div>
+</div>
+<div>
+<div style="padding-left: 30px;"><strong><strong><span>&bull;&nbsp;Certificates:</span></strong></strong></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625726}}">Medical Office Assistant: Administrative, Certificate of Achievement </a></div>
+<div style="padding-left: 60px;">- <a href="{{f:10625726}}">Medical Office Assistant, Part 1, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;"><a href="{{f:10625726}}">- Medical Office Assistant, Part 2, Employable Skills Certificate</a></div>
+<div>&nbsp;</div>
+</div>
+<div>
+<div>
+<div>
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><strong><span style="font-size: 18pt;">Wilderness Education</span></strong></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div style="padding-left: 30px;">
+<div>
+<div>
+<p style="padding-left: 30px;"><strong><span>&bull; Associate Degree:&nbsp;</span></strong><a href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php"><span>Wilderness Education and Outdoor Leadership</span></a></p>
+</div>
+</div>
+<div>
+<div style="padding-left: 30px;"><strong><span>&bull;&nbsp;Certificates:</span></strong></div>
+</div>
+</div>
+<div style="padding-left: 60px;">- <a href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php">Search &amp; Rescue, Employable Skills Certificate</a></div>
+<div style="padding-left: 60px;">- <a href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php">Wilderness Medicine, Employable Skills Certificate</a></div>
+</div>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:<br /><a href="mailto:enrollment@ltcc.edu">enrollment@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 494-2584</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:206756}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Art  </parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title></title>
+		<meta name="Description" content="Art" />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Art</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/Art/reid2.jpg" alt="Art" width="1631" height="1148" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#apply">Apply Now</a></td>
+<td><a href="#visit">Visit Campus</a></td>
+<td><a href="#info">Request Info</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Art degree program at Lake Tahoe Community College is designed to provide a balanced foundation in both studio art and art history. Its curriculum is focused to meet the needs of art students who are initially developing skill and concepts as well as those experienced students who seek further development. The Art Department is committed to a structured environment in which faculty and students work closely together in an atmosphere which is responsive, supportive, and facilitates experimentation.</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/photography/lester.jpg" alt="Photography" width="1631" height="1093" /></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;" width="918">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 12pt;">A.A. in Art</span></p>
+</td>
+<td>
+<p><em><strong>A. GENERAL EDUCATION REQUIREMENTS</strong></em><br />See current catalog for details.</p>
+<p><em><strong>B. REQUIRED COURSES</strong></em><br /><strong>39.25 units distributed as follows:</strong></p>
+<p><strong>1. All courses from the following (19.25 units):</strong><br />ART 101 Art History: Prehistoric - Islamic (4)<br />ART 102 Art History: Medieval Europe - Renaissance (4)<br />ART 103 Art History: Baroque - Contemporary (4)<br />ART 118 Color (4)<br />ART 122 Art Exhibit Production (1.25)<br />ART 228A Professional Skills for Artists (2)<br /><br /><strong>2. Select one course from the following (4 units):</strong><br />ART 114 Beginning Drawing from Observation (4)<br />ART 115 Drawing: Wet Media (4)<br />ART 116 Drawing: Concept and Image (4)</p>
+<p><strong>3. Select one course from the following (4 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 113 Three-Dimensional Design (4)</p>
+<p><strong>4. Minimum of 12 total units from any three of the seven&nbsp;areas:</strong><br />a. &nbsp;ART 214 Advanced Drawing from Observation (4)<br />&nbsp; &nbsp; ART 215 Advanced Drawing: Wet Media (4)<br />&nbsp; &nbsp; ART 216 Advanced Drawing: Concept and Image (4)<br />&nbsp; &nbsp; ART 241B Portfolio Development: Drawing 1 (4)</p>
+<p>b. &nbsp;ART 210A Beginning Watercolor Painting (4)<br />&nbsp; &nbsp; ART 210B Advanced Watercolor Painting (4)<br />&nbsp; &nbsp; ART 211 Painting I (4)<br />&nbsp; &nbsp; ART 212 Painting II (4)<br />&nbsp; &nbsp; ART 234 Figure Painting (4)<br />&nbsp; &nbsp; ART 240 Painting: Narrative and Symbolism (4)<br />&nbsp; &nbsp; ART 241A Portfolio Development: Painting 1 (4)</p>
+<p>c. &nbsp;ART 213 Beginning Figure Drawing (4)<br />&nbsp; &nbsp; ART 220A Figure Sculpture I (4)<br />&nbsp; &nbsp; ART 220B Figure Sculpture II (4)<br />&nbsp; &nbsp; ART 220C Figure Sculpture III (4)<br />&nbsp; &nbsp; ART 223 Intermediate Figure Drawing (4)<br />&nbsp; &nbsp; ART 224 Portraiture (4)<br />&nbsp; &nbsp; ART 233 Advanced Figure Drawing (4)<br />&nbsp; &nbsp; ART 241C Portfolio Development: Figure 1 (4)</p>
+<p>d. ART 221A Beginning Relief Printmaking (4)<br />&nbsp; &nbsp; ART 221B Advanced Relief Printmaking (4)<br />&nbsp; &nbsp; ART 221C Beginning Monotype Printmaking (4)<br />&nbsp; &nbsp; ART 221D Advanced Monotype Printmaking (4)<br />&nbsp; &nbsp; ART 221E Beginning Intaglio Printmaking (4)<br />&nbsp; &nbsp; ART 221F Advanced Intaglio Printmaking (4)</p>
+<p>e. ART 201A Mixed Media Sculpture I (4)<br />&nbsp; &nbsp; ART 201B Mixed Media Sculpture II (4)<br />&nbsp; &nbsp; ART 219A Metal Sculpture I (4)<br />&nbsp; &nbsp; ART 219B Metal Sculpture II (4)<br />&nbsp; &nbsp; ART 219C Metal Sculpture III (4)<br />&nbsp; &nbsp; ART 219D Metal Sculpture IV (4)</p>
+<p>f. &nbsp;ART 142 Black and White Photography I (4)<br />&nbsp; &nbsp; ART 143 Black and White Photography II (4)<br />&nbsp; &nbsp; ART 145A Landscape Photography (A) (4)<br />&nbsp; &nbsp; ART 146 Digital Photography I (4)<br />&nbsp; &nbsp; ART 147 Photojournalism (4)<br />&nbsp; &nbsp; ART 148 Digital Photography II (4)<br />&nbsp; &nbsp; ART 244 Color Photography (4)<br />&nbsp; &nbsp; ART 247 Portrait Photography (4)<br />&nbsp; &nbsp; ART 248 Commercial Photography (4)</p>
+<p>g. &nbsp;ART 119A Beginning Ceramics I (4)<br />&nbsp; &nbsp; ART 120A Intermediate Ceramics I (4)<br />&nbsp; &nbsp; ART 239A Advanced Ceramics I (4)</p>
+<p><strong><em>C. ELECTIVE UNITS to bring the total to 90.</em></strong></p>
+</td>
+</tr>
+<tr>
+<td>A.A. in Art New Media</td>
+<td>
+<p><em><strong>A. GENERAL EDUCATION REQUIREMENTS</strong></em></p>
+<p>See current catalog&nbsp;for details.</p>
+<p><em><strong>B. REQUIRED COURSES</strong></em><br /><strong>30 units distributed as follows:</strong></p>
+<p>All courses from the following (30 units):<br />ART 103 Art History: Baroque - Contemporary (4)<br />ART 111 Two-Dimensional Design (4)<br />ART 118 Color (4)<br />ART 135A Digital Imaging I (4)<br />ART 146 Digital Photography I (4)<br />ART 228A Professional Skills for Artists (2)<br />DMA 112 Introduction to Digital Media Arts (4)<br />DMA 121 Artistic Concepts for the Web (4)</p>
+<p><strong>AREAS OF CONCENTRATION: (Choose one option)</strong><br />In addition to the required core courses listed above, students seeking an Art New Media degree must select a single area of concentration from the four listed. Students must complete all required courses within the single area of concentration selected.</p>
+<p>&nbsp;</p>
+<hr />
+<p><strong>1. Art New Media: ILLUSTRATION</strong></p>
+<p><strong>All courses as follows (12 units):</strong><br />ART 114 Beginning Drawing from Observation (4)<br />ART 135B Digital Imaging II (4)<br />DMA 111 Introduction to Animation (4)<br /><em><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 42</strong></em></p>
+<hr />
+<p>&nbsp;<strong>2. Art New Media: PHOTOGRAPHY</strong></p>
+<p><strong>Select three courses from the following (12 units):</strong><br />ART 135B Digital Imaging II (4)<br />ART 142 Black and White Photography I (4)<br />ART 147 Photojournalism (4)<br />ART 148 Digital Photography II (4)<br /><em><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 42</strong></em></p>
+<hr />
+<p><strong>3. Art New Media: VIDEO</strong></p>
+<p><strong>All courses as follows (12 units):</strong><br />DMA 101 Introduction to Video Editing: YouTube to<br />Hollywood (4)<br />DMA 102 Intermediate Digital Video Editing (4)<br />DMA 103 Film Production I (4)<br /><em><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 42</strong></em></p>
+<p>&nbsp;</p>
+<hr />
+<p><strong>4. Art New Media: AUDIO</strong></p>
+<p><strong>All courses as follows (12.75 units):</strong><br />MUS 111 Basic Music Theory I (4.75)<br />MUS 118A Beginning MIDI Applications (2)<br />MUS 119A Pro Tools 101: Pro Tools Fundamentals I (3)<br />MUS 119B Pro Tools 110: Pro Tools Fundamentals II (3)<br /><em><strong>TOTAL UNITS IN MAJOR (INCLUDING CORE) = 42.75</strong></em></p>
+<hr />
+<p><em><strong>C. ELECTIVE UNITS to bring the total to 90.</strong></em></p>
+</td>
+</tr>
+<tr>
+<td><span>AA-T&nbsp;Degree in Studio Arts&nbsp;</span></td>
+<td>&nbsp;
+<p><span style="font-size: 12pt;">To obtain the Associate in Arts in Studio Arts for Transfer degree, students must complete the following requirements:</span><br /><span style="font-size: 12pt;">1. Completion of 60 semester units or 90 quarter units that are eligible for transfer to the California State University, including both of the&nbsp;following:</span><br /><span style="font-size: 12pt;">(A) The Intersegmental General Education Transfer Curriculum (IGETC) or the California State University General Education -Breadth Requirements.</span><br /><span style="font-size: 12pt;">(B) A minimum of 18 semester units or 27 quarter units in a major or area of emphasis, as determined by the community college district.</span><br /><span style="font-size: 12pt;">2. Obtainment of a minimum grade point average of 2.0.</span></p>
+<p><strong><em>A. GENERAL EDUCATION REQUIREMENTS</em></strong><br />See current catalog&nbsp;for details.</p>
+<p><em><strong>B. REQUIRED COURSES</strong></em><br /><strong>36 units distributed as follows:</strong></p>
+<p><strong>1. All courses from the following (12 units):</strong><br />ART 101 Art History: Prehistoric &ndash; Islamic (4)<br />ART 102 Art History: Medieval Europe &ndash; Renaissance (4)<br />ART 103 Art History: Baroque &ndash; Contemporary (4)</p>
+<p><strong>AND select two of the following courses (8 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 113 Three-Dimensional Design (4)<br />ART 114 Beginning Drawing from Observation (4)</p>
+<p><strong>2. Select four courses from the following (16 units):</strong><br />ART 118 Color (4)<br />ART 119A Beginning Ceramics I (4)<br />ART 142 Black and White Photography I (4)<br />ART 146 Digital Photography I (4)<br />ART 201A Mixed Media Sculpture I (4)<br />ART 211 Painting I (4)<br />ART 213 Beginning Figure Drawing (4)<br />ART 221A Beginning Relief Printmaking (4)<br />DMA 112 Introduction to Digital Media Arts (4)</p>
+<p><strong><em>C. ELECTIVE UNITS to bring the total to 90.</em></strong></p>
+</td>
+</tr>
+<tr>
+<td><span>Certificate of Achievement, Art</span></td>
+<td>
+<p><span>A certificate in Art is designed to provide a body of historical, conceptual and technical experiences that will prepare a developing artist for career opportunities in the field of fine arts,&nbsp;commercial art, gallery and museum operations, and art media retail business. Technical positions in art sculpture foundry, medical illustration, and related areas are additional options. The Art Certificates are offered in the following concentrations: Drawing, Painting, Figure Studies, Printmaking, Sculpture, Photography, and Ceramics.</span></p>
+<p>&nbsp;</p>
+<p><em><strong>A. REQUIRED COURSES:</strong></em><br /><strong>35.25 units distributed as follows:</strong></p>
+<p><strong>All courses from the following (11.25 units):</strong><br />ART 103 Art History: Baroque - Contemporary (4)<br />ART 118 Color (4)<br />ART 122 Art Exhibition Production (1.25)<br />ART 228A Professional Skills for Artists (2)</p>
+<p><strong>One selected from the following (4 units):</strong><br />ART 114 Beginning Drawing from Observation (4)<br />ART 115 Drawing: Wet Media (4)<br />ART 116 Drawing: Concept and Image (4)</p>
+<p><strong>One selected from the following (4 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 113 Three-Dimensional Design (4)</p>
+<p><em><strong>Areas of Concentration: (Choose any option)</strong></em><br /><strong>In addition to the required core courses listed above, students seeking an Art Certificate must select an area of concentration.</strong><span>&nbsp;</span>Multiple areas of concentrations may be achieved by completing an additional 16 units in any of the following areas listed. Required core courses cannot be duplicated.</p>
+<p><strong>1. ART: DRAWING</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 114 Beginning Drawing from Observation (4)<br />ART 115 Drawing: Wet Media (4)<br />ART 116 Drawing: Concept and Image (4)<br />ART 214 Advanced Drawing from Observation (4)<br />ART 215 Advanced Drawing: Wet Media (4)<br />ART 216 Advanced Drawing: Concept and Image (4)</p>
+<hr />
+<p><strong>2. ART: PAINTING</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 210A Beginning Watercolor Painting (4)<br />ART 210B Advanced Watercolor Painting (4)<br />ART 211 Painting I (4)<br />ART 212 Painting II (4)<br />ART 234 Figure Painting (4)<br />ART 240 Painting: Narrative and Symbolism (4)</p>
+<hr />
+<p><strong>3. ART: FIGURE STUDIES</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 213 Beginning Figure Drawing (4)<br />ART 220A Figure Sculpture I (4)<br />ART 223 Intermediate Figure Drawing (4)<br />ART 224 Portraiture (4)<br />ART 233 Advanced Figure Drawing (4)<br />ART 234 Figure Painting (4)</p>
+<hr />
+<p><strong>4. ART: PRINTMAKING</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 221A Beginning Relief Printmaking (4)<br />ART 221B Advanced Relief Printmaking (4)<br />ART 221C Beginning Monotype Printmaking (4)<br />ART 221D Advanced Monotype Printmaking (4)<br />ART 221E Beginning Intaglio Printmaking (4)<br />ART 221F Advanced Intaglio Printmaking (4)</p>
+<p><strong>5. ART: SCULPTURE</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 201A Mixed Media Sculpture I (4)<br />ART 201B Mixed Media Sculpture II (4)<br />ART 219A Metal Sculpture I (4)<br />ART 219B Metal Sculpture II (4)<br />ART 219C Metal Sculpture III (4)<br />ART 219D Metal Sculpture IV (4)<br />ART 220A Figure Sculpture I (4)<br />ART 220B Figure Sculpture II (4)<br />ART 220C Figure Sculpture III (4)</p>
+<hr />
+<p><strong>6. ART: PHOTOGRAPHY</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 142 Black and White Photography I (4)<br />ART 143 Black and White Photography II (4)<br />ART 146 Digital Photography I (4)<br />ART 148 Digital Photography II (4)<br />ART 244 Color Photography (4)<br />ART 247 Portrait Photography (4)<br />ART 248 Commercial Photography (4)</p>
+<hr />
+<p><strong>7. ART: CERAMICS</strong><br /><strong>Select four from the following (16 units):</strong><br />ART 119A Beginning Ceramics I (4)<br />ART 119B Beginning Ceramics II (4)<br />ART 120A Intermediate Ceramics I (4)<br />ART 120B Intermediate Ceramics II (4)<br />ART 239A Advanced Ceramics I (4)<br />ART 239B Advanced Ceramics II (4)</p>
+<hr /></td>
+</tr>
+<tr>
+<td><span>Certificate, Photography</span></td>
+<td>
+<p><em><strong>Program Learning Outcomes</strong></em><br /><em>&bull; Apply current photographic/digital processes.</em><br /><em>&bull; Manually operate traditional and digital camera formats from 35mm to large format cameras.</em><br /><em>&bull; Operate commercial studio equipment.</em><br /><em>&bull; Correctly utilize traditional photographic processes and digital applications.</em><br /><em>&bull; Be fluent in design and compositional concepts, and be able to apply these to the photographic and digital arts.</em><br /><em>&bull; Recognize master photographers and traditional historical processes, as well as alternative processes.</em><br /><em>&bull; Assemble a portfolio of their work.</em></p>
+<p><em><strong>A. REQUIRED COURSES:</strong></em><br /><strong>38 units distributed as follows:</strong></p>
+<p><strong>1. All courses from the following (30 units):</strong></p>
+<p>ART 111 Two-Dimensional Design (4)<br />ART 141 The History of Photography (4)<br />ART 142 Black and White Photography I (4)<br />ART 143 Black and White Photography II (4)<br />ART 146 Digital Photography (4)<br />ART 148 Digital Photography II (4)<br />ART 228A Professional Skills for Artists (2)<br />ART 244 Color Photography (4)</p>
+<p><strong>2. Two courses from the following (8 units):</strong><br />ART 135A Digital Imaging I (4)<br />ART 135B Digital Imaging II (4)<br />ART 145A Landscape Photography (A) (4)<br />ART 147 Photojournalism (4)<br />ART 242 Black and White Photography III (4)<br />ART 247 Portrait Photography (4)<br />ART 248 Commercial Photography (4)</p>
+</td>
+</tr>
+<tr>
+<td><span><span>Employable Skills Certificate</span></span></td>
+<td>
+<p><span>Photography/Digital Photography is a dynamic and exciting field exploring artistic and commercial applications, as well as digital technology. The photography certificate programs at Lake Tahoe Community College give students a solid foundation in a variety of photographic and digital areas.</span></p>
+<p><span><span>This employable skills certificate program provides photographic and digital experiences that equip the students for a variety of entry-level career applications. The program is designed to prepare the student for entry-level positions in the fields of traditional photography, photojournalism, commercial photography, digital photography, digital imaging, and new digital media.</span></span></p>
+<p><em><strong>A. Traditional Photography I:&nbsp;This program is designed to prepare the student for an entry-level position in the field of Traditional Photography.</strong></em></p>
+<p><strong>All courses from the following (16 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 141 History of Photography (4)<br />ART 142 Black and White Photography I (4)<br />ART 143 Black and White Photography II (4)</p>
+<p><em><strong>TOTAL UNITS (including required courses) = 16</strong></em></p>
+<hr />
+<p><strong><em>B. Traditional Photography II:&nbsp;This program is designed to prepare the student for an advanced level position in the field of Traditional Photography.</em></strong></p>
+<p><strong>All courses from the following (8 units):</strong><br />ART 242 Black and White Photography III (4)<br />ART 244 Color Photography (4)</p>
+<p><strong>Two courses selected from the following (8 units):</strong><br />ART 145A Landscape Photography (A) (4)<br />ART 147 Photojournalism (4)<br />ART 247 Portrait Photography (4)<br /><em><strong>TOTAL UNITS (including required courses) = 16</strong></em></p>
+<hr />
+<p><em><strong>C. Photojournalism:&nbsp;This program is designed to prepare the student for an entry-level position in the field of Photojournalism.</strong></em></p>
+<p><strong>All courses from the following (16 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 142 Black and White Photography I (4)<br />ART 146 Digital Photography I (4)<br />ART 147 Photojournalism (4)</p>
+<p><em><strong>TOTAL UNITS (including required courses) = 16</strong></em></p>
+<p>&nbsp;</p>
+<hr />
+<p><em><strong>D. Commercial Photography:&nbsp;This program is designed to prepare the student for an entry-level position in the field of Commercial Photography.</strong></em></p>
+<p><strong>All courses from the following (16 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 244 Color Photography (4)<br />ART 247 Portrait Photography (4)<br />ART 248 Commercial Photography (4)</p>
+<p><strong>One course selected from the following (4 units):</strong><br />ART 135A Digital Imaging I (4)<br />ART 135B Digital Imaging II (4)<br />ART 146 Digital Photography I (4)</p>
+<p><em><strong>TOTAL UNITS (including required courses) = 20</strong></em></p>
+<hr />
+<p><em><strong>E. Digital Photography:&nbsp;This program is designed to prepare the student for an entry-level position in the field of Digital Photography or as a Digital Photo Specialist.</strong></em></p>
+<p><strong>All courses from the following (16 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 142 Black and White Photography I (4)<br />ART 146 Digital Photography I (4)<br />ART 148 Digital Photography II (4)</p>
+<p><strong>One course selected from the following (4 units):</strong><br />ART 135A Digital Imaging I (4)<br />ART 135B Digital Imaging II (4)</p>
+<p><em><strong>TOTAL UNITS (including required courses) = 20</strong></em></p>
+<hr />
+<p><em><strong>F. Digital Media:&nbsp;This program is designed to prepare the student for an entry-level position in the field of New Digital Media.</strong></em></p>
+<p><strong>All courses from the following (16 units):</strong><br />ART 111 Two-Dimensional Design (4)<br />ART 135A Digital Imaging I (4)<br />ART 135B Digital Imaging II (4)<br />ART 146 Digital Photography I (4)</p>
+<p><em><strong>TOTAL UNITS (including required courses) = 16</strong></em></p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><span><span>Pathways to Completion</span></span></td>
+<td>
+<p><span><a title="Pathways to Completion-Photography &amp; Digital Photography" href="https://www.ltcc.edu/_resources/pdfs/cte/2017-18_photography_flyer_spring18.pdf" target="_blank">View Pathways to Completion-Photography &amp; Digital Photography</a></span></p>
+</td>
+</tr>
+<tr>
+<td><span><span>Career Outlook</span></span></td>
+<td>
+<p><span><span>Individuals in the photography field may work as landscape, portrait or commercial photographers, camera operators in television broadcasting or motion picture studios, or photojournalists with newspapers, magazines, advertising agencies and government agencies.</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br /> One College Drive <br /> South Lake Tahoe, CA 96150 <br /> <a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /> <a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">Art</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/john-kingsbury.jpg" alt="John Kingsbury" width="130" height="130" /></td>
+<td>John Kingsbury</td>
+<td>Business Instructor</td>
+<td>&nbsp;email@email.com</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/eric-sturgess.jpg" alt="Eric Sturgess" width="130" height="130" /></td>
+<td>Eric Sturgess</td>
+<td>Business Instructor</td>
+<td>
+<p><a href="mailto:email@email.com">email@email.com</a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><p>&nbsp;Faculty</p>
+<div><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/phyllisshafer.jpg" alt="Phyllis Shafer" width="133" height="206" /><br /><span style="font-size: 12pt;"><a href="http://www.phyllisshafer.com/">Phyllis Shafer<br /></a><span style="font-size: 10pt;">Art Faculty Member</span></span><br /><span style="font-size: 10pt;">(530) 541-4660 x&nbsp;251<br /><a>Shafer@ltcc.edu</a> </span><br /><span style="font-size: 12pt;"></span></div>
+<div><span style="font-size: 10pt;">&nbsp; Credentials:</span><br /><span style="font-size: 10pt;"></span><span style="font-size: 10pt;">B.A. State University of New York, Potsdam<br /></span><span style="font-size: 10pt;">M.F.A. University of California, Berkeley<br /><br /></span></div>
+<div><span style="font-size: 10pt;"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/faculty_and_staff_photos/bryanyerian.jpg" alt="Bryan Yerian" width="133" height="196" /></span></div>
+<div><a href="http://www.bryanyerian.com"><span style="font-size: 12pt;">Bryan Yerian</span><br /></a><span style="font-size: 10pt;">Art Faculty Member</span><br /><span style="font-size: 10pt;">(530) 541-4660 x&nbsp;228</span><br /><span style="font-size: 10pt;"><a href="mailto:Yerian@ltcc.edu">Yerian@ltcc.edu</a></span></div>
+<div><span style="font-size: 10pt;">&nbsp; Credentials:</span></div>
+<div><span style="font-size: 10pt;"> B.A. Humboldt State University</span><br /><span style="font-size: 10pt;"> M.F.A. San Jos&eacute; State University</span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">Office Hours:<br />M, W 12:00pm-1:30pm, F102<br />T, Th 12:00pm-1:00pm, F102</span></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 14pt;"><span style="font-size: 12pt;">Pat Leonard-Heffner<br /><span style="font-size: 10pt;">Digital Media Arts Coordinator</span><br /><span style="font-size: 10pt;">(530) 541-4660 x 234</span><br /><span style="font-size: 10pt;"><a href="mailto:Leonard@ltcc.edu">Leonard@ltcc.edu</a></span></span></span><span style="font-size: 14pt;"><span style="font-size: 12pt;"><span style="font-size: 10pt;">&nbsp;</span><br /><span style="font-size: 10pt;"></span></span></span></div>
+<div>&nbsp;&nbsp;<span style="font-size: 14pt;"><span style="font-size: 12pt;"><span style="font-size: 10pt;">Credentials:</span><br /><span style="font-size: 10pt;">M.A. California State University, Sacramento</span><br /><span style="font-size: 10pt;">M.F.A. Long Island University</span><br /></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 14pt;"><span style="font-size: 12pt;">Art Adjunct Faculty</span></span></div>
+<div><span style="font-size: 10pt;">Greg Drinkwine</span></div>
+<div><span style="font-size: 10pt;">Jim Grant</span></div>
+<div><span style="font-size: 10pt;">Amy Hackleman</span></div>
+<div><span style="font-size: 10pt;">Pat Leonard-Heffner</span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.catherinelockner.com/" target="_blank">Catherine Lockner</a><br /></span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.colleensidey.com" target="_blank">Colleen Sidey</a></span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.shelleyhocknell.com" target="_blank">Shelley Zentner</a></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;">Art New Media Adjunct Faculty</span></div>
+<div><span style="font-size: 10pt;">Travis Steil, <a href="mailto:trsteil@mail.ltcc.edu">trsteil@mail.ltcc.edu</a></span><span style="font-size: 10pt;"><br />Kurt Molnar, <a href="mailto:kkmolnar@mail.ltcc.edu">kkmolnar@mail.ltcc.edu</a></span><span style="font-size: 10pt;"><br />Donna Eyestone, <a href="mailto:dmeyestone@mail.ltcc.edu">dmeyestone@mail.ltcc.edu</a></span><span style="font-size: 10pt;"><br />Ginger Winters, <a href="mailto:gkwinters@mail.ltcc.edu">gkwinters@mail.ltcc.edu</a></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 12pt;">Art Studio Technicians</span></div>
+<div><span style="font-size: 10pt;">2D Studio</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 335<br /></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">3D Studio</span></div>
+<div><span style="font-size: 10pt;">Francis Rider</span></div>
+<div><span style="font-size: 10pt;">(530) 541-4660 x 360<br /></span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:rider@ltcc.edu">rider@ltcc.edu</a></span></div>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Department of Corrections &amp; Rehabilitation</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="false">Two Column</option>
+<option value="three" selected="true">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Department of Corrections &amp; Rehabilitation</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Department of Corrections &amp; Rehabilitation</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/deptcorrectionsphoto.jpg" alt="Criminal and Administration of Justice" width="800" height="533" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="Apply Now" href="https://www.ltcc.edu/admissions/index.php" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a title="Visit Campus" href="https://www.ltcc.edu/admissions/campustours.php" target="_blank" rel="noopener">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><span><a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major Icon" width="249" height="269" /></a></span></p>
+<p><span>Did you know that as an employee of the California Department of Corrections and Rehabilitation (CDCR), you have the opportunity for a pay increase and promotional opportunities by taking college classes?&nbsp;</span>LTCC is proud to partner with CDCR to offer online coursework in Criminal Justice &amp; Administration of Justice for all CDCR employees.</p>
+<p>Elevate your education completely online: take individual courses, earn a certificate, or complete your Associate Degree in the comfort of your own home. Per quarter unit cost is just $31 for California residents, and residents can <a title="Financial Aid homepage" href="https://www.ltcc.edu/admissions/financial-aid/index.php">apply for the Board of Governors fee waiver</a> to potentially make their coursework free.</p>
+<hr />
+<p>Below are the answers to commonly asked questions regarding Lake Tahoe Community College&rsquo;s online Criminal Justice program for California Department of Corrections and Rehabilitation employees:</p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">How much does the program cost?</span></td>
+<td>
+<p>Classes are $31/quarter unit for California residents, so it depends on how many courses you take: Multiply your total units enrolled by $31. There is also a $3 Health Service fee per quarter, and a $2 Student Representation Fee per quarter. For more information, please visit the <a title="Credit &amp; Refund Policy" href="https://www.ltcc.edu/admissions/creditandrefund.php">Credit &amp; Refund Policy</a> page.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">How many units can I apply and transfer from other colleges?</span></td>
+<td>
+<p>There is no limit on &ldquo;transfer in&rdquo; units, but you must complete at least 18 quarter units at Lake Tahoe Community College to get a degree from the college.&nbsp;A minimum of 12 quarter units must be completed at LTCC to receive a Certificate from the college.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">How long will the certificate/degree program take?</span></td>
+<td>
+<p>It depends on the individual person and scheduling.&nbsp;The Certificate is 28 quarter units; the Associate degree is 90 quarter units. Pending course availability, students enrolling in a full load could be able to complete the Certificate in one year. Degree sequences can typically take two to three years to complete, depending upon the number of units a student might be transferring in with, the availability of courses offered, and how many units per quarter they enroll in.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Is there a discount?</span></td>
+<td>
+<p>Fees are set at the regular, low-cost rate of $31/quarter unit for CA residents. Residency requirements (set by the California Chancellor&rsquo;s Office for Community Colleges) apply to CDCR employees who wish to take coursework through Lake Tahoe Community College. Effective January 1, 2023, students from Nevada and other Participating Western States can apply for a limited annual number of CNIAA and WUE ($46.50/unit) <a href="https://www.ltcc.edu/admissions/interstateagreement2022.pdf" target="_blank" rel="noopener">discounted tuition waivers</a>. For more information, call (530) 541-4660 x211 or email enrollmentservices@ltcc.edu. Visit LTCC's <a href="https://www.ltcc.edu/admissions/forms.php" target="_blank" rel="noopener">Forms</a> webpage to download the application.</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Is Lake Tahoe Community College on the semester system or the quarter system?</span></td>
+<td>
+<p>LTCC is on the quarter system. This means new courses are offered every couple of months!</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Am I eligible for promotions by taking classes?</span></td>
+<td>
+<p><span>Please contact your immediate supervisor at CDCR for the answer to that question. LTCC is not able to answer questions regarding CDCR policies and regulations.</span></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Are&nbsp;there On the Job (OJT) opportunities for CDCR employees?</span></td>
+<td>
+<p>Questions regarding On the Job (OJT) training opportunities should be directed to CDCR employees&rsquo; immediate supervisor, IST office, or Training Coordinator.&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Will my training in the academy count towards my certificate/degree?</span></td>
+<td>
+<p>LTCC will award Credit for Prior Experiential Learning for CDCR employees who have successfully graduated from the CDCR&rsquo;s <u>Basic Correctional Officer Academy</u> for the following courses:</p>
+<ul>
+<ul>
+<li>CRJ 101 <em>Introduction to Criminal Justice </em>(4 units)</li>
+<li>CRJ 110 <em>Introduction to Corrections</em> (4 units)</li>
+</ul>
+</ul>
+<p>To be eligible for the 8 units of Credit for Prior Experiential Learning, CDCR employees must:</p>
+<ul>
+<li>Be registered for classes at LTCC and in good academic standing with a 2.0 GPA or higher, and</li>
+<li>Be verified as successful completers of the CDCR Basic Correctional Officer Academy*</li>
+</ul>
+<p><span style="font-size: 10pt;">*Correctional Officers must fill out a form at the academy in order for the CDCR to release that information.&nbsp; The process begins with the employee requesting a Training Confirmation Letter from the CDCR Curriculum Testing Office in the Office of Training &amp; Professional Development. Once the employee has signed the release, the CDCR will send the letter directly to Lake Tahoe Community College with the information as to when they attended the academy.</span></p>
+<p><span style="font-size: 10pt;"><em>The student&rsquo;s academic record shall be clearly annotated to reflect that the credit was earned for prior experiential learning. Credits acquired for prior experiential learning are not applicable to meeting of such unit load requirements as Selective Service deferment, Veterans or Social Security benefits. </em></span></p>
+<p><span>Credits for prior experiential learning <strong>are eligible</strong> to satisfy degree requirements for both the </span><u>Criminal Justice Associate in Arts degree</u><span> and the </span><u>Administration of Justice Associate in Science for Transfer degree</u><span>. </span><em>Please note that Credits for prior experiential learning may or may not be eligible for transfer into other California Community Colleges or California State Universities, and are subject to any respective institutional policies with regards to acceptance or transfer.</em></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Does LTCC offer Associate Degrees for Transfer?</span></td>
+<td>
+<p>Yes, LTCC offers a number of Associate Degrees for Transfer, including an Associate in Science for Transfer (AS-T) in <a href="https://www.ltcc.edu/_resources/pdfs/catalog/program_pages/criminal_justice_admin_of_justice_ast.pdf">Administration of Justice</a>. Associate Degrees for Transfer are intended for students who plan to complete a bachelor&rsquo;s degree in a similar major at a CSU campus. Students completing these degrees are guaranteed admission to the CSU system, but not a particular campus or major. Please contact a <a href="mailto:counselor@ltcc.edu">counselor</a> for more details.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">
+<p>department of corrections &amp; rehabilitation</p>
+</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">contact</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img title="carlie murphy" src="{{f:69441779}}" alt="Carlie Murphy, Director of Forestry, Fire, and Public Safety" width="150" height="150" /></td>
+<td>Carlie Murphy</td>
+<td>Director of Forestry, Fire, and Public Safety</td>
+<td>carlie.murphy@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img title="ace daly" src="{{f:79922921}}" alt="Ace Daly, Career and Technical Education Specialist 2" width="150" height="150" /></td>
+<td>Ace Daly</td>
+<td>Career and Technical Education Specialist II</td>
+<td>ace.daly@ltcc.edu</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><div>
+<div><span style="font-size: 1.25rem; background-color: #fffdfd;"><span><img class="" title="CDCR Logo" src="https://www.ltcc.edu/_resources/images/cdcr_logo.jpg" alt="CDCR Logo" width="250" height="250" /></span></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 1.25rem; background-color: #fffdfd;"><span style="font-size: 1.25rem; background-color: #fffdfd;">Request More Information</span></span><hr /><span style="font-size: 1.25rem; background-color: #fffdfd;"></span></div>
+</div>
+<h5>{{a:117801}}</h5></ouc:div>
+	
+</document>

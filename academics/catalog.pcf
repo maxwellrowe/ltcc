@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode>
+		<style>
+			.center {
+			    text-align: center;
+			}
+			
+			.catalogImg {
+				border: solid 1px;
+				border-radius: 5px;
+			}
+			
+			.catalogImg:hover {
+				box-shadow: 0 0 25px #00f;
+			}
+			
+		</style>
+	</headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Catalog</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Catalog</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>College Catalog | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore LTCC’s College Catalog for detailed information on academic programs, course descriptions, degree requirements, policies, and student resources—all in one convenient place." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p>The Lake Tahoe Community College catalog includes extensive information about our campus, services, programs, and classes. The catalog is published annually each June for the upcoming academic year.</p>
+<div class="btn-wrapper"><a class="custom-btn-blue" title="Open the 2026/2027 LTCC Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/about-this-catalog" target="_blank" rel="noopener">View 26/27 Catalog</a></div>
+<p style="text-align: center;">&nbsp;</p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordian, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">&nbsp;Prior Year Catalog<br /></span></td>
+<td>
+<p><a title="View last year's catalog" href="https://ltcc.elumenapp.com/catalog/2025-2026/about-this-catalog" target="_blank" rel="noopener">2025-2026 Catalog</a></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">&nbsp;Archived Catalogs</span></td>
+<td>
+<p><a title="View last year's catalog" href="https://ltcc.elumenapp.com/catalog/2024-2025/welcome" target="_blank" rel="noopener">2024-2025 Catalog</a></p>
+<p><a href="https://ltcc.elumenapp.com/catalog/2023-2024/welcome" target="_blank" rel="noopener">2023-2024 Catalog</a></p>
+<p><a href="https://ltcc.elumenapp.com/catalog/2022-2023/welcome" target="_blank" rel="noopener">2022-2023 Catalog</a></p>
+<p><a href="https://ltcc.elumenapp.com/catalog/2021-2022/welcome">2021-2022 Catalog</a></p>
+<p><a href="https://www.ltcc.edu/_resources/pdfs/catalog/2020catalog_fnl_edit_7.24.20.pdf">2020-2021 Catalog</a> / <a href="https://www.ltcc.edu/_resources/pdfs/catalog/2020_2021catalogaddenda_6_4_2021.pdf">2020-2021 Catalog Addenda</a></p>
+<p><a title="2019-2020 Catalog" href="https://www.ltcc.edu/_resources/pdfs/catalog/2019-20_ltcc_catalog_web_rev4.pdf" target="_blank" rel="noopener">2019-2020&nbsp;Catalog&nbsp;</a><span>/<span>&nbsp;</span></span><a title="2019-2020 Catalog Addenda" href="https://www.ltcc.edu/_resources/pdfs/catalog/2019_20_catalogaddenda_6_9.pdf" target="_blank" rel="noopener">2019-2020 Catalog Addenda&nbsp;</a></p>
+<p><a title="2018-2019 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/catalog/2018-19_ltcc_catalog_web_add3.pdf" target="_blank" rel="noopener">2018-2019 Catalog</a><span>&nbsp;/<span>&nbsp;</span></span><a title="2018-2019 Catalog Addenda" href="https://www.ltcc.edu/_resources/pdfs/catalog/2018_catalog_addendum_03-012219.pdf" target="_blank" rel="noopener">2018-2019 Catalog Addenda</a></p>
+<p><a title="2017-2018 catalog" href="https://www.ltcc.edu/_resources/pdfs/catalog/2017-18_catalog_rev4.pdf" target="_blank" rel="noopener">2017-2018 Catalog</a> / <a title="2017-2018 Catalog Addenda" href="https://www.ltcc.edu/_resources/pdfs/catalog/2017_18_catalog_addenda_020518.pdf" target="_blank" rel="noopener">2017-2018 Catalog Addenda</a></p>
+<p><a title="2016-2017 Catalog" href="https://www.ltcc.edu/_resources/pdfs/catalog/2016-17_catalog_021617_update.pdf" target="_blank" rel="noopener">2016-2017 Catalog</a><span>&nbsp;/&nbsp;</span><a title="2016-2017 Catalog Addenda" href="https://www.ltcc.edu/_resources/pdfs/catalog/2016_catalog_addenda_rev02-2017.pdf" target="_blank" rel="noopener">2016-2017 Catalog Addenda</a></p>
+<p><a title="2015-2016 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/2015_2016_ltcc_catalog.pdf">2015-2016&nbsp;</a></p>
+<p><a title="2014-2015 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/2014_15_catalog.pdf">2014-2015&nbsp;</a></p>
+<p><a title="2013-2014 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/2013_2014_catalog_rev052913.pdf">2013-2014</a></p>
+<p><a title="2012-2013 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/2012_2013_ltcc_catalog.pdf">2012-2013</a></p>
+<p><a title="2011-2012 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/lo_ltcc_2011_catalog_final.pdf">2011-2012</a></p>
+<p><a title="2010-2011 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/2010_catalog.pdf">2010-2011</a></p>
+<p><a title="2009-2010 Catalog PDF" href="https://www.ltcc.edu/_resources/pdfs/schedule_of_classes/archived_course_catalogs/pio09_10_catalog.pdf">2009-2010</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<div><span style="font-size: 10pt;">The College Catalog is in Adobe Acrobat (PDF) format. You may view or print individual pages, or save the documents to your hard drive for viewing or printing at your convenience.</span></div></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>&nbsp;</h5>
+<p>&nbsp;</p></ouc:div>
+  	
+</document>

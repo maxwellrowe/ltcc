@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Fire Academy</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="true">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Lake Tahoe Fire Academy | Lake Tahoe Community College</title>
+		<meta name="Description" content="The South Lake Tahoe Community College Fire Academy trains dedicated, service-oriented students for careers in fire suppression and management. LTCCFA cadets receive hands-on training from experienced professionals and graduate with the necessary certifications to work in wildland or structural firefighting at various levels. The academy is a two-quarter program offered in partnership with local fire districts, with classes held at South Lake Tahoe and Carson City, NV and transportation support available for cadets." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider"><ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>{{a:89870}}</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>LTCC Fire Academy</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img style="margin: 5px;" src="{{f:69210995}}" alt="LTCCFA Final Exams_Winter 2024" width="1080" height="720" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a title="Visit Campus" href="https://www.ltcc.edu/admissions/campustours.php" target="_blank" rel="noopener">Visit Campus</a></td>
+<td><a title="Make a Plan" href="https://www.ltcc.edu/campusresources/counseling.php" target="_blank" rel="noopener">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: left;"><span>In order to attend the Fire Academy at the start of Fall, students must successfully complete the program&rsquo;s prerequisites, including orientation, which can be found at the bottom of this page.</span> <a href="mailto:fireacademyinfo@mailltcc.onmicrosoft.com">Connect with an LTCCFA staff member</a> with questions.</div>
+<div style="text-align: left;"><hr /></div>
+<h5 style="text-align: left;"><span style="font-size: 12pt;"> <a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"> <img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major Icon" width="240" height="261" /> </a> </span></h5>
+<h5 style="text-align: left;"><span style="font-size: 18px;">You Hear the Call - Get the Skills &amp; Certifications You Need to Serve with</span></h5>
+<div style="text-align: left;">
+<h5 style="text-align: left;"><span style="font-size: 12pt;"> <a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"> <img style="float: left; margin: 10px;" src="{{f:62699059}}" alt="Fire Academy" width="160" height="161" /> </a> </span></h5>
+<p><span style="font-size: 18px;"><strong>Lake Tahoe Community College Fire Academy</strong></span></p>
+<p><strong>Fire Fighter 1 Academy &ndash; Class 21 (Fall 2026)</strong></p>
+<p>LTCC's accredited Fire Academy prepares students for entry-level employment within the fire service through comprehensive hands-on training, physical conditioning, classroom instruction, and scenario-based exercises aligned with California State Fire Training standards.</p>
+<p>Applications for Fire Fighter 1 Academy &ndash; Class 21 will be accepted from:</p>
+<p><strong>Friday, May 15, 2026 at 5:00 pm through Wednesday, July 15, 2026 at 5:00 pm</strong></p>
+<p>Application Link:</p>
+<p><a title="Open link" href="https://forms.office.com/pages/responsepage.aspx?id=O0cY84hQ6US-5r6o3PWF42y3WuGexQBKhmC3bJkeZRRUN0hCTlM0SlJDRjg1ODkyTEJKTTcxQ1hINyQlQCN0PWcu&amp;route=shorturl" target="_blank" rel="noopener"> Lake Tahoe Community College Fire Academy Application - Class 21 - Fall 2026 &ndash; Fill out form </a></p>
+<p><strong>*NOTE: You cannot register for Fire Academy pt 1, FIR-170L, until you receive notification from acadmey staff that you've been selected to register (after the application review and lottery process).&nbsp;&nbsp;</strong></p>
+<p><em>*All Fire Academy/LTCC related communications should be coming from, and will be replied to, your LTCC email. Be sure to have an active account with LTCC, an assigned student ID # and LTCC email address before submitting your application &amp; supporting materials.&nbsp;</em></p>
+<p><strong>Academy Schedule</strong></p>
+<p><strong>Fall 2026 Academy Schedule:</strong><br />Wednesday, Friday, and Saturday<br />7:00 AM &ndash; 6:00 PM</p>
+<p><strong>Mandatory Preparatory Meeting</strong></p>
+<p>All applicants are required to attend the mandatory Class 21 Prep Meeting:</p>
+<p><strong>Saturday, August 1, 2026</strong><br />9:00 AM &ndash; 12:00 PM<br />LTCC Campus &ndash; Classroom G6</p>
+<p>Applicants unable to attend due to extenuating circumstances must submit an email request for an excused absence to:</p>
+<p><a href="mailto:fireacademyinfo@mailltcc.onmicrosoft.com">fireacademyinfo@mailltcc.onmicrosoft.com</a></p>
+<p>Please include:</p>
+<ul>
+<li>Full Name</li>
+<li>Student ID Number</li>
+<li>Reason for requesting an excused absence</li>
+</ul>
+<p>Applicants will receive an approval or denial response from Fire Academy staff. Failure to attend the mandatory prep meeting without prior approval of absence may result in removal from the selection process.</p>
+<p><strong>Application Selection Process</strong></p>
+<p>The LTCC Fire Academy will be implementing a lottery process to select prospective students. If all pre-requisities have been met, or are currently "in progress," and a student's application has been accepted, that student will be entered into a lotto pool, subject to randomized selection.</p>
+<p>*Meeting minimum requirements does not guarantee admission. Furthermore, if a student does get selected via the lottery, but their prerequisites have not been met by the time of the Mandatory Prep Meeting, that student may be dropped from the roster and the spot will open for an alternate.&nbsp;</p>
+<p>All applicants will receive a status notification by:</p>
+<p><strong>Friday, July 17, 2026 by 5:00 PM</strong></p>
+<p>Applicants will be notified whether they were:</p>
+<ul>
+<li>Selected</li>
+<li>Placed as an Alternate</li>
+<li>Not Selected</li>
+</ul>
+<p><strong>Fire Academy Prerequisites</strong></p>
+<p>Applicants must either have completed or currently be enrolled in (&ldquo;in progress&rdquo;) the following prerequisites:</p>
+<ol>
+<li>FIR-170K: Fire Academy Orientation P.R.E.P. Class</li>
+</ol>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; <strong>*The next Fire Academy Orientation P.R.E.P. Class is scheduled: July 10<sup>th</sup> - July 13<sup>th</sup>, 2026</strong></p>
+<ol>
+<li>HEA-140E: EMT Program, or equivalent EMT training from another accredited program</li>
+</ol>
+<p>Proof of completion or proof of current enrollment is required.</p>
+<p><strong>CPAT Requirement Update</strong></p>
+<p>The CPAT, Candidate Physical Ability Test, prerequisite has been waived as a requirement for acceptance into the Class 21 Fire Academy. However, all enrolled students will still be required to successfully complete the CPAT by the conclusion of the Class 21 Fire Academy in March 2027.</p>
+<p><strong>Required Documentation</strong></p>
+<p>All required documents must be converted to PDF format and emailed to:</p>
+<p><a href="mailto:fireacademyinfo@mailltcc.onmicrosoft.com">fireacademyinfo@mailltcc.onmicrosoft.com</a></p>
+<p><strong>Email Subject Line Format</strong></p>
+<p>Fire Academy &ndash; Class 21 Application: Last Name, First Name</p>
+<p><strong>Email Content Must Include</strong></p>
+<ul>
+<li>Last Name, First Name</li>
+<li>Student ID Number, or indicate &ldquo;Need to Apply&rdquo;</li>
+<li>Status of prerequisites: &ldquo;Completed&rdquo; or &ldquo;In Progress&rdquo;</li>
+<li>List of attached documents</li>
+</ul>
+<p><strong>Acceptable Verification Documents</strong></p>
+<p><strong>FIR-170K Verification, any 1 of the following:</strong></p>
+<ul>
+<li>Unofficial college transcript</li>
+<li>Certificate of Completion</li>
+<li>Current class schedule if enrolled</li>
+</ul>
+<p><strong>EMT Verification, any 1 of the following:</strong></p>
+<ul>
+<li>EMT Certificate of Completion from an accredited program</li>
+<li>NREMT Certification</li>
+<li>State or County EMT Card/License</li>
+<li>College Transcript</li>
+<li>Current class schedule if enrolled</li>
+</ul>
+<p><strong>Physical Ability Assessment Examination</strong></p>
+<p>A Physical Ability Assessment Examination will be administered on the first day of the Fire Academy.</p>
+<p>This assessment evaluates:</p>
+<ul>
+<li>Cardiovascular endurance</li>
+<li>Muscular strength</li>
+<li>Muscular endurance</li>
+<li>Agility</li>
+<li>Functional movement</li>
+</ul>
+<p>The examination consists of timed and performance-based exercises reflective of firefighting operations.</p>
+<p>Applicants will receive two attempts to successfully complete each required exercise. Failure to successfully complete any exercise on the second attempt may result in dismissal from the Fire Academy.</p>
+<p>Additional information regarding the Physical Ability Assessment Examination will be provided via email following application submission.</p>
+<p><strong>Academy Expectations</strong></p>
+<p>Due to safety concerns and regulatory requirements, students should understand that Fire Academy training includes:</p>
+<ul>
+<li>Physically demanding activities</li>
+<li>Extended operational periods</li>
+<li>Hands-on training evolutions</li>
+<li>Paramilitary verbal and nonverbal communication</li>
+<li>Team-based performance expectations</li>
+</ul>
+<p>Applicants should be in good physical condition and capable of safely participating in rigorous training activities.</p>
+<p><strong>Estimated Program Costs</strong></p>
+<p>Estimated LTCC Fire Academy overall cost for a CA resident (costs are subject to change due to the dynamic nature of materials fees and do not include out-of-state tuition, if applicable):</p>
+<p><strong>$3,300 &ndash; $3,800</strong></p>
+<p>*Please review the <a title="Fire Academy Cost Sheet PDF" href="{{f:81566858}}" target="_blank" rel="noopener"><strong>Fire Academy Cost Sheet</strong></a> for a detailed breakdown of associated expenses.</p>
+<p><strong>Important Information</strong></p>
+<p>Applicants are strongly encouraged to regularly monitor their email for important updates, scheduling information, and Fire Academy communications.</p>
+<p>If you have additional questions regarding the application process, please include them in the same email when submitting your prerequisite documentation.</p>
+<p>The Fire Academy team looks forward to seeing you on August 1<sup>st</sup>, 2026, for the Mandatory Class 21 Prep Meeting and appreciates your interest in pursuing a career in the fire service.</p>
+</div></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Faculty</h5>
+<hr />
+<div><span style="font-size: 12pt;">Kileigh Labrado<br /></span></div>
+<div><span style="font-size: 10pt;">LTBFA Coordinator &amp; Instructor</span></div>
+<div><span style="font-size: 10pt;">Office Hours: By Appointment</span></div>
+<div><span style="font-size: 10pt;"><a href="mailto:kelabrado@mail.ltcc.edu">kelabrado@mail.ltcc.edu</a> <br /></span></div>
+<div>&nbsp;</div>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<div><a title="Lake Tahoe Basin Fire Academy Facebook page" href="https://www.facebook.com/Lake-Tahoe-Basin-Fire-Academy-115156144282/?hc_ref=SEARCH" target="_blank">Follow us on Facebook!</a></div>
+<div>&nbsp;</div>
+<div style="text-align: left;">Interested in attending the LTBFA? Fill out the form below:</div>
+<div>&nbsp;</div>
+<div>{{a:175583}}</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div></ouc:div>
+  	
+</document>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode>
+	
+
+	<script src="https://js.adsrvr.org/up_loader.1.1.0.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            ttd_dom_ready( function() {
+                if (typeof TTDUniversalPixelApi === 'function') {
+                    var universalPixelApi = new TTDUniversalPixelApi();
+                    universalPixelApi.init("dchihe9", ["b8umpjg"], "https://insight.adsrvr.org/track/up");
+                }
+            });
+        </script>
+	
+	
+
+	
+	
+	
+	
+	
+	</footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Bachelor's Degree Programs</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Bachelor's Degree Programs</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Bachelor's Degree Programs | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore bachelor’s degree opportunities available through LTCC partnerships and transfer pathways. Take the next step toward advanced education and career success." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p><img style="display: block; margin-left: auto; margin-right: auto;" src="{{f:23909618}}" alt="Student" width="1080" height="367" /></p>
+<hr />
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Lake Tahoe Community College has partnered with Washington State University Everett to offer a competitively priced degree option that can be earned on LTCC's South Shore campus. LTCC staff are working with other universities to offer more degree options in the near future.</p>
+<p>Designed as the hub for access to higher education, the Lisa Maloff University Center brings the most modern and effective instructional, multimedia and telecommunications equipment to engage students with. The design of the 7000-square-foot center weaves mountain modern elements and upscale touches with abundant natural light to create bright and airy spaces for students to gather. In addition to the classrooms, the building offers a breakout room that can be utilized by students enrolled in classes at the University Center.</p>
+<p><strong>Degrees Offered Include:</strong><br /><a href="https://www.ltcc.edu/academics/wsu.php" target="_blank" rel="noopener">BA in Hospitality Business Management</a></p>
+<hr />
+<h4>Scholarships</h4>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b><br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Byron Marlowe Scholarship</td>
+<td>
+<p>This scholarship was established to honor the passion, work, and love for life of Washington State University professor and LTCC adjunct instructor Byron Marlowe. The scholarship provides support to LTCC students who are pursuing a bachelor's degree in <a href="https://www.ltcc.edu/academics/wsu.php" target="_blank" rel="noopener">Hospitality Business Management</a> through WSU's Global Campus.</p>
+<p>To be eligible, you must enroll or be enrolled in courses related to a degree in Hospitality Business Management through WSU's Global Campus program at the Lisa Maloff University Center AND one or more of the following:</p>
+<ul>
+<li>A graduate or current student of LTCC and/or;</li>
+<li>A current culinary apprentice with the Tahoe Culinary Academy at LTCC and/or;</li>
+<li>A current employee in the hospitality field working at any Tahoe area resort or property.</li>
+</ul>
+<p>To be considered for this scholarship, <a href="https://www.ltcc.edu/admissions/financial-aid/byronmarloweapplication.pdf" target="_blank" rel="noopener">fill out the PDF application</a> and email it to <a href="mailto:info@advance-learnearngrow.org">info@advance-learnearngrow.org</a> with "Byron Marlowe Scholarship" as the subject line.</p>
+</td>
+</tr>
+<tr>
+<td>Mark Davis Hospitality Scholarship</td>
+<td>
+<p>Thanks to a generous donation from <a href="https://advance-learnearngrow.org/" target="_blank" rel="noopener">ADVANCE</a>, we are proud to offer the Mark Davis Hospitality Scholarship program, which will provide financial assistance to students pursuing a higher education course or degree at the Lisa Maloff University Center (LMUC). The purpose of the scholarship is to provide up to four $500 awards to eligible students taking at least one course through Washington State University&rsquo;s School of Hospitality Business Management.</p>
+<p>To be eligible for the scholarship, students must:</p>
+<ul>
+<li>Enroll in a course or program with Washington State University&rsquo;s School of Hospitality Business Management at the LMUC.</li>
+<li>Complete the <a href="https://www.ltcc.edu/admissions/financial-aid/documents/lmucapplication2020.pdf" target="_blank" rel="noopener"><strong>Lisa Maloff University Center Scholarship Application</strong></a>.</li>
+<li>Preference given to students currently working in the hospitality industry.</li>
+<li>Scholarships may be available on an as needed/requested basis.</li>
+<li>Scholarship award is contingent upon enrollment in a class or program with Washington State University&rsquo;s School of Hospitality Business Management at the time of award distribution.</li>
+</ul>
+<p>Applications will be accepted until all scholarship funds have been allocated.</p>
+<p>For more information and/or to receive an application, please email <a href="mailto:gerdeman@ltcc.edu">Frank Gerdeman</a> with <a href="https://advance-learnearngrow.org/" target="_blank" rel="noopener">ADVANCE</a>.</p>
+</td>
+</tr>
+<tr>
+<td>Maloff Scholars</td>
+<td>
+<p>Thanks to another generous donation from Lisa Maloff, we are proud to offer the Maloff Scholars program, which provides financial assistance to students pursuing a bachelor&rsquo;s degree at the Lisa Maloff University Center (LMUC). The purpose of the scholarship is to provide 10 $2,000 awards to eligible students entering a bachelor&rsquo;s degree program with a partner institution at LTCC&rsquo;s LMUC.</p>
+<p>To be eligible for the scholarship, students must:</p>
+<ul>
+<li>Enroll full time in a bachelor&rsquo;s degree program onsite at the LMUC. Students seeking a graduate degree are not eligible at this time.</li>
+<li>Complete the <a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b45f7bb3-9015-4103-8d74-004e72b55315" target="_blank" rel="noopener"><strong>Lisa Maloff University Center Scholarship Application</strong></a>.</li>
+<li>Write a one-page letter explaining how they will use their education to continue Lisa&rsquo;s legacy of giving back to the community. (See details below.)</li>
+<li>Significant preference will be given to LTCC alumni who have graduated from LTCC within the previous year.</li>
+</ul>
+<p>Students applying for the scholarship must write a one-page letter explaining how they intend to carry on Lisa Maloff&rsquo;s legacy of giving back, and particularly to those in need. Lisa has become known as the &ldquo;Angel of Tahoe&rdquo; due to her spirit of giving and generous donations to the community. Students must demonstrate how, through their education at the LMUC, they intend to give back to the community and create a better world for those around them.</p>
+<p>Applications will be accepted until all scholarship funds have been allocated.</p>
+<p>For more information, contact:</p>
+<p>Financial Aid Office<br /><a href="mailto:financialaid@ltcc.edu">financialaid@ltcc.edu</a><br />(530) 541-4660 ext. 236</p>
+<p>University Center Coordinator<br /><a href="mailto:ucenter@ltcc.edu">ucenter@ltcc.edu</a><br />(530) 541-4660 ext. 266</p>
+</td>
+</tr>
+<tr>
+<td>University Center Foundation</td>
+<td>
+<p>Thanks to generous donor contributions to the <a href="https://www.ltcc.edu/giving/index.php">Lake Tahoe Community College Foundation</a>, we are proud to offer the University Center Foundation Scholarship program, which provides financial assistance to students pursuing an advanced degree at the Lisa Maloff University Center (LMUC). The intent of the scholarship is to provide 20 $1,000 awards to eligible students entering a bachelor&rsquo;s degree, master&rsquo;s degree or teaching credential program with a partner institution at LTCC&rsquo;s LMUC.</p>
+<p>To be eligible for the scholarship, students must:</p>
+<ul>
+<li>Enroll full time or part time in an advanced degree program onsite at the LMUC.</li>
+<li>Complete the <a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:b45f7bb3-9015-4103-8d74-004e72b55315" target="_blank" rel="noopener"><strong>Lisa Maloff University Center Scholarship Application</strong></a>.</li>
+<li>Significant preference will be given to LTCC alumni who graduated from LTCC within the previous year.</li>
+<li>Scholarship award is contingent upon enrollment in class at LMUC with a partner institution at the time of award distribution.</li>
+<li>Scholarship award can only be used for classes offered at the Lisa Maloff University Center.</li>
+</ul>
+<p>Applications will be accepted until all scholarship funds have been allocated.</p>
+<p>For more information, contact:</p>
+<p>Financial Aid Office<br /><a href="mailto:financialaid@ltcc.edu">financialaid@ltcc.edu</a><br />(530) 541-4660 ext. 236</p>
+<p>University Center Coordinator<br /><a href="mailto:ucenter@ltcc.edu">ucenter@ltcc.edu</a><br />(530) 541-4660 ext. 266</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><strong><a href="https://www.ltcc.edu/academics/lmucapplication2020.pdf" target="_blank" rel="noopener">APPLY NOW!</a></strong></p>
+</td>
+<td>
+<div><strong>Contact Us</strong></div>
+<div>{{a:242232}}<hr /></div>
+<div style="text-align: center;"><strong>Rent a Room</strong></div>
+<div style="text-align: center;"><a href="https://ltccmeetings.com" target="_blank" rel="noopener">Learn more</a> about room rentals at the University Center.<hr /></div>
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><span style="font-size: 24px;">Programs</span></p>
+<p><a href="https://www.ltcc.edu/academics/wsu.php" target="_blank" rel="noopener"><img style="float: left; margin: 15px;" src="https://www.ltcc.edu/_resources/images/wsu_everettlogo.png" alt="Washington State University Everett logo" width="360" height="80" /></a>Washington State University, a top-tiered research university, is now offering courses and a bachelor's degree in Hospitality Business Management (HBM) through WSU Everett.</p>
+<p style="padding-left: 60px;">For more information or to apply, visit the <a href="https://www.ltcc.edu/academics/wsu.php">WSU@LTCC</a> webpage.</p>
+<hr />
+<h5>Why Get Your Bachelor&rsquo;s at LTCC?</h5>
+<p>&nbsp;</p>
+<ul style="list-style-type: square;">
+<li>
+<p><strong>LEARN WHERE YOU LIVE</strong><img style="border: 5px white; float: right;" src="{{f:23905899}}" alt="University Center Commons" width="566" height="403" /></p>
+<p>Based on the number of students enrolled, some courses in these programs are taught at the Lisa Maloff University Center on LTCC's South Shore campus. Online options provide extra flexibility. Straightforward credit transfers and coordinated program curriculum.</p>
+</li>
+<li>
+<p><strong>PREPARE FOR SUCCESS!</strong></p>
+<p>Study with faculty who teach from personal experience, emphasizing hands-on learning and practical applications for 21st century careers. You can earn a degree from Washington State's nationally ranked Hospitality Business Management program, one of the top Hospitality schools in the country!</p>
+</li>
+<li>
+<p><strong>VALUE IN EDUCATION</strong></p>
+<p>Discounted tuition rates. Transfer your credits and pay only for the courses you need to graduate. With your first two years spent studying at LTCC, the total cost for any of these four-year degree programs can be under $25K for California residents. Financial aid, scholarships and student work opportunities are available!</p>
+</li>
+</ul>
+<hr /></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h4>Contact</h4>
+<hr />
+<h5><img style="vertical-align: top; margin: 5px;" src="https://www.ltcc.edu/_resources/images/ltcc_images/taraoffenbacher.jpg" alt="LMUC coordinator Tara Offenbacher" width="150" height="182" /></h5>
+<div><span style="font-size: 12pt;">Tara Offenbacher</span></div>
+<div><span style="font-size: 12pt;">Lisa Maloff University Center at</span></div>
+<div><span style="font-size: 12pt;">Lake Tahoe Community College</span></div>
+<div><span style="font-size: 12pt;">&nbsp;(530) 541-4660 x 266</span></div>
+<div><span style="font-size: 12pt;"><a>offenbacher@ltcc.edu</a></span></div>
+<div><span style="font-size: 12pt;">&nbsp;</span></div>
+<div><span style="font-size: 12pt;">Got questions? I'm here to help! Please contact me using this form:<br /></span></div>
+<div>&nbsp;</div>
+<div>&nbsp;{{a:242232}}</div>
+<div>&nbsp;</div></ouc:div>
+	
+</document>

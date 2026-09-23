@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Wilderness Education &amp; Outdoor Leadership    </parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title> Wilderness Education &amp; Outdoor Leadership Program | Avalanche Courses | Lake Tahoe Community College</title>
+		<meta name="Description" content="Explore Lake Tahoe Community College’s Wilderness Education and Outdoor Leadership Program. Develop leadership and technical skills through immersive courses like avalanche courses, in the Sierra Nevada, earning industry-recognized certifications from top organizations. Join us for a transformative learning experience." />
+	</ouc:properties>
+
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Wilderness Education &amp; Outdoor Leadership</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/wilderness/24_wildernessed.jpg" alt="Wilderness Tahoe Views" width="1080" height="718" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php" target="_blank" rel="noopener">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: left;">&nbsp;</div>
+<div>Lake Tahoe Community College&rsquo;s Wilderness Education and Outdoor Leadership Program challenges the status quo by thinking and educating differently. We do this so you can develop your leadership, technical, and teaching skills to become an impactful leader. Your classroom is Lake Tahoe and the Sierra Nevada, a premier wilderness environment. Come and join us - the mountains are calling!&nbsp;</div>
+<div>&nbsp;</div>
+<div>The purpose of the Wilderness Education and Outdoor Leadership (WEOL) program is to provide opportunities to cultivate premier leaders who primarily operate in a wilderness environment. In addition, theWEOL program fosters lifelong learning, develops responsible stewardship of wilderness resources, and encourages civic engagement. Both nationally and internationally recognized industry certifications are embedded within the elective WEOL Employable Certificates you can earn. These include the National Association for Search and&nbsp;Rescue, the American Avalanche Association and American Institute for Avalanche Research and Education, the American Mountain Guides Association, the International Rafting Federation, and the American Canoe Association, just to name a few.</div>
+<div>&nbsp;</div>
+<div>The WEOL program uses a holistic and experiential approach to all aspects of education within the curriculum. Our emphasis is on helping every student achieve their full potential while maintaining the highest technical standards.</div>
+<div>&nbsp;</div>
+<div><span style="font-size: 18px;"><strong>Visit <a href="https://www.wildernesseducation.info">Wilderness Education Info</a> for more registration and enrollment support.</strong></span></div>
+<div>&nbsp;</div>
+<div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a title="Link to Health Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_healthandsafety.php"><img style="float: left;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major Icon" width="194" height="211" /><img style="float: left;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/business-hospitality-leadership-white-back.jpg" alt="Business Meta Major Icon" width="215" height="213" /></a></div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: left;">&nbsp;</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<h6 class="snippet-spacer">&nbsp;</h6>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/_tsyCgpfyVg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-size: 12pt;">Associate of Arts, Wilderness Education and </span><span style="font-size: 12pt;">Outdoor Leadership</span></p>
+</td>
+<td>
+<div>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-c29a-72a7-93a8-b98217e260c5/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Certificates of Achievement</span></td>
+<td>
+<p><strong>OUTDOOR FOUNDATIONAL SKILLS- WILDERNESS MEDICINE</strong></p>
+<div>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-bb31-73de-9145-e0947bfbd113/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+<div style="margin: 20px 0 15px 0;"><hr /></div>
+<p style="margin: 20px 0 15px 0;"><strong>WILDERNESS EDUCATION AND OUTDOOR LEADERSHIP</strong></p>
+<div style="margin: 20px 0 15px 0;">
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-c22e-7ab2-83f8-fbcd67e14a4a/" target="_blank" rel="noopener"> &rarr; View Program Map</a></div>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Employable Skills Certificates</span></td>
+<td>
+<p><strong>BASIC MOUNTAIN GUIDE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/program,basic-mountain-guide-esc-summer-2021#mainContent" target="_blank" rel="noopener">&rarr; View Catalog</a></div>
+<hr />
+<p><strong>BASIC SKI GUIDE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/program,basic-ski-guide-esc-summer-2021#mainContent" target="_blank" rel="noopener">&rarr; View Catalog</a></div>
+<hr />
+<p><strong>CLIMBING INSTRUCTOR</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/program,climbing-instructor-esc-summer-2021#mainContent" target="_blank" rel="noopener">&rarr; View Catalog</a></div>
+<hr />
+<p><strong>SEA KAYAKING GUIDE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/program,sea-kayaking-guide-esc-summer-2021#mainContent" target="_blank" rel="noopener">&rarr; View Catalog</a></div>
+<hr />
+<p><strong>SEARCH AND RESCUE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/program,search-and-rescue-esc-summer-2021#mainContent" target="_blank" rel="noopener">&rarr; View Catalog</a></div>
+<hr />
+<p><strong>WHITEWATER RAFTING GUIDE</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Catalog" href="https://ltcc.elumenapp.com/catalog/2026-2027/program,whitewater-rafting-guide-esc-summer-2022#mainContent" target="_blank" rel="noopener">&rarr; View Catalog</a></div>
+<hr />
+<p><strong>WILDERNESS NATURALIST</strong></p>
+<div style="margin: 20px 0 15px 0;"><a class="custom-btn-blue-outline" style="padding: 8px 18px !important; font-size: 14px !important; display: inline-block;" title="View Program Map" href="https://pathways.ltcc.edu/program/019b1313-c501-74dc-ad70-3da31d57081d/" target="_blank" rel="noopener"> &rarr; View Program Map </a></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Pathway to Completion</span></td>
+<td>
+<p style="text-align: left;"><a title="Pathway to Completion " href="https://www.ltcc.edu/_resources/pdfs/academics/wilderness/weol_pathwaytosuccess_v2.pdf" target="_blank" rel="noopener">View Pathway to Completion </a></p>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Course Information&nbsp;&amp; Forms</span></td>
+<td>
+<div style="text-align: left;"><a href="https://www.ltcc.edu/_resources/pdfs/academics/wilderness/weoltextbooks_nov2020.pdf">Wilderness Education &amp; Outdoor Leadership Textbooks</a></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><a title="Assumption of Risk and Medical Form" href="https://na2.documents.adobe.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhB8jRpBktZjYrf4Ib0uJsBXGoZAuX2IviRSmnkw3Ar6EUDL9TadiRrfCzxgikqFW-8*" target="_blank" rel="noopener">Assumption of Risk and Medical Form</a></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><a title="AIARE Info &amp; Equipment List" href="https://drive.google.com/file/d/1Am8iwqyV3LwB6Ornl96u1suD6C--zuee/view?usp=sharing" target="_blank" rel="noopener">AIARE Info and Equipment List&nbsp;</a></div>
+<div style="text-align: left;">&nbsp;</div>
+<div style="text-align: left;"><a title="Leave No Trace Trainer and Equipment List" href="https://www.ltcc.edu/_resources/pdfs/academics/wilderness/lnt_trainer_infoandequipment_listfeb2020.pdf" target="_blank" rel="noopener">Leave No Trace Trainer and Equipment List</a></div>
+</td>
+</tr>
+<tr>
+<td><span style="font-size: 12pt;">Financial Aid &amp; Scholarships</span></td>
+<td>
+<div style="text-align: left;">
+<table class="ou-chevron-list"><caption style="font-size: 19.2px;">Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a style="transition-property: all;" href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a style="transition-property: all;" href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a style="transition-property: all;" href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="text-align: left;">There are <a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">A NUMBER OF STUDENT SCHOLARSHIPS</a>&nbsp;that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="text-align: center;">&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h5><span style="font-weight: 400;">Partners &amp; Affiliates</span></h5>
+<div style="text-align: center;">
+<table style="border-style: none;">
+<tbody>
+<tr>
+<td><a title="AIARE website" href="https://avtraining.org/" target="_blank" rel="noopener"><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/wilderness_ed/aiarelogo.jpg" alt="AIARE Logo" width="188" height="65" /></a></td>
+<td><a title="Leave No Trace website" href="https://lnt.org/" target="_blank" rel="noopener"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/wilderness_ed/lnt_proudpartner_color.jpg" alt="Leave Not Trace Center logo" width="128" height="77" /></a></td>
+<td><a title="USFS Website" href="https://www.fs.usda.gov/ltbmu/" target="_blank" rel="noopener"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/wilderness_ed/usfslogo.png" alt="USFS Logo" width="110" height="110" /></a></td>
+<td><a title="Sierra at Tahoe website" href="https://www.sierraattahoe.com/" target="_blank" rel="noopener"><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/wilderness/sierra_at_tahoe_logo.png" alt="Sierr at Tahoe Logo" width="175" height="76" /></a></td>
+<td><a title="Wilderness Medical Society website" href="https://wms.org/" target="_blank" rel="noopener"><img class="" src="https://www.ltcc.edu/_resources/images/ltcc_images/wilderness/wms_logo_affiliate.png" alt="WMS Logo" width="201" height="67" /></a></td>
+</tr>
+</tbody>
+</table>
+<img class="" style="float: left;" src="https://www.ltcc.edu/_resources/images/ltcc_images/wilderness/prescottlogo.png" alt="Prescott College Logo" width="225" height="38" /><span style="font-size: 10px;">Partnership with </span><a href="https://www.prescott.edu/">Prescott College</a> and their <a href="https://www.prescott.edu/adventure-education-ba">BA in Adventure Education</a></div>
+<div style="text-align: center;">Contact your <a href="mailto:counselor@ltcc.edu">LTCC Counselor</a> or the WEOL Program for additional information.</div>
+<div style="text-align: left;">
+<h5>&nbsp;</h5>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td><img src="{{f:70217680}}" alt="Dr. Clinton Culp" width="1080" height="1623" /></td>
+<td>
+<h5><span style="font-weight: 400;">Remembering Dr. Clinton Culp</span></h5>
+<p><span style="font-weight: 400;">LTCC's past Wilderness Education and Outdoor Leadership Director and Faculty Lead, Dr. Culp, was a vastly experienced and passionate educator with a long resume of accomplishments from his years in the military, and as an instructor at several different colleges. <a href="https://www.ltcc.edu/news/drclintonculp.php">Read about his life in our News section</a>, and please consider honoring his legacy by supporting current and future generations of Wilderness students at LTCC through <a href="https://ltccfoundation.org/scholarships/" target="_blank" rel="noopener">the Dr. Clinton Culp Memorial Scholarship for Outdoor Leaders</a>.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table class="ou-faculty-list"><caption>Faculty Listing</caption>
+<tbody>
+<tr>
+<th>Heading Top</th>
+<td colspan="4">wilderness education &amp; outdoor leadership</td>
+</tr>
+<tr>
+<th>Heading Bottom</th>
+<td colspan="4">Faculty</td>
+</tr>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Title</th>
+<th>Email</th>
+<th>Website</th>
+</tr>
+<tr>
+<td><img src="{{f:38816586}}" alt="Coyote Head" width="150" height="150" /></td>
+<td>Nate Smith</td>
+<td>WEOL Director and Faculty Lead</td>
+<td>
+<p>&nbsp;<a href="mailto:nate.smith@ltcc.edu">nate.smith@ltcc.edu</a></p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="https://www.ltcc.edu/_resources/images/damionestrada.png" alt="Damion Estrada" width="150" height="150" /></td>
+<td>Damion Estrada</td>
+<td>WEOL Program Coordinator/Instructor</td>
+<td><a href="mailto:estrada@ltcc.edu">estrada@ltcc.edu</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><img src="{{f:38816586}}" alt="Coyote Head" width="150" height="150" /></td>
+<td>Kendall Madsen</td>
+<td>WEOL Adjunct Faculty</td>
+<td><a href="mailto:ksmadsen@mail.ltcc.edu">ksmadsen@mail.ltcc.edu</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p></ouc:div>
+  	
+  	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h5>Contact</h5>
+<hr />
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/wilderness_ed/davereichel.jpg" alt="Dave Reichel, Wilderness Education Coordinator" width="133" height="196" /></p>
+<div style="text-align: left;"><strong><span style="font-family: helvetica,arial,sans-serif; font-size: 12pt;">David Reichel</span></strong></div>
+<div><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;">Wilderness Education Coordinator</span></div>
+<div><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;">(530) 541-4660 x<strong>&nbsp;</strong>463</span></div>
+<div><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;"><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;"><a href="mailto:reichel@ltcc.edu">reichel@ltcc.edu</a></span></span><hr /><span style="font-family: helvetica,arial,sans-serif; font-size: 10pt;"></span></div>
+<div>&nbsp;</div>
+<p><span style="font-size: 12pt;">Adjunct Faculty:<br /></span><strong><span style="font-size: 10pt;">Scott Gabler<br /></span></strong><span style="font-size: 10pt;">Office Hours:&nbsp;<br /></span><span style="font-size: 10pt;">Monday, 11:00am-12:00pm<br />LTCC Commons</span></p>
+<div><span style="font-size: 10pt;">&nbsp;</span></div>
+<p>Video</p>
+<p><iframe src="//www.youtube.com/embed/m_dnF-nO-j4" width="250" height="250" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<p>Photo Gallery</p>
+{{a:85752}}
+<p style="text-align: left;">&nbsp;</p>
+<p style="text-align: left;"><a href="https://www.ltcc.edu/web/academics/photo-gallery" target="_blank">WILDERNESS PHOTO GALLERY</a></p>
+<p>&nbsp;</p></ouc:div>
+  	
+</document>

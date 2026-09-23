@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">How To Use Program Mapper</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Program Mapper</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Program Mapper | Lake Tahoe Community College</title>
+		<meta name="Description" content="Use LTCC’s Program Mapper to explore degree pathways, view course sequences, and plan your academic journey toward graduation and transfer success." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><h2>About the Program Mapper</h2>
+<hr />
+<p><span>LTCC's Program Mapper helps you choose a path to an Associate degree, certificate, transfer to a four-year university, or the skills to start a career. For each program, you can see a quarter-by-quarter course plan from start to finish, plus occupation, salary, and job-demand data for that field.</span></p>
+<p><span>Each map shows </span><em>one</em><span> possible pathway, not a locked-in schedule &mdash; it's a starting point for planning, not a substitute for advising. </span><a href="https://www.ltcc.edu/campusresources/counseling.php">Meet with a counselor</a><span> to build a personalized education plan.</span></p>
+<p>&nbsp;</p>
+<h2>How to Use the Program Mapper</h2>
+<hr />
+<ol>
+<li>Select a <a href="https://www.ltcc.edu/academics/metamajors/index.php" target="_blank" rel="noopener">Meta Major</a> pathway below.</li>
+<li>Click a degree or certificate map within that pathway to open it.</li>
+<li>Review the quarter-by-quarter course plan, along with career, salary, and demand information for that field.</li>
+</ol>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="https://pathways.ltcc.edu/category/arts-languages-humanities/" target="_blank" rel="noopener"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/arts-languages-humanities-white-back.jpg" alt="Arts Meta Major icon" width="170" height="180" />&nbsp;</a> <a href="https://pathways.ltcc.edu/category/business-hospitality-leadership/" target="_blank" rel="noopener"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/business-hospitality-leadership-white-back.jpg" alt="Business Meta Major icon" width="181" height="179" /></a><a href="https://pathways.ltcc.edu/category/health-public-safety/" target="_blank" rel="noopener"> <img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/health-public-safety-white-back.jpg" alt="Health Meta Major icon" width="166" height="181" /> </a><a href="https://pathways.ltcc.edu/category/science-technology-environment/" target="_blank" rel="noopener"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/science-technology-environment-white-back.jpg" alt="Science Meta Major icon" width="189" height="187" />&nbsp;</a><a href="https://pathways.ltcc.edu/category/society-culture-education/" target="_blank" rel="noopener"><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/society-culture-education-white-back.jpg" alt="Society and Culture Meta Major icon" width="170" height="181" /></a></p>
+<ul>
+<li><a href="https://pathways.ltcc.edu/category/arts-languages-humanities/" target="_blank" rel="noopener">Arts, Languages &amp; Humanities</a></li>
+<li><a href="https://pathways.ltcc.edu/category/business-hospitality-leadership/" target="_blank" rel="noopener">Business, Hospitality &amp; Leadership</a></li>
+<li><a href="https://pathways.ltcc.edu/category/health-public-safety/" target="_blank" rel="noopener">Health &amp; Public Safety</a></li>
+<li><a href="https://pathways.ltcc.edu/category/science-technology-environment/" target="_blank" rel="noopener">Science, Technology &amp; Environment</a></li>
+<li><a href="https://pathways.ltcc.edu/category/society-culture-education/" target="_blank" rel="noopener">Society, Culture &amp; Education</a></li>
+</ul></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

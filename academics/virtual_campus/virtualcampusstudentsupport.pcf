@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Virtual Campus Student Support</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Virtual Campus Student Support</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="false">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="true">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Virtual Campus Student Support</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://www.ltcc.edu/_resources/images/virtual_campus/coyotestatue.jpg" alt="Coyote Statue" width="1289" height="659" /></p>
+<p style="text-align: center;">Resources for students learning remotely. This page will be updated as new resources become available &mdash; bookmark it and check back often.</p>
+<hr />
+<h2 style="text-align: center; color: #1b3a6b;">Welcome to Enhanced Virtual Education</h2>
+<p style="text-align: center;">Here are the essential tools you'll need for EVE:</p>
+<table style="width: 100%; border-collapse: separate; border-spacing: 16px; margin-bottom: 8px;">
+<tbody>
+<tr>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; width: 33%; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/canvaslogo250.jpg" alt="Canvas" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Canvas</h3>
+<p style="text-align: left;">LTCC uses Canvas for delivering Enhanced Virtual Education. It also provides access to 24/7 subject-specific tutoring and other free support services.</p>
+<p style="text-align: left;"><a href="https://laketahoecc.instructure.com/" target="_blank" rel="noopener">Login to Canvas &rarr;</a><br /><a href="https://www.ltcc.edu/academics/virtual_campus/newtocanvas.php">Canvas Tutorial &rarr;</a><br /><a href="https://community.canvaslms.com/t5/Gu%C3%ADa-del-Estudiante-de-Canvas/tkb-p/estaudiante" target="_blank" rel="noopener">Gu&iacute;a del Estudiante de Canvas &rarr;</a></p>
+</td>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; width: 33%; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/outlook250.jpg" alt="Outlook email logo" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">LTCC Email</h3>
+<p style="text-align: left;">All college communications will be sent to your LTCC email address. Don't miss important updates from your instructors and the college.</p>
+<p style="text-align: left;"><a href="https://passport.ltcc.edu" target="_blank" rel="noopener">Login to your email &rarr;</a></p>
+</td>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; width: 33%; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/zoom250.jpg" alt="Zoom logo" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Zoom</h3>
+<p style="text-align: left;">Zoom is free web conferencing software that lets you meet as a class or one-on-one with your instructor online.</p>
+<p style="text-align: left;"><a href="https://zoom.us/" target="_blank" rel="noopener">Connect now &rarr;</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 style="text-align: center; color: #1b3a6b;">Resources</h2>
+<p style="text-align: center;">We're open, virtually!</p>
+<table style="width: 100%; border-collapse: separate; border-spacing: 16px; margin-bottom: 8px;">
+<tbody>
+<tr>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; width: 33%; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/onlinebookstore.png" alt="Online Bookstore" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Online Bookstore</h3>
+<p style="text-align: left;">Purchase the textbooks you need online from the LTCC Marketplace.</p>
+<p style="text-align: left;"><a href="https://ltccmarketplace.getugear.com/" target="_blank" rel="noopener">Order your books now &rarr;</a></p>
+</td>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; width: 33%; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/chatbubbles250.jpg" alt="Cranium Cafe" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Chat LIVE!</h3>
+<p style="text-align: left;">LTCC provides many services via the Cranium Caf&eacute;, including live chat with counselors and departments.</p>
+<p style="text-align: left;"><a href="https://ltcc.craniumcafe.com/group/advising-counseling" target="_blank" rel="noopener">Make a counseling appointment &rarr;</a><br /><a href="https://ltcc.craniumcafe.com/login" target="_blank" rel="noopener">Search for a department &rarr;</a></p>
+</td>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; width: 33%; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/money250.jpg" alt="Financial support" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Financial Support</h3>
+<p style="text-align: left;">Connect with financial aid and scholarship resources online.</p>
+<p style="text-align: left;"><a href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid &rarr;</a><br /><a href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise &rarr;</a><br /><a href="https://www.ltcc.edu/admissions/financial-aid/ltcccares.php">CARES Grants &rarr;</a><br /><a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">Scholarships &rarr;</a></p>
+</td>
+</tr>
+<tr>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/books250.jpg" alt="Books" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Library</h3>
+<p style="text-align: left;">LTCC's library provides reference, research, and other services online, including tutoring and textbook loans.</p>
+<p style="text-align: left;"><a href="https://www.ltcc.edu/campusresources/library/index.php">eBooks for FREE &rarr;</a><br /><a href="https://bit.ly/LTCCtextbookrequest" target="_blank" rel="noopener">Request Quarterly Texts &amp; Materials &rarr;</a><br /><a href="https://ltcc.craniumcafe.com/login" target="_blank" rel="noopener">Tutoring &rarr;</a></p>
+</td>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/highfive250.jpg" alt="Student support services" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Student Services</h3>
+<p style="text-align: left;">All student resources are available in a virtual environment &mdash; from food assistance to forms and mental health support.</p>
+<p style="text-align: left;"><a href="https://www.ltcc.edu/admissions/index.php">Apply to LTCC &rarr;</a><br /><a href="https://www.ltcc.edu/campusresources/basicneeds.php">Basic Needs Center &rarr;</a><br /><a href="https://www.ltcc.edu/academics/metamajors/index.php">Explore Meta Majors &rarr;</a><br /><a href="https://www.ltcc.edu/admissions/forms.php">Forms &rarr;</a><br /><a href="https://www.ltcc.edu/campusresources/counseling.php">Mental Health Services &rarr;</a><br /><a href="https://www.ltcc.edu/academics/scheduleofclasses.php">Schedule of Classes &rarr;</a></p>
+</td>
+<td style="background: #ffffff; border: 1px solid #d5dee6; border-radius: 6px; padding: 24px; vertical-align: top; text-align: center;"><img style="margin: 0 auto 16px;" src="https://www.ltcc.edu/_resources/images/person250.jpg" alt="Technology" width="120" height="120" />
+<h3 style="color: #1b3a6b; margin-bottom: 8px;">Technology</h3>
+<p style="text-align: left;">Access free technology and <a href="https://collegebuys.org" target="_blank" rel="noopener">discounted software and hardware</a>.</p>
+<p style="text-align: left;"><a href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/how.to.install.office365.sept2024.pdf" target="_blank" rel="noopener">Download Microsoft Office 365 for FREE &rarr;</a><br /><br />FREE Chromebook and WiFi Hotspot loaners available with a referral from an instructor, counselor, or student support program:<br /><br /><a href="https://ltcc.craniumcafe.com/login" target="_blank" rel="noopener">Get a referral via Cranium Cafe &rarr;</a></p>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

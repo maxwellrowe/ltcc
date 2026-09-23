@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Political Science</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="false">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="true">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Political Science Program | Lake Tahoe Community College</title>
+		<meta name="Description" content="Study government, politics, and public policy with LTCC’s Political Science program. Prepare for transfer and careers in law, public service, international relations, and civic leadership." />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>Political Science</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="{{f:68641897}}" alt="Brown Meta Major at State Capitol" width="1080" height="720" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.ltcc.edu/admissions/index.php">Apply Now</a></td>
+<td><a href="https://www.ltcc.edu/admissions/campustours.php">Visit Campus</a></td>
+<td><a href="https://www.ltcc.edu/campusresources/counseling.php">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<p><a title="Link to Society, Culture &amp; Education Meta Major" href="https://www.ltcc.edu/academics/metamajors/meta_society.php"><img style="float: right;" src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/metamajor_icons/society-culture-education-white-back.jpg" alt="Society Meta Major Icon" width="258" height="275" /></a>The Political Science program at Lake Tahoe Community College helps students to improve their reading and writing skills, and educates them on how to analyze arguments and evidence to develop an understanding of governing institutions and the many policies that officials enact. College is a time when people can not only immerse themselves in study, but also evolve into more thoughtful human beings with informed opinions on a variety of issues. As we explore the Political Science course content, we explore our own lives, including our own values that are rooted in a worldview. Political science is a unique discipline because we learn about how government functions and the many ways that we might influence the actors who are directly part of the process.</p>
+<p>Students interested in the discipline can earn an AA transfer degree in Political Science from LTCC, which requires coursework in History, Psychology, and/or Sociology as well as Political Science and Mathematics. Here you'll be exposed to a variety of subjects that will provide a solid foundation before you transfer to a university.</p>
+<p>To assist our students with their college expenses, the Political Science department has adopted an open educational resource textbook for <a href="https://openstax.org/details/books/american-government-3e">American Government</a>&nbsp;(POL 101). This title has been authored by credentialed professionals in the field. We believe that the integrity of the instruction we offer is vital, and that includes the materials we use in the classroom. We adopt books and class materials that save our students money whenever possible. Sometimes that means an OER title, and other times an earlier, less expensive, edition of a textbook title is acceptable.</p>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/ltcc_images/academics/polisci.jpg" alt="Political Science" width="1555" height="823" /></p>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordian ID (must be unique if more than one accordian on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td>Associate in Arts for Transfer, Political Science</td>
+<td>
+<div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px;">
+<div class="btn-wrapper">{{a:420403}}</div>
+<div class="btn-wrapper"><a class="custom-btn-blue-outline" title="View program map" href="https://pathways.ltcc.edu/program/019b1313-be79-75d4-9cc0-931d82be1ddf/" target="_blank" rel="noopener">Program Map</a></div>
+</div>
+<div style="background: #e8f4f8; border-left: 4px solid #00A3E0; padding: 15px; margin-bottom: 30px;">
+<p style="margin: 0; color: #333;"><strong>Need program details?</strong> View the <strong>Course Catalog</strong> for complete requirements and the <strong>Program Map</strong> for your personalized course planning guide.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>Career Information</td>
+<td>
+<p>What might a student of political science do for a career? Teaching at the secondary or college level is always an option, but there are many others to choose from. For example, a person can work on a political campaign, as a staff member to an elected official, in a public opinion laboratory, or for a think tank.&nbsp; Political science is also an excellent major if you would like to attend law school and then become a practicing attorney in a private firm, or even a government agency. In addition, you could work for local, state, or federal government. Lastly, there are thousands of advocacy groups working on issues such as homelessness, criminal justice reform, the environment, and human rights. Your everyday work could be a cause that you believe matters in the world. Here I recommend consulting the <a href="https://www.bls.gov/ooh/life-physical-and-social-science/political-scientists.htm" target="_blank" rel="noopener">U.S. Department of Labor's Occupational Outlook Handbook</a> on political science, where you can learn more about the current and future job market for the field.</p>
+</td>
+</tr>
+<tr>
+<td>Financial Aid &amp; Scholarships</td>
+<td>
+<table class="ou-chevron-list"><caption style="font-size: 19.2px;">Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a style="transition-property: all;" href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
+<li><a style="transition-property: all;" href="https://www.ltcc.edu/admissions/financial-aid/laketahoe_collegepromise/collegepromise.php">Lake Tahoe College Promise</a></li>
+<li><a style="transition-property: all;" href="https://www.ltcc.edu/giving/donate/scholarships.php">Scholarships</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>There are <a href="https://www.ltcc.edu/admissions/financial-aid/scholarships.php">a number of student scholarships</a> that you can apply for each spring. Scholarships make it possible to earn money for college that does not ever need to be repaid. While some of LTCC's scholarships are competitive, there is a wide variety available you can apply for for free that are awarded based on all kinds of qualities and interests.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>&nbsp;</h3>
+<h3>Have a question?</h3>
+<p>Contact the Instructor!</p>
+<hr /></td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:222162}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

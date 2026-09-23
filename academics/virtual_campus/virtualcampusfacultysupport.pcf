@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Academics Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>academics.tcf</tcf>
+		<tmpl>academics.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Virtual Campus Faculty Support</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Virtual Campus Faculty Support</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+			<option value="slider" selected="false">Slider</option>
+			<option value="banner" selected="false">Banner</option>
+			<option value="off" selected="true">Off</option>
+		</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+			<option value="two" selected="true">Two Column</option>
+			<option value="three" selected="false">Three Column</option>
+		</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
+			<option value="flex-slider" selected="true">Flex Slider</option>
+			<option value="magnific-popup" selected="false">Magnific PopUp</option>
+			<option value="pretty-photo" selected="false">Pretty Photo</option>
+			<option value="fancy-box" selected="false">Fancy Box</option>
+		</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Virtual Campus Faculty Support</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img src="https://www.ltcc.edu/_resources/images/virtual_campus/ryland_onlineteaching.jpg" alt="Online Instructor" width="1634" height="1051" /></p>
+<div><hr /><span><span>This page provides resources for faculty who are teaching remotely. It will change frequently as new resources and remote training opportunities become available. Please bookmark this page and check back often.</span></span><span></span></div>
+<div>&nbsp;</div>
+<div>
+<p><strong>Request Captions and Transcripts</strong></p>
+<p>In order to provide access to all students and to comply with federal and state law, some components of distance education classes may need to provide captioning or transcriptions. Thanks to a grant from the <a href="https://www.canyons.edu/" target="_blank" rel="noopener">College of the Canyons</a>, LTCC faculty can request free captioning and transcript support.</p>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdBGdR2qyEPE2bzl5Y6-yktKFw7kYDElxpMtBs8Iq93No03KA/viewform" target="_blank" rel="noopener">Submit a Captions/Transcripts Request Form</a></p>
+</div>
+</td>
+<td>
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:240542}}</td>
+</tr>
+</tbody>
+</table>
+&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="text-align: center;"><span style="font-size: 18pt;"><span style="font-size: 18pt;">Resources for Teaching Online</span></span><hr /><span style="font-size: 18pt;"></span></div>
+<div class="3columnareaofstudysnippet" style="background-color: #edf2f5; padding-bottom: 25px;"><br />
+<div class="row" data-equalizer="">
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk"><a href="#" target="_blank" rel="noopener">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/virtual_campus/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="A photo of a study group in the library">&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/virtual_campus/onlinetrainingicon_250.jpg" alt="Training Opportunities" width="250" height="250" /></div>
+<br /></a>
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 18pt;">Training Opportunities</span></div>
+<div class="content_headerandparagraph">&nbsp;</div>
+<div class="content_headerandparagraph">Request training:
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Zoom Training" href="https://ltccteachingandlearning.com/covid-19" target="_blank" rel="noopener">Zoom Training</a>&nbsp;with Dr. Scott Lukas</li>
+<li><a title="Meet with Experts from CVC-OEI" href="https://ccconlineed.instructure.com/courses/5432" target="_blank" rel="noopener">Meet with Experts from CVC-OEI</a></li>
+<li><a href="https://laketahoecc.instructure.com/enroll/3M4RTX" target="_blank" rel="noopener">EVE Instruction Self-Paced: Basic Canvas &amp; Intro to Enhanced Virtual Education</a></li>
+<li><a title="Teaching &amp; Learning Onboarding &amp; Experience " href="https://ltccteachingandlearning.com/one-pagers" target="_blank" rel="noopener">Teaching &amp; Learning Onboarding &amp; Experience </a>with Dr. Scott Lukas</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk"><a href="#" target="_blank" rel="noopener">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/virtual_campus/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="A group of friends gather in front of building 6">&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/virtual_campus/technology_250.jpg" alt="Technology Icon" width="250" height="250" /></div>
+<br /></a>
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 18pt;">Technology</span><br /><br /></div>
+<div class="content_headerandparagraph">&nbsp;</div>
+</div>
+<div class="areasOfStudy3LearnMore">
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="Canvas Guides" href="https://community.canvaslms.com/docs/DOC-4048" target="_blank" rel="noopener">Canvas Guides</a> for Cell Phones: <a title="Android" href="https://community.canvaslms.com/docs/DOC-9782-18555199501" target="_blank" rel="noopener">Android</a> | <a title="iOS" href="https://community.canvaslms.com/docs/DOC-9822-18561185388" target="_blank" rel="noopener">iOS</a></li>
+<li><a title="Forward Work Phone to Cell" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/forwardtocell.pdf" target="_blank" rel="noopener">Forward Work Phone to Cell</a></li>
+<li><a title="LTCC Email" href="http://passport.ltcc.edu" target="_blank" rel="noopener">LTCC Email</a></li>
+<li>Remote Desktop&nbsp;(RD): <a title="PC" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/howto_rd_pc.pdf" target="_blank" rel="noopener">PC</a> | <a title="Mac" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/howto_rd_mac.pdf" target="_blank" rel="noopener">Mac</a></li>
+<li><a title="Using Your Home Printer from RD" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/homeprinting_rd.pdf" target="_blank" rel="noopener">Using Your Home Printer from RD</a></li>
+<li><a title="Voicemail" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/voicemailcheck.pdf" target="_blank" rel="noopener">Voicemail</a></li>
+<li><a title="Download Zoom" href="https://www.conferzoom.org/ConferZoom/SignUp" target="_blank" rel="noopener">New Employee Free Zoom Account Setup </a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk"><a href="#" target="_blank" rel="noopener">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/virtual_campus/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="A group of students gaze into the sky with telescopes">&nbsp;<img class="" src="https://www.ltcc.edu/_resources/images/virtual_campus/tipsicon_250.jpg" alt="Tips Icon" width="250" height="250" /></div>
+<br /></a>
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span style="font-size: 18pt;">Tips for Moving Your Class Online</span><br /><br /></div>
+<div class="content_headerandparagraph">
+<table class="ou-chevron-list"><caption>Chevron List</caption>
+<thead>
+<tr>
+<th>Add bulleted list here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li><a title="How to Quickly (and Safely) Move Lab Classes Online" href="https://www.chronicle.com/article/How-to-Quickly-and-Safely/248261" target="_blank" rel="noopener">How to Quickly (and Safely) Move Lab Classes Online</a></li>
+<li>CVC-OEI Resources: <a title="Remote Instruction Services Resources" href="https://cvc.edu/about-the-oei/resources/" target="_blank" rel="noopener">Remote Instruction Services Resources</a></li>
+<li>Support&nbsp;for moving your classes online with <a title="OpenStax" href="https://openstax.org/general/online-resources" target="_blank" rel="noopener">OpenStax</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix">&nbsp;</div>
+<div class="clearfix">&nbsp;</div>
+<div class="clearfix">&nbsp;
+<h4 style="text-align: center;">&nbsp;Other Resources</h4>
+<div class="3columnareaofstudysnippet" style="background-color: #edf2f5; padding-bottom: 25px;"><br />
+<div class="row" data-equalizer="">
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk">
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 18pt;">Forms</span></div>
+<div class="content_headerandparagraph">&nbsp;</div>
+<ul>
+<li class="content_headerandparagraph"><a title="Incomplete Form" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/faculty_incompleteform.pdf" target="_blank" rel="noopener">Incomplete (PDF)</a></li>
+<li class="content_headerandparagraph"><a href="https://www.ltcc.edu/_resources/pdfs/human_resources/equivalency_to_minimum_qualifications.pdf">Equivalency to the Minimum Qualifications</a></li>
+<li class="content_headerandparagraph"><a href="https://www.ltcc.edu/_resources/pdfs/human_resources/equivalency_form.pdf">Equivalency Form</a></li>
+</ul>
+<p>&nbsp;&nbsp;<a title="Forms" href="https://www.ltcc.edu/admissions/forms.php" target="_blank" rel="noopener">More forms &nbsp;&rarr;</a><br /><br /></p>
+<p><span style="font-size: 18pt;">Grading Options</span></p>
+<ul>
+<li><a title="Grading Options FAQS" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/gradingoptions_faq_april2020.pdf" target="_blank" rel="noopener">Grading Options FAQS</a></li>
+<li><a title="Guidance on Grading Options" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/ltcc_guidance_gradingoptionchanges_april2020.pdf" target="_blank" rel="noopener">Guidance on Grading Options</a></li>
+</ul>
+</div>
+</div>
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk">
+<div class="content_div_panel" data-equalizer-watch="">
+<div class="content_headerandparagraph"><span class="snippettitle" style="text-align: left; margin-top: 0px; font-size: 18pt;">Zoom Meetings</span></div>
+<div class="content_headerandparagraph"><br />
+<ul>
+<li>All-Faculty - <a title="4/10/20 Recorded Zoom" href="https://cccconfer.zoom.us/rec/play/75AvI-2p_G43HNbBtgSDBqB_W429Jq-s1iFLq_AKn0ayVCMHNVujZuRGYrEQvKahf_8FmPa_dwhJ3hIn?autoplay=true&amp;startTime=1586552389000" target="_blank" rel="noopener">4/10/2020</a> (<a title="April 10, 2020 All-Faculty Meeting Powerpoint" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/all_faculty_meeting_10april_2020.pptx" target="_blank" rel="noopener">Powerpoint</a>)</li>
+<li>All-Employee Meeting -<span>&nbsp;</span><a title="4/2/2020 Zoom Recording" href="https://zoom.us/rec/share/-cNkdZDNxjtJb42X0HnxUPcHM7bYT6a813UY-fQIxEt-iureu08L_nDRH-RydW9T?startTime=1585861261000" target="_blank" rel="noopener">4/2/2020<span>&nbsp;</span></a>(<a title="4/2/2020 Slide Deck" href="https://www.ltcc.edu/_resources/pdfs/virtual_campus/allemployeemeeting_4_2_20.pdf" target="_blank" rel="noopener">PDF</a>)</li>
+<li><span>All-Faculty -<span>&nbsp;</span></span><a title="3/26/2020" href="https://cccconfer.zoom.us/rec/play/tZYldLz-rjs3Ht2TtQSDCvN4W464KKOs0yZNqKELzE62USNSNVSvYrYUZOeD54NwjU33wJGsE_o--nwy?continueMode=true&amp;_x_zm_rtaid=uc-HzzPVRwaVBlWRH70cpw.1585347068413.f0748f270ecc517694870dff4563ec7e&amp;_x_zm_rhtaid=943" target="_blank" rel="noopener">3/26/2020</a></li>
+<li><span>Student Communications -<span>&nbsp;</span></span><a title="3/24/2020" href="https://cccconfer.zoom.us/rec/share/6_RfdOjK-zJJaInD1Vn-e4UcWYPuX6a81Hcc-_tYxEyroRlxBctZUHu7-iDW44Ld?startTime=1585254442000" target="_blank" rel="noopener">3/24/2020</a></li>
+<li><span>All-Campus Meeting -<span>&nbsp;</span></span><a title="3/18/2020 All-Campus Meeting" href="https://zoom.us/rec/share/xMp-EKip10VLUqvV61n_ZPYARbm5T6a8gyka-_BexRkeQRwKDK3q4UtdffJyFwTC?startTime=1584566742000" target="_blank" rel="noopener">3/18/2020</a></li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+<div class="large-4 medium-4 small-12 columns ctnt_blk updatectnt_blk">
+<div class="div_hover_link" style="background-image: url('https://www.ltcc.edu/academics/virtual_campus/_resources/images/whitebox2.png'); background-size: cover; background-repeat: no-repeat; height: 250px !important; width: 97%; display: block; margin: 0 auto;" title="A group of students gaze into the sky with telescopes"><span style="font-size: 18pt;">Suggestion</span>{{a:240553}}</div>
+</div>
+</div>
+</div>
+<div class="clearfix">&nbsp;</div>
+&nbsp;</div>
+<div class="clearfix">&nbsp;</div>
+<h4>&nbsp;</h4>
+<footer></footer>
+<p>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
+		<h2>Edit Title</h2>
+		<p>Edit Content</p>
+	</ouc:div>
+	
+</document>

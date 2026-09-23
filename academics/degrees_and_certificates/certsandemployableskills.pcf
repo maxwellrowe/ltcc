@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Interior Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:info>
+		<tcf>interior.tcf</tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+	
+	<ouc:properties label="config">				
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank.">Certificates &amp; Employable Skills</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Certificates &amp; Employable Skills</parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+<option value="slider" selected="true">Slider</option>
+<option value="banner" selected="false">Banner</option>
+<option value="off" selected="false">Off</option>
+</parameter>
+
+		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
+		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
+
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+<option value="two" selected="true">Two Column</option>
+<option value="three" selected="false">Three Column</option>
+</parameter>		
+
+		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">
+<option value="flex-slider" selected="true">Flex Slider</option>
+<option value="magnific-popup" selected="false">Magnific PopUp</option>
+<option value="pretty-photo" selected="false">Pretty Photo</option>
+<option value="fancy-box" selected="false">Fancy Box</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Certificates &amp; Employable Skills</title>
+		<meta name="Description" content="Certificates and Employable Skills Training at Lake Tahoe Community College" />
+	</ouc:properties>
+	
+	<ouc:div label="gallery" group="Everyone" button-text="Select Slider">
+		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
+	</ouc:div>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><table class="ou-static-banner"><caption>Static Banner Image</caption>
+<tbody>
+<tr>
+<th>Title</th>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th>Image</th>
+<td><img src="https://www.ltcc.edu/_resources/images/ltcc_images/programs/chemistry/2ChemStudents%20copy.jpg" alt="Students" width="930" height="752" /></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-cta-green"><caption>Call-To-Action (Green)</caption>
+<thead>
+<tr>
+<th>CTA Button</th>
+<th>CTA Button</th>
+<th>CTA Button</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a title="Apply Now" href="https://www.ltcc.edu/admissions/newstudents.php" target="_blank" rel="noopener">Apply&nbsp;Now</a></td>
+<td><a title="Visit Campus" href="https://www.ltcc.edu/admissions/campustours.php" target="_blank" rel="noopener">Visit Campus</a></td>
+<td><a title="Make a Plan" href="https://www.ltcc.edu/campusresources/counseling.php" target="_blank" rel="noopener">Make a Plan</a></td>
+</tr>
+</tbody>
+</table>
+<table class="ou-two-columns-2-1"><caption>Two Columns (2:1 Split)</caption>
+<thead>
+<tr>
+<th>Column</th>
+<th>Column</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;
+<p class="snippet-spacer"><span style="font-size: 14pt;"><strong>Certificate Programs</strong> </span>are <span>for students who want an education beyond high school in order to start in a meaningful career, or to advance in one. LTCC's certificate programs provide opportunities for students to get the skills they need for a wide variety of careers. In most cases, courses needed to earn these certificates are also transferable to four-year schools - so if your academic goals change, earning a certificate can still help you advance towards earning your AA degree and eventually a BA degree.<br /></span></p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion1</td>
+</tr>
+<tr>
+<td><span>View Certificate Programs</span></td>
+<td>
+<ul>
+<li><a title="Addiction Studies" href="https://www.ltcc.edu/academics/academic_programs/addiction_studies.php" target="_blank" rel="noopener">Addiction Studies</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/allied_health/dental_assisting.php" target="_blank" rel="noopener">Allied Health</a>
+<ul>
+<li>Dental Assisting &amp; Radiology</li>
+</ul>
+</li>
+<li><a title="Art" href="https://www.ltcc.edu/academics/academic_programs/art.php" target="_blank" rel="noopener">Art</a>
+<ul>
+<li><span>Ceramics</span></li>
+<li><span>Drawing</span></li>
+<li>Figure Studies</li>
+<li>Painting</li>
+<li>Photography</li>
+<li>Printmaking</li>
+<li>Sculpture</li>
+</ul>
+</li>
+<li><a title="Business" href="https://www.ltcc.edu/academics/academic_programs/business.php" target="_blank" rel="noopener">Business</a>
+<ul>
+<li><span>Accounting Technician</span></li>
+<li><span>Small Business Ownership</span></li>
+<li><span>Certified Bookkeeper Foundational Skills</span></li>
+</ul>
+</li>
+<li><span><a title="Commercial Music" href="https://www.ltcc.edu/academics/academic_programs/music.php" target="_blank" rel="noopener">Commercial Music</a></span><span></span></li>
+<li><a title="Computer and Information Systems&nbsp;- Web Development" href="https://www.ltcc.edu/academics/academic_programs/cis.php" target="_blank" rel="noopener">Computer and Information Systems</a>
+<ul>
+<li>IT Technician- Cybersecurity</li>
+<li>Computer Programming</li>
+</ul>
+</li>
+<li><a title="Criminal Justice" href="https://www.ltcc.edu/academics/academic_programs/criminaljustice.php" target="_blank" rel="noopener">Criminal Justice</a></li>
+<li><a title="Culinary Arts" href="https://www.ltcc.edu/academics/academic_programs/culinaryarts.php" target="_blank" rel="noopener">Culinary Arts</a>
+<ul>
+<li><span>Culinary Arts</span></li>
+<li><span>Wine Studies</span></li>
+<li><span>Culinary Arts Level I Foundational Skills</span></li>
+<li><span>Culinary Arts Level II Foundational Skills</span></li>
+</ul>
+</li>
+<li><span><a title="Early Childhood Education" href="https://www.ltcc.edu/academics/academic_programs/earlychildhoodeducation.php" target="_blank" rel="noopener">Early Childhood Education</a></span></li>
+<li><span><a title="Fire Academy" href="{{f:10625702}}" target="_blank" rel="noopener">Fire Academy</a></span></li>
+<li><a title="Fire Officer" href="{{f:10625703}}" target="_blank" rel="noopener">Fire Officer</a></li>
+<li><a title="Fire Science" href="{{f:11107518}}" target="_blank" rel="noopener">Fire Science</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/forestry.php">Forestry&nbsp;</a>
+<ul>
+<li>Forestry&nbsp;</li>
+<li>General Conservation&nbsp;</li>
+<li>Forestry Foundation Skills</li>
+</ul>
+</li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/hospitality.php">Hospitality Management</a></li>
+<li><a href="{{f:10625726}}" target="_blank" rel="noopener">Medical Office Assistant</a>
+<ul>
+<li>Administrative</li>
+<li>Medical Office Assisting Foundational Skills</li>
+</ul>
+</li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/real_estate.php" target="_blank" rel="noopener">Real Estate</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php" target="_blank" rel="noopener">Wilderness Education and Outdoor Leadership</a></li>
+</ul>
+<p>Certificates of Achievement are issued by the Office of Enrollment Services to students who qualify for them by completing one of the occupation-centered curricula. The student must have a grade of "C" or better in all courses constituting the certificate program.&nbsp;</p>
+<p>To earn a certificate, students must complete the number of units required by the division. No certificate shall consist of less than 12 quarter units.&nbsp;</p>
+<p>To earn a certificate that requires only 12 units, all courses must be completed at&nbsp;Lake Tahoe Community College. Students pursuing certificate programs of less than 16 units are not eligible for financial aid.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="snippet-spacer"><span style="font-size: 14pt;"><strong>The Employable Skills Training Certificate</strong></span> is a quick way of getting the skills you need to start or change your career. These certificates can be completed in under a year. The certificate combines colleges courses with real-world, hands-on instruction at a local employer to build skills and employability. This is perfect for a first-time job seeker, or for anyone who is re-entering the workforce or changing careers at any stage of life.</p>
+<h6 class="snippet-spacer"><b>DO NOT EDIT THIS TEXT (content in this row will not appear on page).</b> <br />Enter the heading in the left cell, and the body that displays when you expand the row in the right cell. To add another row to the accordion, add another row to the table.</h6>
+<table class="ou_accordion_2" style="height: 167px;">
+<tbody>
+<tr>
+<td>Accordion ID (must be unique if more than one accordion on page)</td>
+<td>accordion2</td>
+</tr>
+<tr>
+<td><span>View Employable Skills Certificates</span></td>
+<td>
+<ul>
+<li><a title="Applied Anthropology" href="https://www.ltcc.edu/academics/academic_programs/anthropology.php" target="_blank" rel="noopener">Applied Anthropology</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/culinaryarts.php" target="_blank" rel="noopener">Culinary Arts</a>
+<ul>
+<li>Level I</li>
+<li>Level II</li>
+</ul>
+</li>
+<li><a title="Photography/Digital Photography&nbsp;" href="https://www.ltcc.edu/academics/academic_programs/art.php" target="_blank" rel="noopener">Photography/Digital Photography&nbsp;</a></li>
+<li><a href="https://www.ltcc.edu/academics/academic_programs/wildernessed.php" target="_blank" rel="noopener">Wilderness Education and Outdoor Leadership</a>
+<ul>
+<li>Climbing Instructor</li>
+<li>Basic Mountain Guide</li>
+<li>Basic Ski Guide</li>
+<li>Ski or Snowboard Instructor</li>
+<li>Whitewater Rafting Guide</li>
+<li>Sea Kayaking Guide</li>
+<li>Search &amp; Rescue</li>
+<li>Wilderness Naturalist&nbsp;</li>
+<li>Wilderness Medicine</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h6 class="snippet-spacer">&nbsp;</h6>
+</td>
+<td>&nbsp;
+<table class="ou-form-block"><caption>Form Section</caption>
+<tbody>
+<tr>
+<th>Textual Content</th>
+</tr>
+<tr>
+<td>
+<h3>Have a question?</h3>
+<p>We&rsquo;re just a call or email away:</p>
+<p><strong>Lake Tahoe Community College</strong> <br />One College Drive <br />South Lake Tahoe, CA 96150 <br /><a href="mailto:enrollmentservices@ltcc.edu">enrollmentservices@ltcc.edu</a> <br /><a href="tel:1-530-541-4660">(530) 541-4660</a> x 211</p>
+</td>
+</tr>
+<tr>
+<th>Form Asset</th>
+</tr>
+<tr>
+<td>{{a:104312}}</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="snippet-spacer"><span style="font-size: 12pt;"></span>&nbsp;</p></ouc:div>
+
+	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/><h2>&nbsp;</h2>
+<p>&nbsp;</p>
+<p><img class="" src="https://www.ltcc.edu/_resources/images/buttons/applynow_grayrectbutton.jpg" alt="Apply Now!" width="1200" height="395" /></p>
+<p><img class="" src="https://www.ltcc.edu/_resources/images/buttons/applynow_grayrectbutton.jpg" alt="Apply" width="1200" height="395" /></p>
+<p><img class="" src="https://www.ltcc.edu/_resources/images/buttons/applynow_grayrectbutton.jpg" alt="Test apply" width="1200" height="395" /></p>
+<p><img class="" src="https://www.ltcc.edu/_resources/images/buttons/applynow_grayrectbutton.jpg" alt="a" width="1200" height="395" /></p></ouc:div>
+	
+</document>

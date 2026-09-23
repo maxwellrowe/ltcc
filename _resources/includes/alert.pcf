@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/alert.xsl" title="Alert Include" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:properties label="config">		
+		<parameter name="show-alert" type="select" group="Editors" prompt="Display Alert?" alt="Select 'Yes' and publish to view Alert on homepage.">
+<option value="true" selected="false">Yes</option>
+<option value="false" selected="true">No</option>
+</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="metadata">
+		<title>Alert</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css,/_resources/css/main2022.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><div class="alert alert-dismissible" role="alert">
+<h2 class="heading">Campus Closed - All Staff Training Day</h2>
+<p class="subtitle">LTCC will be closed Friday, August 28 for all staff training. Services resume Saturday, August 29.</p>
+<button class="close" type="button" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button></div></ouc:div>
+	
+</document>

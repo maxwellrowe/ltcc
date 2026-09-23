@@ -1,0 +1,2 @@
+.desc	Paragraph Style	block
+.desc lg	Large Paragraph Style	block
