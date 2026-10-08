@@ -275,7 +275,7 @@
 				jQuery(this).one('load', function() {
 				  if(++count == total) callback();
 				}).each(function() {
-				  if(this.complete) jQuery(this).load();
+				  if(this.complete) jQuery(this).trigger("load");
 				});
 			});
 		}

@@ -1,0 +1,54 @@
+// Figma palette: LTCC Design, node 5512:1044.
+// Override before Bootstrap computes maps, components, and utilities.
+
+$gray-100: #f4f7fa;
+$gray-200: #e3eaf0;
+$gray-300: #cdd6de;
+$gray-400: #b6c0c9;
+$gray-500: #88919a;
+$gray-600: #6f7780;
+$gray-700: #525a61;
+$gray-800: #3a4046;
+$gray-900: #212122;
+
+$blue-100: #e5f7fc;
+$blue-200: #e5ebed;
+$blue-300: #e5eaec;
+$blue-400: #7fd1ef;
+$blue-500: #7f9ea7;
+$blue-600: #7f97a0;
+$blue-700: #00a3e0;
+$blue-800: #003e51;
+$blue-900: #003043;
+
+$green-100: #e4f0e8;
+$green-200: #a3cfbb;
+$green-300: #7ebb99;
+$green-400: #7ebb99;
+$green-500: #198754;
+$green-600: #146c43;
+$green-700: #007a33;
+$green-800: #004d20;
+$green-900: #002911;
+
+// Base hues: main blue swatch, standard green midpoint, and CTA teal.
+$blue: $blue-700;
+$green: $green-500;
+$teal: #20c997;
+
+// Match the explicit light/dark brand swatches instead of generated tints.
+$primary-bg-subtle: $blue-100;
+$primary-text-emphasis: $blue-900;
+$secondary-bg-subtle: $green-100;
+$secondary-text-emphasis: $green-900;
+
+// Global brand colors; CTA button colors are scoped in theme/_components.scss.
+$primary: #003e51;
+$secondary: #007a33;
+
+// Keep a concrete Sass link color for Bootstrap's derived component values.
+// Plain anchors inherit their surrounding text color in theme/_base.scss.
+$link-color: #0033a0;
+$link-hover-color: #0033a0;
+$link-decoration: underline;
+$link-hover-decoration: underline;

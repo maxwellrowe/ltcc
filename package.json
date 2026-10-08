@@ -1,0 +1,15 @@
+{
+  "name": "ltcc-theme",
+  "private": true,
+  "scripts": {
+    "build:css": "sass --load-path=node_modules --quiet-deps --style=compressed --no-source-map _resources/scss/ltcc-custom.scss _resources/css/ltcc-custom.css",
+    "watch:css": "npm run build:css -- --watch",
+    "build": "npm run build:css && npm run build:js",
+    "build:js": "esbuild _resources/js/main.js --minify --outfile=_resources/js/legacy-site.min.js"
+  },
+  "devDependencies": {
+    "bootstrap": "5.3.8",
+    "esbuild": "0.28.2",
+    "sass": "1.93.2"
+  }
+}

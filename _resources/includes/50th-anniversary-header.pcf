@@ -4,6 +4,8 @@
 <!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
 
 <document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+<?php /* Uses xsl/_widgets/50th-anniversary-header.xsl to publish a header PHP include consumed by 50th-anniversary-common.xsl. */ ?>
+
 
 	<ouc:properties label="config">
 		<parameter name="logo-img" type="filechooser" dependency="yes" group="Everyone" prompt="Logo Image" alt="Select a file or paste a complete URL for the logo image." >/_resources/images/50th-anniversary/ltcc-logo-50-fullcolor-11.png</parameter>

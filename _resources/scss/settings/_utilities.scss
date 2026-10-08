@@ -1,0 +1,26 @@
+// Extend Bootstrap backgrounds with existing palette shades.
+// Retain the standard bg-opacity-* behavior and existing bg-* utilities.
+$palette-backgrounds: (
+  "bright-green": rgba(#20c997, var(--#{$prefix}bg-opacity)),
+  "bright-blue": rgba(#00b0ff, var(--#{$prefix}bg-opacity))
+);
+
+@each $shade, $color in $grays {
+  $palette-backgrounds: map-merge($palette-backgrounds, (
+    "gray-#{$shade}": rgba($color, var(--#{$prefix}bg-opacity))
+  ));
+}
+
+// Bootstrap's blue/green map keys already include the family name.
+@each $shade, $color in map-merge($blues, $greens) {
+  $palette-backgrounds: map-merge($palette-backgrounds, (
+    $shade: rgba($color, var(--#{$prefix}bg-opacity))
+  ));
+}
+
+$background-utility: map-get($utilities, "background-color");
+$utilities: map-merge($utilities, (
+  "background-color": map-merge($background-utility, (
+    values: map-merge(map-get($background-utility, "values"), $palette-backgrounds)
+  ))
+));

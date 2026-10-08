@@ -1,0 +1,19 @@
+// JavaScript adds this only to offscreen elements after Motion is available.
+// Keep layout space while preventing a visible -> invisible jump at the trigger.
+html:not(.no-js) .anim-pending {
+  opacity: 0;
+}
+
+// Never hide keyboard focus or content when motion is reduced or printed.
+.anim-pending:focus-within {
+  opacity: 1 !important;
+  clip-path: none !important;
+}
+
+@media (prefers-reduced-motion: reduce), print {
+  .anim-pending {
+    opacity: 1 !important;
+  clip-path: none !important;
+    transform: none !important;
+  }
+}

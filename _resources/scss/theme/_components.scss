@@ -1,0 +1,47 @@
+// Scope CTA colors to existing Bootstrap button classes, including state colors.
+.btn-primary {
+  @include button-variant(#20c997, #20c997, $hover-border: $green-900);
+}
+
+.btn-secondary {
+  @include button-variant(#00b0ff, #00b0ff, $hover-border: $blue-900);
+}
+
+.btn-outline-primary {
+  @include button-outline-variant(
+    #00b0ff,
+    $color-hover: $blue-800,
+    $active-background: #00b0ff,
+    $active-border: $blue-800,
+    $active-color: $blue-800
+  );
+  --#{$prefix}btn-color: #{$blue-800};
+  --#{$prefix}btn-disabled-color: #{$blue-800};
+}
+
+.btn-outline-secondary {
+  @include button-outline-variant(
+    #20c997,
+    $color-hover: $green-900,
+    $active-background: #20c997,
+    $active-border: $green-900,
+    $active-color: $green-900
+  );
+  --#{$prefix}btn-color: #{$green-900};
+  --#{$prefix}btn-disabled-color: #{$green-900};
+}
+
+.btn-light {
+  @include button-variant(
+    $green-100,
+    $green-100,
+    $color: $green-900,
+    $hover-background: #20c997,
+    $hover-border: #20c997,
+    $hover-color: $green-900,
+    $active-background: #20c997,
+    $active-border: #20c997,
+    $active-color: $green-900,
+    $disabled-color: $green-900
+  );
+}

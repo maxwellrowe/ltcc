@@ -34,3 +34,4 @@
 
 # macOS metadata
 .DS_Store
+node_modules/

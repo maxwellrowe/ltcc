@@ -1,2 +1,3 @@
+<?php /* Loaded by shared footer templates and navigation previews. Provides the campus address. */ ?>
 <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css"/><!--<p><a title="View our address on a map" href="https://www.google.com/maps/place/1+College+Way,+South+Lake+Tahoe,+CA+96150" target="_blank">One College Drive, South Lake Tahoe, CA 96150</a> <a title="Call us" href="tel:530-541-4660">(530) 541-4660</a></p>
 <p><span style="font-size: xx-small;"><a title="Supported Browsers" href="https://www.ltcc.edu/campusresources/technology/supportedbrowsers.php">Supported Browsers</a>&nbsp; &nbsp; Report an Accessibility Issue</span></p>-->

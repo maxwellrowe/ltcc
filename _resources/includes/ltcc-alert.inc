@@ -1,1 +1,2 @@
+<?php /* Loaded by shared footer templates and navigation previews. Provides the LTCC alert link. */ ?>
 <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css"/><a title="LTCC Alert" href="https://www.ltcc.edu/campusresources/health-and-safety/alert-notification-system.php"><img src="https://www.ltcc.edu/_resources/img/ltcc-alert.jpeg" alt="ltcc alert" width="357" height="132" /></a>

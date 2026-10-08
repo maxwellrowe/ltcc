@@ -1,3 +1,4 @@
+<?php /* Loaded by xsl/50th-anniversary-common.xsl. Provides head assets for that separate anniversary template. */ ?>
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
@@ -5,15 +6,11 @@
 	  rel="stylesheet"/>
 <link rel="stylesheet" href="/_resources/css/styles-50th-anniversary.css"/>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+<!-- Compatibility bridge for legacy plugins during the theme rebuild. -->
+<script src="https://code.jquery.com/jquery-migrate-4.0.2.min.js"></script>
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="https://www.ltcc.edu/_resources/img/favicon_50.png" />
 
-<!-- Google Tag Manager Updated 5-24-24 MT-->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MJWSFZN3');</script>
-<!-- End Google Tag Manager -->
+<!-- Google Tag Manager is loaded by includes/analytics.inc. -->

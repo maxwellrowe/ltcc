@@ -1,0 +1,2 @@
+<?php /* Legacy calendar links. Referenced only by old development documentation in this checkout. */ ?>
+<!-- ouc:editor csspath="/_resources/ou/editor/nav.css" cssmenu="/_resources/ou/editor/styles.txt"/ -->{{a:351667}}

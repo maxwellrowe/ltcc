@@ -248,7 +248,7 @@ You can conditionally call this function as such:
 		<xsl:choose>		
 			<!-- bx-slider -->
 			<xsl:when test="$gallery-type = 'bx-slider'">
-				<script src="https://www.ltcc.edu/_resources/galleries/bx-slider/jquery.bxslider.js"></script>
+				<script src="/_resources/galleries/bx-slider/jquery.bxslider.js"></script>
 				<link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/galleries/bx-slider/jquery.bxslider.css" type="text/css" />
 				<script type="text/javascript">
 					jQuery(document).ready(function(){
@@ -295,7 +295,7 @@ You can conditionally call this function as such:
 			<xsl:when test="$gallery-type = 'pretty-photo'">			
 				<link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/galleries/bootstrap-thumbnails.css"/> 			
 				<link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/galleries/pretty-photo/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
-				<script src="https://www.ltcc.edu/_resources/galleries/pretty-photo/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+				<script src="/_resources/galleries/pretty-photo/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 				<script type="text/javascript">
 					jQuery(document).ready(function() {
 					jQuery("a[rel^='prettyPhoto']").prettyPhoto();

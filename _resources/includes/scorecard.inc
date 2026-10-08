@@ -1,1 +1,2 @@
+<?php /* Loaded by shared footer templates and navigation previews. Provides the student success scorecard markup. */ ?>
 <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css"/><a title="Student Success Scorecard" href="http://scorecard.cccco.edu/scorecardrates.aspx?CollegeID=221" target="_blank"><img src="https://www.ltcc.edu/_resources/img/student-success-scorecard.png" alt="ltcc scorecard" width="290" height="150" /></a>

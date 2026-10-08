@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?pcf-stylesheet path="/_resources/xsl/home2022-calendar.xsl" title="Home Page" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" title="Home Page" extension="php"?>
 <?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
 
 <!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 

@@ -109,12 +109,8 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 				<xsl:copy-of select="ou:include-file('/_resources/includes/footcode.inc')"/>			
 				<!-- OU Style -->
 				<link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/css/oustyles.css" />
-				<xsl:if test="descendant::gallery">								
-					<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 		
-					<script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
-					<script type="text/javascript">
-						jQuery.noConflict();
-					</script>
+				<xsl:if test="descendant::gallery">
+                    <!-- Galleries use the shared jQuery from headcode.inc. -->
 					<xsl:copy-of select="ou:gallery-footcode(ou:pcf-param('gallery-type'))"/>
 				</xsl:if>  				
 
@@ -125,7 +121,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 				<!-- analytics include -->
 				<xsl:copy-of select="ou:include-file('/_resources/includes/analytics.inc')"/>
 				<div id="hidden" style='display:none;'><xsl:comment> com.omniupdate.ob </xsl:comment><xsl:comment> /com.omniupdate.ob </xsl:comment></div>				
-				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>		
+				<!-- Bootstrap is loaded centrally by footcode.inc. -->
 <xsl:call-template name="form-footcode" />
 
 			</body>	

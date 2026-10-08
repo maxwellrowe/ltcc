@@ -1,1 +1,2 @@
+<?php /* Section navigation for the includes directory. Uses the standard _nav.inc convention; it is not the global header navigation. */ ?>
 <li><a href="https://www.ltcc.edu/_resources/includes/googleanalytics.php">googleanalytics</a></li>

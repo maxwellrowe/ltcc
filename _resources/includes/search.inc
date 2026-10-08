@@ -1,3 +1,4 @@
+<?php /* Loaded by xsl/_shared/header-nav.xsl. Provides the navigation search control. */ ?>
 <ouc:editor wysiwyg="no"/>
 <!--
 	<input type="text" placeholder="Search Site" /> MT

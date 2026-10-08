@@ -5,6 +5,8 @@
 <!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
 
 <document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+<?php /* Uses xsl/_shared/header-nav.xsl to publish header-navigation.php, loaded by the shared page headers. */ ?>
+
 	
 	<ouc:div label="maincontent" group="Everyone" button-text="Main Content" button="hide" hide="true">
 		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>

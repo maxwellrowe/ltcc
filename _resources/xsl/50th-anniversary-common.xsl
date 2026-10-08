@@ -96,8 +96,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 
 	<xsl:template name="common-footcode">
 		<xsl:if test="$is-edt">
-			<!-- jQuery 1.5+ is required. Add it here if not already included. -->
-			<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+			<!-- jQuery is provided by headcode-50th-anniversary.inc. -->
 			<script src="//cdn.omniupdate.com/select-lists/v1/select-lists.min.js" defer="defer"></script>
 		</xsl:if>
 	</xsl:template>

@@ -1,3 +1,4 @@
+<?php /* Loaded by shared footer templates and navigation previews. Provides social media links. */ ?>
 <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" wysiwyg="no"/>
 <em>Follow Us</em>
 <a href="https://www.facebook.com/LakeTahoeCommunityCollege" title="Find us on Facebook" class="facebook" target="_blank">

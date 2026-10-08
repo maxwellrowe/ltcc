@@ -1,0 +1,9 @@
+// Barlow is loaded through Google Fonts in headcode.inc and the preview.
+$font-family-sans-serif: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-family: $font-family-sans-serif;
+$headings-font-weight: 700;
+$display-font-weight: 700;
+
+// Body text retains Bootstrap's normal (400) weight.
+// $font-size-base: 1rem;
+// $line-height-base: 1.5;

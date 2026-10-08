@@ -1,0 +1,11354 @@
+---
+tailwind-css:
+  changes:
+    - 7.2.0
+  label: Tailwind Css
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e866
+  voted: false
+square-deskpro:
+  changes:
+    - 7.2.0
+  label: Square Deskpro
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e844
+  voted: false
+svelte:
+  changes:
+    - 7.2.0
+  label: Svelte
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e868
+  voted: false
+bimobject:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Bimobject
+  search:
+    terms:
+      - 3d models
+      - architecture
+      - bim
+      - bim library
+      - bimobject
+      - building information modeling
+      - cad
+      - construction
+      - design
+  styles:
+    - brands
+  unicode: f378
+  voted: false
+battle-net:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Battle Net
+  search:
+    terms:
+      - battle net
+      - battle.net
+      - blizzard
+      - blizzard entertainment
+      - esports
+      - game launcher
+      - gaming
+      - multiplayer
+      - online games
+      - pc games
+  styles:
+    - brands
+  unicode: f835
+  voted: false
+square-facebook:
+  aliases:
+    names:
+      - facebook-square
+  changes:
+    - 1.0.0
+    - 5.0.0
+    - 5.8.2
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Facebook
+  search:
+    terms:
+      - facebook
+      - facebook app
+      - facebook logo
+      - fb
+      - fb icon
+      - social media
+      - social network
+      - social platform
+  styles:
+    - brands
+  unicode: f082
+  voted: false
+black-tie:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Black Tie
+  search:
+    terms:
+      - administrator
+      - black tie
+      - bow tie
+      - dress code
+      - evening wear
+      - event
+      - formal
+      - formalwear
+      - gala
+      - suit
+      - tuxedo
+  styles:
+    - brands
+  unicode: f27e
+  voted: false
+discourse:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Discourse
+  search:
+    terms:
+      - chat
+      - community
+      - conversation
+      - discourse
+      - discussion
+      - discussion board
+      - forum
+      - messaging
+      - online forum
+      - social platform
+  styles:
+    - brands
+  unicode: f393
+  voted: false
+cc-mastercard:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Mastercard
+  search:
+    terms:
+      - card
+      - credit card
+      - mastercard
+      - mastercard brand
+      - mastercard card
+      - mastercard logo
+      - mastercard payment
+      - payment
+  styles:
+    - brands
+  unicode: f1f1
+  voted: false
+goodreads-g:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Goodreads G
+  search:
+    terms:
+      - book community
+      - book reviews
+      - books
+      - g
+      - goodreads
+      - literature
+      - reading
+      - social reading
+  styles:
+    - brands
+  unicode: f3a9
+  voted: false
+square-lastfm:
+  aliases:
+    names:
+      - lastfm-square
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 5.0.11
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Lastfm
+  search:
+    terms:
+      - audio
+      - brand
+      - last.fm
+      - lastfm
+      - media
+      - music
+      - social
+      - streaming
+  styles:
+    - brands
+  unicode: f203
+  voted: false
+edge-legacy:
+  changes:
+    - 5.13.1
+    - 5.14.0
+    - 7.0.0
+  label: Edge Legacy
+  search:
+    terms:
+      - browser
+      - edge
+      - internet
+      - legacy
+      - microsoft
+      - microsoft edge
+      - old edge
+      - web browser
+  styles:
+    - brands
+  unicode: e078
+  voted: false
+padlet:
+  changes:
+    - 6.0.0
+    - 7.0.0
+  label: Padlet
+  search:
+    terms:
+      - classroom tool
+      - digital board
+      - education
+      - note sharing
+      - online collaboration
+      - padlet
+      - virtual bulletin
+  styles:
+    - brands
+  unicode: e4a0
+  voted: false
+aviato:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Aviato
+  search:
+    terms:
+      - aviato
+      - brand
+      - software
+      - startup
+      - tech company
+      - technology
+  styles:
+    - brands
+  unicode: f421
+  voted: false
+tesla:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Tesla
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b9
+  voted: false
+gofore:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Gofore
+  search:
+    terms:
+      - consulting
+      - digital services
+      - finnish company
+      - gofore
+      - gofore oy
+      - software development
+  styles:
+    - brands
+  unicode: f3a7
+  voted: false
+yelp:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 5.7.0
+    - 5.8.0
+    - 7.0.0
+  label: Yelp
+  search:
+    terms:
+      - business
+      - food
+      - local
+      - places
+      - ratings
+      - recommendations
+      - restaurant
+      - reviews
+      - services
+      - yelp
+  styles:
+    - brands
+  unicode: f1e9
+  voted: false
+gulp:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Gulp
+  search:
+    terms:
+      - automation
+      - build
+      - gulp
+      - gulpjs
+      - javascript
+      - nodejs
+      - streaming
+      - task runner
+  styles:
+    - brands
+  unicode: f3ae
+  voted: false
+stack-exchange:
+  changes:
+    - 4.0.0
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Stack Exchange
+  search:
+    terms:
+      - Q&A
+      - answers
+      - community
+      - developer
+      - forum
+      - knowledge sharing
+      - programming
+      - questions
+      - stack exchange
+      - stackexchange
+  styles:
+    - brands
+  unicode: f18d
+  voted: false
+a11y-project:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: A11y Project
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8c2
+  voted: false
+golang:
+  changes:
+    - 6.0.0-beta2
+    - 7.0.0
+  label: Golang
+  search:
+    terms:
+      - backend
+      - code
+      - developer
+      - go
+      - golang
+      - gopher
+      - language
+      - programming
+      - software
+  styles:
+    - brands
+  unicode: e40f
+  voted: true
+readme:
+  changes:
+    - 5.0.9
+    - 5.0.10
+    - 7.0.0
+  label: Readme
+  search:
+    terms:
+      - documentation
+      - guide
+      - help
+      - info
+      - information
+      - instructions
+      - manual
+      - readme
+      - tutorial
+  styles:
+    - brands
+  unicode: f4d5
+  voted: false
+xrpl:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Xrpl
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8bb
+  voted: false
+weibo:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Weibo
+  search:
+    terms:
+      - chinese social media
+      - microblog
+      - sina weibo
+      - social media
+      - social network
+      - weibo
+      - weibo logo
+  styles:
+    - brands
+  unicode: f18a
+  voted: false
+opera:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Opera
+  search:
+    terms:
+      - browser
+      - browsing
+      - fast browser
+      - internet
+      - opera
+      - opera browser
+      - secure browser
+      - web
+      - web browser
+  styles:
+    - brands
+  unicode: f26a
+  voted: false
+letterboxd:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Letterboxd
+  search:
+    terms:
+      - cinema
+      - film community
+      - films
+      - letterboxd
+      - movie
+      - movies app
+      - ratings
+      - reviews
+      - social network
+      - watchlist
+  styles:
+    - brands
+  unicode: e62d
+  voted: false
+pied-piper-alt:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Pied Piper Alt
+  search:
+    terms:
+      - alt
+      - brand
+      - company
+      - logo
+      - pied piper
+      - pied-piper
+      - piper
+      - software
+      - startup
+      - technology
+  styles:
+    - brands
+  unicode: f1a8
+  voted: false
+cc-amex:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 5.7.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Cc Amex
+  search:
+    terms:
+      - american express
+      - amex
+      - banking
+      - card
+      - credit card
+      - finance
+      - payment
+  styles:
+    - brands
+  unicode: f1f3
+  voted: false
+alipay:
+  changes:
+    - 5.3.0
+    - 7.0.0
+  label: Alipay
+  search:
+    terms:
+      - Alipay
+      - QR code
+      - ali pay
+      - cashless
+      - china
+      - digital wallet
+      - e-wallet
+      - fintech
+      - mobile pay
+      - mobile wallet
+      - online payment
+      - payments
+  styles:
+    - brands
+  unicode: f642
+  voted: false
+ravelry:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 5.15.1
+    - 7.0.0
+  label: Ravelry
+  search:
+    terms:
+      - crafts
+      - crochet
+      - fiber arts
+      - knitting
+      - patterns
+      - ravelry
+      - yarn
+  styles:
+    - brands
+  unicode: f2d9
+  voted: false
+codepen:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Codepen
+  search:
+    terms:
+      - code editor
+      - codepen
+      - codepen.io
+      - coding
+      - front-end
+      - online editor
+      - playground
+      - programming
+      - sandbox
+      - web development
+  styles:
+    - brands
+  unicode: f1cb
+  voted: false
+node:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Node
+  search:
+    terms:
+      - JavaScript
+      - Node
+      - Node.js
+      - backend
+      - development
+      - programming
+      - runtime
+      - server
+  styles:
+    - brands
+  unicode: f419
+  voted: true
+space-awesome:
+  changes:
+    - 6.1.2
+    - 7.0.0
+  label: Space Awesome
+  search:
+    terms:
+      - adventure
+      - astronautics
+      - exploration
+      - launch
+      - rocket
+      - shuttle
+      - space
+      - spaceship
+  styles:
+    - brands
+  unicode: e5ac
+  voted: false
+safari:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 5.12.0
+    - 7.0.0
+  label: Safari
+  search:
+    terms:
+      - apple
+      - browser
+      - internet
+      - ios
+      - mac
+      - safari
+      - web
+  styles:
+    - brands
+  unicode: f267
+  voted: false
+cc-discover:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Discover
+  search:
+    terms:
+      - banking
+      - card network
+      - cc
+      - credit
+      - credit card
+      - debit
+      - discover
+      - financial
+      - payment
+  styles:
+    - brands
+  unicode: f1f2
+  voted: false
+unison:
+  changes:
+    - 7.2.0
+  label: Unison
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e854
+  voted: false
+erlang:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 5.7.0
+    - 7.0.0
+  label: Erlang
+  search:
+    terms:
+      - concurrency
+      - development
+      - erlang
+      - functional
+      - language
+      - programming
+      - software
+      - telecom
+  styles:
+    - brands
+  unicode: f39d
+  voted: false
+accusoft:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Accusoft
+  search:
+    terms:
+      - Accusoft
+      - Accusoft software
+      - SDK
+      - developer tools
+      - document imaging
+      - document processing
+      - imaging software
+      - software development kit
+  styles:
+    - brands
+  unicode: f369
+  voted: false
+linode:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Linode
+  search:
+    terms:
+      - VPS
+      - cloud computing
+      - cloud hosting
+      - cloud infrastructure
+      - cloud server
+      - hosting provider
+      - linode
+      - linode cloud
+      - virtual server
+  styles:
+    - brands
+  unicode: f2b8
+  voted: false
+envira:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Envira
+  search:
+    terms:
+      - envira
+      - envira gallery
+      - gallery
+      - image
+      - leaf
+      - photo
+      - wordpress
+  styles:
+    - brands
+  unicode: f299
+  voted: false
+amazon:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Amazon
+  search:
+    terms:
+      - Amazon
+      - amazon.com
+      - delivery
+      - ecommerce
+      - marketplace
+      - online shopping
+      - online store
+      - prime
+      - retail
+      - shipping
+      - shopping
+      - webstore
+  styles:
+    - brands
+  unicode: f270
+  voted: false
+pagelines:
+  changes:
+    - 4.0.0
+    - 5.0.0
+    - 7.0.0
+  label: Pagelines
+  search:
+    terms:
+      - eco
+      - environment
+      - green
+      - leaf
+      - leaves
+      - nature
+      - organic
+      - pagelines
+      - plant
+      - sustainable
+      - tree
+  styles:
+    - brands
+  unicode: f18c
+  voted: false
+vnv:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Vnv
+  search:
+    terms:
+      - vnv
+      - vnv brand
+      - vnv logo
+      - vnv network
+  styles:
+    - brands
+  unicode: f40b
+  voted: false
+patreon:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 6.5.0
+    - 7.0.0
+  label: Patreon
+  search:
+    terms:
+      - content creator
+      - creator
+      - crowdfunding
+      - donations
+      - fan funding
+      - membership
+      - patreon
+      - patron
+      - subscription
+      - support
+  styles:
+    - brands
+  unicode: f3d9
+  voted: false
+audible:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Audible
+  search:
+    terms:
+      - amazon audible
+      - audible
+      - audio platform
+      - audiobook
+      - audiobook app
+      - audiobook service
+      - audiobooks
+      - listening
+      - spoken word
+  styles:
+    - brands
+  unicode: f373
+  voted: false
+facebook-messenger:
+  changes:
+    - 5.0.0
+    - 5.8.2
+    - 5.9.0
+    - 7.0.0
+  label: Facebook Messenger
+  search:
+    terms:
+      - chat
+      - facebook
+      - fb
+      - instant messaging
+      - message
+      - messenger
+      - messenger app
+      - social
+  styles:
+    - brands
+  unicode: f39f
+  voted: false
+kaggle:
+  changes:
+    - 5.2.0
+    - 5.8.0
+    - 7.0.0
+  label: Kaggle
+  search:
+    terms:
+      - AI
+      - analytics
+      - competitions
+      - data analysis
+      - data platform
+      - data science
+      - datasets
+      - kaggle
+      - machine learning
+  styles:
+    - brands
+  unicode: f5fa
+  voted: true
+firefox:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 5.0.1
+    - 5.12.0
+    - 7.0.0
+  label: Firefox
+  search:
+    terms:
+      - browser
+      - browser icon
+      - firefox
+      - firefox browser
+      - internet
+      - mozilla
+      - web
+  styles:
+    - brands
+  unicode: f269
+  voted: false
+less:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Less
+  search:
+    terms:
+      - coding
+      - css
+      - design
+      - frontend
+      - less
+      - lesscss
+      - preprocessor
+      - style
+      - stylesheet
+      - web development
+  styles:
+    - brands
+  unicode: f41d
+  voted: false
+itunes-note:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Itunes Note
+  search:
+    terms:
+      - apple music
+      - audio
+      - itunes
+      - melody
+      - music
+      - note
+      - song
+      - sound
+  styles:
+    - brands
+  unicode: f3b5
+  voted: false
+ultralytics:
+  changes:
+    - 7.2.0
+  label: Ultralytics
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e86d
+  voted: false
+telegram:
+  aliases:
+    names:
+      - telegram-plane
+    unicodes:
+      composite:
+        - f3fe
+      secondary:
+        - 10f3fe
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Telegram
+  search:
+    terms:
+      - app
+      - chat
+      - communication
+      - instant messaging
+      - messaging
+      - messenger app
+      - mobile app
+      - social media
+      - telegram
+      - telegram messenger
+  styles:
+    - brands
+  unicode: f2c6
+  voted: false
+gitkraken:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Gitkraken
+  search:
+    terms:
+      - code management
+      - developer tool
+      - git
+      - git client
+      - gitkraken
+      - repository
+      - software development
+      - source control
+      - version control
+  styles:
+    - brands
+  unicode: f3a6
+  voted: false
+microblog:
+  changes:
+    - 5.12.0
+    - 5.14.0
+    - 7.0.0
+  label: Microblog
+  search:
+    terms:
+      - blogging platform
+      - content sharing
+      - microblog
+      - microblogging
+      - online journal
+      - short posts
+      - social media
+      - social network
+      - status update
+  styles:
+    - brands
+  unicode: e01a
+  voted: true
+playstation:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Playstation
+  search:
+    terms:
+      - console
+      - controller
+      - entertainment
+      - game system
+      - gaming
+      - playstation
+      - ps
+      - sony
+      - video game
+      - videogame
+  styles:
+    - brands
+  unicode: f3df
+  voted: false
+uncharted:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Uncharted
+  search:
+    terms:
+      - action game
+      - adventure game
+      - naughty dog
+      - playstation
+      - ps4
+      - ps5
+      - treasure hunt
+      - uncharted
+      - uncharted game
+      - uncharted series
+  styles:
+    - brands
+  unicode: e084
+  voted: false
+node-js:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Node Js
+  search:
+    terms:
+      - backend
+      - development
+      - event-driven
+      - javascript
+      - js
+      - node.js
+      - nodejs
+      - npm
+      - programming
+      - runtime
+      - server
+  styles:
+    - brands
+  unicode: f3d3
+  voted: false
+artstation:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Artstation
+  search:
+    terms:
+      - art
+      - artist
+      - artstation
+      - artwork
+      - community
+      - creative
+      - design
+      - digital art
+      - gallery
+      - portfolio
+  styles:
+    - brands
+  unicode: f77a
+  voted: true
+apple-pay:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Apple Pay
+  search:
+    terms:
+      - Apple Pay
+      - Apple Wallet
+      - NFC payment
+      - checkout
+      - contactless payment
+      - digital wallet
+      - mobile payment
+      - pay with phone
+      - tap to pay
+  styles:
+    - brands
+  unicode: f415
+  voted: true
+lyft:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Lyft
+  search:
+    terms:
+      - app
+      - car service
+      - lyft
+      - mobility
+      - ride
+      - rideshare
+      - taxi
+      - transportation
+      - travel
+  styles:
+    - brands
+  unicode: f3c3
+  voted: false
+mixer:
+  changes:
+    - 5.12.1
+    - 5.14.0
+    - 7.0.0
+  label: Mixer
+  search:
+    terms:
+      - DJ mixer
+      - audio control
+      - audio mixer
+      - mixer
+      - mixing console
+      - mixing desk
+      - music mixer
+      - sound mixer
+      - soundboard
+  styles:
+    - brands
+  unicode: e056
+  voted: true
+fort-awesome:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Fort Awesome
+  search:
+    terms:
+      - castle
+      - defense
+      - fort
+      - fortress
+      - fortress icon
+      - medieval
+      - stronghold
+  styles:
+    - brands
+  unicode: f286
+  voted: false
+twitter:
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 7.0.0
+  label: Twitter
+  search:
+    terms:
+      - bird
+      - microblogging
+      - social media
+      - social network
+      - tweet
+      - tweets
+      - twitter
+      - x platform
+  styles:
+    - brands
+  unicode: f099
+  voted: false
+red-river:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Red River
+  search:
+    terms:
+      - environment
+      - nature
+      - outdoors
+      - red river
+      - redriver
+      - river
+      - water
+  styles:
+    - brands
+  unicode: f3e3
+  voted: false
+affiliatetheme:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Affiliatetheme
+  search:
+    terms:
+      - Affiliatetheme
+      - affiliate
+      - affiliate marketing
+      - affiliate network
+      - affiliate program
+      - marketing
+      - theme
+      - wordpress
+      - wordpress theme
+  styles:
+    - brands
+  unicode: f36b
+  voted: false
+500px:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: 500px
+  search:
+    terms:
+      - 500 px
+      - 500px
+      - image sharing
+      - photo community
+      - photo network
+      - photo sharing
+      - photographers
+      - photography
+      - photos
+      - portfolio
+  styles:
+    - brands
+  unicode: f26e
+  voted: false
+disqus:
+  changes:
+    - 7.0.0
+  label: Disqus
+  search:
+    terms:
+      - chat
+      - comments
+      - community
+      - discussion
+      - disqus
+      - forum
+      - messaging
+      - social
+  styles:
+    - brands
+  unicode: e7d5
+  voted: false
+php:
+  changes:
+    - 5.0.5
+    - 7.0.0
+  label: Php
+  search:
+    terms:
+      - php
+      - php code
+      - php developer
+      - php framework
+      - php language
+      - php logo
+      - php programming
+      - php script
+  styles:
+    - brands
+  unicode: f457
+  voted: true
+hornbill:
+  changes:
+    - 5.1.0
+    - 5.8.0
+    - 7.0.0
+  label: Hornbill
+  search:
+    terms:
+      - animal
+      - beak
+      - bird
+      - exotic bird
+      - hornbill
+      - nature
+      - tropical bird
+      - wildlife
+  styles:
+    - brands
+  unicode: f592
+  voted: false
+rust:
+  changes:
+    - 5.13.1
+    - 5.14.0
+    - 7.0.0
+  label: Rust
+  search:
+    terms:
+      - coding
+      - developer
+      - fast
+      - programming language
+      - rust
+      - rust language
+      - rust programming
+      - safe
+      - software
+      - systems programming
+  styles:
+    - brands
+  unicode: e07a
+  voted: true
+html5:
+  changes:
+    - 3.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Html5
+  search:
+    terms:
+      - coding
+      - frontend
+      - html
+      - html5
+      - internet
+      - markup
+      - programming
+      - web
+      - web design
+      - web development
+  styles:
+    - brands
+  unicode: f13b
+  voted: false
+linkedin-in:
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 5.4.1
+    - 5.8.0
+    - 5.8.1
+    - 7.0.0
+  label: Linkedin In
+  search:
+    terms:
+      - business networking
+      - linkedin
+      - linkedin icon
+      - linkedin logo
+      - linkin
+      - professional network
+      - social media
+  styles:
+    - brands
+  unicode: f0e1
+  voted: false
+sourcetree:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Sourcetree
+  search:
+    terms:
+      - atlassian
+      - code management
+      - git
+      - git client
+      - repository
+      - scm
+      - software development
+      - source code
+      - sourcetree
+      - version control
+  styles:
+    - brands
+  unicode: f7d3
+  voted: true
+salesforce:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Salesforce
+  search:
+    terms:
+      - business
+      - cloud
+      - crm
+      - customer relationship management
+      - enterprise
+      - marketing
+      - saas
+      - sales
+      - sales force
+      - salesforce
+  styles:
+    - brands
+  unicode: f83b
+  voted: false
+symfony:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Symfony
+  search:
+    terms:
+      - backend
+      - mvc
+      - open source
+      - php
+      - php framework
+      - php library
+      - symfony
+      - symfony framework
+      - web development
+  styles:
+    - brands
+  unicode: f83d
+  voted: false
+stumbleupon-circle:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Stumbleupon Circle
+  search:
+    terms:
+      - bookmark
+      - discovery
+      - network
+      - sharing
+      - social
+      - stumble
+      - stumbleupon
+      - su
+  styles:
+    - brands
+  unicode: f1a3
+  voted: false
+42-group:
+  aliases:
+    names:
+      - innosoft
+  changes:
+    - 5.15.0
+    - 6.0.0-beta2
+    - 7.0.0
+  label: 42 Group
+  search:
+    terms:
+      - '42'
+      - 42 group
+      - coding bootcamp
+      - coding school
+      - programming academy
+      - programming school
+      - school 42
+      - software development
+      - software engineering school
+      - tech education
+  styles:
+    - brands
+  unicode: e080
+  voted: false
+forumbee:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Forumbee
+  search:
+    terms:
+      - collaboration tool
+      - discussion platform
+      - forum bee
+      - forumbee
+      - online community
+      - social network
+  styles:
+    - brands
+  unicode: f211
+  voted: false
+square-font-awesome:
+  changes:
+    - 5.0.0
+    - 5.0.1
+    - 6.0.0-beta1
+    - 6.1.2
+    - 6.5.2
+    - 7.0.0
+  label: Square Font Awesome
+  search:
+    terms:
+      - brand
+      - fa
+      - font awesome
+      - fontawesome
+      - icon set
+      - logo
+  styles:
+    - brands
+  unicode: e5ad
+  voted: false
+square-x-twitter:
+  changes:
+    - 6.4.2
+    - 7.0.0
+  label: Square X Twitter
+  search:
+    terms:
+      - elon musk
+      - microblogging
+      - social media
+      - social network
+      - tweet
+      - twitter
+      - x
+      - x app
+  styles:
+    - brands
+  unicode: e61a
+  voted: false
+adn:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Adn
+  search:
+    terms:
+      - ADN
+      - app dot net
+      - app.net
+      - microblogging
+      - networking
+      - online community
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f170
+  voted: false
+btc:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Btc
+  search:
+    terms:
+      - bitcoin
+      - blockchain
+      - btc
+      - btc coin
+      - btc token
+      - coin
+      - crypto
+      - cryptocurrency
+      - digital currency
+      - token
+  styles:
+    - brands
+  unicode: f15a
+  voted: false
+roblox-creator-studio:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Roblox Creator Studio
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b6
+  voted: false
+etsy:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 7.0.0
+  label: Etsy
+  search:
+    terms:
+      - artisan
+      - crafts
+      - creative goods
+      - ecommerce
+      - etsy
+      - etsy shop
+      - handmade
+      - marketplace
+      - online store
+      - vintage
+  styles:
+    - brands
+  unicode: f2d7
+  voted: false
+brave:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Brave
+  search:
+    terms:
+      - ad blocker
+      - brave
+      - brave browser
+      - chromium
+      - fast browser
+      - internet
+      - privacy
+      - secure browser
+      - web browser
+  styles:
+    - brands
+  unicode: e63c
+  voted: false
+typescript:
+  changes:
+    - 7.2.0
+  label: Typescript
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e840
+  voted: false
+solana:
+  changes:
+    - 7.2.0
+  label: Solana
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e85e
+  voted: false
+cc-apple-pay:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Cc Apple Pay
+  search:
+    terms:
+      - apple
+      - apple pay
+      - applepay
+      - contactless
+      - digital wallet
+      - mobile payment
+      - pay
+      - payment
+      - tap to pay
+      - wallet
+  styles:
+    - brands
+  unicode: f416
+  voted: false
+mix:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Mix
+  search:
+    terms:
+      - audio
+      - blend
+      - combine
+      - dj
+      - media
+      - mix
+      - mixer
+      - mixing
+      - music
+      - sound
+  styles:
+    - brands
+  unicode: f3cb
+  voted: false
+sellcast:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Sellcast
+  search:
+    terms:
+      - broadcast
+      - media
+      - sell cast
+      - sellcast
+      - streaming
+      - video
+  styles:
+    - brands
+  unicode: f2da
+  voted: false
+openstreetmap:
+  changes:
+    - 7.2.0
+  label: Openstreetmap
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e86b
+  voted: false
+shoelace:
+  changes:
+    - 6.4.1
+    - 6.5.1
+    - 7.0.0
+  label: Shoelace
+  search:
+    terms:
+      - boot
+      - footwear
+      - lace
+      - shoelace
+      - shoelaces
+      - shoes
+      - sneaker
+      - string
+      - tie
+  styles:
+    - brands
+  unicode: e60c
+  voted: false
+square-gitlab:
+  aliases:
+    names:
+      - gitlab-square
+  changes:
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Gitlab
+  search:
+    terms:
+      - ci
+      - code
+      - collaboration
+      - continuous integration
+      - devops
+      - git
+      - gitlab
+      - repository
+      - software
+      - version control
+  styles:
+    - brands
+  unicode: e5ae
+  voted: false
+sitrox:
+  changes:
+    - 6.0.0-beta2
+    - 7.0.0
+  label: Sitrox
+  search:
+    terms:
+      - Sitrox
+      - Sitrox brand
+      - Sitrox company
+      - Sitrox logo
+      - Sitrox technology
+      - sitrox
+  styles:
+    - brands
+  unicode: e44a
+  voted: false
+wikipedia-w:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Wikipedia W
+  search:
+    terms:
+      - encyclopedia
+      - information
+      - knowledge
+      - online encyclopedia
+      - reference
+      - wiki
+      - wiki logo
+      - wikipedia
+  styles:
+    - brands
+  unicode: f266
+  voted: false
+ultralytics-hub:
+  changes:
+    - 7.2.0
+  label: Ultralytics Hub
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e86e
+  voted: false
+chromecast:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Chromecast
+  search:
+    terms:
+      - cast
+      - chromecast
+      - dongle
+      - google chromecast
+      - google device
+      - media player
+      - screen mirroring
+      - streaming
+      - television
+      - tv
+      - wireless display
+  styles:
+    - brands
+  unicode: f838
+  voted: false
+copilot:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Copilot
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8c7
+  voted: false
+notion:
+  changes:
+    - 7.0.0
+  label: Notion
+  search:
+    terms:
+      - collaboration
+      - knowledge base
+      - note-taking
+      - notes
+      - notion
+      - notion.so
+      - organization
+      - productivity
+      - project management
+      - workspace
+  styles:
+    - brands
+  unicode: e7d9
+  voted: false
+creative-commons:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 5.0.11
+    - 5.1.0
+    - 7.0.0
+  label: Creative Commons
+  search:
+    terms:
+      - attribution
+      - cc
+      - copyright
+      - creative commons
+      - free use
+      - license
+      - open content
+      - public domain
+      - share alike
+  styles:
+    - brands
+  unicode: f25e
+  voted: false
+adversal:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Adversal
+  search:
+    terms:
+      - Adversal
+      - ad network
+      - ad platform
+      - ad service
+      - advertising
+      - digital ads
+      - marketing network
+      - online advertising
+  styles:
+    - brands
+  unicode: f36a
+  voted: false
+quinscape:
+  changes:
+    - 5.0.5
+    - 5.7.0
+    - 5.8.0
+    - 7.0.0
+  label: Quinscape
+  search:
+    terms:
+      - quinscape
+      - quinscape brand
+      - quinscape company
+      - quinscape icon
+      - quinscape logo
+  styles:
+    - brands
+  unicode: f459
+  voted: false
+js:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Js
+  search:
+    terms:
+      - coding
+      - developer
+      - javascript
+      - js
+      - language
+      - programming
+      - script
+      - web
+      - web development
+  styles:
+    - brands
+  unicode: f3b8
+  voted: false
+airbnb:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Airbnb
+  search:
+    terms:
+      - Airbnb
+      - accommodation
+      - air bnb
+      - holiday rental
+      - homestay
+      - hospitality
+      - lodging
+      - rental
+      - short term rental
+      - travel
+      - vacation
+      - vacation home
+      - vacation rental
+  styles:
+    - brands
+  unicode: f834
+  voted: false
+internet-explorer:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Internet Explorer
+  search:
+    terms:
+      - browser
+      - explorer
+      - ie
+      - internet explorer
+      - legacy browser
+      - microsoft
+      - web
+  styles:
+    - brands
+  unicode: f26b
+  voted: false
+pied-piper-hat:
+  changes:
+    - 5.0.10
+    - 7.0.0
+  label: Pied Piper Hat
+  search:
+    terms:
+      - clothing
+      - costume
+      - folklore
+      - hat
+      - jester
+      - mascot
+      - medieval
+      - pied piper
+  styles:
+    - brands
+  unicode: f4e5
+  voted: false
+atlassian:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Atlassian
+  search:
+    terms:
+      - Atlassian
+      - Bitbucket
+      - Confluence
+      - DevOps
+      - Jira
+      - Trello
+      - agile
+      - collaboration
+      - project management
+      - software
+  styles:
+    - brands
+  unicode: f77b
+  voted: true
+square-youtube:
+  aliases:
+    names:
+      - youtube-square
+    unicodes:
+      composite:
+        - f166
+  changes:
+    - 5.0.3
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Youtube
+  search:
+    terms:
+      - brand
+      - media
+      - play
+      - social
+      - square
+      - streaming
+      - video
+      - youtube
+  styles:
+    - brands
+  unicode: f431
+  voted: false
+joget:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Joget
+  search:
+    terms:
+      - app builder
+      - business process management
+      - joget
+      - joget workflow
+      - low code
+      - no code
+      - workflow automation
+  styles:
+    - brands
+  unicode: f3b7
+  voted: false
+whmcs:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Whmcs
+  search:
+    terms:
+      - automation
+      - billing
+      - client management
+      - hosting automation
+      - hosting control panel
+      - web hosting
+      - web services
+      - whmcs
+  styles:
+    - brands
+  unicode: f40d
+  voted: false
+pinterest-p:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Pinterest P
+  search:
+    terms:
+      - boards
+      - ideas
+      - image sharing
+      - inspiration
+      - pin
+      - pinterest
+      - social media
+      - visual discovery
+  styles:
+    - brands
+  unicode: f231
+  voted: false
+internet-archive:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Internet Archive
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b1
+  voted: false
+cash-app:
+  changes:
+    - 7.0.0
+  label: Cash App
+  search:
+    terms:
+      - cash app
+      - cashapp
+      - digital wallet
+      - finance
+      - mobile payment
+      - money transfer
+      - payment
+      - peer-to-peer
+      - receive money
+      - send money
+      - venmo alternative
+  styles:
+    - brands
+  unicode: e7d4
+  voted: false
+python:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Python
+  search:
+    terms:
+      - coding
+      - development
+      - programming
+      - python
+      - python brand
+      - python language
+      - python logo
+      - python programming
+      - scripting
+      - software
+  styles:
+    - brands
+  unicode: f3e2
+  voted: false
+imdb:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 6.1.2
+    - 7.0.0
+  label: Imdb
+  search:
+    terms:
+      - entertainment
+      - films
+      - imdb
+      - internet movie database
+      - movies
+      - ratings
+      - reviews
+      - tv
+  styles:
+    - brands
+  unicode: f2d8
+  voted: false
+whatsapp:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Whatsapp
+  search:
+    terms:
+      - call
+      - chat
+      - communication
+      - instant message
+      - messaging
+      - mobile chat
+      - social media
+      - text
+      - video call
+      - voice call
+      - whatsapp
+      - whatsapp messenger
+  styles:
+    - brands
+  unicode: f232
+  voted: false
+square-pied-piper:
+  aliases:
+    names:
+      - pied-piper-square
+  changes:
+    - 5.12.0
+    - 5.14.0
+    - 6.1.2
+    - 7.0.0
+  label: Square Pied Piper
+  search:
+    terms:
+      - brand
+      - pied piper
+      - piedpiper
+      - piper
+      - software
+      - startup
+      - tech
+  styles:
+    - brands
+  unicode: e01e
+  voted: false
+redhat:
+  changes:
+    - 5.6.0
+    - 5.8.2
+    - 7.0.0
+  label: Redhat
+  search:
+    terms:
+      - enterprise linux
+      - linux
+      - open source
+      - operating system
+      - os
+      - red hat
+      - redhat
+      - rhel
+      - software
+  styles:
+    - brands
+  unicode: f7bc
+  voted: true
+creative-commons-sampling-plus:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Sampling Plus
+  search:
+    terms:
+      - attribution
+      - cc
+      - copyright
+      - creative commons
+      - free use
+      - license
+      - open content
+      - sampling plus
+  styles:
+    - brands
+  unicode: f4f1
+  voted: false
+nutritionix:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Nutritionix
+  search:
+    terms:
+      - app
+      - calories
+      - database
+      - diet
+      - fitness
+      - food
+      - health
+      - nutrition
+      - nutritionix
+      - tracking
+  styles:
+    - brands
+  unicode: f3d6
+  voted: false
+lumon:
+  changes:
+    - 7.0.0
+  label: Lumon
+  search:
+    terms:
+      - lumon
+      - lumon balcony
+      - lumon brand
+      - lumon company
+      - lumon glass
+      - lumon logo
+  styles:
+    - brands
+  unicode: e7e2
+  voted: false
+mailchimp:
+  changes:
+    - 5.1.0
+    - 5.7.0
+    - 5.8.0
+    - 5.8.2
+    - 7.0.0
+  label: Mailchimp
+  search:
+    terms:
+      - automation
+      - campaign
+      - chimp
+      - email marketing
+      - email service
+      - mail service
+      - mailchimp
+      - marketing
+      - marketing platform
+      - newsletter
+  styles:
+    - brands
+  unicode: f59e
+  voted: true
+steam-symbol:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Steam Symbol
+  search:
+    terms:
+      - PC games
+      - digital distribution
+      - game launcher
+      - game store
+      - gaming
+      - online gaming
+      - platform
+      - steam
+      - valve
+      - video games
+  styles:
+    - brands
+  unicode: f3f6
+  voted: false
+critical-role:
+  changes:
+    - 5.4.0
+    - 5.8.0
+    - 7.0.0
+  label: Critical Role
+  search:
+    terms:
+      - Critical Role
+      - Dungeons & Dragons
+      - RPG
+      - campaign
+      - d&d
+      - dnd
+      - fantasy
+      - role-playing
+      - streaming
+      - tabletop
+      - voice actors
+      - web series
+  styles:
+    - brands
+  unicode: f6c9
+  voted: false
+kickstarter-k:
+  changes:
+    - 5.0.0
+    - 6.5.2
+    - 7.0.0
+  label: Kickstarter K
+  search:
+    terms:
+      - creative
+      - crowdfunding
+      - fundraising
+      - kickstarter
+      - ks
+      - projects
+      - startup
+  styles:
+    - brands
+  unicode: f3bc
+  voted: false
+twitch:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 5.12.0
+    - 7.0.0
+  label: Twitch
+  search:
+    terms:
+      - broadcast
+      - chat
+      - esports
+      - gaming
+      - live
+      - platform
+      - streamer
+      - streaming
+      - twitch
+      - twitch.tv
+      - video game
+  styles:
+    - brands
+  unicode: f1e8
+  voted: false
+sticker-mule:
+  changes:
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Sticker Mule
+  search:
+    terms:
+      - Sticker Mule
+      - branded stickers
+      - custom labels
+      - custom stickers
+      - decal
+      - label printing
+      - printing service
+      - promotional stickers
+      - stickers
+  styles:
+    - brands
+  unicode: f3f7
+  voted: false
+x-twitter:
+  changes:
+    - 6.4.2
+    - 7.0.0
+  label: X Twitter
+  search:
+    terms:
+      - blue bird
+      - microblogging
+      - social
+      - social media
+      - social network
+      - tweet
+      - tweets
+      - twitter
+      - x
+  styles:
+    - brands
+  unicode: e61b
+  voted: false
+free-code-camp:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 5.12.0
+    - 7.0.0
+  label: Free Code Camp
+  search:
+    terms:
+      - bootcamp
+      - code
+      - coding
+      - developer
+      - education
+      - fcc
+      - freecodecamp
+      - learning
+      - online course
+      - programming
+  styles:
+    - brands
+  unicode: f2c5
+  voted: false
+tencent-weibo:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Tencent Weibo
+  search:
+    terms:
+      - chinese social media
+      - messaging
+      - microblog
+      - platform
+      - social
+      - tencent
+      - weibo
+  styles:
+    - brands
+  unicode: f1d5
+  voted: false
+unity:
+  changes:
+    - 5.12.0
+    - 5.14.0
+    - 6.0.0-beta3
+    - 7.0.0
+  label: Unity
+  search:
+    terms:
+      - 3d
+      - cross-platform
+      - developer
+      - game development
+      - game engine
+      - gaming
+      - interactive
+      - real-time
+      - unity
+      - unity3d
+  styles:
+    - brands
+  unicode: e049
+  voted: true
+tidal:
+  changes:
+    - 7.0.0
+  label: Tidal
+  search:
+    terms:
+      - album
+      - artist
+      - audio
+      - hi-fi
+      - music
+      - playlist
+      - songs
+      - streaming
+      - tidal
+  styles:
+    - brands
+  unicode: e7dc
+  voted: false
+goodreads:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Goodreads
+  search:
+    terms:
+      - book community
+      - book recommendations
+      - book reviews
+      - books
+      - goodreads
+      - literature
+      - reading
+      - reading tracker
+      - social reading
+  styles:
+    - brands
+  unicode: f3a8
+  voted: false
+cloudversify:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Cloudversify
+  search:
+    terms:
+      - cloud platform
+      - cloud services
+      - cloudversify
+      - cloudversify brand
+      - cloudversify company
+      - cloudversify logo
+  styles:
+    - brands
+  unicode: f385
+  voted: false
+hips:
+  changes:
+    - 5.0.5
+    - 7.0.0
+  label: Hips
+  search:
+    terms:
+      - anatomy
+      - body
+      - fitness
+      - health
+      - hips
+      - wellness
+  styles:
+    - brands
+  unicode: f452
+  voted: false
+watchman-monitoring:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Watchman Monitoring
+  search:
+    terms:
+      - IT monitoring
+      - brand
+      - monitoring
+      - network monitoring
+      - server monitoring
+      - system monitoring
+      - watchman
+      - watchman monitoring
+  styles:
+    - brands
+  unicode: e087
+  voted: false
+buy-n-large:
+  changes:
+    - 5.11.0
+    - 7.0.0
+  label: Buy N Large
+  search:
+    terms:
+      - bnL
+      - buy n large
+      - buy-n-large
+      - corporation
+      - fictional brand
+      - large retailer
+      - mega company
+      - parody
+      - sci-fi
+  styles:
+    - brands
+  unicode: f8a6
+  voted: false
+flipboard:
+  changes:
+    - 5.0.5
+    - 5.0.9
+    - 7.0.0
+  label: Flipboard
+  search:
+    terms:
+      - Flipboard
+      - articles
+      - content
+      - magazine
+      - news
+      - news aggregator
+      - news app
+      - reading
+      - social media
+  styles:
+    - brands
+  unicode: f44d
+  voted: true
+deploydog:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Deploydog
+  search:
+    terms:
+      - CI
+      - DevOps
+      - automation
+      - cloud deployment
+      - continuous integration
+      - deploy dog
+      - deploydog
+      - deployment
+      - software deployment
+  styles:
+    - brands
+  unicode: f38e
+  voted: false
+dart-lang:
+  changes:
+    - 6.6.0
+    - 7.0.0
+  label: Dart Lang
+  search:
+    terms:
+      - dart
+      - dartlang
+      - development
+      - flutter
+      - google
+      - language
+      - programming
+      - sdk
+  styles:
+    - brands
+  unicode: e693
+  voted: false
+themeisle:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Themeisle
+  search:
+    terms:
+      - theme isle
+      - themeisle
+      - website templates
+      - website themes
+      - wordpress
+      - wordpress plugins
+      - wordpress themes
+  styles:
+    - brands
+  unicode: f2b2
+  voted: false
+square-snapchat:
+  aliases:
+    names:
+      - snapchat-square
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.1.2
+    - 7.0.0
+  label: Square Snapchat
+  search:
+    terms:
+      - app
+      - chat
+      - filter
+      - ghost
+      - messaging
+      - snap
+      - snapchat
+      - snapcode
+      - social
+      - stories
+  styles:
+    - brands
+  unicode: f2ad
+  voted: false
+creative-commons-zero:
+  changes:
+    - 5.0.11
+    - 5.4.0
+    - 7.0.0
+  label: Creative Commons Zero
+  search:
+    terms:
+      - cc0
+      - copyright free
+      - creative commons zero
+      - free use
+      - no rights reserved
+      - open license
+      - public domain
+      - zero copyright
+  styles:
+    - brands
+  unicode: f4f3
+  voted: false
+hive:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Hive
+  search:
+    terms:
+      - blockchain
+      - crypto
+      - cryptocurrency
+      - decentralized
+      - hive
+      - hive blockchain
+      - hive social
+      - social media
+      - web3
+  styles:
+    - brands
+  unicode: e07f
+  voted: false
+yandex-international:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Yandex International
+  search:
+    terms:
+      - internet
+      - russian tech
+      - search engine
+      - technology
+      - web
+      - yandex
+      - yandex international
+      - yandex logo
+  styles:
+    - brands
+  unicode: f414
+  voted: false
+mixcloud:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 6.1.2
+    - 7.0.0
+  label: Mixcloud
+  search:
+    terms:
+      - DJ mixes
+      - audio platform
+      - mixcloud
+      - music sharing
+      - music streaming
+      - online radio
+      - podcasts
+      - radio shows
+      - streaming service
+  styles:
+    - brands
+  unicode: f289
+  voted: false
+pushed:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Pushed
+  search:
+    terms:
+      - action
+      - button
+      - click
+      - interaction
+      - press
+      - push
+      - pushed
+  styles:
+    - brands
+  unicode: f3e1
+  voted: false
+square-vimeo:
+  aliases:
+    names:
+      - vimeo-square
+  changes:
+    - 4.0.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Vimeo
+  search:
+    terms:
+      - brand
+      - media
+      - social
+      - streaming
+      - video
+      - vimeo
+  styles:
+    - brands
+  unicode: f194
+  voted: false
+perbyte:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Perbyte
+  search:
+    terms:
+      - digital
+      - perbyte
+      - perbyte brand
+      - perbyte logo
+      - software
+      - technology
+  styles:
+    - brands
+  unicode: e083
+  voted: false
+instagram:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Instagram
+  search:
+    terms:
+      - IG
+      - Instagram
+      - app
+      - feed
+      - filter
+      - influencer
+      - photo sharing
+      - reels
+      - social media
+      - social network
+      - stories
+  styles:
+    - brands
+  unicode: f16d
+  voted: false
+figma:
+  changes:
+    - 5.6.0
+    - 5.7.0
+    - 5.8.0
+    - 5.15.4
+    - 6.0.0-beta2
+    - 7.0.0
+  label: Figma
+  search:
+    terms:
+      - app
+      - collaboration
+      - design
+      - figma
+      - interface
+      - prototyping
+      - ui
+      - ux
+      - vector
+      - webdesign
+  styles:
+    - brands
+  unicode: f799
+  voted: false
+monero:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Monero
+  search:
+    terms:
+      - altcoin
+      - blockchain
+      - crypto
+      - cryptocurrency
+      - decentralized
+      - digital currency
+      - monero
+      - privacy coin
+      - xmr
+  styles:
+    - brands
+  unicode: f3d0
+  voted: false
+behance:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Behance
+  search:
+    terms:
+      - adobe behance
+      - art
+      - behance
+      - creative
+      - creative community
+      - design
+      - portfolio
+      - projects
+      - showcase
+  styles:
+    - brands
+  unicode: f1b4
+  voted: false
+visual-studio:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Visual Studio
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8be
+  voted: false
+board-game-geek:
+  aliases:
+    names:
+      - bgg
+  changes:
+    - 7.2.0
+  label: Board Game Geek
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e855
+  voted: false
+orcid:
+  changes:
+    - 5.11.0
+    - 7.0.0
+  label: Orcid
+  search:
+    terms:
+      - academic id
+      - orcid
+      - research profile
+      - researcher
+      - researcher id
+      - researcher identifier
+      - scholarly id
+  styles:
+    - brands
+  unicode: f8d2
+  voted: false
+creative-commons-pd-alt:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Pd Alt
+  search:
+    terms:
+      - cc
+      - copyright free
+      - creative commons
+      - free use
+      - no copyright
+      - open license
+      - pd
+      - public domain
+  styles:
+    - brands
+  unicode: f4ed
+  voted: false
+square-hacker-news:
+  aliases:
+    names:
+      - hacker-news-square
+  changes:
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Hacker News
+  search:
+    terms:
+      - community
+      - developer
+      - hacker news
+      - hn
+      - news
+      - programming
+      - social
+      - startup
+      - tech
+      - technology
+  styles:
+    - brands
+  unicode: f3af
+  voted: false
+hire-a-helper:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Hire A Helper
+  search:
+    terms:
+      - cleaning company
+      - cleaning service
+      - domestic help
+      - hire a helper
+      - home cleaning
+      - home help
+      - housekeeper
+      - maid service
+      - professional cleaner
+  styles:
+    - brands
+  unicode: f3b0
+  voted: false
+keycdn:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Keycdn
+  search:
+    terms:
+      - caching
+      - cdn
+      - cloud
+      - content delivery network
+      - hosting
+      - internet
+      - keycdn
+      - web performance
+  styles:
+    - brands
+  unicode: f3ba
+  voted: false
+rev:
+  changes:
+    - 5.1.0
+    - 5.1.1
+    - 5.8.0
+    - 7.0.0
+  label: Rev
+  search:
+    terms:
+      - audio
+      - captions
+      - dictation
+      - rev
+      - rev.com
+      - speech to text
+      - subtitles
+      - transcription
+      - transcription service
+      - video
+  styles:
+    - brands
+  unicode: f5b2
+  voted: false
+ko-fi:
+  changes:
+    - 7.2.0
+  label: Ko Fi
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e856
+  voted: false
+renren:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Renren
+  search:
+    terms:
+      - chinese social media
+      - renren
+      - renren brand
+      - renren network
+      - social network
+      - social platform
+  styles:
+    - brands
+  unicode: f18b
+  voted: false
+webflow:
+  changes:
+    - 6.5.0
+    - 6.5.1
+    - 7.0.0
+  label: Webflow
+  search:
+    terms:
+      - no-code
+      - web design
+      - web development
+      - web platform
+      - webflow
+      - webflow logo
+      - website builder
+  styles:
+    - brands
+  unicode: e65c
+  voted: false
+staylinked:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Staylinked
+  search:
+    terms:
+      - barcode scanning
+      - enterprise mobility
+      - linkin
+      - mobile computing
+      - staylinked
+      - warehouse software
+  styles:
+    - brands
+  unicode: f3f5
+  voted: false
+zulip:
+  changes:
+    - 7.2.0
+  label: Zulip
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e853
+  voted: false
+mintbit:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Mintbit
+  search:
+    terms:
+      - blockchain
+      - crypto
+      - cryptocurrency
+      - digital currency
+      - mint bit
+      - mintbit
+      - token
+  styles:
+    - brands
+  unicode: e62f
+  voted: false
+shirtsinbulk:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Shirtsinbulk
+  search:
+    terms:
+      - apparel supplier
+      - bulk apparel
+      - bulk clothing
+      - bulk orders
+      - bulk t-shirts
+      - clothing wholesale
+      - shirts in bulk
+      - shirtsinbulk
+      - wholesale fashion
+      - wholesale shirts
+  styles:
+    - brands
+  unicode: f214
+  voted: false
+foursquare:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Foursquare
+  search:
+    terms:
+      - check-in
+      - checkin
+      - foursquare
+      - fsq
+      - local
+      - location
+      - maps
+      - places
+      - social
+      - venue
+  styles:
+    - brands
+  unicode: f180
+  voted: false
+google-wallet:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Google Wallet
+  search:
+    terms:
+      - card
+      - contactless
+      - digital wallet
+      - ecommerce
+      - finance
+      - google pay
+      - google wallet
+      - mobile payment
+      - money
+      - online payment
+      - payment
+      - payments
+      - tap to pay
+      - transaction
+      - wallet
+  styles:
+    - brands
+  unicode: f1ee
+  voted: false
+cotton-bureau:
+  changes:
+    - 5.10.0
+    - 7.0.0
+  label: Cotton Bureau
+  search:
+    terms:
+      - apparel
+      - brand
+      - clothing
+      - clothing brand
+      - cotton bureau
+      - fashion
+      - t-shirts
+      - tshirts
+  styles:
+    - brands
+  unicode: f89e
+  voted: false
+linux:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Linux
+  search:
+    terms:
+      - distro
+      - kernel
+      - linux
+      - open source
+      - operating system
+      - penguin
+      - tux
+  styles:
+    - brands
+  unicode: f17c
+  voted: false
+fantasy-flight-games:
+  changes:
+    - 5.4.0
+    - 7.0.0
+  label: Fantasy Flight Games
+  search:
+    terms:
+      - Dungeons & Dragons
+      - FFG
+      - Fantasy Flight Games
+      - RPG
+      - board games
+      - card games
+      - d&d
+      - dnd
+      - fantasy
+      - role-playing games
+      - strategy games
+      - tabletop games
+  styles:
+    - brands
+  unicode: f6dc
+  voted: false
+speakap:
+  changes:
+    - 5.0.0
+    - 5.4.0
+    - 5.8.0
+    - 7.0.0
+  label: Speakap
+  search:
+    terms:
+      - corporate social network
+      - employee app
+      - internal communication
+      - speakap
+      - team collaboration
+      - workplace chat
+  styles:
+    - brands
+  unicode: f3f3
+  voted: false
+square-font-awesome-stroke:
+  aliases:
+    names:
+      - font-awesome-alt
+  changes:
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.5.2
+    - 7.0.0
+  label: Square Font Awesome Stroke
+  search:
+    terms:
+      - brand
+      - fa
+      - font-awesome
+      - icon
+      - logo
+      - square
+      - typeface
+  styles:
+    - brands
+  unicode: f35c
+  voted: false
+maxcdn:
+  changes:
+    - 3.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Maxcdn
+  search:
+    terms:
+      - caching
+      - cdn
+      - cloudflare alternative
+      - content delivery network
+      - hosting
+      - internet service
+      - maxcdn
+      - web performance
+  styles:
+    - brands
+  unicode: f136
+  voted: false
+vimeo:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Vimeo
+  search:
+    terms:
+      - film
+      - media
+      - movies
+      - online video
+      - streaming
+      - video
+      - video platform
+      - videos
+      - vimeo
+  styles:
+    - brands
+  unicode: f40a
+  voted: false
+codeberg:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Codeberg
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8ad
+  voted: false
+dochub:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Dochub
+  search:
+    terms:
+      - digital signature
+      - dochub
+      - document hub
+      - document management
+      - document signing
+      - e-signature
+      - pdf editor
+      - pdf signing
+      - pdf tools
+  styles:
+    - brands
+  unicode: f394
+  voted: false
+hotjar:
+  changes:
+    - 5.0.0
+    - 6.4.1
+    - 7.0.0
+  label: Hotjar
+  search:
+    terms:
+      - UX
+      - analytics
+      - conversion rate
+      - feedback
+      - heatmap
+      - hotjar
+      - session recording
+      - user behavior
+      - user experience
+      - website tracking
+  styles:
+    - brands
+  unicode: f3b1
+  voted: false
+matrix:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Matrix
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b3
+  voted: false
+dev:
+  changes:
+    - 5.4.0
+    - 7.0.0
+  label: Dev
+  search:
+    terms:
+      - code
+      - coding
+      - dev
+      - developer
+      - development
+      - engineer
+      - programming
+      - software
+      - tech
+      - technology
+  styles:
+    - brands
+  unicode: f6cc
+  voted: true
+neos:
+  changes:
+    - 5.2.0
+    - 5.8.0
+    - 7.0.0
+  label: Neos
+  search:
+    terms:
+      - blockchain
+      - crypto
+      - crypto coin
+      - crypto token
+      - cryptocurrency
+      - digital currency
+      - neos
+      - neos wallet
+  styles:
+    - brands
+  unicode: f612
+  voted: true
+bilibili:
+  changes:
+    - 6.0.0-beta2
+    - 7.0.0
+  label: Bilibili
+  search:
+    terms:
+      - Bilibili
+      - B站
+      - Chinese video platform
+      - anime
+      - bilibili
+      - comics
+      - gaming
+      - live streaming
+      - streaming
+      - video
+  styles:
+    - brands
+  unicode: e3d9
+  voted: true
+buromobelexperte:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Buromobelexperte
+  search:
+    terms:
+      - German brand
+      - buromobel
+      - buromobel experte
+      - experte
+      - furniture brand
+      - office furniture
+  styles:
+    - brands
+  unicode: f37f
+  voted: false
+fort-awesome-alt:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Fort Awesome Alt
+  search:
+    terms:
+      - castle
+      - defense
+      - fort
+      - fortress
+      - fortress wall
+      - medieval
+      - military
+      - stronghold
+  styles:
+    - brands
+  unicode: f3a3
+  voted: false
+ussunnah:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Ussunnah
+  search:
+    terms:
+      - brand
+      - islamic
+      - muslim
+      - sunnah
+      - us sunnah
+      - ussunnah
+  styles:
+    - brands
+  unicode: f407
+  voted: false
+pied-piper-pp:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Pied Piper Pp
+  search:
+    terms:
+      - brand
+      - logo
+      - pied piper
+      - pied-piper
+      - piper
+      - software
+      - startup
+      - technology
+  styles:
+    - brands
+  unicode: f1a7
+  voted: false
+ideal:
+  changes:
+    - 5.12.0
+    - 5.14.0
+    - 7.0.0
+  label: Ideal
+  search:
+    terms:
+      - banking
+      - digital wallet
+      - ecommerce
+      - finance
+      - ideal
+      - ideal logo
+      - money transfer
+      - online payment
+      - payment
+  styles:
+    - brands
+  unicode: e013
+  voted: true
+wordpress:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Wordpress
+  search:
+    terms:
+      - blog
+      - blogging platform
+      - cms
+      - content management
+      - open source
+      - php
+      - publishing
+      - website
+      - wordpress
+      - wp
+  styles:
+    - brands
+  unicode: f19a
+  voted: false
+tiktok:
+  changes:
+    - 5.13.1
+    - 5.14.0
+    - 7.0.0
+  label: Tiktok
+  search:
+    terms:
+      - app
+      - dance
+      - lip sync
+      - music
+      - short video
+      - social media
+      - tik tok
+      - tiktok
+      - trends
+      - video
+      - viral
+  styles:
+    - brands
+  unicode: e07b
+  voted: true
+reddit-alien:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 6.5.1
+    - 7.0.0
+  label: Reddit Alien
+  search:
+    terms:
+      - alien
+      - community
+      - forum
+      - mascot
+      - reddit
+      - snoo
+      - social media
+      - subreddit
+      - upvote
+  styles:
+    - brands
+  unicode: f281
+  voted: false
+hashnode:
+  changes:
+    - 6.0.0
+    - 7.0.0
+  label: Hashnode
+  search:
+    terms:
+      - articles
+      - blogging
+      - content platform
+      - developer blog
+      - developer community
+      - developer platform
+      - hashnode
+      - programming
+      - tech blog
+      - writing
+  styles:
+    - brands
+  unicode: e499
+  voted: false
+css:
+  changes:
+    - 6.7.0
+  label: Css
+  search:
+    terms:
+      - cascading style sheets
+      - css
+      - rebecca purple
+      - stylesheet
+      - web design
+      - web development
+  styles:
+    - brands
+  unicode: e6a2
+  voted: false
+square-linkedin:
+  changes:
+    - 7.0.0
+  label: Square Linkedin
+  search:
+    terms:
+      - business
+      - linkedin
+      - linkedin-logo
+      - linkedin-square
+      - network
+      - professional network
+      - social
+      - social media
+  styles:
+    - brands
+  unicode: e7d0
+  voted: false
+jxl:
+  changes:
+    - 6.5.2
+    - 7.0.0
+  label: Jxl
+  search:
+    terms:
+      - codec
+      - graphics
+      - image format
+      - jpeg xl
+      - jxl
+      - photo
+      - picture
+  styles:
+    - brands
+  unicode: e67b
+  voted: false
+hugging-face:
+  changes:
+    - 7.2.0
+  label: Hugging Face
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e869
+  voted: false
+react:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: React
+  search:
+    terms:
+      - component
+      - facebook
+      - framework
+      - frontend
+      - javascript
+      - jsx
+      - library
+      - react
+      - reactjs
+      - ui
+      - web app
+      - web development
+  styles:
+    - brands
+  unicode: f41b
+  voted: false
+square-tumblr:
+  aliases:
+    names:
+      - tumblr-square
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Tumblr
+  search:
+    terms:
+      - blog
+      - blogging
+      - microblog
+      - platform
+      - post
+      - social
+      - tmb
+      - tumblr
+  styles:
+    - brands
+  unicode: f174
+  voted: false
+pix:
+  changes:
+    - 6.0.0-beta2
+    - 7.0.0
+  label: Pix
+  search:
+    terms:
+      - free images
+      - images
+      - media
+      - photo sharing
+      - photography
+      - photos
+      - pictures
+      - pix
+      - pixabay
+      - stock photos
+  styles:
+    - brands
+  unicode: e43a
+  voted: true
+medapps:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Medapps
+  search:
+    terms:
+      - health services
+      - health technology
+      - healthcare apps
+      - medapps
+      - medical apps
+      - medical software
+  styles:
+    - brands
+  unicode: f3c6
+  voted: false
+cuttlefish:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Cuttlefish
+  search:
+    terms:
+      - animal
+      - cephalopod
+      - cuttlefish
+      - marine
+      - mollusk
+      - ocean
+      - sea creature
+      - seafood
+  styles:
+    - brands
+  unicode: f38c
+  voted: false
+square-upwork:
+  changes:
+    - 6.5.2
+    - 7.0.0
+  label: Square Upwork
+  search:
+    terms:
+      - contract
+      - freelance
+      - freelancer
+      - gig economy
+      - jobs
+      - marketplace
+      - online work
+      - remote work
+      - upwork
+      - work platform
+  styles:
+    - brands
+  unicode: e67c
+  voted: false
+product-hunt:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 7.0.0
+  label: Product Hunt
+  search:
+    terms:
+      - app discovery
+      - community
+      - innovation
+      - launch
+      - new apps
+      - ph
+      - product hunt
+      - products
+      - startup
+      - tech
+  styles:
+    - brands
+  unicode: f288
+  voted: false
+diaspora:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Diaspora
+  search:
+    terms:
+      - community
+      - decentralized
+      - diaspora
+      - open source
+      - platform
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f791
+  voted: true
+wpbeginner:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Wpbeginner
+  search:
+    terms:
+      - wordpress beginner
+      - wordpress guide
+      - wordpress help
+      - wordpress learning
+      - wordpress tips
+      - wordpress tutorial
+      - wpbeginner
+  styles:
+    - brands
+  unicode: f297
+  voted: false
+palfed:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Palfed
+  search:
+    terms:
+      - palestine
+      - palestine federation
+      - palestinian
+      - palestinian federation
+      - palfed
+  styles:
+    - brands
+  unicode: f3d8
+  voted: false
+fonticons-fi:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Fonticons Fi
+  search:
+    terms:
+      - branding
+      - fi
+      - font icon
+      - fonticons
+      - icon
+      - logo
+  styles:
+    - brands
+  unicode: f3a2
+  voted: false
+meetup:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 7.0.0
+  label: Meetup
+  search:
+    terms:
+      - community
+      - event
+      - gathering
+      - group
+      - meetup
+      - meetup.com
+      - network
+      - social
+  styles:
+    - brands
+  unicode: f2e0
+  voted: false
+android:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.12.0
+    - 7.0.0
+    - 7.3.0
+    - 7.3.0
+  label: Android
+  search:
+    terms:
+      - android
+      - android logo
+      - google
+      - google android
+      - green robot
+      - mobile
+      - operating system
+      - os
+      - phone
+      - robot
+      - smartphone
+  styles:
+    - brands
+  unicode: f17b
+  voted: false
+angellist:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Angellist
+  search:
+    terms:
+      - AngelList
+      - angel investing
+      - funding
+      - investing
+      - investors
+      - job board
+      - startup funding
+      - startup jobs
+      - startups
+      - venture capital
+  styles:
+    - brands
+  unicode: f209
+  voted: false
+slack:
+  aliases:
+    names:
+      - slack-hash
+    unicodes:
+      composite:
+        - f3ef
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Slack
+  search:
+    terms:
+      - chat
+      - collaboration
+      - communication
+      - hashtag
+      - messaging
+      - slack
+      - team
+      - workspace
+  styles:
+    - brands
+  unicode: f198
+  voted: false
+mandalorian:
+  changes:
+    - 5.0.12
+    - 5.8.0
+    - 7.0.0
+  label: Mandalorian
+  search:
+    terms:
+      - armor
+      - beskar
+      - bounty hunter
+      - din djarin
+      - disney plus
+      - helmet
+      - mandalorian
+      - sci-fi
+      - star wars
+      - tv show
+      - warrior
+  styles:
+    - brands
+  unicode: f50f
+  voted: false
+square-letterboxd:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Square Letterboxd
+  search:
+    terms:
+      - cinema
+      - film
+      - letterboxd
+      - movie
+      - movies
+      - rating
+      - reviews
+      - social
+      - streaming
+      - watchlist
+  styles:
+    - brands
+  unicode: e62e
+  voted: false
+usps:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Usps
+  search:
+    terms:
+      - American
+      - USA
+      - USPS
+      - United States Postal Service
+      - delivery
+      - mail
+      - package
+      - postal
+      - shipping
+  styles:
+    - brands
+  unicode: f7e1
+  voted: false
+creative-commons-nd:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Nd
+  search:
+    terms:
+      - cc
+      - content sharing
+      - copyright
+      - copyright license
+      - creative commons
+      - license
+      - nd
+      - no derivatives
+      - reuse restriction
+  styles:
+    - brands
+  unicode: f4eb
+  voted: false
+wizards-of-the-coast:
+  changes:
+    - 5.4.0
+    - 7.0.0
+  label: Wizards Of The Coast
+  search:
+    terms:
+      - Dungeons & Dragons
+      - Wizards of the Coast
+      - collectible card game
+      - d&d
+      - dnd
+      - fantasy
+      - gaming
+      - magic the gathering
+      - mtg
+      - role-playing game
+      - rpg
+      - tabletop
+  styles:
+    - brands
+  unicode: f730
+  voted: false
+cloudsmith:
+  changes:
+    - 5.0.0
+    - 6.4.1
+    - 7.0.0
+  label: Cloudsmith
+  search:
+    terms:
+      - artifact storage
+      - cloud packages
+      - cloudsmith
+      - cloudsmith.io
+      - continuous integration
+      - devops
+      - package management
+      - software repository
+  styles:
+    - brands
+  unicode: f384
+  voted: false
+firefox-browser:
+  changes:
+    - 5.12.0
+    - 5.14.0
+    - 7.0.0
+  label: Firefox Browser
+  search:
+    terms:
+      - browser
+      - browser icon
+      - firefox
+      - internet
+      - mozilla
+      - web
+      - web browser
+  styles:
+    - brands
+  unicode: e007
+  voted: false
+git-alt:
+  changes:
+    - 5.8.2
+    - 7.0.0
+  label: Git Alt
+  search:
+    terms:
+      - branch
+      - code
+      - commit
+      - dev
+      - developer
+      - git
+      - repository
+      - software
+      - source control
+      - version control
+  styles:
+    - brands
+  unicode: f841
+  voted: false
+tor-browser:
+  changes:
+    - 7.1.0
+  label: Tor Browser
+  search:
+    terms:
+      - anonymity
+      - anonymous browsing
+      - censorship circumvention
+      - dark web
+      - internet privacy
+      - onion
+      - privacy
+      - secure browsing
+      - tor
+      - tor browser
+  styles:
+    - brands
+  unicode: e838
+  voted: false
+lets-encrypt:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Lets Encrypt
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b2
+  voted: false
+magento:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Magento
+  search:
+    terms:
+      - adobe magento
+      - cms
+      - ecommerce
+      - magento
+      - marketplace
+      - online store
+      - platform
+      - shopping
+  styles:
+    - brands
+  unicode: f3c4
+  voted: false
+docker:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Docker
+  search:
+    terms:
+      - cloud
+      - container
+      - containers
+      - deployment
+      - devops
+      - docker
+      - image
+      - platform
+      - software
+      - virtualization
+  styles:
+    - brands
+  unicode: f395
+  voted: false
+weebly:
+  changes:
+    - 5.1.0
+    - 7.0.0
+  label: Weebly
+  search:
+    terms:
+      - drag and drop
+      - ecommerce
+      - online store
+      - site builder
+      - small business
+      - web design
+      - web hosting
+      - website builder
+      - website platform
+      - weebly
+  styles:
+    - brands
+  unicode: f5cc
+  voted: true
+postgresql:
+  changes:
+    - 7.2.0
+  label: Postgresql
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e858
+  voted: false
+forgejo:
+  changes:
+    - 7.2.0
+  label: Forgejo
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e860
+  voted: false
+lumon-drop:
+  changes:
+    - 7.0.0
+  label: Lumon Drop
+  search:
+    terms:
+      - brand
+      - company
+      - drop
+      - logo
+      - lumon
+      - lumon drop
+  styles:
+    - brands
+  unicode: e7e3
+  voted: false
+keybase:
+  changes:
+    - 5.0.11
+    - 5.8.0
+    - 5.10.2
+    - 5.11.0
+    - 7.0.0
+  label: Keybase
+  search:
+    terms:
+      - chat
+      - cryptography
+      - encryption
+      - identity
+      - keybase
+      - messaging
+      - security
+      - verification
+  styles:
+    - brands
+  unicode: f4f5
+  voted: true
+jsfiddle:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Jsfiddle
+  search:
+    terms:
+      - code editor
+      - code snippet
+      - coding sandbox
+      - frontend playground
+      - javascript playground
+      - js
+      - js fiddle
+      - jsfiddle
+      - online editor
+      - programming tool
+      - web development
+  styles:
+    - brands
+  unicode: f1cc
+  voted: false
+xrp:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Xrp
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8ba
+  voted: false
+glide-g:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Glide G
+  search:
+    terms:
+      - app builder
+      - app maker
+      - glide
+      - glideapps
+      - mobile app
+      - no-code
+      - platform
+      - software
+      - web app
+  styles:
+    - brands
+  unicode: f2a6
+  voted: false
+aws:
+  changes:
+    - 5.0.0
+    - 5.1.0
+    - 7.0.0
+  label: Aws
+  search:
+    terms:
+      - amazon
+      - amazon web services
+      - aws cloud
+      - aws logo
+      - aws platform
+      - cloud
+      - cloud computing
+      - web services
+  styles:
+    - brands
+  unicode: f375
+  voted: false
+grav:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 7.0.0
+  label: Grav
+  search:
+    terms:
+      - account
+      - avatar
+      - grav
+      - gravatar
+      - identity
+      - picture
+      - profile
+      - user
+  styles:
+    - brands
+  unicode: f2d6
+  voted: false
+w3c:
+  changes:
+    - 7.0.0
+  label: W3c
+  search:
+    terms:
+      - internet standards
+      - w3c
+      - web accessibility
+      - web design
+      - web development
+      - web standards
+      - web technologies
+      - world wide web consortium
+  styles:
+    - brands
+  unicode: e7de
+  voted: false
+korvue:
+  changes:
+    - 5.0.2
+    - 7.0.0
+  label: Korvue
+  search:
+    terms:
+      - korvue
+      - korvue app
+      - korvue brand
+      - korvue logo
+      - korvue software
+  styles:
+    - brands
+  unicode: f42f
+  voted: false
+google-play:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Google Play
+  search:
+    terms:
+      - android store
+      - app store
+      - google apps
+      - google play
+      - google play store
+      - playstore
+  styles:
+    - brands
+  unicode: f3ab
+  voted: false
+themeco:
+  changes:
+    - 5.1.0
+    - 5.8.0
+    - 7.0.0
+  label: Themeco
+  search:
+    terms:
+      - brand
+      - builder
+      - creative
+      - digital products
+      - page builder
+      - templates
+      - theme
+      - themeco
+      - themes
+      - web design
+      - website
+      - wordpress
+  styles:
+    - brands
+  unicode: f5c6
+  voted: false
+cloudscale:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Cloudscale
+  search:
+    terms:
+      - cloud computing
+      - cloud hosting
+      - cloud infrastructure
+      - cloud provider
+      - cloud services
+      - cloudscale
+      - cloudscale.ch
+      - data center
+      - hosting
+      - server
+  styles:
+    - brands
+  unicode: f383
+  voted: false
+npm:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Npm
+  search:
+    terms:
+      - JavaScript
+      - Node Package Manager
+      - Node.js
+      - libraries
+      - modules
+      - node modules
+      - npm
+      - package manager
+      - packages
+  styles:
+    - brands
+  unicode: f3d4
+  voted: false
+creative-commons-nc-eu:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Nc Eu
+  search:
+    terms:
+      - attribution
+      - cc
+      - copyright
+      - creative commons
+      - eu
+      - europe
+      - license
+      - nc
+      - noncommercial
+      - open content
+  styles:
+    - brands
+  unicode: f4e9
+  voted: false
+square-steam:
+  aliases:
+    names:
+      - steam-square
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Steam
+  search:
+    terms:
+      - digital
+      - distribution
+      - games
+      - gaming
+      - online
+      - pc
+      - platform
+      - steam
+      - store
+      - valve
+      - video games
+  styles:
+    - brands
+  unicode: f1b7
+  voted: false
+wodu:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Wodu
+  search:
+    terms:
+      - Wodu
+      - Wodu app
+      - Wodu brand
+      - Wodu logo
+      - Wodu platform
+      - Wodu service
+  styles:
+    - brands
+  unicode: e088
+  voted: false
+nfc-symbol:
+  changes:
+    - 6.1.0
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+    - 7.0.0
+  label: Nfc Symbol
+  search:
+    terms:
+      - connect
+      - contactless
+      - data
+      - near field communication
+      - nfc
+      - scan
+      - signal
+      - tap
+      - transfer
+      - wireless
+      - wireless payment
+  styles:
+    - brands
+  unicode: e531
+  voted: false
+java:
+  changes:
+    - 5.0.10
+    - 5.7.0
+    - 5.8.0
+    - 7.0.0
+  label: Java
+  search:
+    terms:
+      - coding
+      - coffee
+      - java
+      - java language
+      - java platform
+      - java programming
+      - jvm
+      - programming
+      - software development
+  styles:
+    - brands
+  unicode: f4e4
+  voted: false
+leanpub:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Leanpub
+  search:
+    terms:
+      - author platform
+      - book platform
+      - digital publishing
+      - ebooks
+      - leanpub
+      - online books
+      - publishing
+      - self-publishing
+  styles:
+    - brands
+  unicode: f212
+  voted: false
+build-awesome:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Build Awesome
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8ac
+  voted: false
+spotify:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Spotify
+  search:
+    terms:
+      - album
+      - artist
+      - audio
+      - music
+      - playlist
+      - podcast
+      - songs
+      - sound
+      - spotify
+      - streaming
+  styles:
+    - brands
+  unicode: f1bc
+  voted: false
+kickstarter:
+  aliases:
+    names:
+      - square-kickstarter
+  changes:
+    - 5.0.0
+    - 6.5.2
+    - 7.0.0
+  label: Kickstarter
+  search:
+    terms:
+      - backer
+      - campaign
+      - creative
+      - crowdfunding
+      - fundraising
+      - kickstarter
+      - pledge
+      - projects
+      - startup
+      - support
+  styles:
+    - brands
+  unicode: f3bb
+  voted: false
+viber:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Viber
+  search:
+    terms:
+      - calls
+      - chat
+      - communication
+      - instant message
+      - messaging
+      - mobile app
+      - text
+      - viber
+      - viber messenger
+      - voip
+  styles:
+    - brands
+  unicode: f409
+  voted: false
+houzz:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 5.0.9
+    - 5.8.0
+    - 7.0.0
+  label: Houzz
+  search:
+    terms:
+      - architecture
+      - decor
+      - home design
+      - home improvement
+      - housing
+      - houzz
+      - interior design
+      - real estate
+      - remodeling
+      - renovation
+  styles:
+    - brands
+  unicode: f27c
+  voted: false
+ethereum:
+  changes:
+    - 5.0.2
+    - 7.0.0
+  label: Ethereum
+  search:
+    terms:
+      - blockchain
+      - crypto
+      - cryptocurrency
+      - defi
+      - digital currency
+      - eth
+      - ether
+      - ethereum
+      - smart contract
+      - token
+  styles:
+    - brands
+  unicode: f42e
+  voted: true
+canadian-maple-leaf:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Canadian Maple Leaf
+  search:
+    terms:
+      - canada
+      - canadian
+      - emblem
+      - leaf
+      - maple
+      - nature
+      - plant
+      - symbol
+  styles:
+    - brands
+  unicode: f785
+  voted: false
+instalod:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Instalod
+  search:
+    terms:
+      - app
+      - download
+      - file transfer
+      - installation
+      - instaload
+      - instalod
+      - software
+  styles:
+    - brands
+  unicode: e081
+  voted: false
+r-project:
+  changes:
+    - 5.0.11
+    - 5.0.12
+    - 7.0.0
+  label: R Project
+  search:
+    terms:
+      - R
+      - R language
+      - R programming
+      - R software
+      - R-project
+      - data analysis
+      - data science
+      - programming language
+      - statistical computing
+  styles:
+    - brands
+  unicode: f4f7
+  voted: true
+jedi-order:
+  changes:
+    - 5.0.12
+    - 5.7.0
+    - 7.0.0
+  label: Jedi Order
+  search:
+    terms:
+      - jedi
+      - jedi emblem
+      - jedi order
+      - jedi symbol
+      - star wars
+      - star wars emblem
+      - star wars logo
+      - star wars symbol
+      - starwars
+  styles:
+    - brands
+  unicode: f50e
+  voted: false
+creative-commons-sampling:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Sampling
+  search:
+    terms:
+      - audio
+      - cc
+      - copyright
+      - creative commons
+      - license
+      - music
+      - remix
+      - reuse
+      - sampling
+  styles:
+    - brands
+  unicode: f4f0
+  voted: false
+deezer:
+  changes:
+    - 5.13.1
+    - 5.14.0
+    - 7.0.0
+  label: Deezer
+  search:
+    terms:
+      - audio
+      - deezer
+      - music
+      - playlist
+      - podcast
+      - radio
+      - songs
+      - streaming
+  styles:
+    - brands
+  unicode: e077
+  voted: true
+dropbox:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.0.1
+    - 7.0.0
+  label: Dropbox
+  search:
+    terms:
+      - backup
+      - cloud drive
+      - cloud storage
+      - collaboration
+      - dropbox
+      - file hosting
+      - file sharing
+      - file sync
+      - online storage
+  styles:
+    - brands
+  unicode: f16b
+  voted: false
+opensuse:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Opensuse
+  search:
+    terms:
+      - green chameleon
+      - linux
+      - linux distribution
+      - linux distro
+      - openSUSE
+      - opensource
+      - opensuse
+      - operating system
+      - suse
+  styles:
+    - brands
+  unicode: e62b
+  voted: false
+circle-zulip:
+  changes:
+    - 7.2.0
+  label: Circle Zulip
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e851
+  voted: false
+angular:
+  changes:
+    - 5.0.0
+    - 5.8.0
+    - 7.0.0
+  label: Angular
+  search:
+    terms:
+      - Angular
+      - AngularJS
+      - Google
+      - JavaScript
+      - SPA
+      - TypeScript
+      - framework
+      - frontend
+      - single-page application
+      - web app
+  styles:
+    - brands
+  unicode: f420
+  voted: false
+skype:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Skype
+  search:
+    terms:
+      - calling
+      - chat
+      - communication
+      - conference
+      - messaging
+      - microsoft
+      - online meeting
+      - skype
+      - video call
+      - voip
+  styles:
+    - brands
+  unicode: f17e
+  voted: false
+square-whatsapp:
+  aliases:
+    names:
+      - whatsapp-square
+  changes:
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Whatsapp
+  search:
+    terms:
+      - chat
+      - communication
+      - instant messaging
+      - message
+      - messaging
+      - mobile app
+      - social
+      - whatsapp
+      - whatsapp logo
+  styles:
+    - brands
+  unicode: f40c
+  voted: false
+threema:
+  changes:
+    - 7.2.0
+  label: Threema
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e85f
+  voted: false
+sass:
+  changes:
+    - 5.0.0
+    - 5.8.0
+    - 7.0.0
+  label: Sass
+  search:
+    terms:
+      - css preprocessor
+      - frontend
+      - sass
+      - sass brand
+      - sass logo
+      - sass-lang
+      - style language
+      - stylesheet
+      - web development
+  styles:
+    - brands
+  unicode: f41e
+  voted: false
+web-awesome:
+  changes:
+    - 6.5.2
+    - 6.6.0
+    - 6.7.0
+    - 7.0.0
+  label: Web Awesome
+  search:
+    terms:
+      - award
+      - awesome
+      - badge
+      - coding
+      - components
+      - crown
+      - developer
+      - frontend
+      - programming
+      - web
+  styles:
+    - brands
+  unicode: e682
+  voted: false
+sketch:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Sketch
+  search:
+    terms:
+      - app
+      - design
+      - illustration
+      - mac
+      - macos
+      - prototyping
+      - sketch
+      - software
+      - ui
+      - ux
+      - vector
+  styles:
+    - brands
+  unicode: f7c6
+  voted: false
+mastodon:
+  changes:
+    - 5.0.11
+    - 5.8.0
+    - 7.0.0
+  label: Mastodon
+  search:
+    terms:
+      - decentralized
+      - federated
+      - fediverse
+      - mastodon
+      - microblogging
+      - network
+      - open source
+      - platform
+      - social
+      - social media
+  styles:
+    - brands
+  unicode: f4f6
+  voted: true
+debian:
+  changes:
+    - 6.4.1
+    - 6.5.0
+    - 7.0.0
+  label: Debian
+  search:
+    terms:
+      - debian
+      - debian linux
+      - distribution
+      - distro
+      - linux
+      - open source
+      - operating system
+      - os
+      - penguin
+      - software
+  styles:
+    - brands
+  unicode: e60b
+  voted: false
+centercode:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Centercode
+  search:
+    terms:
+      - QA
+      - beta testing
+      - center code
+      - centercode
+      - feedback platform
+      - quality assurance
+      - software testing
+      - testing
+      - user testing
+  styles:
+    - brands
+  unicode: f380
+  voted: false
+phoenix-squadron:
+  changes:
+    - 5.0.12
+    - 5.8.0
+    - 7.0.0
+  label: Phoenix Squadron
+  search:
+    terms:
+      - phoenix
+      - phoenix squadron
+      - pilot
+      - rebellion
+      - resistance
+      - sci-fi
+      - space battle
+      - squadron
+      - star wars
+      - starfighter
+  styles:
+    - brands
+  unicode: f511
+  voted: false
+tumblr:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Tumblr
+  search:
+    terms:
+      - blogging
+      - microblogging
+      - social media
+      - social network
+      - tmb
+      - tumblr
+      - tumblr logo
+  styles:
+    - brands
+  unicode: f173
+  voted: false
+apple:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.0.7
+    - 5.8.0
+    - 7.0.0
+  label: Apple
+  search:
+    terms:
+      - apple
+      - apple computer
+      - apple logo
+      - electronics
+      - fruit
+      - ios
+      - ipad
+      - iphone
+      - mac
+      - macos
+      - operating system
+      - os
+      - osx
+      - technology
+  styles:
+    - brands
+  unicode: f179
+  voted: false
+google-pay:
+  changes:
+    - 5.13.1
+    - 5.14.0
+    - 7.0.0
+  label: Google Pay
+  search:
+    terms:
+      - contactless pay
+      - digital wallet
+      - google pay
+      - google wallet
+      - gpay
+      - mobile payment
+      - nfc payment
+      - online payment
+      - payment
+      - tap to pay
+  styles:
+    - brands
+  unicode: e079
+  voted: false
+gratipay:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Gratipay
+  search:
+    terms:
+      - charity
+      - contribution
+      - crowdfunding
+      - donation
+      - funding
+      - gratipay
+      - support
+      - tip
+  styles:
+    - brands
+  unicode: f184
+  voted: false
+buffer:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Buffer
+  search:
+    terms:
+      - buffer
+      - content management
+      - marketing
+      - posts
+      - scheduling
+      - social media
+      - social media management
+      - social media platform
+      - social media tool
+      - social network
+  styles:
+    - brands
+  unicode: f837
+  voted: false
+flutter:
+  changes:
+    - 6.6.0
+    - 7.0.0
+  label: Flutter
+  search:
+    terms:
+      - flutter
+      - flutter SDK
+      - flutter UI
+      - flutter app
+      - flutter brand
+      - flutter development
+      - flutter framework
+      - flutter logo
+      - flutter mobile
+      - flutter web
+  styles:
+    - brands
+  unicode: e694
+  voted: false
+kakao-talk:
+  changes:
+    - 7.0.0
+  label: Kakao Talk
+  search:
+    terms:
+      - chat
+      - instant messaging
+      - kakao
+      - kakao talk
+      - kakaotalk
+      - korean messenger
+      - messaging
+      - messenger
+      - mobile chat
+      - social app
+  styles:
+    - brands
+  unicode: e7d7
+  voted: false
+upwork:
+  changes:
+    - 6.5.0
+    - 6.5.2
+    - 7.0.0
+  label: Upwork
+  search:
+    terms:
+      - contract work
+      - freelance
+      - freelancer
+      - freelancing platform
+      - gig economy
+      - online jobs
+      - remote work
+      - upwork
+      - work marketplace
+  styles:
+    - brands
+  unicode: e641
+  voted: false
+cc-visa:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Visa
+  search:
+    terms:
+      - banking
+      - card
+      - credit card
+      - debit
+      - financial
+      - mastercard alternative
+      - payment
+      - visa
+      - visa card
+      - visa logo
+  styles:
+    - brands
+  unicode: f1f0
+  voted: false
+flickr:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Flickr
+  search:
+    terms:
+      - flickr
+      - images
+      - photo community
+      - photo hosting
+      - photo sharing
+      - photography
+      - photos
+      - social media
+  styles:
+    - brands
+  unicode: f16e
+  voted: false
+speaker-deck:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Speaker Deck
+  search:
+    terms:
+      - conferences
+      - presentations
+      - presentations platform
+      - sharing
+      - slide deck
+      - slides
+      - speakerdeck
+      - talks
+  styles:
+    - brands
+  unicode: f83c
+  voted: false
+wpforms:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Wpforms
+  search:
+    terms:
+      - contact form
+      - form builder
+      - form creation
+      - form plugin
+      - form software
+      - form tool
+      - online forms
+      - wordpress forms
+      - wordpress plugin
+      - wpforms
+  styles:
+    - brands
+  unicode: f298
+  voted: false
+laravel:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 5.11.2
+    - 6.7.1
+    - 7.0.0
+  label: Laravel
+  search:
+    terms:
+      - artisan
+      - backend
+      - developer
+      - eloquent
+      - laravel
+      - mvc
+      - open source
+      - php
+      - php framework
+      - web framework
+  styles:
+    - brands
+  unicode: f3bd
+  voted: false
+files-pinwheel:
+  changes:
+    - 6.7.0
+    - 7.0.0
+  label: Files Pinwheel
+  search:
+    terms:
+      - archive
+      - data
+      - document
+      - file manager
+      - file organization
+      - files
+      - folder
+      - pinwheel
+      - rotate
+      - storage
+      - sync
+  styles:
+    - brands
+  unicode: e69f
+  voted: false
+swift:
+  changes:
+    - 5.11.0
+    - 7.0.0
+  label: Swift
+  search:
+    terms:
+      - app development
+      - apple swift
+      - code
+      - developer
+      - ios
+      - macos
+      - programming language
+      - software
+      - swift
+      - swift programming
+  styles:
+    - brands
+  unicode: f8e1
+  voted: false
+bitcoin:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Bitcoin
+  search:
+    terms:
+      - bitcoin
+      - bitcoin logo
+      - bitcoin symbol
+      - blockchain
+      - btc
+      - crypto
+      - cryptocurrency
+      - decentralized currency
+      - digital currency
+      - virtual currency
+  styles:
+    - brands
+  unicode: f379
+  voted: false
+screenpal:
+  changes:
+    - 6.1.0
+    - 7.0.0
+  label: Screenpal
+  search:
+    terms:
+      - Recording software
+      - Screen capture tool
+      - Screen recording
+      - Screen sharing
+      - Screen video
+      - ScreenPal
+      - Screencast
+      - Screencastify
+      - Video capture
+      - Video tutorial
+  styles:
+    - brands
+  unicode: e570
+  voted: false
+google-plus:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.13.1
+    - 7.0.0
+  label: Google Plus
+  search:
+    terms:
+      - google plus
+      - google+
+      - google-plus
+      - google-plus-circle
+      - google-plus-official
+      - gplus
+  styles:
+    - brands
+  unicode: f2b3
+  voted: false
+buysellads:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Buysellads
+  search:
+    terms:
+      - ad network
+      - ad platform
+      - advertising
+      - buy sell ads
+      - buysellads
+      - digital ads
+      - marketing
+      - media buying
+  styles:
+    - brands
+  unicode: f20d
+  voted: false
+gg:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Gg
+  search:
+    terms:
+      - esports
+      - game over
+      - gamer
+      - gaming
+      - gg
+      - good game
+      - victory
+      - win
+  styles:
+    - brands
+  unicode: f260
+  voted: false
+osi:
+  changes:
+    - 5.0.0
+    - 5.8.0
+    - 7.0.0
+  label: Osi
+  search:
+    terms:
+      - communication
+      - layers
+      - network model
+      - networking
+      - open systems interconnection
+      - osi
+      - protocol
+  styles:
+    - brands
+  unicode: f41a
+  voted: false
+medrt:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Medrt
+  search:
+    terms:
+      - arbitration
+      - conflict management
+      - dispute resolution
+      - legal
+      - mediation
+      - medrt
+  styles:
+    - brands
+  unicode: f3c8
+  voted: false
+ror:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Ror
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8bd
+  voted: false
+vine:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Vine
+  search:
+    terms:
+      - app
+      - brand
+      - looping video
+      - platform
+      - short video
+      - six seconds
+      - social media
+      - video
+      - vine
+      - vineapp
+  styles:
+    - brands
+  unicode: f1ca
+  voted: false
+square-build-awesome-stroke:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Square Build Awesome Stroke
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b7
+  voted: false
+bots:
+  changes:
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Bots
+  search:
+    terms:
+      - ai
+      - ai assistant
+      - artificial intelligence
+      - automated
+      - automation
+      - bots
+      - chatbot
+      - messaging
+      - robot
+      - virtual assistant
+  styles:
+    - brands
+  unicode: e340
+  voted: false
+phabricator:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Phabricator
+  search:
+    terms:
+      - code review
+      - collaboration
+      - development
+      - open source
+      - phabricator
+      - project management
+      - repository
+      - software
+      - version control
+  styles:
+    - brands
+  unicode: f3db
+  voted: false
+asymmetrik:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Asymmetrik
+  search:
+    terms:
+      - asymmetrik
+      - asymmetrik brand
+      - asymmetrik company
+      - asymmetrik logo
+      - asymmetrik software
+      - asymmetrik technology
+  styles:
+    - brands
+  unicode: f372
+  voted: false
+amilia:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Amilia
+  search:
+    terms:
+      - Amilia
+      - amilia
+      - ecommerce
+      - event registration
+      - membership management
+      - memberships
+      - online registration
+      - payment processing
+      - registration
+      - registration software
+  styles:
+    - brands
+  unicode: f36d
+  voted: false
+line:
+  changes:
+    - 5.0.0
+    - 6.3.0
+    - 7.0.0
+  label: Line
+  search:
+    terms:
+      - border
+      - divider
+      - line
+      - lines
+      - path
+      - rule
+      - separator
+      - stroke
+  styles:
+    - brands
+  unicode: f3c0
+  voted: false
+y-combinator:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Y Combinator
+  search:
+    terms:
+      - accelerator
+      - entrepreneurship
+      - seed funding
+      - startup
+      - tech incubator
+      - venture capital
+      - y combinator
+      - yc
+  styles:
+    - brands
+  unicode: f23b
+  voted: false
+mattermost:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Mattermost
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b4
+  voted: false
+opencart:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Opencart
+  search:
+    terms:
+      - cart
+      - ecommerce
+      - marketplace
+      - online store
+      - open source
+      - opencart
+      - retail
+      - shopping
+      - shopping cart
+      - web store
+  styles:
+    - brands
+  unicode: f23d
+  voted: false
+youtube-shorts:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Youtube Shorts
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8bc
+  voted: false
+medium:
+  aliases:
+    names:
+      - medium-m
+    unicodes:
+      composite:
+        - f3c7
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Medium
+  search:
+    terms:
+      - articles
+      - blog
+      - blogging
+      - content
+      - medium
+      - platform
+      - publishing
+      - social media
+      - stories
+      - writing
+  styles:
+    - brands
+  unicode: f23a
+  voted: false
+deviantart:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Deviantart
+  search:
+    terms:
+      - art community
+      - artist
+      - artwork
+      - creative
+      - da
+      - design
+      - deviantart
+      - digital art
+      - illustration
+      - portfolio
+  styles:
+    - brands
+  unicode: f1bd
+  voted: false
+vaadin:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Vaadin
+  search:
+    terms:
+      - frontend framework
+      - java web framework
+      - open source
+      - ui toolkit
+      - vaadin
+      - vaadin framework
+      - web components
+  styles:
+    - brands
+  unicode: f408
+  voted: false
+trade-federation:
+  changes:
+    - 5.0.12
+    - 7.0.0
+  label: Trade Federation
+  search:
+    terms:
+      - clone wars
+      - federation
+      - galactic
+      - sci-fi
+      - separatists
+      - space
+      - star wars
+      - star wars logo
+      - starship
+      - trade federation
+  styles:
+    - brands
+  unicode: f513
+  voted: false
+chrome:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 6.1.2
+    - 7.0.0
+  label: Chrome
+  search:
+    terms:
+      - browser
+      - chrome
+      - google
+      - google chrome
+      - internet
+      - search engine
+      - web browser
+  styles:
+    - brands
+  unicode: f268
+  voted: false
+creative-commons-sa:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Sa
+  search:
+    terms:
+      - attribution
+      - cc
+      - cc-sa
+      - commons license
+      - copyright
+      - creative commons
+      - license
+      - open license
+      - share alike
+  styles:
+    - brands
+  unicode: f4ef
+  voted: false
+square-figma:
+  changes:
+    - 7.0.0
+  label: Square Figma
+  search:
+    terms:
+      - app
+      - collaboration
+      - design
+      - figma
+      - interface
+      - prototyping
+      - software
+      - ui
+      - ux
+      - vector
+  styles:
+    - brands
+  unicode: e7e4
+  voted: false
+soundcloud:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.6.0
+    - 7.0.0
+  label: Soundcloud
+  search:
+    terms:
+      - audio
+      - music
+      - online music
+      - platform
+      - podcast
+      - social audio
+      - songs
+      - soundcloud
+      - streaming
+      - tracks
+  styles:
+    - brands
+  unicode: f1be
+  voted: false
+digital-ocean:
+  changes:
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Digital Ocean
+  search:
+    terms:
+      - cloud
+      - cloud computing
+      - devops
+      - digital ocean
+      - do
+      - droplets
+      - hosting
+      - infrastructure
+      - platform
+      - server
+  styles:
+    - brands
+  unicode: f391
+  voted: false
+uber:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Uber
+  search:
+    terms:
+      - Uber
+      - app
+      - car service
+      - driver
+      - mobility
+      - ride
+      - rideshare
+      - taxi
+      - transportation
+      - travel
+  styles:
+    - brands
+  unicode: f402
+  voted: false
+slideshare:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Slideshare
+  search:
+    terms:
+      - content sharing
+      - document sharing
+      - presentation
+      - professional presentations
+      - slide deck
+      - slide hosting
+      - slide share
+      - slideshare
+      - slideshow
+  styles:
+    - brands
+  unicode: f1e7
+  voted: false
+jenkins:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Jenkins
+  search:
+    terms:
+      - automation
+      - automation server
+      - build server
+      - ci
+      - continuous integration
+      - devops
+      - jenkins
+      - open source
+      - pipeline
+      - software development
+  styles:
+    - brands
+  unicode: f3b6
+  voted: false
+optin-monster:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Optin Monster
+  search:
+    terms:
+      - conversion optimization
+      - email marketing
+      - lead generation
+      - marketing tool
+      - optin monster
+      - optinmonster
+      - popup builder
+  styles:
+    - brands
+  unicode: f23c
+  voted: false
+git:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.8.2
+    - 7.0.0
+  label: Git
+  search:
+    terms:
+      - branch
+      - code
+      - commit
+      - developer
+      - git
+      - merge
+      - open source
+      - programming
+      - repository
+      - software
+      - source control
+      - version control
+  styles:
+    - brands
+  unicode: f1d3
+  voted: false
+phoenix-framework:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Phoenix Framework
+  search:
+    terms:
+      - backend
+      - development
+      - elixir
+      - open source
+      - phoenix
+      - phoenix framework
+      - programming
+      - server
+      - software
+      - web framework
+  styles:
+    - brands
+  unicode: f3dc
+  voted: false
+galactic-senate:
+  changes:
+    - 5.0.12
+    - 7.0.0
+  label: Galactic Senate
+  search:
+    terms:
+      - galactic senate
+      - star wars
+      - star wars emblem
+      - star wars franchise
+      - star wars galaxy
+      - star wars icon
+      - star wars logo
+      - star wars symbol
+      - starwars
+  styles:
+    - brands
+  unicode: f50d
+  voted: false
+snapchat:
+  aliases:
+    names:
+      - snapchat-ghost
+    unicodes:
+      composite:
+        - f2ac
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Snapchat
+  search:
+    terms:
+      - app
+      - chat
+      - filters
+      - ghost
+      - messaging
+      - snap
+      - snapchat
+      - snaps
+      - social media
+      - stories
+  styles:
+    - brands
+  unicode: f2ab
+  voted: false
+venmo-v:
+  changes:
+    - 7.2.0
+  label: Venmo V
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e85b
+  voted: false
+steam:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Steam
+  search:
+    terms:
+      - digital distribution
+      - game launcher
+      - games
+      - gaming
+      - online store
+      - pc games
+      - platform
+      - steam
+      - valve
+      - video games
+  styles:
+    - brands
+  unicode: f1b6
+  voted: false
+dailymotion:
+  changes:
+    - 5.12.1
+    - 5.14.0
+    - 7.0.0
+  label: Dailymotion
+  search:
+    terms:
+      - dailymotion
+      - media
+      - online video
+      - platform
+      - streaming
+      - video
+      - video sharing
+      - videos
+  styles:
+    - brands
+  unicode: e052
+  voted: true
+stripe:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Stripe
+  search:
+    terms:
+      - billing
+      - credit card
+      - ecommerce
+      - fintech
+      - gateway
+      - merchant
+      - online payment
+      - payment
+      - payments
+      - stripe
+      - subscription
+  styles:
+    - brands
+  unicode: f429
+  voted: false
+qq:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Qq
+  search:
+    terms:
+      - chat
+      - chinese messenger
+      - communication
+      - instant messaging
+      - qq
+      - social media
+      - tencent
+  styles:
+    - brands
+  unicode: f1d6
+  voted: false
+gitlab:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.7.0
+    - 6.0.0-beta1
+    - 6.1.2
+    - 7.0.0
+  label: Gitlab
+  search:
+    terms:
+      - CI/CD
+      - DevOps
+      - GitLab
+      - code hosting
+      - continuous deployment
+      - continuous integration
+      - gitlab
+      - repository
+      - software development
+      - version control
+  styles:
+    - brands
+  unicode: f296
+  voted: false
+facebook:
+  aliases:
+    unicodes:
+      composite:
+        - f230
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 5.8.2
+    - 6.5.0
+    - 7.0.0
+  label: Facebook
+  search:
+    terms:
+      - facebook
+      - facebook-official
+      - fb
+      - meta
+      - social media
+      - social network
+      - social platform
+  styles:
+    - brands
+  unicode: f09a
+  voted: false
+galactic-republic:
+  changes:
+    - 5.0.12
+    - 7.0.0
+  label: Galactic Republic
+  search:
+    terms:
+      - clone wars
+      - galactic republic
+      - galaxy
+      - jedi
+      - republic
+      - sci-fi
+      - science fiction
+      - space
+      - star wars
+      - starwars
+  styles:
+    - brands
+  unicode: f50c
+  voted: false
+creative-commons-nc:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Nc
+  search:
+    terms:
+      - cc
+      - copyright
+      - creative commons
+      - intellectual property
+      - license
+      - nc
+      - no commercial use
+      - non commercial
+  styles:
+    - brands
+  unicode: f4e8
+  voted: false
+square-reddit:
+  aliases:
+    names:
+      - reddit-square
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 6.5.1
+    - 7.0.0
+  label: Square Reddit
+  search:
+    terms:
+      - community
+      - discussion
+      - forum
+      - reddit
+      - reddit logo
+      - rslash
+      - social media
+      - subreddit
+      - upvote
+  styles:
+    - brands
+  unicode: f1a2
+  voted: false
+shopify:
+  changes:
+    - 5.12.1
+    - 5.14.0
+    - 7.0.0
+  label: Shopify
+  search:
+    terms:
+      - ecommerce
+      - marketplace
+      - online shop
+      - online store
+      - retail
+      - sales
+      - shopify
+      - shopping
+  styles:
+    - brands
+  unicode: e057
+  voted: false
+claude:
+  changes:
+    - 7.2.0
+  label: Claude
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e861
+  voted: false
+tex:
+  changes:
+    - 7.0.0
+  label: Tex
+  search:
+    terms:
+      - document
+      - formula
+      - latex
+      - markup
+      - math
+      - scientific
+      - tex
+      - typesetting
+  styles:
+    - brands
+  unicode: e7ff
+  voted: false
+dhl:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Dhl
+  search:
+    terms:
+      - DHL
+      - Dalsey
+      - Hillblom
+      - Lynn
+      - courier
+      - delivery
+      - express
+      - freight
+      - german
+      - logistics
+      - package
+      - shipping
+  styles:
+    - brands
+  unicode: f790
+  voted: false
+cc-paypal:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Paypal
+  search:
+    terms:
+      - cc
+      - credit card
+      - digital wallet
+      - ecommerce
+      - money transfer
+      - online payment
+      - payment
+      - paypal
+      - paypal card
+      - paypal credit
+  styles:
+    - brands
+  unicode: f1f4
+  voted: false
+linkedin:
+  changes:
+    - 1.0.0
+    - 5.0.0
+    - 7.0.0
+  label: Linkedin
+  search:
+    terms:
+      - business
+      - career
+      - jobs
+      - linkedin
+      - linkedin-square
+      - professional network
+      - social media
+  styles:
+    - brands
+  unicode: f08c
+  voted: false
+dribbble:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Dribbble
+  search:
+    terms:
+      - art
+      - community
+      - creative
+      - design
+      - designer
+      - dribbble
+      - dribble
+      - inspiration
+      - portfolio
+      - showcase
+      - social
+  styles:
+    - brands
+  unicode: f17d
+  voted: false
+first-order:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: First Order
+  search:
+    terms:
+      - 1st order
+      - first order
+      - hierarchy
+      - primary
+      - priority
+      - ranking
+      - top level
+  styles:
+    - brands
+  unicode: f2b0
+  voted: false
+elementor:
+  changes:
+    - 5.0.3
+    - 6.1.0
+    - 7.0.0
+  label: Elementor
+  search:
+    terms:
+      - cms
+      - drag and drop
+      - elementor
+      - frontend editor
+      - page builder
+      - plugin
+      - theme builder
+      - web design
+      - website builder
+      - wordpress
+  styles:
+    - brands
+  unicode: f430
+  voted: true
+dyalog:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Dyalog
+  search:
+    terms:
+      - apl language
+      - dyalog
+      - dyalog brand
+      - dyalog logo
+      - dyalog software
+      - programming language
+      - software company
+  styles:
+    - brands
+  unicode: f399
+  voted: false
+cmplid:
+  changes:
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Cmplid
+  search:
+    terms:
+      - cmplid
+      - compliance
+      - compliance management
+      - compliance software
+      - governance
+      - regulatory
+      - risk management
+  styles:
+    - brands
+  unicode: e360
+  voted: false
+hubspot:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Hubspot
+  search:
+    terms:
+      - business growth
+      - crm
+      - customer relationship management
+      - email marketing
+      - hubspot
+      - inbound marketing
+      - lead generation
+      - marketing automation
+      - marketing platform
+      - sales software
+  styles:
+    - brands
+  unicode: f3b2
+  voted: false
+css3:
+  changes:
+    - 3.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Css3
+  search:
+    terms:
+      - code
+      - css
+      - css3
+      - frontend
+      - programming
+      - stylesheet
+      - web
+      - web development
+  styles:
+    - brands
+  unicode: f13c
+  voted: false
+raspberry-pi:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Raspberry Pi
+  search:
+    terms:
+      - SBC
+      - diy
+      - electronics
+      - maker
+      - pi
+      - raspberry pi
+      - raspberry pi foundation
+      - raspberry-pi
+      - raspberrypi
+      - single board computer
+  styles:
+    - brands
+  unicode: f7bb
+  voted: true
+pied-piper:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.0.10
+    - 5.12.0
+    - 7.0.0
+  label: Pied Piper
+  search:
+    terms:
+      - brand
+      - fable
+      - flute
+      - legend
+      - music
+      - pied piper
+      - piper
+      - story
+  styles:
+    - brands
+  unicode: f2ae
+  voted: false
+codiepie:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 7.0.0
+  label: Codiepie
+  search:
+    terms:
+      - codie pie
+      - codiepie
+      - content creator
+      - gaming
+      - influencer
+      - streamer
+      - youtube
+  styles:
+    - brands
+  unicode: f284
+  voted: false
+github:
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 7.0.0
+    - 7.3.0
+    - 7.3.0
+  label: Github
+  search:
+    terms:
+      - code
+      - collaboration
+      - development
+      - git
+      - github
+      - octocat
+      - programming
+      - repository
+      - software
+      - version control
+  styles:
+    - brands
+  unicode: f09b
+  voted: false
+vk:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 6.0.0-beta3
+    - 7.0.0
+  label: Vk
+  search:
+    terms:
+      - chat
+      - community
+      - messaging
+      - network
+      - russian
+      - social
+      - social media
+      - vk
+      - vkontakte
+  styles:
+    - brands
+  unicode: f189
+  voted: false
+bitbucket:
+  aliases:
+    unicodes:
+      composite:
+        - f172
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Bitbucket
+  search:
+    terms:
+      - atlassian
+      - bitbucket
+      - code
+      - devops
+      - git
+      - repository
+      - software development
+      - source code
+      - version control
+  styles:
+    - brands
+  unicode: f171
+  voted: false
+studiovinari:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Studiovinari
+  search:
+    terms:
+      - brand
+      - company
+      - logo
+      - studio vinari
+      - studiovinari
+      - vinari
+  styles:
+    - brands
+  unicode: f3f8
+  voted: false
+creative-commons-share:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Share
+  search:
+    terms:
+      - attribution
+      - cc
+      - copyright
+      - creative commons
+      - creative commons license
+      - free use
+      - license
+      - open content
+      - public domain
+      - share
+  styles:
+    - brands
+  unicode: f4f2
+  voted: false
+meta:
+  changes:
+    - 6.0.0
+    - 6.1.2
+    - 7.0.0
+  label: Meta
+  search:
+    terms:
+      - meta
+      - meta brand
+      - meta data
+      - meta information
+      - meta tag
+      - metadata
+  styles:
+    - brands
+  unicode: e49b
+  voted: false
+vuejs:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Vuejs
+  search:
+    terms:
+      - MVVM
+      - SPA
+      - UI
+      - framework
+      - frontend
+      - javascript
+      - js
+      - progressive framework
+      - vue
+      - vue.js
+      - web development
+  styles:
+    - brands
+  unicode: f41f
+  voted: false
+d-and-d:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: D And D
+  search:
+    terms:
+      - dnd
+      - dragons
+      - dungeons
+      - dungeons & dragons
+      - dungeons and dragons
+      - game
+      - gaming
+      - role-playing
+      - roleplay
+      - rpg
+      - tabletop
+  styles:
+    - brands
+  unicode: f38d
+  voted: false
+schlix:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Schlix
+  search:
+    terms:
+      - blogging
+      - cms
+      - content management
+      - schlix
+      - schlix cms
+      - website
+  styles:
+    - brands
+  unicode: f3ea
+  voted: false
+ioxhost:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Ioxhost
+  search:
+    terms:
+      - cloud hosting
+      - hosting
+      - internet service
+      - ioxhost
+      - server
+      - web hosting
+      - web services
+  styles:
+    - brands
+  unicode: f208
+  voted: false
+edge:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 5.12.1
+    - 6.1.2
+    - 7.0.0
+  label: Edge
+  search:
+    terms:
+      - browser
+      - edge
+      - ie
+      - internet
+      - microsoft
+      - microsoft edge
+      - web
+  styles:
+    - brands
+  unicode: f282
+  voted: false
+blogger:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Blogger
+  search:
+    terms:
+      - blog
+      - blogger
+      - blogging
+      - blogspot
+      - content creator
+      - google blog
+      - publishing
+      - writing
+  styles:
+    - brands
+  unicode: f37c
+  voted: false
+shopware:
+  changes:
+    - 5.1.0
+    - 5.8.0
+    - 7.0.0
+  label: Shopware
+  search:
+    terms:
+      - e-commerce
+      - ecommerce software
+      - online shop
+      - online store
+      - retail software
+      - shopping platform
+      - shopware
+      - webshop
+  styles:
+    - brands
+  unicode: f5b5
+  voted: false
+lastfm:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Lastfm
+  search:
+    terms:
+      - artist
+      - audio
+      - band
+      - last.fm
+      - lastfm
+      - music
+      - playlist
+      - radio
+      - scrobble
+      - social music
+      - streaming
+  styles:
+    - brands
+  unicode: f202
+  voted: false
+wolf-pack-battalion:
+  changes:
+    - 5.0.12
+    - 5.8.0
+    - 7.0.0
+  label: Wolf Pack Battalion
+  search:
+    terms:
+      - battalion
+      - group
+      - military unit
+      - pack
+      - squad
+      - tactical
+      - team
+      - unit
+      - wolf
+      - wolf pack
+  styles:
+    - brands
+  unicode: f514
+  voted: false
+gitter:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Gitter
+  search:
+    terms:
+      - chat
+      - chat platform
+      - collaboration
+      - communication
+      - community
+      - developer chat
+      - gitter
+      - messaging
+      - team chat
+  styles:
+    - brands
+  unicode: f426
+  voted: false
+dashcube:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Dashcube
+  search:
+    terms:
+      - analytics
+      - dash cube
+      - dashboard
+      - dashcube
+      - data
+      - metrics
+      - reporting
+  styles:
+    - brands
+  unicode: f210
+  voted: false
+sellsy:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Sellsy
+  search:
+    terms:
+      - CRM
+      - SaaS
+      - Sellsy
+      - billing
+      - business management
+      - invoicing
+      - sales
+      - software
+  styles:
+    - brands
+  unicode: f213
+  voted: false
+wordpress-simple:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Wordpress Simple
+  search:
+    terms:
+      - blog
+      - cms
+      - content management
+      - platform
+      - publishing
+      - website
+      - wordpress
+      - wp
+  styles:
+    - brands
+  unicode: f411
+  voted: false
+cc-stripe:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Stripe
+  search:
+    terms:
+      - billing
+      - card
+      - cc
+      - credit card
+      - ecommerce
+      - fintech
+      - online payment
+      - payment
+      - stripe
+      - subscription
+  styles:
+    - brands
+  unicode: f1f5
+  voted: false
+fly:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Fly
+  search:
+    terms:
+      - cloud computing
+      - cloud platform
+      - deployment
+      - devops
+      - fly
+      - fly.io
+      - hosting
+      - serverless
+  styles:
+    - brands
+  unicode: f417
+  voted: false
+microsoft:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Microsoft
+  search:
+    terms:
+      - azure
+      - microsoft
+      - ms
+      - msft
+      - office
+      - software
+      - technology
+      - windows
+      - windows logo
+      - xbox
+  styles:
+    - brands
+  unicode: f3ca
+  voted: true
+d-and-d-beyond:
+  changes:
+    - 5.4.0
+    - 7.0.0
+  label: D And D Beyond
+  search:
+    terms:
+      - Dungeons & Dragons
+      - campaign
+      - d&d
+      - dice
+      - dnd
+      - dungeons and dragons
+      - fantasy
+      - gaming
+      - role-playing
+      - rpg
+      - tabletop
+  styles:
+    - brands
+  unicode: f6ca
+  voted: false
+square-bluesky:
+  changes:
+    - 6.7.1
+    - 7.0.0
+  label: Square Bluesky
+  search:
+    terms:
+      - app
+      - bluesky
+      - decentralized
+      - platform
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: e6a3
+  voted: false
+paypal:
+  changes:
+    - 4.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Paypal
+  search:
+    terms:
+      - checkout
+      - digital wallet
+      - ecommerce
+      - finance
+      - merchant
+      - money transfer
+      - online payment
+      - pay
+      - payment
+      - payments
+      - paypal
+      - transaction
+  styles:
+    - brands
+  unicode: f1ed
+  voted: false
+unreal-engine:
+  changes:
+    - 7.2.0
+  label: Unreal Engine
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e85c
+  voted: false
+searchengin:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Searchengin
+  search:
+    terms:
+      - SEO
+      - analytics
+      - digital marketing
+      - marketing
+      - online marketing
+      - search
+      - search engine
+      - searchengin
+      - web search
+  styles:
+    - brands
+  unicode: f3eb
+  voted: false
+viadeo:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Viadeo
+  search:
+    terms:
+      - business networking
+      - career
+      - jobs
+      - professional network
+      - professional profile
+      - social network
+      - viadeo
+  styles:
+    - brands
+  unicode: f2a9
+  voted: false
+trello:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 5.6.0
+    - 7.0.0
+  label: Trello
+  search:
+    terms:
+      - atlassian
+      - boards
+      - collaboration
+      - kanban
+      - productivity
+      - project management
+      - task management
+      - trello
+      - workflow
+  styles:
+    - brands
+  unicode: f181
+  voted: false
+squarespace:
+  changes:
+    - 5.1.0
+    - 7.0.0
+  label: Squarespace
+  search:
+    terms:
+      - blogging
+      - cms
+      - content management
+      - ecommerce
+      - online store
+      - sqsp
+      - squarespace
+      - web design
+      - website builder
+      - website hosting
+      - website platform
+  styles:
+    - brands
+  unicode: f5be
+  voted: true
+nextcloud:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Nextcloud
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b5
+  voted: false
+css3-alt:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Css3 Alt
+  search:
+    terms:
+      - cascade
+      - css
+      - css3
+      - frontend
+      - frontend development
+      - style
+      - stylesheet
+      - web
+      - web design
+      - web development
+  styles:
+    - brands
+  unicode: f38b
+  voted: false
+square-xing:
+  aliases:
+    names:
+      - xing-square
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Xing
+  search:
+    terms:
+      - business networking
+      - careers
+      - jobs
+      - networking site
+      - professional network
+      - social network
+      - xing
+      - xing brand
+      - xing logo
+  styles:
+    - brands
+  unicode: f169
+  voted: false
+itunes:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Itunes
+  search:
+    terms:
+      - apple
+      - apple music
+      - audio player
+      - digital music
+      - itunes
+      - media player
+      - music app
+      - music download
+      - music library
+      - music store
+  styles:
+    - brands
+  unicode: f3b4
+  voted: false
+bootstrap:
+  changes:
+    - 5.8.0
+    - 5.15.4
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Bootstrap
+  search:
+    terms:
+      - UI framework
+      - bootstrap
+      - components
+      - css framework
+      - front-end
+      - grid system
+      - open source
+      - responsive
+      - twbs
+      - web development
+  styles:
+    - brands
+  unicode: f836
+  voted: false
+ember:
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Ember
+  search:
+    terms:
+      - ember
+      - emberjs
+      - framework
+      - frontend
+      - javascript
+      - js
+      - ui
+      - web
+  styles:
+    - brands
+  unicode: f423
+  voted: false
+youtube:
+  aliases:
+    unicodes:
+      composite:
+        - f16a
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Youtube
+  search:
+    terms:
+      - broadcast
+      - channel
+      - media
+      - online video
+      - play
+      - streaming
+      - video
+      - video platform
+      - vlog
+      - youtube
+  styles:
+    - brands
+  unicode: f167
+  voted: false
+superpowers:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 7.0.0
+  label: Superpowers
+  search:
+    terms:
+      - abilities
+      - comic
+      - fantasy
+      - hero
+      - powers
+      - special abilities
+      - strength
+      - superhero
+      - superhuman
+      - superpowers
+  styles:
+    - brands
+  unicode: f2dd
+  voted: false
+uikit:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Uikit
+  search:
+    terms:
+      - components
+      - design system
+      - framework
+      - frontend
+      - toolkit
+      - ui kit
+      - uikit
+      - user interface
+      - web development
+  styles:
+    - brands
+  unicode: f403
+  voted: false
+square-dribbble:
+  aliases:
+    names:
+      - dribbble-square
+  changes:
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Dribbble
+  search:
+    terms:
+      - art
+      - branding
+      - community
+      - creative
+      - design
+      - designer
+      - dribbble
+      - dribble
+      - portfolio
+      - social
+  styles:
+    - brands
+  unicode: f397
+  voted: false
+ultralytics-yolo:
+  changes:
+    - 7.2.0
+  label: Ultralytics Yolo
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e86f
+  voted: false
+app-store-ios:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: App Store Ios
+  search:
+    terms:
+      - App Store
+      - Apple
+      - iOS App Store
+      - iOS apps
+      - iOS download
+      - iOS marketplace
+      - iPad apps
+      - iPhone apps
+      - mobile apps
+  styles:
+    - brands
+  unicode: f370
+  voted: false
+suse:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 6.5.0
+    - 7.0.0
+  label: Suse
+  search:
+    terms:
+      - enterprise linux
+      - linux
+      - linux distribution
+      - open source
+      - operating system
+      - os
+      - sle
+      - suse
+      - suse linux
+  styles:
+    - brands
+  unicode: f7d6
+  voted: true
+old-republic:
+  changes:
+    - 5.0.12
+    - 7.0.0
+  label: Old Republic
+  search:
+    terms:
+      - galactic republic
+      - jedi
+      - old republic
+      - republic
+      - sith
+      - star wars
+      - star wars the old republic
+      - swtor
+  styles:
+    - brands
+  unicode: f510
+  voted: false
+square-threads:
+  changes:
+    - 6.4.1
+    - 6.4.2
+    - 7.0.0
+    - 7.3.0
+    - 7.3.0
+  label: Square Threads
+  search:
+    terms:
+      - meta
+      - microblogging
+      - online community
+      - social media
+      - social network
+      - square threads
+      - threads
+  styles:
+    - brands
+  unicode: e619
+  voted: false
+modx:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 7.0.0
+  label: Modx
+  search:
+    terms:
+      - cms
+      - content management
+      - content management system
+      - modx
+      - modx cms
+      - open source
+      - web platform
+      - website
+  styles:
+    - brands
+  unicode: f285
+  voted: false
+yammer:
+  changes:
+    - 5.8.0
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Yammer
+  search:
+    terms:
+      - collaboration tool
+      - corporate messaging
+      - enterprise social network
+      - microsoft 365
+      - microsoft yammer
+      - office 365
+      - team communication
+      - workplace chat
+      - yammer
+  styles:
+    - brands
+  unicode: f840
+  voted: false
+octopus-deploy:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Octopus Deploy
+  search:
+    terms:
+      - automation
+      - cd
+      - ci
+      - cloud deployment
+      - continuous delivery
+      - continuous integration
+      - deploy
+      - deployment
+      - devops
+      - octopus
+      - octopus deploy
+      - release management
+      - software release
+  styles:
+    - brands
+  unicode: e082
+  voted: false
+stackpath:
+  changes:
+    - 5.8.2
+    - 7.0.0
+  label: Stackpath
+  search:
+    terms:
+      - cdn
+      - cloud security
+      - cloud services
+      - content delivery network
+      - cybersecurity
+      - edge computing
+      - internet security
+      - network services
+      - stackpath
+      - web performance
+  styles:
+    - brands
+  unicode: f842
+  voted: false
+algolia:
+  changes:
+    - 5.0.0
+    - 6.3.0
+    - 7.0.0
+  label: Algolia
+  search:
+    terms:
+      - Algolia
+      - hosted search
+      - instant search
+      - search
+      - search API
+      - search engine
+      - search platform
+      - search provider
+      - search service
+      - search tool
+      - search-as-a-service
+      - site search
+  styles:
+    - brands
+  unicode: f36c
+  voted: false
+pinterest:
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 7.0.0
+  label: Pinterest
+  search:
+    terms:
+      - boards
+      - ideas
+      - image sharing
+      - inspiration
+      - pin
+      - pins
+      - pinterest
+      - social media
+      - social network
+      - visual discovery
+  styles:
+    - brands
+  unicode: f0d2
+  voted: false
+kubernetes:
+  changes:
+    - 7.2.0
+  label: Kubernetes
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e857
+  voted: false
+cc-diners-club:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Diners Club
+  search:
+    terms:
+      - banking
+      - card
+      - club card
+      - credit card
+      - diners club
+      - dinersclub
+      - finance
+      - payment
+  styles:
+    - brands
+  unicode: f24c
+  voted: false
+uniregistry:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Uniregistry
+  search:
+    terms:
+      - domain marketplace
+      - domain name
+      - domain registrar
+      - domain registration
+      - uniregistry
+      - web domains
+  styles:
+    - brands
+  unicode: f404
+  voted: false
+strava:
+  changes:
+    - 5.0.0
+    - 5.0.1
+    - 5.7.0
+    - 5.8.0
+    - 7.0.0
+  label: Strava
+  search:
+    terms:
+      - cycling
+      - exercise
+      - fitness
+      - gps
+      - running
+      - sports
+      - strava
+      - tracking
+      - training
+      - workout
+  styles:
+    - brands
+  unicode: f428
+  voted: false
+vimeo-v:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Vimeo V
+  search:
+    terms:
+      - platform
+      - social media
+      - streaming
+      - video
+      - vimeo
+      - vimeo logo
+  styles:
+    - brands
+  unicode: f27d
+  voted: false
+square-web-awesome-stroke:
+  changes:
+    - 6.5.2
+    - 7.0.0
+  label: Square Web Awesome Stroke
+  search:
+    terms:
+      - awesome
+      - coding
+      - components
+      - crown
+      - design
+      - developer
+      - programming
+      - software
+      - web
+  styles:
+    - brands
+  unicode: e684
+  voted: false
+bandcamp:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 5.13.1
+    - 7.0.0
+  label: Bandcamp
+  search:
+    terms:
+      - album
+      - artist
+      - audio
+      - bandcamp
+      - indie
+      - marketplace
+      - music
+      - platform
+      - songs
+      - streaming
+  styles:
+    - brands
+  unicode: f2d5
+  voted: false
+creative-commons-remix:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Remix
+  search:
+    terms:
+      - attribution
+      - cc
+      - collaboration
+      - creative commons
+      - free use
+      - license
+      - open content
+      - remix
+      - sharing
+  styles:
+    - brands
+  unicode: f4ee
+  voted: false
+waze:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Waze
+  search:
+    terms:
+      - commute
+      - directions
+      - driving
+      - gps
+      - maps
+      - navigation
+      - route
+      - traffic
+      - travel
+      - waze
+  styles:
+    - brands
+  unicode: f83f
+  voted: false
+reacteurope:
+  changes:
+    - 5.5.0
+    - 5.8.0
+    - 7.0.0
+  label: Reacteurope
+  search:
+    terms:
+      - developer event
+      - frontend
+      - javascript
+      - programming
+      - react conference
+      - react europe
+      - reactjs
+      - tech conference
+      - web development
+  styles:
+    - brands
+  unicode: f75d
+  voted: false
+intercom:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Intercom
+  search:
+    terms:
+      - chat
+      - communication
+      - customer service
+      - customer support
+      - helpdesk
+      - intercom
+      - live chat
+      - messaging
+  styles:
+    - brands
+  unicode: f7af
+  voted: false
+wix:
+  changes:
+    - 5.1.0
+    - 7.0.0
+  label: Wix
+  search:
+    terms:
+      - online platform
+      - site builder
+      - web design
+      - web hosting
+      - website builder
+      - website platform
+      - wix
+      - wix.com
+  styles:
+    - brands
+  unicode: f5cf
+  voted: true
+app-store:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: App Store
+  search:
+    terms:
+      - App Store
+      - Apple App Store
+      - Mac apps
+      - app marketplace
+      - app store icon
+      - download
+      - iOS apps
+      - iPad apps
+      - iPhone apps
+      - mobile apps
+  styles:
+    - brands
+  unicode: f36f
+  voted: false
+xmpp:
+  changes:
+    - 7.2.0
+  label: Xmpp
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e864
+  voted: false
+gitee:
+  changes:
+    - 7.2.0
+  label: Gitee
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e863
+  voted: false
+square-google-plus:
+  aliases:
+    names:
+      - google-plus-square
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Google Plus
+  search:
+    terms:
+      - google plus
+      - google social
+      - google+
+      - gplus
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f0d4
+  voted: false
+gripfire:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Gripfire
+  search:
+    terms:
+      - brand
+      - esports
+      - gaming
+      - grip fire
+      - gripfire
+      - logo
+      - streaming
+      - video games
+  styles:
+    - brands
+  unicode: f3ac
+  voted: false
+bluetooth-b:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 7.0.0
+  label: Bluetooth B
+  search:
+    terms:
+      - bluetooth
+      - bluetooth device
+      - bluetooth icon
+      - bluetooth logo
+      - bluetooth symbol
+      - connectivity
+      - wireless
+      - wireless technology
+  styles:
+    - brands
+  unicode: f294
+  voted: false
+square-pinterest:
+  aliases:
+    names:
+      - pinterest-square
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Pinterest
+  search:
+    terms:
+      - board
+      - ideas
+      - image sharing
+      - inspiration
+      - pin
+      - pinterest
+      - social media
+  styles:
+    - brands
+  unicode: f0d3
+  voted: false
+ns8:
+  changes:
+    - 5.0.0
+    - 5.15.0
+    - 7.0.0
+  label: Ns8
+  search:
+    terms:
+      - NS8
+      - cybersecurity
+      - fraud prevention
+      - ns8
+      - online protection
+      - risk management
+      - security
+      - website security
+  styles:
+    - brands
+  unicode: f3d5
+  voted: false
+avianex:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Avianex
+  search:
+    terms:
+      - aircraft
+      - airline
+      - avian ex
+      - avianex
+      - aviation
+      - flight
+      - travel
+  styles:
+    - brands
+  unicode: f374
+  voted: false
+brave-reverse:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Brave Reverse
+  search:
+    terms:
+      - ad blocker
+      - blockchain
+      - brave
+      - brave browser
+      - cryptocurrency
+      - fast browser
+      - internet
+      - privacy
+      - security
+      - web browser
+  styles:
+    - brands
+  unicode: e63d
+  voted: false
+fediverse:
+  changes:
+    - 7.2.0
+  label: Fediverse
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e865
+  voted: false
+arch-linux:
+  changes:
+    - 7.2.0
+  label: Arch Linux
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e867
+  voted: false
+fulcrum:
+  changes:
+    - 5.0.12
+    - 5.8.0
+    - 7.0.0
+  label: Fulcrum
+  search:
+    terms:
+      - analytics tool
+      - business intelligence
+      - data platform
+      - data visualization
+      - fulcrum
+      - fulcrum analytics
+  styles:
+    - brands
+  unicode: f50b
+  voted: false
+first-order-alt:
+  changes:
+    - 5.0.12
+    - 7.0.0
+  label: First Order Alt
+  search:
+    terms:
+      - alt
+      - alternative
+      - brand
+      - first order
+      - first-order
+      - logo
+  styles:
+    - brands
+  unicode: f50a
+  voted: false
+square-instagram:
+  aliases:
+    names:
+      - instagram-square
+  changes:
+    - 5.12.1
+    - 5.14.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Instagram
+  search:
+    terms:
+      - app
+      - brand
+      - camera
+      - insta
+      - instagram
+      - photo
+      - social media
+  styles:
+    - brands
+  unicode: e055
+  voted: true
+unsplash:
+  changes:
+    - 5.13.1
+    - 5.14.0
+    - 7.0.0
+  label: Unsplash
+  search:
+    terms:
+      - free images
+      - images
+      - photo platform
+      - photo sharing
+      - photography
+      - photos
+      - pictures
+      - stock photos
+      - unsplash
+  styles:
+    - brands
+  unicode: e07c
+  voted: false
+rockrms:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Rockrms
+  search:
+    terms:
+      - church administration
+      - church management
+      - church software
+      - donation tracking
+      - event management
+      - membership management
+      - nonprofit software
+      - rock church
+      - rock rms
+      - rockrms
+  styles:
+    - brands
+  unicode: f3e9
+  voted: false
+supportnow:
+  changes:
+    - 7.1.0
+    - 7.2.0
+  label: Supportnow
+  search:
+    terms:
+      - customer support
+      - helpdesk
+      - online support
+      - support brand
+      - support now
+      - support platform
+      - support service
+      - supportnow
+      - tech support
+  styles:
+    - brands
+  unicode: e833
+  voted: false
+grunt:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Grunt
+  search:
+    terms:
+      - automation
+      - build tool
+      - grunt
+      - gruntjs
+      - javascript
+      - nodejs
+      - task runner
+  styles:
+    - brands
+  unicode: f3ad
+  voted: false
+weixin:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Weixin
+  search:
+    terms:
+      - chat
+      - chinese messenger
+      - instant messaging
+      - messaging
+      - mobile app
+      - social media
+      - wechat
+      - weixin
+      - weixin app
+  styles:
+    - brands
+  unicode: f1d7
+  voted: false
+joomla:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Joomla
+  search:
+    terms:
+      - cms
+      - content management system
+      - joomla
+      - joomla cms
+      - joomla logo
+      - open source
+      - php
+      - web platform
+      - website
+  styles:
+    - brands
+  unicode: f1aa
+  voted: false
+typo3:
+  changes:
+    - 5.0.1
+    - 5.8.0
+    - 7.0.0
+  label: Typo3
+  search:
+    terms:
+      - cms
+      - content management
+      - content management system
+      - open source
+      - php
+      - typo
+      - typo3
+      - web development
+  styles:
+    - brands
+  unicode: f42b
+  voted: false
+markdown:
+  changes:
+    - 5.2.0
+    - 5.7.0
+    - 7.0.0
+  label: Markdown
+  search:
+    terms:
+      - developer
+      - documentation
+      - formatting
+      - markdown
+      - markup
+      - md
+      - readme
+      - syntax
+      - text
+      - writing
+  styles:
+    - brands
+  unicode: f60f
+  voted: true
+square-odnoklassniki:
+  aliases:
+    names:
+      - odnoklassniki-square
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Odnoklassniki
+  search:
+    terms:
+      - odnoklassniki
+      - odnoklassniki.ru
+      - ok
+      - russian internet
+      - russian social network
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f264
+  voted: false
+symfonycasts:
+  changes:
+    - 7.2.0
+  label: Symfonycasts
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8ab
+  voted: false
+earlybirds:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Earlybirds
+  search:
+    terms:
+      - Early Birds
+      - calendar
+      - earlybirds
+      - earlybirds app
+      - productivity
+      - scheduling
+      - task planning
+      - team collaboration
+      - time management
+  styles:
+    - brands
+  unicode: f39a
+  voted: false
+creative-commons-pd:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Pd
+  search:
+    terms:
+      - cc
+      - copyright free
+      - creative commons
+      - free use
+      - no copyright
+      - open license
+      - pd
+      - public domain
+  styles:
+    - brands
+  unicode: f4ec
+  voted: false
+scribd:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 7.0.0
+  label: Scribd
+  search:
+    terms:
+      - audiobooks
+      - digital library
+      - documents
+      - ebooks
+      - literature
+      - online books
+      - publishing
+      - reading
+      - scribd
+      - subscription
+  styles:
+    - brands
+  unicode: f28a
+  voted: false
+bluesky:
+  changes:
+    - 6.5.2
+    - 6.7.0
+    - 6.7.1
+    - 7.0.0
+  label: Bluesky
+  search:
+    terms:
+      - app
+      - bluesky
+      - decentralized
+      - platform
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: e671
+  voted: false
+yahoo:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.0.3
+    - 5.13.1
+    - 7.0.0
+  label: Yahoo
+  search:
+    terms:
+      - internet company
+      - verizon
+      - yahoo
+      - yahoo brand
+      - yahoo finance
+      - yahoo logo
+      - yahoo mail
+      - yahoo messenger
+      - yahoo search
+      - yahoo sports
+  styles:
+    - brands
+  unicode: f19e
+  voted: false
+pixelfed:
+  changes:
+    - 7.0.0
+  label: Pixelfed
+  search:
+    terms:
+      - decentralized
+      - fediverse
+      - image hosting
+      - open source
+      - photo sharing
+      - pixel fed
+      - pixelfed
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: e7db
+  voted: false
+nimblr:
+  changes:
+    - 5.1.0
+    - 5.8.0
+    - 7.0.0
+  label: Nimblr
+  search:
+    terms:
+      - nimblr
+      - nimblr app
+      - nimblr brand
+      - nimblr logo
+      - nimblr platform
+      - nimblr social
+  styles:
+    - brands
+  unicode: f5a8
+  voted: false
+yoast:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Yoast
+  search:
+    terms:
+      - content optimization
+      - plugin
+      - search engine optimization
+      - seo
+      - seo tool
+      - website ranking
+      - wordpress
+      - yoast
+      - yoast seo
+  styles:
+    - brands
+  unicode: f2b1
+  voted: false
+wpressr:
+  aliases:
+    names:
+      - rendact
+  changes:
+    - 5.4.2
+    - 7.0.0
+  label: Wpressr
+  search:
+    terms:
+      - blogging
+      - cms
+      - content management
+      - website
+      - wordpress
+      - wpressr
+  styles:
+    - brands
+  unicode: f3e4
+  voted: false
+threads:
+  changes:
+    - 6.4.1
+    - 6.4.2
+    - 7.0.0
+    - 7.3.0
+    - 7.3.0
+  label: Threads
+  search:
+    terms:
+      - chat
+      - communication
+      - conversation
+      - messaging
+      - meta
+      - social media
+      - social network
+      - threads
+  styles:
+    - brands
+  unicode: e618
+  voted: false
+digg:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Digg
+  search:
+    terms:
+      - bookmarking
+      - content sharing
+      - digg
+      - news aggregator
+      - social media
+      - social news
+  styles:
+    - brands
+  unicode: f1a6
+  voted: false
+confluence:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Confluence
+  search:
+    terms:
+      - atlassian
+      - collaboration
+      - confluence
+      - documentation
+      - knowledge base
+      - project management
+      - teamwork
+      - wiki
+  styles:
+    - brands
+  unicode: f78d
+  voted: true
+substack:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Substack
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8b8
+  voted: false
+zoom:
+  changes:
+    - 7.2.0
+  label: Zoom
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e87b
+  voted: false
+wirsindhandwerk:
+  aliases:
+    names:
+      - wsh
+  changes:
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Wirsindhandwerk
+  search:
+    terms:
+      - artisan
+      - craftsman
+      - german craftsmanship
+      - handwerk
+      - skilled worker
+      - trade
+      - wir sind handwerk
+  styles:
+    - brands
+  unicode: e2d0
+  voted: false
+font-awesome:
+  aliases:
+    names:
+      - font-awesome-flag
+      - font-awesome-logo-full
+    unicodes:
+      composite:
+        - f425
+        - f4e6
+      primary:
+        - f4e6
+      secondary:
+        - 10f2b4
+        - 10f4e6
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.15.4
+    - 6.0.0-beta1
+    - 6.1.2
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.5.2
+    - 6.6.0
+    - 6.7.0
+    - 7.0.0
+    - 7.1.0
+    - 7.2.0
+    - 7.3.0
+    - 7.3.0
+  label: Font Awesome
+  search:
+    terms:
+      - branding
+      - fa
+      - font-awesome
+      - icon set
+      - logo
+      - typeface
+  styles:
+    - brands
+  unicode: f2b4
+  voted: false
+vim:
+  changes:
+    - 7.2.0
+  label: Vim
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e88a
+  voted: false
+square-twitter:
+  aliases:
+    names:
+      - twitter-square
+  changes:
+    - 1.0.0
+    - 5.0.0
+    - 6.1.2
+    - 6.4.2
+    - 7.0.0
+  label: Square Twitter
+  search:
+    terms:
+      - bird
+      - message
+      - microblogging
+      - post
+      - social media
+      - social network
+      - tweet
+      - tweetbird
+      - twitter
+  styles:
+    - brands
+  unicode: f081
+  voted: false
+supple:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Supple
+  search:
+    terms:
+      - Supple
+      - Supple brand
+      - Supple company
+      - Supple logo
+      - supple
+  styles:
+    - brands
+  unicode: f3f9
+  voted: false
+teamspeak:
+  changes:
+    - 5.0.11
+    - 5.1.0
+    - 5.8.0
+    - 6.4.0
+    - 7.0.0
+  label: Teamspeak
+  search:
+    terms:
+      - VoIP
+      - chat app
+      - communication
+      - gaming voice
+      - online gaming
+      - teamspeak
+      - ts
+      - voice chat
+  styles:
+    - brands
+  unicode: f4f9
+  voted: true
+eleventy:
+  aliases:
+    names:
+      - 11ty
+  changes:
+    - 7.0.0
+  label: Eleventy
+  search:
+    terms:
+      - 11ty
+      - SSG
+      - eleventy
+      - static site generator
+      - web development
+  styles:
+    - brands
+  unicode: e7d6
+  voted: false
+hacker-news:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Hacker News
+  search:
+    terms:
+      - developer news
+      - hacker news
+      - hn
+      - news aggregator
+      - programming
+      - social news
+      - startup news
+      - tech news
+      - technology
+  styles:
+    - brands
+  unicode: f1d4
+  voted: false
+discord:
+  changes:
+    - 5.0.0
+    - 5.15.4
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Discord
+  search:
+    terms:
+      - app
+      - chat
+      - communication
+      - community
+      - discord
+      - gaming
+      - messaging
+      - server
+      - social
+      - voice
+  styles:
+    - brands
+  unicode: f392
+  voted: false
+google:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Google
+  search:
+    terms:
+      - google
+      - google brand
+      - google company
+      - google icon
+      - google logo
+      - google products
+      - google services
+      - search engine
+  styles:
+    - brands
+  unicode: f1a0
+  voted: false
+stumbleupon:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Stumbleupon
+  search:
+    terms:
+      - bookmarking
+      - content
+      - discovery
+      - internet
+      - network
+      - sharing
+      - social
+      - stumble
+      - stumbleupon
+      - web
+  styles:
+    - brands
+  unicode: f1a4
+  voted: false
+dolibarr:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Dolibarr
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8bf
+  voted: false
+windows:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Windows
+  search:
+    terms:
+      - desktop
+      - laptop
+      - microsoft
+      - microsoft windows
+      - operating system
+      - os
+      - pc
+      - software
+      - windows
+  styles:
+    - brands
+  unicode: f17a
+  voted: false
+itch-io:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Itch Io
+  search:
+    terms:
+      - digital games
+      - game marketplace
+      - game store
+      - gaming platform
+      - indie developer
+      - indie games
+      - itch.io
+  styles:
+    - brands
+  unicode: f83a
+  voted: false
+mizuni:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Mizuni
+  search:
+    terms:
+      - mizuni
+      - mizuni brand
+      - mizuni company
+      - mizuni logo
+      - mizuni software
+      - mizuni technology
+  styles:
+    - brands
+  unicode: f3cc
+  voted: false
+angrycreative:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Angrycreative
+  search:
+    terms:
+      - Angry Creative
+      - WordPress
+      - agency
+      - branding
+      - creative agency
+      - design studio
+      - digital agency
+      - marketing
+      - web design
+  styles:
+    - brands
+  unicode: f36e
+  voted: false
+usb:
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 7.0.0
+  label: Usb
+  search:
+    terms:
+      - connector
+      - data transfer
+      - external drive
+      - flash drive
+      - memory stick
+      - port
+      - storage
+      - thumb drive
+      - universal serial bus
+      - usb
+  styles:
+    - brands
+  unicode: f287
+  voted: false
+evernote:
+  changes:
+    - 5.8.0
+    - 7.0.0
+  label: Evernote
+  search:
+    terms:
+      - cloud notes
+      - digital notebook
+      - evernote
+      - memo
+      - note
+      - notebook
+      - notes
+      - organization
+      - productivity
+      - reminder
+  styles:
+    - brands
+  unicode: f839
+  voted: false
+fedex:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Fedex
+  search:
+    terms:
+      - FedEx
+      - Federal Express
+      - courier
+      - delivery
+      - express
+      - freight
+      - logistics
+      - package
+      - shipping
+  styles:
+    - brands
+  unicode: f797
+  voted: false
+jira:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Jira
+  search:
+    terms:
+      - agile
+      - atlassian
+      - bug tracking
+      - issue tracker
+      - jira
+      - kanban
+      - project management
+      - scrum
+      - software development
+      - task management
+  styles:
+    - brands
+  unicode: f7b1
+  voted: true
+the-red-yeti:
+  changes:
+    - 5.3.0
+    - 5.7.0
+    - 5.8.0
+    - 7.0.0
+  label: The Red Yeti
+  search:
+    terms:
+      - brand
+      - content creator
+      - esports
+      - gaming
+      - red yeti
+      - streamer
+      - the red
+      - the red yeti
+      - yeti
+  styles:
+    - brands
+  unicode: f69d
+  voted: false
+page4:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Page4
+  search:
+    terms:
+      - brand
+      - logo
+      - p4
+      - page 4
+      - page4
+      - pagefour
+  styles:
+    - brands
+  unicode: f3d7
+  voted: false
+mdb:
+  changes:
+    - 5.11.0
+    - 7.0.0
+  label: Mdb
+  search:
+    terms:
+      - backend
+      - cloud database
+      - data storage
+      - database
+      - database service
+      - document database
+      - mdb
+      - mongo
+      - mongodb
+      - nosql
+  styles:
+    - brands
+  unicode: f8ca
+  voted: false
+leetcode:
+  changes:
+    - 7.2.0
+  label: Leetcode
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e86a
+  voted: false
+megaport:
+  changes:
+    - 5.1.0
+    - 7.0.0
+  label: Megaport
+  search:
+    terms:
+      - cloud
+      - connectivity
+      - data center
+      - interconnection
+      - megaport
+      - network
+      - service provider
+      - telecommunications
+  styles:
+    - brands
+  unicode: f5a3
+  voted: false
+wpexplorer:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 7.0.0
+  label: Wpexplorer
+  search:
+    terms:
+      - blog
+      - tech blog
+      - tutorials
+      - web development
+      - website
+      - wordpress
+      - wp explorer
+      - wpexplorer
+  styles:
+    - brands
+  unicode: f2de
+  voted: false
+bity:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Bity
+  search:
+    terms:
+      - bitcoin
+      - bity
+      - blockchain
+      - crypto exchange
+      - cryptocurrency
+      - digital currency
+  styles:
+    - brands
+  unicode: f37a
+  voted: false
+glide:
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 7.0.0
+  label: Glide
+  search:
+    terms:
+      - app builder
+      - app development
+      - glide
+      - glideapps
+      - mobile app
+      - no code
+      - no-code
+      - platform
+      - software
+  styles:
+    - brands
+  unicode: f2a5
+  voted: false
+get-pocket:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Get Pocket
+  search:
+    terms:
+      - article
+      - bookmarking
+      - getpocket
+      - pocket
+      - pocket app
+      - read later
+      - reading list
+      - save
+      - save article
+      - save for later
+  styles:
+    - brands
+  unicode: f265
+  voted: false
+github-alt:
+  changes:
+    - 3.0.0
+    - 5.0.0
+    - 7.0.0
+  label: Github Alt
+  search:
+    terms:
+      - code
+      - developer
+      - git
+      - github
+      - octocat
+      - programming
+      - repository
+      - software
+      - version control
+  styles:
+    - brands
+  unicode: f113
+  voted: false
+google-plus-g:
+  changes:
+    - 2.0.0
+    - 5.0.0
+    - 7.0.0
+  label: Google Plus G
+  search:
+    terms:
+      - google
+      - google social
+      - google-plus
+      - gplus
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f0d5
+  voted: false
+untappd:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Untappd
+  search:
+    terms:
+      - app
+      - beer
+      - beer lover
+      - brewery
+      - check-in
+      - craft beer
+      - drinks
+      - rating
+      - social
+      - untappd
+  styles:
+    - brands
+  unicode: f405
+  voted: false
+xbox:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Xbox
+  search:
+    terms:
+      - microsoft xbox
+      - xbox
+      - xbox brand
+      - xbox console
+      - xbox controller
+      - xbox game
+      - xbox gaming
+      - xbox series
+  styles:
+    - brands
+  unicode: f412
+  voted: false
+obsidian:
+  changes:
+    - 7.2.0
+  label: Obsidian
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e879
+  voted: false
+guilded:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Guilded
+  search:
+    terms:
+      - chat
+      - communication
+      - community
+      - esports
+      - gaming
+      - guilded
+      - platform
+      - social
+      - teams
+      - voice
+  styles:
+    - brands
+  unicode: e07e
+  voted: false
+delicious:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Delicious
+  search:
+    terms:
+      - bookmarks
+      - del.icio.us
+      - delicious
+      - favorites
+      - link sharing
+      - save
+      - share
+      - social bookmarking
+  styles:
+    - brands
+  unicode: f1a5
+  voted: false
+napster:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Napster
+  search:
+    terms:
+      - audio
+      - brand
+      - logo
+      - media
+      - mp3
+      - music
+      - napster
+      - playlist
+      - streaming
+  styles:
+    - brands
+  unicode: f3d2
+  voted: false
+expeditedssl:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Expeditedssl
+  search:
+    terms:
+      - certificate authority
+      - encryption
+      - expeditedssl
+      - https
+      - security
+      - ssl
+      - ssl certificate
+      - ssl provider
+      - web security
+  styles:
+    - brands
+  unicode: f23e
+  voted: false
+periscope:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Periscope
+  search:
+    terms:
+      - app
+      - broadcast
+      - camera
+      - live streaming
+      - live video
+      - mobile app
+      - periscope
+      - social media
+      - streaming
+      - video
+  styles:
+    - brands
+  unicode: f3da
+  voted: false
+sistrix:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Sistrix
+  search:
+    terms:
+      - analytics
+      - digital marketing
+      - marketing
+      - search engine optimization
+      - seo
+      - seo software
+      - seo tool
+      - sistrix
+      - website analysis
+  styles:
+    - brands
+  unicode: f3ee
+  voted: false
+ello:
+  changes:
+    - 5.2.0
+    - 7.0.0
+  label: Ello
+  search:
+    terms:
+      - art
+      - community
+      - creative
+      - ello
+      - network
+      - platform
+      - social
+      - social media
+  styles:
+    - brands
+  unicode: f5f1
+  voted: true
+contao:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Contao
+  search:
+    terms:
+      - cms
+      - contao
+      - content management
+      - open source
+      - web development
+      - website
+  styles:
+    - brands
+  unicode: f26d
+  voted: false
+ebay:
+  changes:
+    - 5.0.11
+    - 5.7.0
+    - 7.0.0
+  label: Ebay
+  search:
+    terms:
+      - auction
+      - buy
+      - classifieds
+      - ebay
+      - ecommerce
+      - marketplace
+      - online store
+      - retail
+      - sell
+      - shopping
+  styles:
+    - brands
+  unicode: f4f4
+  voted: true
+cc-amazon-pay:
+  changes:
+    - 5.0.2
+    - 7.0.0
+  label: Cc Amazon Pay
+  search:
+    terms:
+      - amazon
+      - amazon pay
+      - buy
+      - checkout
+      - digital wallet
+      - ecommerce
+      - online shopping
+      - pay
+      - payment
+      - purchase
+  styles:
+    - brands
+  unicode: f42d
+  voted: false
+scaleway:
+  changes:
+    - 7.2.0
+  label: Scaleway
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e859
+  voted: false
+centos:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Centos
+  search:
+    terms:
+      - centos
+      - enterprise linux
+      - linux
+      - linux distribution
+      - operating system
+      - os
+      - server
+  styles:
+    - brands
+  unicode: f789
+  voted: true
+facebook-f:
+  changes:
+    - 5.0.0
+    - 5.8.2
+    - 6.5.0
+    - 7.0.0
+  label: Facebook F
+  search:
+    terms:
+      - facebook
+      - facebook logo
+      - fb
+      - meta
+      - social
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f39e
+  voted: false
+invision:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Invision
+  search:
+    terms:
+      - app
+      - collaboration
+      - design
+      - interface
+      - invision
+      - prototyping
+      - ui
+      - ux
+  styles:
+    - brands
+  unicode: f7b0
+  voted: false
+blogger-b:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Blogger B
+  search:
+    terms:
+      - blog
+      - blog platform
+      - blogger
+      - blogging
+      - blogspot
+      - content creation
+      - google blogger
+      - publishing
+      - writing
+  styles:
+    - brands
+  unicode: f37d
+  voted: false
+drupal:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 7.0.0
+  label: Drupal
+  search:
+    terms:
+      - cms
+      - content management system
+      - drupal
+      - drupal cms
+      - open source
+      - php
+      - web development
+      - website
+  styles:
+    - brands
+  unicode: f1a9
+  voted: false
+odnoklassniki:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Odnoklassniki
+  search:
+    terms:
+      - odnoklassniki
+      - odnoklassniki.ru
+      - ok
+      - ok.ru
+      - russian social network
+      - social media
+      - social network
+  styles:
+    - brands
+  unicode: f263
+  voted: false
+square-git:
+  aliases:
+    names:
+      - git-square
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.8.2
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Git
+  search:
+    terms:
+      - code
+      - development
+      - git
+      - git square
+      - repository
+      - software
+      - source control
+      - version control
+  styles:
+    - brands
+  unicode: f1d2
+  voted: false
+hooli:
+  changes:
+    - 5.0.0
+    - 5.7.0
+    - 7.0.0
+  label: Hooli
+  search:
+    terms:
+      - Hooli
+      - Silicon Valley
+      - brand
+      - software
+      - tech company
+      - technology
+  styles:
+    - brands
+  unicode: f427
+  voted: false
+umbraco:
+  changes:
+    - 5.11.0
+    - 7.0.0
+  label: Umbraco
+  search:
+    terms:
+      - .net
+      - cms
+      - content management
+      - dotnet
+      - open source
+      - platform
+      - umbraco
+      - web development
+      - website
+  styles:
+    - brands
+  unicode: f8e8
+  voted: false
+creative-commons-by:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons By
+  search:
+    terms:
+      - attribution
+      - cc
+      - copyright
+      - creative commons
+      - license
+      - open content
+      - permission
+      - share
+  styles:
+    - brands
+  unicode: f4e7
+  voted: false
+storybook:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Storybook
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8c1
+  voted: false
+nfc-directional:
+  changes:
+    - 6.1.0
+    - 7.0.0
+  label: Nfc Directional
+  search:
+    terms:
+      - connect
+      - contactless
+      - data transfer
+      - near field communication
+      - nfc
+      - proximity
+      - scan
+      - signal
+      - tap
+      - transfer
+      - wireless
+      - wireless payment
+  styles:
+    - brands
+  unicode: e530
+  voted: false
+obs-studio:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Obs Studio
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8c0
+  voted: false
+julia:
+  changes:
+    - 7.2.0
+  label: Julia
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e852
+  voted: false
+sith:
+  changes:
+    - 5.0.12
+    - 7.0.0
+  label: Sith
+  search:
+    terms:
+      - dark lord
+      - dark side
+      - darth
+      - force user
+      - sith
+      - star wars
+      - star wars villain
+      - starwars
+      - villain
+  styles:
+    - brands
+  unicode: f512
+  voted: false
+openai:
+  changes:
+    - 7.0.0
+  label: Openai
+  search:
+    terms:
+      - ai
+      - ai research
+      - artificial intelligence
+      - chatgpt
+      - dall-e
+      - gpt
+      - language model
+      - machine learning
+      - open ai
+      - openai
+  styles:
+    - brands
+  unicode: e7cf
+  voted: false
+pixiv:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Pixiv
+  search:
+    terms:
+      - anime
+      - art sharing
+      - creative community
+      - digital art platform
+      - illustration site
+      - japanese art community
+      - manga
+      - pixiv
+      - pixiv logo
+  styles:
+    - brands
+  unicode: e640
+  voted: false
+yandex:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Yandex
+  search:
+    terms:
+      - internet
+      - russian search engine
+      - search
+      - technology
+      - web
+      - yandex
+      - yandex browser
+      - yandex mail
+      - yandex maps
+      - yandex taxi
+  styles:
+    - brands
+  unicode: f413
+  voted: false
+zhihu:
+  changes:
+    - 5.2.0
+    - 7.0.0
+  label: Zhihu
+  search:
+    terms:
+      - answers
+      - chinese q&a
+      - community
+      - knowledge sharing
+      - question
+      - social network
+      - zhihu
+      - 知乎
+  styles:
+    - brands
+  unicode: f63f
+  voted: true
+viacoin:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Viacoin
+  search:
+    terms:
+      - altcoin
+      - blockchain
+      - crypto
+      - cryptocurrency
+      - digital currency
+      - viacoin
+      - vtc
+  styles:
+    - brands
+  unicode: f237
+  voted: false
+ubuntu:
+  changes:
+    - 5.6.0
+    - 6.5.0
+    - 7.0.0
+  label: Ubuntu
+  search:
+    terms:
+      - canonical
+      - distro
+      - linux
+      - linux distribution
+      - open source
+      - operating system
+      - os
+      - ubuntu
+  styles:
+    - brands
+  unicode: f7df
+  voted: true
+venmo:
+  changes:
+    - 7.2.0
+  label: Venmo
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e85a
+  voted: false
+globaleaks:
+  changes:
+    - 7.2.0
+  label: Globaleaks
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e85d
+  voted: false
+vsco:
+  changes:
+    - 7.0.0
+  label: Vsco
+  search:
+    terms:
+      - image editing
+      - photo editor
+      - photo filter
+      - photo sharing
+      - photography
+      - social media
+      - vsco
+      - vsco app
+  styles:
+    - brands
+  unicode: e7dd
+  voted: false
+openid:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Openid
+  search:
+    terms:
+      - authentication
+      - identity
+      - login
+      - open id
+      - openid
+      - sign in
+      - single sign-on
+      - sso
+  styles:
+    - brands
+  unicode: f19b
+  voted: false
+pandora:
+  changes:
+    - 7.0.0
+  label: Pandora
+  search:
+    terms:
+      - audio
+      - brand
+      - entertainment
+      - internet radio
+      - music
+      - pandora
+      - pandora radio
+      - streaming
+  styles:
+    - brands
+  unicode: e7da
+  voted: false
+amazon-pay:
+  changes:
+    - 5.0.2
+    - 5.8.0
+    - 7.0.0
+  label: Amazon Pay
+  search:
+    terms:
+      - Amazon
+      - Amazon Pay
+      - buy
+      - checkout
+      - digital wallet
+      - e-commerce
+      - online payment
+      - pay
+      - payment
+      - wallet
+  styles:
+    - brands
+  unicode: f42c
+  voted: false
+ups:
+  changes:
+    - 5.6.0
+    - 5.8.0
+    - 7.0.0
+  label: Ups
+  search:
+    terms:
+      - UPS
+      - United Parcel Service
+      - courier
+      - delivery
+      - freight
+      - logistics
+      - package
+      - parcel
+      - shipping
+  styles:
+    - brands
+  unicode: f7e0
+  voted: false
+fonticons:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Fonticons
+  search:
+    terms:
+      - font icons
+      - fonticons
+      - glyphs
+      - icon font
+      - icon set
+      - symbols
+      - typography
+      - vector icons
+  styles:
+    - brands
+  unicode: f280
+  voted: false
+square-js:
+  aliases:
+    names:
+      - js-square
+  changes:
+    - 5.0.0
+    - 5.0.3
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Js
+  search:
+    terms:
+      - api
+      - developer
+      - ecommerce
+      - fintech
+      - javascript
+      - js
+      - payments
+      - programming
+      - sdk
+      - square
+  styles:
+    - brands
+  unicode: f3b9
+  voted: false
+xing:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Xing
+  search:
+    terms:
+      - business networking
+      - career
+      - jobs
+      - networking site
+      - professional network
+      - professional profile
+      - social network
+      - xing
+      - xing logo
+  styles:
+    - brands
+  unicode: f168
+  voted: false
+signal-messenger:
+  changes:
+    - 6.5.0
+    - 6.5.1
+    - 6.7.2
+    - 7.0.0
+  label: Signal Messenger
+  search:
+    terms:
+      - app
+      - calls
+      - chat
+      - communication
+      - encrypted
+      - messaging
+      - messenger
+      - private
+      - secure
+      - signal
+      - text
+  styles:
+    - brands
+  unicode: e663
+  voted: false
+researchgate:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Researchgate
+  search:
+    terms:
+      - RG
+      - academic
+      - collaboration
+      - network
+      - publications
+      - research
+      - researchers
+      - researchgate
+      - scholarly
+      - scientists
+  styles:
+    - brands
+  unicode: f4f8
+  voted: true
+connectdevelop:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Connectdevelop
+  search:
+    terms:
+      - coding
+      - connect develop
+      - connectdevelop
+      - connectdevelop brand
+      - developer community
+      - developer network
+      - programming
+      - software development
+  styles:
+    - brands
+  unicode: f20e
+  voted: false
+reddit:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 6.5.1
+    - 7.0.0
+  label: Reddit
+  search:
+    terms:
+      - community
+      - discussion
+      - forum
+      - karma
+      - meme
+      - online community
+      - reddit
+      - reddit logo
+      - social media
+      - social network
+      - subreddit
+      - upvote
+  styles:
+    - brands
+  unicode: f1a1
+  voted: false
+creative-commons-nc-jp:
+  changes:
+    - 5.0.11
+    - 7.0.0
+  label: Creative Commons Nc Jp
+  search:
+    terms:
+      - cc
+      - cc license
+      - copyright
+      - creative commons
+      - japan
+      - jp
+      - license
+      - nc
+      - non commercial
+      - open license
+  styles:
+    - brands
+  unicode: f4ea
+  voted: false
+bluetooth:
+  aliases:
+    unicodes:
+      secondary:
+        - 10f293
+  changes:
+    - 4.5.0
+    - 5.0.0
+    - 6.0.0-beta1
+    - 6.2.0
+    - 6.3.0
+    - 6.4.0
+    - 6.5.0
+    - 6.6.0
+    - 6.7.0
+    - 7.0.0
+  label: Bluetooth
+  search:
+    terms:
+      - bluetooth
+      - connection
+      - device
+      - pairing
+      - signal
+      - technology
+      - wireless
+  styles:
+    - brands
+  unicode: f293
+  voted: false
+stack-overflow:
+  changes:
+    - 3.2.0
+    - 5.0.0
+    - 7.0.0
+  label: Stack Overflow
+  search:
+    terms:
+      - Q&A
+      - answers
+      - coding
+      - community
+      - developer
+      - forum
+      - programming
+      - questions
+      - stack overflow
+      - stackoverflow
+      - tech
+  styles:
+    - brands
+  unicode: f16c
+  voted: false
+yarn:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Yarn
+  search:
+    terms:
+      - craft
+      - crochet
+      - fabric
+      - fiber
+      - knitting
+      - sewing
+      - textile
+      - thread
+      - wool
+      - yarn
+  styles:
+    - brands
+  unicode: f7e3
+  voted: true
+google-scholar:
+  changes:
+    - 6.5.0
+    - 7.0.0
+  label: Google Scholar
+  search:
+    terms:
+      - academic
+      - citations
+      - google
+      - google scholar
+      - papers
+      - research
+      - scholar
+  styles:
+    - brands
+  unicode: e63b
+  voted: false
+apper:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Apper
+  search:
+    terms:
+      - Apper
+      - app
+      - app development
+      - application
+      - enterprise apps
+      - mobile app
+      - software
+  styles:
+    - brands
+  unicode: f371
+  voted: false
+stubber:
+  changes:
+    - 6.2.1
+    - 6.3.0
+    - 7.0.0
+  label: Stubber
+  search:
+    terms:
+      - admission
+      - coupon
+      - event ticket
+      - receipt
+      - stub
+      - stub ticket
+      - stubber
+      - ticket
+      - voucher
+  styles:
+    - brands
+  unicode: e5c7
+  voted: false
+simplybuilt:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 7.0.0
+  label: Simplybuilt
+  search:
+    terms:
+      - building company
+      - construction
+      - home builder
+      - housing
+      - real estate
+      - simply built
+      - simplybuilt
+  styles:
+    - brands
+  unicode: f215
+  voted: false
+linktree:
+  changes:
+    - 7.0.0
+    - 7.2.0
+  label: Linktree
+  search:
+    terms:
+      - bio link
+      - link aggregator
+      - link landing page
+      - link tree
+      - links
+      - linktree
+      - profile links
+      - social links
+  styles:
+    - brands
+  unicode: e7d8
+  voted: false
+square-web-awesome:
+  changes:
+    - 6.5.2
+    - 7.0.0
+  label: Square Web Awesome
+  search:
+    terms:
+      - UI
+      - awesome
+      - coding
+      - components
+      - crown
+      - front-end
+      - programming
+      - user interface
+      - web
+      - web development
+  styles:
+    - brands
+  unicode: e683
+  voted: false
+rebel:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Rebel
+  search:
+    terms:
+      - alliance
+      - fighter
+      - freedom
+      - insurgent
+      - rebel
+      - rebellion
+      - resistance
+      - sci-fi
+      - star wars
+      - symbol
+  styles:
+    - brands
+  unicode: f1d0
+  voted: false
+rocketchat:
+  changes:
+    - 5.0.0
+    - 5.4.2
+    - 5.8.0
+    - 5.15.0
+    - 7.0.0
+  label: Rocketchat
+  search:
+    terms:
+      - chat
+      - chat app
+      - chat platform
+      - chat service
+      - collaboration
+      - communication
+      - messaging
+      - rocket chat
+      - rocketchat
+      - team chat
+  styles:
+    - brands
+  unicode: f3e8
+  voted: false
+servicestack:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Servicestack
+  search:
+    terms:
+      - .net
+      - api framework
+      - backend
+      - cloud services
+      - dotnet
+      - microservices
+      - service stack
+      - servicestack
+      - software development
+      - web services
+  styles:
+    - brands
+  unicode: f3ec
+  voted: false
+square-behance:
+  aliases:
+    names:
+      - behance-square
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 5.0.3
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Behance
+  search:
+    terms:
+      - adobe behance
+      - art
+      - behance
+      - creative
+      - design
+      - portfolio
+      - projects
+      - showcase
+  styles:
+    - brands
+  unicode: f1b5
+  voted: false
+stripe-s:
+  changes:
+    - 5.0.1
+    - 5.8.0
+    - 7.0.0
+  label: Stripe S
+  search:
+    terms:
+      - billing
+      - credit card
+      - ecommerce
+      - financial
+      - fintech
+      - online payments
+      - payment
+      - payments
+      - stripe
+      - subscription
+  styles:
+    - brands
+  unicode: f42a
+  voted: false
+blackberry:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Blackberry
+  search:
+    terms:
+      - RIM
+      - blackberry
+      - blackberry brand
+      - blackberry device
+      - blackberry logo
+      - blackberry phone
+      - mobile
+      - smartphone
+  styles:
+    - brands
+  unicode: f37b
+  voted: false
+resolving:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Resolving
+  search:
+    terms:
+      - brand
+      - company
+      - corporate
+      - logo
+      - resolving
+      - resolving icon
+  styles:
+    - brands
+  unicode: f3e7
+  voted: false
+deskpro:
+  changes:
+    - 5.0.0
+    - 7.0.0
+    - 7.2.0
+  label: Deskpro
+  search:
+    terms:
+      - Deskpro
+      - IT support
+      - customer service
+      - customer support
+      - help desk
+      - helpdesk
+      - service desk
+      - software
+      - support
+      - ticketing
+  styles:
+    - brands
+  unicode: f38f
+  voted: false
+skyatlas:
+  changes:
+    - 4.3.0
+    - 5.0.0
+    - 5.0.3
+    - 7.0.0
+  label: Skyatlas
+  search:
+    terms:
+      - astronomy
+      - atlas
+      - celestial
+      - constellation
+      - map
+      - navigation
+      - sky atlas
+      - skyatlas
+      - space
+      - star chart
+  styles:
+    - brands
+  unicode: f216
+  voted: false
+hackerrank:
+  changes:
+    - 5.2.0
+    - 5.8.0
+    - 7.0.0
+  label: Hackerrank
+  search:
+    terms:
+      - challenges
+      - code practice
+      - coding
+      - competitive programming
+      - developer
+      - hacker rank
+      - hackerrank
+      - interview
+      - programming
+      - tech
+  styles:
+    - brands
+  unicode: f5f7
+  voted: true
+cloudflare:
+  changes:
+    - 5.15.0
+    - 7.0.0
+  label: Cloudflare
+  search:
+    terms:
+      - cdn
+      - cf
+      - cloud services
+      - cloudflare
+      - content delivery network
+      - ddos protection
+      - dns
+      - firewall
+      - internet security
+      - web performance
+  styles:
+    - brands
+  unicode: e07d
+  voted: false
+gg-circle:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Gg Circle
+  search:
+    terms:
+      - gg
+      - gg brand
+      - gg circle
+      - gg icon
+      - gg logo
+      - gg symbol
+  styles:
+    - brands
+  unicode: f261
+  voted: false
+odysee:
+  changes:
+    - 6.2.1
+    - 6.3.0
+    - 7.0.0
+  label: Odysee
+  search:
+    terms:
+      - blockchain video
+      - content sharing
+      - decentralized video
+      - odysee
+      - video hosting
+      - video platform
+  styles:
+    - brands
+  unicode: e5c6
+  voted: false
+freebsd:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Freebsd
+  search:
+    terms:
+      - bsd
+      - free bsd
+      - freebsd
+      - network
+      - open source
+      - operating system
+      - os
+      - server
+      - unix
+  styles:
+    - brands
+  unicode: f3a4
+  voted: false
+firstdraft:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Firstdraft
+  search:
+    terms:
+      - content creation
+      - document
+      - draft
+      - first draft
+      - firstdraft
+      - publishing
+      - writing
+  styles:
+    - brands
+  unicode: f3a1
+  voted: false
+duolingo:
+  changes:
+    - 7.0.0
+  label: Duolingo
+  search:
+    terms:
+      - app
+      - courses
+      - duolingo
+      - education
+      - foreign language
+      - language
+      - language learning
+      - learning
+      - owl
+      - study
+  styles:
+    - brands
+  unicode: e812
+  voted: false
+fedora:
+  changes:
+    - 5.6.0
+    - 5.6.3
+    - 5.8.0
+    - 6.0.0
+    - 7.0.0
+  label: Fedora
+  search:
+    terms:
+      - distribution
+      - distro
+      - fedora
+      - linux
+      - open source
+      - operating system
+      - os
+      - red hat
+      - rpm
+  styles:
+    - brands
+  unicode: f798
+  voted: true
+cc-jcb:
+  changes:
+    - 4.4.0
+    - 5.0.0
+    - 7.0.0
+  label: Cc Jcb
+  search:
+    terms:
+      - banking
+      - card
+      - credit card
+      - debit
+      - financial
+      - jcb
+      - mastercard alternative
+      - payment
+      - transaction
+  styles:
+    - brands
+  unicode: f24b
+  voted: false
+quora:
+  changes:
+    - 4.7.0
+    - 5.0.0
+    - 7.0.0
+  label: Quora
+  search:
+    terms:
+      - answers
+      - community
+      - discussion
+      - forum
+      - knowledge
+      - q&a
+      - questions
+      - quora
+      - social network
+  styles:
+    - brands
+  unicode: f2c4
+  voted: false
+accessible-icon:
+  aliases:
+    unicodes:
+      composite:
+        - f29b
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Accessible Icon
+  search:
+    terms:
+      - access
+      - accessibility
+      - accessibility symbol
+      - accessible icon project
+      - disability
+      - disabled
+      - handicap
+      - inclusive
+      - mobility
+      - person
+      - user
+      - wheelchair
+      - wheelchair user
+  styles:
+    - brands
+  unicode: f368
+  voted: false
+empire:
+  changes:
+    - 4.1.0
+    - 5.0.0
+    - 7.0.0
+  label: Empire
+  search:
+    terms:
+      - empire
+      - film
+      - franchise
+      - galactic empire
+      - lucasfilm
+      - movie
+      - sci-fi
+      - star wars
+      - starwars
+  styles:
+    - brands
+  unicode: f1d1
+  voted: false
+devpost:
+  changes:
+    - 7.3.0
+    - 7.3.0
+  label: Devpost
+  search:
+    terms: []
+  styles:
+    - brands
+  unicode: e8ae
+  voted: false
+replyd:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Replyd
+  search:
+    terms:
+      - Replyd
+      - brand
+      - communication
+      - messaging
+      - replyd
+      - social
+  styles:
+    - brands
+  unicode: f3e6
+  voted: false
+draft2digital:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Draft2digital
+  search:
+    terms:
+      - author platform
+      - book distribution
+      - d2d
+      - digital publishing
+      - draft2digital
+      - ebook
+      - publishing
+      - self-publishing
+  styles:
+    - brands
+  unicode: f396
+  voted: false
+mendeley:
+  changes:
+    - 5.6.0
+    - 7.0.0
+  label: Mendeley
+  search:
+    terms:
+      - academic
+      - bibliography
+      - citation
+      - library
+      - literature
+      - mendeley
+      - papers
+      - reference manager
+      - research
+      - scholarly
+  styles:
+    - brands
+  unicode: f7b3
+  voted: true
+cpanel:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Cpanel
+  search:
+    terms:
+      - control panel
+      - cpanel
+      - hosting
+      - hosting dashboard
+      - server management
+      - site management
+      - web admin
+      - web hosting
+      - website control
+  styles:
+    - brands
+  unicode: f388
+  voted: false
+square-viadeo:
+  aliases:
+    names:
+      - viadeo-square
+  changes:
+    - 4.6.0
+    - 5.0.0
+    - 5.7.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+  label: Square Viadeo
+  search:
+    terms:
+      - brand
+      - business
+      - networking
+      - professional network
+      - social network
+      - viadeo
+  styles:
+    - brands
+  unicode: f2aa
+  voted: false
+autoprefixer:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Autoprefixer
+  search:
+    terms:
+      - automation
+      - autoprefixer
+      - build tool
+      - css
+      - frontend
+      - prefix
+      - stylesheet
+      - web development
+  styles:
+    - brands
+  unicode: f41c
+  voted: false
+google-drive:
+  changes:
+    - 5.0.0
+    - 7.0.0
+  label: Google Drive
+  search:
+    terms:
+      - cloud
+      - documents
+      - drive
+      - files
+      - gdrive
+      - google
+      - google drive
+      - storage
+  styles:
+    - brands
+  unicode: f3aa
+  voted: false
+think-peaks:
+  changes:
+    - 5.4.2
+    - 5.8.0
+    - 7.0.0
+  label: Think Peaks
+  search:
+    terms:
+      - analytics
+      - business intelligence
+      - charts
+      - data
+      - graphs
+      - peaks
+      - think peaks
+      - thinkpeaks
+      - visualization
+  styles:
+    - brands
+  unicode: f731
+  voted: false
+square-github:
+  aliases:
+    names:
+      - github-square
+  changes:
+    - 1.0.0
+    - 5.0.0
+    - 6.1.2
+    - 6.5.0
+    - 7.0.0
+    - 7.3.0
+    - 7.3.0
+  label: Square Github
+  search:
+    terms:
+      - code
+      - development
+      - git
+      - github
+      - octocat
+      - programming
+      - repository
+      - software
+      - version control
+  styles:
+    - brands
+  unicode: f092
+  voted: false

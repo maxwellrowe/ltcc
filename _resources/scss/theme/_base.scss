@@ -1,0 +1,20 @@
+// Site font declarations and base element styles.
+
+// -2% tracking, proportional to each heading's current font size.
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  letter-spacing: -0.02em;
+}
+
+// Default text links. Bootstrap component selectors retain their own styling.
+a {
+  color: inherit;
+  text-decoration-color: $link-color;
+  text-underline-offset: 0.2em;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration-color: $teal;
+  }
+}
