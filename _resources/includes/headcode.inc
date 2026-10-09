@@ -15,6 +15,8 @@
 <link href="/_resources/css/legacy.css" rel="stylesheet" />
 <link href="/_resources/css/ltcc-custom.css" rel="stylesheet" />
 <link href="/_resources/fonts/font-awesome/css/all.min.css" rel="stylesheet" />
+<!-- Legacy v4 icon names mapped to the installed Sharp and Brands fonts. -->
+<link href="/_resources/css/fontawesome-v4-shim.css" rel="stylesheet" />
 
 <!-- Translation control label styling -->
 <style>

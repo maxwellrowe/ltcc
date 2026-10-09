@@ -21,3 +21,7 @@ Working examples and class documentation are in `_dev/bootstrap-theme/index.html
 Publish changed shared includes, the animation script, generated legacy script, changed gallery scripts, and changed XSL templates together. Package files and `node_modules` are local build tooling. Run `npm run build` to rebuild CSS and the legacy bundle.
 
 Build and scripted animation lifecycle checks pass. Actual legacy galleries, Foundation navigation, Slick sliders, anniversary components, and CMS editing still need browser checks in Modern Campus before production publication; the compatibility bridge does not guarantee every legacy interaction is compatible with jQuery 4.
+
+## Font Awesome v4 compatibility
+
+`headcode.inc` loads `css/fontawesome-v4-shim.css` after the installed Font Awesome stylesheet. The shim maps legacy `.fa` names to Sharp/Brands and aliases the old `FontAwesome` font family for pseudo-elements. It replaces the v4.3 CDN import formerly in `legacy.css`. Run `npm run build:icons` after changing the installed Font Awesome package. Standard CMS icon classes can remain; custom Unicode-based icons should be checked visually.
