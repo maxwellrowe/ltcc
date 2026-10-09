@@ -101,9 +101,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 					<!-- page-content -->
 					<xsl:call-template name="page-content"/> <!-- each page type has a unique version of this template --> 																	
 					<xsl:apply-templates select="footcode/node()"/> <!-- pcf -->						
-					<footer id="main-footer">
-						<xsl:call-template name="common-footer"/>
-					</footer>					
+					<xsl:call-template name="common-footer"/>					
 														
 				</div>
 				
@@ -153,23 +151,17 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 	<xsl:template name="common-header">
 		<xsl:choose>
 			<xsl:when test="ou:pcf-param('mkt-header') = 'global-header' ">
-				<header class="logo-banner">
-					<div class="row">				
-						<!-- header include -->				
-						<xsl:copy-of select="ou:include-file('/_resources/includes/header.inc')"/>
-						<!-- navigation include -->
-							<xsl:choose>
-								<xsl:when test="$ou:action = 'pub'">
-									<xsl:copy-of select="ou:include-file('/_resources/includes/header-navigation.php')"/>
-								</xsl:when>
-								<xsl:otherwise>
-									<xsl:if test="unparsed-text-available(concat($domain, '/_resources/includes/header-navigation.php'),'utf-8')">
-										<xsl:value-of select="unparsed-text(concat($domain, '/_resources/includes/header-navigation.php'),'utf-8')" disable-output-escaping="yes"/>
-									</xsl:if>
-								</xsl:otherwise>
-							</xsl:choose>
-					</div>
-				</header>
+				<xsl:choose>
+            <xsl:when test="$ou:action = 'pub'">
+                <xsl:copy-of select="ou:include-file('/_resources/includes/header.php')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- Fetch the rendered header so CMS preview does not need to execute PHP. -->
+                <xsl:if test="unparsed-text-available(concat($domain, '/_resources/includes/header.php'), 'utf-8')">
+                    <xsl:value-of select="unparsed-text(concat($domain, '/_resources/includes/header.php'), 'utf-8')" disable-output-escaping="yes"/>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
 			</xsl:when>
 			<xsl:otherwise>
 				<div class="ltcc-fifty-header py-4">
@@ -185,23 +177,18 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 	</xsl:template>
 
 	<xsl:template name="common-footer">
-		<div class="row">
-			<!-- scorecard image hidden at the moment -->
-			<xsl:copy-of select="ou:include-file('/_resources/includes/scorecard.inc')"/>
-			<!-- ltcc alert -->
-			<xsl:copy-of select="ou:include-file('/_resources/includes/ltcc-alert.inc')"/>					
-			<div class="social-links">
-				<!-- social media icons -->
-				<xsl:copy-of select="ou:include-file('/_resources/includes/social.inc')"/>
-			</div>			
-			<address>
-				<!-- copyright symbol / direct edit -->
-				<xsl:copy-of select="ou:include-file('/_resources/includes/copyright.inc')"/>
-				<!-- physical address -->
-				<xsl:copy-of select="ou:include-file('/_resources/includes/address.inc')"/>
-			</address>
-		</div>		
-	</xsl:template>	
+        <xsl:choose>
+            <xsl:when test="$ou:action = 'pub'">
+                <xsl:copy-of select="ou:include-file('/_resources/includes/footer.php')"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <!-- Use the rendered footer for CMS editing and preview. -->
+                <xsl:if test="unparsed-text-available(concat($domain, '/_resources/includes/footer.php'), 'utf-8')">
+                    <xsl:value-of select="unparsed-text(concat($domain, '/_resources/includes/footer.php'), 'utf-8')" disable-output-escaping="yes"/>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>	
 
 	<!-- in case not defined in page type xsl -->
 	<xsl:template name="page-content"><p>No template defined.</p></xsl:template><!-- leave for debugging purposes -->			

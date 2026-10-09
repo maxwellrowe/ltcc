@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/_shared/header.xsl" title="Site Header" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+	
+	<ouc:properties label="config">				
+		<parameter section="Logo Settings" name="logo-img" type="filechooser" dependency="dm-tag" group="Everyone" prompt="Logo Image" alt="Choose a logo."></parameter>
+		<parameter name="logo-img-mobile" type="filechooser" dependency="dm-tag" group="Everyone" prompt="Logo Image Mobile" alt="Choose a mobile logo."></parameter>
+		
+		<parameter name="logo-description" type="text" group="Everyone" prompt="Logo Description" alt="Please enter the alternative text for the logo. This becomes the alt attribute of the image.">Lake Tahoe Community College Logo</parameter>
+		<parameter name="logo-link" type="filechooser" group="Everyone" prompt="Logo Link" alt="Please choose the link for the logo.">/</parameter>
+		<parameter name="sr-logo" type="text" group="Everyone" prompt="Screen Reader Logo Text" alt="Enter the screen reader logo text.">Lake Tahoe Community College (LTCC)</parameter>
+
+		<parameter section="Header Display" name="show-top-bar" type="select" group="Everyone" prompt="Show Top Bar" alt="Choose True to show or False to hide this header element.">
+			<option value="true" selected="true">True</option>
+			<option value="false" selected="false">False</option>
+		</parameter>
+		<parameter name="show-search-button" type="select" group="Everyone" prompt="Show Search Button" alt="Choose True to show or False to hide this header element.">
+			<option value="true" selected="true">True</option>
+			<option value="false" selected="false">False</option>
+		</parameter>
+		<parameter name="show-call-to-action-button" type="select" group="Everyone" prompt="Show Call to Action Button" alt="Choose True to show or False to hide this header element.">
+			<option value="true" selected="true">True</option>
+			<option value="false" selected="false">False</option>
+		</parameter>
+
+		<parameter section="Call to Action Button" name="cta-button-text" type="text" group="Everyone" prompt="Button Text" alt="Enter the text displayed on the call to action button."></parameter>
+		<parameter name="cta-button-link" type="filechooser" dependency="dm-tag" group="Everyone" prompt="Button Link" alt="Choose or enter the destination for the call to action button."></parameter>
+	</ouc:properties>
+	
+	<ouc:div label="header-navigation" group="Everyone" button-text="Edit Main Navigation"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Et rerum excepturi deserunt occaecat in excepteur et in proident similique consectetur repellendus. Reprehenderit laboris et cumque consequatur et. Et pariatur sunt quis qui autem mollit. Nobis sunt et repellendus adipiscing est.</p>
+<p>Nam voluptas tempor occaecat accusamus et laborum placeat. Magna ex dolore sint vel facere eiusmod autem dolor repellendus distinctio. Sit deserunt duis ut dolore voluptate vel. Vero quo et do provident cupiditate aut autem.</p>
+<p>Est qui placeat dolores qui nostrud quis officia eligendi eligendi nihil et. Quas duis id quidem officia accusamus. Consequat non fugiat voluptatum dolorem deserunt commodo dolor quas.</p></ouc:div>
+	
+</document>

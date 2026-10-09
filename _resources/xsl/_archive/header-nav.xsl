@@ -44,7 +44,7 @@ Last Updated: 1/2016
                                 <header class="logo-banner">
                                     <div class="row">				
                                         <!-- header include -->		                                        
-                                        <xsl:copy-of select="ou:include-file('/_resources/includes/header.inc')"/>
+                                        <xsl:copy-of select="ou:include-file('/_resources/includes/header-brand.inc')"/>
                                     </div>
                                 </header>
                                 <footer id="main-footer">

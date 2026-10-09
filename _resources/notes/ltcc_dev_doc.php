@@ -212,7 +212,7 @@
 <p>Menu navigation builder file, user can have up to seven sub/navigational menus. Each menu navigation has properties that will change the content of each menu. This file also contains the top navigation items. When changes are made a publish is required.</p>
 </li>
 <li>
-<p>header.inc</p>
+<p>header-brand.inc</p>
 </li>
 </ul>
 <p>Contains the top logo and with the university name and slogan.</p>

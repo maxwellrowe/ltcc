@@ -107,7 +107,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 
 	<xsl:template name="common-header">
 		<xsl:call-template name="output-include">
-			<xsl:with-param name="path">/_resources/includes/50th-anniversary-header.php</xsl:with-param>
+			<xsl:with-param name="path">/_resources/includes/header.php</xsl:with-param>
 			<xsl:with-param name="from-prod" select="true()" />
 		</xsl:call-template>
 	</xsl:template>

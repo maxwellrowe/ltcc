@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?pcf-stylesheet path="/_resources/xsl/_shared/footer.xsl" title="Common Footer" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/_shared/footer.xsl" title="Site Footer" extension="php"?>
 <?pcf-stylesheet path="/_resources/xsl/debug.xsl" title="Variable Debug" extension=".debug.html" publish="no" alternate="yes"?>
-
-<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
-
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
 <document xmlns:ouc="http://omniupdate.com/XSL/Variables">
-<?php /* Uses xsl/_shared/footer.xsl to publish footer.php. headcode.inc fetches it to replace the page footer; its XSL also supplies the CMS preview. */ ?>
-
-	
-	<ouc:div label="maincontent" group="Everyone" button-text="Main Content" button="hide" hide="true">
-		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
-	</ouc:div>
-	
-	<ouc:div label="sec-1-heading" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this section." section="Section 1"/>Contact</ouc:div>
-	<ouc:div label="sec-1-col-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter the content for this column." rows="14" editor="yes"/><h3>Phone</h3>
+    <?php /* Uses xsl/_shared/footer.xsl to publish footer.php and display the editable footer in CMS preview. */ ?>
+    <ouc:div label="footer-content" group="Everyone" button-text="Edit Footer">
+        <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
+<div class="row">
+<div class="columns small-12 large-3"><h2>Contact</h2><h3>Phone</h3>
 <p>Main: <a href="tel:530-541-4660">(530) 541-4660</a><br />Fax: (530) 541-7852</p>
 <h3>Campus Hours</h3>
 <p>Monday-Thursday: 7:30am-10pm<br />Friday: 7:30am-6:30pm</p>
 <h3>Address</h3>
-<p><a href="#">One College Drive<br />South Lake Tahoe, CA 96150</a></p></ouc:div>
-	
-	<ouc:div label="sec-2-heading" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this section." section="Section 2"/>Quick Links</ouc:div>
-	<ouc:div label="sec-2-col-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 1" alt="Enter a list of links for this column." rows="6" editor="yes"/><br />
+<p><a href="#">One College Drive<br />South Lake Tahoe, CA 96150</a></p></div>
+<div class="columns small-12 large-6"><h2>Quick Links</h2><div class="row">
+<div class="columns small-12 medium-6"><br />
 <ul>
 <li><a title="Learn more about LTCC's ACCJC accreditation" href="{{f:16448345}}">Accreditation</a></li>
 <li><a title="Learn more about LTCC" href="https://www.ltcc.edu/about/index.php">About LTCC</a></li>
@@ -30,8 +23,8 @@
 <li><a title="Go to Cranium Cafe" href="https://ltcc.craniumcafe.com/login" target="_blank" rel="noopener">Cranium Cafe</a></li>
 <li><a title="Learn more about Diversity, Equity &amp; Inclusion at LTCC" href="https://www.ltcc.edu/about/dei.php">Diversity, Equity &amp; Inclusion</a></li>
 <li><a title="Explore Programs &amp; Pathways at LTCC" href="https://www.ltcc.edu/academics/academic_programs/index.php">Explore Programs &amp; Pathways</a></li>
-</ul></ouc:div>
-	<ouc:div label="sec-2-col-2" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Column 2" alt="Enter a list of links for this column." rows="6" editor="yes"/><br />
+</ul></div>
+<div class="columns small-12 medium-6"><br />
 <ul>
 <li><a title="Find more information about financial aid available at LTCC" href="https://www.ltcc.edu/admissions/financial-aid/index.php">Financial Aid</a></li>
 <li><a class="trackable-link footer-link" title="Find classes at LTCC" href="https://www.ltcc.edu/academics/scheduleofclasses.php">Find Classes</a></li>
@@ -40,18 +33,17 @@
 <li><a title="Learn about the library at LTCC" href="https://www.ltcc.edu/campusresources/library/index.php">Library</a></li>
 <li><a title="Login to Passport" href="https://experience.elluciancloud.com/ltcc" target="_blank" rel="noopener">Passport Login</a></li>
 <li><a title="Report a campus concern" href="https://cm.maxient.com/reporting.php?LakeTahoeCC">Report a Concern</a></li>
-</ul></ouc:div>
-	
-	<ouc:div label="sec-3-heading" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Heading" alt="Enter a heading for this section." section="Section 3"/>Follow Us</ouc:div>
-	<ouc:div label="link-facebook" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Facebook Link" alt="Enter Facebook URL."/>https://www.facebook.com/LakeTahoeCommunityCollege</ouc:div>
-	<ouc:div label="link-youtube" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="YouTube link" alt="Enter YouTube URL."/>https://www.youtube.com/user/LakeTahoeCommCollege</ouc:div>
-	<ouc:div label="link-instagram" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Instagram link" alt="Enter Instagram URL."/>https://www.instagram.com/laketahoecommunitycollege</ouc:div>
-	<ouc:div label="link-twitter" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Twitter link" alt="Enter Twitter URL."/>https://x.com/LakeTahoeCC</ouc:div>
-	<ouc:div label="sec-3-col-1" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Secondary Links" alt="Enter a list of links for this column." rows="5" editor="yes"/><ul>
+</ul></div>
+</div></div><div class="columns small-12 large-3"><h2>Follow Us</h2><div class="social-links">
+<a href="https://www.facebook.com/LakeTahoeCommunityCollege" class="facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><span class="fa-stack fa-lg" aria-hidden="true"><span class="fa-solid fa-square fa-stack-2x"> </span><span class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"> </span></span></a>
+<a href="https://www.youtube.com/user/LakeTahoeCommCollege" class="youtube" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><span class="fa-stack fa-lg" aria-hidden="true"><span class="fa-solid fa-square fa-stack-2x"> </span><span class="fa-brands fa-youtube fa-stack-1x fa-inverse"> </span></span></a>
+<a href="https://www.instagram.com/laketahoecommunitycollege" class="instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><span class="fa-stack fa-lg" aria-hidden="true"><span class="fa-solid fa-square fa-stack-2x"> </span><span class="fa-brands fa-instagram fa-stack-1x fa-inverse"> </span></span></a>
+<a href="https://x.com/LakeTahoeCC" class="twitter" aria-label="X" target="_blank" rel="noopener noreferrer"><span class="fa-stack fa-lg" aria-hidden="true"><span class="fa-solid fa-square fa-stack-2x"> </span><span class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"> </span></span></a>
+</div><ul>
 <li><a title="Board Agendas/Minutes" href="https://ltcc.community.diligentoneplatform.com/Portal/" target="_blank" rel="noopener"><span>Board Agendas/Minutes</span></a></li>
 <li><a href="https://www.ltcc.edu/campusresources/health-and-safety/alert-notification-system.php">LTCC ALERT</a></li>
 <li><a href="http://eepurl.com/i4VBsU" target="_blank" rel="noopener">Newsletter Signup</a></li>
 <li><a title="Read LTCC Privacy Policy" href="{{f:74572207}}">Privacy Policy</a></li>
-</ul></ouc:div>
-	
+</ul><p><span id="directedit"></span> Lake Tahoe Community College</p></div></div>
+    </ouc:div>
 </document>

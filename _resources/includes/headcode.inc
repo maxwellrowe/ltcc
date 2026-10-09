@@ -62,17 +62,6 @@
 
     $(".logo-banner > .row > a").first().addClass("columns small-12 large-8");
 
-    // Replace the footer while retaining the CMS direct-edit markup.
-    $.ajax({
-      url: "/_resources/includes/footer.php",
-      type: "GET",
-      success: function (src) {
-        var directEditHtml = $("#directedit").html();
-        $("#main-footer").replaceWith(src);
-        $("#directedit").html(directEditHtml);
-      }
-    });
-
     $("#nav-container").append($("#main-nav"));
   });
 </script>
