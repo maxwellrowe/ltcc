@@ -99,3 +99,7 @@ Light buttons use green-100 backgrounds and green-900 text; hover/active backgro
 Button padding (vertical / horizontal): small `.375rem .9375rem`, default `.5rem 1.25rem`, large `.75rem 1.875rem`. Each size uses a 2.5:1 horizontal-to-vertical ratio.
 
 Solid primary button hover borders use green-900 (#002911); solid secondary hover borders use blue-900 (#003043).
+
+Legacy CMS buttons are supported by `theme/_legacy-buttons.scss`, using Sass extensions of the actual Bootstrap button selectors. `.button` defaults to primary; `.button.primary`/`.secondary` map to the corresponding variants, `.hollow` selects outlines, `.alert` maps to danger, `.small`/`.tiny` map to small, `.large` maps to large, and `.expanded` fills the available width. Existing active/disabled styling comes from Bootstrap. This is a styling shim; it does not convert legacy JavaScript dropdown behavior. Use `.btn` for new markup.
+
+Legacy `.sr-only` uses Bootstrap’s `visually-hidden` mixin. `.sr-only-focusable` reveals content on keyboard focus (including the combined `.sr-only.sr-only-focusable` pattern). Use `.visually-hidden` / `.visually-hidden-focusable` in new markup.

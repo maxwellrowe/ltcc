@@ -26,77 +26,81 @@ Last Updated: 1/2016
 	</xsl:template>
 	
 	<xsl:template name="page-content"> 		
-		<div class="row">
-			<div class="breadcrumbs columns small-12">
-				<!-- see breadcrumbs xsl -->
-				<xsl:call-template name="breadcrumb">
-					<xsl:with-param name="path" select="$ou:dirname"/>								
-				</xsl:call-template>
-			</div>
-		</div>		
-		<section class="row">
-			<div class="columns small-12 medium-10 medium-push-2 main-content">
-				<xsl:if test="ou:pcf-param('layout') = 'three'">					
-					<xsl:attribute name="class">columns small-12 medium-7 medium-push-2 main-content</xsl:attribute>											
-				</xsl:if>
-				<xsl:if test="normalize-space(ou:pcf-param('heading'))">
-					<h1 class="alt-title"><xsl:value-of select="ou:pcf-param('heading')" /></h1>				
-				</xsl:if>
-				<xsl:choose>
-					<xsl:when test="ou:pcf-param('top-media') = 'banner' ">
-						<xsl:if test="normalize-space(ou:pcf-param('banner')) != ''">
-							<!-- static mage http://placehold.it/900x300 -->
-							<p><img src="{ou:pcf-param('banner')}" alt="{ou:pcf-param('banner-alt')}" /></p>
-						</xsl:if>
-					</xsl:when>
-					<xsl:when test="ou:pcf-param('top-media') = 'slider' ">					
-						<!-- gallery -->
-						<xsl:apply-templates select="ouc:div[@label='gallery']" />	
-					</xsl:when>
-				</xsl:choose>
-				<!-- main-content -->
-				
-				<xsl:if test="ou:pcf-param('pageType') = 'InTheNews'">
-
-					<h2><a href="{ou:pcf-param('news-link')}" title="{ou:pcf-param('news-link-article')}"><xsl:value-of select="ou:pcf-param('news-heading')" /></a></h2>				
+		<div class="container-xl">
+			<div class="row">
+				<div class="breadcrumbs col-12">
+					<!-- see breadcrumbs xsl -->
+					<xsl:call-template name="breadcrumb">
+						<xsl:with-param name="path" select="$ou:dirname"/>								
+					</xsl:call-template>
+				</div>
+			</div>		
+		</div>
+		<section class="container-xl">
+			<div class="row">
+				<div class="col-12 col-md-8 col-lg-9 main-content">
+					<xsl:if test="ou:pcf-param('layout') = 'three'">					
+						<xsl:attribute name="class">columns small-12 medium-7 medium-push-2 main-content</xsl:attribute>											
+					</xsl:if>
+					<xsl:if test="normalize-space(ou:pcf-param('heading'))">
+						<h1 class="alt-title"><xsl:value-of select="ou:pcf-param('heading')" /></h1>				
+					</xsl:if>
 					<xsl:choose>
-						<xsl:when test="$ou:action = 'pub'">
-							<xsl:processing-instruction name="php">									
-								$feed = "<xsl:value-of select="ou:pcf-param('news-feed')" />"; <!-- rss feed to be displayed -->
-								$num_items = <xsl:value-of select="ou:pcf-param('news-items')" />; <!-- display 4 news items max -->
-								include($_SERVER['DOCUMENT_ROOT'] ."/_resources/php/wnl/news_display.php"); 
-								?</xsl:processing-instruction>
+						<xsl:when test="ou:pcf-param('top-media') = 'banner' ">
+							<xsl:if test="normalize-space(ou:pcf-param('banner')) != ''">
+								<!-- static mage http://placehold.it/900x300 -->
+								<p><img src="{ou:pcf-param('banner')}" alt="{ou:pcf-param('banner-alt')}" /></p>
+							</xsl:if>
 						</xsl:when>
-						<xsl:otherwise>
-							<article class="row">
-								<p>News Items to Appear on Publish</p>
-								<p>From Feed: <a href="{concat($ou:httproot, ou:pcf-param('news-feed'))}"><xsl:value-of select="ou:pcf-param('news-feed')" /></a></p>
-								<p>No of Items to Display: <xsl:value-of select="ou:pcf-param('news-items')" /></p>
-								<p>News Items to Appear on Publish</p>
-							</article>
-						</xsl:otherwise>
+						<xsl:when test="ou:pcf-param('top-media') = 'slider' ">					
+							<!-- gallery -->
+							<xsl:apply-templates select="ouc:div[@label='gallery']" />	
+						</xsl:when>
 					</xsl:choose>
-					
-				</xsl:if>
-				
-				<xsl:apply-templates select="ouc:div[@label='main-content']" />			
+					<!-- main-content -->
+
+					<xsl:if test="ou:pcf-param('pageType') = 'InTheNews'">
+
+						<h2><a href="{ou:pcf-param('news-link')}" title="{ou:pcf-param('news-link-article')}"><xsl:value-of select="ou:pcf-param('news-heading')" /></a></h2>				
+						<xsl:choose>
+							<xsl:when test="$ou:action = 'pub'">
+								<xsl:processing-instruction name="php">									
+									$feed = "<xsl:value-of select="ou:pcf-param('news-feed')" />"; <!-- rss feed to be displayed -->
+									$num_items = <xsl:value-of select="ou:pcf-param('news-items')" />; <!-- display 4 news items max -->
+									include($_SERVER['DOCUMENT_ROOT'] ."/_resources/php/wnl/news_display.php"); 
+									?</xsl:processing-instruction>
+							</xsl:when>
+							<xsl:otherwise>
+								<article class="row">
+									<p>News Items to Appear on Publish</p>
+									<p>From Feed: <a href="{concat($ou:httproot, ou:pcf-param('news-feed'))}"><xsl:value-of select="ou:pcf-param('news-feed')" /></a></p>
+									<p>No of Items to Display: <xsl:value-of select="ou:pcf-param('news-items')" /></p>
+									<p>News Items to Appear on Publish</p>
+								</article>
+							</xsl:otherwise>
+						</xsl:choose>
+
+					</xsl:if>
+
+					<xsl:apply-templates select="ouc:div[@label='main-content']" />			
+				</div>
+					<!-- three columns -->
+					<xsl:choose>
+						<xsl:when test="ou:pcf-param('layout') = 'three'">
+							<aside class="col-12 col-md-4 col-lg-3">
+								<!-- right-content -->
+								<xsl:apply-templates select="ouc:div[@label='right-content']" />	
+							</aside>
+						</xsl:when>
+						<xsl:otherwise><!-- do nothing --></xsl:otherwise>
+					</xsl:choose>
+				<xsl:call-template name="side-navigation" />			
 			</div>
-				<!-- three columns -->
-				<xsl:choose>
-					<xsl:when test="ou:pcf-param('layout') = 'three'">
-						<aside class="columns small-12 medium-3 medium-push-2">
-							<!-- right-content -->
-							<xsl:apply-templates select="ouc:div[@label='right-content']" />	
-						</aside>
-					</xsl:when>
-					<xsl:otherwise><!-- do nothing --></xsl:otherwise>
-				</xsl:choose>
-			<xsl:call-template name="side-navigation" />			
-		</section>	
+		</section>
 	</xsl:template>
 	
 	<xsl:template name="side-navigation">
-		<div class="columns small-12 medium-2 medium-pull-10">
+		<div class="col-12 col-md-4 col-lg-3">
 			<nav class="sidenav">				
 				
 				<xsl:copy-of select="ou:include-file(concat($ou:dirname, '/_nav.inc'))" />								

@@ -11,8 +11,8 @@
 	<footcode></footcode> <!-- before closing body tag -->
 	
 	<ouc:properties label="config">				
-		<parameter section="Logo Settings" name="logo-img" type="filechooser" dependency="dm-tag" group="Everyone" prompt="Logo Image" alt="Choose a logo."></parameter>
-		<parameter name="logo-img-mobile" type="filechooser" dependency="dm-tag" group="Everyone" prompt="Logo Image Mobile" alt="Choose a mobile logo."></parameter>
+		<parameter section="Logo Settings" name="logo-img" type="filechooser" path="/_resources/img/" dependency="dm-tag" group="Everyone" prompt="Logo Image" alt="Choose a logo."></parameter>
+		<parameter name="logo-img-mobile" type="filechooser" path="/_resources/img/" dependency="dm-tag" group="Everyone" prompt="Logo Image Mobile" alt="Choose a mobile logo."></parameter>
 		
 		<parameter name="logo-description" type="text" group="Everyone" prompt="Logo Description" alt="Please enter the alternative text for the logo. This becomes the alt attribute of the image.">Lake Tahoe Community College Logo</parameter>
 		<parameter name="logo-link" type="filechooser" group="Everyone" prompt="Logo Link" alt="Please choose the link for the logo.">/</parameter>

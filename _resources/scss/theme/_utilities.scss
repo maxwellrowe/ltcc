@@ -1,1 +1,10 @@
 // Additional LTCC utility classes.
+
+// Legacy accessibility classes use Bootstrap's current hiding behavior.
+.sr-only:not(.sr-only-focusable) {
+  @include visually-hidden();
+}
+
+.sr-only-focusable {
+  @include visually-hidden-focusable();
+}

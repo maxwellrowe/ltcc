@@ -2,7 +2,7 @@
 
 - jQuery 4.0.0 and jQuery Migrate 4.0.2 load synchronously in `includes/headcode.inc` (and the separate anniversary head). Migrate remains as a compatibility bridge for older plugins.
 - The gallery XSL templates use that shared copy; they no longer load jQuery 1.9.1 or change `$` with `noConflict()`.
-- `js/main.js` retains the legacy Foundation, Slick, and site behavior, with the embedded jQuery 2.1.4 removed. `npm run build:js` generates `js/legacy-site.min.js`, loaded by `footcode.inc` in place of the archived bundle. Slick image events, bxSlider's load trigger, and prettyPhoto's `.size()` calls were updated for current jQuery. Publish the changed gallery JS as well as the XSL.
+- `js/main.js` contains only Slick and legacy slideshow initialization (autoplay, slide counters, and pause/play controls), which runs at DOM readiness. Foundation, legacy navigation/sidebar modules, and the Google Search placeholder callback have been removed. `npm run build:js` generates `js/legacy-site.min.js`, loaded by `footcode.inc` in place of the archived bundle. Slick image events, bxSlider's load trigger, and prettyPhoto's `.size()` calls were updated for current jQuery. Publish the changed gallery JS as well as the XSL.
 - Swiper's CDN bundle and stylesheet supply all modules. New sliders still need their own `new Swiper(...)` configuration. The anniversary template reuses the shared assets.
 - Motion 14.0.0 loads from CDN before `js/ltcc-animations.js`. There is no Motion npm dependency or animation build step. Edit the animation file directly.
 

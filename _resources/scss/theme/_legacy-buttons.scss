@@ -1,0 +1,50 @@
+// Compatibility for Foundation-era CMS markup. Share the actual Bootstrap
+// selectors so LTCC colors, states, padding, weight, and radii stay in sync.
+.button {
+  @extend .btn;
+}
+
+// Unqualified legacy buttons used the primary treatment.
+.button:where(:not(.secondary, .success, .warning, .alert, .danger, .info, .light, .dark, .hollow)) {
+  @extend .btn-primary;
+}
+
+.button.hollow:where(:not(.secondary, .success, .warning, .alert, .danger, .info, .light, .dark)) {
+  @extend .btn-outline-primary;
+}
+
+$legacy-button-variants: (
+  primary: primary,
+  secondary: secondary,
+  success: success,
+  warning: warning,
+  alert: danger,
+  danger: danger,
+  info: info,
+  light: light,
+  dark: dark
+);
+
+@each $legacy, $bootstrap in $legacy-button-variants {
+  .button.#{$legacy}:not(.hollow) {
+    @extend .btn-#{$bootstrap};
+  }
+  .button.#{$legacy}.hollow {
+    @extend .btn-outline-#{$bootstrap};
+  }
+}
+
+.button.small,
+.button.tiny {
+  @extend .btn-sm;
+}
+
+.button.large {
+  @extend .btn-lg;
+}
+
+.button.expanded {
+  display: block;
+  width: 100%;
+  margin-inline: 0;
+}

@@ -6,7 +6,7 @@
     <?php /* Uses xsl/_shared/footer.xsl to publish footer.php and display the editable footer in CMS preview. */ ?>
     <ouc:div label="footer-content" group="Everyone" button-text="Edit Footer">
         <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
-<div class="row">
+<div class="container-xl"><div class="row">
 <div class="columns small-12 large-3"><h2>Contact</h2><h3>Phone</h3>
 <p>Main: <a href="tel:530-541-4660">(530) 541-4660</a><br />Fax: (530) 541-7852</p>
 <h3>Campus Hours</h3>
@@ -44,6 +44,6 @@
 <li><a href="https://www.ltcc.edu/campusresources/health-and-safety/alert-notification-system.php">LTCC ALERT</a></li>
 <li><a href="http://eepurl.com/i4VBsU" target="_blank" rel="noopener">Newsletter Signup</a></li>
 <li><a title="Read LTCC Privacy Policy" href="{{f:74572207}}">Privacy Policy</a></li>
-</ul><p><span id="directedit"></span> Lake Tahoe Community College</p></div></div>
+</ul><p><span id="directedit"></span> Lake Tahoe Community College</p></div></div></div>
     </ouc:div>
 </document>
