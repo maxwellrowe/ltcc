@@ -88,7 +88,7 @@ light/dark brand swatches. CTA button overrides and inherited text links remain.
 
 ## Palette background utilities
 
-Use bg-gray-100 through bg-gray-900, bg-blue-100 through bg-blue-900,
+Use bg-gray-100 through bg-gray-900, bg-blue-100 through bg-blue-950,
 and bg-green-100 through bg-green-900. These extend Bootstrap's utility map
 in settings/_utilities.scss and support bg-opacity-10/25/50/75/100.
 Text colors remain independent. See the theme preview for swatches and examples.
@@ -103,3 +103,7 @@ Solid primary button hover borders use green-900 (#002911); solid secondary hove
 Legacy CMS buttons are supported by `theme/_legacy-buttons.scss`, using Sass extensions of the actual Bootstrap button selectors. `.button` defaults to primary; `.button.primary`/`.secondary` map to the corresponding variants, `.hollow` selects outlines, `.alert` maps to danger, `.small`/`.tiny` map to small, `.large` maps to large, and `.expanded` fills the available width. Existing active/disabled styling comes from Bootstrap. This is a styling shim; it does not convert legacy JavaScript dropdown behavior. Use `.btn` for new markup.
 
 Legacy `.sr-only` uses Bootstrap’s `visually-hidden` mixin. `.sr-only-focusable` reveals content on keyboard focus (including the combined `.sr-only.sr-only-focusable` pattern). Use `.visually-hidden` / `.visually-hidden-focusable` in new markup.
+
+## Dark dropdowns
+
+Use Bootstrap’s `dropdown-menu-dark` for blue-950 (#001B25) menus with light text, green-200 borders, and bottom-only corner radii. Items use blue-800 on hover/focus and reveal a green-200 Font Awesome arrow. Transitions respect reduced motion; opening/closing fades progressively enhance browsers supporting discrete display transitions. Utility navbar links carry vertical padding so menus start at the bottom edge of the bar.

@@ -12,6 +12,7 @@
 @include bsBanner("");
 // Configuration
 @import "bootstrap/scss/variables";
+$blues: map-merge($blues, ("blue-950": $blue-950));
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";

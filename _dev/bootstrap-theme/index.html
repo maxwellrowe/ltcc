@@ -32,7 +32,7 @@
 </section>
 <section class="py-5 border-top" aria-labelledby="palette-scales-title">
 <h2 id="palette-scales-title">Bootstrap palette scales</h2>
-<p>Use <code>bg-gray-100</code> through <code>bg-gray-900</code>, <code>bg-blue-100</code> through <code>bg-blue-900</code>, and <code>bg-green-100</code> through <code>bg-green-900</code>. Each swatch below uses its labeled class.</p>
+<p>Use <code>bg-gray-100</code> through <code>bg-gray-900</code>, <code>bg-blue-100</code> through <code>bg-blue-950</code>, and <code>bg-green-100</code> through <code>bg-green-900</code>. Each swatch below uses its labeled class.</p>
 <p>Background utilities do not change text color. Pair darker backgrounds with <code>text-white</code>, or lighter backgrounds with <code>text-dark</code>.</p>
 <pre class="bg-body-tertiary border rounded p-3"><code>&lt;div class="bg-blue-800 text-white p-4"&gt;Dark section&lt;/div&gt;
 &lt;div class="bg-gray-300 text-dark p-4"&gt;Light section&lt;/div&gt;
@@ -64,6 +64,7 @@
 <div class="col"><div class="border rounded p-4 bg-blue-700" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-blue-700</code><br>#00A3E0</p></div>
 <div class="col"><div class="border rounded p-4 bg-blue-800" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-blue-800</code><br>#003E51</p></div>
 <div class="col"><div class="border rounded p-4 bg-blue-900" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-blue-900</code><br>#003043</p></div>
+<div class="col"><div class="border rounded p-4 bg-blue-950" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-blue-950</code><br>#001B25</p></div>
 </div>
 <h3 class="h5 mt-4">Green</h3><div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
 <div class="col"><div class="border rounded p-4 bg-green-100" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-100</code><br>#D2F4EA</p></div>
@@ -148,6 +149,63 @@
 <section id="feedback" class="py-5 border-top" aria-labelledby="feedback-title">
 <h2 id="feedback-title" class="mb-4">Alerts, progress and loading</h2>
 <div class="alert alert-primary" role="alert"><strong>Primary.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-secondary" role="alert"><strong>Secondary.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-success" role="alert"><strong>Success.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-danger" role="alert"><strong>Danger.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-warning" role="alert"><strong>Warning.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-info" role="alert"><strong>Info.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-light" role="alert"><strong>Light.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><div class="alert alert-dark" role="alert"><strong>Dark.</strong> Sample feedback message with <a href="#forms" class="alert-link">an inline link</a>.</div><h3 class="h5 mt-4">Progress</h3><div class="progress mb-3" role="progressbar" aria-label="Example completion" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar w-25">25%</div></div><div class="progress mb-4" role="progressbar" aria-label="Example loading" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-75">75%</div></div><h3 class="h5">Spinners</h3><div class="d-flex gap-3 mb-4"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading</span></div><div class="spinner-grow text-secondary" role="status"><span class="visually-hidden">Loading</span></div><button class="btn btn-primary" disabled><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Loading…</button></div><h3 class="h5">Placeholder</h3><p class="placeholder-glow" aria-hidden="true"><span class="placeholder col-8"></span><span class="placeholder col-5"></span></p>
+</section>
+<section class="py-5 border-top" aria-labelledby="dark-dropdown-title">
+<h2 id="dark-dropdown-title">Dark utility dropdowns</h2>
+<p>Open Info For, Quicklinks, or MyLTCC. Hover or keyboard-focus an item to reveal the green arrow and border. Menus align with the bottom of the bar.</p>
+<nav class="navbar navbar-expand navbar-utility navbar-dark bg-blue-900 py-0" aria-label="Utility navigation">
+    <div class="container">
+        <ul class="navbar-nav flex-row align-items-stretch justify-content-end gap-4 ms-auto">
+            <li class="nav-item">
+                <a class="nav-link py-3" href="#">
+                    <span class="fa fa-heart text-info me-2" aria-hidden="true"></span>Giving
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fa fa-language text-info me-2" aria-hidden="true"></span>Translate
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                    <!-- Add the language selector here when its output is connected to the shared XSL include. -->
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fa fa-info-circle text-info me-2" aria-hidden="true"></span>Info For
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Faculty &amp; Staff</a></li>
+                    <li><a class="dropdown-item" href="#">Current Students</a></li>
+                    <li><a class="dropdown-item" href="#">New Students</a></li>
+                    <li><a class="dropdown-item" href="#">Community</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fa fa-star text-info me-2" aria-hidden="true"></span>Quicklinks
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Schedule of Classes</a></li>
+                    <li><a class="dropdown-item" href="#">Calendars</a></li>
+                    <li><a class="dropdown-item" href="#">Library</a></li>
+                    <li><a class="dropdown-item" href="#">Maps &amp; Visit</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fa fa-user text-info me-2" aria-hidden="true"></span>MyLTCC
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Passport Login</a></li>
+                    <li><a class="dropdown-item" href="#">Self Service Portal</a></li>
+                    <li><a class="dropdown-item" href="#">Canvas</a></li>
+                    <li><a class="dropdown-item" href="#">Cranium Cafe</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 </section>
 <section id="navigation" class="py-5 border-top" aria-labelledby="navigation-title">
 <h2 id="navigation-title" class="mb-4">Navigation</h2>

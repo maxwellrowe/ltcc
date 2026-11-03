@@ -101,3 +101,79 @@
     background-image: none;
   }
 }
+
+// Shared spacing and rounded items for light and dark Bootstrap dropdowns.
+.dropdown-menu {
+  --#{$prefix}dropdown-padding-x: 0.5rem;
+  --#{$prefix}dropdown-padding-y: 0.5rem;
+  --#{$prefix}dropdown-item-padding-x: 0.75rem;
+  --#{$prefix}dropdown-item-padding-y: 0.75rem;
+  --#{$prefix}dropdown-item-border-radius: var(--#{$prefix}border-radius);
+}
+
+// Shared dark dropdown treatment; retain Bootstrap's positioning and behavior.
+.dropdown-menu-dark {
+  --#{$prefix}dropdown-bg: #{$blue-950};
+  --#{$prefix}dropdown-color: #{$white};
+  --#{$prefix}dropdown-border-color: #{$green-200};
+  --#{$prefix}dropdown-link-color: #{$white};
+  --#{$prefix}dropdown-link-hover-color: #{$white};
+  --#{$prefix}dropdown-link-hover-bg: #{$blue-800};
+  --#{$prefix}dropdown-link-active-color: #{$white};
+  --#{$prefix}dropdown-link-active-bg: #{$blue-800};
+  --#{$prefix}dropdown-link-disabled-color: #{$gray-400};
+  --#{$prefix}dropdown-header-color: #{$gray-300};
+  --#{$prefix}dropdown-divider-bg: #{$green-200};
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+
+  // Progressive enhancement: animate both opening and closing in supporting browsers.
+  opacity: 0;
+  @include transition(opacity .2s ease, display .2s allow-discrete);
+
+  &.show {
+    opacity: 1;
+    @starting-style { opacity: 0; }
+  }
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: var(--#{$prefix}dropdown-border-width) solid transparent;
+    @include transition(color .2s ease, background-color .2s ease, border-color .2s ease);
+
+    &::after {
+      content: "\f061";
+      font: var(--fa-font-sharp-solid);
+      font-size: 0.625rem;
+      color: #{$green-200};
+      margin-left: auto;
+      opacity: 0;
+      transform: translateX(-.25rem);
+      @include transition(opacity .2s ease, transform .2s ease);
+    }
+
+    &:not(.disabled):not(:disabled) {
+      &:hover,
+      &:focus-visible {
+        border-color: var(--#{$prefix}dropdown-border-color);
+
+        &::after {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+}
+
+// Links carry the bar padding so each dropdown anchor spans its full height.
+.navbar-utility .navbar-nav > .nav-item > :is(a, button) {
+  --#{$prefix}nav-link-font-size: 0.875rem;
+}
+
+.navbar-utility .dropdown-menu {
+  --#{$prefix}dropdown-spacer: 0;
+  top: 100%;
+}

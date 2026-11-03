@@ -71,18 +71,34 @@ Last Updated: Oct 2026
 
         <header class="site-header">
             <xsl:if test="$show-top-bar">
-                <xsl:copy-of select="ou:include-file('/_resources/includes/header-top-bar.inc')"/>
+                <div class="d-none d-lg-block">
+                    <xsl:copy-of select="ou:include-file('/_resources/includes/header-top-bar.inc')"/>
+                </div>
             </xsl:if>
 
             
-
+            <!-- Logo -->
 			<a href="{$logo-link}">
 				<img src="{$logo-img}" alt="{$logo-description}" class="d-none d-lg-block"/>
 				<img src="{$logo-img-mobile}" alt="{$logo-description}" class="d-block d-lg-none"/>
 			</a>
 
-            <xsl:apply-templates select="ouc:div[@label='header-navigation']"/>
+            <!-- Main Navigation -->
+            <div class="primary-navigation">
+                <!-- Mobile Quicklinks -->
+                <div class="d-block d-lg-none">
+                    <xsl:if test="$show-call-to-action-button and $cta-button-text != '' and $cta-button-link != ''">
+                        <div class="d-grid gap-2">
+                            <a href="{$cta-button-link}" class="btn btn-secondary">
+                                <xsl:value-of select="$cta-button-text"/>
+                            </a>
+                        </div>
+                    </xsl:if>
+                </div>
+                <xsl:apply-templates select="ouc:div[@label='header-navigation']"/>
+            </div>
 
+            <!-- Search -->
             <xsl:if test="$show-search-button">
                 <button type="button" class="btn btn-light btn-circle" data-bs-toggle="modal" data-bs-target="#site-search" aria-label="Open site search">
                     <span class="visually-hidden">Search the LTCC Website</span>
@@ -92,13 +108,32 @@ Last Updated: Oct 2026
 
             <!-- Require a label and destination to avoid an empty or broken CTA. -->
             <xsl:if test="$show-call-to-action-button and $cta-button-text != '' and $cta-button-link != ''">
-                <a href="{$cta-button-link}" class="btn btn-secondary">
+                <a href="{$cta-button-link}" class="btn btn-secondary d-none d-lg-inline-block">
                     <xsl:value-of select="$cta-button-text"/>
                 </a>
             </xsl:if>
         </header>
     </xsl:template>
     
+    <!-- Each authoring row becomes a Bootstrap dropdown in the main navigation. -->
+    <xsl:template match="table[@data-snippet='ltcc-header-main-navigation']">
+        <nav aria-label="Main navigation">
+            <ul class="nav flex-column flex-lg-row">
+                <xsl:for-each select="tbody/tr">
+                    <xsl:variable name="menu-id" select="concat('header-menu-', generate-id())"/>
+                    <li class="nav-item dropdown">
+                        <button type="button" id="{$menu-id}" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <xsl:value-of select="normalize-space(td[1])"/>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="{$menu-id}">
+                            <xsl:apply-templates select="td[2]/node()"/>
+                        </div>
+                    </li>
+                </xsl:for-each>
+            </ul>
+        </nav>
+    </xsl:template>
+
     <xsl:function name="ou:ssi">
         <xsl:param name="fullpath"/>
         <!--<xsl:comment>#include virtual="<xsl:value-of select="$fullpath" />" </xsl:comment>-->
