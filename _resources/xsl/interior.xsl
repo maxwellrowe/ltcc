@@ -19,11 +19,7 @@ Last Updated: 1/2016
 							
 	<xsl:import href="common.xsl"/>	
 		
-	<xsl:template name="template-headcode">
-		<xsl:if test="$ou:action = 'edt'">
-			<style type="text/css">#galaxy .ou-btn { margin: 25px 0px 0px 0px !important; z-index: 999; white-space: pre-line !important; }</style>			
-		</xsl:if>	
-	</xsl:template>
+	<xsl:template name="template-headcode" />
 	
 	<xsl:template name="page-content"> 		
 		<div class="container-xl">
@@ -43,7 +39,7 @@ Last Updated: 1/2016
 						<xsl:attribute name="class">columns small-12 medium-7 medium-push-2 main-content</xsl:attribute>											
 					</xsl:if>
 					<xsl:if test="normalize-space(ou:pcf-param('heading'))">
-						<h1 class="alt-title"><xsl:value-of select="ou:pcf-param('heading')" /></h1>				
+						<h1 class="page-title"><xsl:value-of select="ou:pcf-param('heading')" /></h1>				
 					</xsl:if>
 					<xsl:choose>
 						<xsl:when test="ou:pcf-param('top-media') = 'banner' ">

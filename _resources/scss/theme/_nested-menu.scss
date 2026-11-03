@@ -45,7 +45,7 @@
 
 .sidenav ul > li.has-children > a::after {
   content: "\f107"; /* Angle-down icon */
-  font: var(--fa-font-solid);
+  font: var(--fa-font-sharp-solid);
   transition: transform 0.2s ease-in-out;
 }
 

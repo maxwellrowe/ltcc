@@ -122,6 +122,21 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
                 <!-- Bootstrap is loaded centrally by footcode.inc. -->
                 <xsl:call-template name="form-footcode" />
 
+                <!-- Shared site search modal, kept outside the page layout wrappers. -->
+                <div class="modal fade" id="site-search" tabindex="-1" aria-labelledby="site-search-label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="modal-title fs-5" id="site-search-label">Search the LTCC Website</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <xsl:copy-of select="ou:include-file('/_resources/includes/search.inc')"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </body>
         </html>
         <!-- end html -->

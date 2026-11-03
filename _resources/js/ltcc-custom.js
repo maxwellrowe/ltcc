@@ -6,9 +6,23 @@
   document.documentElement.classList.remove("no-js");
   document.documentElement.classList.add("js");
 
+  // Bootstrap modals work best as direct children of body, outside layout wrappers.
+  function moveModalsToBody(root = document) {
+    if (!document.body) return;
+    const modals = root instanceof Element && root.matches(".modal")
+      ? [root, ...root.querySelectorAll(".modal")]
+      : root.querySelectorAll(".modal");
+    modals.forEach((modal) => {
+      if (modal.parentElement !== document.body) {
+        document.body.appendChild(modal);
+      }
+    });
+  }
+
   // Tooltips and popovers are opt-in; other data-bs-* controls use Bootstrap's data API.
   // This is safe to call again after inserting CMS content dynamically.
   function init(root = document) {
+    moveModalsToBody(root);
     if (!window.bootstrap) {
       // Legacy pages do not yet load Bootstrap 5; the class switch still applies.
       return;

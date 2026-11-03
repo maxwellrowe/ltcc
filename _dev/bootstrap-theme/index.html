@@ -66,8 +66,8 @@
 <div class="col"><div class="border rounded p-4 bg-blue-900" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-blue-900</code><br>#003043</p></div>
 </div>
 <h3 class="h5 mt-4">Green</h3><div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
-<div class="col"><div class="border rounded p-4 bg-green-100" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-100</code><br>#E4F0E8</p></div>
-<div class="col"><div class="border rounded p-4 bg-green-200" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-200</code><br>#A3CFBB</p></div>
+<div class="col"><div class="border rounded p-4 bg-green-100" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-100</code><br>#D2F4EA</p></div>
+<div class="col"><div class="border rounded p-4 bg-green-200" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-200</code><br>#A6E9D5</p></div>
 <div class="col"><div class="border rounded p-4 bg-green-300" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-300</code><br>#7EBB99</p></div>
 <div class="col"><div class="border rounded p-4 bg-green-400" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-400</code><br>#7EBB99</p></div>
 <div class="col"><div class="border rounded p-4 bg-green-500" aria-hidden="true"></div><p class="small mt-2 mb-0"><code>bg-green-500</code><br>#198754</p></div>
@@ -85,9 +85,17 @@
 <section id="buttons" class="py-5 border-top" aria-labelledby="buttons-title">
 <h2 id="buttons-title" class="mb-4">Buttons and badges</h2>
 <p>Buttons use semibold (600) text and a 3px radius in every size. Padding (vertical / horizontal): small <code>.375rem .9375rem</code>, default <code>.5rem 1.25rem</code>, large <code>.75rem 1.875rem</code>. Outline primary uses blue-800 text and a bright blue border; outline secondary uses green-900 text and a bright green border. Hover and active states use the bright fill and dark border/text.</p>
-<p>Light buttons use green-100 with green-900 text, changing to bright green on hover and when active.</p>
+<p>Light buttons use a vertical gradient from green-100 to blue-100 with green-900 text, changing to bright green on hover and when active.</p>
 <p>Solid primary buttons use a green-900 hover border; solid secondary buttons use a blue-900 hover border.</p>
-<h3 class="h5">Solid</h3><div class="d-flex flex-wrap gap-2 mb-4"><button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-secondary">Secondary</button><button type="button" class="btn btn-light">Light</button></div><h3 class="h5">Outline</h3><div class="d-flex flex-wrap gap-2 mb-4"><button type="button" class="btn btn-outline-primary">Primary</button><button type="button" class="btn btn-outline-secondary">Secondary</button></div><h3 class="h5">Legacy button compatibility</h3>
+<h3 class="h5">Solid</h3><div class="d-flex flex-wrap gap-2 mb-4"><button type="button" class="btn btn-primary">Primary</button><button type="button" class="btn btn-secondary">Secondary</button><button type="button" class="btn btn-light">Light</button></div><h3 class="h5">Outline</h3><div class="d-flex flex-wrap gap-2 mb-4"><button type="button" class="btn btn-outline-primary">Primary</button><button type="button" class="btn btn-outline-secondary">Secondary</button></div>
+<h3 class="h5">Icon buttons</h3>
+<p>Use <code>.btn-circle</code> with a Font Awesome icon and an accessible label.</p>
+<div class="d-flex align-items-center gap-2 mb-4">
+<button type="button" class="btn btn-primary btn-circle" aria-label="Search"><span class="fa fa-search" aria-hidden="true"></span></button>
+<button type="button" class="btn btn-secondary btn-circle btn-sm" aria-label="Account"><span class="fa fa-user" aria-hidden="true"></span></button>
+<button type="button" class="btn btn-outline-primary btn-circle btn-lg" aria-label="Information"><span class="fa fa-info" aria-hidden="true"></span></button>
+</div>
+<h3 class="h5">Legacy button compatibility</h3>
 <p>Existing <code>button</code> classes use the same Bootstrap theme. <code>button primary</code> maps to <code>btn btn-primary</code>; <code>button secondary hollow</code> maps to <code>btn btn-outline-secondary</code>. Bare <code>button</code> uses primary. Small/tiny, large, expanded, active, and disabled styling are supported. Standalone <code>primary</code> or <code>secondary</code> classes are not changed.</p>
 <div class="d-flex flex-wrap gap-2 mb-4">
 <button type="button" class="button">Legacy default</button>

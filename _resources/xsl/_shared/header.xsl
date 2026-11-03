@@ -74,23 +74,27 @@ Last Updated: Oct 2026
                 <xsl:copy-of select="ou:include-file('/_resources/includes/header-top-bar.inc')"/>
             </xsl:if>
 
-            <!-- Logo markup goes here. Attribute examples: href="{$logo-link}",
-                 src="{$logo-img}", alt="{$logo-description}".
-                 Mobile image: $logo-img-mobile; screen reader text: $sr-logo. -->
+            
+
+			<a href="{$logo-link}">
+				<img src="{$logo-img}" alt="{$logo-description}" class="d-none d-lg-block"/>
+				<img src="{$logo-img-mobile}" alt="{$logo-description}" class="d-block d-lg-none"/>
+			</a>
 
             <xsl:apply-templates select="ouc:div[@label='header-navigation']"/>
 
             <xsl:if test="$show-search-button">
-                <!-- Search button markup goes here. -->
+                <button type="button" class="btn btn-light btn-circle" data-bs-toggle="modal" data-bs-target="#site-search" aria-label="Open site search">
+                    <span class="visually-hidden">Search the LTCC Website</span>
+                    <span class="fa-sharp fa-search"></span>
+                </button>
             </xsl:if>
 
             <!-- Require a label and destination to avoid an empty or broken CTA. -->
             <xsl:if test="$show-call-to-action-button and $cta-button-text != '' and $cta-button-link != ''">
-                <!-- CTA markup goes here. Example:
-                <a href="{$cta-button-link}" class="btn btn-primary">
+                <a href="{$cta-button-link}" class="btn btn-secondary">
                     <xsl:value-of select="$cta-button-text"/>
                 </a>
-                -->
             </xsl:if>
         </header>
     </xsl:template>
