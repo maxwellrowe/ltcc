@@ -2,23 +2,23 @@
 <ouc:editor wysiwyg="no"/>
 
 <nav class="navbar navbar-expand navbar-utility navbar-dark bg-blue-900 py-0" aria-label="Utility navigation">
-    <div class="container">
+    <div class="container-xl">
         <ul class="navbar-nav flex-row align-items-stretch justify-content-end gap-4 ms-auto">
-            <li class="nav-item">
+            <li class="utility-giving nav-item">
                 <a class="nav-link py-3" href="#">
                     <span class="fa fa-heart text-info me-2" aria-hidden="true"></span>Giving
                 </a>
             </li>
-            <li class="nav-item dropdown">
-                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="utility-translate nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     <span class="fa fa-language text-info me-2" aria-hidden="true"></span>Translate
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
                     <!-- Add the language selector here when its output is connected to the shared XSL include. -->
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="utility-info nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     <span class="fa fa-info-circle text-info me-2" aria-hidden="true"></span>Info For
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
@@ -28,8 +28,8 @@
                     <li><a class="dropdown-item" href="#">Community</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="utility-quicklinks nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     <span class="fa fa-star text-info me-2" aria-hidden="true"></span>Quicklinks
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
@@ -39,8 +39,8 @@
                     <li><a class="dropdown-item" href="#">Maps &amp; Visit</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="utility-account nav-item dropdown">
+                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     <span class="fa fa-user text-info me-2" aria-hidden="true"></span>MyLTCC
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">

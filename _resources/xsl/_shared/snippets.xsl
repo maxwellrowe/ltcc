@@ -49,6 +49,7 @@ Last Updated: 1/2016
 		18. LTCC Section
 		19. LTCC Container
 		20. LTCC Columns
+		21. LTCC Flex
 	-->
 
 
@@ -398,6 +399,26 @@ Last Updated: 1/2016
 			<xsl:for-each select="tbody/tr">
 				<div class="{lower-case(replace(td[@class='class'],'&nbsp;',''))}">
 					<xsl:apply-templates select="td[@class='content']/node()" />
+				</div>
+			</xsl:for-each>
+		</div>
+	</xsl:template>
+
+	<!-- 21. LTCC Flex: body rows become direct flex children. -->
+	<xsl:template match="table[@data-snippet='ltcc-flex']">
+		<xsl:variable name="custom-class" select="normalize-space(translate(string(thead/tr/th[@class='custom-class']), '&#160;', ' '))"/>
+		<xsl:variable name="background" select="normalize-space(translate(string(thead/tr/th[@class='background-shorthand']), '&#160;', ' '))"/>
+		<div class="{normalize-space(concat('ltcc-flex d-flex ', $custom-class))}">
+			<xsl:if test="$background != ''">
+				<xsl:attribute name="style" select="concat('background: ', $background, ';')"/>
+			</xsl:if>
+			<xsl:for-each select="tbody/tr[td[@class='content']]">
+				<xsl:variable name="item-class" select="normalize-space(translate(string(td[@class='item-class']), '&#160;', ' '))"/>
+				<div>
+					<xsl:if test="$item-class != ''">
+						<xsl:attribute name="class" select="$item-class"/>
+					</xsl:if>
+					<xsl:apply-templates select="td[@class='content']/node()"/>
 				</div>
 			</xsl:for-each>
 		</div>

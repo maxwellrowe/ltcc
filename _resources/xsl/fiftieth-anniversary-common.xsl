@@ -105,7 +105,6 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 														
 				</div>
 				
-				<xsl:copy-of select="ou:include-file('/_resources/includes/search-results.inc')" />
 				<!-- </div>  / universe -->
 				<!-- footcode include -->
 				<xsl:copy-of select="ou:include-file('/_resources/includes/footcode.inc')"/>			

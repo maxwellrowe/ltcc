@@ -68,9 +68,15 @@ Last Updated: 1/2016
         <a href="{@href}" style="color: red;"><xsl:value-of select="."/></a> <span style="color: red;">[BROKEN LINK]</span>
     </xsl:template>
     
-    <!-- transforms gcsesearch nodes to gcse:search -->
+    <!-- Route legacy search placeholders to the dedicated results page. -->
     <xsl:template match="gcsesearch">
-        <xsl:text disable-output-escaping="yes">&lt;gcse:searchbox&gt;&lt;/gcse:searchbox&gt;</xsl:text>
+        <form action="/search.php" method="get" role="search" aria-label="Search the LTCC website">
+            <label class="d-block">
+                <span class="form-label d-block">Search the LTCC website</span>
+                <input type="search" name="q" class="form-control" required="required"/>
+            </label>
+            <button type="submit" class="btn btn-primary mt-3">Search</button>
+        </form>
     </xsl:template>
     
 </xsl:stylesheet>

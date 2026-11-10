@@ -1,1 +1,76 @@
 // Site header, footer, navigation, and page layout rules.
+
+// Keep the mobile collapse below the header, outside the logo/control flex row.
+@include media-breakpoint-down(lg) {
+  .site-header .primary-navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: $zindex-dropdown;
+    background-color: var(--#{$prefix}body-bg);
+
+    &.is-mobile-scrollable {
+      position: fixed;
+      top: var(--mobile-menu-top);
+      max-height: calc(100dvh - var(--mobile-menu-top));
+      overscroll-behavior-y: contain;
+
+      &.show {
+        height: calc(100dvh - var(--mobile-menu-top));
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    }
+  }
+
+  #primary-navigation .primary-menu-panel {
+    position: static;
+    width: 100%;
+  }
+
+  #primary-navigation .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
+}
+
+// A resize during Collapse's transition must not constrain the desktop menu.
+@include media-breakpoint-up(lg) {
+  .primary-header {
+    position: relative;
+  }
+
+  #primary-navigation .nav > .dropdown {
+    position: static;
+  }
+
+  #primary-navigation .primary-menu-panel {
+    --#{$prefix}dropdown-spacer: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .primary-header.is-scroll-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-fixed;
+    background-color: var(--#{$prefix}body-bg);
+    transform: translateY(-100%);
+    &.is-scroll-ready {
+      @include transition(transform .25s ease);
+    }
+
+    &.is-scroll-visible {
+      transform: translateY(0);
+    }
+  }
+
+  .site-header .primary-navigation {
+    height: auto !important;
+    overflow: visible;
+  }
+}

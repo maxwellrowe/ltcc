@@ -102,7 +102,6 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 </xsl:if> -->
 						<xsl:call-template name="page-content"/> <!-- each page type has a unique version of this template --> 		
 
-						<xsl:copy-of select="ou:include-file('/_resources/includes/search-results.inc')" />
 						<!-- </div>  / universe -->
 						<!-- footcode include -->
 						<xsl:copy-of select="ou:include-file('/_resources/includes/footcode.inc')"/>

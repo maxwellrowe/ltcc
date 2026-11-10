@@ -49,7 +49,8 @@
 	<!-- A match for elements inside ouc components that have empty "data-ouc-test" attributes. This is for removing elements that fail the test from the final output. -->
 	<xsl:template match="element()[@data-ouc-test and normalize-space(@data-ouc-test) = '']" mode="ouc-component"/>
 	
-	<xsl:template match="div[@data-ouc-test='']"></xsl:template>
+	<!-- Apply the same opt-in empty-attribute test to any element in the default mode. -->
+	<xsl:template match="*[@data-ouc-test and normalize-space(@data-ouc-test) = '']"/>
 
 	<!-- A match for the "data-ouc-not" attribute on elements inside an ouc component. This is for removing the attribute from the final output when elements pass the not test. -->
 	<xsl:template match="@data-ouc-not" mode="ouc-component"/>
@@ -60,6 +61,34 @@
 	<!-- A match for elements inside ouc components that have "data-ouc-justedit" attributes. This attribute is used to show elements only inside JustEdit, so we remove all elements that have this attribute. -->
 	<xsl:template match="element()[@data-ouc-justedit]" mode="ouc-component"/>
 	
+	<!-- Marketing links: settings are data, not output list items. -->
+	<xsl:template match="ouc:component[@name='component-link-list']" mode="#all">
+		<xsl:variable name="color" select="if (normalize-space(ul/li[@class='color']) = 'light') then 'light' else 'dark'"/>
+		<xsl:variable name="size" select="normalize-space(ul/li[@class='size'])"/>
+		<ul class="mkt-link-list list-unstyled d-flex flex-column gap-3 mb-0">
+			<xsl:for-each select="ul/li[@class='icons']/ul">
+				<xsl:variable name="text" select="normalize-space(li[@class='text'])"/>
+				<xsl:variable name="href" select="normalize-space(if (li[@class='link']/a) then string(li[@class='link']/a[1]/@href) else string(li[@class='link']))"/>
+				<xsl:variable name="style" select="normalize-space(li[@class='style'])"/>
+				<xsl:variable name="icon" select="normalize-space(li[@class='icon'])"/>
+				<!-- Incomplete rows must not produce empty or current-page links. -->
+				<xsl:if test="$text != '' and $href != ''">
+					<li>
+						<a href="{$href}" class="{normalize-space(concat(if ($style = 'arrow') then concat('arrow-link arrow-link-', $color) else concat('mkt-link mkt-link-', $color), ' ', $size))}">
+							<xsl:if test="$style = 'before' and $icon != ''">
+								<span class="mkt-link__icon {$icon}" aria-hidden="true"><xsl:text> </xsl:text></span>
+							</xsl:if>
+							<span class="mkt-link__text"><xsl:value-of select="$text"/></span>
+							<xsl:if test="$style = 'after' and $icon != ''">
+								<span class="mkt-link__icon {$icon}" aria-hidden="true"><xsl:text> </xsl:text></span>
+							</xsl:if>
+						</a>
+					</li>
+				</xsl:if>
+			</xsl:for-each>
+		</ul>
+	</xsl:template>
+
 	<!-- Placeholder for Components with no Preview-->
 	<xsl:template match="ouc:component[@name='comp-placeholder']">
 		<xsl:choose>

@@ -1,3 +1,7 @@
+/* Share the published theme and icons with the WYSIWYG style preview. */
+@import url("../../css/ltcc-custom.css");
+@import url("../../fonts/font-awesome/css/all.min.css");
+
 .flexslider .flex-direction-nav .flex-next{
 	top: 50%;
     right: 0;
@@ -118,8 +122,19 @@ body{
 	background: #FFF;
 }
 
+.mce-item-table caption {
+	margin: 0;
+}
+
+h6.snippet-spacer {
+	background-color: #ffffb0;
+	padding: 5px;
+	border-radius: 50px;
+}
+
 /* table transformation styling */
 .ou-justedit-region table[class^="ou-"] {
+	width: 100%;
 	background: rgba(225, 225, 235, 0.05);
 }
 
@@ -148,7 +163,6 @@ body{
 
 .ou-justedit-region table[class^="ou-"] td {
 	padding: 5px 10px;
-	color: #898989;
 	vertical-align: top;
 }
 

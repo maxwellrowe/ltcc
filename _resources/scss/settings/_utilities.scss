@@ -1,3 +1,14 @@
+// Extend Bootstrap's font-size utility while preserving fs-1 through fs-6.
+$font-size-utility: map-get($utilities, "font-size");
+$utilities: map-merge($utilities, (
+  "font-size": map-merge($font-size-utility, (
+    values: map-merge(map-get($font-size-utility, "values"), (
+      7: $font-size-base * .875,
+      8: $font-size-base * .75
+    ))
+  ))
+));
+
 // Extend Bootstrap backgrounds with existing palette shades.
 // Retain the standard bg-opacity-* behavior and existing bg-* utilities.
 $palette-backgrounds: (

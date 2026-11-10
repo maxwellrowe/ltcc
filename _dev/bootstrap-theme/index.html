@@ -80,9 +80,28 @@
 </section>
 <section id="typography" class="py-5 border-top" aria-labelledby="typography-title">
 <h2 id="typography-title" class="mb-4">Typography</h2>
+<h3 class="h5">Small text utilities</h3>
+<p class="fs-6 mb-2">fs-6 — 1rem / 16px: Standard body text</p>
+<p class="fs-7 mb-2">fs-7 — 0.875rem / 14px: Smaller supporting text</p>
+<p class="fs-8 mb-4">fs-8 — 0.75rem / 12px: Compact labels and metadata</p>
 <p>Normal links inherit the surrounding text color with a blue underline. <a href="#buttons">Hover this example</a> to see blue text (#0033A0) and a bright green underline (#20C997).</p>
 <div class="row g-4"><div class="col-lg-6"><h3 class="h5 text-body-secondary">Heading scale</h3><p class="h1">Heading 1 · Explore your future</p><p class="h2">Heading 2 · Explore your future</p><p class="h3">Heading 3 · Explore your future</p><p class="h4">Heading 4 · Explore your future</p><p class="h5">Heading 5 · Explore your future</p><p class="h6">Heading 6 · Explore your future</p></div><div class="col-lg-6"><h3 class="h5 text-body-secondary">Display and body</h3><p class="display-4">Find your path.</p><p class="lead">A lead paragraph introduces a story with a little more emphasis.</p><p>Regular body copy with <a href="#forms">a text link</a>, <strong>bold emphasis</strong>, <em>italic emphasis</em>, and <mark>highlighted text</mark>.</p><p class="small text-body-secondary">Small secondary text for captions and supporting details.</p><p><del>Previous information</del> <ins>Updated information</ins> <code>.container</code></p></div></div><div class="row g-4 mt-2"><div class="col-md-6"><blockquote class="blockquote"><p>Learning opens doors to new possibilities.</p></blockquote><p class="blockquote-footer">Sample student quotation</p></div><div class="col-md-3"><ul><li>Academic programs</li><li>Student support<ul><li>Advising</li><li>Tutoring</li></ul></li></ul></div><div class="col-md-3"><ol><li>Explore programs</li><li>Apply online</li><li>Meet an advisor</li></ol></div></div><dl class="row"><dt class="col-sm-3">Office hours</dt><dd class="col-sm-9">Monday–Friday, 9am–5pm (sample)</dd><dt class="col-sm-3">Location</dt><dd class="col-sm-9">Student Services (sample)</dd></dl>
 </section>
+<section class="py-5 border-top" aria-labelledby="big-buttons-title">
+<h2 id="big-buttons-title">Big Buttons</h2>
+<div class="row g-4">
+<div class="col-md-6"><a href="#forms" class="big-button big-button__style-dark"><span class="big-button__content"><span class="big-button__title d-block">Apply to LTCC</span><span class="fs-8 big-button__description d-block">Your first step to attending LTCC is to apply!</span></span></a></div>
+<div class="col-md-6"><a href="#forms" class="big-button big-button__style-light"><span class="big-button__content"><span class="big-button__title d-block">Apply to LTCC</span><span class="fs-8 big-button__description d-block">Your first step to attending LTCC is to apply!</span></span></a></div>
+</div>
+</section>
+<section class="py-5 border-top" aria-labelledby="arrow-links-title">
+<h2 id="arrow-links-title">Arrow links</h2>
+<div class="row g-4">
+<div class="col-md-6"><div class="p-4 bg-gray-100 rounded"><a href="#forms" class="arrow-link arrow-link-dark">Explore programs</a></div></div>
+<div class="col-md-6"><div class="p-4 bg-blue-900 rounded"><a href="#forms" class="arrow-link arrow-link-light">Explore programs</a></div></div>
+</div>
+</section>
+<section class="py-5 border-top" aria-labelledby="mkt-links-title"><h2 id="mkt-links-title">MKT Link List</h2><div class="row g-4"><div class="col-md-6"><div class="p-4 rounded bg-gray-100"><ul class="mkt-link-list list-unstyled d-flex flex-column gap-3 mb-0"><li><a href="#forms" class="mkt-link mkt-link-dark fs-7"><span class="mkt-link__text">Default link</span></a></li><li><a href="#forms" class="mkt-link mkt-link-dark fs-7"><span class="mkt-link__icon fa-sharp fa-solid fa-graduation-cap" aria-hidden="true"> </span><span class="mkt-link__text">Before link</span></a></li><li><a href="#forms" class="mkt-link mkt-link-dark fs-7"><span class="mkt-link__text">After link</span><span class="mkt-link__icon fa-sharp fa-solid fa-graduation-cap" aria-hidden="true"> </span></a></li><li><a href="#forms" class="arrow-link arrow-link-dark fs-7"><span class="mkt-link__text">Arrow link</span></a></li></ul></div></div><div class="col-md-6"><div class="p-4 rounded bg-blue-900"><ul class="mkt-link-list list-unstyled d-flex flex-column gap-3 mb-0"><li><a href="#forms" class="mkt-link mkt-link-light fs-7"><span class="mkt-link__text">Default link</span></a></li><li><a href="#forms" class="mkt-link mkt-link-light fs-7"><span class="mkt-link__icon fa-sharp fa-solid fa-graduation-cap" aria-hidden="true"> </span><span class="mkt-link__text">Before link</span></a></li><li><a href="#forms" class="mkt-link mkt-link-light fs-7"><span class="mkt-link__text">After link</span><span class="mkt-link__icon fa-sharp fa-solid fa-graduation-cap" aria-hidden="true"> </span></a></li><li><a href="#forms" class="arrow-link arrow-link-light fs-7"><span class="mkt-link__text">Arrow link</span></a></li></ul></div></div></div></section>
 <section id="buttons" class="py-5 border-top" aria-labelledby="buttons-title">
 <h2 id="buttons-title" class="mb-4">Buttons and badges</h2>
 <p>Buttons use semibold (600) text and a 3px radius in every size. Padding (vertical / horizontal): small <code>.375rem .9375rem</code>, default <code>.5rem 1.25rem</code>, large <code>.75rem 1.875rem</code>. Outline primary uses blue-800 text and a bright blue border; outline secondary uses green-900 text and a bright green border. Hover and active states use the bright fill and dark border/text.</p>
@@ -235,13 +254,14 @@
     <tr><td><code>anim-scroll-slide-right</code></td><td>Uncover from the left edge toward the right, without fading or moving.</td></tr>
   </tbody></table></div>
   <h3 class="h5">Delay utilities</h3>
+  <p>Duration defaults to 600ms. Add <code>anim-duration-300</code>, <code>anim-duration-600</code>, or <code>anim-duration-900</code> to override it. Any nonnegative whole number of milliseconds is supported; use one duration class per element.</p>
   <p>Add <code>anim-delay-200</code>, <code>anim-delay-500</code>, or any nonnegative whole number of milliseconds. The delay starts when the element reaches that 80px trigger offset. Use one delay class per element; without one, animation starts immediately.</p>
-  <pre class="bg-body-tertiary border rounded p-3"><code>&lt;div class="anim-scroll-fade-up anim-delay-200"&gt;Your content&lt;/div&gt;
+  <pre class="bg-body-tertiary border rounded p-3"><code>&lt;div class="anim-scroll-fade-up anim-duration-900 anim-delay-200"&gt;Your content&lt;/div&gt;
 &lt;div class="anim-scroll-slide-left anim-delay-500"&gt;Your content&lt;/div&gt;</code></pre>
   <p class="small text-body-secondary">Reduced-motion preferences skip all effects and delays. Offscreen elements wait at opacity zero after Motion initializes, only when the <code>html</code> element does not have <code>no-js</code>. Content already visible at initialization stays visible without animating, preventing a loading flash. Content remains visible without JavaScript. Delay classes are read by JavaScript and need no additional CSS. Directional reveals use clip-path, keeping full layout width so text does not reflow. Apply animation to a wrapper if the content already uses transforms or clip-path. For dynamically inserted content, call <code>LTCC.animations.init(container)</code>.</p>
   <div class="row g-4 overflow-hidden py-4">
     <div class="col-md-6"><div class="anim-scroll-fade p-5 bg-gray-200 rounded"><h3 class="h5">Fade</h3><code>anim-scroll-fade</code></div></div>
-    <div class="col-md-6"><div class="anim-scroll-fade-up anim-delay-200 p-5 bg-green-100 rounded"><h3 class="h5">Fade up · 200ms delay</h3><code>anim-scroll-fade-up anim-delay-200</code></div></div>
+    <div class="col-md-6"><div class="anim-scroll-fade-up anim-duration-900 anim-delay-200 p-5 bg-green-100 rounded"><h3 class="h5">Fade up · 900ms duration · 200ms delay</h3><code>anim-scroll-fade-up anim-duration-900 anim-delay-200</code></div></div>
     <div class="col-md-6"><div class="anim-scroll-slide-left anim-delay-500 p-5 bg-blue-100 rounded"><h3 class="h5">Right to left · 500ms delay</h3><code>anim-scroll-slide-left anim-delay-500</code></div></div>
     <div class="col-md-6"><div class="anim-scroll-slide-right anim-delay-200 p-5 bg-gray-200 rounded"><h3 class="h5">Left to right · 200ms delay</h3><code>anim-scroll-slide-right anim-delay-200</code></div></div>
   </div>

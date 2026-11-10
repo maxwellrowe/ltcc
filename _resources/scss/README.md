@@ -107,3 +107,21 @@ Legacy `.sr-only` uses Bootstrap’s `visually-hidden` mixin. `.sr-only-focusabl
 ## Dark dropdowns
 
 Use Bootstrap’s `dropdown-menu-dark` for blue-950 (#001B25) menus with light text, green-200 borders, and bottom-only corner radii. Items use blue-800 on hover/focus and reveal a green-200 Font Awesome arrow. Transitions respect reduced motion; opening/closing fades progressively enhance browsers supporting discrete display transitions. Utility navbar links carry vertical padding so menus start at the bottom edge of the bar.
+
+## Modern Campus animation wrapper
+
+Use one wrapper around component content, with classes populated by component select fields:
+
+```html
+<div class="anim-scroll-fade-up anim-duration-600 anim-delay-0">
+  <!-- Component content -->
+</div>
+```
+
+- Type: None (empty value, recommended default), `anim-scroll-fade`, `anim-scroll-fade-up`, `anim-scroll-slide-left`, or `anim-scroll-slide-right`. Slide presets are directional wipes, not translations.
+- Duration: `anim-duration-300` (fast), `anim-duration-600` (default), or `anim-duration-900` (slow).
+- Delay: `anim-delay-0` (default), `anim-delay-100`, `anim-delay-200`, `anim-delay-300`, or `anim-delay-500`.
+
+Timing classes accept nonnegative whole milliseconds; omitted/invalid timing falls back to 600ms duration and 0ms delay. Use one class per setting. Without a type class, timing classes have no effect. No `data-ouc-test` is needed on the animation wrapper: an empty type must not remove its content.
+
+Animations run once when offscreen content enters 80px above the viewport bottom. Content already visible during initialization is not animated. Reduced-motion preferences disable reveals; content stays visible if Motion is unavailable. Prefer animating a component's outer wrapper rather than nesting animated wrappers.

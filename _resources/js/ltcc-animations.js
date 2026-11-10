@@ -15,10 +15,13 @@ const active = new Set();
 const pending = new Set();
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-function delayFor(element) {
-  // Any nonnegative integer suffix is accepted; use one delay class per element.
-  const token = [...element.classList].find(name => /^anim-delay-\d+$/.test(name));
-  return token ? Number(token.slice("anim-delay-".length)) / 1000 : 0;
+function timingFor(element, setting, fallbackMs) {
+  // CMS timing classes use whole milliseconds; Motion expects seconds.
+  const prefix = `anim-${setting}-`;
+  const token = [...element.classList].find(name =>
+    name.startsWith(prefix) && /^\d+$/.test(name.slice(prefix.length)));
+  const milliseconds = token ? Number(token.slice(prefix.length)) : fallbackMs;
+  return (Number.isFinite(milliseconds) ? milliseconds : fallbackMs) / 1000;
 }
 
 function reveal(element) {
@@ -40,8 +43,8 @@ function reveal(element) {
   };
   try {
     animation = animate(element, presets[preset], {
-      duration: 0.6,
-      delay: delayFor(element),
+      duration: timingFor(element, "duration", 600),
+      delay: timingFor(element, "delay", 0),
       ease: [0.22, 1, 0.36, 1],
     });
     active.add(finish);

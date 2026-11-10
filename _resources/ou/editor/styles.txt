@@ -1,3 +1,92 @@
 .span-style	Span Style
 .block-style	Block Style	block
 .alt-title	Alternate Title Style	block
+.lead	Text: Lead paragraph	block
+.fs-1	Text: Font size 1
+.fs-2	Text: Font size 2
+.fs-3	Text: Font size 3
+.fs-4	Text: Font size 4
+.fs-5	Text: Font size 5
+.fs-6	Text: Font size 6
+.fs-7	Text: Font size 7 (0.875rem)
+.fs-8	Text: Font size 8 (0.75rem)
+.h1	Text: Heading 1 appearance	block
+.h2	Text: Heading 2 appearance	block
+.h3	Text: Heading 3 appearance	block
+.h4	Text: Heading 4 appearance	block
+.h5	Text: Heading 5 appearance	block
+.h6	Text: Heading 6 appearance	block
+.fw-normal	Text: Normal weight
+.fw-semibold	Text: Semibold
+.fw-bold	Text: Bold
+.fst-italic	Text: Italic
+.text-uppercase	Text: Uppercase
+.mt-0	Spacing: Margin top 0 (0)	block
+.mt-1	Spacing: Margin top 1 (.25rem)	block
+.mt-2	Spacing: Margin top 2 (.5rem)	block
+.mt-3	Spacing: Margin top 3 (1rem)	block
+.mt-4	Spacing: Margin top 4 (1.5rem)	block
+.mt-5	Spacing: Margin top 5 (3rem)	block
+.mb-0	Spacing: Margin bottom 0 (0)	block
+.mb-1	Spacing: Margin bottom 1 (.25rem)	block
+.mb-2	Spacing: Margin bottom 2 (.5rem)	block
+.mb-3	Spacing: Margin bottom 3 (1rem)	block
+.mb-4	Spacing: Margin bottom 4 (1.5rem)	block
+.mb-5	Spacing: Margin bottom 5 (3rem)	block
+.pt-0	Spacing: Padding top 0 (0)	block
+.pt-1	Spacing: Padding top 1 (.25rem)	block
+.pt-2	Spacing: Padding top 2 (.5rem)	block
+.pt-3	Spacing: Padding top 3 (1rem)	block
+.pt-4	Spacing: Padding top 4 (1.5rem)	block
+.pt-5	Spacing: Padding top 5 (3rem)	block
+.pb-0	Spacing: Padding bottom 0 (0)	block
+.pb-1	Spacing: Padding bottom 1 (.25rem)	block
+.pb-2	Spacing: Padding bottom 2 (.5rem)	block
+.pb-3	Spacing: Padding bottom 3 (1rem)	block
+.pb-4	Spacing: Padding bottom 4 (1.5rem)	block
+.pb-5	Spacing: Padding bottom 5 (3rem)	block
+.text-primary	Text color: Primary
+.text-secondary	Text color: Secondary
+.text-success	Text color: Success
+.text-danger	Text color: Danger
+.text-warning	Text color: Warning
+.text-info	Text color: Info
+.text-light	Text color: Light
+.text-dark	Text color: Dark
+.text-body	Text color: Body
+.text-body-secondary	Text color: Body Secondary
+.text-white	Text color: White
+.text-black	Text color: Black
+.btn btn-primary	Button: Primary
+.btn btn-outline-primary	Button: Outline Primary
+.btn btn-secondary	Button: Secondary
+.btn btn-outline-secondary	Button: Outline Secondary
+.btn btn-success	Button: Success
+.btn btn-outline-success	Button: Outline Success
+.btn btn-danger	Button: Danger
+.btn btn-outline-danger	Button: Outline Danger
+.btn btn-warning	Button: Warning
+.btn btn-outline-warning	Button: Outline Warning
+.btn btn-info	Button: Info
+.btn btn-outline-info	Button: Outline Info
+.btn btn-light	Button: Light
+.btn btn-outline-light	Button: Outline Light
+.btn btn-dark	Button: Dark
+.btn btn-outline-dark	Button: Outline Dark
+.btn-sm	Button modifier: Small
+.btn-lg	Button modifier: Large
+.btn btn-link	Button: Link
+.btn btn-primary btn-circle	Button: Circle Primary
+.btn btn-secondary btn-circle	Button: Circle Secondary
+.btn btn-light btn-circle	Button: Circle Light
+.btn btn-dark btn-circle	Button: Circle Dark
+.btn-circle	Button modifier: Circle (short text or icon)
+.img-fluid	Image: Responsive
+.img-fluid img-thumbnail	Image: Thumbnail
+.img-fluid rounded	Image: Rounded
+.img-fluid rounded-circle	Image: Circle (use square image)
+.img-fluid d-block mx-auto	Image: Centered
+.img-fluid float-start me-3 mb-3	Image: Float left with spacing
+.img-fluid float-end ms-3 mb-3	Image: Float right with spacing
+.arrow-link arrow-link-dark	Link: Arrow - dark text (light background)
+.arrow-link arrow-link-light	Link: Arrow - light text (dark background)

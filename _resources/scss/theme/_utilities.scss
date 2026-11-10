@@ -1,5 +1,10 @@
 // Additional LTCC utility classes.
 
+// Keep the focused skip link above the fixed header.
+.skip-link {
+  z-index: $zindex-tooltip;
+}
+
 // Legacy accessibility classes use Bootstrap's current hiding behavior.
 .sr-only:not(.sr-only-focusable) {
   @include visually-hidden();

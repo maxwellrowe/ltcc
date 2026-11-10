@@ -177,3 +177,525 @@
   --#{$prefix}dropdown-spacer: 0;
   top: 100%;
 }
+
+// Bootstrap Collapse owns visibility and aria-expanded; CSS only morphs the icon.
+.primary-navigation-toggle {
+  --#{$prefix}btn-color: var(--#{$prefix}dark);
+  --#{$prefix}btn-hover-color: var(--#{$prefix}dark);
+  --#{$prefix}btn-active-color: var(--#{$prefix}dark);
+}
+
+.primary-navigation-toggle-icon {
+  position: relative;
+  display: block;
+  width: 1.25rem;
+  height: 15px;
+
+  > span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: currentColor;
+    @include transition(transform .2s ease, opacity .2s ease);
+
+    &:nth-child(1) { top: 0; }
+    &:nth-child(2) { top: 6px; }
+    &:nth-child(3) { bottom: 0; }
+  }
+}
+
+.primary-navigation-toggle[aria-expanded="true"] .primary-navigation-toggle-icon > span {
+  &:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+  &:nth-child(2) { opacity: 0; }
+  &:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+}
+
+// Modern Campus header link groups: Figma Nav Item default and hover states.
+.header-nav-links {
+  .header-nav-links__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > h2 {
+    color: $gray-800;
+    margin-left: .5rem;
+  }
+
+  .header-nav-links__items > a {
+    position: relative;
+    isolation: isolate;
+    display: block;
+    padding: 1rem 2.375rem 1rem .5rem;
+    border-radius: var(--#{$prefix}border-radius-sm);
+    color: $cyan-900;
+    text-decoration: none;
+    @include transition(color .2s ease);
+
+    // Fade the gradient rather than attempting to transition background-image.
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      border-left: 3px solid $green-700;
+      border-radius: inherit;
+      background: linear-gradient(102deg, $green-100, $blue-100);
+      opacity: 0;
+      pointer-events: none;
+      @include transition(opacity .2s ease);
+    }
+
+    &::after {
+      content: "\f061";
+      position: absolute;
+      right: .75rem;
+      top: 50%;
+      font: var(--fa-font-sharp-regular);
+      font-size: .875rem;
+      color: $gray-500;
+      transform: translateY(-50%);
+      pointer-events: none;
+      @include transition(color .2s ease, transform .2s ease);
+    }
+
+    .link-text {
+      font-size: 1rem;
+      font-weight: $font-weight-bold;
+      line-height: 1.2;
+    }
+
+    .link-description {
+      margin-top: .25rem;
+      color: $gray-700;
+      line-height: normal;
+      @include transition(color .2s ease);
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: $blue-800;
+
+      &::before { opacity: 1; }
+
+      &::after {
+        color: $green-500;
+        transform: translate(.25rem, -50%);
+      }
+
+      .link-description { color: $blue-800; }
+    }
+  }
+}
+
+// Top-level main navigation controls; dropdown content keeps its own styling.
+#primary-navigation .primary-menu-panel {
+  --#{$prefix}dropdown-bg: #{$gray-100};
+  --#{$prefix}dropdown-border-width: 0;
+  --#{$prefix}dropdown-border-radius: 0;
+  // Mobile panels use Collapse instead of the dropdown-menu class.
+  background-color: var(--#{$prefix}dropdown-bg);
+  border: 0;
+  border-radius: 0;
+}
+
+#primary-navigation .nav > .nav-item > .nav-link {
+  --#{$prefix}nav-link-color: var(--#{$prefix}dark);
+  --#{$prefix}nav-link-hover-color: var(--#{$prefix}dark);
+  --#{$prefix}nav-link-font-weight: #{$font-weight-semibold};
+  @include transition(color .2s ease, border-color .2s ease);
+
+  &::after {
+    color: $blue-600;
+    @include transition(color .2s ease, transform .2s ease);
+  }
+
+  &:hover::after,
+  &:focus-visible::after {
+    color: $green-500;
+  }
+
+  &:is(.active, .show, :active, [aria-expanded="true"], [aria-current="page"])::after {
+    color: $blue-700;
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+    align-items: center;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+
+    &:hover,
+    &:focus-visible {
+      border-bottom-color: $green-700;
+    }
+
+    &:is(.active, .show, :active, [aria-expanded="true"], [aria-current="page"]) {
+      border-bottom-color: $blue-700;
+    }
+  }
+}
+
+// Big Button: use a content wrapper to separate the text and arrow panels.
+.big-button {
+  --big-button-color: #{$white};
+  --big-button-arrow: #{$blue-100};
+  --big-button-panel: #{rgba($blue-900, .5)};
+  --big-button-panel-hover: #{$blue-900};
+  --big-button-divider: #{$green-800};
+  --big-button-hover-bg: #{$blue-700};
+  --big-button-hover-border: transparent;
+  --big-button-gradient: linear-gradient(164deg, #{$blue-800} 15.4%, #{$blue-800} 52.1%, #{$green-800} 86.2%);
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4rem;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: var(--#{$prefix}border-radius);
+  background-color: var(--big-button-hover-bg);
+  color: var(--big-button-color);
+  text-decoration: none;
+  border: 1px solid transparent;
+  @include transition(border-color .2s ease);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--big-button-gradient);
+    pointer-events: none;
+    @include transition(opacity .2s ease);
+  }
+
+  &::after {
+    content: "\f061";
+    align-self: center;
+    justify-self: center;
+    font: var(--fa-font-sharp-regular);
+    font-size: 1rem;
+    color: var(--big-button-arrow);
+    @include transition(transform .2s ease);
+  }
+
+  .big-button__content {
+    min-width: 0;
+    padding: 1.5rem;
+    border-right: 1.5px solid var(--big-button-divider);
+    background-color: var(--big-button-panel);
+    overflow-wrap: anywhere;
+    @include transition(background-color .2s ease);
+  }
+
+  .big-button__title {
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+  }
+
+  .big-button__description {
+    margin-top: .5rem;
+    font-weight: $font-weight-bold;
+    line-height: normal;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--big-button-color);
+    text-decoration: none;
+    border-color: var(--big-button-hover-border);
+
+    &::before { opacity: 0; }
+    &::after { transform: translateX(.25rem); }
+    .big-button__content { background-color: var(--big-button-panel-hover); }
+  }
+
+  &.big-button__style-light {
+    --big-button-color: #{$blue-800};
+    --big-button-arrow: #{$green-700};
+    --big-button-panel: #{$blue-100};
+    --big-button-panel-hover: #{$green-100};
+    --big-button-divider: #{$blue-400};
+    --big-button-hover-bg: #{$green-200};
+    --big-button-hover-border: #{$green-500};
+    --big-button-gradient: linear-gradient(99deg, #{$blue-100}, #{$green-100});
+  }
+}
+
+// Mobile header: restyle only the shared utility include inside the main menu.
+@include media-breakpoint-down(lg) {
+  #primary-navigation {
+    background-color: $gray-100;
+
+    .primary-navigation-utilities {
+      padding: 1.25rem 1.25rem 0;
+    }
+
+    .navbar-utility {
+      // Override the shared include's Bootstrap background utility on mobile only.
+      background: linear-gradient(95deg, $green-100, $blue-100) !important;
+      border-radius: var(--#{$prefix}border-radius);
+
+      > .container-xl { padding: 0; }
+
+      .navbar-nav {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0 !important;
+      }
+
+      .nav-item {
+        width: 100%;
+        border-bottom: 1px solid $blue-400;
+      }
+
+      .nav-link {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-inline: 1rem;
+        color: $blue-900;
+        font-weight: $font-weight-semibold;
+        text-align: left;
+        white-space: normal;
+
+        &:hover,
+        &:focus-visible { color: $blue-800; }
+
+        &::after {
+          color: $blue-900;
+          margin-left: auto;
+        }
+      }
+
+      .nav-link > .fa { display: none; }
+
+      .utility-giving,
+      .utility-translate {
+        width: 50%;
+        border-bottom: 0;
+        .nav-link { justify-content: center; }
+        .nav-link > .fa {
+          display: inline-block;
+          color: $blue-900 !important;
+        }
+      }
+
+      .utility-translate { border-right: 1px solid $blue-400; }
+
+      .dropdown-menu {
+        --#{$prefix}dropdown-bg: #{$blue-100};
+        --#{$prefix}dropdown-color: #{$blue-900};
+        --#{$prefix}dropdown-link-color: #{$blue-900};
+        --#{$prefix}dropdown-link-hover-color: #{$blue-900};
+        --#{$prefix}dropdown-link-hover-bg: #{$green-100};
+        --#{$prefix}dropdown-link-active-color: #{$blue-900};
+        --#{$prefix}dropdown-link-active-bg: #{$green-200};
+        position: static;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+
+        .dropdown-item {
+          white-space: normal;
+          &::after { color: $green-700; }
+        }
+      }
+    }
+
+    // Scope these rows to the main nav, excluding the utility and content links.
+    nav[aria-label="Main navigation"] {
+      margin: 1.25rem;
+      border-top: 1px solid $gray-400;
+
+      > .nav > .nav-item {
+        border-bottom: 1px solid $gray-300;
+
+        > .nav-link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 1.25rem 1rem;
+          color: $blue-800;
+          text-align: left;
+
+          &::after {
+            content: "\f067";
+            color: $blue-700;
+            transform: none;
+          }
+
+          &[aria-expanded="true"]::after { content: "\f068"; }
+        }
+      }
+    }
+
+    .primary-menu-panel > .container-xl {
+      padding: 0 1rem 1rem;
+    }
+  }
+}
+
+// Figma Link: dark text on light surfaces, or light text on dark surfaces.
+a.arrow-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  max-width: 100%;
+  padding-bottom: .25rem;
+  border-bottom: 1.5px solid $teal;
+  color: $gray-900;
+  font-size: 1rem;
+  font-weight: $font-weight-normal;
+  text-decoration: none;
+  @include transition(color .2s ease, border-color .2s ease);
+
+  &::after {
+    content: "\f061";
+    flex-shrink: 0;
+    font: var(--fa-font-sharp-regular);
+    font-size: .75rem;
+    @include transition(color .2s ease, transform .2s ease);
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $link-hover-color;
+    border-bottom-color: $green-500;
+    text-decoration: none;
+    &::after { transform: translateY(-3px); }
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover::after,
+    &:focus-visible::after { transform: none; }
+  }
+
+  &.arrow-link-light {
+    color: $white;
+    padding-bottom: .5rem;
+    border-bottom-color: transparent;
+    &::after { color: $teal; }
+
+    &:hover,
+    &:focus-visible {
+      color: $blue-100;
+      border-bottom-color: $green-200;
+      &::after { color: $blue-100; }
+    }
+  }
+}
+
+// Bootstrap link helpers, including icon-only social links.
+a.link-light,
+a.link-dark {
+  display: inline-block;
+  border-bottom: 1.5px solid transparent;
+  text-decoration: none !important;
+  @include transition(border-color .2s ease, color .2s ease);
+
+  > :is(.fa, .fa-brands, .fa-solid, .fa-regular, .fa-sharp, .fab, .fas, .far) {
+    display: inline-block;
+    @include transition(transform .2s ease);
+  }
+
+  &:hover,
+  &:focus-visible {
+    > :is(.fa, .fa-brands, .fa-solid, .fa-regular, .fa-sharp, .fab, .fas, .far) {
+      transform: translateY(-3px);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover,
+    &:focus-visible {
+      > :is(.fa, .fa-brands, .fa-solid, .fa-regular, .fa-sharp, .fab, .fas, .far) {
+        transform: none;
+      }
+    }
+  }
+}
+
+a.link-light:hover,
+a.link-light:focus-visible {
+  border-bottom-color: $green-200;
+}
+
+a.link-dark:hover,
+a.link-dark:focus-visible {
+  border-bottom-color: $green-500;
+}
+
+// MKT Link List: text-only underlines leave before/after icons undecorated.
+a.mkt-link {
+  --mkt-link-underline: #{$teal};
+  --mkt-link-icon: #{$blue-700};
+  display: inline-flex;
+  align-items: baseline;
+  gap: .5rem;
+  max-width: 100%;
+  color: $gray-900;
+  text-decoration: none;
+  @include transition(color .2s ease);
+
+  .mkt-link__text {
+    min-width: 0;
+    text-decoration-line: underline;
+    text-decoration-color: var(--mkt-link-underline);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: .25rem;
+    @include transition(text-decoration-color .2s ease);
+  }
+
+  .mkt-link__icon {
+    flex-shrink: 0;
+    color: var(--mkt-link-icon);
+    @include transition(transform .2s ease);
+  }
+
+  &:hover,
+  &:focus-visible {
+    --mkt-link-underline: #{$green-500};
+    color: $link-hover-color;
+    text-decoration: none;
+    .mkt-link__icon { transform: translateY(-3px); }
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+  }
+
+  &.mkt-link-light {
+    --mkt-link-underline: transparent;
+    --mkt-link-icon: #{$green-200};
+    color: $white;
+    &:hover,
+    &:focus-visible {
+      --mkt-link-underline: #{$green-200};
+      color: $blue-100;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover,
+    &:focus-visible {
+      .mkt-link__icon { transform: none; }
+    }
+  }
+}

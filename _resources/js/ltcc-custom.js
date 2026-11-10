@@ -19,14 +19,183 @@
     });
   }
 
+  function initScrollHeader(root) {
+    root.querySelectorAll('.primary-header').forEach((header) => {
+      if (header.dataset.scrollInitialized) return;
+      header.dataset.scrollInitialized = 'true';
+      const slot = document.createElement('div');
+      header.before(slot);
+      slot.append(header);
+      const desktop = window.matchMedia('(min-width: 992px)');
+      let previousY = Math.max(0, window.scrollY);
+      let directionY = previousY;
+      let direction = 0;
+      let queued = false;
+
+      function measure() {
+        slot.style.height = desktop.matches ? `${header.offsetHeight}px` : '';
+      }
+
+      function update() {
+        queued = false;
+        const y = Math.max(0, window.scrollY);
+        const delta = y - previousY;
+        const nextDirection = Math.sign(delta);
+        if (nextDirection && nextDirection !== direction) {
+          direction = nextDirection;
+          directionY = previousY;
+        }
+        const wasFixed = header.classList.contains('is-scroll-fixed');
+        const slotBounds = slot.getBoundingClientRect();
+        // Enter fixed mode after the header leaves the viewport; release only
+        // when its original top meets the fixed top, avoiding a vertical jump.
+        const pastHeader = desktop.matches && (wasFixed ? slotBounds.top <= 0 : slotBounds.bottom <= 0);
+        header.classList.toggle('is-scroll-fixed', pastHeader);
+        if (!pastHeader) {
+          header.classList.remove('is-scroll-visible', 'is-scroll-ready');
+          header.inert = false;
+        } else {
+          if (!wasFixed) {
+            header.classList.remove('is-scroll-visible', 'is-scroll-ready');
+            // Commit the offscreen fixed position before enabling transitions.
+            // This layout read occurs only when crossing into fixed mode.
+            header.getBoundingClientRect();
+            header.classList.add('is-scroll-ready');
+          }
+          const interacting = header.contains(document.activeElement) || header.querySelector('.dropdown-menu.show');
+          if (interacting) {
+            header.classList.add('is-scroll-visible');
+          } else if (Math.abs(y - directionY) >= 8) {
+            header.classList.toggle('is-scroll-visible', direction < 0);
+          } else if (!wasFixed) {
+            header.classList.remove('is-scroll-visible');
+          }
+          header.inert = !header.classList.contains('is-scroll-visible');
+        }
+        previousY = y;
+      }
+
+      function schedule() {
+        if (queued) return;
+        queued = true;
+        window.requestAnimationFrame(update);
+      }
+
+      window.addEventListener('scroll', schedule, { passive: true });
+      window.addEventListener('resize', () => { measure(); schedule(); });
+      desktop.addEventListener('change', () => { measure(); schedule(); });
+      header.addEventListener('focusout', schedule);
+      header.addEventListener('hidden.bs.dropdown', schedule);
+      new ResizeObserver(() => { measure(); schedule(); }).observe(header);
+      measure();
+      update();
+    });
+  }
+
+  function initMobileNavigation(root) {
+    const menu = root.querySelector('#primary-navigation');
+    if (!menu || menu.dataset.mobileInitialized) return;
+    menu.dataset.mobileInitialized = 'true';
+    // Reverse the mobile copy in the DOM so keyboard order matches visual order.
+    menu.querySelectorAll('.navbar-utility .navbar-nav').forEach(list => {
+      [...list.children].reverse().forEach(item => list.append(item));
+    });
+    const desktop = window.matchMedia('(min-width: 992px)');
+    const header = menu.closest('.site-header');
+    let saved = null;
+    let open = menu.classList.contains('show');
+    function sizeMenu() {
+      if (!saved) return;
+      const top = Math.max(0, header.getBoundingClientRect().bottom);
+      menu.style.setProperty('--mobile-menu-top', `${top}px`);
+    }
+    function sync() {
+      if (open && !desktop.matches) {
+        if (!saved) {
+          const body = document.body;
+          saved = { x: window.scrollX, y: window.scrollY, styles: {} };
+          ['position', 'top', 'left', 'width', 'overflow'].forEach(name => {
+            saved.styles[name] = [body.style.getPropertyValue(name), body.style.getPropertyPriority(name)];
+          });
+          body.style.position = 'fixed';
+          body.style.top = `${-saved.y}px`;
+          body.style.left = `${-saved.x}px`;
+          body.style.width = '100%';
+          body.style.overflow = 'hidden';
+          menu.classList.add('is-mobile-scrollable');
+        }
+        sizeMenu();
+      } else if (saved) {
+        const previous = saved;
+        saved = null;
+        Object.entries(previous.styles).forEach(([name, [value, priority]]) => {
+          if (value) document.body.style.setProperty(name, value, priority);
+          else document.body.style.removeProperty(name);
+        });
+        menu.classList.remove('is-mobile-scrollable');
+        menu.style.removeProperty('--mobile-menu-top');
+        window.scrollTo({ left: previous.x, top: previous.y, behavior: 'instant' });
+      }
+    }
+    menu.addEventListener('show.bs.collapse', event => {
+      if (event.target !== menu) return;
+      open = true;
+      sync();
+    });
+    menu.addEventListener('hidden.bs.collapse', event => {
+      if (event.target !== menu) return;
+      open = false;
+      sync();
+    });
+    desktop.addEventListener('change', sync);
+    window.addEventListener('resize', sizeMenu);
+    window.visualViewport?.addEventListener('resize', sizeMenu);
+    sync();
+  }
+
+  // Use native Dropdown on desktop and Collapse for inline mobile panels.
+  function initPrimaryMenus(root) {
+    root.querySelectorAll('[data-primary-menu]').forEach((trigger) => {
+      if (trigger.dataset.primaryMenuInitialized) return;
+      const panel = document.getElementById(trigger.getAttribute('aria-controls'));
+      if (!panel) return;
+      trigger.dataset.primaryMenuInitialized = 'true';
+      const desktop = window.matchMedia('(min-width: 992px)');
+      let currentMode;
+      function sync() {
+        if (currentMode === desktop.matches || panel.classList.contains('collapsing')) return;
+        const dropdown = window.bootstrap.Dropdown.getInstance(trigger);
+        if (dropdown) { dropdown.hide(); dropdown.dispose(); }
+        window.bootstrap.Collapse.getInstance(panel)?.dispose();
+        panel.classList.remove('show');
+        panel.style.removeProperty('height');
+        trigger.classList.remove('show');
+        trigger.setAttribute('aria-expanded', 'false');
+        panel.classList.toggle('dropdown-menu', desktop.matches);
+        panel.classList.toggle('collapse', !desktop.matches);
+        trigger.classList.toggle('collapsed', !desktop.matches);
+        trigger.setAttribute('data-bs-toggle', desktop.matches ? 'dropdown' : 'collapse');
+        currentMode = desktop.matches;
+      }
+      desktop.addEventListener('change', sync);
+      // A breakpoint change during a collapse waits for Bootstrap to finish.
+      panel.addEventListener('shown.bs.collapse', sync);
+      panel.addEventListener('hidden.bs.collapse', sync);
+      sync();
+    });
+  }
+
   // Tooltips and popovers are opt-in; other data-bs-* controls use Bootstrap's data API.
   // This is safe to call again after inserting CMS content dynamically.
   function init(root = document) {
     moveModalsToBody(root);
+    initScrollHeader(root);
     if (!window.bootstrap) {
       // Legacy pages do not yet load Bootstrap 5; the class switch still applies.
       return;
     }
+    initPrimaryMenus(root);
+    initMobileNavigation(root);
     root.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((element) => {
       window.bootstrap.Tooltip.getOrCreateInstance(element);
     });

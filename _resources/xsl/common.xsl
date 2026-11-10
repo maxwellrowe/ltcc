@@ -33,6 +33,7 @@ Last Updated: 1/2016
     <xsl:import href="_shared/forms.xsl"/>
     <xsl:import href="_shared/snippets.xsl"/>
     <xsl:import href="_shared/transformations.xsl"/>
+    <xsl:import href="_shared/components.xsl"/>
     <!-- Default: for HTML5 use below output declaration -->
     <xsl:output method="html" version="5.0" indent="yes" encoding="UTF-8" include-content-type="no"/>
 
@@ -77,6 +78,8 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
                     <xsl:otherwise><xsl:attribute name="class"></xsl:attribute></xsl:otherwise>
                 </xsl:choose>
 
+                <a href="#main-content" class="skip-link visually-hidden-focusable btn btn-primary position-fixed top-0 start-0 m-2">Skip to content</a>
+
                 <xsl:apply-templates select="bodycode/node()"/> <!-- pcf -->
 
                 <xsl:call-template name="common-bodycode"/>
@@ -96,12 +99,13 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
                 <div id="galaxy">
                     <xsl:call-template name="common-header"/>
                     <!-- page-content -->
-                    <xsl:call-template name="page-content"/> <!-- each page type has a unique version of this template -->
+                    <main id="main-content" tabindex="-1">
+                        <xsl:call-template name="page-content"/> <!-- each page type has a unique version of this template -->
+                    </main>
                     <xsl:apply-templates select="footcode/node()"/> <!-- pcf -->
                     <xsl:call-template name="common-footer"/>
 
                 </div> <!-- / galaxy -->
-                <xsl:copy-of select="ou:include-file('/_resources/includes/search-results.inc')" />
                 <!-- </div>  / universe -->
                 <!-- footcode include -->
                 <xsl:copy-of select="ou:include-file('/_resources/includes/footcode.inc')"/>
