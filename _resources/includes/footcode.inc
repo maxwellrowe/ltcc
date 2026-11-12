@@ -15,7 +15,7 @@
 <script src="/_resources/js/legacy-site.min.js"></script>
 <!-- direct edit -->
 <script src="https://www.ltcc.edu/_resources/js/direct-edit.js"></script>
-<script src="/_resources/js/nested-menu.js?v=1.1"></script>
+<script src="/_resources/js/nested-menu.js?v=2.0"></script>
 <script>
 // Dismissible Alert Script
 document.addEventListener('DOMContentLoaded', () => {

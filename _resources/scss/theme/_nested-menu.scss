@@ -1,90 +1,35 @@
-/* Global */
+// Section navigation, including existing nested lists from _nav.inc.
 .sidenav {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.sidenav.is-ready {
-  visibility: visible;
-  opacity: 1;
-}
-
-.sidenav ul li {
-  font-size: 1rem;
-  padding: 0.25rem;
-  margin: 0.25rem 0 0 0;
-}
-
-.sidenav ul li a {
-  padding: 0.5rem;
-}
-
-.sidenav ul li a:hover {
-  border-radius: 6px;
-  box-shadow: none !important;
-}
-
-.sidenav li.current a {
-  background: #BFE8F7;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-/* Has Children */
-.sidenav ul > li.has-children {
-  transition: all .2s ease-in-out;
-}
-
-.sidenav ul > li.has-children > a {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: center;
-}
-
-.sidenav ul > li.has-children > a::after {
-  content: "\f107"; /* Angle-down icon */
-  font: var(--fa-font-sharp-solid);
-  transition: transform 0.2s ease-in-out;
-}
-
-.sidenav ul li ul {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition:
-    max-height .3s ease,
-    opacity .2s ease,
-    visibility .2s;
-}
-
-.sidenav ul li ul li > a {
-  font-size: 0.85rem;
-}
-
-.sidenav ul li ul li:last-child {
-  border-bottom-width: 0;
-}
-
-.sidenav ul li ul li:first-child {
-  border-top: 1px dotted #3B3A3A;
-}
-
-.sidenav ul > li.has-children.active {
-  border-radius: 6px;
-  background: #ecf7fa;
-  border-bottom-width: 0;
-  margin-top: 0.75rem;
-}
-
-.sidenav ul li.has-children.active > ul {
-  max-height: 1000px;
-  opacity: 1;
-  visibility: visible;
-}
-
-.sidenav ul > li.has-children.active > a:after {
-  transform: rotate(180deg);
+  background: $gray-100;
+  border-radius: $border-radius;
+  padding: 1.5rem 1.25rem;
+  ul { list-style: none; margin: 0; padding: 0; }
+  ul li { position: relative; font-size: .875rem; padding: 0 0 .25rem; margin: 0 0 .25rem; border-bottom: 1.5px solid $gray-200; }
+  ul li a {
+    display: flex; align-items: center; gap: .5rem; min-height: 3.0625rem; padding: 1rem .75rem;
+    color: $blue-900; font-size: .875rem; font-weight: 600; line-height: 1.2; text-decoration: none; border: 0; border-radius: .25rem;
+    @include transition(background-color .2s, color .2s);
+    &:hover, &:focus-visible { color: $blue-900; background: white; box-shadow: none; }
+    &::after { content: '\f061'; font: var(--fa-font-sharp-regular); font-size: .75rem; color: $blue-700; margin-left: auto; opacity: 0; @include transition(opacity .2s, transform .2s); }
+    &:hover::after, &:focus-visible::after { opacity: 1; transform: translateX(.125rem); }
+  }
+  ul li > a[aria-current="page"] {
+    background: $gray-300; font-weight: 700;
+    &::before { content: '\f061'; font: var(--fa-font-sharp-regular); font-size: .75rem; }
+    &::after { display: none; }
+  }
+  ul li.has-children > a { padding-right: 3rem; }
+  ul li.has-children > a::after { display: none; }
+  .sidenav-child-toggle {
+    position: absolute; right: 0; top: 0; width: 3rem; height: 3.0625rem; padding: .5rem; border: 0; color: $blue-700; background: transparent;
+    &::before { content: '\f107'; display: inline-block; font: var(--fa-font-sharp-regular); @include transition(transform .2s); }
+    &[aria-expanded="true"]::before { transform: rotate(180deg); }
+    &:hover { background: rgba($blue-700,.08); }
+  }
+  a:focus-visible, button:focus-visible { outline: 2px solid $blue-700; outline-offset: 2px; }
+  ul li ul { margin: .25rem 0 0 .75rem; padding-left: .5rem; border-left: 1px solid $gray-300; }
+  // Hide only after enhancement, retaining usable navigation without JavaScript.
+  &.is-ready ul li ul:not(.show):not(.collapsing) { display: none; }
+  ul li ul li { border-bottom: 0; }
+  ul li.active > a { font-weight: 700; }
 }

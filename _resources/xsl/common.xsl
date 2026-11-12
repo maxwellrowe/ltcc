@@ -71,12 +71,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
             </head>
             <body>
 
-                <xsl:choose>
-                    <xsl:when test="$page-type = 'home'">
-                        <xsl:attribute name="class">home</xsl:attribute>
-                    </xsl:when>
-                    <xsl:otherwise><xsl:attribute name="class"></xsl:attribute></xsl:otherwise>
-                </xsl:choose>
+                <xsl:attribute name="class"><xsl:call-template name="page-body-class"/></xsl:attribute>
 
                 <a href="#main-content" class="skip-link visually-hidden-focusable btn btn-primary position-fixed top-0 start-0 m-2">Skip to content</a>
 
@@ -98,6 +93,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
                 <!-- <div id="universe"> -->
                 <div id="galaxy">
                     <xsl:call-template name="common-header"/>
+                    <xsl:call-template name="page-after-header"/>
                     <!-- page-content -->
                     <main id="main-content" tabindex="-1">
                         <xsl:call-template name="page-content"/> <!-- each page type has a unique version of this template -->
@@ -118,7 +114,6 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 
                 <xsl:if test="descendant::ouform ">
                     <script type="text/javascript" src="https://www.ltcc.edu/_resources/js/ldp/ouforms.js"></script>
-                    <link rel="stylesheet" href="https://www.ltcc.edu/_resources/css/ldp/ouforms-bootstrap.css"/>
                 </xsl:if>
                 <!-- analytics include -->
                 <xsl:copy-of select="ou:include-file('/_resources/includes/analytics.inc')"/>
@@ -151,6 +146,10 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title><xsl:value-of select="$page-title"/></title>
         <!-- headcode include -->
+        <!-- Load legacy form CSS first so the shared Bootstrap theme follows it. -->
+        <xsl:if test="descendant::ouform">
+            <link rel="stylesheet" href="/_resources/css/ldp/ouforms-bootstrap.css"/>
+        </xsl:if>
         <xsl:copy-of select="ou:include-file('/_resources/includes/headcode.inc')"/>
     </xsl:template>
 
@@ -186,6 +185,10 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <!-- Optional page-type hooks, empty/default for existing non-interior templates. -->
+    <xsl:template name="page-after-header"/>
+    <xsl:template name="page-body-class"><xsl:if test="$page-type = 'home'">home</xsl:if></xsl:template>
 
     <!-- in case not defined in page type xsl -->
     <xsl:template name="page-content"><p>No template defined.</p></xsl:template><!-- leave for debugging purposes -->

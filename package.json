@@ -4,9 +4,10 @@
   "scripts": {
     "build:css": "sass --load-path=node_modules --quiet-deps --style=compressed --no-source-map _resources/scss/ltcc-custom.scss _resources/css/ltcc-custom.css",
     "watch:css": "npm run build:css -- --watch",
-    "build": "npm run build:icons && npm run build:css && npm run build:js",
+    "build": "npm run build:icons && npm run build:css && npm run build:homepage && npm run build:js",
     "build:js": "esbuild _resources/js/main.js --minify --outfile=_resources/js/legacy-site.min.js",
-    "build:icons": "node scripts/build-fontawesome-shim.cjs"
+    "build:icons": "node scripts/build-fontawesome-shim.cjs",
+    "build:homepage": "sass --load-path=node_modules --quiet-deps --style=compressed --no-source-map _resources/scss/ltcc-homepage.scss _resources/css/ltcc-homepage.css"
   },
   "devDependencies": {
     "bootstrap": "5.3.8",

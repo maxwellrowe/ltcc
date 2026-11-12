@@ -54,7 +54,11 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 		<title><xsl:value-of select="$page-title"/></title>
 		<!-- headcode include -->
-		<xsl:copy-of select="ou:include-file('/_resources/includes/headcode.inc')"/>
+		<!-- Load legacy form CSS first so the shared Bootstrap theme follows it. -->
+        <xsl:if test="descendant::ouform">
+            <link rel="stylesheet" href="/_resources/css/ldp/ouforms-bootstrap.css"/>
+        </xsl:if>
+        <xsl:copy-of select="ou:include-file('/_resources/includes/headcode.inc')"/>
 	</xsl:template>
 	
 	<xsl:template match="/document">
@@ -114,7 +118,6 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 
 						<xsl:if test="descendant::ouform ">									
 							<script type="text/javascript" src="https://www.ltcc.edu/_resources/js/ldp/ouforms.js"></script>
-							<link rel="stylesheet" href="https://www.ltcc.edu/_resources/css/ldp/ouforms-bootstrap.css"/>
 						</xsl:if>
 						<!-- analytics include -->
 						<xsl:copy-of select="ou:include-file('/_resources/includes/analytics.inc')"/>

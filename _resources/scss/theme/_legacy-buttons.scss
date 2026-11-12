@@ -48,3 +48,57 @@ $legacy-button-variants: (
   width: 100%;
   margin-inline: 0;
 }
+
+// Custom legacy blue buttons use the actual LTCC Bootstrap variants.
+.custom-btn-blue {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+.custom-btn-blue-outline {
+  @extend .btn;
+  @extend .btn-outline-primary;
+}
+
+// legacy.css uses !important; narrowly override those declarations with BS tokens.
+.custom-btn-blue,
+.custom-btn-blue-outline {
+  padding: var(--#{$prefix}btn-padding-y) var(--#{$prefix}btn-padding-x) !important;
+  font-family: var(--#{$prefix}body-font-family) !important;
+  font-size: var(--#{$prefix}btn-font-size) !important;
+  font-weight: var(--#{$prefix}btn-font-weight) !important;
+  line-height: var(--#{$prefix}btn-line-height) !important;
+  color: var(--#{$prefix}btn-color) !important;
+  background-color: var(--#{$prefix}btn-bg) !important;
+  border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color) !important;
+  border-radius: var(--#{$prefix}btn-border-radius) !important;
+  transition: $btn-transition !important;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--#{$prefix}btn-hover-color) !important;
+    background-color: var(--#{$prefix}btn-hover-bg) !important;
+    border-color: var(--#{$prefix}btn-hover-border-color) !important;
+  }
+
+  &:active,
+  &.active,
+  &.show,
+  .btn-check:checked + & {
+    color: var(--#{$prefix}btn-active-color) !important;
+    background-color: var(--#{$prefix}btn-active-bg) !important;
+    border-color: var(--#{$prefix}btn-active-border-color) !important;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    color: var(--#{$prefix}btn-disabled-color) !important;
+    background-color: var(--#{$prefix}btn-disabled-bg) !important;
+    border-color: var(--#{$prefix}btn-disabled-border-color) !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none !important;
+  }
+}

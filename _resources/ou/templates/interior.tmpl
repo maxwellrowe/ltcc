@@ -18,18 +18,25 @@
 	<ouc:properties label="config">				
 		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."><!--%echo var="title" --></parameter>
 		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default."><!--%echo var="title" --></parameter>
-		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+        <parameter name="show-breadcrumbs" type="select" group="Everyone" prompt="Show Breadcrumbs" alt="Show or hide the breadcrumb trail.">
+            <option value="true" selected="true">Show</option>
+            <option value="false" selected="false">Hide</option>
+        </parameter>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Top of Page Media" alt="Hero creates a full-width editable region and replaces the page heading. Banner and Slider stay within the content area.">
 			<option value="slider" selected="true">Slider</option>
 			<option value="banner" selected="false">Banner</option>
+			<option value="hero" selected="false">Hero</option>
 			<option value="off" selected="false">Off</option>
 		</parameter>
 
 		<parameter section="Banner Properties" name="banner" type="filechooser" group="Everyone" prompt="Banner Image" alt="Select a banner image."></parameter>
 		<parameter name="banner-alt" type="text" group="Everyone" prompt="Banner Alt-Text" alt="Enter the alternate text for the banner image."></parameter>
 
-		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
-			<option value="two" selected="true">Two Column</option>
-			<option value="three" selected="false">Three Column</option>
+		<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Choose a reading-width column, content with section navigation, content with navigation and additional content, or full browser width.">
+			<option value="one" selected="true">1 Column</option>
+            <option value="two" selected="false">2 Columns Nav</option>
+            <option value="three" selected="false">2 Columns with Additional Content</option>
+            <option value="full" selected="false">Full Width</option>
 		</parameter>		
 
 		<parameter section="LDP Gallery" name="gallery-type" type="select" group="Everyone" prompt="Gallery Type" alt="Select the output type for gallery assets on this page.">			
@@ -49,12 +56,16 @@
 		<ouc:editor wysiwyg="gallery" csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt"/>		
 	</ouc:div>
 	
+    <ouc:div label="hero-content" group="Everyone" button-text="Hero Content">
+        <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="hero-content"/>
+    </ouc:div>
+
 	<ouc:div label="main-content" group="Everyone" button-text="Main Content">
 		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/>
 		<p>Edit Content</p>	
 	</ouc:div>
 
-	<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+	<ouc:div label="right-content" group="Everyone" button-text="Additional Content">
 		<ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="right-content"/>
 		<h2>Edit Title</h2>
 		<p>Edit Content</p>

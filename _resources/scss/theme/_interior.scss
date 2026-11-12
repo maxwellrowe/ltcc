@@ -1,0 +1,36 @@
+// Interior layout components; content widths remain independent of hero media.
+.interior-reading-width { max-width: 50rem; }
+.interior-content-wrap { padding-block: 2rem 4rem; }
+.interior-content { min-width: 0; }
+.interior-layout-full .interior-content-wrap { padding: 0; }
+.page-hero { margin: 0; padding: 0; width: 100%; }
+.page-hero-enabled .interior-content-wrap { padding-top: 0; }
+.interior-breadcrumbs {
+  margin-block: 0 1.5rem;
+  padding-block: 1rem;
+  .breadcrumb { --#{$prefix}breadcrumb-divider: ''; --#{$prefix}breadcrumb-item-padding-x: .5rem; font-size: .75rem; row-gap: .5rem; }
+  .breadcrumb-item { display: flex; align-items: center; }
+  .breadcrumb-item + .breadcrumb-item::before { content: ''; width: 1rem; padding: 0; margin-right: .5rem; border-top: 1.5px solid $blue-600; }
+  a { color: $gray-900; text-decoration: none; border-bottom: 1.5px solid $teal; padding-bottom: .25rem; @include transition(color .2s, border-color .2s); }
+  a:hover, a:focus-visible { color: $link-hover-color; border-color: $green-500; }
+  .active { color: $blue-800; font-weight: 700; }
+}
+.section-menu-toggle {
+  border: 0; border-radius: 0; padding: .625rem 1.25rem; background: $gray-100; color: $blue-900; font-size: .875rem; font-weight: 600;
+  &:hover, &:focus-visible { background: $gray-200; color: $blue-900; }
+  .section-menu-close { display: none; }
+  .section-menu-icon::before { content: '\f550'; font: var(--fa-font-sharp-regular); }
+  &[aria-expanded="true"] {
+    color: $green-700;
+    .section-menu-open { display: none; }
+    .section-menu-close { display: inline; }
+    .section-menu-icon::before { content: '\f00d'; }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .interior-sidebar .collapsing { height: auto !important; overflow: visible; }
+}
+@include media-breakpoint-down(lg) {
+  .interior-mobile-sidebar .additional-content { padding: 0 1.25rem 1.5rem; }
+  .interior-mobile-sidebar .sidenav { border-radius: 0; }
+}
