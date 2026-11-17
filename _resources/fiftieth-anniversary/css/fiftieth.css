@@ -73,7 +73,7 @@ body.fifty-landing-page section {
 }
 @supports (mix-blend-mode: lighten) {
 	.fify-page-content {
-		background-image: url({{f:72165827}});
+		background-image: url(https://ltccdev26.omniweb.cloud/_resources/fiftieth-anniversary/media/lights-flipped.jpg);
 		mix-blend-mode: lighten;
 		background-size: cover;
 		background-attachment: fixed;
@@ -301,7 +301,7 @@ body.fifty-global-header .fify-page-content:before {
 	
 }
 #fa-page-content-lt50-homepage.fify-page-content {
-	background-image: url({{f:72172226}});
+	background-image: url(https://ltccdev26.omniweb.cloud/_resources/fiftieth-anniversary/media/arial-gradient.jpg);
 	mix-blend-mode: none;
 	background-size: 100% auto;
 	background-attachment: fixed;
@@ -340,7 +340,7 @@ body.fifty-global-header .fify-page-content:before {
 @supports (mix-blend-mode: lighten) {
 	#fa-page-content-lt50-homepage.fify-page-content:after {
 		content: '';
-		background-image: url({{f:72165787}});
+		background-image: url(https://ltccdev26.omniweb.cloud/_resources/fiftieth-anniversary/media/lights.jpg);
 		position: absolute;
 		height: 100%;
 		left: 0;
@@ -372,7 +372,7 @@ body.fifty-global-header .fify-page-content:before {
 		position: absolute;
 		left: 0;
 		top: 0;
-		background-image: url({{f:72173248}});
+		background-image: url(https://ltccdev26.omniweb.cloud/_dev/50th-anniversary/images/fish.png);
 		background-repeat: no-repeat;
 		background-position: right center;
 		height: 300px;
@@ -384,7 +384,7 @@ body.fifty-global-header .fify-page-content:before {
 		position: absolute;
 		right: 0;
 		top: 33%;
-		background-image: url({{f:72173249}});
+		background-image: url(https://ltccdev26.omniweb.cloud/_dev/50th-anniversary/images/coyote.png);
 		background-repeat: no-repeat;
 		background-position: left center;
 		height: 200px;
@@ -401,7 +401,7 @@ body.fifty-global-header .fify-page-content:before {
 
 /* Mask Text */
 .ltcc-fifty-mask-bg {
-	background-image: url({{f:72204552}});
+	background-image: url(https://ltccdev26.omniweb.cloud/_dev/50th-anniversary/images/tahoe-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -457,6 +457,7 @@ body.fifty-global-header .fify-page-content:before {
 .ltcc-fifty-sign-up .ou-form .btn {
 	border-bottom: 2px solid var(--ltcc-light-blue);
 	border-radius: 0;
+	color: #fff;
 }
 .ltcc-fifty-sign-up .ou-form .btn[type="submit"]:after {
 	transition: all .2s ease-in-out;

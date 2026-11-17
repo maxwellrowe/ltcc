@@ -1,0 +1,50 @@
+// Alert-only compatibility; no Bootstrap or main-site layout output.
+@import "bootstrap/scss/functions";
+@import "settings/palette";
+@import "settings/buttons";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+.fifty-landing-page {
+  @import "theme/alert";
+
+  .ltcc-alert {
+    font-family: "Barlow", var(--#{$prefix}font-sans-serif);
+    color: var(--#{$prefix}alert-color);
+    background-color: var(--#{$prefix}alert-bg);
+    padding: var(--#{$prefix}alert-padding-y) var(--#{$prefix}alert-padding-x);
+
+    // Reserve space for dismissing without overlapping alert text or its CTA.
+    &.alert-dismissible { padding-right: 3rem; }
+
+    // Match the main theme's two CTA variants without touching microsite buttons.
+    .btn-primary {
+      @include button-variant(#20c997, #20c997, $hover-border: $green-900);
+    }
+    .btn-secondary {
+      @include button-variant(#00b0ff, #00b0ff, $hover-border: $blue-900);
+    }
+    :is(.btn-primary, .btn-secondary) {
+      --#{$prefix}btn-border-radius: #{$btn-border-radius};
+      --#{$prefix}btn-font-weight: #{$btn-font-weight};
+      font-family: inherit;
+      text-decoration: none;
+      text-transform: none;
+      background-image: none;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1em;
+      height: 1em;
+      padding: 1rem;
+      background: transparent var(--#{$prefix}btn-close-bg) center / 1em auto no-repeat;
+
+      &::before, &::after { content: none; }
+    }
+  }
+}

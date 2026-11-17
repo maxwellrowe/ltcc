@@ -252,7 +252,7 @@
                     <div class="ltcc-alert__details d-flex flex-column flex-lg-row align-items-start align-items-lg-center gap-3 flex-grow-1 flex-lg-grow-0">
                         <xsl:if test="$title != ''"><h2 class="ltcc-alert__title fw-bold mb-0"><xsl:value-of select="$title"/></h2></xsl:if>
                         <xsl:if test="$has-content"><div class="ltcc-alert__content flex-grow-1 flex-lg-grow-0"><xsl:apply-templates select="$content/node()" mode="#current"/></div></xsl:if>
-                        <xsl:if test="$button-text != '' and $href != ''"><a class="btn btn-sm {if ($style = 'default') then 'btn-secondary' else 'btn-primary'} flex-shrink-0" href="{$href}"><xsl:value-of select="$button-text"/></a></xsl:if>
+                        <xsl:if test="$button-text != '' and $href != ''"><a class="btn btn-sm {if ($style = ('default', 'emergency')) then 'btn-secondary' else 'btn-primary'} flex-shrink-0" href="{$href}"><xsl:value-of select="$button-text"/></a></xsl:if>
                     </div>
                 </div>
                 <xsl:if test="$dismissible"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Dismiss alert"></button></xsl:if>

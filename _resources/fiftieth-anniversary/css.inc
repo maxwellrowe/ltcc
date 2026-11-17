@@ -6,3 +6,4 @@
 <link rel="stylesheet" href="{{f:72106700}}?v=1.4" /><!-- utilities.css -->
 <link rel="stylesheet" href="{{f:72076438}}?v=1.8"/><!-- fiftieth.css -->
 <link rel="stylesheet" href="{{f:72076585}}?v=1.69"/><!-- components.css -->
+<link rel="stylesheet" href="/_resources/fiftieth-anniversary/css/alert.css" /><!-- Scoped shared alert support -->

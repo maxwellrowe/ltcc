@@ -18,10 +18,9 @@
 	<ouc:properties label="config">				
 		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Enter the page heading text. Not displayed if left blank."><!--%echo var="title" --></parameter>
 		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default."><!--%echo var="title" --></parameter>
-		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
-			<option value="slider" selected="true">Slider</option>
+		<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Top of Page Media" alt="Choose Banner for an image at the top of the page, or Off to hide it.">
 			<option value="banner" selected="false">Banner</option>
-			<option value="off" selected="false">Off</option>
+			<option value="off" selected="true">Off</option>
 		</parameter>
 		<parameter name="page-id" type="text" group="Everyone" prompt="Unique Page ID" alt="Will apply a unique ID to the wrapping div of the page."></parameter>
 		<parameter section="Header" name="mkt-header" type="select" group="Everyone" prompt="Which header do you want to use for this page?">

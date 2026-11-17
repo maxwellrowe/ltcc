@@ -1,3 +1,5 @@
+> **Update — November 17, 2026:** Slider is no longer offered by the Interior, Academics, or Fiftieth Anniversary creation templates. This supersedes the instructions below to retain Slider as a page-property option. Existing PCFs store their own options: remove `<option value="slider" selected="false">Slider</option>` from the `top-media` parameter. For pages where Slider is selected, first choose a replacement (Off, Banner, or Hero where supported), then remove the Slider option; ensure exactly one remaining option is selected. Review those pages before a bulk change. Keep the gallery editable region and legacy XSL rendering until existing slider pages have been migrated. Updating a `.tmpl` does not update existing PCF properties.
+
 # Interior Page rollout — November 12, 2026
 
 ## Compatible layout values
