@@ -101,27 +101,35 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 					<!-- page-content -->
 					<xsl:call-template name="page-content"/> <!-- each page type has a unique version of this template --> 																	
 					<xsl:apply-templates select="footcode/node()"/> <!-- pcf -->						
-					<xsl:call-template name="common-footer"/>					
+					<footer id="main-footer">
+						<xsl:call-template name="common-footer"/>
+					</footer>					
 														
 				</div>
 				
+				<xsl:copy-of select="ou:include-file('/_resources/includes/search-results.inc')" />
 				<!-- </div>  / universe -->
 				<!-- footcode include -->
 				<xsl:copy-of select="ou:include-file('/_resources/includes/footcode.inc')"/>			
 				<!-- OU Style -->
 				<link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/css/oustyles.css" />
-				<xsl:if test="descendant::gallery">
-                    <!-- Galleries use the shared jQuery from headcode.inc. -->
+				<xsl:if test="descendant::gallery">								
+					<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 		
+					<script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
+					<script type="text/javascript">
+						jQuery.noConflict();
+					</script>
 					<xsl:copy-of select="ou:gallery-footcode(ou:pcf-param('gallery-type'))"/>
 				</xsl:if>  				
 
 				<xsl:if test="descendant::ouform ">									
 					<script type="text/javascript" src="https://www.ltcc.edu/_resources/js/ldp/ouforms.js"></script>
+					<link rel="stylesheet" href="https://www.ltcc.edu/_resources/css/ldp/ouforms-bootstrap.css"/>
 				</xsl:if>
 				<!-- analytics include -->
 				<xsl:copy-of select="ou:include-file('/_resources/includes/analytics.inc')"/>
 				<div id="hidden" style='display:none;'><xsl:comment> com.omniupdate.ob </xsl:comment><xsl:comment> /com.omniupdate.ob </xsl:comment></div>				
-				<!-- Bootstrap is loaded centrally by footcode.inc. -->
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>		
 <xsl:call-template name="form-footcode" />
 				
 				<!-- Fiftieth Anniversary Scripts -->
@@ -138,11 +146,7 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 		<title><xsl:value-of select="$page-title"/></title>
 		<!-- headcode include -->
-		<!-- Load legacy form CSS first so the shared Bootstrap theme follows it. -->
-        <xsl:if test="descendant::ouform">
-            <link rel="stylesheet" href="/_resources/css/ldp/ouforms-bootstrap.css"/>
-        </xsl:if>
-        <xsl:copy-of select="ou:include-file('/_resources/includes/headcode.inc')"/>
+		<xsl:copy-of select="ou:include-file('/_resources/includes/headcode.inc')"/>
 	</xsl:template>
 
 	<xsl:template name="common-bodycode">
@@ -153,17 +157,23 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 	<xsl:template name="common-header">
 		<xsl:choose>
 			<xsl:when test="ou:pcf-param('mkt-header') = 'global-header' ">
-				<xsl:choose>
-            <xsl:when test="$ou:action = 'pub'">
-                <xsl:copy-of select="ou:include-file('/_resources/includes/header.php')"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <!-- Fetch the rendered header so CMS preview does not need to execute PHP. -->
-                <xsl:if test="unparsed-text-available(concat($domain, '/_resources/includes/header.php'), 'utf-8')">
-                    <xsl:value-of select="unparsed-text(concat($domain, '/_resources/includes/header.php'), 'utf-8')" disable-output-escaping="yes"/>
-                </xsl:if>
-            </xsl:otherwise>
-        </xsl:choose>
+				<header class="logo-banner">
+					<div class="row">				
+						<!-- header include -->				
+						<xsl:copy-of select="ou:include-file('/_resources/includes/header.inc')"/>
+						<!-- navigation include -->
+							<xsl:choose>
+								<xsl:when test="$ou:action = 'pub'">
+									<xsl:copy-of select="ou:include-file('/_resources/includes/header-navigation.php')"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:if test="unparsed-text-available(concat($domain, '/_resources/includes/header-navigation.php'),'utf-8')">
+										<xsl:value-of select="unparsed-text(concat($domain, '/_resources/includes/header-navigation.php'),'utf-8')" disable-output-escaping="yes"/>
+									</xsl:if>
+								</xsl:otherwise>
+							</xsl:choose>
+					</div>
+				</header>
 			</xsl:when>
 			<xsl:otherwise>
 				<div class="ltcc-fifty-header py-4">
@@ -179,18 +189,23 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
 	</xsl:template>
 
 	<xsl:template name="common-footer">
-        <xsl:choose>
-            <xsl:when test="$ou:action = 'pub'">
-                <xsl:copy-of select="ou:include-file('/_resources/includes/footer.php')"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <!-- Use the rendered footer for CMS editing and preview. -->
-                <xsl:if test="unparsed-text-available(concat($domain, '/_resources/includes/footer.php'), 'utf-8')">
-                    <xsl:value-of select="unparsed-text(concat($domain, '/_resources/includes/footer.php'), 'utf-8')" disable-output-escaping="yes"/>
-                </xsl:if>
-            </xsl:otherwise>
-        </xsl:choose>
-    </xsl:template>	
+		<div class="row">
+			<!-- scorecard image hidden at the moment -->
+			<xsl:copy-of select="ou:include-file('/_resources/includes/scorecard.inc')"/>
+			<!-- ltcc alert -->
+			<xsl:copy-of select="ou:include-file('/_resources/includes/ltcc-alert.inc')"/>					
+			<div class="social-links">
+				<!-- social media icons -->
+				<xsl:copy-of select="ou:include-file('/_resources/includes/social.inc')"/>
+			</div>			
+			<address>
+				<!-- copyright symbol / direct edit -->
+				<xsl:copy-of select="ou:include-file('/_resources/includes/copyright.inc')"/>
+				<!-- physical address -->
+				<xsl:copy-of select="ou:include-file('/_resources/includes/address.inc')"/>
+			</address>
+		</div>		
+	</xsl:template>	
 
 	<!-- in case not defined in page type xsl -->
 	<xsl:template name="page-content"><p>No template defined.</p></xsl:template><!-- leave for debugging purposes -->			

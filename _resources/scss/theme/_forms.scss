@@ -1,0 +1,19 @@
+// LDP still emits these Bootstrap 3-era hooks. Bootstrap 5 owns buttons,
+// controls and alerts; only compatibility spacing and validation belong here.
+.ou-form {
+  .form-group { margin-bottom: $spacer; }
+  .control-label { margin-bottom: $form-label-margin-bottom; }
+  .help-block { display: block; margin-top: $form-text-margin-top; color: var(--#{$prefix}secondary-color); font-size: $form-text-font-size; }
+  .checkbox, .radio { display: block; margin-block: .5rem; }
+  .checkbox label, .radio label { padding-left: 1.5em; }
+  .checkbox input[type="checkbox"], .radio input[type="radio"] { float: left; margin-left: -1.5em; margin-top: .25em; }
+  .well { padding: $spacer; margin-bottom: $spacer; background: var(--#{$prefix}tertiary-bg); border: var(--#{$prefix}border-width) solid var(--#{$prefix}border-color); border-radius: var(--#{$prefix}border-radius); }
+  .has-error {
+    .control-label, .help-block, .checkbox, .radio { color: var(--#{$prefix}form-invalid-color); }
+    .form-control, .form-select {
+      border-color: var(--#{$prefix}form-invalid-border-color);
+      &:focus { box-shadow: 0 0 0 $input-focus-width rgba($form-feedback-invalid-color, $input-btn-focus-color-opacity); }
+    }
+  }
+  .label-danger { display: block; margin-top: .25rem; color: var(--#{$prefix}form-invalid-color); font-size: $form-feedback-font-size; }
+}

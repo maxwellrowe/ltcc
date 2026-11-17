@@ -29,3 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 </script>
+
+<!-- OU styles: retain the existing position after shared footer scripts. -->
+<link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/css/oustyles.css" />

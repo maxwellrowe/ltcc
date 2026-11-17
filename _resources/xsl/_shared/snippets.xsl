@@ -121,7 +121,7 @@ Last Updated: 1/2016
 		<xsl:param name="img" select="tbody/tr[2]/td[1]/descendant::img[1]"/>
 		
 		<xsl:if test="$img">
-			<div class="static-image">
+			<div class="static-image mb-4">
 				<xsl:if test="$title">
 					<h2 class="title"><xsl:value-of select="$title"/></h2>
 				</xsl:if>
@@ -139,7 +139,7 @@ Last Updated: 1/2016
 		<xsl:param name="buttons-td" select="tbody/tr[1]/td[descendant::a]"/>
 		
 		<xsl:if test="$buttons-td">
-			<div class="row">
+			<div class="row mb-4">
 				<xsl:for-each select="$buttons-td[position() lt 4]"> <!-- Only grab the first 3 cells -->
 					<xsl:variable name="a" select="descendant::a[1]"/>
 					<div class="col-12 col-md-4">

@@ -63,6 +63,7 @@ $blues: map-merge($blues, ("blue-950": $blue-950));
 @import "theme/editorial";
 @import "theme/layout";
 @import "theme/components";
+@import "theme/forms";
 @import "theme/accordion";
 @import "theme/contact";
 @import "theme/alert";

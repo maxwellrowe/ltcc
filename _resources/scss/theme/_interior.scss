@@ -1,6 +1,12 @@
 // Interior layout components; content widths remain independent of hero media.
 .interior-reading-width { max-width: 50rem; }
 .interior-content { min-width: 0; }
+// Older academic pages load .row .row { margin-right: 0; } from their headcode.
+// Restore Bootstrap's symmetric gutters without changing nested grid widths.
+.interior-content .row {
+  margin-right: calc(-.5 * var(--#{$prefix}gutter-x));
+  margin-left: calc(-.5 * var(--#{$prefix}gutter-x));
+}
 h1.page-title {
   font-size: 3.75rem;
   color: $blue-800;

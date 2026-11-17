@@ -57,8 +57,6 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
                 <xsl:if test="$is-pub">
                     <link rel="canonical" href="{replace($page-pub-path, '/index\.php$', '/')}" /> <!-- canonical -->
                 </xsl:if>
-                <link rel="stylesheet" href="https://www.ltcc.edu/_resources/css/bootstrap_iso.css"/>
-                <link href="https://www.ltcc.edu/_resources/css/academic-landing-styles-ou-edits.css" rel="stylesheet" /> <!-- Would be a good idea to move this to headcode.inc file -->
                 <xsl:call-template name="common-headcode"/> <!-- common headcode -->
                 <xsl:call-template name="template-headcode"/> <!-- each page type may have a version of this template -->
                 <xsl:apply-templates select="headcode/node()"/> <!-- pcf -->
@@ -106,8 +104,6 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
                 <!-- </div>  / universe -->
                 <!-- footcode include -->
                 <xsl:copy-of select="ou:include-file('/_resources/includes/footcode.inc')"/>
-                <!-- OU Style -->
-                <link rel="stylesheet" property="stylesheet" href="https://www.ltcc.edu/_resources/css/oustyles.css" />
                 <xsl:if test="descendant::gallery">
                     <!-- Galleries use the shared jQuery from headcode.inc. -->
                     <xsl:copy-of select="ou:gallery-footcode(ou:pcf-param('gallery-type'))"/>

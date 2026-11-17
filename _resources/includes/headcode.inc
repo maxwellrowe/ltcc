@@ -20,6 +20,8 @@ window.setTimeout(function () {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12.2.0/swiper-bundle.min.css" />
 
 <!-- Stylesheets: legacy base, Bootstrap + LTCC overrides, then Font Awesome. -->
+<link rel="stylesheet" href="https://www.ltcc.edu/_resources/css/bootstrap_iso.css" />
+<link href="/_resources/css/academic-landing-styles-ou-edits.css" rel="stylesheet" />
 <link href="/_resources/css/legacy.css" rel="stylesheet" />
 <link href="/_resources/css/ltcc-custom.css" rel="stylesheet" />
 <link href="/_resources/fonts/font-awesome/css/all.min.css" rel="stylesheet" />

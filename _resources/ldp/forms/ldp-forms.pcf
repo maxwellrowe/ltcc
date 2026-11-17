@@ -23,11 +23,11 @@
 		<parameter name="captcha-site-key" type="text" group="Everyone" prompt="Captcha Site Key" alt="Please enter the captcha site key. This will be used to render the captcha on the web page.">6LdAWYYqAAAAAHBu9BUZ8Lw-s_JtHxtTC03DFUGg</parameter>
 
 		<parameter section="Form Styling Configuration" name="include-regular-styling" type="checkbox" dependency="yes" group="Everyone" prompt="Regular Form Styling" alt="Please check this box to include LDP Form Regular Styling CSS.">
-<option value="true" selected="true">Add regular styling if checked.</option>
+<option value="true" selected="false">Add regular styling if checked.</option>
 </parameter>
 
 		<parameter name="include-validation-styling" type="checkbox" dependency="yes" group="Everyone" prompt="Validation Form Styling" alt="Please check this box to include LDP Form Validation Styling CSS. This is used when errors are returned on form submission">
-<option value="true" selected="true">Add validation styling if checked.</option>
+<option value="true" selected="false">Add validation styling if checked.</option>
 </parameter>
 
 		<parameter section="Form Submission Configuration" name="include-jquery" type="checkbox" dependency="yes" group="Everyone" prompt="Include jQuery" alt="Please check this box to include jQuery. This should be checked if the school doesn't have jQuery.">
