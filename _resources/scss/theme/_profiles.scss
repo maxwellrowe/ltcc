@@ -1,0 +1,51 @@
+// Profile cards and modals retain their CMS class names, independent of page type.
+.ltcc-card-profile {
+  display: block; margin-top: 6rem; background: $blue-800; color: white;
+  text-decoration: none; isolation: isolate;
+  @include transition(background-color .2s);
+  &.bg-green-tree { background: $green-800; }
+  &.bg-blue-tree { background: $blue-800; }
+  &.bg-green-tree::before, &.bg-blue-tree::before {
+    content: ''; position: absolute; inset: 0; border-radius: inherit;
+    background: url('/_resources/img/components/profile-tree.svg') center / cover no-repeat;
+    opacity: .2; z-index: -1; pointer-events: none;
+  }
+  h2.fs-2 { color: $blue-100; }
+  &:hover, &:focus-visible { color: white; background-color: $blue-900; }
+  &.bg-green-tree:hover, &.bg-green-tree:focus-visible { background-color: $green-900; }
+  &:hover .ltcc-card-profile-image img, &:focus-visible .ltcc-card-profile-image img { transform: translateY(-.5rem); box-shadow: $box-shadow; }
+  &:focus-visible { outline: 3px solid $blue-700; outline-offset: 4px; }
+}
+.ltcc-card-profile-image {
+  text-align: center; margin-top: -6rem;
+  img { max-width: 75%; width: 12.5rem; aspect-ratio: 1; object-fit: cover; border-radius: 50%; border: 3px solid white; @include transition(transform .2s, box-shadow .2s); }
+}
+.ltcc-profile-modal {
+  .modal-content { color: $gray-900; background: white; }
+  .modal-content.bg-dark-blue { background: $blue-900; color: white; }
+  .btn-close { position: absolute; top: 1rem; right: 1rem; z-index: 5; }
+  .bg-dark-blue .btn-close { filter: invert(1) grayscale(100%) brightness(200%); }
+  .text-light-gray { color: $gray-300; }
+}
+:where(.ltcc-card-profile, .ltcc-profile-modal) {
+  .font-sullivan, .font-avant { font-family: $font-family-sans-serif; }
+  .ltcc-text-white { color: white; }
+}
+.ltcc-card-profile-modal-image { aspect-ratio: 1; width: 100%; background-position: center; background-size: cover; background-repeat: no-repeat; }
+.ltcc-profile-modal-tag { font-size: .875rem; letter-spacing: .02em; }
+:where(.ltcc-profiles-filter, .ltcc-profile-modal-tag) :is(.bg-green, .bg-light-blue) {
+  display: inline-block; flex-shrink: 0; width: .75rem; height: .75rem; margin-right: .5rem; border-radius: 50%;
+  &.bg-green { background: $green-700; }
+  &.bg-light-blue { background: $blue-700; }
+}
+.ltcc-profiles-filter {
+  flex-wrap: wrap;
+  button { border: 1px solid $gray-300; border-radius: $border-radius; padding: .75rem 1.25rem; background: $gray-100; color: $blue-900; font-weight: 600; @include transition(color .2s, background-color .2s); }
+  button:hover { background: $gray-200; }
+  button.active { background: $blue-900; color: white; }
+  button:focus-visible { outline: 2px solid $blue-700; outline-offset: 3px; }
+}
+.ltcc-card-profile-col[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .ltcc-card-profile:hover .ltcc-card-profile-image img, .ltcc-card-profile:focus-visible .ltcc-card-profile-image img { transform: none; }
+}

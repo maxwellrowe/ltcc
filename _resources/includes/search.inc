@@ -2,7 +2,7 @@
 <ouc:editor wysiwyg="no"/>
 <form action="/search.php" method="get" role="search" aria-label="Search the LTCC website">
     <label class="d-block">
-        <span class="form-label d-block">Search the LTCC website</span>
+        <span class="visually-hidden">Search the LTCC website</span>
         <input type="search" name="q" class="form-control form-control-lg" placeholder="What are you looking for?" required="required" />
     </label>
     <button type="submit" class="btn btn-primary mt-3">

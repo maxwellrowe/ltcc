@@ -1,10 +1,18 @@
 // Interior layout components; content widths remain independent of hero media.
 .interior-reading-width { max-width: 50rem; }
-.interior-content-wrap { padding-block: 2rem 4rem; }
 .interior-content { min-width: 0; }
+h1.page-title {
+  font-size: 3.75rem;
+  color: $blue-800;
+  letter-spacing: -.02em;
+  font-weight: 700;
+  line-height: 1;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1.5px solid $gray-300;
+}
 .interior-layout-full .interior-content-wrap { padding: 0; }
 .page-hero { margin: 0; padding: 0; width: 100%; }
-.page-hero-enabled .interior-content-wrap { padding-top: 0; }
 .interior-breadcrumbs {
   margin-block: 0 1.5rem;
   padding-block: 1rem;
@@ -33,4 +41,14 @@
 @include media-breakpoint-down(lg) {
   .interior-mobile-sidebar .additional-content { padding: 0 1.25rem 1.5rem; }
   .interior-mobile-sidebar .sidenav { border-radius: 0; }
+}
+
+// The hero uses the same trail, with colors suited to its dark background.
+.ltcc-hero .interior-breadcrumbs {
+  margin: 0;
+  padding: 0;
+  a { color: $white; }
+  a:hover, a:focus-visible { color: $green-200; border-color: $green-200; }
+  .active { color: $blue-300; }
+  .breadcrumb-item + .breadcrumb-item::before { border-color: $gray-300; }
 }

@@ -17,7 +17,7 @@
 
   document.querySelectorAll('[data-slider]').forEach(root => {
     const kind = root.dataset.slider;
-    const video = root.querySelector('.hero-video');
+    const video = root.querySelector('.hero-video, .campus-film');
     const pauseButton = root.querySelector('.slider-pause');
     const previous = root.querySelector('.slider-prev');
     const next = root.querySelector('.slider-next');
@@ -25,12 +25,13 @@
     let manuallyPaused = reducedMotion.matches;
     let focused = false;
     let hovered = false;
-    let visible = true;
+    let visible = false;
     let swiper;
-    const videoMode = kind === 'hero' && root.dataset.heroMode === 'video' && video;
+    const videoMode = video && (kind === 'video' || (kind === 'hero' && root.dataset.heroMode === 'video'));
+    const interactionPause = !['hero', 'video'].includes(kind);
     const setPauseLabel = () => {
       pauseButton?.setAttribute('aria-pressed', String(manuallyPaused));
-      pauseButton?.setAttribute('aria-label', manuallyPaused ? 'Play slideshow' : 'Pause slideshow');
+      pauseButton?.setAttribute('aria-label', manuallyPaused ? (videoMode ? 'Play video' : 'Play slideshow') : (videoMode ? 'Pause video' : 'Pause slideshow'));
       const glyph = pauseButton?.querySelector('span');
       glyph?.classList.toggle('fa-play', manuallyPaused);
       glyph?.classList.toggle('fa-pause', !manuallyPaused);
@@ -39,19 +40,22 @@
       const stopped = manuallyPaused || focused || hovered || !visible || document.hidden;
       if (videoMode) {
         if (stopped) video.pause();
-        else video.play().catch(() => { manuallyPaused = true; setPauseLabel(); });
+        else video.play().catch(error => {
+          // Leaving the viewport can interrupt a pending play request.
+          if (error.name !== 'AbortError') { manuallyPaused = true; setPauseLabel(); }
+        });
       } else if (kind !== 'news' && swiper?.autoplay) {
         if (stopped) swiper.autoplay.stop();
         else swiper.autoplay.start();
       }
     };
     if (videoMode) {
-      container.hidden = true;
+      if (container) container.hidden = true;
       video.hidden = false;
       video.querySelectorAll('source[data-src]').forEach(source => { source.src = source.dataset.src; });
       video.load();
-      previous.hidden = true;
-      next.hidden = true;
+      if (previous) previous.hidden = true;
+      if (next) next.hidden = true;
     } else if (typeof Swiper !== 'undefined') {
       swiper = new Swiper(container, {
         slidesPerView: ['images', 'news'].includes(kind) ? 'auto' : 1,
@@ -78,9 +82,9 @@
       instance.slides.forEach((slide, index) => { slide.inert = index !== instance.activeIndex; });
     }
     pauseButton?.addEventListener('click', () => { manuallyPaused = !manuallyPaused; setPauseLabel(); playback(); });
-    root.addEventListener('focusin', () => { focused = true; playback(); });
+    root.addEventListener('focusin', event => { focused = interactionPause && !pauseButton?.contains(event.target); playback(); });
     root.addEventListener('focusout', event => { if (!root.contains(event.relatedTarget)) { focused = false; playback(); } });
-    root.addEventListener('mouseenter', () => { hovered = true; playback(); });
+    root.addEventListener('mouseenter', () => { hovered = interactionPause; playback(); });
     root.addEventListener('mouseleave', () => { hovered = false; playback(); });
     document.addEventListener('visibilitychange', playback);
     reducedMotion.addEventListener('change', () => { manuallyPaused = reducedMotion.matches; if (swiper) swiper.params.speed = reducedMotion.matches ? 0 : 650; setPauseLabel(); playback(); });

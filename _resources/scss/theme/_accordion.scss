@@ -1,0 +1,41 @@
+// Shared by the current snippet and both legacy accordion table formats.
+.ltcc-accordion {
+  --#{$prefix}accordion-color: #{$gray-900};
+  --#{$prefix}accordion-bg: transparent;
+  --#{$prefix}accordion-border-color: #{$gray-400};
+  --#{$prefix}accordion-border-width: 1.5px;
+  --#{$prefix}accordion-border-radius: 0;
+  --#{$prefix}accordion-inner-border-radius: 0;
+  --#{$prefix}accordion-btn-padding-x: 0;
+  --#{$prefix}accordion-btn-padding-y: 1rem;
+  --#{$prefix}accordion-btn-color: #{$gray-900};
+  --#{$prefix}accordion-btn-bg: transparent;
+  --#{$prefix}accordion-active-color: #{$gray-900};
+  --#{$prefix}accordion-active-bg: transparent;
+  --#{$prefix}accordion-body-padding-x: 0;
+  --#{$prefix}accordion-body-padding-y: 1rem;
+  --#{$prefix}accordion-btn-icon: none;
+  --#{$prefix}accordion-btn-active-icon: none;
+
+  .accordion-item { border-inline: 0; }
+  .accordion-button {
+    font-size: 1.25rem;
+    font-weight: $font-weight-semibold;
+    line-height: normal;
+    gap: 1rem;
+
+    &:not(.collapsed) { box-shadow: none; }
+    &:focus-visible { outline: 2px solid $blue-700; outline-offset: 2px; }
+    &::after {
+      content: '\f107';
+      font: var(--fa-font-sharp-regular);
+      font-size: 1.25rem;
+      line-height: 1;
+      text-align: center;
+    }
+  }
+  .accordion-body {
+    padding-top: 0;
+    > :last-child { margin-bottom: 0; }
+  }
+}

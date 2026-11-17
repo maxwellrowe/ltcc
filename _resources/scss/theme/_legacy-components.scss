@@ -1,0 +1,265 @@
+// Compatible anniversary component selectors, using the shared theme tokens.
+/* Button */
+.ltcc-button-group {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 2rem;
+	font-family: $font-family-sans-serif;
+}
+a.ltcc-button {
+	@include transition(color .2s ease, background-color .2s ease, transform .2s ease);
+	padding: 1rem 0;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	position: relative;
+}
+a.ltcc-button:before,
+a.ltcc-button:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1.5px;
+	@include transition(width .2s ease, background-color .2s ease);
+}
+a.ltcc-button.ltcc-button-green:before {
+	background: $green-700;
+}
+a.ltcc-button.ltcc-button-blue:before {
+	background: $blue-700;
+}
+a.ltcc-button:after {
+	width: 0;
+}
+a.ltcc-button.ltcc-button-green:after {
+	background: $blue-700;
+}
+a.ltcc-button.ltcc-button-blue:after {
+	background: $green-700;
+}
+a.ltcc-button:hover {
+	opacity: .85;
+}
+a.ltcc-button:hover:after {
+	width: 100%;
+}
+a.ltcc-button span.fa {
+	display: none;
+	@include transition(color .2s ease, background-color .2s ease, transform .2s ease);
+	font-size: 1rem;
+}
+a.ltcc-button.ltcc-button-show-arrow {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: .5rem;
+	width: max-content;
+}
+a.ltcc-button.ltcc-button-show-arrow span.fa {
+	display: block;
+}
+a.ltcc-button:hover span.fa {
+	transform: translateX(.25rem);
+}
+a.ltcc-button.ltcc-button-sullivan {
+	font-family: $font-family-sans-serif;
+}
+
+/* Card Event */
+.ltcc-card-event {
+	color: #fff;
+}
+.ltcc-card-event .card-body {
+	z-index: 1;
+	position: relative;
+}
+.ltcc-card-event .ltcc-card-event-date {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+}
+.ltcc-card-event h2.ltcc-card-event-title {
+	font-size: 2.25rem;
+	line-height: 1.1;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+/* Quote */
+.ltcc-quote {
+	position: relative;
+	padding-left: 2rem;
+}
+.ltcc-quote:before {
+	font-family: $font-family-sans-serif;
+	content: '\201C';
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 4rem;
+	line-height: 1;
+	opacity: .5;
+}
+.ltcc-quote:after {
+	content: '';
+	border-left: 1px solid $green-700;
+	top: 3rem;
+	left: 0.5rem;
+	bottom: 0;
+	position: absolute;
+}
+.ltcc-quote .ltcc-quote-content {
+	font-size: 1.5rem;
+	line-height: 1.3;
+	margin-bottom: 1rem;
+}
+.ltcc-quote .ltcc-quote-author {
+	text-transform: uppercase;
+	font-weight: 700;
+	opacity: .75;
+	font-size: 1.125rem;
+}
+.ltcc-quote .ltcc-quote-title {
+	opacity: .75;
+	font-style: italic;
+}
+
+/* Card CTA */
+.ltcc-card-cta {
+	border-radius: .375rem;
+	text-decoration: none;
+	overflow: hidden;
+	@include transition(color .2s ease, background-color .2s ease, transform .2s ease);
+}
+.ltcc-card-cta:hover,
+.ltcc-card-cta:focus-visible {
+	transform: translateY(-5px);
+	background-color: $blue-900;
+}
+.ltcc-card-cta:before {
+	display: none;
+}
+.ltcc-card-cta h2 {
+	font-size: 1.5rem;
+	font-family: $font-family-sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	padding-top: 1.5rem;
+}
+
+.ltcc-card-cta hr {
+	max-width: 50%;
+	border-color: $green-700;
+}
+.ltcc-card-cta span {
+	@include transition(color .2s ease, background-color .2s ease, transform .2s ease);
+}
+.ltcc-card-cta span.ltcc-card-cta-link-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 1.5rem;
+	gap: .5rem;
+}
+.ltcc-card-cta span.fa {
+	font-size: .85rem;
+}
+.ltcc-card-cta:hover span.fa-arrow-down {
+	transform: translateX(5px);
+}
+.ltcc-card-cta:hover span.fa-arrow-right {
+	transform: translateX(5px);
+}
+
+/* Image Carousel */
+.ltcc-image-swiper .swiper-slide {
+	width: auto;
+}
+.ltcc-image-swiper .swiper-slide img {
+	height: 50vh;
+	max-height: 400px;
+	width: auto;
+}
+.ltcc-image-swiper .swiper-button-next,
+.ltcc-image-swiper .swiper-button-prev,
+.ltcc-profile-swiper .swiper-button-next,
+.ltcc-profile-swiper .swiper-button-prev {
+	background: rgba(0, 67, 62, 0.85);
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+}
+.ltcc-image-swiper .swiper-button-next:hover,
+.ltcc-image-swiper .swiper-button-prev:hover,
+.ltcc-profile-swiper .swiper-button-next:hover,
+.ltcc-profile-swiper .swiper-button-prev:hover {
+	background: $green-700;
+}
+.ltcc-image-swiper .swiper-button-next::after,
+.ltcc-image-swiper .swiper-button-prev::after,
+.ltcc-profile-swiper .swiper-button-next::after,
+.ltcc-profile-swiper .swiper-button-prev::after{
+	color: #fff;
+	font-size: 1rem;
+}
+
+/* Profiles Carousel */
+.ltcc-profile-swiper .swiper-slide {
+	width: 100%;
+}
+.ltcc-profile-swiper .ltcc-card-profile {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+// Defaults for compatible markup that previously depended on anniversary utilities.
+a.ltcc-button { display: inline-block; color: $gray-900; font-size: 1rem; font-weight: 600; text-decoration: none; }
+.ltcc-button-group { flex-wrap: wrap; }
+.ltcc-card-cta { display: block; color: white; background: $blue-800; }
+.ltcc-card-cta:hover, .ltcc-card-cta:focus-visible { color: white; }
+.ltcc-card-event { background: $blue-800; }
+.ltcc-card-event.bg-green-tree, .ltcc-card-cta.bg-green-tree { background: $green-800; }
+.ltcc-card-event.bg-blue-tree, .ltcc-card-cta.bg-blue-tree { background: $blue-800; }
+.ltcc-image-swiper, .ltcc-profile-swiper {
+  --swiper-navigation-color: #{$white};
+  --swiper-navigation-size: 1rem;
+  .swiper-slide { height: auto; }
+  .swiper-button-next, .swiper-button-prev { border: 0; color: white; @include transition(background-color .2s); }
+  .swiper-button-next svg, .swiper-button-prev svg { width: 1rem; height: 1rem; }
+  .ltcc-slider-pause { display: block; margin: 1rem 0 0 auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ltcc-card-cta:hover, .ltcc-card-cta:focus-visible { transform: none; }
+  a.ltcc-button:hover span.fa, .ltcc-card-cta:hover span.fa { transform: none; }
+}
+
+// Existing Areas of Study boxes contain Foundation classes in saved HTML.
+// Scope compatibility to this snippet instead of recreating Foundation globally.
+[class~="3columnareaofstudysnippet"] {
+  > .row {
+    // Bootstrap supplies the flex row and horizontal column padding.
+    // Keep gutters inside the colored wrapper rather than overflowing its edges.
+    margin-inline: 0;
+    --#{$prefix}gutter-y: #{map-get($spacers, 4)};
+
+    > .columns {
+      @include make-col(12);
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      overflow-wrap: anywhere;
+
+      @include media-breakpoint-up(md) {
+        @include make-col();
+      }
+
+      > .content_div_panel { flex-grow: 1; }
+      > .areasOfStudy3LearnMore { margin-top: map-get($spacers, 3); }
+    }
+  }
+
+  // The saved image is a background; retain its text alternative for screen readers.
+  .hide { @include visually-hidden(); }
+}

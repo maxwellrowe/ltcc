@@ -1,0 +1,36 @@
+// Global Alert variants also work when the component is placed within page content.
+.ltcc-alert {
+  --#{$prefix}alert-bg: #{tint-color($blue-400, 50%)};
+  --#{$prefix}alert-color: #{$gray-900};
+  --#{$prefix}alert-padding-x: 0;
+  --#{$prefix}alert-padding-y: 1rem;
+  --ltcc-alert-icon-color: #046d93;
+
+  &--info {
+    --#{$prefix}alert-bg: #{$gray-200};
+    --ltcc-alert-icon-color: #{$blue-800};
+  }
+  &--emergency {
+    --#{$prefix}alert-bg: #{$red-100};
+    --ltcc-alert-icon-color: #{$red-900};
+  }
+  &__icon { color: var(--ltcc-alert-icon-color); font-size: 1.125rem; }
+  &__details { min-width: 0; }
+  &__title { color: $blue-900; font-size: .875rem; line-height: normal; letter-spacing: normal; }
+  &__content {
+    min-width: 0;
+    font-size: .75rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    > :last-child { margin-bottom: 0; }
+  }
+  .btn-close { padding: 1rem; }
+  .btn-sm { font-size: .8125rem; line-height: 1rem; padding: .5rem .75rem; }
+
+  @include media-breakpoint-up(lg) {
+    --#{$prefix}alert-padding-y: .5rem;
+    &__icon { font-size: 1.25rem; }
+    &__title { font-size: 1rem; flex-shrink: 0; max-width: 30%; }
+    &__content { font-size: .875rem; }
+  }
+}

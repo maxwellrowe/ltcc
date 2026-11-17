@@ -50,6 +50,10 @@
     left: 0;
     right: 0;
     width: 100%;
+
+    &.show {
+      box-shadow: var(--#{$prefix}box-shadow);
+    }
   }
 
   .primary-header.is-scroll-fixed {
@@ -66,6 +70,14 @@
 
     &.is-scroll-visible {
       transform: translateY(0);
+    }
+
+    #primary-navigation .primary-menu-panel {
+      // The absolute panel uses the header as its containing block: 100% is its height.
+      max-height: calc(100vh - 100%);
+      max-height: calc(100dvh - 100%);
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
     }
   }
 

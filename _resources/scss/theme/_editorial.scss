@@ -1,0 +1,31 @@
+// Apply Bootstrap's responsive image behavior without requiring editor classes.
+// Low specificity lets component image dimensions override this baseline.
+:where(.main-content) img {
+  @include img-fluid();
+}
+
+// Editorial flow only. Direct children keep component interiors out of scope.
+// Recognize existing CMS container snippets and Bootstrap content columns.
+$editorial-flow: ':where(.main-content, .main-content section, .main-content article, .main-content .ltcc-container, .main-content .row > [class*="col-"])';
+$editorial-components: ':where(.card, .accordion, nav, aside, header, footer, .modal, .page-hero, [data-slider], .header-nav-links)';
+
+#{$editorial-flow}:not(#{$editorial-components}, #{$editorial-components} *) {
+  // Keep a single type selector's specificity to tie Bootstrap's heading reset.
+  // :where() contributes zero; classes and Bootstrap spacing utilities still win.
+  // Any preceding element (including a media/table wrapper) starts a new section.
+  > :where(*) + :is(h1, h2, h3) {
+    margin-top: map-get($spacers, 4);
+    @include media-breakpoint-up(lg) { margin-top: map-get($spacers, 5); }
+  }
+  > :where(*) + :is(h4, h5, h6) {
+    margin-top: map-get($spacers, 3);
+    @include media-breakpoint-up(lg) { margin-top: map-get($spacers, 4); }
+  }
+  // Related headings/subheadings stay together instead of starting a section.
+  > :where(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: map-get($spacers, 2);
+  }
+}
+// First headings retain Bootstrap's zero top margin. Heading bottom margins and
+// paragraph margins are unchanged: in normal block flow adjacent margins collapse
+// to the larger value, rather than adding an extra paragraph margin to the gap.

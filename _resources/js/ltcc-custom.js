@@ -189,6 +189,7 @@
   // This is safe to call again after inserting CMS content dynamically.
   function init(root = document) {
     moveModalsToBody(root);
+    window.LTCC?.components?.init(root);
     initScrollHeader(root);
     if (!window.bootstrap) {
       // Legacy pages do not yet load Bootstrap 5; the class switch still applies.

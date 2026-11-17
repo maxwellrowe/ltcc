@@ -53,6 +53,20 @@
   @include button-variant(#20c997, #20c997, $hover-border: $green-900);
 }
 
+.btn-link {
+  --#{$prefix}btn-hover-color: #{$green-800};
+  --#{$prefix}btn-active-color: #{$green-800};
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: .25rem;
+  @include transition($btn-transition, text-decoration-color .15s ease-in-out);
+
+  &:not(:disabled):not(.disabled):is(:hover, :focus-visible) {
+    color: var(--#{$prefix}btn-hover-color);
+    text-decoration-line: underline;
+    text-decoration-color: $teal;
+  }
+}
+
 .btn-secondary {
   @include button-variant(#00b0ff, #00b0ff, $hover-border: $blue-900);
 }
@@ -227,7 +241,7 @@
     position: relative;
     isolation: isolate;
     display: block;
-    padding: 1rem 2.375rem 1rem .5rem;
+    padding: .625rem 2.375rem .625rem .5rem;
     border-radius: var(--#{$prefix}border-radius-sm);
     color: $cyan-900;
     text-decoration: none;
@@ -261,7 +275,7 @@
     }
 
     .link-text {
-      font-size: 1rem;
+      font-size: .875rem;
       font-weight: $font-weight-bold;
       line-height: 1.2;
     }
@@ -696,6 +710,26 @@ a.mkt-link {
     &:hover,
     &:focus-visible {
       .mkt-link__icon { transform: none; }
+    }
+  }
+}
+.chevron-list {
+  list-style: none;
+  padding-left: 0;
+
+  > li {
+    position: relative;
+    padding-left: 1.5rem;
+
+    &::before {
+      content: '\f054';
+      font: var(--fa-font-sharp-regular);
+      font-size: .75rem;
+      line-height: inherit;
+      color: $green-700;
+      position: absolute;
+      top: .25rem;
+      left: 0;
     }
   }
 }

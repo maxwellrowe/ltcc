@@ -28,8 +28,19 @@
   }
   a:focus-visible, button:focus-visible { outline: 2px solid $blue-700; outline-offset: 2px; }
   ul li ul { margin: .25rem 0 0 .75rem; padding-left: .5rem; border-left: 1px solid $gray-300; }
-  // Hide only after enhancement, retaining usable navigation without JavaScript.
-  &.is-ready ul li ul:not(.show):not(.collapsing) { display: none; }
+  // Collapse from first paint; Bootstrap controls expanded and transitioning states.
+  ul li ul:not(.show):not(.collapsing) { display: none; }
   ul li ul li { border-bottom: 0; }
   ul li.active > a { font-weight: 700; }
+}
+
+// Preserve the existing selectors and initialization order while hiding setup changes.
+html.sidenav-pending .sidenav:not(.is-ready) { visibility: hidden; }
+html.sidenav-pending .sidenav.is-ready { animation: sidenav-reveal .2s ease-out; }
+@keyframes sidenav-reveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.sidenav-pending .sidenav.is-ready { animation: none; }
 }

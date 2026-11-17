@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Editorial spacing checks</title><link rel="stylesheet" href="../../_resources/css/ltcc-custom.css"></head>
+<body class="p-4"><h1>Editorial spacing checks</h1><pre id="results" aria-live="polite">Running…</pre>
+<main class="main-content container">
+<section class="border-bottom py-4"><h2 id="first">First heading</h2><p id="heading-paragraph">Paragraph under a heading.</p><h2 id="paragraph-heading">New section</h2></section>
+<section class="border-bottom py-4"><h2>Heading</h2><h3 id="heading-heading">Related subheading</h3><p>Paragraph under the subheading.</p></section>
+<section class="border-bottom py-4"><p>Paragraph before a list.</p><ul id="list"><li>List item</li></ul><h2 id="list-heading">New section after a list</h2><p>Smaller section next.</p><h4 id="small-heading">Small heading</h4></section>
+<section class="border-bottom py-4"><figure id="figure" class="bg-gray-200 p-3"><img width="120" height="60" alt="Placeholder" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Crect width='120' height='60' fill='%23cdd6de'/%3E%3C/svg%3E"><figcaption>Figure caption</figcaption></figure><h3 id="figure-heading">After a figure</h3></section>
+<section class="border-bottom py-4"><p id="paragraph-one">First paragraph.</p><p id="paragraph-two">Second paragraph.</p><table class="table"><tbody><tr><td>Table content</td></tr></tbody></table><h2 id="table-heading">After a table</h2></section>
+<section class="py-4"><p>Utility overrides.</p><h2 id="utility" class="mt-0 mb-5">Explicit margins win</h2><h3 id="responsive-utility" class="mt-1 mt-lg-4">Responsive utility wins</h3></section>
+<section><h1 id="page-title" class="page-title">Page title keeps its treatment</h1></section>
+<div class="card"><div class="card-body"><section><p>Card copy.</p><h2 id="card-heading">Card heading unchanged</h2></section></div></div>
+<div class="accordion"><div class="accordion-item"><h2 class="accordion-header">Accordion header</h2><div class="accordion-body"><section><p>Accordion copy.</p><h3 id="accordion-heading">Accordion heading unchanged</h3></section></div></div></div>
+<div class="page-hero"><section><p>Hero copy.</p><h2 id="hero-heading">Hero heading unchanged</h2></section></div>
+<nav><section><p>Navigation copy.</p><h2 id="nav-heading">Navigation heading unchanged</h2></section></nav>
+<div class="modal"><section><p>Modal copy.</p><h2 id="modal-heading">Modal heading unchanged</h2></section></div>
+<div class="ltcc-container"><p>CMS container copy.</p><h2 id="container-heading">CMS container heading</h2></div>
+<div class="row"><div class="col-lg-6"><h2 id="column-first">Column first heading</h2><p>Column copy.</p><h3 id="column-heading">Column new section</h3></div></div>
+</main><section><p>Outside main.</p><h2 id="outside-heading">Outside heading unchanged</h2></section>
+<script>
+addEventListener('load', () => {
+  const large = matchMedia('(min-width: 992px)').matches;
+  const results = [];
+  const style = id => getComputedStyle(document.getElementById(id));
+  function check(name, actual, expected) { results.push({ name, actual, expected, pass: Math.abs(actual - expected) < .1 }); }
+  for (const id of ['paragraph-heading','list-heading','figure-heading','table-heading','container-heading','column-heading']) check(id, parseFloat(style(id).marginTop), large ? 48 : 24);
+  check('smaller heading', parseFloat(style('small-heading').marginTop), large ? 24 : 16);
+  check('consecutive headings', parseFloat(style('heading-heading').marginTop), 8);
+  for (const id of ['first','column-first','card-heading','accordion-heading','hero-heading','nav-heading','modal-heading','outside-heading','utility']) check(id, parseFloat(style(id).marginTop), 0);
+  check('utility bottom', parseFloat(style('utility').marginBottom), 48);
+  check('responsive utility', parseFloat(style('responsive-utility').marginTop), large ? 24 : 4);
+  check('heading → paragraph', document.getElementById('heading-paragraph').getBoundingClientRect().top - document.getElementById('first').getBoundingClientRect().bottom, 8);
+  check('collapsed paragraph → heading', document.getElementById('paragraph-heading').getBoundingClientRect().top - document.getElementById('heading-paragraph').getBoundingClientRect().bottom, large ? 48 : 24);
+  check('consecutive paragraphs', document.getElementById('paragraph-two').getBoundingClientRect().top - document.getElementById('paragraph-one').getBoundingClientRect().bottom, 16);
+  check('page title bottom', parseFloat(style('page-title').marginBottom), 24);
+  check('page title size', parseFloat(style('page-title').fontSize), 60);
+  document.getElementById('results').textContent = JSON.stringify({width:innerWidth, pass:results.every(r=>r.pass),checks:results},null,2);
+  document.title = results.every(r=>r.pass) ? 'PASS — Editorial spacing' : 'FAIL — Editorial spacing';
+});
+</script></body></html>

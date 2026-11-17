@@ -1,0 +1,34 @@
+.ltcc-hero {
+  &__copy { min-width: 0; }
+  &__headings { gap: .625rem; }
+  &__title { color: $white; font-size: 2.5rem; line-height: 1.1; letter-spacing: -.02em; overflow-wrap: anywhere; }
+  &__pretitle { color: $blue-300; font-size: .875rem; }
+  &__subtitle { color: $blue-300; font-size: 1.375rem; line-height: normal; }
+  &__media { min-width: 0; }
+  &__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+  &__controls {
+    position: absolute;
+    z-index: 2;
+    right: 1rem;
+    bottom: 1rem;
+    background: $green-700;
+    &:not([hidden]) { display: flex; }
+    .media-playback-toggle { width: 2.75rem; height: 2.75rem; }
+  }
+  a.ltcc-hero__link {
+    font-size: .875rem;
+    .mkt-link__text { text-decoration-color: transparent; }
+    .mkt-link__icon { color: $teal; font-size: .75rem; }
+    &:hover, &:focus-visible {
+      .mkt-link__text { text-decoration-color: $green-200; }
+    }
+  }
+  // With JS unavailable, retain the first image without exposing dead controls.
+  .swiper:not(.swiper-initialized) .swiper-slide { flex: 0 0 100%; }
+  @include media-breakpoint-up(lg) {
+    &__title { font-size: 3.75rem; }
+    &__pretitle { font-size: 1rem; }
+    &__subtitle { font-size: 1.75rem; }
+    a.ltcc-hero__link { font-size: 1rem; }
+  }
+}

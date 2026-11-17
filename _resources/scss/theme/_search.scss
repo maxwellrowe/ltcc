@@ -1,0 +1,33 @@
+// Google injects its stylesheet after the theme. Keep overrides scoped to results.
+.gsc-control-cse {
+  .gs-webResult.gs-result, .gs-imageResult {
+    // Only the actual anchor should draw the underline, not its title wrapper.
+    div.gs-title { text-decoration: none; }
+
+    // Match the dark MKT Link List text treatment.
+    a.gs-title {
+      color: $gray-900 !important;
+      text-decoration-line: underline !important;
+      text-decoration-color: $teal !important;
+      text-decoration-thickness: 1.5px !important;
+      text-underline-offset: .25rem !important;
+      @include transition(color .2s ease, text-decoration-color .2s ease);
+
+      // Google styles matched words separately; inherit the anchor's state.
+      b {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+
+      &:hover, &:focus-visible {
+        color: $link-hover-color !important;
+        text-decoration-color: $green-500 !important;
+      }
+
+      &:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px;
+      }
+    }
+  }
+}

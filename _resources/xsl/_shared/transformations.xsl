@@ -44,33 +44,7 @@ TABLE TRANSFORMATIONS
 	
 	<xsl:template match="h6[@class='snippet-spacer']" />
 	
-	<xsl:template match="//descendant::table[@class='ou_accordion']">
-		<xsl:variable name="accordion_id" select="tbody/tr[1]/td[2]/node()" />				
-        <div class="bootstrap-iso">
-			<div class="panel-group" id="{$accordion_id}" role="tablist" aria-multiselectable="true">
-				<xsl:for-each select="tbody/tr">										
-					<xsl:if test="position() != 1">
-						<xsl:variable name="heading_id" select="concat('heading', position())"/>
-						<xsl:variable name="collapse_id" select="concat($accordion_id, concat('collapse', position()))"/>						
-						<div class="panel panel-default">
-							<div class="panel-heading" role="tab" id="{$heading_id}">
-								<h4 class="panel-title">
-									<a role="button" data-toggle="collapse" data-parent="#{$accordion_id}" href="#{$collapse_id}" aria-expanded="true" aria-controls="{$heading_id}">
-									<xsl:copy-of select="td[1]/node()" />
-									</a>
-								</h4>
-							</div>
-							<div id="{$collapse_id}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{$heading_id}">
-								<div class="panel-body">
-								<xsl:copy-of select="td[2]/node()" />
-								</div>						
-						</div>
-						</div>			
-					</xsl:if>
-				</xsl:for-each>
-			</div>
-		</div>
-	</xsl:template>
+	<!-- Both legacy accordion formats are handled in snippets.xsl. -->
   
 	
 </xsl:stylesheet>

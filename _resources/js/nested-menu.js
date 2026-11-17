@@ -41,7 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
       while (ancestor && sidenav.contains(ancestor)) { ancestor.classList.add('active'); ancestor = ancestor.parentElement.closest('li'); }
     });
     // Leave every list readable if Bootstrap is unavailable.
-    if (!window.bootstrap?.Collapse) return;
+    if (!window.bootstrap?.Collapse) {
+      sidenav.querySelectorAll('li ul').forEach(list => list.classList.add('show'));
+      sidenav.classList.add('is-ready');
+      return;
+    }
     sidenav.querySelectorAll('li').forEach(li => {
       const list = li.querySelector(':scope > ul');
       const link = li.querySelector(':scope > a');

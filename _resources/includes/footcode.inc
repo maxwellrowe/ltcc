@@ -10,12 +10,13 @@
 <!-- Motion must load before the LTCC animation presets. -->
 <script src="https://cdn.jsdelivr.net/npm/motion@14.0.0/dist/motion.js"></script>
 <script src="/_resources/js/ltcc-animations.js"></script>
+<script src="/_resources/js/ltcc-components.js"></script>
 
 <!-- Legacy site behavior and CMS editing -->
 <script src="/_resources/js/legacy-site.min.js"></script>
 <!-- direct edit -->
 <script src="https://www.ltcc.edu/_resources/js/direct-edit.js"></script>
-<script src="/_resources/js/nested-menu.js?v=2.0"></script>
+<script src="/_resources/js/nested-menu.js?v=2.3"></script>
 <script>
 // Dismissible Alert Script
 document.addEventListener('DOMContentLoaded', () => {

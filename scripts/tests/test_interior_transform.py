@@ -12,7 +12,7 @@ STUB = '''<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Tr
 <xsl:function name="ou:pcf-param"><xsl:param name="name"/><xsl:sequence select="string($input/parameter[@name=$name])"/></xsl:function>
 <xsl:function name="ou:include-file"><xsl:param name="path"/><ul><li><a href="/example/">Section</a></li></ul></xsl:function>
 <xsl:template name="breadcrumb"><xsl:param name="path"/><a href="/">Home</a><xsl:text> &gt; </xsl:text><span>Example</span></xsl:template>
-<xsl:template match="/"><html><body><xsl:attribute name="class"><xsl:call-template name="page-body-class"/></xsl:attribute><header>Header</header><xsl:call-template name="page-after-header"/><main><xsl:for-each select="document"><xsl:call-template name="page-content"/></xsl:for-each></main></body></html></xsl:template>
+<xsl:template match="/"><html><body><xsl:attribute name="class"><xsl:call-template name="page-body-class"/></xsl:attribute><header>Header</header><xsl:call-template name="page-after-header"/><main id="main-content"><xsl:call-template name="page-main-attributes"/><xsl:for-each select="document"><xsl:call-template name="page-content"/></xsl:for-each></main></body></html></xsl:template>
 <xsl:template match="ouc:div"><xsl:apply-templates/></xsl:template>
 <xsl:template match="@*|node()"><xsl:copy><xsl:apply-templates select="@*|node()"/></xsl:copy></xsl:template>
 </xsl:stylesheet>'''
@@ -42,7 +42,14 @@ def run():
                         assert ('page-hero-enabled' in doc.find('body').get('class')) == (media == 'hero')
                         assert (doc.find('.//h1[@class="page-title"]') is not None) == (media != 'hero')
                         assert (doc.find('.//nav[@aria-label="Breadcrumb"]') is not None) == (crumbs != 'false')
-                        if crumbs != 'false': assert len(doc.findall('.//ol/li')) == 2
+                        content = next(el for el in doc.iter('div') if 'interior-content' in el.get('class', '').split())
+                        assert 'pt-5' not in content.get('class').split()
+                        assert ('pt-5' in doc.find('.//main').get('class', '').split()) == (crumbs == 'false' and layout != 'full' and media != 'hero')
+                        if crumbs != 'false':
+                            assert len(doc.findall('.//ol/li')) == 2
+                            wrap = next(el for el in doc.iter('div') if 'interior-content-wrap' in el.get('class', '').split())
+                            assert wrap.find('nav[@aria-label="Breadcrumb"]') is not None
+                            assert list(wrap)[0].tag == 'nav'
                         assert (doc.find('.//*[@id="gallery-marker"]') is not None) == (media == 'slider')
                         if media == 'banner': assert doc.find('.//img').get('class') == 'img-fluid'
                         if layout == 'full': assert 'container-xl' not in output

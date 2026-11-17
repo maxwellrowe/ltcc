@@ -30,7 +30,17 @@ The old Foundation medium breakpoint was 640px; these columns now use the Bootst
 - `ltcc-columns`: author-entered class strings remain unchanged. Existing CMS content may still supply Foundation classes; new content should supply Bootstrap `col-*` classes.
 - `p-to-br`: text conversion helper retained.
 
-Other accordion templates in `_shared/transformations.xsl` are outside this file's scope and remain legacy markup.
+## Unified accordion
+
+Keep the existing `_resources/snippets/accordian.inc` (`ou_accordion`) as the single **Accordion** entry in the Modern Campus snippet picker going forward. No new authoring table or page-content migration is required. The first body row remains the ID setting, followed by heading/content rows.
+
+Existing `ou_accordion_2` (`accordion-2.html`) tables use the same Bootstrap 5 transform and scoped `.ltcc-accordion` style. Keep their content unchanged. Republish after deploying both XSL files and compiled CSS. The duplicate Accordion 2 entry can be retired from the CMS picker while its transformation remains supported. Both existing snippet source files are unchanged.
+
+The older Bootstrap 3 transform in `_shared/transformations.xsl` was removed so its import precedence cannot override the shared renderer. Items start collapsed and allow one open sibling per accordion. Nested snippets are transformed normally. Bootstrap handles buttons, ARIA state and collapse animation; no custom JavaScript is added.
+
+Figma 6079:6007 styling: 1.25rem semibold title, 1rem vertical padding, 1.5px gray-400 dividers, transparent background, and rotating Font Awesome Sharp Regular chevron. Keyboard focus remains visible. Optional step numbering is not exposed in this initial snippet.
+
+Accordion-specific validation: `scripts/tests/test_accordion_transform.py` uses SaxonC with the CMS text helper stubbed, covering both existing formats and nested tables, duplicate and invalid IDs, and control relationships. Browser preview: `/_dev/bootstrap-theme/accordion.html`.
 
 ## Validation
 

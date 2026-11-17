@@ -1,6 +1,14 @@
 <?php /* Loaded in the head by common.xsl and CMS preview templates. Provides fonts, theme CSS, and shared head scripts. */ ?>
 <ouc:editor wysiwyg="no"/>
 
+<!-- Prevent a flash of unfinished section navigation; fail open if initialization fails. -->
+<script>
+document.documentElement.classList.add('sidenav-pending');
+window.setTimeout(function () {
+  document.documentElement.classList.remove('sidenav-pending');
+}, 4000);
+</script>
+
 <!-- Site identity -->
 <link rel="shortcut icon" href="/_resources/img/favicon_50.png" />
 

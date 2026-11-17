@@ -60,10 +60,21 @@ $blues: map-merge($blues, ("blue-950": $blue-950));
 
 // Site-specific CSS rules go after Bootstrap.
 @import "theme/base";
+@import "theme/editorial";
 @import "theme/layout";
 @import "theme/components";
+@import "theme/accordion";
+@import "theme/contact";
+@import "theme/alert";
+@import "theme/media-controls";
+@import "theme/hero";
 @import "theme/nested-menu";
 @import "theme/interior";
 @import "theme/utilities";
 @import "theme/animations";
 @import "theme/legacy-buttons";
+
+@import "theme/search";
+
+@import "theme/legacy-components";
+@import "theme/profiles";

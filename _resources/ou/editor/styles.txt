@@ -1,6 +1,3 @@
-.span-style	Span Style
-.block-style	Block Style	block
-.alt-title	Alternate Title Style	block
 .lead	Text: Lead paragraph	block
 .fs-1	Text: Font size 1
 .fs-2	Text: Font size 2
@@ -77,26 +74,8 @@
 .btn btn-outline-primary	Button: Outline Primary
 .btn btn-secondary	Button: Secondary
 .btn btn-outline-secondary	Button: Outline Secondary
-.btn btn-success	Button: Success
-.btn btn-outline-success	Button: Outline Success
-.btn btn-danger	Button: Danger
-.btn btn-outline-danger	Button: Outline Danger
-.btn btn-warning	Button: Warning
-.btn btn-outline-warning	Button: Outline Warning
-.btn btn-info	Button: Info
-.btn btn-outline-info	Button: Outline Info
 .btn btn-light	Button: Light
-.btn btn-outline-light	Button: Outline Light
-.btn btn-dark	Button: Dark
-.btn btn-outline-dark	Button: Outline Dark
-.btn-sm	Button modifier: Small
-.btn-lg	Button modifier: Large
 .btn btn-link	Button: Link
-.btn btn-primary btn-circle	Button: Circle Primary
-.btn btn-secondary btn-circle	Button: Circle Secondary
-.btn btn-light btn-circle	Button: Circle Light
-.btn btn-dark btn-circle	Button: Circle Dark
-.btn-circle	Button modifier: Circle (short text or icon)
 .img-fluid	Image: Responsive
 .img-fluid img-thumbnail	Image: Thumbnail
 .img-fluid rounded	Image: Rounded

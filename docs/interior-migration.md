@@ -78,3 +78,130 @@ Check one page in each layout, both breadcrumb settings, each media mode, and bo
 - Migration tests checked existing selections, new-template defaults, content preservation across the 118 current PCFs, and idempotence.
 
 Re-run migration tests with `python3 -m unittest discover -s scripts/tests -p test_interior_migration.py`. The transform check is `python3 scripts/tests/test_interior_transform.py` in a Python environment with `saxonche` installed (validation used SaxonC 12.5).
+
+## Copy-and-paste find/replace for existing source
+
+These are **literal text replacements, not regular expressions**, based on the Search PCF supplied. Restrict the batch to unmigrated `.pcf` files using `/_resources/xsl/interior.xsl`; exclude archives, other templates and already-migrated pages. Preview matches first. Steps that insert options/regions must run only once per file. If an opening tag differs, review that file separately rather than replacing its whole properties block.
+
+The existing `selected="true"` values are deliberately preserved. In the supplied Search page, `two` and `slider` remain selected. The default of `one` applies to newly created pages, not migrated pages.
+
+### 1. Add Show Breadcrumbs
+
+Find:
+
+```xml
+<ouc:properties label="config">
+```
+
+Replace with:
+
+```xml
+<ouc:properties label="config">
+    <parameter name="show-breadcrumbs" type="select" group="Everyone" prompt="Show Breadcrumbs" alt="Show or hide the breadcrumb trail.">
+        <option value="true" selected="true">Show</option>
+        <option value="false" selected="false">Hide</option>
+    </parameter>
+```
+
+Do this only if `name="show-breadcrumbs"` is absent. Existing heading, breadcrumb text and all other properties stay where they are.
+
+### 2. Add the Hero media option and update the property description
+
+Find:
+
+```xml
+<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Banner / Slider" alt="Choose between banner or slider for the top of the page media. Turn it off to hide the banner or use the snippet version.">
+```
+
+Replace with:
+
+```xml
+<parameter section="Top of Page Media" name="top-media" type="select" group="Everyone" prompt="Top of Page Media" alt="Hero creates a full-width editable region and replaces the page heading. Banner and Slider stay within the content area.">
+    <option value="hero" selected="false">Hero</option>
+```
+
+This replaces only the opening tag. Leave the existing Slider, Banner and Off options, their selections, and the closing `</parameter>` intact. The Hero option appears first in the dropdown; it is not automatically selected.
+
+### 3. Add the new layout options
+
+Find:
+
+```xml
+<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Switch between two or three column layout.">
+```
+
+Replace with:
+
+```xml
+<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Choose a reading-width column, content with section navigation, content with navigation and additional content, or full browser width.">
+    <option value="one" selected="false">1 Column</option>
+    <option value="full" selected="false">Full Width</option>
+```
+
+Leave the two existing option lines and closing tag intact. Then make these two literal replacements within the layout options:
+
+| Find | Replace |
+| --- | --- |
+| `>Two Column</option>` | `>2 Columns Nav</option>` |
+| `>Three Column</option>` | `>2 Columns with Additional Content</option>` |
+
+This works for both existing two-column and three-column selections without changing their `selected` attributes. The resulting order is 1 Column, Full Width, 2 Columns Nav, 2 Columns with Additional Content. You can move the Full Width line to the bottom for the same order as the new-page template; that is cosmetic and does not affect behavior.
+
+For the supplied Search example, the final block is:
+
+```xml
+<parameter section="Page Layout" name="layout" type="select" group="Everyone" prompt="Number of Columns" alt="Choose a reading-width column, content with section navigation, content with navigation and additional content, or full browser width.">
+    <option value="one" selected="false">1 Column</option>
+    <option value="two" selected="true">2 Columns Nav</option>
+    <option value="three" selected="false">2 Columns with Additional Content</option>
+    <option value="full" selected="false">Full Width</option>
+</parameter>
+```
+
+Use this complete block only for a page that currently selects `two`; do not apply it as a universal replacement to three-column pages.
+
+### 4. Add the Hero editable region
+
+Find:
+
+```xml
+<ouc:div label="main-content" group="Everyone" button-text="Main Content">
+```
+
+Replace with:
+
+```xml
+<ouc:div label="hero-content" group="Everyone" button-text="Hero Content">
+    <ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="hero-content"/>
+</ouc:div>
+
+<ouc:div label="main-content" group="Everyone" button-text="Main Content">
+```
+
+Do this only if `label="hero-content"` is absent. This inserts a sibling region before the main region; it does not replace the main region’s editor or content. In the supplied page, `<div>{{a:463418}}</div>` remains unchanged. The empty Hero region becomes editable when Hero is selected in page properties.
+
+### 5. Rename the Additional Content edit button
+
+Find:
+
+```xml
+<ouc:div label="right-content" group="Everyone" button-text="Right Column Content">
+```
+
+Replace with:
+
+```xml
+<ouc:div label="right-content" group="Everyone" button-text="Additional Content">
+```
+
+Keep `label="right-content"`, its editor settings and everything inside the region unchanged.
+
+### 6. Check and publish
+
+- Confirm exactly one selected option in each of `layout`, `top-media`, and `show-breadcrumbs`.
+- Confirm only one `hero-content` region and one `show-breadcrumbs` parameter.
+- Compare the original and changed source: main content, assets, metadata, gallery, scripts and additional content must be unchanged.
+- Deploy the supporting XSL/CSS/JS listed above, preview representative pages in Modern Campus, then republish affected pages.
+- No `_nav.inc` source replacements are needed for these changes.
+
+For differently formatted property tags or mixed migrated/unmigrated batches, use the dry-run helper above instead of widening these literal searches.

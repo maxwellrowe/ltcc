@@ -167,49 +167,29 @@ Last Updated: 1/2016
 	</xsl:template>
 
 	<!-- 8. Faculty List -->
-	<xsl:template match="table[@class='ou-faculty-list']">
-		<xsl:param name="heading-top" select="ou:textual-content(tbody/tr[1]/td[1])"/>
-		<xsl:param name="heading-bottom" select="ou:textual-content(tbody/tr[2]/td[1])"/>
-		<xsl:param name="valid-tr" select="tbody/tr[position() gt 3][td[1]/descendant::img and ou:textual-content(td[2]) != '']"/>
-		
-		<xsl:if test="$valid-tr">
-            <div class="row">
-				<div class="col-12">
-					<div class="faculty-contact-title">
-						<xsl:if test="normalize-space($heading-top)">
-							<div class="top-line"><xsl:value-of select="$heading-top"/></div>
-						</xsl:if>
-						<xsl:if test="normalize-space($heading-bottom)">
-							<div class="bottom-line"><xsl:value-of select="$heading-bottom"/></div>
-						</xsl:if>
-					</div>
-					<ul class="faculty-contact">
-						<xsl:for-each select="$valid-tr">
-							<xsl:variable name="img" select="td[1]/descendant::img[1]"/>
-							<xsl:variable name="name" select="ou:textual-content(td[2])"/>
-							<xsl:variable name="title" select="ou:textual-content(td[3])"/>
-							<xsl:variable name="email" select="ou:textual-content(td[4])"/>
-							<xsl:variable name="website-a" select="td[5]/descendant::a[1]"/>
-							
-							<li class="faculty">
-								<xsl:apply-templates select="$img"/>
-								<div class="name"><xsl:value-of select="$name"/></div>
-								<xsl:if test="$title != ''">
-									<div class="title"><xsl:value-of select="$title"/></div>
-								</xsl:if>
-								<xsl:if test="$email != ''">
-									<a href="mailto:{$email}" class="email"><span class="fa fa-envelope"/><span class="visually-hidden">email</span></a>
-								</xsl:if>
-								<xsl:if test="$website-a">
-									<a href="{$website-a/@href}" class="website"><span class="fa fa-info"/><span class="visually-hidden">website</span></a>
-								</xsl:if>
-							</li>
-						</xsl:for-each>
-					</ul>
-				</div>
-			</div>
-		</xsl:if>
-	</xsl:template>
+    <xsl:template match="table[tokenize(normalize-space(@class), '\s+') = 'ou-faculty-list']">
+        <!-- Preserve all five authoring columns; the photo column is no longer used. -->
+        <xsl:variable name="heading-top" select="normalize-space(translate(string(tbody/tr[1]/td[1]), '&#160;', ' '))"/>
+        <xsl:variable name="heading-bottom" select="normalize-space(translate(string(tbody/tr[2]/td[1]), '&#160;', ' '))"/>
+        <xsl:variable name="contacts" select="tbody/tr[position() gt 3][normalize-space(translate(string(td[2]), '&#160;', ' ')) != '']"/>
+        <xsl:variable name="items">
+                    <xsl:for-each select="$contacts">
+                        <li>
+                            <xsl:call-template name="ltcc-contact">
+                                <xsl:with-param name="name" select="td[2]"/>
+                                <xsl:with-param name="title" select="td[3]"/>
+                                <xsl:with-param name="email" select="if (td[4]//a[starts-with(lower-case(@href), 'mailto:')]) then td[4]//a[starts-with(lower-case(@href), 'mailto:')][1]/@href else td[4]"/>
+                                <xsl:with-param name="website" select="if (td[5]//a) then (td[5]//a)[1]/@href else td[5]"/>
+                            </xsl:call-template>
+                        </li>
+                    </xsl:for-each>
+        </xsl:variable>
+        <xsl:call-template name="ltcc-contact-section">
+            <xsl:with-param name="heading-top" select="$heading-top"/>
+            <xsl:with-param name="heading-bottom" select="$heading-bottom"/>
+            <xsl:with-param name="items" select="$items/li"/>
+        </xsl:call-template>
+    </xsl:template>
 	
 
 	<!-- 9. Form Block -->
@@ -226,11 +206,11 @@ Last Updated: 1/2016
 	
 
 	<!-- 10. Accordion -->
-    <xsl:template match="table[@class='ou_accordion_2']">
+    <xsl:template match="table[tokenize(normalize-space(@class), '\s+') = ('ou_accordion', 'ou_accordion_2')]">
         <!-- Keep a valid author-supplied ID; use a unique fallback for blank/invalid IDs. -->
         <xsl:variable name="requested-id" select="normalize-space(string(tbody/tr[1]/td[2]))"/>
-        <xsl:variable name="accordion_id" select="if (matches($requested-id, '^[A-Za-z_][A-Za-z0-9_-]*$') and not(preceding::table[@class='ou_accordion_2'][normalize-space(string(tbody/tr[1]/td[2])) = $requested-id])) then $requested-id else concat('accordion-', generate-id())"/>
-        <div class="accordion" id="{$accordion_id}">
+        <xsl:variable name="accordion_id" select="if (matches($requested-id, '^[A-Za-z_][A-Za-z0-9_-]*$') and not((preceding::table | ancestor::table)[tokenize(normalize-space(@class), '\s+') = ('ou_accordion', 'ou_accordion_2')][normalize-space(string(tbody/tr[1]/td[2])) = $requested-id])) then $requested-id else concat('accordion-', generate-id())"/>
+        <div class="accordion ltcc-accordion" id="{$accordion_id}">
             <xsl:for-each select="tbody/tr[position() gt 1]">
                 <xsl:variable name="heading_id" select="concat($accordion_id, '-heading-', generate-id())"/>
                 <xsl:variable name="collapse_id" select="concat($accordion_id, '-collapse-', generate-id())"/>
@@ -421,6 +401,19 @@ Last Updated: 1/2016
 					<xsl:apply-templates select="td[@class='content']/node()"/>
 				</div>
 			</xsl:for-each>
+		</div>
+	</xsl:template>
+
+	<!-- 22. LTCC Card: open content with Bootstrap padding and radius utilities. -->
+	<xsl:template match="table[@data-snippet='ltcc-card']">
+		<xsl:variable name="padding" select="normalize-space(translate(string(thead/tr/th[@class='padding']), '&#160;', ' '))"/>
+		<xsl:variable name="rounded" select="normalize-space(translate(string(thead/tr/th[@class='rounded']), '&#160;', ' '))"/>
+		<xsl:variable name="custom-class" select="normalize-space(translate(string(thead/tr/th[@class='custom-class']), '&#160;', ' '))"/>
+		<!-- Blank or invalid settings use the authoring defaults. -->
+		<div class="{string-join(('card', concat('p-', if ($padding = ('1', '2', '3', '4', '5')) then $padding else '3'), concat('rounded-', if ($rounded = ('1', '2', '3', '4', '5')) then $rounded else '3'), $custom-class[. != '']), ' ')}">
+			<!-- Bootstrap border utilities can override this default border width. -->
+			<xsl:attribute name="style">--bs-card-border-width: 0;</xsl:attribute>
+			<xsl:apply-templates select="tbody/tr/td[@class='content']/node()"/>
 		</div>
 	</xsl:template>
 

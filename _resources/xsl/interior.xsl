@@ -36,37 +36,52 @@ Last Updated: 1/2016
         </xsl:if>
     </xsl:template>
 
+    <xsl:template name="page-main-attributes">
+        <xsl:if test="ou:pcf-param('show-breadcrumbs') = 'false' and $interior-layout != 'full' and not($interior-has-hero)">
+            <xsl:attribute name="class">pt-5</xsl:attribute>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template name="page-content">
+        <xsl:variable name="page-breadcrumbs">
+            <xsl:if test="not(ou:pcf-param('show-breadcrumbs') = 'false')">
+                <nav class="interior-breadcrumbs" aria-label="Breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <xsl:variable name="crumbs"><xsl:call-template name="breadcrumb"><xsl:with-param name="path" select="$ou:dirname"/></xsl:call-template></xsl:variable>
+                        <!-- Reuse the existing recursive trail without changing other templates. -->
+                        <xsl:for-each select="$crumbs/*[self::a or self::span]">
+                            <li class="breadcrumb-item">
+                                <xsl:choose>
+                                    <xsl:when test="self::span"><xsl:attribute name="class">breadcrumb-item active</xsl:attribute><xsl:attribute name="aria-current">page</xsl:attribute><xsl:value-of select="."/></xsl:when>
+                                    <xsl:otherwise><xsl:copy-of select="."/></xsl:otherwise>
+                                </xsl:choose>
+                            </li>
+                        </xsl:for-each>
+                    </ol>
+                </nav>
+            </xsl:if>
+        </xsl:variable>
+        <xsl:variable name="hero-component" select="(ouc:div[@label='hero-content']//ouc:component[@name='component-hero'])[1]"/>
         <xsl:if test="$interior-has-hero">
             <div class="page-hero">
-                <xsl:apply-templates select="ouc:div[@label='hero-content']"/>
+                <xsl:apply-templates select="ouc:div[@label='hero-content']">
+                    <xsl:with-param name="hero-breadcrumbs" select="$page-breadcrumbs/node()" tunnel="yes"/>
+                    <xsl:with-param name="hero-breadcrumb-target" select="generate-id($hero-component)" tunnel="yes"/>
+                </xsl:apply-templates>
                 <xsl:if test="not(ouc:div[@label='hero-content']) and $ou:action != 'pub'">
                     <p class="alert alert-info m-0">Add the hero-content editable region to this PCF to edit its hero. See the interior migration guide.</p>
                 </xsl:if>
             </div>
         </xsl:if>
         <div class="interior-content-wrap">
-            <xsl:if test="$interior-layout != 'full'"><xsl:attribute name="class">interior-content-wrap container-xl</xsl:attribute></xsl:if>
+            <xsl:if test="$interior-layout != 'full'"><xsl:attribute name="class" select="concat('interior-content-wrap container-xl', if ($interior-has-hero) then ' pt-5' else '')"/></xsl:if>
+            <xsl:if test="not($interior-has-hero and $hero-component)">
+                <xsl:copy-of select="$page-breadcrumbs"/>
+            </xsl:if>
             <div>
                 <xsl:attribute name="class" select="if ($interior-has-sidebar) then 'row gy-4 flex-column-reverse flex-lg-row' else ''"/>
                 <div>
-                    <xsl:attribute name="class" select="concat('main-content interior-content', if ($interior-has-sidebar) then ' col-12 col-lg-9' else if ($interior-layout = 'one') then ' interior-reading-width mx-auto' else '')"/>
-                    <xsl:if test="not(ou:pcf-param('show-breadcrumbs') = 'false')">
-                        <nav class="interior-breadcrumbs" aria-label="Breadcrumb">
-                            <ol class="breadcrumb mb-0">
-                                <xsl:variable name="crumbs"><xsl:call-template name="breadcrumb"><xsl:with-param name="path" select="$ou:dirname"/></xsl:call-template></xsl:variable>
-                                <!-- Reuse the existing recursive trail without changing other templates. -->
-                                <xsl:for-each select="$crumbs/*[self::a or self::span]">
-                                    <li class="breadcrumb-item">
-                                        <xsl:choose>
-                                            <xsl:when test="self::span"><xsl:attribute name="class">breadcrumb-item active</xsl:attribute><xsl:attribute name="aria-current">page</xsl:attribute><xsl:value-of select="."/></xsl:when>
-                                            <xsl:otherwise><xsl:copy-of select="."/></xsl:otherwise>
-                                        </xsl:choose>
-                                    </li>
-                                </xsl:for-each>
-                            </ol>
-                        </nav>
-                    </xsl:if>
+                    <xsl:attribute name="class" select="concat('main-content interior-content', if ($interior-has-sidebar) then ' col-12 col-lg-9 pb-5' else if ($interior-layout = 'one') then ' interior-reading-width mx-auto' else '')"/>
                     <xsl:if test="not($interior-has-hero) and normalize-space(ou:pcf-param('heading'))">
                         <h1 class="page-title"><xsl:value-of select="ou:pcf-param('heading')"/></h1>
                     </xsl:if>
@@ -103,7 +118,7 @@ Last Updated: 1/2016
                     <xsl:apply-templates select="ouc:div[@label='main-content']"/>
                 </div>
                 <xsl:if test="$interior-has-sidebar">
-                    <div class="col-12 col-lg-3" data-sidebar-desktop-slot="">
+                    <div class="col-12 col-lg-3 pb-lg-5" data-sidebar-desktop-slot="">
                         <xsl:call-template name="side-navigation"/>
                     </div>
                 </xsl:if>
