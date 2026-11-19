@@ -25,9 +25,12 @@ Last Updated: 1/2016
     <xsl:variable name="interior-has-sidebar" select="$interior-layout = ('two', 'three')"/>
     <xsl:variable name="interior-has-hero" select="ou:pcf-param('top-media') = 'hero'"/>
 
+    <xsl:variable name="interior-has-banner" select="ou:pcf-param('top-media') = 'banner' and normalize-space(ou:pcf-param('banner')) != ''"/>
+    <xsl:variable name="interior-has-top-media" select="$interior-has-hero or $interior-has-banner"/>
+
     <xsl:template name="template-headcode"/>
     <xsl:template name="page-body-class">
-        <xsl:value-of select="concat('interior-page interior-layout-', $interior-layout, if ($interior-has-hero) then ' page-hero-enabled' else '')"/>
+        <xsl:value-of select="concat('interior-page interior-layout-', $interior-layout, if ($interior-has-top-media) then ' page-hero-enabled' else '')"/>
     </xsl:template>
     <xsl:template name="page-after-header">
         <xsl:if test="$interior-has-sidebar">
@@ -37,7 +40,7 @@ Last Updated: 1/2016
     </xsl:template>
 
     <xsl:template name="page-main-attributes">
-        <xsl:if test="ou:pcf-param('show-breadcrumbs') = 'false' and $interior-layout != 'full' and not($interior-has-hero)">
+        <xsl:if test="ou:pcf-param('show-breadcrumbs') = 'false' and $interior-layout != 'full' and not($interior-has-top-media)">
             <xsl:attribute name="class">pt-5</xsl:attribute>
         </xsl:if>
     </xsl:template>
@@ -73,22 +76,41 @@ Last Updated: 1/2016
                 </xsl:if>
             </div>
         </xsl:if>
+        <xsl:if test="$interior-has-banner">
+            <!-- Feed the existing hero renderer one image and the page heading. -->
+            <xsl:variable name="banner-hero">
+                <ouc:component name="component-hero">
+                    <ul>
+                        <li class="title"><xsl:value-of select="ou:pcf-param('heading')"/></li>
+                        <li class="show-ctas">false</li>
+                        <li class="images"><ul>
+                            <li class="image"><xsl:value-of select="ou:pcf-param('banner')"/></li>
+                            <li class="alt"><xsl:value-of select="ou:pcf-param('banner-alt')"/></li>
+                        </ul></li>
+                    </ul>
+                </ouc:component>
+            </xsl:variable>
+            <div class="page-hero">
+                <xsl:apply-templates select="$banner-hero/ouc:component">
+                    <xsl:with-param name="hero-is-banner" select="true()" tunnel="yes"/>
+                    <xsl:with-param name="hero-breadcrumbs" select="$page-breadcrumbs/node()" tunnel="yes"/>
+                    <xsl:with-param name="hero-breadcrumb-target" select="generate-id($banner-hero/ouc:component)" tunnel="yes"/>
+                </xsl:apply-templates>
+            </div>
+        </xsl:if>
         <div class="interior-content-wrap">
-            <xsl:if test="$interior-layout != 'full'"><xsl:attribute name="class" select="concat('interior-content-wrap container-xl', if ($interior-has-hero) then ' pt-5' else '')"/></xsl:if>
-            <xsl:if test="not($interior-has-hero and $hero-component)">
+            <xsl:if test="$interior-layout != 'full'"><xsl:attribute name="class" select="concat('interior-content-wrap container-xl', if ($interior-has-top-media) then ' pt-5' else '')"/></xsl:if>
+            <xsl:if test="not($interior-has-banner or ($interior-has-hero and $hero-component))">
                 <xsl:copy-of select="$page-breadcrumbs"/>
             </xsl:if>
             <div>
                 <xsl:attribute name="class" select="if ($interior-has-sidebar) then 'row gy-4 flex-column-reverse flex-lg-row' else ''"/>
                 <div>
                     <xsl:attribute name="class" select="concat('main-content interior-content', if ($interior-has-sidebar) then ' col-12 col-lg-9 pb-5' else if ($interior-layout = 'one') then ' interior-reading-width mx-auto' else '')"/>
-                    <xsl:if test="not($interior-has-hero) and normalize-space(ou:pcf-param('heading'))">
+                    <xsl:if test="not($interior-has-top-media) and normalize-space(ou:pcf-param('heading'))">
                         <h1 class="page-title"><xsl:value-of select="ou:pcf-param('heading')"/></h1>
                     </xsl:if>
                     <xsl:choose>
-                        <xsl:when test="ou:pcf-param('top-media') = 'banner' and normalize-space(ou:pcf-param('banner')) != ''">
-                            <p><img class="img-fluid" src="{ou:pcf-param('banner')}" alt="{ou:pcf-param('banner-alt')}"/></p>
-                        </xsl:when>
                         <xsl:when test="ou:pcf-param('top-media') = 'slider'"><xsl:apply-templates select="ouc:div[@label='gallery']"/></xsl:when>
                     </xsl:choose>
 <xsl:if test="ou:pcf-param('pageType') = 'InTheNews'">

@@ -105,18 +105,9 @@ class WNL {
 			// if the number of items is "All", display the total number of items
 			if ($numItems == "All") { $numItems = $totalItems; }
 			
-			// if our page is past the upper range, set it to a valid value
-			if ($page > $totalItems / $numItems)
-			{
-				if ($totalItems == $numItems)
-				{
-					$page = 1;
-				}
-				else
-				{
-					$page = floor($totalItems / $numItems) + 1;
-				}
-			}
+			// Clamp to an actual page, including exact multiples and empty feeds.
+			$numItems = max(1, intval($numItems));
+			$page = max(1, min(intval($page), max(1, (int) ceil($totalItems / $numItems))));
 			
             // get the start number
             $start = $page * $numItems - $numItems;
@@ -247,7 +238,7 @@ class WNL {
 		try
         {
         	// set global pagination variables
-			$dividerContent = '<li><a href="#">&hellip;</a></li>'; // divider html that appears when there are more pages than the page gaps
+			$dividerContent = '<li class="page-item disabled"><span class="page-link">&hellip;</span></li>'; // divider html that appears when there are more pages than the page gaps
 			$pageGapStart = 1; // the number of pages to display after the first page
 			$pageGapEnd = 1; // the number of pages to display before the last page
 			$pageGapMidBefore = 5; // the number of pages to display before the current page
@@ -273,23 +264,14 @@ class WNL {
 			}
 			$totalItems = count($rssItems);
 			
-			// if our page is past the upper range, set it to a valid value
-			if ($page > $totalItems / $numItems)
-			{
-				if ($totalItems == $numItems)
-				{
-					$page = 1;
-				}
-				else
-				{
-					$page = floor($totalItems / $numItems) + 1;
-				}
-			}
+			// Clamp to an actual page, including exact multiples and empty feeds.
+			$numItems = max(1, intval($numItems));
+			$page = max(1, min(intval($page), max(1, (int) ceil($totalItems / $numItems))));
 			
 			// display the "Previous" link if needed
 			if ($page > 1)
 			{
-				echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . ($page-1) . '">Previous</a></li>';
+				echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . ($page-1) . '">Previous</a></li>';
 			}
 			
 			// get the start number
@@ -316,7 +298,7 @@ class WNL {
 					// if the page we're looking at is the same as the page number we're looping through, make the current link active
 					if ($pageNum == $page)
 					{
-						echo '<li><a href="#" class="current">' . $pageNum . '</a></li>';
+						echo '<li class="page-item active" aria-current="page"><span class="page-link">' . $pageNum . '</span></li>';
 						$pageLinkDisplayed = true;
 						
 						$curPage = $pageNum;
@@ -324,19 +306,19 @@ class WNL {
 					// if we're on one of the first pages, display the link
 					else if ($pageNum <= (1 + $pageGapStart))
 					{
-						echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
+						echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
 						$pageLinkDisplayed = true;
 					}
 					// if we're within the page gap before the current page, display the link
 					else if ($page-$pageNum > 0 && $page-$pageNum <= $pageGapMidBefore)
 					{
-						echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
+						echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
 						$pageLinkDisplayed = true;
 					}
 					// if we're within the page gap after the current page, display the link
 					else if ($pageNum-$page > 0 && $pageNum-$page <= $pageGapMidAfter)
 					{
-						echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
+						echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
 						$pageLinkDisplayed = true;
 					}
 					// display divider before current page if needed
@@ -348,7 +330,7 @@ class WNL {
 					// if we're on the first page, display the link
 					else if ($pageNum == 1)
 					{
-						echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
+						echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
 						$pageLinkDisplayed = true;
 					}
 					
@@ -360,7 +342,7 @@ class WNL {
 			// display the first page if none were displayed
 			if (!$pageLinkDisplayed)
 			{
-				echo '<li><a href="#" class="current">1</a></li>';
+				echo '<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>';
 			}
 			
 			$lastPageNum = ceil($dispItemTotal / $numItems);
@@ -375,14 +357,14 @@ class WNL {
 				if ($i > 1 && $i > $curPage+$pageGapMidAfter)
 				{
 					$pageNum = $i;
-					echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
+					echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . $pageNum . '">' . $pageNum . '</a></li>';
 				}
 			}
 			
 			// display the "Next" link if needed
 			if ($curPage < ($dispItemTotal / $numItems))
 			{
-				echo '<li><a href="' . strtok($_SERVER["REQUEST_URI"],'?') . '?cat=' . $cat . '&amp;page=' . ($page+1) . '">Next</a></li>';
+				echo '<li class="page-item"><a class="page-link" href="' . htmlspecialchars(strtok($_SERVER["REQUEST_URI"], '?'), ENT_QUOTES, 'UTF-8') . '?cat=' . rawurlencode($cat) . '&amp;page=' . ($page+1) . '">Next</a></li>';
 			}
         }
         catch(Exception $e)

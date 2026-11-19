@@ -1,0 +1,38 @@
+// Reusable background-media hero; does not require the homepage prototype CSS.
+.home-hero {
+  background: $blue-950;
+  isolation: isolate;
+  [hidden] { display: none !important; }
+  .hero-media, .hero-video { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; }
+  .hero-media img, .hero-video { width: 100%; height: 100%; object-fit: cover; }
+  .hero-media:not(.swiper-initialized) .swiper-slide { flex: 0 0 100%; }
+  .hero-shade { position: absolute; inset: 0; background: linear-gradient(transparent 35%, $blue-950); z-index: -1; }
+  .hero-content { min-height: 38rem; display: flex; align-items: end; padding-block: 3rem 2rem; }
+  .hero-content > .row { width: 100%; }
+  &__title { font-size: clamp(2.5rem, 4.2vw, 3.75rem); line-height: 1.1; }
+  &__subtitle { font-size: 1.5rem; }
+  > .media-playback-toggle { position: absolute; right: max(1.25rem, calc((100% - 1280px) / 2)); top: 2rem; }
+  .hero-alert { position: absolute; right: max(1.25rem, calc((100% - 1280px) / 2)); bottom: 3rem; width: 17.5rem; background: $blue-800; z-index: 5; }
+  .hero-alert-toggle {
+    position: absolute; right: -.65rem; bottom: -.65rem; color: $white; background: $green-700; width: 2rem; height: 2rem; padding: .25rem;
+    &:hover, &:focus-visible { color: $white; background: $green-800; }
+    span { @include transition(transform .25s ease); }
+    &[aria-expanded="true"] span { transform: rotate(45deg); }
+  }
+  @include media-breakpoint-down(lg) {
+    .hero-content { min-height: 24.375rem; padding-top: 13rem; padding-bottom: 1.25rem; }
+    &__subtitle { font-size: 1.125rem; }
+    .hero-alert { position: fixed; bottom: max(1.5rem, env(safe-area-inset-bottom)); right: 2rem; width: 12.5rem; z-index: 1025; }
+    .hero-alert:has(.show), .hero-alert:has(.collapsing) { width: min(20rem, calc(100vw - 3rem)); }
+    .hero-alert .collapse.show { max-height: calc(100dvh - 12rem); overflow-y: auto; overscroll-behavior: contain; }
+    > .media-playback-toggle { top: 1.5rem; }
+  }
+}
+body:has(#primary-navigation.show, #primary-navigation.collapsing, .modal.show) .home-hero .hero-alert { visibility: hidden; }
+
+// Leave room to scroll footer links above the collapsed floating alert.
+@include media-breakpoint-down(lg) {
+  :where(body:has(.home-hero .hero-alert)) .site-footer {
+    padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
+  }
+}

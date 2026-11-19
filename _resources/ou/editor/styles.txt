@@ -18,6 +18,10 @@
 .fw-bold	Text: Bold
 .fst-italic	Text: Italic
 .text-uppercase	Text: Uppercase
+.anim-scroll-fade	Animation: Fade in	block
+.anim-scroll-fade-up	Animation: Fade up	block
+.anim-scroll-fade-down	Animation: Fade down	block
+.anim-scroll-none	Animation: None	block
 .mt-0	Spacing: Margin top 0 (0)	block
 .mt-1	Spacing: Margin top 1 (.25rem)	block
 .mt-2	Spacing: Margin top 2 (.5rem)	block
@@ -76,6 +80,8 @@
 .btn btn-outline-secondary	Button: Outline Secondary
 .btn btn-light	Button: Light
 .btn btn-link	Button: Link
+.badge text-bg-primary	Badge: Primary
+.badge text-bg-secondary	Badge: Secondary
 .img-fluid	Image: Responsive
 .img-fluid img-thumbnail	Image: Thumbnail
 .img-fluid rounded	Image: Rounded

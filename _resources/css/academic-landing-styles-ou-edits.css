@@ -12,14 +12,16 @@
     position: absolute;
     text-transform: uppercase;
     font-weight: bold;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
     font-size: 2.5em;
 	text-align: left;
     margin: 0;
     z-index: 100;
 	text-shadow: 0px 0px 8px rgba(100, 100, 100, 1);
 	line-height: 32px;
+	padding: 1.25rem;
+	background: var(--bs-primary);
 }
 .btn-green {
     color: #ffffff;

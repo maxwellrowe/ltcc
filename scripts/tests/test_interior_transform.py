@@ -20,7 +20,7 @@ STUB = '''<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Tr
 def run():
     with tempfile.TemporaryDirectory() as directory, PySaxonProcessor(license=False) as proc:
         folder = Path(directory)
-        (folder / 'common.xsl').write_text(STUB)
+        (folder / 'common.xsl').write_text(STUB.replace('<xsl:output', '<xsl:import href="' + (ROOT / '_resources/xsl/_shared/components.xsl').as_uri() + '"/><xsl:output'))
         (folder / 'interior.xsl').write_text((ROOT / '_resources/xsl/interior.xsl').read_text())
         executable = proc.new_xslt30_processor().compile_stylesheet(stylesheet_file=str(folder / 'interior.xsl'))
         count = 0
@@ -39,20 +39,33 @@ def run():
                         assert (additional is not None) == (layout == 'three')
                         if additional is not None: assert sidebar.find('.//*[@id="additional-marker"]') is not None
                         assert (doc.find('.//*[@id="hero-marker"]') is not None) == (media == 'hero')
-                        assert ('page-hero-enabled' in doc.find('body').get('class')) == (media == 'hero')
-                        assert (doc.find('.//h1[@class="page-title"]') is not None) == (media != 'hero')
+                        assert ('page-hero-enabled' in doc.find('body').get('class')) == (media in ('hero', 'banner'))
+                        assert (doc.find('.//h1[@class="page-title"]') is not None) == (media not in ('hero', 'banner'))
                         assert (doc.find('.//nav[@aria-label="Breadcrumb"]') is not None) == (crumbs != 'false')
                         content = next(el for el in doc.iter('div') if 'interior-content' in el.get('class', '').split())
                         assert 'pt-5' not in content.get('class').split()
-                        assert ('pt-5' in doc.find('.//main').get('class', '').split()) == (crumbs == 'false' and layout != 'full' and media != 'hero')
+                        assert ('pt-5' in doc.find('.//main').get('class', '').split()) == (crumbs == 'false' and layout != 'full' and media not in ('hero', 'banner'))
                         if crumbs != 'false':
                             assert len(doc.findall('.//ol/li')) == 2
                             wrap = next(el for el in doc.iter('div') if 'interior-content-wrap' in el.get('class', '').split())
-                            assert wrap.find('nav[@aria-label="Breadcrumb"]') is not None
-                            assert list(wrap)[0].tag == 'nav'
+                            assert (wrap.find('nav[@aria-label="Breadcrumb"]') is not None) == (media != 'banner')
                         assert (doc.find('.//*[@id="gallery-marker"]') is not None) == (media == 'slider')
-                        if media == 'banner': assert doc.find('.//img').get('class') == 'img-fluid'
-                        if layout == 'full': assert 'container-xl' not in output
+                        if media == 'banner':
+                            hero = next(el for el in doc.iter('section') if 'ltcc-hero--banner' in el.get('class', '').split())
+                            assert hero is not None
+                            assert hero.find('.//h1').get('class') == 'ltcc-hero__title fw-bold mb-0'
+                            assert hero.find('.//img').get('src') == '/banner.jpg'
+                            assert hero.find('.//img').get('alt') == 'Example banner'
+                            assert len(hero.findall('.//img')) == 1 and not hero.findall('.//button')
+                            assert 'swiper' not in ET.tostring(hero, encoding='unicode')
+                            assert hero.find('.//nav') is not None if crumbs != 'false' else hero.find('.//nav') is None
+                            main = doc.find('.//main')
+                            assert list(main)[0].get('class') == 'page-hero'
+                            if layout in ('two', 'three'):
+                                assert doc.find('body/div[@data-sidebar-mobile-slot]') is not None
+                                assert main.find('div[@data-sidebar-mobile-slot]') is None
+                        wrap = next(el for el in doc.iter('div') if 'interior-content-wrap' in el.get('class', '').split())
+                        if layout == 'full': assert 'container-xl' not in wrap.get('class', '')
                         if layout in ('one', ''): assert 'interior-reading-width' in output
                         assert doc.find('.//*[@id="content-marker"]') is not None
                         count += 1

@@ -13,4 +13,16 @@
   width: 3.125rem;
   height: 3.125rem;
   z-index: 2;
+  &:not([hidden]) { display: inline-flex; }
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+// Keep the legacy hero selector so previously published heroes also benefit.
+.media-controls, .ltcc-hero__controls {
+  background: $green-700;
+  &:not([hidden]) { display: inline-flex; }
+  align-items: center;
+  .media-playback-toggle { width: 2.75rem; height: 2.75rem; }
 }

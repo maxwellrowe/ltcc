@@ -81,7 +81,7 @@ Last Updated: 1/2016
 			<xsl:for-each select="images/image">
 				<xsl:variable name="slide">
 					<xsl:if test="normalize-space(title)">
-						<h2 class="title"><xsl:value-of select="title"/></h2>
+						<span class="title h2"><xsl:value-of select="title"/></span>
 					</xsl:if>
 					<img src="{@url}" alt="{description}"/>
 				</xsl:variable>
@@ -123,7 +123,7 @@ Last Updated: 1/2016
 		<xsl:if test="$img">
 			<div class="static-image mb-4">
 				<xsl:if test="$title">
-					<h2 class="title"><xsl:value-of select="$title"/></h2>
+					<span class="title h2"><xsl:value-of select="$title"/></span>
 				</xsl:if>
 				<img src="{$img/@src}" alt="{$img/@alt}" />
 			</div>

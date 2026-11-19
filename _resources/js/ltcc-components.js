@@ -8,6 +8,88 @@
   let queued = false;
   const select = (root, selector) => [...(root.matches?.(selector) ? [root] : []), ...root.querySelectorAll(selector)];
 
+  const homeHeroAlerts = new WeakSet();
+  function initHomeHeroAlerts(root) {
+    if (!window.bootstrap?.Collapse) return;
+    select(root, '[data-home-hero] .hero-alert').forEach(alert => {
+      if (homeHeroAlerts.has(alert)) return;
+      const panel = alert.querySelector('.collapse');
+      const toggle = alert.querySelector('[data-bs-toggle="collapse"]');
+      if (!panel || !toggle) return;
+      homeHeroAlerts.add(alert);
+      const desktop = matchMedia('(min-width: 992px)');
+      panel.classList.toggle('show', desktop.matches);
+      toggle.setAttribute('aria-expanded', String(desktop.matches));
+      const collapse = window.bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false });
+      const sync = () => desktop.matches ? collapse.show() : collapse.hide();
+      desktop.addEventListener('change', () => {
+        if (panel.classList.contains('collapsing')) {
+          const finish = () => {
+            panel.removeEventListener('shown.bs.collapse', finish);
+            panel.removeEventListener('hidden.bs.collapse', finish);
+            sync();
+          };
+          panel.addEventListener('shown.bs.collapse', finish, { once: true });
+          panel.addEventListener('hidden.bs.collapse', finish, { once: true });
+        } else sync();
+      });
+    });
+  }
+
+  const homeHeroes = new WeakSet();
+  function initHomeHeroes(root) {
+    initHomeHeroAlerts(root);
+    select(root, '[data-home-hero]').forEach(hero => {
+      if (homeHeroes.has(hero)) return;
+      const video = hero.querySelector('.hero-video');
+      const element = hero.querySelector('.hero-media.swiper');
+      const button = hero.querySelector('[data-home-hero-playback]');
+      if (!button || (!video && !element)) { homeHeroes.add(hero); return; }
+      if (element && !window.Swiper) return;
+      homeHeroes.add(hero);
+      let paused = reduced.matches;
+      let visible = true;
+      let swiper;
+      if (video) video.muted = true;
+      else swiper = new window.Swiper(element, {
+        slidesPerView: 1, rewind: true, effect: 'fade',
+        fadeEffect: { crossFade: true }, speed: reduced.matches ? 0 : 650,
+        autoplay: { delay: 7000, disableOnInteraction: false },
+        a11y: { enabled: false }, allowTouchMove: false
+      });
+      const label = () => {
+        button.setAttribute('aria-label', `${paused ? 'Play' : 'Pause'} ${video ? 'background video' : 'background slideshow'}`);
+        button.setAttribute('aria-pressed', String(paused));
+        const icon = button.querySelector('span');
+        icon.classList.toggle('fa-play', paused);
+        icon.classList.toggle('fa-pause', !paused);
+      };
+      const sync = () => {
+        const stop = paused || !visible || document.hidden;
+        if (video) {
+          if (stop) video.pause();
+          else video.play().catch(error => {
+            if (error.name !== 'AbortError') { paused = true; label(); }
+          });
+        } else if (stop) swiper.autoplay.stop();
+        else swiper.autoplay.start();
+        label();
+      };
+      button.hidden = false;
+      button.addEventListener('click', () => { paused = !paused; sync(); });
+      document.addEventListener('visibilitychange', sync);
+      reduced.addEventListener('change', () => {
+        paused = reduced.matches;
+        if (swiper) swiper.params.speed = reduced.matches ? 0 : 650;
+        sync();
+      });
+      if ('IntersectionObserver' in window) new IntersectionObserver(entries => {
+        visible = entries[0].isIntersecting; sync();
+      }, { threshold: .1 }).observe(hero);
+      sync();
+    });
+  }
+
   // Compatibility for existing match-height-* classes, scoped to each row/slider.
   // New markup can use Bootstrap h-100 / flex utilities instead.
   function measureHeights() {
@@ -68,6 +150,105 @@
       document.addEventListener('visibilitychange', sync);
       reduced.addEventListener('change', () => { paused = reduced.matches; swiper.params.speed = reduced.matches ? 0 : 600; sync(); });
       if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); }, { threshold: .1 }).observe(element);
+      sync();
+    });
+  }
+
+  const quoteCarousels = new WeakSet();
+  function initQuoteCarousels(root) {
+    if (typeof Swiper === 'undefined') return;
+    select(root, '[data-quote-carousel]').forEach(element => {
+      if (quoteCarousels.has(element)) return;
+      const container = element.querySelector('.swiper');
+      if (container.querySelectorAll('.swiper-slide').length < 2) return;
+      quoteCarousels.add(element);
+      const pause = element.querySelector('[data-quote-pause]');
+      let paused = reduced.matches, hovering = false, focused = false, visible = false;
+      const swiper = new Swiper(container, {
+        slidesPerView: 1, spaceBetween: 24, rewind: true, autoHeight: true,
+        speed: reduced.matches ? 0 : 650,
+        autoplay: { delay: 8000, disableOnInteraction: false },
+        navigation: { prevEl: element.querySelector('[data-quote-prev]'), nextEl: element.querySelector('[data-quote-next]') },
+        a11y: { enabled: true },
+        on: {
+          init(instance) { access(instance); },
+          slideChange(instance) { access(instance); }
+        }
+      });
+      function access(instance) {
+        instance.slides.forEach((slide, index) => {
+          slide.inert = index !== instance.activeIndex;
+          slide.setAttribute('aria-hidden', String(index !== instance.activeIndex));
+        });
+      }
+      function sync() {
+        const stopped = paused || hovering || focused || !visible || document.hidden;
+        if (stopped) swiper.autoplay.stop(); else swiper.autoplay.start();
+        pause.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+        pause.setAttribute('aria-pressed', String(paused));
+        pause.querySelector('span').className = 'fa-sharp fa-regular ' + (paused ? 'fa-circle-play' : 'fa-circle-pause');
+      }
+      element.querySelector('.ltcc-quote-carousel__controls').hidden = false;
+      pause.addEventListener('click', () => { paused = !paused; sync(); });
+      element.addEventListener('mouseenter', () => { hovering = true; sync(); });
+      element.addEventListener('mouseleave', () => { hovering = false; sync(); });
+      element.addEventListener('focusin', event => { focused = !pause.contains(event.target); sync(); });
+      element.addEventListener('focusout', event => { if (!element.contains(event.relatedTarget)) { focused = false; sync(); } });
+      document.addEventListener('visibilitychange', sync);
+      reduced.addEventListener('change', () => { paused = reduced.matches; swiper.params.speed = reduced.matches ? 0 : 650; sync(); });
+      element.querySelectorAll('img').forEach(img => img.addEventListener('load', () => swiper.updateAutoHeight()));
+      if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); }, { threshold: .1 }).observe(element);
+      else visible = true;
+      sync();
+    });
+  }
+
+  const feedCarousels = new WeakSet();
+  function initFeedCarousels(root) {
+    if (typeof Swiper === 'undefined') return;
+    select(root, '[data-feed-carousel]').forEach(element => {
+      if (feedCarousels.has(element)) return;
+      feedCarousels.add(element);
+      const container = element.querySelector('.swiper');
+      const controls = element.querySelector('.ltcc-feed-carousel__controls');
+      const pause = element.querySelector('[data-feed-pause]');
+      const count = screen => Math.max(1, Math.min(6, Number(element.dataset['items' + screen]) || 1));
+      let paused = reduced.matches, hovering = false, focused = false, visible = false;
+      const swiper = new Swiper(container, {
+        slidesPerView: count('Mobile'), spaceBetween: 24, rewind: true, watchOverflow: true,
+        watchSlidesProgress: true, speed: reduced.matches ? 0 : 650,
+        breakpoints: { 768: { slidesPerView: count('Tablet') }, 992: { slidesPerView: count('Desktop') } },
+        autoplay: { delay: 8000, disableOnInteraction: false },
+        navigation: { prevEl: element.querySelector('[data-feed-prev]'), nextEl: element.querySelector('[data-feed-next]') },
+        a11y: { enabled: true }
+      });
+      function syncAccess() {
+        swiper.slides.forEach(slide => {
+          const hidden = !slide.classList.contains('swiper-slide-visible');
+          slide.inert = hidden;
+          slide.setAttribute('aria-hidden', String(hidden));
+        });
+      }
+      function sync() {
+        controls.hidden = swiper.isLocked;
+        if (paused || hovering || focused || !visible || document.hidden || swiper.isLocked) swiper.autoplay.stop();
+        else swiper.autoplay.start();
+        pause.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+        pause.setAttribute('aria-pressed', String(paused));
+        pause.querySelector('span').className = 'fa-sharp fa-regular ' + (paused ? 'fa-circle-play' : 'fa-circle-pause');
+        syncAccess();
+      }
+      pause.addEventListener('click', () => { paused = !paused; sync(); });
+      element.addEventListener('mouseenter', () => { hovering = true; sync(); });
+      element.addEventListener('mouseleave', () => { hovering = false; sync(); });
+      element.addEventListener('focusin', event => { focused = !pause.contains(event.target); sync(); });
+      element.addEventListener('focusout', event => { if (!element.contains(event.relatedTarget)) { focused = false; sync(); } });
+      document.addEventListener('visibilitychange', sync);
+      reduced.addEventListener('change', () => { paused = reduced.matches; swiper.params.speed = reduced.matches ? 0 : 650; sync(); });
+      swiper.on('resize lock unlock breakpoint', sync);
+      swiper.on('slideChangeTransitionEnd setTranslate', syncAccess);
+      if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); }, { threshold: .1 }).observe(element);
+      else visible = true;
       sync();
     });
   }
@@ -147,7 +328,10 @@
       else visible = true;
       sync();
     });
+    initFeedCarousels(root);
+    initQuoteCarousels(root);
     initHeroes(root);
+    initHomeHeroes(root);
     scheduleHeights();
   }
   window.addEventListener('resize', scheduleHeights, { passive: true });

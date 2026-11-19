@@ -1,0 +1,30 @@
+.ltcc-feed-carousel {
+  min-width: 0;
+  .swiper-slide { height: auto; }
+  // Give the lift and shadow room inside Swiper's clipped viewport.
+  .swiper { padding-block: 1rem; margin-block: -1rem; }
+  .card {
+    --bs-card-border-color: #{$gray-200};
+    color: $blue-800;
+    @include transition(box-shadow .25s ease, transform .25s ease);
+    &:hover, &:focus-within {
+      box-shadow: $box-shadow;
+      transform: translateY(-3px);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      &:hover, &:focus-within { transform: none; }
+    }
+  }
+  .card-img-top { aspect-ratio: 1.5; object-fit: cover; }
+  .card-event { min-height: 13.5rem; }
+  // No-JS / CDN failure: retain every item in a responsive grid.
+  .swiper:not(.swiper-initialized) > .swiper-wrapper {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(var(--feed-mobile, 1), minmax(0, 1fr));
+    @include media-breakpoint-up(md) { grid-template-columns: repeat(var(--feed-tablet, 2), minmax(0, 1fr)); }
+    @include media-breakpoint-up(lg) { grid-template-columns: repeat(var(--feed-desktop, 3), minmax(0, 1fr)); }
+  }
+  .swiper-slide:focus-within { outline-offset: -3px; }
+  a:focus-visible { outline: 2px solid $blue-700; outline-offset: 2px; }
+}

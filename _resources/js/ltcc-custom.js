@@ -185,6 +185,52 @@
     });
   }
 
+  function initTranslationModal() {
+    const modal = document.getElementById('site-translation');
+    if (!modal || modal.dataset.translationInitialized) return;
+    modal.dataset.translationInitialized = 'true';
+    const widget = modal.querySelector('#google_translate_element');
+    const status = modal.querySelector('[data-translation-status]');
+    let closeWhenShown = false;
+    let loadingTimer;
+    function prepareSelect() {
+      const select = widget.querySelector('.goog-te-combo');
+      if (!select) return;
+      select.id = 'site-translation-language';
+      select.classList.add('form-select', 'mb-3');
+      if (status) status.hidden = true;
+      clearTimeout(loadingTimer);
+    }
+    new MutationObserver(prepareSelect).observe(widget, { childList: true, subtree: true });
+    prepareSelect();
+    modal.addEventListener('shown.bs.modal', () => {
+      if (closeWhenShown) {
+        closeWhenShown = false;
+        window.bootstrap.Modal.getInstance(modal)?.hide();
+        return;
+      }
+      prepareSelect();
+      widget.querySelector('.goog-te-combo')?.focus();
+      if (!widget.querySelector('.goog-te-combo')) {
+        clearTimeout(loadingTimer);
+        loadingTimer = setTimeout(() => {
+          if (status && !widget.querySelector('.goog-te-combo')) status.textContent = 'Google Translate could not load. Please close this window and try again.';
+        }, 10000);
+      }
+    });
+    modal.addEventListener('hidden.bs.modal', () => { clearTimeout(loadingTimer); closeWhenShown = false; });
+    modal.addEventListener('change', event => {
+      if (!event.target.matches('.goog-te-combo') || !event.target.value) return;
+      // Let Google's change handler finish before closing the dialog.
+      setTimeout(() => {
+        const instance = window.bootstrap.Modal.getInstance(modal);
+        instance?.hide();
+        // Bootstrap ignores hide() during its opening transition.
+        closeWhenShown = modal.classList.contains('show');
+      }, 0);
+    });
+  }
+
   // Tooltips and popovers are opt-in; other data-bs-* controls use Bootstrap's data API.
   // This is safe to call again after inserting CMS content dynamically.
   function init(root = document) {
@@ -195,6 +241,7 @@
       // Legacy pages do not yet load Bootstrap 5; the class switch still applies.
       return;
     }
+    initTranslationModal();
     initPrimaryMenus(root);
     initMobileNavigation(root);
     root.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((element) => {

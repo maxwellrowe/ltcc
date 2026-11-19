@@ -11,9 +11,6 @@
     z-index: 2;
     right: 1rem;
     bottom: 1rem;
-    background: $green-700;
-    &:not([hidden]) { display: flex; }
-    .media-playback-toggle { width: 2.75rem; height: 2.75rem; }
   }
   a.ltcc-hero__link {
     font-size: .875rem;
@@ -26,6 +23,16 @@
   // With JS unavailable, retain the first image without exposing dead controls.
   .swiper:not(.swiper-initialized) .swiper-slide { flex: 0 0 100%; }
   @include media-breakpoint-up(lg) {
+    &--banner &__copy {
+      position: relative;
+      align-self: stretch;
+      .interior-breadcrumbs {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 3rem;
+      }
+    }
     &__title { font-size: 3.75rem; }
     &__pretitle { font-size: 1rem; }
     &__subtitle { font-size: 1.75rem; }

@@ -30,6 +30,28 @@
 	xmlns:ouc="http://omniupdate.com/XSL/Variables"
 	exclude-result-prefixes="xs ou fn ouc">
 
+    <!-- Keep component matches at the same import precedence as the generic dispatcher. -->
+    <xsl:include href="home-hero.xsl"/>
+    <xsl:include href="cards.xsl"/>
+    <xsl:include href="quote-carousel.xsl"/>
+    <xsl:include href="feed-carousels.xsl"/>
+
+    <!-- Decorative SVG-backed statistic; reusable in any layout snippet. -->
+    <xsl:template match="ouc:component[@name='component-stat']" mode="#all">
+        <xsl:variable name="stat" select="normalize-space(ul/li[@class='stat'])"/>
+        <xsl:variable name="stat-size" select="normalize-space(ul/li[@class='stat-size'])"/>
+        <xsl:variable name="subtext" select="normalize-space(ul/li[@class='subtext'])"/>
+        <xsl:variable name="image-field" select="ul/li[@class='image']"/>
+        <xsl:variable name="image" select="normalize-space(if ($image-field/img) then $image-field/img[1]/@src else if ($image-field/a) then $image-field/a[1]/@href else $image-field)"/>
+        <xsl:if test="$stat != '' or $subtext != ''">
+            <div class="home-stat d-flex flex-column align-items-center justify-content-center position-relative text-center p-3 h-100">
+                <xsl:if test="$image != ''"><img src="{$image}" alt="" class="stat-art" loading="lazy" decoding="async"/></xsl:if>
+                <xsl:if test="$stat != ''"><strong class="{if ($stat-size = ('fs-1','fs-2','fs-3','fs-4','fs-5','fs-6','fs-7','fs-8')) then $stat-size else 'home-stat__value'} fw-bold mb-0 position-relative"><xsl:value-of select="$stat"/></strong></xsl:if>
+                <xsl:if test="$subtext != ''"><span class="home-stat__subtext fw-semibold position-relative"><xsl:value-of select="$subtext"/></span></xsl:if>
+            </div>
+        </xsl:if>
+    </xsl:template>
+
 	<!-- A template match for getting rid of the stray P element that wraps around a component when it is in Blue Pill Mode -->
 	<xsl:template match="p[ouc:component][text()[normalize-space(.)] => empty()][count(element()) = 1]" mode="#all">
 		<xsl:apply-templates select="element()" mode="#current"/>
@@ -262,6 +284,7 @@
     </xsl:template>
 
     <xsl:template match="ouc:component[@name='component-hero']" mode="#all">
+        <xsl:param name="hero-is-banner" select="false()" tunnel="yes"/>
         <xsl:param name="hero-breadcrumbs" select="()" tunnel="yes"/>
         <xsl:param name="hero-breadcrumb-target" select="''" tunnel="yes"/>
         <xsl:variable name="show-ctas" select="lower-case(normalize-space(translate(string(ul/li[@class='show-ctas']), '&#160;', ' '))) != 'false'"/>
@@ -289,7 +312,7 @@
             </xsl:for-each>
         </xsl:variable>
         <xsl:if test="$title != '' or $images/img or $pre-title != '' or $subtitle != '' or ($show-ctas and $ctas/li)">
-            <section class="ltcc-hero bg-blue-950 text-white" id="{$hero-id}">
+            <section class="ltcc-hero bg-blue-950 text-white{if ($hero-is-banner) then ' ltcc-hero--banner' else ''}" id="{$hero-id}">
                 <xsl:if test="$title != ''"><xsl:attribute name="aria-labelledby" select="concat($hero-id, '-title')"/></xsl:if>
                 <div class="container-xl">
                   <div class="row g-0 align-items-center">
@@ -322,7 +345,7 @@
                                     <div class="swiper-wrapper">
                                         <xsl:for-each select="$images/img"><div class="swiper-slide"><xsl:copy-of select="."/></div></xsl:for-each>
                                     </div>
-                                    <div class="ltcc-hero__controls align-items-center rounded-pill p-1" hidden="hidden">
+                                    <div class="ltcc-hero__controls media-controls align-items-center rounded-pill p-1" hidden="hidden">
                                         <button type="button" class="btn media-playback-toggle rounded-circle d-flex align-items-center justify-content-center text-center" data-hero-prev="" aria-label="Previous image"><span class="fa-sharp fa-regular fa-arrow-left" aria-hidden="true"><xsl:text> </xsl:text></span></button>
                                         <button type="button" class="btn media-playback-toggle rounded-circle d-flex align-items-center justify-content-center text-center" data-hero-next="" aria-label="Next image"><span class="fa-sharp fa-regular fa-arrow-right" aria-hidden="true"><xsl:text> </xsl:text></span></button>
                                         <button type="button" class="btn media-playback-toggle rounded-circle d-flex align-items-center justify-content-center text-center" data-hero-pause="" aria-label="Pause slideshow" aria-pressed="false"><span class="fa-sharp fa-regular fa-circle-pause" aria-hidden="true"><xsl:text> </xsl:text></span></button>

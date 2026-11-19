@@ -1,0 +1,43 @@
+// Reusable CMS cards; layout, surfaces and spacing come from Bootstrap utilities.
+.ltcc-card {
+  --bs-card-border-color: #{$gray-200};
+
+  .card-title { color: inherit; }
+  &__image { aspect-ratio: 1.45; object-fit: cover; }
+  &__description > :last-child { margin-bottom: 0; }
+}
+
+.ltcc-card-link {
+  @include transition(box-shadow .25s ease, transform .25s ease);
+
+  &__arrow {
+    width: 2rem;
+    height: 2rem;
+    color: $green-700;
+    background-color: $green-100;
+    @include transition(color .25s ease, background-color .25s ease, transform .25s ease);
+  }
+
+  &.ltcc-card--has-image {
+    .ltcc-card-link__arrow { position: absolute; top: 1rem; right: 1rem; }
+  }
+
+  &:hover, &:focus-visible {
+    text-decoration: none;
+    box-shadow: $box-shadow;
+    transform: translateY(-3px);
+
+    .ltcc-card-link__arrow {
+      color: $white;
+      background-color: $secondary;
+      transform: translate(2px, -2px);
+    }
+  }
+
+  &:focus-visible { outline: 2px solid $blue-700; outline-offset: 4px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    &:hover, &:focus-visible { transform: none; }
+    &:hover .ltcc-card-link__arrow, &:focus-visible .ltcc-card-link__arrow { transform: none; }
+  }
+}

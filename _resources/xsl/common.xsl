@@ -34,6 +34,7 @@ Last Updated: 1/2016
     <xsl:import href="_shared/snippets.xsl"/>
     <xsl:import href="_shared/transformations.xsl"/>
     <xsl:import href="_shared/components.xsl"/>
+    <xsl:import href="_shared/structured-data.xsl"/>
     <!-- Default: for HTML5 use below output declaration -->
     <xsl:output method="html" version="5.0" indent="yes" encoding="UTF-8" include-content-type="no"/>
 
@@ -56,6 +57,11 @@ indent="yes" encoding="UTF-8" include-content-type="no" />
             <head>
                 <xsl:if test="$is-pub">
                     <link rel="canonical" href="{replace($page-pub-path, '/index\.php$', '/')}" /> <!-- canonical -->
+                    <xsl:call-template name="webpage-structured-data">
+                        <xsl:with-param name="name" select="normalize-space(string($page-title))"/>
+                        <xsl:with-param name="url" select="replace($page-pub-path, '/index\.php$', '/')"/>
+                        <xsl:with-param name="modified" select="$ou:modified"/>
+                    </xsl:call-template>
                 </xsl:if>
                 <xsl:call-template name="common-headcode"/> <!-- common headcode -->
                 <xsl:call-template name="template-headcode"/> <!-- each page type may have a version of this template -->

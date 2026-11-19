@@ -9,13 +9,10 @@
                     <span class="fa fa-heart text-info me-2" aria-hidden="true"></span>Giving
                 </a>
             </li>
-            <li class="utility-translate nav-item dropdown">
-                <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+            <li class="utility-translate nav-item">
+                <button class="nav-link py-3" type="button" data-bs-toggle="modal" data-bs-target="#site-translation" aria-controls="site-translation" aria-haspopup="dialog">
                     <span class="fa fa-language text-info me-2" aria-hidden="true"></span>Translate
                 </button>
-                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-                    <!-- Add the language selector here when its output is connected to the shared XSL include. -->
-                </ul>
             </li>
             <li class="utility-info nav-item dropdown">
                 <button class="nav-link py-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
