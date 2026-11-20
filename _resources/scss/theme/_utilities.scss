@@ -1,5 +1,13 @@
 // Additional LTCC utility classes.
 
+// Bootstrap supplies desktop-only sticky positioning; the snippet controls offset.
+@include media-breakpoint-up(lg) {
+  .ltcc-sticky {
+    top: var(--ltcc-sticky-top, 8rem);
+    z-index: auto;
+  }
+}
+
 // Light diagonal gradient, from top left to bottom right.
 .bg-gradient-green-blue {
   background-image: linear-gradient(135deg, $green-100, $blue-100);

@@ -25,11 +25,29 @@ function setup(elements, options = {}) {
       return { then(callback) { finishes.push(callback); }, complete() {} };
     }
   };
-  const document = { readyState: 'complete', documentElement: { classList: new Set() }, querySelectorAll: () => elements };
+  const document = { readyState: 'complete', documentElement: { classList: new Set() }, querySelectorAll: selector => selector === '.education-title' ? (options.educationTitles || []) : elements };
   document.documentElement.classList.contains = () => false;
   vm.runInNewContext(source, { window, document, console: { warn() {} } });
   return { observed, calls, finishes, window };
 }
+test('Education moves slowly while Elevated stays still and the mountain fades', () => {
+  const word = element(), elevated = element(), mark = element(), title = element();
+  title.querySelectorAll = selector => selector.includes('first-child') ? [word] : selector.includes('nth-child') ? [elevated] : [mark];
+  const run = setup([], { educationTitles: [title] });
+  run.observed.get(title)();
+  assert.equal(run.calls[0].el, word);
+  assert.equal(run.calls[0].timing.duration, 1.26);
+  assert.equal(run.calls[1].el, mark);
+  assert.equal(run.calls[1].timing.delay, .63);
+  assert.ok(!run.calls.some(call => call.el === elevated));
+  run.window.LTCC.animations.init();
+  assert.equal(run.observed.size, 1);
+});
+test('Education title stays static with reduced motion', () => {
+  const title = element();
+  const run = setup([], { educationTitles: [title], reduced: true });
+  assert.equal(run.observed.size, 0);
+});
 for (const [name, y] of [['fade', undefined], ['fade-up', 24], ['fade-down', -24]]) {
   test(`legacy ${name} reveals once with timing and restores inline styles`, () => {
     const el = element({ 'data-aos': name, 'data-aos-duration': '800', 'data-aos-delay': ' 200ms ' });

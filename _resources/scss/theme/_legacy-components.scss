@@ -177,6 +177,12 @@ a.ltcc-button.ltcc-button-sullivan {
 .ltcc-image-swiper .swiper-slide {
 	width: auto;
 }
+.ltcc-image-swiper > .ltcc-image-controls {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+}
 .ltcc-image-swiper .swiper-slide img {
 	height: 50vh;
 	max-height: 400px;

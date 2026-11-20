@@ -122,7 +122,7 @@ Last Updated: 1/2016
 		
 		<xsl:if test="$img">
 			<div class="static-image mb-4">
-				<xsl:if test="$title">
+				<xsl:if test="normalize-space(translate(string-join($title, ' '), '&#160;', ' ')) != ''">
 					<span class="title h2"><xsl:value-of select="$title"/></span>
 				</xsl:if>
 				<img src="{$img/@src}" alt="{$img/@alt}" />
@@ -413,6 +413,15 @@ Last Updated: 1/2016
 		<div class="{string-join(('card', concat('p-', if ($padding = ('1', '2', '3', '4', '5')) then $padding else '3'), concat('rounded-', if ($rounded = ('1', '2', '3', '4', '5')) then $rounded else '3'), $custom-class[. != '']), ' ')}">
 			<!-- Bootstrap border utilities can override this default border width. -->
 			<xsl:attribute name="style">--bs-card-border-width: 0;</xsl:attribute>
+			<xsl:apply-templates select="tbody/tr/td[@class='content']/node()"/>
+		</div>
+	</xsl:template>
+
+	<!-- Sticky content belongs inside a column, not on the stretched column itself. -->
+	<xsl:template match="table[@data-snippet='ltcc-sticky']">
+		<xsl:variable name="offset" select="normalize-space(translate(string(thead/tr/th[@class='top-offset']), '&#160;', ' '))"/>
+		<xsl:variable name="classes" select="normalize-space(translate(string(thead/tr/th[@class='custom-class']), '&#160;', ' '))"/>
+		<div class="{normalize-space(concat('ltcc-sticky sticky-lg-top ', $classes))}" style="--ltcc-sticky-top: {if (matches($offset, '^[0-9]+(\.[0-9]+)?$')) then $offset else '8'}rem;">
 			<xsl:apply-templates select="tbody/tr/td[@class='content']/node()"/>
 		</div>
 	</xsl:template>

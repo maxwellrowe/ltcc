@@ -81,6 +81,52 @@ function reveal(element) {
 
 function init(root = document) {
   if (document.documentElement.classList.contains("no-js") || !("IntersectionObserver" in window)) return;
+  const educationTitles = [...root.querySelectorAll('.education-title')];
+  if (root.matches?.('.education-title')) educationTitles.unshift(root);
+  educationTitles.forEach(title => {
+    if (initialized.has(title) || title.classList.contains('anim-scroll-none') || !title.getClientRects().length) return;
+    if (reducedMotion.matches) return;
+    const word = title.querySelectorAll(':scope > span:first-child')[0];
+    const elevated = title.querySelectorAll(':scope > span:nth-child(2)')[0];
+    const mark = title.querySelectorAll(':scope > .education-mark')[0];
+    if (!word || !elevated || !mark) return;
+    initialized.add(title);
+    const bounds = title.getBoundingClientRect();
+    if (bounds.top < window.innerHeight && bounds.bottom > 0) return;
+    const originalTransform = word.style.transform;
+    const originalOpacity = mark.style.opacity;
+    const desktop = window.matchMedia('(min-width: 992px)');
+    const offset = () => desktop.matches ? elevated.getBoundingClientRect().top - word.getBoundingClientRect().top : 24;
+    const distance = offset();
+    word.style.transform = `translateY(${distance}px)`;
+    mark.style.opacity = '0';
+    let done = false;
+    let animations = [];
+    const finish = () => {
+      if (done) return;
+      done = true;
+      animations.forEach(animation => animation.complete());
+      word.style.transform = originalTransform;
+      mark.style.opacity = originalOpacity;
+      active.delete(finish);
+    };
+    active.add(finish);
+    try {
+      inView(title, () => {
+        if (done) return;
+        // Re-measure at entry in case fonts or the viewport changed while offscreen.
+        word.style.transform = originalTransform;
+        const start = offset();
+        try {
+          animations = [
+            animate(word, { y: [start, 0] }, { duration: 1.26, ease: [.16, 1, .3, 1] }),
+            animate(mark, { opacity: [0, 1] }, { duration: .63, delay: .63, ease: 'easeOut' })
+          ];
+          Promise.all(animations).then(finish, finish);
+        } catch (error) { finish(); }
+      }, { amount: 'some', margin: '0px 0px -80px 0px' });
+    } catch (error) { finish(); }
+  });
   const elements = [...root.querySelectorAll(selector)];
   if (root.matches?.(selector)) elements.unshift(root);
   elements.forEach(element => {

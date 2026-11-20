@@ -35,6 +35,20 @@
     <xsl:include href="cards.xsl"/>
     <xsl:include href="quote-carousel.xsl"/>
     <xsl:include href="feed-carousels.xsl"/>
+    <xsl:include href="typed-text.xsl"/>
+
+    <xsl:template match="ouc:component[@name='component-video-background']" mode="#all">
+        <xsl:variable name="field" select="ul/li[@class='video']"/>
+        <xsl:variable name="video" select="normalize-space(if ($field/a) then $field/a[1]/@href else $field)"/>
+        <xsl:if test="$video != ''">
+            <div class="ltcc-video-background campus-film-wrap position-relative" data-video-background="">
+                <video class="campus-film rounded d-block w-100" data-background-video="" muted="muted" loop="loop" playsinline="playsinline" preload="metadata" aria-hidden="true" tabindex="-1">
+                    <source src="{$video}" type="video/mp4"/>
+                </video>
+                <button class="btn media-playback-toggle rounded-circle" type="button" data-video-playback="" aria-label="Pause background video" aria-pressed="false" hidden="hidden"><span class="fa-solid fa-pause" aria-hidden="true"><xsl:text> </xsl:text></span></button>
+            </div>
+        </xsl:if>
+    </xsl:template>
 
     <!-- Decorative SVG-backed statistic; reusable in any layout snippet. -->
     <xsl:template match="ouc:component[@name='component-stat']" mode="#all">

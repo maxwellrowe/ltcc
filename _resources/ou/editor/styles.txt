@@ -1,10 +1,10 @@
 .lead	Text: Lead paragraph	block
-.fs-1	Text: Font size 1
-.fs-2	Text: Font size 2
-.fs-3	Text: Font size 3
-.fs-4	Text: Font size 4
-.fs-5	Text: Font size 5
-.fs-6	Text: Font size 6
+.fs-1	Text: Font size 1 (5rem)
+.fs-2	Text: Font size 2 (4rem)
+.fs-3	Text: Font size 3 (3rem)
+.fs-4	Text: Font size 4 (2rem)
+.fs-5	Text: Font size 5 (1.5rem)
+.fs-6	Text: Font size 6 (1rem)
 .fs-7	Text: Font size 7 (0.875rem)
 .fs-8	Text: Font size 8 (0.75rem)
 .h1	Text: Heading 1 appearance	block
@@ -49,9 +49,6 @@
 .text-primary	Text color: Primary
 .text-secondary	Text color: Secondary
 .text-success	Text color: Success
-.text-danger	Text color: Danger
-.text-warning	Text color: Warning
-.text-info	Text color: Info
 .text-light	Text color: Light
 .text-dark	Text color: Dark
 .text-body	Text color: Body
@@ -83,11 +80,10 @@
 .badge text-bg-primary	Badge: Primary
 .badge text-bg-secondary	Badge: Secondary
 .img-fluid	Image: Responsive
-.img-fluid img-thumbnail	Image: Thumbnail
 .img-fluid rounded	Image: Rounded
-.img-fluid rounded-circle	Image: Circle (use square image)
 .img-fluid d-block mx-auto	Image: Centered
 .img-fluid float-start me-3 mb-3	Image: Float left with spacing
 .img-fluid float-end ms-3 mb-3	Image: Float right with spacing
 .arrow-link arrow-link-dark	Link: Arrow - dark text (light background)
 .arrow-link arrow-link-light	Link: Arrow - light text (dark background)
+.table	Table: Bootstrap table

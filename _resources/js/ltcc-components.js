@@ -18,11 +18,20 @@
       if (!panel || !toggle) return;
       homeHeroAlerts.add(alert);
       const desktop = matchMedia('(min-width: 992px)');
+      const slot = document.createComment('Homepage alert desktop position');
+      alert.before(slot);
+      alert.classList.add('ltcc-home-hero-alert');
+      const placeAlert = () => {
+        if (desktop.matches) slot.after(alert);
+        else document.body.append(alert);
+      };
+      placeAlert();
       panel.classList.toggle('show', desktop.matches);
       toggle.setAttribute('aria-expanded', String(desktop.matches));
       const collapse = window.bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false });
       const sync = () => desktop.matches ? collapse.show() : collapse.hide();
       desktop.addEventListener('change', () => {
+        placeAlert();
         if (panel.classList.contains('collapsing')) {
           const finish = () => {
             panel.removeEventListener('shown.bs.collapse', finish);
@@ -39,11 +48,12 @@
   const homeHeroes = new WeakSet();
   function initHomeHeroes(root) {
     initHomeHeroAlerts(root);
-    select(root, '[data-home-hero]').forEach(hero => {
+    // Background videos share the hero's muted playback and pause behavior.
+    select(root, '[data-home-hero], [data-video-background]').forEach(hero => {
       if (homeHeroes.has(hero)) return;
-      const video = hero.querySelector('.hero-video');
+      const video = hero.querySelector('.hero-video, [data-background-video]');
       const element = hero.querySelector('.hero-media.swiper');
-      const button = hero.querySelector('[data-home-hero-playback]');
+      const button = hero.querySelector('[data-home-hero-playback], [data-video-playback]');
       if (!button || (!video && !element)) { homeHeroes.add(hero); return; }
       if (element && !window.Swiper) return;
       homeHeroes.add(hero);
@@ -145,7 +155,7 @@
       pause.addEventListener('click', () => { paused = !paused; hovering = false; focused = false; sync(); });
       element.addEventListener('mouseenter', () => { hovering = true; sync(); });
       element.addEventListener('mouseleave', () => { hovering = false; sync(); });
-      element.addEventListener('focusin', event => { focused = event.target !== pause; sync(); });
+      element.addEventListener('focusin', event => { focused = !pause.contains(event.target); sync(); });
       element.addEventListener('focusout', event => { if (!element.contains(event.relatedTarget)) { focused = false; sync(); } });
       document.addEventListener('visibilitychange', sync);
       reduced.addEventListener('change', () => { paused = reduced.matches; swiper.params.speed = reduced.matches ? 0 : 600; sync(); });
@@ -253,6 +263,55 @@
     });
   }
 
+  const typedComponents = new WeakSet();
+  function initTypedText(root) {
+    if (typeof window.Typed !== 'function') return;
+    select(root, '[data-typed-text]').forEach(element => {
+      if (typedComponents.has(element)) return;
+      const output = element.querySelector('[data-typed-output]');
+      const phrases = [...element.querySelectorAll('[data-typed-phrases] > li')].map(item => item.textContent.trim()).filter(Boolean);
+      const button = element.querySelector('[data-typed-pause]');
+      if (!output || !button || !phrases.length) return;
+      typedComponents.add(element);
+      let instance = null, paused = false, visible = !('IntersectionObserver' in window), complete = false;
+      const loop = element.dataset.typedLoop === 'true';
+      const number = (key, fallback, maximum) => {
+        const value = Number(element.dataset[key]);
+        return Number.isFinite(value) ? Math.max(0, Math.min(maximum, value)) : fallback;
+      };
+      function sync() {
+        if (reduced.matches) {
+          instance?.destroy(); instance = null; complete = false;
+          output.textContent = phrases[0]; button.hidden = true;
+          return;
+        }
+        const stopped = paused || !visible || document.hidden;
+        if (!instance && !stopped) {
+          output.textContent = '';
+          instance = new window.Typed(output, {
+            strings: phrases, contentType: 'null', loop,
+            typeSpeed: number('typedSpeed', 60, 500), backSpeed: number('typedBackSpeed', 30, 500),
+            startDelay: number('typedStartDelay', 0, 10000), backDelay: number('typedPhraseDelay', 2000, 30000),
+            showCursor: element.dataset.typedCursor !== 'false', smartBackspace: true,
+            onComplete() { if (!loop) { complete = true; button.hidden = true; element.dataset.typedStopped = 'true'; } }
+          });
+        }
+        if (instance && !complete) { if (stopped) instance.stop(); else instance.start(); }
+        element.dataset.typedStopped = String(stopped || complete);
+        button.hidden = !instance || complete;
+        button.setAttribute('aria-pressed', String(paused));
+        button.setAttribute('aria-label', paused ? 'Play typing animation' : 'Pause typing animation');
+        button.querySelector('[data-typed-pause-label]').textContent = paused ? 'Play animation' : 'Pause animation';
+        button.querySelector('.fa-sharp').className = 'fa-sharp fa-regular ' + (paused ? 'fa-circle-play' : 'fa-circle-pause');
+      }
+      button.addEventListener('click', () => { paused = !paused; sync(); });
+      document.addEventListener('visibilitychange', sync);
+      reduced.addEventListener('change', sync);
+      if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); }).observe(element);
+      sync();
+    });
+  }
+
   function init(root = document) {
     select(root, '.match-height-row, .match-height-all').forEach(item => {
       if (!matched.has(item)) item.dataset.ltccOriginalMinHeight = item.style.minHeight;
@@ -297,7 +356,34 @@
       const pause = document.createElement('button');
       pause.type = 'button'; pause.className = 'btn btn-primary btn-sm ltcc-slider-pause';
       pause.setAttribute('aria-label', 'Pause slideshow'); pause.setAttribute('aria-pressed', 'false');
-      pause.textContent = 'Pause slideshow'; element.append(pause);
+      pause.textContent = 'Pause slideshow';
+      let previous = element.querySelector('.swiper-button-prev');
+      let next = element.querySelector('.swiper-button-next');
+      let controls;
+      if (images) {
+        previous?.remove(); next?.remove();
+        controls = document.createElement('div');
+        controls.className = 'ltcc-image-controls media-controls align-items-center rounded-pill p-1';
+        controls.setAttribute('role', 'group');
+        controls.setAttribute('aria-label', 'Image slideshow controls');
+        const makeButton = (label, icon) => {
+          const button = document.createElement('button');
+          button.type = 'button'; button.className = 'btn media-playback-toggle rounded-circle';
+          button.setAttribute('aria-label', label);
+          const span = document.createElement('span');
+          span.className = 'fa-sharp fa-regular fa-' + icon;
+          span.setAttribute('aria-hidden', 'true'); button.append(span);
+          return button;
+        };
+        previous = makeButton('Previous image', 'arrow-left');
+        next = makeButton('Next image', 'arrow-right');
+        pause.className = 'btn media-playback-toggle rounded-circle';
+        pause.textContent = '';
+        const icon = document.createElement('span');
+        icon.className = 'fa-sharp fa-regular fa-circle-pause';
+        icon.setAttribute('aria-hidden', 'true'); pause.append(icon);
+        controls.append(previous, next, pause); element.append(controls);
+      } else element.append(pause);
       let paused = reduced.matches, visible = false, hovering = false, focused = false;
       const swiper = new Swiper(element, {
         slidesPerView: images ? 'auto' : 1,
@@ -305,29 +391,34 @@
         speed: reduced.matches ? 0 : 500,
         breakpoints: images ? undefined : { 768: { slidesPerView: 2 }, 992: { slidesPerView: 3 } },
         autoplay: { delay: 4000, disableOnInteraction: false },
-        navigation: { prevEl: element.querySelector('.swiper-button-prev'), nextEl: element.querySelector('.swiper-button-next') },
+        navigation: { prevEl: previous, nextEl: next },
         a11y: { enabled: true },
       });
       const sync = () => {
         if (paused || !visible || hovering || focused || document.hidden || swiper.isLocked || count < 2) swiper.autoplay.stop();
         else swiper.autoplay.start();
         pause.hidden = swiper.isLocked || count < 2;
-        pause.textContent = paused ? 'Play slideshow' : 'Pause slideshow';
-        pause.setAttribute('aria-label', pause.textContent);
+        const label = paused ? 'Play slideshow' : 'Pause slideshow';
+        if (controls) {
+          controls.hidden = swiper.isLocked || count < 2;
+          pause.querySelector('span').className = 'fa-sharp fa-regular ' + (paused ? 'fa-circle-play' : 'fa-circle-pause');
+        } else pause.textContent = label;
+        pause.setAttribute('aria-label', label);
         pause.setAttribute('aria-pressed', String(paused));
       };
       pause.addEventListener('click', () => { paused = !paused; hovering = false; focused = false; sync(); });
       element.addEventListener('mouseenter', () => { hovering = true; sync(); });
       element.addEventListener('mouseleave', () => { hovering = false; sync(); });
-      element.addEventListener('focusin', event => { focused = event.target !== pause; sync(); });
+      element.addEventListener('focusin', event => { focused = !pause.contains(event.target); sync(); });
       element.addEventListener('focusout', event => { if (!element.contains(event.relatedTarget)) { focused = false; sync(); } });
       document.addEventListener('visibilitychange', sync);
       reduced.addEventListener('change', () => { paused = reduced.matches; swiper.params.speed = reduced.matches ? 0 : 500; sync(); });
-      swiper.on('resize', sync);
+      swiper.on('resize lock unlock', sync);
       if ('IntersectionObserver' in window) new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); }, { threshold: .1 }).observe(element);
       else visible = true;
       sync();
     });
+    initTypedText(root);
     initFeedCarousels(root);
     initQuoteCarousels(root);
     initHeroes(root);

@@ -11,6 +11,8 @@
 <!-- Motion must load before the LTCC animation presets. -->
 <script src="https://cdn.jsdelivr.net/npm/motion@14.0.0/dist/motion.js"></script>
 <script src="/_resources/js/ltcc-animations.js"></script>
+<!-- Pinned MIT-licensed Typed.js; static text remains if unavailable. -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="/_resources/js/ltcc-components.js"></script>
 
 <!-- Legacy site behavior and CMS editing -->

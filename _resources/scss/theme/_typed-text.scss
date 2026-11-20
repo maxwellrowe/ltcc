@@ -1,0 +1,11 @@
+// Pause the cursor as well as the text; Typed.js otherwise keeps blinking.
+.ltcc-typed-text[data-typed-stopped="true"] .typed-cursor {
+  animation: none;
+}
+
+.ltcc-typed-text__pause {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  font-size: .75rem;
+}
